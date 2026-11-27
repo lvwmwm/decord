@@ -1,10 +1,10 @@
-// Module ID: 10323
-// Function ID: 10324
+// Module ID: 10324
+// Function ID: 10325
 // Name: useRequestToSpeakPermission
 // Dependencies: [32, 19, 4892, 1071, 504, 4980, 7839, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 10323 (useRequestToSpeakPermission)
+// Module 10324 (useRequestToSpeakPermission)
 import Constants from "Constants" /* 1071 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7839 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

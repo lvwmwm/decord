@@ -1,17 +1,17 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16096
+// Function ID: 16097
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 9637, 1186, 1112, 6152, 6156, 7275, 1379, 7550, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 9638, 1186, 1112, 6152, 6156, 7275, 1379, 7550, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 16089 (UserProfileEditFormControls)
+// Module 16096 (UserProfileEditFormControls)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import Pressables from "Pressables" /* 6152 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9637 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9638 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

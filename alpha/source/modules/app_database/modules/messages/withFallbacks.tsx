@@ -1,14 +1,14 @@
-// Module ID: 8260
-// Function ID: 8261
+// Module ID: 8261
+// Function ID: 8262
 // Name: withFallbacks
-// Dependencies: [32, 4892, 6164, 1071, 8254, 8258, 8259, 2]
+// Dependencies: [32, 4892, 6164, 1071, 8255, 8259, 8260, 2]
 // Exports: withFallbacks
 
-// Module 8260 (withFallbacks)
+// Module 8261 (withFallbacks)
 import Constants from "Constants" /* 1071 */;
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 8254 */;
-import isReadableChannel from "isReadableChannel" /* 8258 */;
-import isLimitedChannel from "isLimitedChannel" /* 8259 */;
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 8255 */;
+import isReadableChannel from "isReadableChannel" /* 8259 */;
+import isLimitedChannel from "isLimitedChannel" /* 8260 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import SortedGuildStore from "SortedGuildStore" /* 6164 */;

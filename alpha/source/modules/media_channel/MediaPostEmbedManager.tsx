@@ -1,15 +1,15 @@
-// Module ID: 20287
-// Function ID: 20288
+// Module ID: 20345
+// Function ID: 20346
 // Name: MediaPostEmbedManager
-// Dependencies: [4947, 502, 4955, 11921, 1071, 1093, 6804, 1405, 12534, 7475, 19782, 2]
+// Dependencies: [4947, 502, 4955, 11929, 1071, 1093, 6804, 1405, 12542, 7475, 19798, 2]
 
-// Module 20287 (MediaPostEmbedManager)
+// Module 20345 (MediaPostEmbedManager)
 import Constants from "Constants" /* 1071 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6804 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11921 */;
-import MediaChannelActionCreators from "MediaChannelActionCreators" /* 12534 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19782 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11929 */;
+import MediaChannelActionCreators from "MediaChannelActionCreators" /* 12542 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19798 */;
 import GatedChannelStore from "GatedChannelStore" /* 4947 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;

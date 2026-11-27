@@ -1,21 +1,21 @@
-// Module ID: 19171
-// Function ID: 19172
+// Module ID: 19187
+// Function ID: 19188
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 19172, 4910, 4892, 4949, 4914, 4975, 4985, 1387, 1071, 21, 5043, 575, 504, 19174, 1501, 1629, 7603, 12118, 19173, 19177, 4980, 8528, 1083, 2118, 5099, 6046, 1112, 5722, 2188, 4900, 18791, 9004, 5634, 5659, 11436, 6144, 7941, 6140, 18795, 1379, 2]
+// Dependencies: [32, 5, 19, 17, 19188, 4910, 4892, 4949, 4914, 4975, 4985, 1387, 1071, 21, 5043, 575, 504, 19190, 1501, 1629, 7603, 12126, 19189, 19193, 4980, 8529, 1083, 2118, 5099, 6046, 1112, 5722, 2188, 4900, 18809, 9005, 5634, 5659, 11437, 6144, 7941, 6140, 18813, 1379, 2]
 // Exports: default
 
-// Module 19171 (ChannelSettingsPermissionsOverrides)
+// Module 19187 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4900 */;
 import GuildRecord from "GuildRecord" /* 4910 */;
 import TableRowGroup2 from "TableRowGroup" /* 6140 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12118 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18791 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12126 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18809 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19172 */;
+import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19188 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -119,7 +119,7 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   let obj3 = channelId(7603);
   const appChannelApplication = obj3.useAppChannelApplication(stateFromStores);
-  let obj4 = channelId(12118);
+  let obj4 = channelId(12126);
   const appChannelBotUserId = obj4.useAppChannelBotUserId(stateFromStores);
   let tmp9 = null;
   if (appChannelBotUserId === id) {
@@ -167,7 +167,7 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -340,7 +340,7 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
   const tmp12 = closure_20(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp12 };
-    tmp11Result = tmp11(tmp5(11436), obj6);
+    tmp11Result = tmp11(tmp5(11437), obj6);
   } else {
     let tmp13 = GuildRoleStore;
     let TableRow = tmp2(6144).TableRow;

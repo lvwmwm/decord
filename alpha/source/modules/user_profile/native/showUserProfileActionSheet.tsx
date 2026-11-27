@@ -1,7 +1,7 @@
 // Module ID: 6133
 // Function ID: 6134
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5847, 4985, 3, 1387, 2120, 6134, 4868, 6136, 5257, 14846, 2]
+// Dependencies: [5, 5847, 4985, 3, 1387, 2120, 6134, 4868, 6136, 5257, 14852, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
 // Module 6133 (showUserProfileActionSheet)
@@ -38,7 +38,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       return openLazy(tmp8, combined, obj, str);
     }
   }
-  const tmp21 = asyncRequire(14846, dependencyMap.paths);
+  const tmp21 = asyncRequire(14852, dependencyMap.paths);
   const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const combined1 = "" + UserProfile + ignoreBlockedSpeedBump.userId;
@@ -80,7 +80,7 @@ export function showUserProfileActionSheetPostConnection(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -158,7 +158,7 @@ export function showUserProfileActionSheetPostConnection(arg0) {
             showUserProfileActionSheet(closure_129_0);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp34) {
         if (0 === c3) {

@@ -1,28 +1,28 @@
-// Module ID: 9230
-// Function ID: 9231
+// Module ID: 9231
+// Function ID: 9232
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 9114, 9115, 502, 2179, 9104, 9154, 9105, 1071, 5760, 1389, 21, 3, 9113, 572, 9231, 1251, 9232, 2169, 9123, 4856, 5806, 1256, 6047, 1112, 9233, 2120, 6130, 9102, 2]
+// Dependencies: [109, 5, 19, 17, 9115, 9116, 502, 2179, 9105, 9155, 9106, 1071, 5760, 1389, 21, 3, 9114, 572, 9232, 1251, 9233, 2169, 9124, 4856, 5806, 1256, 6047, 1112, 9234, 2120, 6130, 9103, 2]
 
-// Module 9230 (GPlayManager)
+// Module 9231 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import PaymentConstants from "PaymentConstants" /* 5760 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5806 */;
-import premium_ProductIds from "premium/ProductIds" /* 9113 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9154 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9231 */;
+import premium_ProductIds from "premium/ProductIds" /* 9114 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9155 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9232 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 9114 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 9115 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 9115 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 9116 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import IAPStore from "IAPStore" /* 9104 */;
-import Constants_mod from "Constants" /* 9105 */;
+import IAPStore from "IAPStore" /* 9105 */;
+import Constants_mod from "Constants" /* 9106 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let obj = function _handlePurchaseUpdated() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ let obj = function _handlePurchaseUpdated() {
                 return { value, done: true };
               } else if (closure_131_11.isPurchasingProduct(purchase.productId)) {
                 c7 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } else {
                 closure_1 = closure_131_12.getState().analyticsByProductId[purchase.productId];
                 giftOptionsForKey = closure_131_25[purchase.productId];
@@ -193,7 +193,7 @@ let obj = function _handlePurchaseUpdated() {
                   const obj50 = closure_131_1(closure_131_2[17]);
                   obj50.dispatch(obj17);
                   c7 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   c6 = 7;
                   c7 = 1;
@@ -498,7 +498,7 @@ obj = function _executePendingDowngrade() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -595,7 +595,7 @@ obj = function _executePendingDowngrade() {
           obj9.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp62) {
         closure_2 = tmp62;
         if (0 === c3) {
@@ -630,7 +630,7 @@ obj = function _fetchAndAlertActiveSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -699,7 +699,7 @@ obj = function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj2);
             });
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp21) {

@@ -1,10 +1,10 @@
-// Module ID: 13776
-// Function ID: 13777
+// Module ID: 13783
+// Function ID: 13784
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 13754, 21, 5043, 575, 8088, 7052, 4906, 5634, 1112, 1629, 5641, 1186, 1501, 7751, 7407, 13768, 5792, 13762, 7482, 2]
+// Dependencies: [5, 32, 19, 17, 13761, 21, 5043, 575, 8088, 7052, 4906, 5634, 1112, 1629, 5641, 1186, 1501, 7751, 7407, 13775, 5792, 13769, 7482, 2]
 // Exports: default
 
-// Module 13776 (HubEmailConnectionGuildSelect)
+// Module 13783 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5634 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
 import _mod8088 from "module_8088" /* 8088 */;
-import HubConstants from "HubConstants" /* 13754 */;
+import HubConstants from "HubConstants" /* 13761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -182,7 +182,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -237,7 +237,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

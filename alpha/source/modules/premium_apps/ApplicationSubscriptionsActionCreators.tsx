@@ -1,12 +1,12 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 15922
+// Function ID: 15923
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1071, 572, 10119, 7614, 2]
+// Dependencies: [5, 1071, 572, 10120, 7614, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 15915 (ApplicationSubscriptionsActionCreators)
+// Module 15922 (ApplicationSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 10119 */;
+import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 10120 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
             const obj3 = closure_132_0(closure_132_2[2]);
             obj3.dispatch(obj7);
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -149,7 +149,7 @@ obj = function _fetchEntitlementsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ obj = function _fetchEntitlementsForGuild() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -231,7 +231,7 @@ obj = function _fetchSubscriptionListingForPlan() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ obj = function _fetchSubscriptionListingForPlan() {
               return obj;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           closure_5 = tmp30;

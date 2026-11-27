@@ -1,10 +1,10 @@
-// Module ID: 10406
-// Function ID: 10407
+// Module ID: 10407
+// Function ID: 10408
 // Name: SoundboardActionCreators
-// Dependencies: [5, 6923, 6925, 1071, 1081, 1285, 7089, 572, 6365, 5793, 10407, 1256, 4873, 12, 6046, 1112, 8935, 2]
+// Dependencies: [5, 6923, 6925, 1071, 1081, 1285, 7089, 572, 6365, 5793, 10408, 1256, 4873, 12, 6046, 1112, 8936, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, stopSoundLocally, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 10406 (SoundboardActionCreators)
+// Module 10407 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
@@ -24,7 +24,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f97585 = (arg0) => {
+const f97818 = (arg0) => {
   closure_0 = arg0;
   function onSoundboardActionCompleted() {
     const item = closure_0.forEach((item) => {
@@ -51,7 +51,7 @@ let obj = function _fetchDefaultSoundsFromApi2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -112,7 +112,7 @@ let obj = function _fetchDefaultSoundsFromApi2() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         closure_2 = tmp27;
@@ -137,7 +137,7 @@ function _maybeFetchDefaultSounds() {
     let closure_0 = ["SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS", "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f97585);
+    const promise = new Promise(f97818);
     _fetchDefaultSoundsFromApi();
     return promise;
   } else {
@@ -153,7 +153,7 @@ function _maybeFetchGuildSoundboardSounds() {
     _require = ["SOUNDBOARD_SOUNDS_RECEIVED"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f97585);
+    const promise = new Promise(f97818);
     const obj2 = DispatcherDefault;
     obj2.dispatch({ type: "GUILD_SOUNDBOARD_FETCH" });
     const obj4 = { type: "REQUEST_SOUNDBOARD_SOUNDS", guildIds: guildIdsToFetchSoundsFor };
@@ -223,7 +223,7 @@ obj = function _uploadSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -317,7 +317,7 @@ obj = function _updateSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -402,7 +402,7 @@ obj = function _deleteSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -434,7 +434,7 @@ obj = function _deleteSound() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c2 = 3;
@@ -459,7 +459,7 @@ obj = function _fetchSoundGuildData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;

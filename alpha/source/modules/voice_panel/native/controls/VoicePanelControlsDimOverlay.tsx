@@ -1,15 +1,15 @@
-// Module ID: 19589
-// Function ID: 19590
+// Module ID: 19605
+// Function ID: 19606
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 15405, 11782, 11780, 21, 11781, 1654, 19552, 5644, 15839, 5609, 2]
+// Dependencies: [19, 15412, 11790, 11788, 21, 11789, 1654, 19568, 5644, 15846, 5609, 2]
 
-// Module 19589 (VoicePanelControlsDimOverlay)
+// Module 19605 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11780 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import BackdropConstants from "BackdropConstants" /* 15405 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11788 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import BackdropConstants from "BackdropConstants" /* 15412 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11790 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -56,7 +56,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   let items = [closure_9, windowDimensions, , , , , , , , , ];
   const useDerivedValue = setControlsMode(1654).useDerivedValue;
   const tmp4 = setControlsMode(1654);
-  items[2] = setControlsMode(19552).getDrawerSpec;
+  items[2] = setControlsMode(19568).getDrawerSpec;
   items[3] = safeArea;
   items[4] = controlsSpecs;
   items[5] = VoicePanelControlsModes;
@@ -119,7 +119,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   items4[1] = setControlsMode(5644).withSpring;
   items4[2] = derivedValue;
   items4[3] = closure_5;
-  items4[4] = setControlsMode(15839).accessibilityPreferencesSharedValue;
+  items4[4] = setControlsMode(15846).accessibilityPreferencesSharedValue;
   items4[5] = derivedValue1;
   c0 = undefined;
   c1 = undefined;

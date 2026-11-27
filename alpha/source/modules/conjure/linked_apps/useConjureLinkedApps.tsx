@@ -1,10 +1,10 @@
-// Module ID: 18542
-// Function ID: 18543
+// Module ID: 18553
+// Function ID: 18554
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6934, 504, 18543, 1112, 4245, 2]
+// Dependencies: [5, 32, 19, 6934, 504, 18554, 1112, 4245, 2]
 // Exports: default
 
-// Module 18542 (useConjureLinkedApps)
+// Module 18553 (useConjureLinkedApps)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -73,10 +73,10 @@ export default function useConjureLinkedApps(projectId, arg1) {
   let items1 = [ConjureProjectStore];
   const items2 = [projectId];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
-    const f133524 = (id) => id.id;
+    const f133934 = (id) => id.id;
     const items = [...ConjureProjectStore.getOwnedProjects(), ...ConjureProjectStore.getSharedWithMeProjects(), ...ConjureProjectStore.getRailProjects()];
-    const items1 = [...new Set(items.map(f133524))];
-    new Set(items.map(f133524));
+    const items1 = [...new Set(items.map(f133934))];
+    new Set(items.map(f133934));
     const found = items1.filter((item) => item !== current);
     return found.sort();
   }, items2);
@@ -100,7 +100,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -147,11 +147,11 @@ export default function useConjureLinkedApps(projectId, arg1) {
                 } else {
                   c2 = 0;
                   c4 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             if (0 === c2) {
@@ -192,7 +192,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -237,7 +237,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             if (0 === c2) {
@@ -317,7 +317,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -371,7 +371,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
               }));
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           if (0 === c4) {
@@ -403,7 +403,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -452,7 +452,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             c3((arr) => arr.filter((project_id) => project_id.project_id !== closure_1_0));
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         if (0 === c3) {

@@ -1,9 +1,9 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8314
+// Function ID: 8315
 // Name: Guilds
 // Dependencies: [5, 4910, 502, 4955, 4949, 4914, 3, 4921, 4953, 4951, 4906, 2]
 
-// Module 8313 (Guilds)
+// Module 8314 (Guilds)
 import LoggerDefault from "Logger" /* 3 */;
 import GuildRecordUtilsAll from "GuildRecordUtils" /* 4906 */;
 import GuildRecord from "GuildRecord" /* 4910 */;
@@ -73,7 +73,7 @@ class Guilds {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ class Guilds {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

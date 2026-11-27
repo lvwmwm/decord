@@ -1,10 +1,10 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16708
+// Function ID: 16709
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1071, 21, 5043, 575, 4868, 11445, 1112, 8546, 12409, 7756, 16702, 5634, 9913, 6145, 2188, 5641, 2]
+// Dependencies: [17, 1071, 21, 5043, 575, 4868, 11446, 1112, 8547, 12417, 7756, 16709, 5634, 9914, 6145, 2188, 5641, 2]
 // Exports: default
 
-// Module 16701 (QuestDisclosureModalInner)
+// Module 16708 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import Text_Text from "Text/Text" /* 5634 */;
@@ -79,7 +79,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
     const intl = tmp2(1112).intl;
     obj.text = intl.string(require("intl").t.xQSdPv);
     items1 = [obj, , ];
-    let obj2 = { icon: closure_6(tmp2(12409).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1112).t.mYt7hQ) };
+    let obj2 = { icon: closure_6(tmp2(12417).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1112).t.mYt7hQ) };
     intl2 = tmp2(1112).intl;
     items1[1] = obj2;
     const obj3 = { icon: closure_6(require("GameControllerIcon").GameControllerIcon, { size: "xs" }), text: intl3.string(require("intl").t.XAsWxQ) };

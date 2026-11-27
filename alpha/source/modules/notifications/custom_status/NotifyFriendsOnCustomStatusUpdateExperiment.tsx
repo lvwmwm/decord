@@ -1,10 +1,10 @@
-// Module ID: 17616
-// Function ID: 17617
+// Module ID: 17623
+// Function ID: 17624
 // Name: NotifyFriendsOnCustomStatusUpdateExperiment
 // Dependencies: [1451, 2]
 // Exports: getNotifyFriendsOnCustomStatusUpdateExperiment, useNotifyFriendsOnCustomStatusUpdateExperiment
 
-// Module 17616 (NotifyFriendsOnCustomStatusUpdateExperiment)
+// Module 17623 (NotifyFriendsOnCustomStatusUpdateExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15400
+// Function ID: 15401
 // Name: GuildActionSheetGameProfileButton
-// Dependencies: [19, 21, 8745, 8754, 15391, 15392, 7944, 1112, 7757, 5257, 15394, 15370, 2]
+// Dependencies: [19, 21, 8746, 8755, 15398, 15399, 7944, 1112, 7757, 5257, 15401, 15377, 2]
 // Exports: default
 
-// Module 15393 (GuildActionSheetGameProfileButton)
+// Module 15400 (GuildActionSheetGameProfileButton)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8745 */;
-import GuildActionSheetUtils from "GuildActionSheetUtils" /* 15370 */;
-import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 15391 */;
-import GuildActionSheetTypes from "GuildActionSheetTypes" /* 15392 */;
-import GameProfilesServerPreviewExperiment from "GameProfilesServerPreviewExperiment" /* 15394 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8746 */;
+import GuildActionSheetUtils from "GuildActionSheetUtils" /* 15377 */;
+import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 15398 */;
+import GuildActionSheetTypes from "GuildActionSheetTypes" /* 15399 */;
+import GameProfilesServerPreviewExperiment from "GameProfilesServerPreviewExperiment" /* 15401 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ function GameProfileButton(applicationId) {
   let closure_1;
   const guildId = applicationId.guildId;
   importDefault = undefined;
-  let obj = { applicationId: applicationId.applicationId, source: guildId(8754).GameProfileSources.GuildActionSheet, trackEntryPointImpression: true };
+  let obj = { applicationId: applicationId.applicationId, source: guildId(8755).GameProfileSources.GuildActionSheet, trackEntryPointImpression: true };
   let obj2 = {
     onOpened(gameId) {
       const obj = GuildActionSheetAnalyticsUtils;

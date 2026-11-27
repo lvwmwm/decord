@@ -1,21 +1,21 @@
-// Module ID: 18201
-// Function ID: 18202
+// Module ID: 18208
+// Function ID: 18209
 // Name: useVoicePanelVideoToggle
-// Dependencies: [19, 10022, 4892, 4914, 2132, 4975, 5855, 21, 504, 6823, 14083, 6048, 14086, 1112, 18202, 8636, 10044, 2]
+// Dependencies: [19, 10023, 4892, 4914, 2132, 4975, 5855, 21, 504, 6823, 14090, 6048, 14093, 1112, 18209, 8637, 10045, 2]
 // Exports: default
 
-// Module 18201 (useVoicePanelVideoToggle)
+// Module 18208 (useVoicePanelVideoToggle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import Constants from "Constants" /* 5855 */;
 import useAlertStore from "useAlertStore" /* 6048 */;
 import StreamPermissionUtils from "StreamPermissionUtils" /* 6823 */;
-import CallsUtils from "CallsUtils" /* 8636 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10044 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14086 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 18202 */;
+import CallsUtils from "CallsUtils" /* 8637 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10045 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14093 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 18209 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10022 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10023 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;

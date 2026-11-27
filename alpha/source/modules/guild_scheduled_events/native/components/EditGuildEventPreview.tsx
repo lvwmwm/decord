@@ -1,18 +1,18 @@
-// Module ID: 8585
-// Function ID: 8586
+// Module ID: 8586
+// Function ID: 8587
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 4892, 1071, 21, 5043, 575, 1379, 504, 5659, 8480, 8586, 5634, 1112, 8587, 1186, 8591, 8479, 7480, 8592, 5641, 8466, 6047, 8610, 2120, 2]
+// Dependencies: [19, 17, 4892, 1071, 21, 5043, 575, 1379, 504, 5659, 8481, 8587, 5634, 1112, 8588, 1186, 8592, 8480, 7480, 8593, 5641, 8467, 6047, 8611, 2120, 2]
 // Exports: default
 
-// Module 8585 (EditGuildEventPreview)
+// Module 8586 (EditGuildEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
-import ScheduleUtils from "ScheduleUtils" /* 8466 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8479 */;
+import ScheduleUtils from "ScheduleUtils" /* 8467 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8480 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp9;
-const guildEventDetailsParser = tmp9(8591);
+const guildEventDetailsParser = tmp9(8592);
 function PreviewBody(event) {
   let channelContainer;
   let closure_2;
@@ -63,7 +63,7 @@ function PreviewBody(event) {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  let tmp2Result = tmp2(8586);
+  let tmp2Result = tmp2(8587);
   eventLocationIconSource = tmp2Result.getEventLocationIconSource(event, stateFromStores, true);
   let obj3 = { style: tmp.header, children: items2 };
   let tmp9 = closure_7;
@@ -79,7 +79,7 @@ function PreviewBody(event) {
   if (null != stateFromStores) {
     const intl2 = tmp2(1112).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const obj6 = { channelName: tmp5(8587)(obj7) };
+    const obj6 = { channelName: tmp5(8588)(obj7) };
     const sxcQPE = tmp2(1112).t.sxcQPE;
     obj7 = { channel: stateFromStores };
     formatToPlainStringResult = formatToPlainString(sxcQPE, obj6);

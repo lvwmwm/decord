@@ -1,10 +1,10 @@
-// Module ID: 8363
-// Function ID: 8364
+// Module ID: 8364
+// Function ID: 8365
 // Name: AdDecisionUtils
 // Dependencies: [1088, 6878, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredPlayable, getDeliveredQuestId, isAdDecisionValid, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 8363 (AdDecisionUtils)
+// Module 8364 (AdDecisionUtils)
 import DurationsDefault from "Durations" /* 1088 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
 import size from "module_2" /* 2 */;

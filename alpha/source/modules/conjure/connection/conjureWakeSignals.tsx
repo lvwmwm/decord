@@ -1,10 +1,10 @@
-// Module ID: 14760
-// Function ID: 14761
+// Module ID: 14766
+// Function ID: 14767
 // Name: conjureWakeSignals
 // Dependencies: [1379, 4854, 1479, 2]
 // Exports: listenForConjureWake
 
-// Module 14760 (conjureWakeSignals)
+// Module 14766 (conjureWakeSignals)
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import NetworkUtilsDefault from "NetworkUtils" /* 1479 */;
 import DiscordNativeDefault from "DiscordNative" /* 4854 */;

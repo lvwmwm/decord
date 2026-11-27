@@ -49,7 +49,7 @@ let obj = function _deletePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ let obj = function _deletePaymentSource() {
             obj.dispatch(obj10);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_3 = tmp25;
@@ -137,7 +137,7 @@ obj = function _updatePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -196,7 +196,7 @@ obj = function _updatePaymentSource() {
             obj.dispatch(obj13);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_4 = tmp25;
@@ -224,7 +224,7 @@ obj = function _fetchPaymentSources() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -243,7 +243,7 @@ obj = function _fetchPaymentSources() {
             value = undefined;
             if (BillingInfoStore.isPaymentSourceFetching) {
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               c3 = 1;
               const HTTP = HTTPUtils.HTTP;
@@ -309,7 +309,7 @@ obj = function _fetchPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -385,7 +385,7 @@ obj = function _fetchWalletInformation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -488,7 +488,7 @@ obj = function _fetchSubscriptions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -585,7 +585,7 @@ obj = function _getPerksRelevance() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -634,7 +634,7 @@ obj = function _getPerksRelevance() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;
@@ -719,7 +719,7 @@ obj = function _createSubscription() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let gift_info_options;
@@ -963,7 +963,7 @@ obj = function _payInvoiceManually() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1193,7 +1193,7 @@ obj = function _cancelSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1285,7 +1285,7 @@ obj = function _updateSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1487,7 +1487,7 @@ obj = function _voidPendingPayment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1518,7 +1518,7 @@ obj = function _voidPendingPayment() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1542,7 +1542,7 @@ obj = function _fetchIpCountryCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -1653,7 +1653,7 @@ obj = function _fetchIpLocation() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -1776,7 +1776,7 @@ obj = function _redeemReactivationOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1835,7 +1835,7 @@ obj = function _redeemReactivationOffer() {
             obj9.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_4 = tmp25;
@@ -1868,7 +1868,7 @@ obj = function _redeemUserDiscountOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1917,7 +1917,7 @@ obj = function _redeemUserDiscountOffer() {
             obj.dispatch(obj7);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp24) {
           closure_3 = tmp24;

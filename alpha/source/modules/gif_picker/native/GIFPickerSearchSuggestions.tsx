@@ -1,13 +1,13 @@
-// Module ID: 10815
-// Function ID: 10816
+// Module ID: 10816
+// Function ID: 10817
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 10807, 21, 5043, 575, 504, 5634, 1112, 5641, 2]
+// Dependencies: [19, 17, 10808, 21, 5043, 575, 504, 5634, 1112, 5641, 2]
 
-// Module 10815 (GIFPickerSearchSuggestions)
+// Module 10816 (GIFPickerSearchSuggestions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10807 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10808 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

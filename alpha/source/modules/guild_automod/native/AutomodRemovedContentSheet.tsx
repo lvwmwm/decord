@@ -1,17 +1,17 @@
-// Module ID: 19660
-// Function ID: 19661
+// Module ID: 19676
+// Function ID: 19677
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1071, 21, 8223, 5043, 575, 1112, 6393, 7546, 7507, 9080, 5634, 2]
+// Dependencies: [19, 17, 1071, 21, 8224, 5043, 575, 1112, 6393, 7546, 7507, 9081, 5634, 2]
 // Exports: default
 
-// Module 19660 (AutomodRemovedContentSheet)
+// Module 19676 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6393 */;
-import RowGeneratorDefault from "RowGenerator" /* 8223 */;
-import ChatItemDefault from "ChatItem" /* 9080 */;
+import RowGeneratorDefault from "RowGenerator" /* 8224 */;
+import ChatItemDefault from "ChatItem" /* 9081 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

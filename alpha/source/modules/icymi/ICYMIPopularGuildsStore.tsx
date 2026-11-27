@@ -1,9 +1,9 @@
-// Module ID: 18332
-// Function ID: 18333
+// Module ID: 18339
+// Function ID: 18340
 // Name: ICYMIPopularGuildsStore
-// Dependencies: [4914, 4906, 8935, 504, 572, 2]
+// Dependencies: [4914, 4906, 8936, 504, 572, 2]
 
-// Module 18332 (ICYMIPopularGuildsStore)
+// Module 18339 (ICYMIPopularGuildsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GuildStore from "GuildStore" /* 4914 */;

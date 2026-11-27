@@ -1,23 +1,23 @@
-// Module ID: 19163
-// Function ID: 19164
+// Module ID: 19179
+// Function ID: 19180
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 19164, 4892, 4955, 4949, 4914, 4975, 4985, 1387, 7842, 1071, 21, 5043, 575, 1501, 12118, 504, 8526, 8527, 8528, 1112, 5659, 6046, 8555, 4980, 6115, 6140, 7549, 7941, 6144, 13095, 12116, 7197, 6013, 8616, 8617, 19165, 19167, 2]
+// Dependencies: [32, 5, 19, 17, 19180, 4892, 4955, 4949, 4914, 4975, 4985, 1387, 7842, 1071, 21, 5043, 575, 1501, 12126, 504, 8527, 8528, 8529, 1112, 5659, 6046, 8556, 4980, 6115, 6140, 7549, 7941, 6144, 13103, 12124, 7197, 6013, 8617, 8618, 19181, 19183, 2]
 // Exports: default
 
-// Module 19163 (EasyChannelPermissionSettings)
+// Module 19179 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
 import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7842 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8526 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8527 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8555 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12116 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8527 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8528 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8556 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12124 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19164 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19180 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
@@ -82,7 +82,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           const items = [tmp];
           c2 = 2;
@@ -170,7 +170,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           const intl = title(c3[23]).intl;
           const string = intl.string;
@@ -255,7 +255,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           intl4 = title(c3[23]).intl;
           show(obj9);
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp54) {
           c3 = 3;
           throw tmp54;
@@ -287,7 +287,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "top" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

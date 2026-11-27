@@ -1,16 +1,16 @@
-// Module ID: 9417
-// Function ID: 9418
+// Module ID: 9418
+// Function ID: 9419
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 5043, 575, 38, 2113, 5730, 9418, 9419, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 38, 2113, 5730, 9419, 9420, 2]
 // Exports: default
 
-// Module 9417 (AvatarDecorationSampleV2)
+// Module 9418 (AvatarDecorationSampleV2)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9419 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9420 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -55,7 +55,7 @@ export default function AvatarDecorationSampleV2(arg0) {
   const obj = { style: items, resizeMode: "contain", source: avatarSource, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(9418);
+    avatarSource = tmp2(9419);
   }
   const obj2 = { children: items1 };
   items1 = [React3(tmp9, obj), ];

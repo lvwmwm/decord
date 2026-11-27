@@ -1,12 +1,12 @@
-// Module ID: 14230
-// Function ID: 14231
+// Module ID: 14237
+// Function ID: 14238
 // Name: useGameProfileLinks
-// Dependencies: [19, 8764, 14174, 1255, 2]
+// Dependencies: [19, 8765, 14181, 1255, 2]
 // Exports: useGameProfileLinks
 
-// Module 14230 (useGameProfileLinks)
+// Module 14237 (useGameProfileLinks)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 14174 */;
+import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 14181 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

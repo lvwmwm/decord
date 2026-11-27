@@ -1,9 +1,9 @@
-// Module ID: 19688
-// Function ID: 19689
+// Module ID: 19704
+// Function ID: 19705
 // Name: CustomStatusManager
-// Dependencies: [7654, 1071, 4887, 7475, 4868, 10618, 4873, 1226, 10617, 2]
+// Dependencies: [7654, 1071, 4887, 7475, 4868, 10619, 4873, 1226, 10618, 2]
 
-// Module 19688 (CustomStatusManager)
+// Module 19704 (CustomStatusManager)
 import UserSettings from "UserSettings" /* 4868 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4873 */;
 import Timers from "Timers" /* 4887 */;

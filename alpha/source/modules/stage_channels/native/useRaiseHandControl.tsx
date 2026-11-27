@@ -1,18 +1,18 @@
-// Module ID: 10334
-// Function ID: 10335
+// Module ID: 10335
+// Function ID: 10336
 // Name: useRaiseHandControl
-// Dependencies: [32, 19, 21, 10335, 10336, 6854, 10337, 5257, 10338, 7870, 6828, 2]
+// Dependencies: [32, 19, 21, 10336, 10337, 6854, 10338, 5257, 10339, 7870, 6828, 2]
 // Exports: default
 
-// Module 10334 (useRaiseHandControl)
+// Module 10335 (useRaiseHandControl)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6828 */;
 import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6854 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7870 */;
-import useLocalStorageState from "useLocalStorageState" /* 10336 */;
-import useCanRaiseHand from "useCanRaiseHand" /* 10337 */;
-import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet" /* 10338 */;
+import useLocalStorageState from "useLocalStorageState" /* 10337 */;
+import useCanRaiseHand from "useCanRaiseHand" /* 10338 */;
+import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet" /* 10339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ export default function useRaiseHandControl(id) {
   let first;
   let shouldAgeVerifyToSpeakForCurrentUser;
   let tmp2;
-  let tmp = shouldAgeVerifyToSpeakForCurrentUser(first(10335)(id), 2);
+  let tmp = shouldAgeVerifyToSpeakForCurrentUser(first(10336)(id), 2);
   [tmp2, require] = tmp;
   let obj = useLocalStorageState;
   const tmp3 = shouldAgeVerifyToSpeakForCurrentUser(obj.useLocalStorageState("age-verification-stage-popover-dismissed", false), 2);

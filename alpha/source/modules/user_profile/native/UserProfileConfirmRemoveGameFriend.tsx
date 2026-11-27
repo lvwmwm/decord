@@ -1,12 +1,12 @@
-// Module ID: 13621
-// Function ID: 13622
+// Module ID: 13628
+// Function ID: 13629
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 6382, 11358, 6052, 1112, 6052, 2]
+// Dependencies: [19, 21, 6382, 11359, 6052, 1112, 6052, 2]
 // Exports: default
 
-// Module 13621 (UserProfileConfirmRemoveGameFriend)
+// Module 13628 (UserProfileConfirmRemoveGameFriend)
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6382 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11358 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11359 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

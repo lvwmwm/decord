@@ -1,12 +1,12 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11906
+// Function ID: 11907
 // Name: PinotMemberNoticeHeaderArrow
-// Dependencies: [32, 19, 17, 4892, 21, 11897, 5043, 575, 5607, 504, 11899, 11878, 11887, 7946, 2]
+// Dependencies: [32, 19, 17, 4892, 21, 11905, 5043, 575, 5607, 504, 11907, 11886, 11895, 7946, 2]
 // Exports: PinotMemberNoticeHeaderArrow
 
-// Module 11898 (PinotMemberNoticeHeaderArrow)
+// Module 11906 (PinotMemberNoticeHeaderArrow)
 import nativeDefault from "native" /* 575 */;
-import PinotMemberNoticeCaret from "PinotMemberNoticeCaret" /* 11897 */;
+import PinotMemberNoticeCaret from "PinotMemberNoticeCaret" /* 11905 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

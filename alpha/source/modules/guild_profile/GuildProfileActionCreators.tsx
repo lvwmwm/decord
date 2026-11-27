@@ -1,15 +1,15 @@
-// Module ID: 8544
-// Function ID: 8545
+// Module ID: 8545
+// Function ID: 8546
 // Name: GuildProfileActionCreators
-// Dependencies: [5, 5077, 4955, 8542, 1071, 572, 1285, 7012, 5792, 1256, 2]
+// Dependencies: [5, 5077, 4955, 8543, 1071, 572, 1285, 7012, 5792, 1256, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 8544 (GuildProfileActionCreators)
+// Module 8545 (GuildProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5792 */;
 import GuildProfileBuilders from "GuildProfileBuilders" /* 7012 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 8542 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 8543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5077 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
@@ -38,7 +38,7 @@ let obj = function _fetchGuildTopGames() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

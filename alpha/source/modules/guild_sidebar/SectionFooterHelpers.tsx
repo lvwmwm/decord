@@ -1,14 +1,14 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 17975
+// Function ID: 17976
 // Name: SectionFooterHelpers
-// Dependencies: [7474, 4975, 8292, 1071, 8286, 4917, 2]
+// Dependencies: [7474, 4975, 8293, 1071, 8287, 4917, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 17968 (SectionFooterHelpers)
+// Module 17975 (SectionFooterHelpers)
 import Constants from "Constants" /* 1071 */;
 import FavoritesUtils from "FavoritesUtils" /* 4917 */;
-import ChannelListState from "ChannelListState" /* 8286 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 8292 */;
+import ChannelListState from "ChannelListState" /* 8287 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 8293 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 7474 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import size from "module_2" /* 2 */;
@@ -33,18 +33,18 @@ export function getSectionFooterConfig(guildChannels, optInChannelsEnabled, sect
   }
   let tmp6 = !tmp3;
   if (tmp6) {
-    let tmp7 = section === tmp(8286).SECTION_INDEX_GUILD_ACTIONS;
+    let tmp7 = section === tmp(8287).SECTION_INDEX_GUILD_ACTIONS;
     if (!tmp7) {
       let tmp8;
       const tmpResult = FavoritesUtils;
       if (tmpResult.isFavoritesGuildId(guildChannels.id)) {
         tmp8 = section !== guildChannels.getSections(false).length - 1;
       } else {
-        tmp8 = section === tmp(8286).SECTION_INDEX_FAVORITES;
+        tmp8 = section === tmp(8287).SECTION_INDEX_FAVORITES;
         if (!tmp8) {
           let tmp10 = optInChannelsEnabled;
           if (tmp10) {
-            let tmp11 = section !== tmp(8286).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp11 = section !== tmp(8287).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp11) {
               let flag2 = section === guildChannels.recentsSectionNumber;
               if (!flag2) {

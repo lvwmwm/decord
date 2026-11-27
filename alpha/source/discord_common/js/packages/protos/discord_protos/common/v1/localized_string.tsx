@@ -1,9 +1,9 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 9170
+// Function ID: 9171
 // Name: localized_string
 // Dependencies: [32, 1196, 2]
 
-// Module 9169 (localized_string)
+// Module 9170 (localized_string)
 import _mod1196 from "module_1196" /* 1196 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 13619
-// Function ID: 13620
+// Module ID: 13626
+// Function ID: 13627
 // Name: UserProfileConfirmCancelFriendRequest
 // Dependencies: [19, 21, 6052, 1112, 6052, 2]
 // Exports: default
 
-// Module 13619 (UserProfileConfirmCancelFriendRequest)
+// Module 13626 (UserProfileConfirmCancelFriendRequest)
 import intl5 from "intl" /* 1112 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
 import react from "react" /* 19 */;

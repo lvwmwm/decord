@@ -1,20 +1,20 @@
-// Module ID: 14752
-// Function ID: 14753
+// Module ID: 14759
+// Function ID: 14760
 // Name: conjureSettingValues
 // Dependencies: [32, 2]
-// Exports: conjureSecretsSubmission, conjureSettingBaseline, conjureSettingDraftKey, conjureSettingStoredValue, conjureSettingValuesEqual, conjureSettingValuesSubmission, mergeSubmittedServerValues
+// Exports: conjureSecretsSubmission, conjureSettingAnyStoredValue, conjureSettingBaseline, conjureSettingDraftKey, conjureSettingStoredValue, conjureSettingValuesEqual, conjureSettingValuesSubmission, mergeSubmittedServerValues
 
-// Module 14752 (conjureSettingValues)
+// Module 14759 (conjureSettingValues)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-function conjureSettingSubmitValue(found, num) {
-  if ("number" === found.type) {
-    if (typeof num === "number") {
-      return num;
+function conjureSettingSubmitValue(def2, values) {
+  if ("number" === def2.type) {
+    if (typeof values === "number") {
+      return values;
     } else {
       const _String2 = String;
-      const str6 = String(num);
+      const str6 = String(values);
       const str7 = str6.trim();
       if ("" === str7) {
         return null;
@@ -29,21 +29,21 @@ function conjureSettingSubmitValue(found, num) {
         return tmp4;
       }
     }
-  } else if (true === found.multiple) {
+  } else if (true === def2.multiple) {
     const _Array = Array;
-    found = num;
-    if (!Array.isArray(num)) {
+    let found = values;
+    if (!Array.isArray(values)) {
       const _String = String;
-      const str = String(num);
+      const str = String(values);
       const parts = str.split(/[\s,]+/);
       found = parts.filter((item) => "" !== item);
     }
     if (0 === found.length) {
       let items = null;
-      if ("game" === found.type) {
+      if ("game" === def2.type) {
         const _Array2 = Array;
         items = null;
-        if (Array.isArray(num)) {
+        if (Array.isArray(values)) {
           items = [];
         }
       }
@@ -52,8 +52,8 @@ function conjureSettingSubmitValue(found, num) {
     return found;
   } else {
     let tmp;
-    if (typeof num !== "string") {
-      tmp = num;
+    if (typeof values !== "string") {
+      tmp = values;
     } else {
       tmp = null;
     }
@@ -99,16 +99,16 @@ export function conjureSettingBaseline(type, arg1) {
   }
   return tmp;
 }
-export function conjureSettingDraftKey(per_server, serverId) {
-  if (true === per_server.per_server) {
+export function conjureSettingDraftKey(def2, serverId) {
+  if (true === def2.per_server) {
     let key;
     if (null != serverId) {
       const _HermesInternal = HermesInternal;
-      key = "" + serverId + ":" + per_server.key;
+      key = "" + serverId + ":" + def2.key;
     }
     return key;
   }
-  key = per_server.key;
+  key = def2.key;
 }
 export function conjureSettingStoredValue(stateFromStores, per_server, serverId) {
   let tmp3;
@@ -131,6 +131,22 @@ export function conjureSettingStoredValue(stateFromStores, per_server, serverId)
     tmp3 = tmp4;
   }
   return tmp3;
+}
+export function conjureSettingAnyStoredValue(server_values, found) {
+  let mapped;
+  if (true === found.per_server) {
+    const tmp = globalThis;
+    server_values = server_values.server_values;
+    const _Object = Object;
+    if (server_values == null) {
+      server_values = {};
+    }
+    const values2 = values(server_values);
+    mapped = values2.map((item) => item[found.key]);
+  } else {
+    mapped = [server_values.values[found.key]];
+  }
+  return mapped.find((item) => null != item && "" !== item);
 }
 export function conjureSettingValuesSubmission(stateFromStores, arg1) {
   let closure_3;

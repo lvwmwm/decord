@@ -1,10 +1,10 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17167
+// Function ID: 17168
 // Name: SupportUtils
 // Dependencies: [5, 2189, 1378, 5000, 5722, 2188, 2]
 // Exports: emailSupport
 
-// Module 17160 (SupportUtils)
+// Module 17167 (SupportUtils)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import LinkingDefault from "Linking" /* 5722 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -40,7 +40,7 @@ let obj = function _emailSupport() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -74,7 +74,7 @@ let obj = function _emailSupport() {
         } else {
           openURL(value);
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c3 = 3;

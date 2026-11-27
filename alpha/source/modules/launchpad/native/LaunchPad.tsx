@@ -1,9 +1,9 @@
-// Module ID: 19339
-// Function ID: 19340
+// Module ID: 19355
+// Function ID: 19356
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 5258, 8284, 6964, 6931, 4896, 502, 4892, 8384, 6976, 4914, 15244, 6932, 6164, 6167, 5691, 1071, 21, 575, 5043, 6152, 5634, 504, 1654, 5228, 1707, 7406, 1112, 14909, 8597, 17202, 1379, 16023, 11504, 8959, 5219, 8960, 8947, 1495, 1629, 8948, 13828, 1256, 19340, 19347, 17396, 19360, 19361, 2]
+// Dependencies: [32, 19, 17, 5258, 8285, 6964, 6931, 4896, 502, 4892, 8385, 6976, 4914, 15251, 6932, 6164, 6167, 5691, 1071, 21, 575, 5043, 6152, 5634, 504, 1654, 5228, 1707, 7406, 1112, 14916, 8598, 17209, 1379, 16030, 11512, 8960, 5219, 8961, 8948, 1495, 1629, 8949, 13835, 1256, 19356, 19363, 17403, 19376, 19377, 2]
 
-// Module 19339 (LaunchPad)
+// Module 19355 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -11,22 +11,22 @@ import PlatformUtils from "PlatformUtils" /* 1379 */;
 import ChatInputUtils from "ChatInputUtils" /* 5228 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import Pressables from "Pressables" /* 6152 */;
-import _mod8947 from "module_8947" /* 8947 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8959 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 11504 */;
+import _mod8948 from "module_8948" /* 8948 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8960 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 11512 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5258 */;
-import ChannelListStore from "ChannelListStore" /* 8284 */;
+import ChannelListStore from "ChannelListStore" /* 8285 */;
 import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6964 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6931 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8384 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8385 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6976 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15244 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15251 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import SortedGuildStore from "SortedGuildStore" /* 6164 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
@@ -53,7 +53,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const DevToolsNavigator = tmp(16023);
+const DevToolsNavigator = tmp(16030);
 function TabButton(selected) {
   let accessibilityLabel;
   let colors;
@@ -329,7 +329,7 @@ let closure_35 = react.memo(function LaunchPadHeader(tab) {
   return closure_28(tmp20, obj4);
 });
 let closure_37 = [];
-let items = [_mod8947.AutocompleterResultTypes.GUILD, _mod8947.AutocompleterResultTypes.TEXT_CHANNEL, _mod8947.AutocompleterResultTypes.GROUP_DM, _mod8947.AutocompleterResultTypes.VOICE_CHANNEL, _mod8947.AutocompleterResultTypes.USER];
+let items = [_mod8948.AutocompleterResultTypes.GUILD, _mod8948.AutocompleterResultTypes.TEXT_CHANNEL, _mod8948.AutocompleterResultTypes.GROUP_DM, _mod8948.AutocompleterResultTypes.VOICE_CHANNEL, _mod8948.AutocompleterResultTypes.USER];
 let closure_39 = { code: "(function LaunchPadTsx3(){let[sharedState]=this.__closure;return sharedState.get()===0;})" };
 let closure_40 = { code: "(function LaunchPadTsx4(hidden,prevHidden){let[scheduleOnRN,clearQuery,cancelTimeout]=this.__closure;if(hidden===prevHidden)return;if(hidden&&hidden!==prevHidden){scheduleOnRN(clearQuery);}else if(!hidden&&hidden!==prevHidden){scheduleOnRN(cancelTimeout);}})" };
 const memoResult = react.memo(function LaunchPad(arg0) {

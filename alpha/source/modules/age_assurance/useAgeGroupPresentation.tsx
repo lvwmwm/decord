@@ -1,10 +1,10 @@
-// Module ID: 12156
-// Function ID: 12157
+// Module ID: 12164
+// Function ID: 12165
 // Name: useAgeGroupPresentation
 // Dependencies: [1071, 6825, 7870, 2188, 6828, 1112, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification, useAgeGroupState, useAgeGroupValueLabel
 
-// Module 12156 (useAgeGroupPresentation)
+// Module 12164 (useAgeGroupPresentation)
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;

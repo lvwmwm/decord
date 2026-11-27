@@ -1,17 +1,17 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15930
+// Function ID: 15931
 // Name: commands/userProfile
-// Dependencies: [5, 5797, 1071, 15889, 15866, 15924, 15925, 15873, 2]
+// Dependencies: [5, 5797, 1071, 15896, 15873, 15931, 15932, 15880, 2]
 
-// Module 15923 (commands/userProfile)
+// Module 15930 (commands/userProfile)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 5797 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15866 */;
-import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15889 */;
-import getFrameProfileContextDefault from "getFrameProfileContext" /* 15924 */;
-import userProfile from "userProfile" /* 15925 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15873 */;
+import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15896 */;
+import getFrameProfileContextDefault from "getFrameProfileContext" /* 15931 */;
+import userProfile from "userProfile" /* 15932 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15873 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15880 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, c4, iframeId, userId;
@@ -37,7 +37,7 @@ let value = function _openUserProfileForSocket() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

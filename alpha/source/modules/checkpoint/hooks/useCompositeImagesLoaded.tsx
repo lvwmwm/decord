@@ -1,11 +1,11 @@
-// Module ID: 12640
-// Function ID: 12641
+// Module ID: 12648
+// Function ID: 12649
 // Name: useCompositeImagesLoaded
-// Dependencies: [32, 19, 12631, 2]
+// Dependencies: [32, 19, 12639, 2]
 // Exports: default
 
-// Module 12640 (useCompositeImagesLoaded)
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12631 */;
+// Module 12648 (useCompositeImagesLoaded)
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12639 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ export default function useCompositeImagesLoaded(arg0) {
   let tmp4;
   let tmp5;
   let uniqueUrls;
-  const f102856 = () => {
+  const f103097 = () => {
     map = new Map();
     return { key, generation: 0, urls: uniqueUrls, outcomes: map, revealOutcomes: map, timedOut: false };
   };
@@ -36,9 +36,9 @@ export default function useCompositeImagesLoaded(arg0) {
   }, items);
   uniqueUrls = memo.uniqueUrls;
   const key = memo.key;
-  [tmp4, tmp5] = _slicedToArray(uniqueUrls.useState(f102856), 2);
+  [tmp4, tmp5] = _slicedToArray(uniqueUrls.useState(f103097), 2);
   let tmp6 = tmp4;
-  const tmp3 = _slicedToArray(uniqueUrls.useState(f102856), 2);
+  const tmp3 = _slicedToArray(uniqueUrls.useState(f103097), 2);
   if (tmp4.key !== key) {
     let _Map = Map;
     const items1 = [];

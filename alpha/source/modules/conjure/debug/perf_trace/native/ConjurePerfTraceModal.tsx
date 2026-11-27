@@ -1,19 +1,19 @@
-// Module ID: 18881
-// Function ID: 18882
+// Module ID: 18897
+// Function ID: 18898
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 7694, 21, 5043, 575, 18882, 7558, 9816, 5634, 7942, 18883, 18885, 1629, 18886, 7717, 5641, 504, 7191, 6130, 11618, 2]
+// Dependencies: [19, 17, 7694, 21, 5043, 575, 18898, 7558, 9817, 5634, 7942, 18899, 18901, 1629, 18902, 7717, 5641, 504, 7191, 6130, 11626, 2]
 // Exports: default
 
-// Module 18881 (ConjurePerfTraceModal)
+// Module 18897 (ConjurePerfTraceModal)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
 import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7558 */;
-import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 18882 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 18883 */;
-import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 18885 */;
-import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 18886 */;
+import ConjurePerfTraceStatsHeaderDefault from "ConjurePerfTraceStatsHeader" /* 18898 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 18899 */;
+import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 18901 */;
+import useConjurePerfTraceTreeDefault from "useConjurePerfTraceTree" /* 18902 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureDebugStore from "ConjureDebugStore" /* 7694 */;
@@ -76,12 +76,12 @@ function WaterfallRow(node) {
   const detail = tmp;
   let tmp2 = node;
   let tmp3 = dependencyMap;
-  let obj = node(18882);
+  let obj = node(18898);
   const perfCategoryColors = obj.usePerfCategoryColors();
   if (collapsed) {
     ChevronSmallDownIcon = tmp2(7558).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(9816).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(9817).ChevronSmallDownIcon;
   }
   if (node.failed) {
     running = tmp.failed;
@@ -172,7 +172,7 @@ function WaterfallRow(node) {
   items2[6] = tmp14Result5;
   const obj16 = { variant: "body-xs/normal", color: "text-muted", children: tmp2Result.perfNodeDuration(node) };
   const Text2 = tmp2(5634).Text;
-  tmp2Result = tmp2(18883);
+  tmp2Result = tmp2(18899);
   items2[7] = tmp14(Text2, obj16);
   items4 = [tmp6(closure_6, obj4), , ];
   const obj17 = { style: tmp.track, children: tmp14(closure_6, obj18) };
@@ -232,7 +232,7 @@ function WaterfallRow(node) {
     items6 = [tmp.detail, ];
     items6[1] = { paddingLeft: node.depth * selected(575).space.PX_12 };
     const obj21 = { paddingLeft: node.depth * selected(575).space.PX_12 };
-    const tmp2Result2 = tmp2(18883);
+    const tmp2Result2 = tmp2(18899);
     perfNodeSectionsResult = tmp2Result2.perfNodeSections(node);
     tmp14Result6 = tmp14(tmp10, obj20);
   }

@@ -1,10 +1,10 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11941
+// Function ID: 11942
 // Name: GiftSubscriptionCodeUtils
 // Dependencies: [2]
 // Exports: isPendingGiftSubscriptionCode, needsGiftSubscriptionAgreement
 
-// Module 11933 (GiftSubscriptionCodeUtils)
+// Module 11941 (GiftSubscriptionCodeUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/GiftSubscriptionCodeUtils.tsx");

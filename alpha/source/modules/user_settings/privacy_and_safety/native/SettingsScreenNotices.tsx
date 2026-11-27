@@ -1,20 +1,20 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16326
+// Function ID: 16327
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1387, 21, 5043, 575, 8218, 16320, 16321, 5705, 6830, 6825, 16329, 16330, 2]
+// Dependencies: [19, 17, 1387, 21, 5043, 575, 8219, 16327, 16328, 5705, 6830, 6825, 16336, 16337, 2]
 // Exports: default
 
-// Module 16319 (SettingsScreenNotices)
+// Module 16326 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5705 */;
 import AgeGatedFeature from "AgeGatedFeature" /* 6830 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8218 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 16320 */;
-import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 16321 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 16329 */;
-import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 16330 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8219 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 16327 */;
+import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 16328 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 16336 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 16337 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import createStyles_mod from "createStyles" /* 5043 */;

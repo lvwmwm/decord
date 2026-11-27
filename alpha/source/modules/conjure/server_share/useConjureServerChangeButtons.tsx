@@ -1,10 +1,10 @@
-// Module ID: 18825
-// Function ID: 18826
+// Module ID: 18840
+// Function ID: 18841
 // Name: useConjureServerChangeButtons
-// Dependencies: [4914, 7659, 6934, 4245, 504, 1112, 7575, 18508, 2]
+// Dependencies: [4914, 7659, 6934, 4245, 504, 1112, 7575, 18515, 2]
 // Exports: default
 
-// Module 18825 (useConjureServerChangeButtons)
+// Module 18840 (useConjureServerChangeButtons)
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6934 */;
 import GuildStore from "GuildStore" /* 4914 */;

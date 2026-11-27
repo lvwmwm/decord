@@ -1,22 +1,22 @@
-// Module ID: 14514
-// Function ID: 14515
+// Module ID: 14521
+// Function ID: 14522
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 11914, 5776, 12385, 12317, 14515, 1378, 1112, 8227, 575, 5050, 12386, 12387, 14513, 2]
+// Dependencies: [17, 11922, 5776, 12393, 12325, 14522, 1378, 1112, 8228, 575, 5050, 12394, 12395, 14520, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 14514 (BuildOverrideEmbed)
+// Module 14521 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
 import react_nativeAll from "react-native" /* 1378 */;
 import shared from "shared" /* 5050 */;
 import Constants from "Constants" /* 5776 */;
-import react_native2 from "react-native" /* 8227 */;
-import BuildOverrideStore2 from "BuildOverrideStore" /* 11914 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12317 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12385 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14513 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 14515 */;
+import react_native2 from "react-native" /* 8228 */;
+import BuildOverrideStore2 from "BuildOverrideStore" /* 11922 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12325 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12393 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14520 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 14522 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
@@ -142,9 +142,9 @@ export function createBuildOverrideEmbed(code, arg1) {
     resolveAssetSource = Image.resolveAssetSource;
     const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      tmpResult2 = tmp(12386);
+      tmpResult2 = tmp(12394);
     } else {
-      tmpResult2 = tmp(12387);
+      tmpResult2 = tmp(12395);
     }
   }
 }

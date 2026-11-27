@@ -1,10 +1,10 @@
-// Module ID: 18506
-// Function ID: 18507
+// Module ID: 18513
+// Function ID: 18514
 // Name: ConjureDownstreamUpdatesSwitch
-// Dependencies: [32, 19, 17, 21, 5043, 575, 18473, 7722, 6140, 7549, 1112, 4245, 5634, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 18480, 7722, 6140, 7549, 1112, 4245, 5634, 2]
 // Exports: default
 
-// Module 18506 (ConjureDownstreamUpdatesSwitch)
+// Module 18513 (ConjureDownstreamUpdatesSwitch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4245 from "module_4245" /* 4245 */;
@@ -41,7 +41,7 @@ export default function ConjureDownstreamUpdatesSwitch(projectId) {
   projectId = projectId.projectId;
   importDefault = undefined;
   const tmp = closure_8();
-  let obj = projectId(18473);
+  let obj = projectId(18480);
   const conjureDownstreamUpdates = obj.useConjureDownstreamUpdates(projectId);
   [first, importDefault] = react.useState(false);
   [][0] = projectId;

@@ -1,9 +1,9 @@
-// Module ID: 14208
-// Function ID: 14209
+// Module ID: 14215
+// Function ID: 14216
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 6120, 7178, 7177, 14209, 14210, 14211, 14213, 2]
+// Dependencies: [32, 6120, 7178, 7177, 14216, 14217, 14218, 14220, 2]
 
-// Module 14208 (transformNativeMarkupNode)
+// Module 14215 (transformNativeMarkupNode)
 import MarkupTypes from "MarkupTypes" /* 6120 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

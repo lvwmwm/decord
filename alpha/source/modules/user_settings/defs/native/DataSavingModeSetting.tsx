@@ -1,16 +1,16 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17085
+// Function ID: 17086
 // Name: DataSavingModeSetting
-// Dependencies: [1193, 9555, 504, 17076, 4868, 11962, 1112, 2]
+// Dependencies: [1193, 9556, 504, 17083, 4868, 11970, 1112, 2]
 
-// Module 17078 (DataSavingModeSetting)
+// Module 17085 (DataSavingModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4868 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
-import UserSettingsText from "UserSettingsText" /* 17076 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
+import UserSettingsText from "UserSettingsText" /* 17083 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

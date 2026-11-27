@@ -1,17 +1,17 @@
-// Module ID: 12555
-// Function ID: 12556
+// Module ID: 12563
+// Function ID: 12564
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7912, 7886, 1071, 21, 5043, 575, 5634, 504, 12540, 1501, 7887, 12554, 12541, 7885, 7480, 1112, 5641, 7191, 12556, 1264, 12576, 12578, 12580, 12582, 5622, 7355, 2]
+// Dependencies: [5, 32, 19, 17, 7912, 7886, 1071, 21, 5043, 575, 5634, 504, 12548, 1501, 7887, 12562, 12549, 7885, 7480, 1112, 5641, 7191, 12564, 1264, 12584, 12586, 12588, 12590, 5622, 7355, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 12555 (AppealIngestionModal)
+// Module 12563 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12554 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12562 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -49,7 +49,7 @@ export default function AppealIngestionModal(classificationId) {
   let c0;
   let classification;
   let intl;
-  const f102726 = () => {
+  const f102967 = () => {
     let obj11;
     let obj3;
     let obj5;
@@ -154,8 +154,8 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
-  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5622)(f102726), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
-  flag(5622)(f102726);
+  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5622)(f102967), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
+  flag(5622)(f102967);
   const Navigator = tmp(7355).Navigator;
   intl = tmp(1112).intl;
   return closure_12(Navigator, obj2);
@@ -289,7 +289,7 @@ export function AppealIngestionModalScreen(children) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -340,7 +340,7 @@ export function AppealIngestionModalScreen(children) {
           navigation = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp25) {
         if (0 === navigation) {
           c5 = 3;

@@ -1,11 +1,11 @@
-// Module ID: 13094
-// Function ID: 13095
+// Module ID: 13102
+// Function ID: 13103
 // Name: useCanInstallApplication
-// Dependencies: [6934, 2165, 504, 10099, 2]
+// Dependencies: [6934, 2165, 504, 10100, 2]
 // Exports: default
 
-// Module 13094 (useCanInstallApplication)
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 10099 */;
+// Module 13102 (useCanInstallApplication)
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 10100 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;

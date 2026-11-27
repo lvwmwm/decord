@@ -1,19 +1,19 @@
-// Module ID: 18490
-// Function ID: 18491
+// Module ID: 18497
+// Function ID: 18498
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 5043, 8128, 8137, 18491, 1112, 4245, 1492, 18472, 9702, 11485, 9067, 16054, 6145, 18492, 5730, 6115, 7274, 6935, 5634, 7440, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 5043, 8128, 8138, 18498, 1112, 4245, 1492, 18479, 9703, 11495, 9068, 16061, 6145, 18499, 5730, 6115, 7274, 6935, 5634, 7440, 2]
 // Exports: ConjureAppIdentitySection
 
-// Module 18490 (ConjureAppIdentity)
+// Module 18497 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import Card_Card from "Card/Card" /* 6145 */;
-import ImagePickerDefault from "ImagePicker" /* 8137 */;
-import UploadIcon from "UploadIcon" /* 9702 */;
-import MagicWandIcon from "MagicWandIcon" /* 11485 */;
+import ImagePickerDefault from "ImagePicker" /* 8138 */;
+import UploadIcon from "UploadIcon" /* 9703 */;
+import MagicWandIcon from "MagicWandIcon" /* 11495 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -72,7 +72,7 @@ let value = function _pickConjureAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -204,7 +204,7 @@ class ConjureAppIconTile {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -230,7 +230,7 @@ class ConjureAppIconTile {
           } else if (1 === c3) {
             c2 = 0;
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -251,7 +251,7 @@ class ConjureAppIconTile {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           if (0 === c2) {
@@ -338,7 +338,7 @@ function IconTileCard(arg0) {
   t = tmp4(1112).t;
   if (null == iconURL) {
     const obj2 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImagePlusIcon = tmp4(18492).ImagePlusIcon;
+    const ImagePlusIcon = tmp4(18499).ImagePlusIcon;
     tmp3Result = tmp3(ImagePlusIcon, obj2);
   } else {
     const obj3 = { source: obj4, style: tmp.tileImage, resizeMode: "cover" };

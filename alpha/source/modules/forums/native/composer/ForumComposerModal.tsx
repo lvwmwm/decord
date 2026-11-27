@@ -1,10 +1,10 @@
-// Module ID: 10766
-// Function ID: 10767
+// Module ID: 10767
+// Function ID: 10768
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 10274, 4892, 8117, 8124, 8119, 21, 5043, 575, 8179, 10062, 6379, 504, 10767, 10765, 1499, 1627, 11, 10768, 8116, 7197, 10769, 2]
+// Dependencies: [19, 17, 10275, 4892, 8117, 8124, 8119, 21, 5043, 575, 8180, 10063, 6379, 504, 10768, 10766, 1499, 1627, 11, 10769, 8116, 7197, 10770, 2]
 // Exports: default
 
-// Module 10766 (ForumComposerModal)
+// Module 10767 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -12,12 +12,12 @@ import nativeDefault from "native" /* 575 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1499 */;
 import KeyboardTypes from "KeyboardTypes" /* 1627 */;
 import DraftStore2 from "DraftStore" /* 8117 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8179 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10062 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10765 */;
-import showForumComposerCloseAlertDefault from "showForumComposerCloseAlert" /* 10768 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8180 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10063 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10766 */;
+import showForumComposerCloseAlertDefault from "showForumComposerCloseAlert" /* 10769 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10274 */;
+import NativeMenuStore from "NativeMenuStore" /* 10275 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8124 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8119 */;
@@ -128,7 +128,7 @@ export default function ForumComposerModal(parentChannelId) {
   const items2 = [handleClose];
   const items3 = [threadId];
   const stateFromStores1 = obj3.useStateFromStores(items2, () => ChannelStore.getChannel(threadId), items3);
-  const tmp6 = threadId(10767)(parentChannelId);
+  const tmp6 = threadId(10768)(parentChannelId);
   let obj4 = parentChannelId(504);
   const items4 = [ForumPostMessagesStore];
   const stateFromStores2 = obj4.useStateFromStores(items4, () => {
@@ -158,7 +158,7 @@ export default function ForumComposerModal(parentChannelId) {
       if (isEdit) {
         if (!isEdit) {
           let obj2 = { value: analyticsLocations2, children: tmp11(tmp12, obj7) };
-          obj7 = { style: tmp.container, importantForAccessibility: str, children: tmp11(tmp2(10769), obj8) };
+          obj7 = { style: tmp.container, importantForAccessibility: str, children: tmp11(tmp2(10770), obj8) };
           str = undefined;
           const AnalyticsLocationProvider = tmp4(6379).AnalyticsLocationProvider;
           tmp12 = isEdit;

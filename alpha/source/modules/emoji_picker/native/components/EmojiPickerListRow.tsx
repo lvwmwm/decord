@@ -1,9 +1,9 @@
-// Module ID: 9732
-// Function ID: 9733
+// Module ID: 9733
+// Function ID: 9734
 // Name: EmojiPickerListRow
-// Dependencies: [19, 17, 1191, 9540, 1227, 21, 5043, 575, 1379, 671, 7161, 9733, 6152, 5730, 5050, 7489, 7490, 1186, 9734, 2]
+// Dependencies: [19, 17, 1191, 9541, 1227, 21, 5043, 575, 1379, 671, 7161, 9734, 6152, 5730, 5050, 7489, 7490, 1186, 9735, 2]
 
-// Module 9732 (EmojiPickerListRow)
+// Module 9733 (EmojiPickerListRow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
@@ -11,12 +11,12 @@ import shared from "shared" /* 5050 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import Pressables from "Pressables" /* 6152 */;
 import LockIcon from "LockIcon" /* 7161 */;
-import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9733 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9734 */;
+import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9734 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9735 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9540 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9541 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;

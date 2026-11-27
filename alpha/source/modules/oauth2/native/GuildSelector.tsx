@@ -1,10 +1,10 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14734
+// Function ID: 14735
 // Name: GuildSelector
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 5257, 8499, 2120, 1112, 1083, 5634, 1186, 8088, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 5257, 8500, 2120, 1112, 1083, 5634, 1186, 8088, 2]
 // Exports: default
 
-// Module 14727 (GuildSelector)
+// Module 14734 (GuildSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -62,7 +62,7 @@ export default function GuildSelector(onGuildChange) {
       selectedItem: tmp4,
       hasIcons: false
     };
-    const tmp2 = asyncRequire(8499, dependencyMap.paths);
+    const tmp2 = asyncRequire(8500, dependencyMap.paths);
     intl = intl4.intl;
     found = guilds.filter((permissions) => {
       const obj = guilds(closure_1_3[10]);

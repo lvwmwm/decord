@@ -1,8 +1,8 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12886
+// Function ID: 12887
 // Dependencies: [2]
 
-// Module 12878
+// Module 12886
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/voice_bg_400w.png.js");

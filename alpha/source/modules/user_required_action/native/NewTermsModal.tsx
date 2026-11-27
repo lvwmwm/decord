@@ -1,18 +1,18 @@
-// Module ID: 19900
-// Function ID: 19901
+// Module ID: 19916
+// Function ID: 19917
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 4886, 1071, 21, 5043, 575, 7543, 1112, 6839, 1629, 7197, 6110, 6134, 6116, 1264, 5634, 5641, 12539, 8625, 2]
+// Dependencies: [5, 32, 19, 17, 4886, 1071, 21, 5043, 575, 7543, 1112, 6839, 1629, 7197, 6110, 6134, 6116, 1264, 5634, 5641, 12547, 8626, 2]
 // Exports: default
 
-// Module 19900 (NewTermsModal)
+// Module 19916 (NewTermsModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 6116 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6839 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7543 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8625 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 12539 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8626 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12547 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -120,7 +120,7 @@ export default function NewTermsModal() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -154,7 +154,7 @@ export default function NewTermsModal() {
           tmp = value;
           closure_129_1(tmp);
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         c3 = 3;

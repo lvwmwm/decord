@@ -1,18 +1,17 @@
-// Module ID: 8428
-// Function ID: 8429
+// Module ID: 8429
+// Function ID: 8430
 // Name: GuildRoomConstants
-// Dependencies: [1112, 2687, 8429, 8430, 8431, 8426, 8432, 8433, 8434, 8435, 8436, 8437, 8438, 8439, 8440, 8441, 8442, 8443, 8444, 2]
+// Dependencies: [1112, 2687, 8430, 8431, 8432, 8427, 8433, 8434, 8435, 8436, 8437, 8438, 8439, 8440, 8441, 8442, 8443, 8444, 8445, 2]
 // Exports: getBlurredBackgroundScale
 
-// Module 8428 (GuildRoomConstants)
+// Module 8429 (GuildRoomConstants)
 import intl4 from "intl" /* 1112 */;
 import _modDef2687 from "module_2687" /* 2687 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 8426 */;
-import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 8429 */;
-import _modDef8430 from "module_8430" /* 8430 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 8427 */;
+import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 8430 */;
 import _modDef8431 from "module_8431" /* 8431 */;
-import GuildRoomBackgroundPositions from "GuildRoomBackgroundPositions" /* 8432 */;
-import _modDef8433 from "module_8433" /* 8433 */;
+import _modDef8432 from "module_8432" /* 8432 */;
+import GuildRoomBackgroundPositions from "GuildRoomBackgroundPositions" /* 8433 */;
 import _modDef8434 from "module_8434" /* 8434 */;
 import _modDef8435 from "module_8435" /* 8435 */;
 import _modDef8436 from "module_8436" /* 8436 */;
@@ -24,6 +23,7 @@ import _modDef8441 from "module_8441" /* 8441 */;
 import _modDef8442 from "module_8442" /* 8442 */;
 import _modDef8443 from "module_8443" /* 8443 */;
 import _modDef8444 from "module_8444" /* 8444 */;
+import _modDef8445 from "module_8445" /* 8445 */;
 import size from "module_2" /* 2 */;
 
 let C_LGlh, yG_xS0;
@@ -54,8 +54,8 @@ const getLabel2 = () => {
 };
 let obj = {};
 const obj2 = {
-  background: _modDef8430,
-  backgroundBlurred: _modDef8431,
+  background: _modDef8431,
+  backgroundBlurred: _modDef8432,
   aspectRatio: 1.366583541147132,
   getName() {
     const intl = intl4.intl;
@@ -63,8 +63,8 @@ const obj2 = {
   },
   seats: obj3,
   plants: items,
-  duck: { asset: _modDef8437, position: { x: 67.3, y: 45 }, width: 4.8 },
-  notePad: { asset: _modDef8438, position: { x: 81.5, y: 84.5 }, width: 4 },
+  duck: { asset: _modDef8438, position: { x: 67.3, y: 45 }, width: 4.8 },
+  notePad: { asset: _modDef8439, position: { x: 81.5, y: 84.5 }, width: 4 },
   screen: { topLeft: { x: 56.8, y: 16.15 }, topRight: { x: 75.85, y: 23 }, bottomRight: { x: 75.3, y: 41.3 }, bottomLeft: { x: 56.95, y: 33.75 } }
 };
 const DEFAULT = GuildRoomBackgrounds.GuildRoomBackgrounds.DEFAULT;
@@ -135,13 +135,13 @@ obj3[SEAT_21] = obj24;
 const obj25 = { name: "PC_SEAT_4", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.DEFAULT][21] };
 const SEAT_22 = GuildRoomSeats.GuildRoomSeats.SEAT_22;
 obj3[SEAT_22] = obj25;
-const point = { plantDeadAsset: _modDef8433, plantDyingAsset: _modDef8434, plantLiveAsset: _modDef8435, plantVaseAsset: _modDef8436, x: 45.57, y: 50.62 };
+const point = { plantDeadAsset: _modDef8434, plantDyingAsset: _modDef8435, plantLiveAsset: _modDef8436, plantVaseAsset: _modDef8437, x: 45.57, y: 50.62 };
 items = [point];
-({ asset: _modDef8437, position: { x: 67.3, y: 45 }, width: 4.8 });
+({ asset: _modDef8438, position: { x: 67.3, y: 45 }, width: 4.8 });
 obj[DEFAULT] = obj2;
 const obj28 = {
-  background: _modDef8439,
-  backgroundBlurred: _modDef8431,
+  background: _modDef8440,
+  backgroundBlurred: _modDef8432,
   aspectRatio: 1.2894117647058823,
   getName() {
     const intl = intl4.intl;
@@ -149,11 +149,11 @@ const obj28 = {
   },
   seats: obj29,
   plants: items1,
-  duck: { asset: _modDef8444, position: { x: 64.6, y: 58.5 }, width: 4.8 },
-  notePad: { asset: _modDef8438, position: { x: 69, y: 78.5 }, width: 4 },
+  duck: { asset: _modDef8445, position: { x: 64.6, y: 58.5 }, width: 4.8 },
+  notePad: { asset: _modDef8439, position: { x: 69, y: 78.5 }, width: 4 },
   screen: { topLeft: { x: 51.85, y: 33.5 }, topRight: { x: 69.15, y: 40.5 }, bottomRight: { x: 69.3, y: 57.3 }, bottomLeft: { x: 51.95, y: 49.1 } }
 };
-({ asset: _modDef8438, position: { x: 81.5, y: 84.5 }, width: 4 });
+({ asset: _modDef8439, position: { x: 81.5, y: 84.5 }, width: 4 });
 const LIVING_ROOM_2 = GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2;
 obj29 = {};
 const obj30 = { name: "PC_SEAT_1", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][0] };
@@ -236,11 +236,11 @@ const SEAT_222 = GuildRoomSeats.GuildRoomSeats.SEAT_22;
 const ytIYuY = _modDef2687.ytIYuY;
 let c1 = 4;
 obj29[SEAT_222] = obj51;
-const point1 = { plantDeadAsset: _modDef8440, plantDyingAsset: _modDef8441, plantLiveAsset: _modDef8442, plantVaseAsset: _modDef8443, x: 41, y: 46 };
+const point1 = { plantDeadAsset: _modDef8441, plantDyingAsset: _modDef8442, plantLiveAsset: _modDef8443, plantVaseAsset: _modDef8444, x: 41, y: 46 };
 items1 = [point1];
-({ asset: _modDef8444, position: { x: 64.6, y: 58.5 }, width: 4.8 });
+({ asset: _modDef8445, position: { x: 64.6, y: 58.5 }, width: 4.8 });
 obj[LIVING_ROOM_2] = obj28;
-({ asset: _modDef8438, position: { x: 69, y: 78.5 }, width: 4 });
+({ asset: _modDef8439, position: { x: 69, y: 78.5 }, width: 4 });
 const result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomConstants.tsx");
 
 export const DEFAULT_BACKGROUND_POSITION = { imageOffsetX: 0, imageOffsetY: 0, imageWidth: 0, imageHeight: 0 };

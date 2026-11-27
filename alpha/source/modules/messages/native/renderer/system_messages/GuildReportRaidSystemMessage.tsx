@@ -1,18 +1,18 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14421
+// Function ID: 14422
 // Name: GuildReportRaidSystemMessage
-// Dependencies: [4892, 4914, 14368, 12000, 14411, 14372, 14412, 14373, 1112, 1416, 1413, 2]
+// Dependencies: [4892, 4914, 14375, 12008, 14418, 14379, 14419, 14380, 1112, 1416, 1413, 2]
 // Exports: createGuildReportRaidSystemMessage
 
-// Module 14414 (GuildReportRaidSystemMessage)
+// Module 14421 (GuildReportRaidSystemMessage)
 import intl3 from "intl" /* 1112 */;
 import AvatarUtils from "AvatarUtils" /* 1413 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1416 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12000 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 14368 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14372 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 14411 */;
-import getTagPropertiesDefault from "getTagProperties" /* 14412 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12008 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 14375 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14379 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 14418 */;
+import getTagPropertiesDefault from "getTagProperties" /* 14419 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import size from "module_2" /* 2 */;
@@ -52,7 +52,7 @@ export function createGuildReportRaidSystemMessage(roleStyle) {
   }
   const obj4 = { content: intl.formatToParts(intl3.t["MTmH+u"], obj3), username: intl2.string(intl3.t.hG1StD), usernameColor: automodUsernameColor, avatarURL: ensureAvatarSource(makeSource(tmp8Result4.getAutomodAvatarURL())).uri };
   const tmp11 = getTagPropertiesDefault({ message, channel, isSystemDM: true, colors: tmp3 });
-  const merged = Object.assign(tmp(14373)(roleStyle));
+  const merged = Object.assign(tmp(14380)(roleStyle));
   intl = tmp8(1112).intl;
   intl2 = tmp8(1112).intl;
   if (automodUsernameColor == null) {

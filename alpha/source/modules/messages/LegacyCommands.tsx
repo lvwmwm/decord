@@ -1,16 +1,16 @@
-// Module ID: 12432
-// Function ID: 12433
+// Module ID: 12440
+// Function ID: 12441
 // Name: LegacyCommands
-// Dependencies: [32, 6883, 6391, 1071, 4868, 10059, 2069, 9091, 4987, 8244, 6013, 2]
+// Dependencies: [32, 6883, 6391, 1071, 4868, 10060, 2069, 9092, 4987, 8245, 6013, 2]
 // Exports: handleLegacyCommands
 
-// Module 12432 (LegacyCommands)
+// Module 12440 (LegacyCommands)
 import UserSettings from "UserSettings" /* 4868 */;
 import ReactionUtils from "ReactionUtils" /* 4987 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 9091 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 10059 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 9092 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 10060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import MessageStore from "MessageStore" /* 6391 */;

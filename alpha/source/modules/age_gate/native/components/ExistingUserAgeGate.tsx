@@ -1,13 +1,13 @@
-// Module ID: 19652
-// Function ID: 19653
+// Module ID: 19668
+// Function ID: 19669
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 4886, 1096, 19648, 1071, 21, 5043, 1501, 504, 1256, 1112, 2188, 38, 17672, 6130, 2169, 17694, 7480, 5634, 19653, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 4886, 1096, 19664, 1071, 21, 5043, 1501, 504, 1256, 1112, 2188, 38, 17679, 6130, 2169, 17701, 7480, 5634, 19669, 5641, 2]
 // Exports: default
 
-// Module 19652 (ExistingUserAgeGate)
+// Module 19668 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19648 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19664 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -77,7 +77,7 @@ export default function ExistingUserAgeGate(source) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -178,7 +178,7 @@ export default function ExistingUserAgeGate(source) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ export default function ExistingUserAgeGate(source) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;

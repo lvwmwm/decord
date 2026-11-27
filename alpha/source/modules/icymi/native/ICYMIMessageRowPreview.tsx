@@ -1,17 +1,17 @@
-// Module ID: 18347
-// Function ID: 18348
+// Module ID: 18354
+// Function ID: 18355
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 1071, 21, 8929, 5704, 8225, 5657, 5252, 5043, 575, 4868, 8223, 9080, 8838, 1112, 2]
+// Dependencies: [19, 1071, 21, 8930, 5704, 8226, 5657, 5252, 5043, 575, 4868, 8224, 9081, 8839, 1112, 2]
 
-// Module 18347 (ICYMIMessageRowPreview)
+// Module 18354 (ICYMIMessageRowPreview)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4868 */;
 import createStyles from "createStyles" /* 5043 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5704 */;
-import RowGeneratorDefault from "RowGenerator" /* 8223 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8838 */;
+import RowGeneratorDefault from "RowGenerator" /* 8224 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8839 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(9080), obj3);
+  return setting2(messageOptions(9081), obj3);
 }
 const MessageEmbedTypes = Constants.MessageEmbedTypes;
 const jsx = Fragment.jsx;
@@ -165,7 +165,7 @@ const memoResult2 = react.memo(function MessageRowPreview(message) {
   const tmp3 = merged(5657)(message);
   const merged1 = Object.assign(memo);
   const obj2 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp3, renderEmbeds: tmp3, inlineEmbedMedia: tmp3 };
-  const merged2 = Object.assign(message(8225).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8226).DEFAULT_OPTIONS);
   const merged3 = Object.assign(messageOptions);
   return <ICYMIMessageRowPreview messageOptions={obj2} seeMoreLabel="..." />;
 });

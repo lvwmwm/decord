@@ -1,10 +1,10 @@
-// Module ID: 19102
-// Function ID: 19103
+// Module ID: 19118
+// Function ID: 19119
 // Name: ClearAllIncomingRequestsAlertModal
 // Dependencies: [5, 19, 21, 7850, 6052, 1112, 6052, 2]
 // Exports: default
 
-// Module 19102 (ClearAllIncomingRequestsAlertModal)
+// Module 19118 (ClearAllIncomingRequestsAlertModal)
 import intl5 from "intl" /* 1112 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
@@ -33,7 +33,7 @@ let obj = function _handleConfirm() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -62,7 +62,7 @@ let obj = function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c0 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 10148
-// Function ID: 10149
+// Module ID: 10149
+// Function ID: 10150
 // Name: MessageLoadingSpinner
 // Dependencies: [19, 17, 21, 1379, 5607, 575, 7047, 2]
 // Exports: default
 
-// Module 10148 (MessageLoadingSpinner)
+// Module 10149 (MessageLoadingSpinner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

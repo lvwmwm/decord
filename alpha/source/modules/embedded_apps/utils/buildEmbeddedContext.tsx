@@ -1,18 +1,18 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10217
+// Function ID: 10218
 // Name: buildEmbeddedContext
-// Dependencies: [4891, 6936, 8243, 4892, 6937, 10217, 6938, 5687, 4964, 2]
+// Dependencies: [4891, 6936, 8244, 4892, 6937, 10218, 6938, 5687, 4964, 2]
 // Exports: default
 
-// Module 10216 (buildEmbeddedContext)
+// Module 10217 (buildEmbeddedContext)
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4964 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
 import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6938 */;
-import ActivityPlatform from "ActivityPlatform" /* 10217 */;
+import ActivityPlatform from "ActivityPlatform" /* 10218 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import FramesStore from "FramesStore" /* 6936 */;
-import InteractionStore from "InteractionStore" /* 8243 */;
+import InteractionStore from "InteractionStore" /* 8244 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
 

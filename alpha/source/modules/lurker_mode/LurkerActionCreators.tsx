@@ -1,10 +1,10 @@
-// Module ID: 14699
-// Function ID: 14700
+// Module ID: 14706
+// Function ID: 14707
 // Name: LurkerActionCreators
 // Dependencies: [5, 5851, 4976, 1071, 572, 1285, 1255, 2]
 // Exports: stopLurking
 
-// Module 14699 (LurkerActionCreators)
+// Module 14706 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _stopLurkingAll() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ let obj = function _stopLurkingAll() {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "HermesInternal", done: "+95" };
+                                    return { value: "HermesInternal", done: null };
                                   }
                                 } else {
                                   try {
@@ -127,7 +127,7 @@ let obj = function _stopLurkingAll() {
                                         c5 = 0;
                                       }
                                       c7 = 3;
-                                      return { value: "HermesInternal", done: "+95" };
+                                      return { value: "HermesInternal", done: null };
                                     }
                                   } catch (tmp18) {
                                     closure_4 = tmp18;
@@ -159,7 +159,7 @@ let obj = function _stopLurkingAll() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;

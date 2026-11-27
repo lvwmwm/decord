@@ -1,10 +1,10 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16522
+// Function ID: 16523
 // Name: LocalSvg
 // Dependencies: [5, 32, 19, 17, 21, 1148, 7946, 2]
 // Exports: default
 
-// Module 16515 (LocalSvg)
+// Module 16522 (LocalSvg)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -43,7 +43,7 @@ export default function LocalSvg(asset) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -79,7 +79,7 @@ export default function LocalSvg(asset) {
                 tmp4(closure_0);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             c3 = 3;

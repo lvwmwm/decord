@@ -1,16 +1,16 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15081
+// Function ID: 15082
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4985, 1071, 21, 5043, 575, 9487, 563, 5634, 1112, 7850, 2]
+// Dependencies: [19, 17, 4985, 1071, 21, 5043, 575, 9488, 563, 5634, 1112, 7850, 2]
 // Exports: default
 
-// Module 15074 (UserProfileRemediatedNotice)
+// Module 15081 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9487 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9488 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import Fragment from "Fragment" /* 21 */;

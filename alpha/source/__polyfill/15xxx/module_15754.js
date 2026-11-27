@@ -1,20 +1,21 @@
 // Module ID: 15754
 // Function ID: 15755
-// Dependencies: [15739]
+// Dependencies: [15755]
 
 // Module 15754
-import _mod15739 from "module_15739" /* 15739 */;
+import _mod15755 from "module_15755" /* 15755 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod15739((1).toString);
 
-export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
+export default (arg0, arg1) => {
+  let tmp3 = _mod15755[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod15755;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
   }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+  return tmp3;
 };

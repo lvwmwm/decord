@@ -1,16 +1,16 @@
-// Module ID: 18107
-// Function ID: 18108
+// Module ID: 18114
+// Function ID: 18115
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4977, 4896, 4892, 11531, 558, 18104, 18105, 504, 11, 2]
+// Dependencies: [4977, 4896, 4892, 11539, 558, 18111, 18112, 504, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 18107 (useHomeDrawerGuildTyping)
+// Module 18114 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import TypingStore from "TypingStore" /* 11531 */;
+import TypingStore from "TypingStore" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,19 +19,19 @@ let _require, basicChannel;
 function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) {
   let result = typingChannelId.typingChannelId === typingChannelId2.typingChannelId && typingChannelId.typingChannelName === typingChannelId2.typingChannelName;
   if (result) {
-    obj = shallowEqual;
+    const obj = shallowEqual;
     result = obj.areArraysShallowEqual(typingChannelId.typingUserIds, typingChannelId2.typingUserIds);
   }
   return result;
 }
 const isThread = ChannelRecord.isThread;
-let obj = { typingChannelId: "Array", typingChannelName: "channel_id", typingUserIds: [] };
+let closure_7 = { typingChannelId: "Array", typingChannelName: "Path", typingUserIds: [] };
 let result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerGuildTyping.tsx");
 
 export function useHomeDrawerGuildTyping(id) {
   let isHomeDrawerChannelInChannelList;
   _require = id;
-  obj = require("isHomeDrawerChannelMuted");
+  let obj = require("isHomeDrawerChannelMuted");
   const isHomeDrawerChannelMuted = obj.useIsHomeDrawerChannelMuted();
   let obj2 = require("isHomeDrawerChannelInChannelList");
   isHomeDrawerChannelInChannelList = obj2.useIsHomeDrawerChannelInChannelList();
@@ -42,7 +42,7 @@ export function useHomeDrawerGuildTyping(id) {
     let name;
     let obj2;
     const typingUsersByGuild = TypingStore.getTypingUsersByGuild(id);
-    obj = SnowflakeUtilsDefault;
+    const obj = SnowflakeUtilsDefault;
     const keys = obj.keys(typingUsersByGuild);
     const found = keys.find((item) => {
       basicChannel = basicChannel.getBasicChannel(item);
@@ -55,7 +55,7 @@ export function useHomeDrawerGuildTyping(id) {
       return tmp2;
     });
     if (null == found) {
-      obj2 = obj;
+      obj2 = closure_7;
     } else {
       obj2 = { typingChannelId: found, typingChannelName: name, typingUserIds: Object.keys(typingUsersByGuild[found]) };
       const channel = ChannelStore.getChannel(found);

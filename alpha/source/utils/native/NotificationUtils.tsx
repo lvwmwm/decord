@@ -1,14 +1,14 @@
-// Module ID: 13389
-// Function ID: 13390
+// Module ID: 13397
+// Function ID: 13398
 // Name: NotificationUtils
-// Dependencies: [5, 13381, 1071, 13384, 1256, 10277, 7879, 10298, 2]
+// Dependencies: [5, 13389, 1071, 13392, 1256, 10278, 7879, 10299, 2]
 
-// Module 13389 (NotificationUtils)
+// Module 13397 (NotificationUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PushNotificationDefault from "PushNotification" /* 10277 */;
-import SoundUtils from "SoundUtils" /* 10298 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13381 */;
+import PushNotificationDefault from "PushNotification" /* 10278 */;
+import SoundUtils from "SoundUtils" /* 10299 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp3) {
           c0 = 3;

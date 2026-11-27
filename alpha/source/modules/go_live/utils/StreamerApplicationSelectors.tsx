@@ -1,13 +1,13 @@
-// Module ID: 8399
-// Function ID: 8400
+// Module ID: 8400
+// Function ID: 8401
 // Name: StreamerApplicationSelectors
-// Dependencies: [6014, 6015, 8400, 558, 504, 2]
+// Dependencies: [6014, 6015, 8401, 558, 504, 2]
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication, useGetStreamApplication
 
-// Module 8399 (StreamerApplicationSelectors)
+// Module 8400 (StreamerApplicationSelectors)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8400 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8401 */;
 import PresenceStore from "PresenceStore" /* 6014 */;
 import size from "module_2" /* 2 */;
 

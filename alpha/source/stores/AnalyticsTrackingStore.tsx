@@ -1,15 +1,15 @@
 // Module ID: 6794
 // Function ID: 6795
 // Name: stores/AnalyticsTrackingStore
-// Dependencies: [502, 1071, 1264, 572, 6795, 1256, 10357, 14842, 2]
+// Dependencies: [502, 1071, 1264, 572, 6795, 1256, 10358, 14848, 2]
 
 // Module 6794 (stores/AnalyticsTrackingStore)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1256 */;
 import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6795 */;
-import requestSafeIdleCallback from "requestSafeIdleCallback" /* 10357 */;
-import sendUnloadRequest from "sendUnloadRequest" /* 14842 */;
+import requestSafeIdleCallback from "requestSafeIdleCallback" /* 10358 */;
+import sendUnloadRequest from "sendUnloadRequest" /* 14848 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;

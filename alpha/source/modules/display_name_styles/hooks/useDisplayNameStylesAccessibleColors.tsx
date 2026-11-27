@@ -1,10 +1,10 @@
-// Module ID: 9810
-// Function ID: 9811
+// Module ID: 9811
+// Function ID: 9812
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 5044, 504, 1398, 9811, 1395, 5040, 671, 2]
+// Dependencies: [19, 5044, 504, 1398, 9812, 1395, 5040, 671, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 9810 (useDisplayNameStylesAccessibleColors)
+// Module 9811 (useDisplayNameStylesAccessibleColors)
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1395 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;

@@ -1,24 +1,24 @@
-// Module ID: 19051
-// Function ID: 19052
+// Module ID: 19067
+// Function ID: 19068
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 4892, 4985, 1387, 19052, 13300, 9019, 1071, 21, 504, 18956, 13286, 13317, 13313, 5099, 5659, 13293, 19053, 13292, 13294, 19015, 18947, 1112, 18960, 2]
+// Dependencies: [32, 19, 4892, 4985, 1387, 19068, 13308, 9020, 1071, 21, 504, 18972, 13294, 13325, 13321, 5099, 5659, 13301, 19069, 13300, 13302, 19031, 18963, 1112, 18976, 2]
 
-// Module 19051 (AutocompleteScreen)
+// Module 19067 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import useChannelName from "useChannelName" /* 5659 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13286 */;
-import TrackingDefault from "Tracking" /* 13313 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13317 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19053 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13294 */;
+import TrackingDefault from "Tracking" /* 13321 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13325 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19069 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19052 */;
-import SearchQueryStore from "SearchQueryStore" /* 13300 */;
-import SearchConstants from "SearchConstants" /* 9019 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19068 */;
+import SearchQueryStore from "SearchQueryStore" /* 13308 */;
+import SearchConstants from "SearchConstants" /* 9020 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

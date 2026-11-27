@@ -1,13 +1,13 @@
-// Module ID: 17428
-// Function ID: 17429
+// Module ID: 17435
+// Function ID: 17436
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 8486, 8616, 6115, 8617, 13615, 5641, 5052, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 8487, 8617, 6115, 8618, 13622, 5641, 5052, 2]
 // Exports: default
 
-// Module 17428 (UserSettingsDesignSystemSegmentedControl)
+// Module 17435 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 575 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8486 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8487 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -74,13 +74,13 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     }
     return items;
   }, items);
-  let obj = first(8616);
+  let obj = first(8617);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: num, defaultIndex: 1 });
   let obj2 = { children: closure_8(closure_5, obj3) };
   obj3 = { style: tmp5.container, ref, onLayout, children: closure_7(Stack, obj4) };
   obj4 = { spacing: 24, children: items1 };
   Stack = first(6115).Stack;
-  items1 = [closure_8(first(8617).SegmentedControl, { state: segmentedControlState }), closure_8(first(13615).SegmentedControlPages, { state: segmentedControlState }), ];
+  items1 = [closure_8(first(8618).SegmentedControl, { state: segmentedControlState }), closure_8(first(13622).SegmentedControlPages, { state: segmentedControlState }), ];
   const obj5 = { spacing: 8, direction: "horizontal", children: items2 };
   const Stack2 = first(6115).Stack;
   items2 = [, ];

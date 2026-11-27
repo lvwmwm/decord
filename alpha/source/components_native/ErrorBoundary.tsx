@@ -1,21 +1,21 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16024
+// Function ID: 16025
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11914, 21, 5043, 504, 12317, 5641, 1112, 5104, 1242, 572, 1186, 10448, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 11922, 21, 5043, 504, 12325, 5641, 1112, 5104, 1242, 572, 1186, 10449, 5634, 2]
 
-// Module 16017 (components_native/ErrorBoundary)
+// Module 16024 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import native2 from "native" /* 5104 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import AppCrash from "AppCrash" /* 10448 */;
+import AppCrash from "AppCrash" /* 10449 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11914 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11922 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ function MaybeClearBuildOverride() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -84,7 +84,7 @@ function MaybeClearBuildOverride() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           closure_2 = tmp13;

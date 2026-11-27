@@ -1,24 +1,24 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16719
+// Function ID: 16720
 // Name: QuestBottomSheet
-// Dependencies: [32, 19, 17, 8374, 6871, 21, 5043, 575, 8381, 9894, 5725, 1112, 9892, 9930, 6874, 16674, 504, 13842, 8389, 5271, 16713, 16715, 9928, 8392, 9857, 9861, 6878, 16751, 16753, 16754, 8387, 7942, 5634, 2]
+// Dependencies: [32, 19, 17, 8375, 6871, 21, 5043, 575, 8382, 9895, 5725, 1112, 9893, 9931, 6874, 16681, 504, 13849, 8390, 5271, 16720, 16722, 9929, 8393, 9858, 9862, 6878, 16758, 16760, 16761, 8388, 7942, 5634, 2]
 // Exports: default
 
-// Module 16712 (QuestBottomSheet)
+// Module 16719 (QuestBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8387 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8389 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9892 */;
-import QuestHooks from "QuestHooks" /* 16674 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 16713 */;
-import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 16751 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8388 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8390 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9893 */;
+import QuestHooks from "QuestHooks" /* 16681 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 16720 */;
+import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 16758 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 8374 */;
+import QuestStore from "QuestStore" /* 8375 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -37,7 +37,7 @@ let obj4;
 let obj5;
 let tmp11;
 let unpackModuleId;
-const QuestBottomSheetFooterDefault = tmp11(16715);
+const QuestBottomSheetFooterDefault = tmp11(16722);
 function QuestBottomSheet(initialStep) {
   let BottomSheet;
   let closure_0;
@@ -122,14 +122,14 @@ function useEnrolledQuestContentProps(quest) {
   let tmp = quest;
   let tmp2 = dependencyMap;
   const initialStep = quest.initialStep;
-  let obj = quest(9928);
+  let obj = quest(9929);
   dependencyMap = obj.useGetQuestImpressionId();
-  let obj2 = quest(9892);
+  let obj2 = quest(9893);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
-  let obj3 = quest(9892);
+  let obj3 = quest(9893);
   const isQuestProgressing = obj3.useIsQuestProgressing(quest);
   let tmp5 = _slicedToArray;
-  const obj4 = quest(9892);
+  const obj4 = quest(9893);
   [first, , _slicedToArray] = obj4.useTaskPlatformScreen(quest, questTaskDetails);
   let xboxAndPlaystationAccounts;
   let first1;
@@ -152,12 +152,12 @@ function useEnrolledQuestContentProps(quest) {
   }
   const userStatus = quest.userStatus;
   let completedAt;
-  const obj5 = quest(16674);
+  const obj5 = quest(16681);
   const hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
   if (userStatus != null) {
     completedAt = userStatus.completedAt;
   }
-  const tmpResult = tmp(9892);
+  const tmpResult = tmp(9893);
   xboxAndPlaystationAccounts = tmpResult.useConnectedAccounts().xboxAndPlaystationAccounts;
   let items = [quest, xboxAndPlaystationAccounts];
   const memo = react.useMemo(() => {
@@ -168,11 +168,11 @@ function useEnrolledQuestContentProps(quest) {
       return null != xboxAndPlaystationAccounts.find((type) => type.type === closure_0);
     });
   }, items);
-  const tmpResult7 = tmp(9892);
+  const tmpResult7 = tmp(9893);
   const questTaskDetails1 = tmpResult7.useQuestTaskDetails(quest);
-  const tmpResult8 = tmp(9892);
+  const tmpResult8 = tmp(9893);
   isQuestProgressing1 = tmpResult8.useIsQuestProgressing(quest);
-  const tmpResult9 = tmp(9892);
+  const tmpResult9 = tmp(9893);
   const tmp5Result = tmp5(tmpResult9.useTaskPlatformScreen(quest, questTaskDetails1), 3);
   first1 = tmp5Result[0];
   _slicedToArray = tmp15;
@@ -246,9 +246,9 @@ function useEnrolledQuestContentProps(quest) {
     items[2] = obj3;
     return items;
   }, items3);
-  const tmpResult10 = tmp(16674);
+  const tmpResult10 = tmp(16681);
   hasWatchVideoOnMobileTasks1 = tmpResult10.useHasWatchVideoOnMobileTasks(quest.config);
-  const tmpResult11 = tmp(16674);
+  const tmpResult11 = tmp(16681);
   isMobileActivityQuest = tmpResult11.useMobileActivityQuest(quest).isMobileActivityQuest;
   const items4 = [tmp5Result[1], memo3, memo1, memo2, hasWatchVideoOnMobileTasks1, isMobileActivityQuest];
   const memo4 = obj7.useMemo(() => {
@@ -287,7 +287,7 @@ function useEnrolledQuestContentProps(quest) {
   [tmp33, tmp34] = tmp5(items5, 2);
   tmp5(items5, 2);
   const obj8 = { quest, location: constants.QUEST_HOME_MOBILE };
-  const tmpResult12 = tmp(8381);
+  const tmpResult12 = tmp(8382);
   const questLogger = tmpResult12.getQuestLogger(obj8);
   const tmp5Result7 = tmp5(useState([]), 2);
   dependencyMap = tmp38;
@@ -341,8 +341,8 @@ function useEnrolledQuestContentProps(quest) {
         DESELECT_PLATFORM = AnalyticsTypes.QuestContentCTA.DESELECT_PLATFORM;
         tmp4 = require;
       }
-      const tmp4Result = tmp4(9857);
-      const obj = { type: tmp4(9861).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(6878).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(6874).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent: importDefault, impressionId: closure_2() };
+      const tmp4Result = tmp4(9858);
+      const obj = { type: tmp4(9862).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(6878).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(6874).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent: importDefault, impressionId: closure_2() };
       tmp4Result.captureAdUserAction(obj);
       closure_3(arg0);
     }

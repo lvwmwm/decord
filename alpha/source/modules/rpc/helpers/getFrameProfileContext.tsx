@@ -1,10 +1,10 @@
-// Module ID: 15924
-// Function ID: 15925
+// Module ID: 15931
+// Function ID: 15932
 // Name: getFrameProfileContext
 // Dependencies: [5687, 6939, 7677, 2]
 // Exports: default
 
-// Module 15924 (getFrameProfileContext)
+// Module 15931 (getFrameProfileContext)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6939 */;
 import size from "module_2" /* 2 */;

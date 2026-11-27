@@ -1,9 +1,9 @@
-// Module ID: 12138
-// Function ID: 12139
+// Module ID: 12146
+// Function ID: 12147
 // Name: GameOrganizationInviteSendActionCreators
-// Dependencies: [5, 1071, 5048, 1285, 5793, 7847, 8244, 12139, 2]
+// Dependencies: [5, 1071, 5048, 1285, 5793, 7847, 8245, 12147, 2]
 
-// Module 12138 (GameOrganizationInviteSendActionCreators)
+// Module 12146 (GameOrganizationInviteSendActionCreators)
 import Constants from "Constants" /* 1071 */;
 import MessageConstants from "MessageConstants" /* 5048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -104,7 +104,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c3 = 3;

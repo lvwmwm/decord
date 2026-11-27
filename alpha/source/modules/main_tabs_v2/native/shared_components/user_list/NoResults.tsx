@@ -1,10 +1,10 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11545
+// Function ID: 11546
 // Name: NoResults
 // Dependencies: [19, 17, 21, 5043, 5634, 2]
 // Exports: default
 
-// Module 11537 (NoResults)
+// Module 11545 (NoResults)
 import Text_Text from "Text/Text" /* 5634 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

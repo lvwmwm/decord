@@ -46,13 +46,13 @@ export default function connectStores(items, arg1, arg2) {
             applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
             closure_0 = applyArgumentsResult;
             closure_0 = closure_1;
-            memoizedFunction = function memoizedFunction() { /* body not rendered: F79446 */ };
+            memoizedFunction = function memoizedFunction() { /* body not rendered: F79674 */ };
             c1 = null;
             c2 = null;
-            memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F79445 */ };
-            memoizedFunction.clear = function clear() { /* body not rendered: F79447 */ };
+            memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F79673 */ };
+            memoizedFunction.clear = function clear() { /* body not rendered: F79675 */ };
             applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-            batchedStoreListener = new closure_0(closure_3_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F140953 */ });
+            batchedStoreListener = new closure_0(closure_3_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141417 */ });
             applyArgumentsResult.listener = batchedStoreListener;
             return applyArgumentsResult;
           }
@@ -102,13 +102,13 @@ export default function connectStores(items, arg1, arg2) {
         applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
         closure_0 = applyArgumentsResult;
         closure_0 = closure_1;
-        memoizedFunction = function memoizedFunction() { /* body not rendered: F79446 */ };
+        memoizedFunction = function memoizedFunction() { /* body not rendered: F79674 */ };
         c1 = null;
         c2 = null;
-        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F79445 */ };
-        memoizedFunction.clear = function clear() { /* body not rendered: F79447 */ };
+        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F79673 */ };
+        memoizedFunction.clear = function clear() { /* body not rendered: F79675 */ };
         applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F140954 */ });
+        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141418 */ });
         applyArgumentsResult.listener = batchedStoreListener;
         return applyArgumentsResult;
       }

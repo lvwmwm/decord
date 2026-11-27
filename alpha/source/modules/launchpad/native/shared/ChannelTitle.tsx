@@ -1,9 +1,9 @@
-// Module ID: 18976
-// Function ID: 18977
+// Module ID: 18992
+// Function ID: 18993
 // Name: ChannelTitle
-// Dependencies: [19, 6168, 21, 5043, 575, 18972, 5634, 2]
+// Dependencies: [19, 6168, 21, 5043, 575, 18988, 5634, 2]
 
-// Module 18976 (ChannelTitle)
+// Module 18992 (ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ReadStateConstants from "ReadStateConstants" /* 6168 */;

@@ -1,10 +1,10 @@
-// Module ID: 19131
-// Function ID: 19132
+// Module ID: 19147
+// Function ID: 19148
 // Name: useIsNitroBadgeAutoUnhidden
 // Dependencies: [1387, 6383, 504, 6138, 2]
 // Exports: default
 
-// Module 19131 (useIsNitroBadgeAutoUnhidden)
+// Module 19147 (useIsNitroBadgeAutoUnhidden)
 import get_initialized from "get initialized" /* 504 */;
 import BadgeId from "BadgeId" /* 6138 */;
 import UserStore from "UserStore" /* 1387 */;

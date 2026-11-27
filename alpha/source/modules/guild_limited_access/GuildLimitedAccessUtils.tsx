@@ -1,10 +1,10 @@
-// Module ID: 19635
-// Function ID: 19636
+// Module ID: 19651
+// Function ID: 19652
 // Name: GuildLimitedAccessUtils
 // Dependencies: [1071, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 19635 (GuildLimitedAccessUtils)
+// Module 19651 (GuildLimitedAccessUtils)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

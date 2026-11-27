@@ -1,10 +1,10 @@
-// Module ID: 10637
-// Function ID: 10638
+// Module ID: 10638
+// Function ID: 10639
 // Name: useTruncatedGradientColors
 // Dependencies: [19, 5043, 5607, 575, 671, 2]
 // Exports: default
 
-// Module 10637 (useTruncatedGradientColors)
+// Module 10638 (useTruncatedGradientColors)
 import react from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;

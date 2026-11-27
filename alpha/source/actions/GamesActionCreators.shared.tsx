@@ -1,17 +1,17 @@
-// Module ID: 12295
-// Function ID: 12296
+// Module ID: 12303
+// Function ID: 12304
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4891, 6933, 4892, 6014, 1071, 6937, 8401, 10086, 12292, 10196, 4964, 12296, 2151, 5687, 10101, 10100, 9996, 6942, 12299, 12300, 7847, 2]
+// Dependencies: [5, 4891, 6933, 4892, 6014, 1071, 6937, 8402, 10087, 12300, 10197, 4964, 12304, 2151, 5687, 10102, 10101, 9997, 6942, 12307, 12308, 7847, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 12295 (tryJoinAsFrame)
+// Module 12303 (tryJoinAsFrame)
 import Constants from "Constants" /* 1071 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 10086 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10196 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12292 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12300 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 10087 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10197 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12300 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12308 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
@@ -47,7 +47,7 @@ let obj = function _tryJoinAsFrame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -194,7 +194,7 @@ obj = function _startFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -348,7 +348,7 @@ obj = function _startActivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

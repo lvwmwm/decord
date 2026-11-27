@@ -1,10 +1,10 @@
-// Module ID: 18142
-// Function ID: 18143
+// Module ID: 18149
+// Function ID: 18150
 // Name: UnreadBars
-// Dependencies: [19, 17, 5044, 1071, 21, 5043, 6822, 575, 5040, 5104, 5259, 5260, 1186, 1112, 504, 13394, 2]
+// Dependencies: [19, 17, 5044, 1071, 21, 5043, 6822, 575, 5040, 5104, 5259, 5260, 1186, 1112, 504, 13402, 2]
 // Exports: default
 
-// Module 18142 (UnreadBars)
+// Module 18149 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import native from "native" /* 1186 */;
 import native2 from "native" /* 5104 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5260 */;
-import TransitionGroup2 from "TransitionGroup" /* 13394 */;
+import TransitionGroup2 from "TransitionGroup" /* 13402 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;

@@ -1,19 +1,19 @@
-// Module ID: 16421
-// Function ID: 16422
+// Module ID: 16428
+// Function ID: 16429
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 5043, 575, 8216, 12594, 1112, 2847, 16422, 5634, 16383, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 8217, 12602, 1112, 2847, 16429, 5634, 16390, 2]
 // Exports: default
 
-// Module 16421 (FamilyCenterLinkingBanner)
+// Module 16428 (FamilyCenterLinkingBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import _modDef2847 from "module_2847" /* 2847 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8216 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 12594 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 16383 */;
-import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 16422 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8217 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 12602 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 16390 */;
+import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 16429 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

@@ -1,16 +1,16 @@
-// Module ID: 17148
-// Function ID: 17149
+// Module ID: 17155
+// Function ID: 17156
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1387, 1071, 9658, 5068, 21, 5043, 504, 13901, 2109, 6379, 16059, 5725, 1112, 16060, 6874, 5069, 5071, 5073, 9101, 9695, 9586, 8088, 17149, 9636, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 1071, 9659, 5068, 21, 5043, 504, 13908, 2109, 6379, 16066, 5725, 1112, 16067, 6874, 5069, 5071, 5073, 9102, 9696, 9587, 8088, 17156, 9637, 2]
 
-// Module 17148 (UserSettingsAppIcons)
+// Module 17155 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9101 */;
-import AppIconConstants from "AppIconConstants" /* 9658 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9695 */;
-import AppIconRowsDefault from "AppIconRows" /* 17149 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9102 */;
+import AppIconConstants from "AppIconConstants" /* 9659 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9696 */;
+import AppIconRowsDefault from "AppIconRows" /* 17156 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -28,7 +28,7 @@ let closure_14;
 let map1;
 let metroImportAll;
 let tmp6;
-const NitroUpsellButtonDefault = tmp6(9636);
+const NitroUpsellButtonDefault = tmp6(9637);
 const View = react_native.View;
 ({ UpsellTypes: metroImportAll, AnalyticsPages: c9 } = Constants);
 const getIconById = AppIconConstants.getIconById;
@@ -64,7 +64,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -170,7 +170,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             c5 = 0;
             closure_132_7(null);
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp68) {
           closure_6 = tmp68;
@@ -204,7 +204,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           c1 = 3;
           throw tmp23;
@@ -320,7 +320,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   obj = stateFromStores(504);
   let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(13901);
+  let obj2 = stateFromStores(13908);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(2109);
   const isPremiumResult = obj3.isPremium(stateFromStores);

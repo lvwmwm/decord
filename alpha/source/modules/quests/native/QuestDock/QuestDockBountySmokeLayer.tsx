@@ -1,18 +1,18 @@
-// Module ID: 16799
-// Function ID: 16800
+// Module ID: 16806
+// Function ID: 16807
 // Name: QuestDockBountySmokeLayer
-// Dependencies: [32, 19, 17, 5044, 21, 1379, 16800, 16801, 1495, 1629, 16679, 5730, 504, 16782, 8880, 16802, 16770, 16803, 2]
+// Dependencies: [32, 19, 17, 5044, 21, 1379, 16807, 16808, 1495, 1629, 16686, 5730, 504, 16789, 8881, 16809, 16777, 16810, 2]
 // Exports: getQuestDockBountySmokeCollapsedPlaceholderUrl, useSmokeArtSize
 
-// Module 16799 (QuestDockBountySmokeLayer)
+// Module 16806 (QuestDockBountySmokeLayer)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import QuestDockUtils from "QuestDockUtils" /* 16679 */;
-import reactDefault from "react" /* 16770 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16782 */;
-import _modDef16800 from "module_16800" /* 16800 */;
-import _modDef16801 from "module_16801" /* 16801 */;
+import QuestDockUtils from "QuestDockUtils" /* 16686 */;
+import reactDefault from "react" /* 16777 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16789 */;
+import _modDef16807 from "module_16807" /* 16807 */;
+import _modDef16808 from "module_16808" /* 16808 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -27,11 +27,11 @@ let metroImportAll;
 let metroImportDefault;
 let obj3;
 let tmp4;
-const _modDef16802 = tmp4(16802);
+const _modDef16809 = tmp4(16809);
 function QuestDockBountySmokePlaceholder() {
   let obj2;
   const obj = { source: obj2, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-  obj2 = { uri: _modDef16801 };
+  obj2 = { uri: _modDef16808 };
   const tmp = FastImageDefault;
   return metroImportDefault(tmp, obj);
 }
@@ -71,8 +71,8 @@ function QuestDockBountySmokeLayerIOS(paused) {
   const tmp16 = closure_8;
   if (!stateFromStores) {
     const obj3 = { style: tmp7 ? video.video : video.hiddenVideo, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: callback, onError: tmp14 };
-    obj4 = { uri: _modDef16802 };
-    const VideoComponent = tmp(8880).VideoComponent;
+    obj4 = { uri: _modDef16809 };
+    const VideoComponent = tmp(8881).VideoComponent;
     const tmp18 = closure_7;
     if (!flag) {
       flag = !tmp5;
@@ -141,7 +141,7 @@ function QuestDockBountySmokeLayerAndroidAnimated(paused) {
   if (!stateFromStores) {
     tmp4Result = null;
     if (tmp11) {
-      tmp4Result = tmp4(16803);
+      tmp4Result = tmp4(16810);
     }
   }
   const tmp6Result = tmp6(react.useState(tmp4Result), 2);
@@ -175,7 +175,7 @@ function QuestDockBountySmokeLayerAndroidAnimated(paused) {
   if (tmp28Result) {
     const obj3 = { style: video.video, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onLoad: callback, onError: tmp24 };
     obj4 = { uri: tmp4Result };
-    const VideoComponent = tmp(8880).VideoComponent;
+    const VideoComponent = tmp(8881).VideoComponent;
     const tmp28 = closure_7;
     if (!flag) {
       flag = !tmp5;
@@ -186,7 +186,7 @@ function QuestDockBountySmokeLayerAndroidAnimated(paused) {
   let tmp30 = !tmp8;
   if (tmp30) {
     const obj5 = { source: obj6, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-    obj6 = { uri: _modDef16800 };
+    obj6 = { uri: _modDef16807 };
     const tmp4Result2 = FastImageDefault;
     tmp30 = closure_7(tmp4Result2, obj5);
   }
@@ -238,9 +238,9 @@ export function getQuestDockBountySmokeCollapsedPlaceholderUrl() {
   let tmp2Result;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    tmp2Result = tmp2(16800);
+    tmp2Result = tmp2(16807);
   } else {
-    tmp2Result = tmp2(16801);
+    tmp2Result = tmp2(16808);
   }
   return tmp2Result;
 }

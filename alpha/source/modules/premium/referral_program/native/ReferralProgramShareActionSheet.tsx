@@ -1,23 +1,23 @@
-// Module ID: 13884
-// Function ID: 13885
+// Module ID: 13891
+// Function ID: 13892
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1387, 9141, 1071, 21, 5043, 575, 504, 13885, 38, 1255, 11351, 13886, 1112, 5052, 13887, 6379, 6380, 1256, 9142, 5257, 13888, 2120, 5724, 7507, 5634, 5730, 13893, 13894, 11352, 7047, 5641, 5271, 8560, 11354, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 9142, 1071, 21, 5043, 575, 504, 13892, 38, 1255, 11352, 13893, 1112, 5052, 13894, 6379, 6380, 1256, 9143, 5257, 13895, 2120, 5724, 7507, 5634, 5730, 13900, 13901, 11353, 7047, 5641, 5271, 8561, 11355, 2]
 // Exports: default
 
-// Module 13884 (ReferralProgramShareActionSheet)
+// Module 13891 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl8 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11351 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13887 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 11352 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13894 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9141 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9142 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           if (0 === c3) {

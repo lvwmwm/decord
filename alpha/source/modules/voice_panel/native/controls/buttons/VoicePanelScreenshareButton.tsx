@@ -1,18 +1,18 @@
-// Module ID: 19578
-// Function ID: 19579
+// Module ID: 19594
+// Function ID: 19595
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 4892, 21, 1626, 13519, 18206, 5043, 19564, 18200, 19579, 19565, 1112, 7055, 11781, 504, 2]
+// Dependencies: [19, 4892, 21, 1626, 13527, 18213, 5043, 19580, 18207, 19595, 19581, 1112, 7055, 11789, 504, 2]
 // Exports: default
 
-// Module 19578 (VoicePanelScreenshareButton)
+// Module 19594 (VoicePanelScreenshareButton)
 import Fragment from "Fragment" /* 21 */;
 import NativeViewDefault from "NativeView" /* 7055 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13519 */;
-import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 18200 */;
-import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 18206 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 19564 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19565 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 13527 */;
+import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 18207 */;
+import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 18213 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 19580 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19581 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1626 */;
@@ -46,7 +46,7 @@ function ScreenshareButtonInner(arg0) {
     color = voicePanelButtonStyles.iconFillSelected.color;
   }
   if (videoBlocked) {
-    let MobilePhoneDenyIcon = tmp2(19579).MobilePhoneDenyIcon;
+    let MobilePhoneDenyIcon = tmp2(19595).MobilePhoneDenyIcon;
   } else {
     MobilePhoneDenyIcon = MobilePhoneShareIcon;
   }

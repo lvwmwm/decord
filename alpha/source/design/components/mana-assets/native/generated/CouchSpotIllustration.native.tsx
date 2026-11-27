@@ -1,26 +1,26 @@
-// Module ID: 10139
-// Function ID: 10140
+// Module ID: 10140
+// Function ID: 10141
 // Name: CouchSpotIllustration
-// Dependencies: [19, 21, 10140, 10141, 10142, 7261, 5730, 2]
+// Dependencies: [19, 21, 10141, 10142, 10143, 7261, 5730, 2]
 // Exports: CouchSpotIllustration
 
-// Module 10139 (CouchSpotIllustration)
+// Module 10140 (CouchSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef10140 from "module_10140" /* 10140 */;
 import _modDef10141 from "module_10141" /* 10141 */;
 import _modDef10142 from "module_10142" /* 10142 */;
+import _modDef10143 from "module_10143" /* 10143 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef10140 };
+let obj2 = { uri: _modDef10141 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef10141 };
+let obj3 = { uri: _modDef10142 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef10142 };
-({ uri: _modDef10142 });
+obj[3] = { uri: _modDef10143 };
+({ uri: _modDef10143 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CouchSpotIllustration.native.tsx");
 

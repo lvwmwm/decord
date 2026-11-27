@@ -1,10 +1,10 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11300
+// Function ID: 11301
 // Name: ExpressiveNitroUpsell
-// Dependencies: [19, 17, 1073, 21, 5043, 575, 671, 5607, 5257, 11300, 2120, 6380, 1112, 5634, 5598, 1379, 9637, 7558, 2]
+// Dependencies: [19, 17, 1073, 21, 5043, 575, 671, 5607, 5257, 11301, 2120, 6380, 1112, 5634, 5598, 1379, 9638, 7558, 2]
 // Exports: default
 
-// Module 11299 (ExpressiveNitroUpsell)
+// Module 11300 (ExpressiveNitroUpsell)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
@@ -82,7 +82,7 @@ export default function _default(onTrackPress) {
     ActionSheetActionCreatorsDefault;
     const obj = { analyticsLocations: items, title: intl.string(intl3.t.XcOMLu), description: intl2.string(intl3.t.JhE8nA) };
     items = [];
-    const tmp5 = asyncRequire(11300, dependencyMap.paths);
+    const tmp5 = asyncRequire(11301, dependencyMap.paths);
     items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP_DETAILS_MODAL;
     intl = intl3.intl;
     intl2 = intl3.intl;
@@ -114,7 +114,7 @@ export default function _default(onTrackPress) {
   items3[1] = closure_7(Text, obj5);
   const obj6 = { style: tmp.nitroUpsellCta, children: items5 };
   const obj7 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm", style: tmp.nitroUpsellIcon };
-  const NitroWheelIcon = tmp5(9637).NitroWheelIcon;
+  const NitroWheelIcon = tmp5(9638).NitroWheelIcon;
   items5 = [closure_7(NitroWheelIcon, obj7), , ];
   const Text2 = tmp5(5634).Text;
   let androidTextPadding1;

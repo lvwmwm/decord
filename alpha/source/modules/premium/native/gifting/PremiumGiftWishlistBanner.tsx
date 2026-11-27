@@ -1,17 +1,17 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11211
+// Function ID: 11212
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7589, 1389, 1071, 1073, 6137, 21, 575, 5043, 11211, 11115, 11640, 11644, 6379, 6380, 1256, 6133, 11153, 11645, 5220, 5725, 1112, 6310, 11309, 5099, 5634, 11665, 11670, 2]
+// Dependencies: [5, 19, 17, 7589, 1389, 1071, 1073, 6137, 21, 575, 5043, 11212, 11116, 11648, 11652, 6379, 6380, 1256, 6133, 11154, 11653, 5220, 5725, 1112, 6310, 11310, 5099, 5634, 11673, 11678, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 11210 (PremiumGiftWishlistBanner)
+// Module 11211 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
 import Constants2 from "Constants" /* 6137 */;
 import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7589 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 11644 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 11652 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -155,7 +155,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

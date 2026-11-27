@@ -1,18 +1,18 @@
-// Module ID: 18556
-// Function ID: 18557
+// Module ID: 18567
+// Function ID: 18568
 // Name: ConjureEffortPicker
-// Dependencies: [32, 19, 17, 21, 1112, 4245, 18557, 6115, 575, 7251, 18559, 7253, 6140, 6144, 18558, 7549, 7546, 7507, 2]
+// Dependencies: [32, 19, 17, 21, 1112, 4245, 18568, 6115, 575, 7251, 18570, 7253, 6140, 6144, 18569, 7549, 7546, 7507, 2]
 // Exports: ConjureEffortPickerSheet
 
-// Module 18556 (ConjureEffortPicker)
+// Module 18567 (ConjureEffortPicker)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import TableRadioRow2 from "TableRadioRow" /* 7253 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
 import ActionSheet2 from "ActionSheet" /* 7546 */;
-import ConjureEffortTiers from "ConjureEffortTiers" /* 18557 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 18558 */;
+import ConjureEffortTiers from "ConjureEffortTiers" /* 18568 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 18569 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,9 +60,9 @@ class ConjureEffortPicker {
     const stringResult1 = intl2.string(disabled(4245)["59TDiR"]);
     const intl3 = settings(1112).intl;
     const stringResult2 = intl3.string(disabled(4245).fpdVCO);
-    let obj = settings(18557);
+    let obj = settings(18568);
     const conjureCanPickModelResult = obj.conjureCanPickModel(choices);
-    let obj2 = settings(18557);
+    let obj2 = settings(18568);
     const conjureTierModelResult = obj2.conjureTierModel(settings, tiers, settings.tier);
     let obj3 = { direction: "vertical", spacing: disabled(575).space.PX_16, children: items };
     const Stack = settings(6115).Stack;
@@ -114,7 +114,7 @@ class ConjureEffortPicker {
     if (!hideTitle) {
       tmp14 = stringResult;
     }
-    CONJURE_MODEL_TIERS = tmp4(18559).CONJURE_MODEL_TIERS;
+    CONJURE_MODEL_TIERS = tmp4(18570).CONJURE_MODEL_TIERS;
     items = [closure_6(TableRadioGroup, obj4), , ];
     let tmp13Result = null;
     if (conjureCanPickModelResult) {
@@ -194,7 +194,7 @@ class ConjureEffortPicker {
         thinking1 = choices.thinking;
         items1[1] = closure_6(TableRadioGroup3, obj9);
         let tmp13Result4 = null;
-        const tmp4Result = settings(18557);
+        const tmp4Result = settings(18568);
         if (tmp4Result.conjureCeilingSupportsFast(settings, tiers, choices.main)) {
           const obj10 = { hasIcons: false, children: closure_6(TableSwitchRow, obj11) };
           const TableRowGroup2 = tmp4(6140).TableRowGroup;

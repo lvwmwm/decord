@@ -1,10 +1,10 @@
-// Module ID: 8959
-// Function ID: 8960
+// Module ID: 8960
+// Function ID: 8961
 // Name: createAutocompleterResultForChannelId
 // Dependencies: [4892, 4985, 1387, 6986, 1071, 5659, 2]
 // Exports: default
 
-// Module 8959 (createAutocompleterResultForChannelId)
+// Module 8960 (createAutocompleterResultForChannelId)
 import Constants from "Constants" /* 1071 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6986 */;

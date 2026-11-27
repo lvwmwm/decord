@@ -1,16 +1,16 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11306
+// Function ID: 11307
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 5043, 575, 11231, 6152, 1112, 11267, 7491, 6322, 5634, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 11232, 6152, 1112, 11268, 7491, 6322, 5634, 2]
 // Exports: default
 
-// Module 11305 (ProductDetailsActionSheetVariants)
+// Module 11306 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Pressables from "Pressables" /* 6152 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7491 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 11231 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 11267 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 11232 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 11268 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

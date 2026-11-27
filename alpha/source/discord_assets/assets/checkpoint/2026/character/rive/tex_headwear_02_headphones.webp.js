@@ -1,8 +1,8 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 12731
+// Function ID: 12732
 // Dependencies: [2]
 
-// Module 12723
+// Module 12731
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_02_headphones.webp.js");

@@ -1,10 +1,10 @@
-// Module ID: 15144
-// Function ID: 15145
+// Module ID: 15151
+// Function ID: 15152
 // Name: StreamDrawingChannel
 // Dependencies: [4892, 4914, 6816, 504, 2]
 // Exports: isStreamDrawingChannelSupported, supportsStreamDrawing, useIsStreamDrawingChannelSupported
 
-// Module 15144 (StreamDrawingChannel)
+// Module 15151 (StreamDrawingChannel)
 import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;

@@ -1,15 +1,15 @@
-// Module ID: 14059
-// Function ID: 14060
+// Module ID: 14066
+// Function ID: 14067
 // Name: MessagePreviewReactions
-// Dependencies: [19, 8302, 8305, 8936, 21, 504, 6379, 6380, 12242, 2]
+// Dependencies: [19, 8303, 8306, 8937, 21, 504, 6379, 6380, 12250, 2]
 // Exports: default
 
-// Module 14059 (MessagePreviewReactions)
+// Module 14066 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8302 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8305 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8936 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8303 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8306 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8937 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -41,9 +41,9 @@ export default function MessagePreviewReactions(emoji) {
   const AnalyticsLocationProvider = channelId(6379).AnalyticsLocationProvider;
   if (stateFromStores.length > 0) {
     const obj3 = { channelId, messageId, emoji, reactions: stateFromStores };
-    tmp4Result = tmp4(tmp(12242).MessageReactionsContent, obj3);
+    tmp4Result = tmp4(tmp(12250).MessageReactionsContent, obj3);
   } else {
-    tmp4Result = tmp4(tmp(12242).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(12250).MessageReactionsEmpty, {});
   }
   return jsx(AnalyticsLocationProvider, obj2);
 };

@@ -1,12 +1,12 @@
-// Module ID: 10497
-// Function ID: 10498
+// Module ID: 10498
+// Function ID: 10499
 // Name: InviteQueue
-// Dependencies: [4892, 1088, 6791, 3, 8244, 7847, 2]
+// Dependencies: [4892, 1088, 6791, 3, 8245, 7847, 2]
 
-// Module 10497 (InviteQueue)
+// Module 10498 (InviteQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import Queue from "Queue" /* 6791 */;
 import size from "module_2" /* 2 */;

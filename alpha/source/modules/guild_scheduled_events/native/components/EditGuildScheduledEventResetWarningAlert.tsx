@@ -1,10 +1,10 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8611
+// Function ID: 8612
 // Name: EditGuildScheduledEventResetWarningAlert
 // Dependencies: [19, 21, 6118, 1112, 2]
 // Exports: default
 
-// Module 8610 (EditGuildScheduledEventResetWarningAlert)
+// Module 8611 (EditGuildScheduledEventResetWarningAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1112 */;
 import AlertDefault from "Alert" /* 6118 */;

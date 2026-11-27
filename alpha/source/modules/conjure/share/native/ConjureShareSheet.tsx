@@ -1,18 +1,18 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18572
+// Function ID: 18573
 // Name: ConjureShareSheet
-// Dependencies: [19, 17, 21, 5043, 575, 5257, 18476, 7546, 14287, 7507, 1112, 4245, 18562, 5641, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5257, 18483, 7546, 14294, 7507, 1112, 4245, 18573, 5641, 2]
 // Exports: default
 
-// Module 18561 (ConjureShareSheet)
+// Module 18572 (ConjureShareSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ActionSheet2 from "ActionSheet" /* 7546 */;
-import useConjureSharingModeDefault from "useConjureSharingMode" /* 18476 */;
-import ConjureShareAccessDefault from "ConjureShareAccess" /* 18562 */;
+import useConjureSharingModeDefault from "useConjureSharingMode" /* 18483 */;
+import ConjureShareAccessDefault from "ConjureShareAccess" /* 18573 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -52,7 +52,7 @@ export default function ConjureShareSheet(projectId) {
   const ActionSheet = ActionSheet2.ActionSheet;
   if (null != project) {
     const obj2 = { project, size: "dialog" };
-    tmp5Result = tmp5(tmp2(14287), obj2);
+    tmp5Result = tmp5(tmp2(14294), obj2);
   }
   items = [tmp5Result, ];
   const BottomSheetTitleHeader = tmp6(7507).BottomSheetTitleHeader;

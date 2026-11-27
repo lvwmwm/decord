@@ -1,18 +1,18 @@
-// Module ID: 14232
-// Function ID: 14233
+// Module ID: 14239
+// Function ID: 14240
 // Name: getGameProfileWebsiteData
-// Dependencies: [19, 21, 8764, 8546, 8754, 1112, 14233, 13311, 13309, 13307, 14235, 14237, 14239, 14241, 14243, 7929, 14170, 8773, 2]
+// Dependencies: [19, 21, 8765, 8547, 8755, 1112, 14240, 13319, 13317, 13315, 14242, 14244, 14246, 14248, 14250, 7929, 14177, 8774, 2]
 // Exports: default
 
-// Module 14232 (getGameProfileWebsiteData)
+// Module 14239 (getGameProfileWebsiteData)
 import Fragment from "Fragment" /* 21 */;
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 8764 */;
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 8765 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const intl14 = tmp(1112);
-const GameProfileAnalyticUtils = tmp(8754);
+const GameProfileAnalyticUtils = tmp(8755);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/game_profile/native/utils/getGameProfileWebsiteData.tsx");
 

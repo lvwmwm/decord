@@ -1,20 +1,20 @@
-// Module ID: 18193
-// Function ID: 18194
+// Module ID: 18200
+// Function ID: 18201
 // Name: VoicePanelDockSlot
-// Dependencies: [19, 17, 16678, 13411, 21, 11812, 1654, 8619, 11781, 18194, 18196, 18251, 5644, 12962, 11984, 5224, 11807, 504, 2]
+// Dependencies: [19, 17, 16685, 13419, 21, 11820, 1654, 8620, 11789, 18201, 18203, 18258, 5644, 12970, 11992, 5224, 11815, 504, 2]
 
-// Module 18193 (VoicePanelDockSlot)
+// Module 18200 (VoicePanelDockSlot)
 import _mod1654 from "module_1654" /* 1654 */;
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5224 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11807 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11812 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13411 */;
-import VoicePanelDockGlow from "VoicePanelDockGlow" /* 18194 */;
-import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18251 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11815 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11820 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13419 */;
+import VoicePanelDockGlow from "VoicePanelDockGlow" /* 18201 */;
+import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18258 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockStore from "QuestDockStore" /* 16678 */;
+import QuestDockStore from "QuestDockStore" /* 16685 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let tmp5;
 let tmp6;
 const _modDef1654 = tmp(1654);
 const spring_spring = tmp(5644);
-const useStateFromSharedValueDefault = tmp(8619);
-const VoicePanelDockDefault = tmp(18196);
+const useStateFromSharedValueDefault = tmp(8620);
+const VoicePanelDockDefault = tmp(18203);
 function VoicePanelDockSlotDock(micLive) {
   let dockMinimizeProgress;
   let dockTouched;
@@ -343,7 +343,7 @@ function VoicePanelDockSlotContent(width) {
   VoicePanelDockSlotTsx9.__initData = tmp23;
   const animatedStyle = tmpResult4.useAnimatedStyle(VoicePanelDockSlotTsx9);
   const obj4 = { value: memo, children: metroImportAll(View, obj5) };
-  const Provider = tmp13(11781).Provider;
+  const Provider = tmp13(11789).Provider;
   obj5 = { style: items10, onLayout: callback, accessibilityElementsHidden: !tmp22, importantForAccessibility: str, children: metroImportAll(VoicePanelDockSlotDock, { micLive: tmp14 }) };
   items10 = [slot.slot, { width }, animatedStyle];
   str = "no-hide-descendants";
@@ -389,10 +389,10 @@ let closure_21 = { code: "(function VoicePanelDockSlotTsx9(){let[dockHeight,shee
 const memoResult = react.memo(function VoicePanelDockSlot(placement) {
   let tmp7Result;
   placement = placement.placement;
-  const obj = placement(12962);
+  const obj = placement(12970);
   const isMobileRTCV2Enabled = obj.useIsMobileRTCV2Enabled("VoicePanelDockSlot");
   const tmp2 = useVoicePanelDockState();
-  const obj2 = placement(11984);
+  const obj2 = placement(11992);
   const drawerWidth = obj2.useDrawerWidth({ whileSliding: "wider" });
   let width = useBaseAppContainerDimensionsDefault().width;
   const isNavigatorPanelsBesideChannelList = react.useContext(MainTabsNavigatorPanelContextDefault).isNavigatorPanelsBesideChannelList;

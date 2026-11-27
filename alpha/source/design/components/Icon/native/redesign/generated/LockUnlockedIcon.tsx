@@ -1,14 +1,14 @@
-// Module ID: 10763
-// Function ID: 10764
+// Module ID: 10764
+// Function ID: 10765
 // Name: LockUnlockedIcon
-// Dependencies: [19, 21, 575, 5729, 10764, 2]
+// Dependencies: [19, 21, 575, 5729, 10765, 2]
 // Exports: LockUnlockedIcon
 
-// Module 10763 (LockUnlockedIcon)
+// Module 10764 (LockUnlockedIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 10764 */;
+import AssetRegistry from "AssetRegistry" /* 10765 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

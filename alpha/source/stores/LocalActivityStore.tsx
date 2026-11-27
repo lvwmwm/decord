@@ -1,7 +1,7 @@
 // Module ID: 7655
 // Function ID: 7656
 // Name: LocalActivityStore
-// Dependencies: [32, 4891, 2165, 2140, 7656, 7657, 7631, 1231, 6813, 4892, 2159, 14763, 4946, 5853, 1071, 4868, 9488, 6015, 12, 14764, 14765, 8410, 1344, 7768, 12286, 1405, 504, 572, 2]
+// Dependencies: [32, 4891, 2165, 2140, 7656, 7657, 7631, 1231, 6813, 4892, 2159, 14769, 4946, 5853, 1071, 4868, 9489, 6015, 12, 14770, 14771, 8411, 1344, 7768, 12294, 1405, 504, 572, 2]
 
 // Module 7655 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -23,13 +23,13 @@ import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import DetectableGameStore from "DetectableGameStore" /* 2159 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 14763 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 14769 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import SessionsStore from "SessionsStore" /* 5853 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityFlagUtils = tmp(12286);
+const ActivityFlagUtils = tmp(12294);
 function updateActivities() {
   let id;
   let obj3;
@@ -312,7 +312,7 @@ let obj = {
         let tmp = activity.platform === ActivityGamePlatforms.ActivityGamePlatforms.EMBEDDED;
         const tmp11 = require;
         if (tmp) {
-          const tmp11Result = tmp11(12286);
+          const tmp11Result = tmp11(12294);
           tmp = !tmp11Result.isContextlessEmbeddedActivity(activity);
         }
         if (tmp) {

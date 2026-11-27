@@ -1,8 +1,8 @@
-// Module ID: 12826
-// Function ID: 12827
+// Module ID: 12834
+// Function ID: 12835
 // Dependencies: [2]
 
-// Module 12826
+// Module 12834
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_06_takeOutBag.webp.js");

@@ -1,16 +1,16 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17425
+// Function ID: 17426
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [19, 17, 21, 8088, 6115, 575, 5634, 8090, 10455, 2]
+// Dependencies: [19, 17, 21, 8088, 6115, 575, 5634, 8090, 10456, 2]
 // Exports: default
 
-// Module 17418 (UserSettingsDesignSystemRowButton)
+// Module 17425 (UserSettingsDesignSystemRowButton)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
 import _mod8088 from "module_8088" /* 8088 */;
 import RowButton8 from "RowButton" /* 8090 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10455 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10456 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

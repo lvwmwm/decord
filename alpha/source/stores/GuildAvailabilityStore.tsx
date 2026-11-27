@@ -34,8 +34,8 @@ class GuildAvailabilityStore extends Store {
   initialize() {
     this.waitFor(GuildStore);
   }
-  isUnavailable(guildId) {
-    const hasItem = null != guildId && set.has(guildId);
+  isUnavailable(arg0) {
+    const hasItem = null != arg0 && set.has(arg0);
     return hasItem;
   }
 }

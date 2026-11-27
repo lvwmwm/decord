@@ -1,18 +1,18 @@
-// Module ID: 16356
-// Function ID: 16357
+// Module ID: 16363
+// Function ID: 16364
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 9555, 1258, 1263, 4958, 1379, 3, 11962, 1112, 2]
+// Dependencies: [19, 17, 9556, 1258, 1263, 4958, 1379, 3, 11970, 1112, 2]
 
-// Module 16356 (IOSConversationSuggestionsSetting)
+// Module 16363 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import _slicedToArray from "_slicedToArray" /* 4958 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
 import react from "react" /* 19 */;
 import module_1258 from "module_1258" /* 1258 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 let conversationSuggestionsEnabled;

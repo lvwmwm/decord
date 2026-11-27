@@ -1,17 +1,17 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 11472
+// Function ID: 11473
 // Name: requestConjureDevicePermissions
-// Dependencies: [5, 2165, 6936, 11463, 6937, 1088, 11464, 5827, 11465, 572, 2]
+// Dependencies: [5, 2165, 6936, 11473, 6937, 1088, 11474, 5827, 11475, 572, 2]
 // Exports: default, getConjureDevicePermissionStatus
 
-// Module 11462 (requestConjureDevicePermissions)
+// Module 11472 (requestConjureDevicePermissions)
 import DurationsDefault from "Durations" /* 1088 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 11464 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 11474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import FramesStore from "FramesStore" /* 6936 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 11463 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 11473 */;
 import size from "module_2" /* 2 */;
 
 let application, c1, c5, c6, closure_3, frameByIframeId;
@@ -47,7 +47,7 @@ let obj = function _requestConjureDevicePermissions() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let obj = function _requestConjureDevicePermissions() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {

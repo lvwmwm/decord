@@ -1,12 +1,12 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8183
+// Function ID: 8184
 // Name: ApplicationCommandStore
-// Dependencies: [32, 6952, 4946, 8183, 504, 572, 2]
+// Dependencies: [32, 6952, 4946, 8184, 504, 572, 2]
 
-// Module 8182 (ApplicationCommandStore)
+// Module 8183 (ApplicationCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8184 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6952 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;

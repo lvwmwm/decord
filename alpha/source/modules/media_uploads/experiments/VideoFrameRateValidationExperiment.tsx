@@ -1,10 +1,10 @@
-// Module ID: 8148
-// Function ID: 8149
+// Module ID: 8149
+// Function ID: 8150
 // Name: VideoFrameRateValidationExperiment
 // Dependencies: [1451, 2]
 // Exports: getVideoFrameRateValidationExperimentConfig
 
-// Module 8148 (VideoFrameRateValidationExperiment)
+// Module 8149 (VideoFrameRateValidationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

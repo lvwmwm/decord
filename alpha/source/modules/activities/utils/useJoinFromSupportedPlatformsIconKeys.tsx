@@ -1,10 +1,10 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 14546
+// Function ID: 14547
 // Name: useJoinFromSupportedPlatformsIconKeys
 // Dependencies: [19, 7768, 2]
 // Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 14539 (useJoinFromSupportedPlatformsIconKeys)
+// Module 14546 (useJoinFromSupportedPlatformsIconKeys)
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7768 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

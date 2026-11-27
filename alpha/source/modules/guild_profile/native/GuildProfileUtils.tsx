@@ -1,10 +1,10 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8731
+// Function ID: 8732
 // Name: guild_profile/GuildProfileUtils
 // Dependencies: [32, 5044, 1413, 6369, 6321, 2]
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor
 
-// Module 8730 (guild_profile/GuildProfileUtils)
+// Module 8731 (guild_profile/GuildProfileUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import _modDef6321 from "module_6321" /* 6321 */;
 import useAvatarColor from "useAvatarColor" /* 6369 */;

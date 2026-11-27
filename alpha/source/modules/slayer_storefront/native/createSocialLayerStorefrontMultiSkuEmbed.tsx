@@ -1,15 +1,15 @@
-// Module ID: 14517
-// Function ID: 14518
+// Module ID: 14524
+// Function ID: 14525
 // Name: createSocialLayerStorefrontMultiSkuEmbed
-// Dependencies: [2165, 6360, 7590, 1071, 5776, 12935, 11990, 11991, 13593, 5786, 14518, 12385, 14519, 5803, 7588, 2]
+// Dependencies: [2165, 6360, 7590, 1071, 5776, 12943, 11998, 11999, 13601, 5786, 14525, 12393, 14526, 5803, 7588, 2]
 // Exports: createSocialLayerStorefrontMultiSkuEmbed
 
-// Module 14517 (createSocialLayerStorefrontMultiSkuEmbed)
+// Module 14524 (createSocialLayerStorefrontMultiSkuEmbed)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 5776 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 12935 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 13593 */;
-import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 14518 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 12943 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 13601 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 14525 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import SKUStore from "SKUStore" /* 6360 */;
 import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7590 */;
@@ -29,9 +29,9 @@ export function createSocialLayerStorefrontMultiSkuEmbed(arg0) {
   let application;
   const tmp2 = dependencyMap;
   ({ skuIds, guildOrApplication } = arg0);
-  let obj = application(11990);
+  let obj = application(11998);
   const isEligibleForSocialLayerStorefrontMobileEmbed = obj.getIsEligibleForSocialLayerStorefrontMobileEmbed({ location: "create_coded_link_embeds", autoTrackExposure: true });
-  let obj2 = application(11991);
+  let obj2 = application(11999);
   if (isEligibleForSocialLayerStorefrontMobileEmbed) {
     if (obj2.getIsEligibleForSocialLayerStorefrontMobileMultiSkuEmbed({ location: "create_coded_link_embeds", autoTrackExposure: true })) {
       const storefrontFetchState = SocialLayerStorefrontStore.getStorefrontFetchState(guildOrApplication);
@@ -70,9 +70,9 @@ export function createSocialLayerStorefrontMultiSkuEmbed(arg0) {
                 lightThemeLogoAssetId = storefront.lightThemeLogoAssetId;
               }
               const obj3 = { backgroundColor: tmpResult4.getSocialLayerStorefrontEmbedColors(ThemeTypes.DARK).backgroundColor, extendedType: CodedLinkExtendedType.SOCIAL_LAYER_STOREFRONT_MULTI_SKU_EMBED, type: InviteTypes.GUILD, headerText: storefront.title, headerLogoUrl: assetURL, headerBackgroundImageUrl: socialLayerStorefrontBackgroundImageURL, headerAccessibilityLabel: "" + application.name + " " + storefront.title, firstItemFullWidth: flatMapResult.length % 2 === 1, items: flatMapResult, embedCanBeTapped: true };
-              let merged = Object.assign(tmp18(12385)(ThemeTypes.DARK).baseColors);
+              let merged = Object.assign(tmp18(12393)(ThemeTypes.DARK).baseColors);
               assetURL = undefined;
-              tmpResult4 = application(14519);
+              tmpResult4 = application(14526);
               if (null != lightThemeLogoAssetId) {
                 const tmpResult5 = application(5803);
                 assetURL = tmpResult5.getAssetURL(application.id, lightThemeLogoAssetId, 128);

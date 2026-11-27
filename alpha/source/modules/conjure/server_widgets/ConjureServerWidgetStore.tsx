@@ -1,9 +1,9 @@
-// Module ID: 14992
-// Function ID: 14993
+// Module ID: 14999
+// Function ID: 15000
 // Name: ConjureServerWidgetStore
 // Dependencies: [6935, 504, 572, 2]
 
-// Module 14992 (ConjureServerWidgetStore)
+// Module 14999 (ConjureServerWidgetStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;

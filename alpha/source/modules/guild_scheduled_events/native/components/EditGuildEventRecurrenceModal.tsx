@@ -1,22 +1,22 @@
-// Module ID: 8475
-// Function ID: 8476
+// Module ID: 8476
+// Function ID: 8477
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 1629, 8470, 8466, 8476, 2019, 8477, 5641, 1112, 8484, 8479, 8485, 8487, 5634, 7355, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 1629, 8471, 8467, 8477, 2019, 8478, 5641, 1112, 8485, 8480, 8486, 8488, 5634, 7355, 2]
 // Exports: default
 
-// Module 8475 (EditGuildEventRecurrenceModal)
+// Module 8476 (EditGuildEventRecurrenceModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2019 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import useEventExceptionDefault from "useEventException" /* 8470 */;
-import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8476 */;
-import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8477 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8479 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8484 */;
-import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8485 */;
-import GuildEventScheduleDefault from "GuildEventSchedule" /* 8487 */;
+import useEventExceptionDefault from "useEventException" /* 8471 */;
+import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8477 */;
+import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8478 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8480 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8485 */;
+import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8486 */;
+import GuildEventScheduleDefault from "GuildEventSchedule" /* 8488 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -77,7 +77,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -113,7 +113,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
             closure_128_1();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp12) {
           c2 = 3;
           throw tmp12;
@@ -140,9 +140,9 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
   ({ left, right } = tmp2);
   let tmp3 = useEventExceptionDefault(recurrenceId, guildEvent.id);
   dependencyMap = tmp3;
-  obj = guildEvent(8466);
+  obj = guildEvent(8467);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj2 = guildEvent(8466);
+  let obj2 = guildEvent(8467);
   const scheduleForRecurrenceWithException = obj2.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp3);
   [c5, c6] = _slicedToArray(react.useState(scheduleForRecurrenceWithException), 2);
   const tmp6 = _slicedToArray(react.useState(scheduleForRecurrenceWithException), 2);

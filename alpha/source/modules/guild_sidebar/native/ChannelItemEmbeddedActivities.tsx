@@ -1,10 +1,10 @@
-// Module ID: 17959
-// Function ID: 17960
+// Module ID: 17966
+// Function ID: 17967
 // Name: ChannelItemEmbeddedActivities
 // Dependencies: [19, 17, 21, 5043, 575, 7519, 5634, 2]
 // Exports: default
 
-// Module 17959 (ChannelItemEmbeddedActivities)
+// Module 17966 (ChannelItemEmbeddedActivities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GameIcon from "GameIcon" /* 7519 */;

@@ -1,15 +1,15 @@
-// Module ID: 19677
-// Function ID: 19678
+// Module ID: 19693
+// Function ID: 19694
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4892, 6166, 4914, 5849, 1071, 4899, 3, 1088, 7475, 1256, 572, 8315, 1405, 2]
+// Dependencies: [5, 502, 4892, 6166, 4914, 5849, 1071, 4899, 3, 1088, 7475, 1256, 572, 8316, 1405, 2]
 
-// Module 19677 (ChannelResyncManager)
+// Module 19693 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 8315 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 8316 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -141,7 +141,7 @@ let obj = function _scheduleGuildResyncs() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ let obj = function _scheduleGuildResyncs() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c4 = 3;
@@ -312,7 +312,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

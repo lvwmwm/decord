@@ -1,10 +1,10 @@
-// Module ID: 14525
-// Function ID: 14526
+// Module ID: 14532
+// Function ID: 14533
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11916, 4914, 12935, 11917, 5776, 12385, 1112, 2651, 8227, 575, 8821, 7437, 14526, 12322, 12097, 12129, 7102, 5040, 2]
+// Dependencies: [11924, 4914, 12943, 11925, 5776, 12393, 1112, 2651, 8228, 575, 8822, 7437, 14533, 12330, 12105, 12137, 7102, 5040, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 14525 (GameOrganizationInviteEmbed)
+// Module 14532 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import _modDef2651 from "module_2651" /* 2651 */;
@@ -12,15 +12,15 @@ import ColorUtils from "ColorUtils" /* 5040 */;
 import Constants from "Constants" /* 5776 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7102 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7437 */;
-import react_native from "react-native" /* 8227 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12097 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12322 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12385 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 12935 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 14526 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11916 */;
+import react_native from "react-native" /* 8228 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8822 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11925 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12105 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12330 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12393 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 12943 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 14533 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11924 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
       obj17 = { displayNoun };
       ({ name: obj10.titleText, iconUrl } = organization);
       if (iconUrl == null) {
-        iconUrl = tmp(12129);
+        iconUrl = tmp(12137);
       }
       ({ name: obj10.gameName, iconUrl: iconUrl2 } = application);
       formatToPlainStringResult = undefined;

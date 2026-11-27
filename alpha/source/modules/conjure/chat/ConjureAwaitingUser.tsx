@@ -1,10 +1,10 @@
-// Module ID: 18718
-// Function ID: 18719
+// Module ID: 18735
+// Function ID: 18736
 // Name: chat/ConjureAwaitingUser
 // Dependencies: [7660, 2]
 // Exports: activeAwaitingUser
 
-// Module 18718 (chat/ConjureAwaitingUser)
+// Module 18735 (chat/ConjureAwaitingUser)
 import conjureChatTurns from "conjureChatTurns" /* 7660 */;
 import size from "module_2" /* 2 */;
 

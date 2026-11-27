@@ -1,10 +1,10 @@
-// Module ID: 19837
-// Function ID: 19838
+// Module ID: 19853
+// Function ID: 19854
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 8212, 8213, 1071, 4889, 21, 4876, 8214, 5220, 8109, 6132, 5043, 575, 1629, 1112, 2847, 1256, 572, 4877, 5257, 6130, 19838, 2120, 5271, 6115, 19839, 5634, 5641, 2]
+// Dependencies: [19, 17, 8213, 8214, 1071, 4889, 21, 4876, 8215, 5220, 8109, 6132, 5043, 575, 1629, 1112, 2847, 1256, 572, 4877, 5257, 6130, 19854, 2120, 5271, 6115, 19855, 5634, 5641, 2]
 // Exports: default
 
-// Module 19837 (ParentalConsentWarningModal)
+// Module 19853 (ParentalConsentWarningModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,10 +17,10 @@ import RootNavigationRef from "RootNavigationRef" /* 5220 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6132 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8214 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8215 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8213 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8214 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -137,7 +137,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       });
     } else {
       const tmp2Result4 = ModalActionCreatorsDefault;
-      tmp2Result4.pushLazy(asyncRequire(19838, tmp3.paths));
+      tmp2Result4.pushLazy(asyncRequire(19854, tmp3.paths));
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;

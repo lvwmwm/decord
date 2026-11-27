@@ -1,13 +1,13 @@
-// Module ID: 14461
-// Function ID: 14462
+// Module ID: 14468
+// Function ID: 14469
 // Name: useRecommendedCollectiblesSections
-// Dependencies: [19, 14462, 5622, 14463, 2]
+// Dependencies: [19, 14469, 5622, 14470, 2]
 // Exports: default
 
-// Module 14461 (useRecommendedCollectiblesSections)
+// Module 14468 (useRecommendedCollectiblesSections)
 import react from "react" /* 19 */;
 import reactDefault from "react" /* 5622 */;
-import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 14462 */;
+import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 14469 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, recommendations;

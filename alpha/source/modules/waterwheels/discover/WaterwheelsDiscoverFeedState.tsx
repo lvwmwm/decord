@@ -1,10 +1,10 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18025
+// Function ID: 18026
 // Name: WaterwheelsDiscoverFeedState
 // Dependencies: [2]
 // Exports: getWaterwheelsDiscoverFeedStatus, selectWaterwheelsDiscoverEntries, shouldRequestWaterwheelsDiscover, toDiscoverAnalyticsItem
 
-// Module 18018 (WaterwheelsDiscoverFeedState)
+// Module 18025 (WaterwheelsDiscoverFeedState)
 import size from "module_2" /* 2 */;
 
 let set;

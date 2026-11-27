@@ -1,8 +1,8 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 12701
+// Function ID: 12702
 // Dependencies: [2]
 
-// Module 12693
+// Module 12701
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_base_06_mighnight.webp.js");

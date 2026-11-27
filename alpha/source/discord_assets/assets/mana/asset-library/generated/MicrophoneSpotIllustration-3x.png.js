@@ -1,8 +1,8 @@
-// Module ID: 10292
-// Function ID: 10293
+// Module ID: 10293
+// Function ID: 10294
 // Dependencies: [2]
 
-// Module 10292
+// Module 10293
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MicrophoneSpotIllustration-3x.png.js");

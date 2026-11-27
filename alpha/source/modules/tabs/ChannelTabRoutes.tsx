@@ -1,10 +1,10 @@
-// Module ID: 11528
-// Function ID: 11529
+// Module ID: 11536
+// Function ID: 11537
 // Name: ChannelTabRoutes
 // Dependencies: [1071, 4899, 5094, 5081, 1112, 4245, 1099, 2]
 // Exports: getChannelTabPageName, getFriendsTabLocation, getTabLocationForPath, isSameTabLocation
 
-// Module 11528 (ChannelTabRoutes)
+// Module 11536 (ChannelTabRoutes)
 import _mod1099 from "module_1099" /* 1099 */;
 import intl6 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;

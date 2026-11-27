@@ -1,18 +1,18 @@
-// Module ID: 9554
-// Function ID: 9555
+// Module ID: 9555
+// Function ID: 9556
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 9550, 1071, 9555, 21, 5043, 8109, 6048, 6052, 7278, 1112, 2]
+// Dependencies: [19, 17, 9551, 1071, 9556, 21, 5043, 8109, 6048, 6052, 7278, 1112, 2]
 // Exports: default
 
-// Module 9554 (DoubleTapNitroAlert)
+// Module 9555 (DoubleTapNitroAlert)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7278 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 9550 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
+import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 9551 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

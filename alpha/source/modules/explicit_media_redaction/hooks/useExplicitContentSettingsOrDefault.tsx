@@ -1,13 +1,13 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16339
+// Function ID: 16340
 // Name: useExplicitContentSettingsOrDefault
-// Dependencies: [1231, 563, 8206, 8209, 2]
+// Dependencies: [1231, 563, 8207, 8210, 2]
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 16332 (useExplicitContentSettingsOrDefault)
+// Module 16339 (useExplicitContentSettingsOrDefault)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 8206 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8209 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 8207 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8210 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 

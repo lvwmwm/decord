@@ -1,11 +1,11 @@
-// Module ID: 9543
-// Function ID: 9544
+// Module ID: 9544
+// Function ID: 9545
 // Name: TopEmojisUtils
-// Dependencies: [1387, 6883, 6885, 9544, 2]
+// Dependencies: [1387, 6883, 6885, 9545, 2]
 // Exports: maybeFetchTopEmojisByGuild
 
-// Module 9543 (TopEmojisUtils)
-import TopEmojisActionCreators from "TopEmojisActionCreators" /* 9544 */;
+// Module 9544 (TopEmojisUtils)
+import TopEmojisActionCreators from "TopEmojisActionCreators" /* 9545 */;
 import UserStore from "UserStore" /* 1387 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import TopEmojiStore from "TopEmojiStore" /* 6885 */;

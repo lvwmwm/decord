@@ -1,10 +1,10 @@
-// Module ID: 12548
-// Function ID: 12549
+// Module ID: 12556
+// Function ID: 12557
 // Name: getAgeVerificationGetStartedSteps
 // Dependencies: [1071, 1112, 7870, 2188, 6828, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 12548 (getAgeVerificationGetStartedSteps)
+// Module 12556 (getAgeVerificationGetStartedSteps)
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6828 */;

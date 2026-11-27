@@ -1,12 +1,12 @@
-// Module ID: 8765
-// Function ID: 8766
+// Module ID: 8766
+// Function ID: 8767
 // Name: useSteamWebsiteUrl
-// Dependencies: [2141, 1071, 504, 8766, 8764, 2153, 2]
+// Dependencies: [2141, 1071, 504, 8767, 8765, 2153, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 8765 (useSteamWebsiteUrl)
+// Module 8766 (useSteamWebsiteUrl)
 import Constants from "Constants" /* 1071 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8766 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8767 */;
 import GameStore from "GameStore" /* 2141 */;
 import size from "module_2" /* 2 */;
 

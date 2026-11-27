@@ -1,10 +1,10 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10421
+// Function ID: 10422
 // Name: WindowsEffectsExperiment
 // Dependencies: [1246, 1451, 504, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 10420 (WindowsEffectsExperiment)
+// Module 10421 (WindowsEffectsExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;

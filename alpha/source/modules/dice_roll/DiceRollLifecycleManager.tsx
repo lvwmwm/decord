@@ -1,17 +1,17 @@
-// Module ID: 19692
-// Function ID: 19693
+// Module ID: 19708
+// Function ID: 19709
 // Name: DiceRollLifecycleManager
-// Dependencies: [4892, 4946, 12957, 10056, 5048, 7475, 1112, 8244, 8344, 2]
+// Dependencies: [4892, 4946, 12965, 10057, 5048, 7475, 1112, 8245, 8345, 2]
 
-// Module 19692 (DiceRollLifecycleManager)
+// Module 19708 (DiceRollLifecycleManager)
 import intl3 from "intl" /* 1112 */;
 import MessageConstants from "MessageConstants" /* 5048 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
-import MessageParserDefault from "MessageParser" /* 8344 */;
-import DiceRollStore2 from "DiceRollStore" /* 12957 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
+import MessageParserDefault from "MessageParser" /* 8345 */;
+import DiceRollStore2 from "DiceRollStore" /* 12965 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
-import DiceRollConstants from "DiceRollConstants" /* 10056 */;
+import DiceRollConstants from "DiceRollConstants" /* 10057 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 

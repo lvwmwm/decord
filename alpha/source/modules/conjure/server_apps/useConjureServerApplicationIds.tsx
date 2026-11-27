@@ -1,12 +1,12 @@
-// Module ID: 19980
-// Function ID: 19981
+// Module ID: 19998
+// Function ID: 19999
 // Name: useConjureServerApplicationIds
-// Dependencies: [19, 2165, 504, 1451, 6969, 11561, 2]
+// Dependencies: [19, 2165, 504, 1451, 6969, 11569, 2]
 // Exports: default
 
-// Module 19980 (useConjureServerApplicationIds)
+// Module 19998 (useConjureServerApplicationIds)
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6969 */;
-import prefetchConjureApplicationDefault from "prefetchConjureApplication" /* 11561 */;
+import prefetchConjureApplicationDefault from "prefetchConjureApplication" /* 11569 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,14 @@
 // Module ID: 15762
 // Function ID: 15763
-// Dependencies: [15743, 15763]
+// Dependencies: [15746, 15763]
 
 // Module 15762
-import _mod15743 from "module_15743" /* 15743 */;
+import _mod15746 from "module_15746" /* 15746 */;
+import _mod15763 from "module_15763" /* 15763 */;
 
-let tmp2;
-const _mod15763 = tmp2(15763);
+let closure_2 = _mod15746({}.hasOwnProperty);
+const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod15763(arg0), arg1);
+});
 
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!_mod15743(arg0[arg1])) {
-    tmp4 = _mod15763(tmp);
-  }
-  return tmp4;
-};
+export default tmp;

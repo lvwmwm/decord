@@ -1,10 +1,10 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16214
+// Function ID: 16215
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1387, 1071, 21, 5043, 575, 5836, 16208, 5634, 1112, 1501, 504, 2174, 16209, 7347, 7338, 1285, 1502, 9004, 7274, 7353, 7301, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 1071, 21, 5043, 575, 5836, 16215, 5634, 1112, 1501, 504, 2174, 16216, 7347, 7338, 1285, 1502, 9005, 7274, 7353, 7301, 2]
 // Exports: default
 
-// Module 16207 (UserSettingsChangeUsername)
+// Module 16214 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
@@ -34,7 +34,7 @@ function UsernameStatusMessage(showHint) {
   const usernameStatus = showHint.usernameStatus;
   const str = showHint(5836);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(16208).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(16215).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
   P = showHint(5836).P;
   const _withResult = _with(obj, (children) => {
@@ -42,7 +42,7 @@ function UsernameStatusMessage(showHint) {
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(16208).NameValidationState.AVAILABLE, message: P2.select() };
+  const obj2 = { type: showHint(16215).NameValidationState.AVAILABLE, message: P2.select() };
   P2 = showHint(5836).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "body-xs/medium", color: "text-feedback-positive", children };
@@ -203,7 +203,7 @@ export default function UserSettingsChangeUsername() {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {

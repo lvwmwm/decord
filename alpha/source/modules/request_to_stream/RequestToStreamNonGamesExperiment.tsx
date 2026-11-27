@@ -1,9 +1,9 @@
-// Module ID: 12279
-// Function ID: 12280
+// Module ID: 12287
+// Function ID: 12288
 // Name: RequestToStreamNonGamesExperiment
 // Dependencies: [1451, 2]
 
-// Module 12279 (RequestToStreamNonGamesExperiment)
+// Module 12287 (RequestToStreamNonGamesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

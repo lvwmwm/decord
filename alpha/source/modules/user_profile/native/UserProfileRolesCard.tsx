@@ -128,29 +128,31 @@ class RoleItem {
     return tmp11Result;
   }
 }
-function RolesList(guildMemberRoleIds) {
-  guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
-  const guildId = guildMemberRoleIds.guildId;
-  const tmp = closure_12();
-  let obj = guildMemberRoleIds(504);
-  const items = [GuildRoleStore];
-  const items1 = [guildMemberRoleIds, guildId];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const manyRoles = GuildRoleStore.getManyRoles(guildId, guildMemberRoleIds);
-    return manyRoles.sort(UserProfileRoleUtils.sortRolesByVerification);
-  }, items1);
-  let tmp2 = null;
-  if (0 !== stateFromStoresArray.length) {
-    const obj2 = {
-      style: tmp.roleContainer,
-      children: stateFromStoresArray.map((role) => {
-          const obj = { role, guildId };
-          return React4(RoleItem, obj, role.id);
-        })
-    };
-    tmp2 = closure_9(View, obj2);
+class RolesList {
+  constructor(guildMemberRoleIds) {
+    guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
+    const guildId = guildMemberRoleIds.guildId;
+    const tmp = closure_12();
+    let obj = guildMemberRoleIds(504);
+    const items = [GuildRoleStore];
+    const items1 = [guildMemberRoleIds, guildId];
+    const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+      const manyRoles = GuildRoleStore.getManyRoles(guildId, guildMemberRoleIds);
+      return manyRoles.sort(UserProfileRoleUtils.sortRolesByVerification);
+    }, items1);
+    let tmp2 = null;
+    if (0 !== stateFromStoresArray.length) {
+      const obj2 = {
+        style: tmp.roleContainer,
+        children: stateFromStoresArray.map((role) => {
+            const obj = { role, guildId };
+            return React4(RoleItem, obj, role.id);
+          })
+      };
+      tmp2 = closure_9(View, obj2);
+    }
+    return tmp2;
   }
-  return tmp2;
 }
 const View = react_native.View;
 ({ DEFAULT_ROLE_COLOR_HEX: metroImportDefault, MAX_VISUAL_ROLE_LENGTH: metroImportAll } = Constants);
@@ -192,3 +194,4 @@ export default function UserProfileRolesCard(userId) {
   return tmp4;
 };
 export { RoleItem };
+export { RolesList };

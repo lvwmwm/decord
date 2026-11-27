@@ -1,10 +1,10 @@
-// Module ID: 10821
-// Function ID: 10822
+// Module ID: 10822
+// Function ID: 10823
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 5043, 10811, 575, 2019, 5257, 10822, 2120, 1112, 6152, 5730, 2]
+// Dependencies: [19, 17, 21, 5043, 10812, 575, 2019, 5257, 10823, 2120, 1112, 6152, 5730, 2]
 // Exports: default
 
-// Module 10821 (GIFPickerItemView)
+// Module 10822 (GIFPickerItemView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import intl2 from "intl" /* 1112 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2019 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10811 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10812 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ export default function GIFPickerItemView(onPressGIF) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { item };
-    obj.openLazy(asyncRequire(10822, dependencyMap.paths), "GIFPickerItemActionSheet", obj2, "stack");
+    obj.openLazy(asyncRequire(10823, dependencyMap.paths), "GIFPickerItemActionSheet", obj2, "stack");
     const obj3 = KeyboardManagerUtils;
     const result = obj3.dismissGlobalKeyboard();
   }, items1);

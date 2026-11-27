@@ -1,14 +1,14 @@
-// Module ID: 10823
-// Function ID: 10824
+// Module ID: 10824
+// Function ID: 10825
 // Name: GifIcon
-// Dependencies: [19, 21, 575, 5729, 10824, 2]
+// Dependencies: [19, 21, 575, 5729, 10825, 2]
 // Exports: GifIcon
 
-// Module 10823 (GifIcon)
+// Module 10824 (GifIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 10824 */;
+import AssetRegistry from "AssetRegistry" /* 10825 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

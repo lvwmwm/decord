@@ -1,10 +1,10 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 14065
+// Function ID: 14066
 // Name: MessageReactions
-// Dependencies: [19, 6391, 21, 504, 6379, 6380, 12242, 2]
+// Dependencies: [19, 6391, 21, 504, 6379, 6380, 12250, 2]
 // Exports: default
 
-// Module 14058 (MessageReactions)
+// Module 14065 (MessageReactions)
 import Fragment from "Fragment" /* 21 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
@@ -80,11 +80,11 @@ export default function MessageReactions(emoji) {
   const AnalyticsLocationProvider = tmp4(6379).AnalyticsLocationProvider;
   if (items3.length > 0) {
     let obj3 = { channelId, messageId, emoji, reactions: items3, isSelectedBurst };
-    const MessageReactionsContent = tmp4(12242).MessageReactionsContent;
+    const MessageReactionsContent = tmp4(12250).MessageReactionsContent;
     let merged1 = Object.assign(merged);
     tmp9Result = tmp9(MessageReactionsContent, obj3);
   } else {
-    tmp9Result = tmp9(tmp4(12242).MessageReactionsEmpty, {});
+    tmp9Result = tmp9(tmp4(12250).MessageReactionsEmpty, {});
   }
   return jsx(AnalyticsLocationProvider, obj2);
 };

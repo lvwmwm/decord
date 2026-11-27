@@ -1,10 +1,10 @@
-// Module ID: 18483
-// Function ID: 18484
+// Module ID: 18490
+// Function ID: 18491
 // Name: ConjurePublishReviewDetails
-// Dependencies: [19, 17, 21, 13356, 7167, 7172, 6935, 12270, 18208, 18484, 10078, 18486, 5043, 575, 5725, 7171, 12474, 1112, 4245, 18488, 18490, 7274, 7440, 5730, 5634, 18494, 18464, 18495, 5105, 6152, 7182, 6159, 2]
+// Dependencies: [19, 17, 21, 13364, 7167, 7172, 6935, 12278, 18215, 18491, 10079, 18493, 5043, 575, 5725, 7171, 12482, 1112, 4245, 18495, 18497, 7274, 7440, 5730, 5634, 18501, 18471, 18502, 5105, 6152, 7182, 6159, 2]
 // Exports: default
 
-// Module 18483 (ConjurePublishReviewDetails)
+// Module 18490 (ConjurePublishReviewDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -17,12 +17,12 @@ import VoiceNormalIcon from "VoiceNormalIcon" /* 7167 */;
 import AppsLockIcon2 from "AppsLockIcon" /* 7171 */;
 import AppsIcon from "AppsIcon" /* 7172 */;
 import FormCheckbox from "FormCheckbox" /* 7182 */;
-import ShieldIcon from "ShieldIcon" /* 10078 */;
-import RobotIcon from "RobotIcon" /* 12270 */;
-import ScreenIcon from "ScreenIcon" /* 13356 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 18208 */;
-import BadgeIcon from "BadgeIcon" /* 18484 */;
-import WindowTopIcon from "WindowTopIcon" /* 18486 */;
+import ShieldIcon from "ShieldIcon" /* 10079 */;
+import RobotIcon from "RobotIcon" /* 12278 */;
+import ScreenIcon from "ScreenIcon" /* 13364 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 18215 */;
+import BadgeIcon from "BadgeIcon" /* 18491 */;
+import WindowTopIcon from "WindowTopIcon" /* 18493 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -200,7 +200,7 @@ export default function ConjurePublishReviewDetails(review) {
   let tmp5 = null;
   if (true === shared) {
     obj = { label: intl.string(appChannelsPrivate(4245).Td1mlg), checked: null, onToggle: null };
-    const Checkbox = appChannelsPrivate(12474).Checkbox;
+    const Checkbox = appChannelsPrivate(12482).Checkbox;
     intl = appChannelsPrivate(1112).intl;
     const tmp9 = appChannelsPrivate;
     ({ isPrivate: obj.checked, setPrivate: obj.onToggle } = appChannelsPrivate);
@@ -209,7 +209,7 @@ export default function ConjurePublishReviewDetails(review) {
   let tmp12 = null;
   if (review.managedCopy) {
     obj2 = { projectId: review.projectId };
-    tmp12 = closure_4(appChannelsPrivate(18488), obj2);
+    tmp12 = closure_4(appChannelsPrivate(18495), obj2);
   }
   const items = [tmp12, , , , , , , ];
   const obj3 = { children: null };
@@ -229,7 +229,7 @@ export default function ConjurePublishReviewDetails(review) {
         },
       onConjure: onConjureIcon
     };
-    const items1 = [closure_4(appChannelsPrivate(18490).ConjureAppIconTile, obj4), , ];
+    const items1 = [closure_4(appChannelsPrivate(18497).ConjureAppIconTile, obj4), , ];
     const obj5 = { label: intl2.string(appChannelsPrivate(4245).knevPu), value: null, onChange: null, maxLength: appChannelsPrivate(6935).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
     const TextInput = appChannelsPrivate(7274).TextInput;
     intl2 = appChannelsPrivate(1112).intl;
@@ -275,7 +275,7 @@ export default function ConjurePublishReviewDetails(review) {
   if (null != review.placement) {
     const obj15 = { placement: null, disabled: null };
     ({ placement: obj12.placement, saving: obj12.disabled } = review);
-    tmp21Result2 = tmp21(appChannelsPrivate(18494), obj15);
+    tmp21Result2 = tmp21(appChannelsPrivate(18501), obj15);
   }
   items[2] = tmp21Result2;
   let tmp33 = null;
@@ -306,6 +306,6 @@ export default function ConjurePublishReviewDetails(review) {
   devicePermissions = review.devicePermissions;
   items[6] = tmp21(tmp34, obj32);
   const obj33 = { remix: review.remix, disabled: review.saving };
-  items[7] = tmp21(appChannelsPrivate(18495), obj33);
+  items[7] = tmp21(appChannelsPrivate(18502), obj33);
   return closure_6(closure_5, obj31);
 };

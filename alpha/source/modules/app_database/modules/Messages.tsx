@@ -1,21 +1,21 @@
-// Module ID: 8251
-// Function ID: 8252
+// Module ID: 8252
+// Function ID: 8253
 // Name: modules/Messages
-// Dependencies: [5, 32, 5849, 4892, 8252, 3, 6785, 4921, 8258, 8261, 4922, 11, 2]
+// Dependencies: [5, 32, 5849, 4892, 8253, 3, 6785, 4921, 8259, 8262, 4922, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 8251 (modules/Messages)
+// Module 8252 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
 import _mod4922 from "module_4922" /* 4922 */;
 import requireSortedDescending from "requireSortedDescending" /* 6785 */;
-import isReadableChannel from "isReadableChannel" /* 8258 */;
-import KvMessage2 from "KvMessage" /* 8261 */;
+import isReadableChannel from "isReadableChannel" /* 8259 */;
+import KvMessage2 from "KvMessage" /* 8262 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 8252 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 8253 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;
@@ -140,7 +140,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -416,7 +416,7 @@ class Messages {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -468,7 +468,7 @@ class Messages {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;

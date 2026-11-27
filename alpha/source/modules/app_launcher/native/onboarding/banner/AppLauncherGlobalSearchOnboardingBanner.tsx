@@ -1,10 +1,10 @@
-// Module ID: 13077
-// Function ID: 13078
+// Module ID: 13085
+// Function ID: 13086
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1500, 4889, 21, 5043, 575, 7172, 9577, 1112, 2]
+// Dependencies: [19, 17, 1500, 4889, 21, 5043, 575, 7172, 9578, 1112, 2]
 // Exports: default
 
-// Module 13077 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 13085 (AppLauncherGlobalSearchOnboardingBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -49,7 +49,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
   }, items);
   let tmp3 = null;
   if (visible) {
-    const Coachmark = markAsDismissed(9577).Coachmark;
+    const Coachmark = markAsDismissed(9578).Coachmark;
     const intl = markAsDismissed(1112).intl;
     const intl2 = markAsDismissed(1112).intl;
     size = { x: 0, y: -40, width: diff, height: 40 };

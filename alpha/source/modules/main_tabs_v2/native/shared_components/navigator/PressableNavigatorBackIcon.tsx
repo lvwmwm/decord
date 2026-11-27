@@ -1,10 +1,10 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 9007
+// Function ID: 9008
 // Name: PressableNavigatorBackIcon
-// Dependencies: [19, 17, 4892, 6976, 4946, 21, 5043, 1186, 575, 504, 5607, 5213, 9007, 6152, 1112, 5730, 9008, 9009, 2]
+// Dependencies: [19, 17, 4892, 6976, 4946, 21, 5043, 1186, 575, 504, 5607, 5213, 9008, 6152, 1112, 5730, 9009, 9010, 2]
 // Exports: PressableNavigatorBackIcon
 
-// Module 9006 (PressableNavigatorBackIcon)
+// Module 9007 (PressableNavigatorBackIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;

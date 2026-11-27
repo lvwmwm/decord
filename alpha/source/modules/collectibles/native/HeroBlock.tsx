@@ -1,17 +1,17 @@
-// Module ID: 17499
-// Function ID: 17500
+// Module ID: 17506
+// Function ID: 17507
 // Name: HeroBlock
-// Dependencies: [19, 17, 6311, 1073, 21, 5043, 575, 14220, 11211, 16634, 17500, 17503, 17506, 504, 9893, 17507, 17508, 16593, 6379, 6380, 11214, 17518, 17520, 5621, 17521, 1112, 7482, 2]
+// Dependencies: [19, 17, 6311, 1073, 21, 5043, 575, 14227, 11212, 16641, 17507, 17510, 17513, 504, 9894, 17514, 17515, 16600, 6379, 6380, 11215, 17525, 17527, 5621, 17528, 1112, 7482, 2]
 // Exports: default
 
-// Module 17499 (HeroBlock)
+// Module 17506 (HeroBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 11211 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 11214 */;
-import SkeletonCardDefault from "SkeletonCard" /* 14220 */;
-import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 16634 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 11212 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 11215 */;
+import SkeletonCardDefault from "SkeletonCard" /* 14227 */;
+import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 16641 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6311 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp2;
-const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(17518);
+const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(17525);
 function SkeletonLoading(accessibilityLabel) {
   let arr;
   let obj = {
@@ -48,10 +48,10 @@ function OrbsExclusiveHeroHeader(heroBlock) {
   const OrbsArcadeExperiment = OrbsArcadeExperiment2.OrbsArcadeExperiment;
   if (OrbsArcadeExperiment.useConfig({ location: "HeroBlock" }).enabled) {
     const obj2 = { productsTitle: heroBlock.mobileProductsTitle };
-    tmp2Result = tmp2(tmp3(17503), obj2);
+    tmp2Result = tmp2(tmp3(17510), obj2);
   } else {
     const obj = { heroBlock, category };
-    tmp2Result = tmp2(tmp3(17500), obj);
+    tmp2Result = tmp2(tmp3(17507), obj);
   }
   return tmp2Result;
 }

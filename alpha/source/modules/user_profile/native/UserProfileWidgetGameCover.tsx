@@ -1,15 +1,15 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14592
+// Function ID: 14593
 // Name: UserProfileWidgetGameCover
-// Dependencies: [19, 17, 21, 5043, 575, 14584, 1112, 14586, 14587, 14588, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 14591, 1112, 14593, 14594, 14595, 2]
 
-// Module 14585 (UserProfileWidgetGameCover)
+// Module 14592 (UserProfileWidgetGameCover)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14584 */;
-import GameCoverImageDefault from "GameCoverImage" /* 14586 */;
-import UserProfileWidgetRemoveGameButtonDefault from "UserProfileWidgetRemoveGameButton" /* 14587 */;
-import useWidgetGamePressDefault from "useWidgetGamePress" /* 14588 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14591 */;
+import GameCoverImageDefault from "GameCoverImage" /* 14593 */;
+import UserProfileWidgetRemoveGameButtonDefault from "UserProfileWidgetRemoveGameButton" /* 14594 */;
+import useWidgetGamePressDefault from "useWidgetGamePress" /* 14595 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

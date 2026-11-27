@@ -1,10 +1,10 @@
-// Module ID: 18819
-// Function ID: 18820
+// Module ID: 18834
+// Function ID: 18835
 // Name: ConjureTipInlineCallout
 // Dependencies: [19, 17, 21, 5043, 575, 7944, 7247, 1112, 2]
 // Exports: default
 
-// Module 18819 (ConjureTipInlineCallout)
+// Module 18834 (ConjureTipInlineCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

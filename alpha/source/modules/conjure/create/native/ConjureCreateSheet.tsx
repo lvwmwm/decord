@@ -1,17 +1,17 @@
-// Module ID: 18867
-// Function ID: 18868
+// Module ID: 18883
+// Function ID: 18884
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 7693, 21, 5043, 575, 14761, 18858, 18868, 18857, 5257, 7671, 18606, 1112, 4245, 7667, 5724, 18556, 18869, 18870, 7546, 7507, 7440, 6140, 6144, 5634, 18557, 18876, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 7693, 21, 5043, 575, 14767, 18874, 18884, 18873, 5257, 7671, 18617, 1112, 4245, 7667, 5724, 18567, 18885, 18886, 7546, 7507, 7440, 6140, 6144, 5634, 18568, 18892, 5641, 2]
 // Exports: default
 
-// Module 18867 (ConjureCreateSheet)
+// Module 18883 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7693 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 18556 */;
-import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 18858 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 18870 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 18567 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 18874 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 18886 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -141,7 +141,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ export default function ConjureCreateSheet(guildId) {
             c5 = 0;
             v2(false);
             v3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp38) {
           modelSettings = tmp38;
@@ -228,7 +228,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -264,7 +264,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -291,7 +291,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -389,7 +389,7 @@ export default function ConjureCreateSheet(guildId) {
             modelSettings = 0;
             v3(false);
             v3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp62) {
           closure_3 = tmp62;
@@ -424,7 +424,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -497,7 +497,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp30) {
         if (0 === c2) {
           c4 = 3;

@@ -1,11 +1,11 @@
-// Module ID: 11551
-// Function ID: 11552
+// Module ID: 11559
+// Function ID: 11560
 // Name: useConjureAppCreator
-// Dependencies: [5, 32, 19, 1387, 11552, 11553, 504, 11554, 2]
+// Dependencies: [5, 32, 19, 1387, 11560, 11561, 504, 11562, 2]
 // Exports: default
 
-// Module 11551 (useConjureAppCreator)
-import react_native from "react-native" /* 11554 */;
+// Module 11559 (useConjureAppCreator)
+import react_native from "react-native" /* 11562 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -67,7 +67,7 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -102,7 +102,7 @@ export default function useConjureAppCreator(conjureProjectId, arg1, arg2) {
                 closure_1_7(closure_0);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp19) {
             c4 = 3;

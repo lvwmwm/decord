@@ -1,16 +1,16 @@
-// Module ID: 19195
-// Function ID: 19196
+// Module ID: 19211
+// Function ID: 19212
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 6883, 4892, 1390, 21, 5043, 575, 1501, 504, 5634, 1112, 9031, 7751, 6115, 6140, 6144, 6152, 9537, 7488, 1413, 9704, 1186, 7284, 7549, 6047, 2]
+// Dependencies: [32, 19, 17, 6883, 4892, 1390, 21, 5043, 575, 1501, 504, 5634, 1112, 9032, 7751, 6115, 6140, 6144, 6152, 9538, 7488, 1413, 9705, 1186, 7284, 7549, 6047, 2]
 // Exports: default
 
-// Module 19195 (ChannelSettingsEditForumTag)
+// Module 19211 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9031 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9537 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9032 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9538 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
@@ -269,7 +269,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "r" });
+      setOptions({ headerRight: "top" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };
@@ -417,5 +417,5 @@ export default function ChannelSettingsEditForumTag(channelId) {
     }
     tmp27Result4 = tmp27(tmp32, obj21);
   }
-  tmp27Result4 = tmp27(tmp3(9704).ReactionIcon, {});
+  tmp27Result4 = tmp27(tmp3(9705).ReactionIcon, {});
 };

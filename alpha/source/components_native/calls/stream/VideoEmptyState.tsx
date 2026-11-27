@@ -1,16 +1,16 @@
-// Module ID: 10138
-// Function ID: 10139
+// Module ID: 10139
+// Function ID: 10140
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 4892, 1071, 21, 5043, 575, 10139, 1186, 1112, 6035, 504, 5604, 8419, 6816, 5634, 5641, 2]
+// Dependencies: [19, 17, 4892, 1071, 21, 5043, 575, 10140, 1186, 1112, 6035, 504, 5604, 8420, 6816, 5634, 5641, 2]
 // Exports: default
 
-// Module 10138 (VideoEmptyState)
+// Module 10139 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useMountEffectDefault from "useMountEffect" /* 5604 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
-import StreamActionCreators from "StreamActionCreators" /* 8419 */;
+import StreamActionCreators from "StreamActionCreators" /* 8420 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import Fragment from "Fragment" /* 21 */;
@@ -68,7 +68,7 @@ export default function VideoEmptyState(style) {
     const tmp8 = closure_7;
     const tmp9 = closure_6;
     if (!removeSplashImage) {
-      let obj2 = { style: tmp2.placeholderImage, children: closure_5(stream(10139).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
+      let obj2 = { style: tmp2.placeholderImage, children: closure_5(stream(10140).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
       tmp10 = closure_5(View, obj2);
     }
     const obj3 = { children: items };

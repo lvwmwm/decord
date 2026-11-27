@@ -1,19 +1,19 @@
-// Module ID: 16052
-// Function ID: 16053
+// Module ID: 16059
+// Function ID: 16060
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1387, 1071, 21, 5043, 575, 504, 2174, 16033, 1112, 7546, 7507, 9637, 6140, 6144, 8088, 16035, 6379, 16037, 16036, 2]
+// Dependencies: [19, 17, 1387, 1071, 21, 5043, 575, 504, 2174, 16040, 1112, 7546, 7507, 9638, 6140, 6144, 8088, 16042, 6379, 16044, 16043, 2]
 // Exports: default
 
-// Module 16052 (ChangeAvatarActionSheet)
+// Module 16059 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 16033 */;
-import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 16035 */;
-import ProfileEditNitroSubLabelDefault from "ProfileEditNitroSubLabel" /* 16036 */;
-import ProfileEditNitroUpsellRowDefault from "ProfileEditNitroUpsellRow" /* 16037 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 16040 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 16042 */;
+import ProfileEditNitroSubLabelDefault from "ProfileEditNitroSubLabel" /* 16043 */;
+import ProfileEditNitroUpsellRowDefault from "ProfileEditNitroUpsellRow" /* 16044 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,7 +36,7 @@ const useAnalyticsLocations = tmp2(6379);
 const BottomSheetTitleHeader3 = tmp2(7507);
 const ActionSheet3 = tmp2(7546);
 const _mod8088 = tmp2(8088);
-const NitroWheelIcon = tmp2(9637);
+const NitroWheelIcon = tmp2(9638);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);

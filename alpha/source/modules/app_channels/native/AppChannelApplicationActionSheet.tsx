@@ -1,13 +1,13 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 8539
+// Function ID: 8540
 // Name: AppChannelApplicationActionSheet
-// Dependencies: [19, 21, 8535, 5257, 7546, 7507, 1112, 7251, 7253, 8539, 8537, 2]
+// Dependencies: [19, 21, 8536, 5257, 7546, 7507, 1112, 7251, 7253, 8540, 8538, 2]
 // Exports: default
 
-// Module 8538 (AppChannelApplicationActionSheet)
+// Module 8539 (AppChannelApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8539 */;
+import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8540 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ export default function AppChannelApplicationActionSheet(arg0) {
   let selectedApplicationId;
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  let obj = onChange(8535);
+  let obj = onChange(8536);
   const options = obj.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   const items = [onChange];
   const callback = react.useCallback((arg0) => {

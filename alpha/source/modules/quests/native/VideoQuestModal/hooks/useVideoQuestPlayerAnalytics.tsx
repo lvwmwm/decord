@@ -1,10 +1,10 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 16733
+// Function ID: 16734
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 5981, 1071, 9928, 8393, 8392, 6876, 16544, 8382, 8248, 1379, 8361, 8381, 9989, 16727, 16534, 8377, 6874, 16545, 5811, 5816, 6878, 2]
+// Dependencies: [5, 19, 17, 5981, 1071, 9929, 8394, 8393, 6876, 16551, 8383, 8249, 1379, 8362, 8382, 9990, 16734, 16541, 8378, 6874, 16552, 5811, 5816, 6878, 2]
 // Exports: default
 
-// Module 16726 (useVideoQuestPlayerAnalytics)
+// Module 16733 (useVideoQuestPlayerAnalytics)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5811 */;
@@ -12,13 +12,13 @@ import MetricEvents from "MetricEvents" /* 5816 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
 import QuestContent from "QuestContent" /* 6876 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 8377 */;
-import AnalyticsActions from "AnalyticsActions" /* 8382 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import AdDataUtils from "AdDataUtils" /* 8393 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 9989 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16534 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 16545 */;
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 8378 */;
+import AnalyticsActions from "AnalyticsActions" /* 8383 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import AdDataUtils from "AdDataUtils" /* 8394 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 9990 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16541 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 16552 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import NetworkStore from "NetworkStore" /* 5981 */;
@@ -84,7 +84,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c6;
@@ -174,7 +174,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
             trackQuestEvent(obj11);
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp49) {
           closure_5 = tmp49;

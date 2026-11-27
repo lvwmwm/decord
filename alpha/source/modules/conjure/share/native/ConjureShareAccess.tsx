@@ -1,18 +1,18 @@
-// Module ID: 18562
-// Function ID: 18563
+// Module ID: 18573
+// Function ID: 18574
 // Name: ConjureShareAccess
-// Dependencies: [19, 17, 21, 5043, 575, 5257, 18505, 2120, 18505, 6140, 18563, 6144, 1112, 4245, 6115, 5634, 5641, 18566, 7538, 5724, 6155, 5739, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5257, 18512, 2120, 18512, 6140, 18574, 6144, 1112, 4245, 6115, 5634, 5641, 18577, 7538, 5724, 6155, 5739, 2]
 // Exports: default
 
-// Module 18562 (ConjureShareAccess)
+// Module 18573 (ConjureShareAccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18505 */;
-import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 18566 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18512 */;
+import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 18577 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -115,7 +115,7 @@ export default function ConjureShareAccess(arg0) {
         return ref.current(AUTO_DISMISS);
       }
     };
-    const tmp2 = asyncRequire(18505, dependencyMap.paths);
+    const tmp2 = asyncRequire(18512, dependencyMap.paths);
     openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
   }, items1);
   if ("public" === mode) {

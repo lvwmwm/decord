@@ -1,16 +1,16 @@
-// Module ID: 19381
-// Function ID: 19382
+// Module ID: 19397
+// Function ID: 19398
 // Name: useExternalPipParticipant
-// Dependencies: [19, 6933, 15233, 6813, 502, 2132, 5851, 5693, 11782, 19382, 10156, 504, 2]
+// Dependencies: [19, 6933, 15240, 6813, 502, 2132, 5851, 5693, 11790, 19398, 10157, 504, 2]
 // Exports: default
 
-// Module 19381 (useExternalPipParticipant)
+// Module 19397 (useExternalPipParticipant)
 import CallConstants from "CallConstants" /* 5693 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19382 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11790 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19398 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 15233 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 15240 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
@@ -41,7 +41,7 @@ function getExternalPipSelectedParticipant(batchedStoreListener, selectedPartici
         obj = { participantType: null, selectedParticipantId: null, selectedParticipantSpeaking: participant.type === tmp12.USER && participant.speaking, selectedParticipantStreamId: tmp3, selectedParticipantUserId: participant.user.id };
         ({ type: obj.participantType, id: obj.selectedParticipantId } = participant);
         tmp3 = undefined;
-        const tmp7Result = tmp7(10156);
+        const tmp7Result = tmp7(10157);
         if (tmp7Result.canRenderParticipantVideo(participant)) {
           const streamId = participant.streamId;
           tmp3 = streamId;

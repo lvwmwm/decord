@@ -1,10 +1,10 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12261
+// Function ID: 12262
 // Name: PollsHttpApi
 // Dependencies: [5, 1071, 1285, 5792, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 12253 (PollsHttpApi)
+// Module 12261 (PollsHttpApi)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _submitPollVote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -89,7 +89,7 @@ let obj = function _submitPollVote() {
         } else {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         closure_3 = tmp15;
@@ -119,7 +119,7 @@ obj = function _endPollEarly() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -182,7 +182,7 @@ obj = function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp22) {

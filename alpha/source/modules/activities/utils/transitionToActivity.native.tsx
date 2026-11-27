@@ -1,10 +1,10 @@
-// Module ID: 10007
-// Function ID: 10008
+// Module ID: 10008
+// Function ID: 10009
 // Name: transitionToActivity
-// Dependencies: [10008, 4891, 5669, 10009, 4964, 5219, 10014, 5690, 12298, 6129, 6942, 5257, 10046, 2]
+// Dependencies: [10009, 4891, 5669, 10010, 4964, 5219, 10015, 5690, 12306, 6129, 6942, 5257, 10047, 2]
 // Exports: default
 
-// Module 10007 (transitionToActivity)
+// Module 10008 (transitionToActivity)
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4964 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
@@ -12,11 +12,11 @@ import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
 import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5690 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6129 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6942 */;
-import ChannelCallStore from "ChannelCallStore" /* 10008 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10009 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 10014 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10046 */;
-import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12298 */;
+import ChannelCallStore from "ChannelCallStore" /* 10009 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10010 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 10015 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10047 */;
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12306 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import size from "module_2" /* 2 */;
 

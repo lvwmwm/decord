@@ -1,9 +1,9 @@
-// Module ID: 8246
-// Function ID: 8247
+// Module ID: 8247
+// Function ID: 8248
 // Name: GuildTemplateStore
 // Dependencies: [7867, 7866, 504, 572, 2]
 
-// Module 8246 (GuildTemplateStore)
+// Module 8247 (GuildTemplateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import createResolvedGuildTemplateDefault from "createResolvedGuildTemplate" /* 7866 */;

@@ -1,9 +1,9 @@
-// Module ID: 20303
-// Function ID: 20304
+// Module ID: 20361
+// Function ID: 20362
 // Name: QuestMobileEmbedVisibilityManager
-// Dependencies: [32, 5258, 6933, 9017, 6965, 4896, 4892, 4946, 12023, 2119, 8374, 9860, 1071, 8381, 7475, 1455, 5765, 6874, 6878, 13843, 6963, 5219, 1091, 1092, 6048, 8392, 5220, 2]
+// Dependencies: [32, 5258, 6933, 9018, 6965, 4896, 4892, 4946, 12031, 2119, 8375, 9861, 1071, 8382, 7475, 1455, 5765, 6874, 6878, 13850, 6963, 5219, 1091, 1092, 6048, 8393, 5220, 2]
 
-// Module 20303 (QuestMobileEmbedVisibilityManager)
+// Module 20361 (QuestMobileEmbedVisibilityManager)
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import ChannelTypes from "ChannelTypes" /* 1092 */;
@@ -15,20 +15,20 @@ import CodedLink from "CodedLink" /* 5765 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
 import isChannelFocused from "isChannelFocused" /* 6963 */;
-import getQuestLogger from "getQuestLogger" /* 8381 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9860 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 13843 */;
+import getQuestLogger from "getQuestLogger" /* 8382 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9861 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 13850 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ActionSheetStore from "ActionSheetStore" /* 5258 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9017 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9018 */;
 import VoicePanelStore from "VoicePanelStore" /* 6965 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
-import AlertStore from "AlertStore" /* 12023 */;
+import AlertStore from "AlertStore" /* 12031 */;
 import AppStateStore from "AppStateStore" /* 2119 */;
-import QuestStore from "QuestStore" /* 8374 */;
+import QuestStore from "QuestStore" /* 8375 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 

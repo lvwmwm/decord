@@ -1,9 +1,9 @@
-// Module ID: 13590
-// Function ID: 13591
+// Module ID: 13598
+// Function ID: 13599
 // Name: MessageRequestPreviewStore
 // Dependencies: [1387, 6946, 6947, 6393, 504, 572, 2]
 
-// Module 13590 (MessageRequestPreviewStore)
+// Module 13598 (MessageRequestPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6393 */;

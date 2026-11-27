@@ -1,18 +1,18 @@
-// Module ID: 20009
-// Function ID: 20010
+// Module ID: 20034
+// Function ID: 20035
 // Name: GuildSettingsModalSoundboard
-// Dependencies: [5, 19, 17, 6923, 4914, 1387, 1071, 21, 1112, 10363, 19997, 9365, 13986, 5043, 575, 504, 6144, 7488, 12613, 7153, 5634, 1186, 6807, 6156, 5641, 20010, 1629, 10406, 6134, 8471, 20011, 7395, 20006, 20022, 2]
+// Dependencies: [5, 19, 17, 6923, 4914, 1387, 1071, 21, 1112, 10364, 20022, 9366, 13993, 5043, 575, 504, 6144, 7488, 12621, 7153, 5634, 1186, 6807, 6156, 5641, 20035, 1629, 10407, 6134, 8472, 20036, 7395, 20031, 20047, 2]
 
-// Module 20009 (GuildSettingsModalSoundboard)
+// Module 20034 (GuildSettingsModalSoundboard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
 import EmojiDefault from "Emoji" /* 7488 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 10363 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12613 */;
-import SoundboardCreationUtils from "SoundboardCreationUtils" /* 20010 */;
-import showGuildSettingsModalSoundboardSoundInfoActionSheet from "showGuildSettingsModalSoundboardSoundInfoActionSheet" /* 20022 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 10364 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12621 */;
+import SoundboardCreationUtils from "SoundboardCreationUtils" /* 20035 */;
+import showGuildSettingsModalSoundboardSoundInfoActionSheet from "showGuildSettingsModalSoundboardSoundInfoActionSheet" /* 20047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -201,7 +201,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboard(guildId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -238,7 +238,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboard(guildId) {
                 c3 = 0;
               }
               c1 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp7) {
             if (0 === c3) {

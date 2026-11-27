@@ -1,17 +1,17 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16336
+// Function ID: 16337
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7840, 21, 8209, 16189, 5722, 2188, 7870, 6828, 575, 7941, 1112, 5634, 2]
+// Dependencies: [19, 17, 7840, 21, 8210, 16196, 5722, 2188, 7870, 6828, 575, 7941, 1112, 5634, 2]
 // Exports: default
 
-// Module 16329 (AgeConfirmationNotice)
+// Module 16336 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import LinkingDefault from "Linking" /* 5722 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16189 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16196 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7840 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ export default function AgeConfirmationNotice() {
   let obj6;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(8209);
+  let obj = sensitiveContentFilterHelpArticle(8210);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[5]);

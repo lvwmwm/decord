@@ -1,17 +1,17 @@
-// Module ID: 13810
-// Function ID: 13811
+// Module ID: 13817
+// Function ID: 13818
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 4892, 8350, 21, 5043, 575, 6379, 504, 7197, 13809, 5618, 13811, 6126, 5257, 11699, 2120, 1112, 6152, 7247, 5634, 4181, 7440, 12463, 6140, 6144, 7549, 5621, 12981, 5641, 2]
+// Dependencies: [32, 19, 17, 4892, 8351, 21, 5043, 575, 6379, 504, 7197, 13816, 5618, 13818, 6126, 5257, 11707, 2120, 1112, 6152, 7247, 5634, 4181, 7440, 12471, 6140, 6144, 7549, 5621, 12989, 5641, 2]
 // Exports: default
 
-// Module 13810 (CreateGameInvitePostModal)
+// Module 13817 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
-import SlowmodeStore from "SlowmodeStore" /* 8350 */;
+import SlowmodeStore from "SlowmodeStore" /* 8351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(13811);
+  let obj = parentChannel(13818);
   let obj2 = {
     parentChannel,
     description: tmp5,
@@ -124,7 +124,7 @@ function CreateGameInvitePostContent(parentChannel) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { parentChannel, onSave, title: intl.string(intl10.t.HPu3kq), tags };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(11699, dependencyMap.paths);
+    const tmp2 = asyncRequire(11707, dependencyMap.paths);
     intl = intl10.intl;
     openLazy(tmp2, "ForumPostTagsActionSheet", obj);
   }, items2);
@@ -147,7 +147,7 @@ function CreateGameInvitePostContent(parentChannel) {
   items4[1] = closure_8(Text, obj6);
   items5 = [closure_9(View, obj4), , ];
   const obj7 = { style: tmp.body, children: items6 };
-  const obj8 = { label: intl3.string(tmp2(4181)["/mEbGf"]), placeholder: intl4.string(tmp2(4181)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(12463).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
+  const obj8 = { label: intl3.string(tmp2(4181)["/mEbGf"]), placeholder: intl4.string(tmp2(4181)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(12471).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
   const TextArea = parentChannel(7440).TextArea;
   intl3 = parentChannel(1112).intl;
   intl4 = parentChannel(1112).intl;
@@ -189,7 +189,7 @@ function CreateGameInvitePostContent(parentChannel) {
   let tmp15Result4 = null;
   const LayerScope = tmp9(5621).LayerScope;
   if (isSlowmodeEnabled) {
-    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12981), obj17) };
+    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12989), obj17) };
     obj17 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp15Result4 = tmp15(tmp14, obj16);
   }

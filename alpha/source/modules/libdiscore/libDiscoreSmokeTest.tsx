@@ -1,10 +1,10 @@
-// Module ID: 20415
-// Function ID: 20416
+// Module ID: 20473
+// Function ID: 20474
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 1071, 3, 1369, 1365, 4918, 1256, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 20415 (libDiscoreSmokeTest)
+// Module 20473 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -31,7 +31,7 @@ let obj = function _libDiscoreSmokeTest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ let obj = function _libDiscoreSmokeTest() {
           c6 = true;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp23) {
         closure_2 = tmp23;
         if (0 === c3) {

@@ -1,10 +1,10 @@
-// Module ID: 17975
-// Function ID: 17976
+// Module ID: 17982
+// Function ID: 17983
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1071, 4889, 21, 5043, 5271, 5634, 1112, 5730, 17976, 5641, 8573, 2]
+// Dependencies: [19, 17, 1071, 4889, 21, 5043, 5271, 5634, 1112, 5730, 17983, 5641, 8574, 2]
 // Exports: default
 
-// Module 17975 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 17982 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
@@ -13,8 +13,8 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17976 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17983 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

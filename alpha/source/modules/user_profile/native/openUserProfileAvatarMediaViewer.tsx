@@ -1,12 +1,12 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9525
+// Function ID: 9526
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [5044, 1071, 8804, 2]
+// Dependencies: [5044, 1071, 8805, 2]
 // Exports: default
 
-// Module 9524 (openUserProfileAvatarMediaViewer)
+// Module 9525 (openUserProfileAvatarMediaViewer)
 import Constants from "Constants" /* 1071 */;
-import openMediaModal from "openMediaModal" /* 8804 */;
+import openMediaModal from "openMediaModal" /* 8805 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size_mod from "module_2" /* 2 */;
 

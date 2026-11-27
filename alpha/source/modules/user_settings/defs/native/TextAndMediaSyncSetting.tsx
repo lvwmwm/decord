@@ -1,15 +1,15 @@
-// Module ID: 17086
-// Function ID: 17087
+// Module ID: 17093
+// Function ID: 17094
 // Name: TextAndMediaSyncSetting
-// Dependencies: [1192, 9555, 504, 11962, 1112, 6018, 2]
+// Dependencies: [1192, 9556, 504, 11970, 1112, 6018, 2]
 
-// Module 17086 (TextAndMediaSyncSetting)
+// Module 17093 (TextAndMediaSyncSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6018 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

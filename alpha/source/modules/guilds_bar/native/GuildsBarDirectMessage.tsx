@@ -1,14 +1,14 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 18133
+// Function ID: 18134
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 6940, 4892, 6976, 4985, 1387, 1071, 21, 5043, 575, 18083, 504, 8587, 1112, 18086, 6126, 11406, 18127, 9616, 1186, 5730, 2]
+// Dependencies: [19, 502, 6940, 4892, 6976, 4985, 1387, 1071, 21, 5043, 575, 18090, 504, 8588, 1112, 18093, 6126, 11407, 18134, 9617, 1186, 5730, 2]
 
-// Module 18126 (GuildsBarDirectMessage)
+// Module 18133 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8587 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8588 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CallStore from "CallStore" /* 6940 */;

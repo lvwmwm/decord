@@ -1,23 +1,23 @@
-// Module ID: 19332
-// Function ID: 19333
+// Module ID: 19348
+// Function ID: 19349
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11958, 21, 5043, 19333, 6053, 5303, 19334, 11959, 19362, 8619, 12996, 1654, 5644, 17728, 2]
+// Dependencies: [19, 17, 11966, 21, 5043, 19349, 6053, 5303, 19350, 11967, 19378, 8620, 13004, 1654, 5644, 17735, 2]
 // Exports: default
 
-// Module 19332 (LaunchPadContainer)
+// Module 19348 (LaunchPadContainer)
 import _mod1654 from "module_1654" /* 1654 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import OverlayViewDefault from "OverlayView" /* 6053 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8619 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11959 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12996 */;
-import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19333 */;
-import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19334 */;
-import useLaunchPadStateDefault from "useLaunchPadState" /* 19362 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8620 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11967 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13004 */;
+import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19349 */;
+import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19350 */;
+import useLaunchPadStateDefault from "useLaunchPadState" /* 19378 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11958 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11966 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -171,7 +171,7 @@ export default function LaunchPadContainer(children) {
   LaunchPadContainerTsx3.__initData = tmp16;
   const animatedStyle = useAnimatedStyle(LaunchPadContainerTsx3);
   let obj2 = { value: gestureRef, children: items7 };
-  const Provider = tmp2(17728).Provider;
+  const Provider = tmp2(17735).Provider;
   const obj3 = { gesture, children: metroImportDefault(tmp25, obj4) };
   obj4 = { style: tmp.wrapper, children: metroImportDefault(View, obj5) };
   const GestureDetector = tmp9(5303).GestureDetector;

@@ -1,10 +1,10 @@
-// Module ID: 10508
-// Function ID: 10509
+// Module ID: 10509
+// Function ID: 10510
 // Name: useGameConsoleAccounts
 // Dependencies: [7462, 1071, 504, 1255, 2]
 // Exports: default
 
-// Module 10508 (useGameConsoleAccounts)
+// Module 10509 (useGameConsoleAccounts)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;

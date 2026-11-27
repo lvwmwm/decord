@@ -1,10 +1,10 @@
-// Module ID: 13888
-// Function ID: 13889
+// Module ID: 13895
+// Function ID: 13896
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1071, 21, 5043, 575, 5099, 9142, 1186, 5634, 1112, 5641, 7137, 5257, 7847, 2188, 5271, 7507, 6115, 13889, 2]
+// Dependencies: [17, 1071, 21, 5043, 575, 5099, 9143, 1186, 5634, 1112, 5641, 7137, 5257, 7847, 2188, 5271, 7507, 6115, 13896, 2]
 // Exports: default
 
-// Module 13888 (ReferralProgramShareConfirmationActionSheet)
+// Module 13895 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 9142 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 9143 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ function SharedUser(user) {
   const tmp = closure_8();
   let obj = UserUtilsDefault;
   const name = obj.getName(user);
-  const tmp6 = trialCreationResult === user(9142).CreateReferralStatus.FAIL;
+  const tmp6 = trialCreationResult === user(9143).CreateReferralStatus.FAIL;
   let obj2 = { style: tmp.recipientRow, children: items1 };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -131,7 +131,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   const formatResult = format(AwGSWl, obj);
   const BottomSheet = tmp5(5271).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13889).FistBumpSpotIllustration, {}) };
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13896).FistBumpSpotIllustration, {}) };
   Stack = tmp5(6115).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

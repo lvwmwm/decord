@@ -1,20 +1,20 @@
-// Module ID: 16875
-// Function ID: 16876
+// Module ID: 16882
+// Function ID: 16883
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 5067, 1192, 1191, 16876, 9555, 1071, 21, 1501, 1379, 9004, 1112, 6125, 1263, 3857, 2188, 5604, 16877, 563, 11962, 16190, 2]
+// Dependencies: [19, 5067, 1192, 1191, 16883, 9556, 1071, 21, 1501, 1379, 9005, 1112, 6125, 1263, 3857, 2188, 5604, 16884, 563, 11970, 16197, 2]
 
-// Module 16875 (SettingsAppearanceScreen)
+// Module 16882 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
-import HeaderShared from "HeaderShared" /* 9004 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
+import HeaderShared from "HeaderShared" /* 9005 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5067 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import FontScaleStore from "FontScaleStore" /* 16876 */;
+import FontScaleStore from "FontScaleStore" /* 16883 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "top" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -146,7 +146,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
     items1[7] = obj11;
     return createList(obj);
   }, []);
-  nativeStackNavigation(16190);
+  nativeStackNavigation(16197);
   return <tmp8 key={"" + theme + "-" + gradientPresetId} node={node} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 10565
-// Function ID: 10566
+// Module ID: 10566
+// Function ID: 10567
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2132, 5691, 6853, 21, 5043, 575, 504, 8650, 10506, 10185, 10186, 1186, 10566, 10567, 7289, 2]
+// Dependencies: [19, 17, 2132, 5691, 6853, 21, 5043, 575, 504, 8651, 10507, 10186, 10187, 1186, 10567, 10568, 7289, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 10565 (SpeakerTileStatuses)
+// Module 10566 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7289 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10567 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10568 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import VoiceStateStore from "VoiceStateStore" /* 5691 */;
@@ -41,13 +41,13 @@ const memoResult = react.memo(function VoiceStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => MediaEngineStore.isLocalMute(userId), items1);
-  const withLocalSelfMuteDeaf = userId(8650).withLocalSelfMuteDeaf;
-  userId(8650);
+  const withLocalSelfMuteDeaf = userId(8651).withLocalSelfMuteDeaf;
+  userId(8651);
   const items2 = [VoiceStateStore];
   const items3 = [channelId, userId];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => VoiceStateStore.getVoiceStateForChannel(channelId, userId), items3);
-  const obj3 = userId(8650);
+  const obj3 = userId(8651);
   const result = withLocalSelfMuteDeaf(stateFromStores1, obj3.useLocalSelfMuteDeaf());
   let flag;
   if (result != null) {
@@ -64,15 +64,15 @@ const memoResult = react.memo(function VoiceStatus(userId) {
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp7 = channelId(10506);
+    tmp7 = channelId(10507);
     flag3 = true;
   } else if (flag2) {
-    tmp7 = channelId(10185);
+    tmp7 = channelId(10186);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp7 = channelId(10186);
+      tmp7 = channelId(10187);
       flag3 = false;
     }
   }
@@ -95,7 +95,7 @@ const memoResult1 = react.memo(function ModeratorStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(10566);
+    tmp4 = channelId(10567);
   }
   let tmp6 = null;
   if (null != tmp4) {

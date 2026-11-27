@@ -1,9 +1,9 @@
-// Module ID: 19624
-// Function ID: 19625
+// Module ID: 19640
+// Function ID: 19641
 // Name: captcha/CaptchaUtils
-// Dependencies: [5258, 5817, 504, 5257, 19625, 2120, 5809, 2]
+// Dependencies: [5258, 5817, 504, 5257, 19641, 2120, 5809, 2]
 
-// Module 19624 (captcha/CaptchaUtils)
+// Module 19640 (captcha/CaptchaUtils)
 import get_initialized from "get initialized" /* 504 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5809 */;
@@ -41,7 +41,7 @@ let obj = {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = require("asyncRequire")(19625, dependencyMap.paths);
+    const tmp2 = require("asyncRequire")(19641, dependencyMap.paths);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options);
     openLazy(tmp2, CAPTCHA_MODAL_KEY, obj2);

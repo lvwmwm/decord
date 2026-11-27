@@ -1,14 +1,14 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12095
+// Function ID: 12096
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4892, 4975, 4985, 1387, 10730, 1071, 21, 5043, 563, 12088, 12089, 8526, 12092, 12096, 7405, 12098, 12107, 12108, 1112, 10548, 10549, 5075, 4876, 12110, 12115, 10454, 12116, 2019, 10428, 6115, 8090, 12120, 12122, 2651, 2]
+// Dependencies: [32, 19, 17, 4892, 4975, 4985, 1387, 10731, 1071, 21, 5043, 563, 12096, 12097, 8527, 12100, 12104, 7405, 12106, 12115, 12116, 1112, 10549, 10550, 5075, 4876, 12118, 12123, 10455, 12124, 2019, 10429, 6115, 8090, 12128, 12130, 2651, 2]
 // Exports: default
 
-// Module 12087 (useMemberListAction)
+// Module 12095 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10730 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12088 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12098 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10731 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12096 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12106 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -33,7 +33,7 @@ const View = react_native.View;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "Array", listActionHeight: "channel_id" };
+let closure_16 = { listActionRenderer: "displayName", listActionHeight: "isArray" };
 let closure_17 = [];
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_18 = createStyles.createStyles(obj);

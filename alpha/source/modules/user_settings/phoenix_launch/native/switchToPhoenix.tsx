@@ -1,14 +1,14 @@
-// Module ID: 17385
-// Function ID: 17386
+// Module ID: 17392
+// Function ID: 17393
 // Name: switchToPhoenix
-// Dependencies: [5, 17, 3, 17380, 5725, 1112, 17382, 1379, 6046, 4729, 2]
+// Dependencies: [5, 17, 3, 17387, 5725, 1112, 17389, 1379, 6046, 4729, 2]
 // Exports: cancelSwitchToPhoenix, default
 
-// Module 17385 (switchToPhoenix)
+// Module 17392 (switchToPhoenix)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import PhoenixLaunchState from "PhoenixLaunchState" /* 17380 */;
-import LaunchClient from "LaunchClient" /* 17382 */;
+import PhoenixLaunchState from "PhoenixLaunchState" /* 17387 */;
+import LaunchClient from "LaunchClient" /* 17389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj = function _storeOrToast() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ obj = function _switchToPhoenix() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -154,7 +154,7 @@ obj = function _switchToPhoenix() {
             }
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp23) {
         c2 = 3;
@@ -176,7 +176,7 @@ obj = function _cancelSwitchToPhoenix() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -204,7 +204,7 @@ obj = function _cancelSwitchToPhoenix() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = 3;

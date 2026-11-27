@@ -1,16 +1,16 @@
-// Module ID: 16014
-// Function ID: 16015
+// Module ID: 16021
+// Function ID: 16022
 // Name: RootThemeContextProvider
-// Dependencies: [19, 5044, 1191, 1082, 21, 504, 5215, 16015, 5104, 10589, 5638, 2]
+// Dependencies: [19, 5044, 1191, 1082, 21, 504, 5215, 16022, 5104, 10590, 5638, 2]
 // Exports: RootThemeContextProvider
 
-// Module 16014 (RootThemeContextProvider)
+// Module 16021 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1082 */;
 import native from "native" /* 5104 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5215 */;
-import PlainTextExperiment from "PlainTextExperiment" /* 16015 */;
+import PlainTextExperiment from "PlainTextExperiment" /* 16022 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
@@ -62,6 +62,6 @@ export function RootThemeContextProvider(children) {
     }
     setThemeFlagResult2 = setThemeFlag(setThemeFlagResult1, REDUCED_CONTRAST_ENABLED);
   }
-  const RootThemeContextProvider = tmp(10589).RootThemeContextProvider;
+  const RootThemeContextProvider = tmp(10590).RootThemeContextProvider;
   return <RootThemeContextProvider theme={theme} flags={setThemeFlagResult2} saturation={saturation} contrast={contrast} enabledExperiments={enabledExperiments}>{null}</RootThemeContextProvider>;
 }

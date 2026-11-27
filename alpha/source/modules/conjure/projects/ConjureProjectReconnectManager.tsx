@@ -1,9 +1,9 @@
-// Module ID: 19686
-// Function ID: 19687
+// Module ID: 19702
+// Function ID: 19703
 // Name: ConjureProjectReconnectManager
 // Dependencies: [6934, 7475, 6969, 7667, 2]
 
-// Module 19686 (ConjureProjectReconnectManager)
+// Module 19702 (ConjureProjectReconnectManager)
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6969 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;

@@ -1,10 +1,10 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 18648
+// Function ID: 18649
 // Name: conjureQueuedMessage
 // Dependencies: [7713, 2]
 // Exports: queuedMessageActionHandler, queuedUserMessages
 
-// Module 18637 (conjureQueuedMessage)
+// Module 18648 (conjureQueuedMessage)
 import conjureChatConnection from "conjureChatConnection" /* 7713 */;
 import size from "module_2" /* 2 */;
 

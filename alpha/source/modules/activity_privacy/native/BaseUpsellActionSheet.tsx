@@ -1,15 +1,15 @@
-// Module ID: 16360
-// Function ID: 16361
+// Module ID: 16367
+// Function ID: 16368
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 4914, 21, 5043, 575, 504, 7052, 16358, 1112, 5634, 13617, 13324, 5257, 5725, 5271, 5641, 2]
+// Dependencies: [19, 17, 4914, 21, 5043, 575, 504, 7052, 16365, 1112, 5634, 13624, 13332, 5257, 5725, 5271, 5641, 2]
 // Exports: default
 
-// Module 16360 (BaseUpsellActionSheet)
+// Module 16367 (BaseUpsellActionSheet)
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16358 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16365 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4914 */;

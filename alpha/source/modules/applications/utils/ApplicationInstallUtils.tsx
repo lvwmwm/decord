@@ -1,17 +1,17 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10100
+// Function ID: 10101
 // Name: ApplicationInstallUtils
-// Dependencies: [10047, 7073, 6945, 5658, 2]
+// Dependencies: [10048, 7073, 6945, 5658, 2]
 // Exports: canInstallApplication, hasInstallConfiguration, isAppUserInstallable, isKnownConjureApplication, shouldInstallApplicationOnDemand
 
-// Module 10099 (ApplicationInstallUtils)
+// Module 10100 (ApplicationInstallUtils)
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5658 */;
 import isConjureApplicationDefault from "isConjureApplication" /* 6945 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10047 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10048 */;
 import size from "module_2" /* 2 */;
 
-const f97087 = (oauth2_install_params) => {
+const f97320 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -37,7 +37,7 @@ export function hasInstallConfiguration(application) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f97087);
+      someResult = values.some(f97320);
     }
     tmp = someResult;
   }
@@ -60,7 +60,7 @@ export function canInstallApplication(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f97087);
+      someResult = values.some(f97320);
     }
     tmp = someResult;
   }
@@ -83,7 +83,7 @@ export function isAppUserInstallable(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f97087);
+      someResult = values.some(f97320);
     }
     tmp = someResult;
   }

@@ -1,20 +1,20 @@
-// Module ID: 14903
-// Function ID: 14904
+// Module ID: 14910
+// Function ID: 14911
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 21, 5043, 14674, 8400, 7666, 7172, 6015, 11369, 10309, 7756, 14904, 14905, 575, 14906, 8588, 7155, 5634, 12199, 2]
+// Dependencies: [19, 17, 21, 5043, 14681, 8401, 7666, 7172, 6015, 11370, 10310, 7756, 14911, 14912, 575, 14913, 8589, 7155, 5634, 12207, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 14903 (UserProfileActivityBadges)
+// Module 14910 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 7666 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8400 */;
-import utils from "utils" /* 8588 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14904 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14905 */;
-import Badges from "Badges" /* 14906 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8401 */;
+import utils from "utils" /* 8589 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14911 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14912 */;
+import Badges from "Badges" /* 14913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -63,15 +63,15 @@ export function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        AppsIcon = tmp2(14674).HourglassIcon;
+        AppsIcon = tmp2(14681).HourglassIcon;
       } else {
         if (!isEmbeddedActivityDefault(activity)) {
           const tmp2Result = conjurePresenceActivity;
           if (!tmp2Result.isConjurePresenceActivity(activity)) {
             if (activity.type === ActivityTypes.ActivityTypes.WATCHING) {
-              AppsIcon = tmp2(11369).TvIcon;
+              AppsIcon = tmp2(11370).TvIcon;
             } else if (activity.type === ActivityTypes.ActivityTypes.LISTENING) {
-              AppsIcon = tmp2(10309).MusicIcon;
+              AppsIcon = tmp2(10310).MusicIcon;
             } else {
               AppsIcon = tmp2(7756).GameControllerIcon;
             }
@@ -129,7 +129,7 @@ export function EpisodeBadge(activity) {
   if (null != episodeBadgeText) {
     const obj = { style: tmp.container, children: items };
     const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const TopicsIcon = tmp2(12199).TopicsIcon;
+    const TopicsIcon = tmp2(12207).TopicsIcon;
     items = [React3(TopicsIcon, obj2), ];
     const obj3 = { variant: "body-sm/medium", color: "text-muted", children: episodeBadgeText };
     items[1] = React3(Text_Text.Text, obj3);

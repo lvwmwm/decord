@@ -1,18 +1,18 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17639
+// Function ID: 17640
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 15149, 21, 5043, 575, 17633, 6115, 7941, 1112, 3207, 15163, 504, 572, 16190, 7395, 2]
+// Dependencies: [19, 1231, 502, 15156, 21, 5043, 575, 17640, 6115, 7941, 1112, 3207, 15170, 504, 572, 16197, 7395, 2]
 // Exports: default
 
-// Module 17632 (EffectiveNotifSettingsLayout)
+// Module 17639 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3207 from "module_3207" /* 3207 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17633 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17640 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15149 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15156 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

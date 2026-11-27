@@ -1,10 +1,10 @@
-// Module ID: 12064
-// Function ID: 12065
+// Module ID: 12072
+// Function ID: 12073
 // Name: openConversationFocusLink
-// Dependencies: [5, 9065, 9046, 2120, 2]
+// Dependencies: [5, 9066, 9047, 2120, 2]
 // Exports: default
 
-// Module 12064 (openConversationFocusLink)
+// Module 12072 (openConversationFocusLink)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _openConversationFocusLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _openConversationFocusLink() {
               const result = value.openConversationNavigator(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = 3;

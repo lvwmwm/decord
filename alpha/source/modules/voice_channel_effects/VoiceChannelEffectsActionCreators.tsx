@@ -1,15 +1,15 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 10409
+// Function ID: 10410
 // Name: VoiceChannelEffectsActionCreators
-// Dependencies: [6883, 4946, 10409, 10160, 1071, 6925, 12, 10159, 1285, 10410, 6380, 7089, 2]
+// Dependencies: [6883, 4946, 10410, 10161, 1071, 6925, 12, 10160, 1285, 10411, 6380, 7089, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEcho, sendVoiceChannelSoundboardEffect
 
-// Module 10408 (VoiceChannelEffectsActionCreators)
+// Module 10409 (VoiceChannelEffectsActionCreators)
 import SoundboardConstants from "SoundboardConstants" /* 6925 */;
-import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 10160 */;
+import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 10161 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
-import VoiceChannelEffectsPersistedStore from "VoiceChannelEffectsPersistedStore" /* 10409 */;
+import VoiceChannelEffectsPersistedStore from "VoiceChannelEffectsPersistedStore" /* 10410 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ export function sendVoiceChannelCustomCallSoundEffect(id, sound, arg2) {
 
   });
   const items = [];
-  const tmp7 = abortController(10410);
+  const tmp7 = abortController(10411);
   items[0] = abortController(6380).CHANNEL_CALL;
   tmp7(items, arg2, sound, require("SoundboardTypes").AnalyticsSoundType.ENTRY);
 }
@@ -85,7 +85,7 @@ export function sendVoiceChannelSoundboardEffect(arg0, emojiId, arg2, arg3, arg4
   postResult.then(closure_8, () => {
 
   });
-  const tmp9 = abortController(10410);
+  const tmp9 = abortController(10411);
   if (arg3 == null) {
     items = [];
   }
@@ -110,7 +110,7 @@ export function sendVoiceChannelSoundboardEcho(arg0, soundId, arg2, arg3) {
 
   });
   const tmp2 = _require;
-  const tmp6 = abortController(10410);
+  const tmp6 = abortController(10411);
   if (arg3 == null) {
     items = [];
   }

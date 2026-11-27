@@ -1,10 +1,10 @@
-// Module ID: 18840
-// Function ID: 18841
+// Module ID: 18856
+// Function ID: 18857
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5043, 575, 6140, 1112, 4245, 6144, 1186, 5099, 18533, 2]
+// Dependencies: [19, 21, 5043, 575, 6140, 1112, 4245, 6144, 1186, 5099, 18540, 2]
 // Exports: default
 
-// Module 18840 (ConjureMentionSuggestions)
+// Module 18856 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;

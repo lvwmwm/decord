@@ -1,10 +1,10 @@
-// Module ID: 17667
-// Function ID: 17668
+// Module ID: 17674
+// Function ID: 17675
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 17656, 17657, 1071, 1501, 17653, 1112, 17668, 5809, 7312, 17665, 1091, 17655, 1502, 7327, 7321, 7817, 2]
+// Dependencies: [5, 32, 19, 17663, 17664, 1071, 1501, 17660, 1112, 17675, 5809, 7312, 17672, 1091, 17662, 1502, 7327, 7321, 7817, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 17667 (useIdentityRegistrationStep)
+// Module 17674 (useIdentityRegistrationStep)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7327 */;
@@ -12,8 +12,8 @@ import ValidationUtilsDefault from "ValidationUtils" /* 7817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17656 */;
-import RegistrationConstants from "RegistrationConstants" /* 17657 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17663 */;
+import RegistrationConstants from "RegistrationConstants" /* 17664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,7 +83,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
             found = closure_5;
             if (closure_5 instanceof sourceState(navigation[10]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               let obj3 = sourceState(navigation[11]);
               tmp = obj3.getAuthenticationErrorsFromAPIError(closure_5);
@@ -194,7 +194,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
             obj13 = { phone };
             push(VERIFY_PHONE, obj12);
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp51) {
           closure_4 = tmp51;

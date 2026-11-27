@@ -1,12 +1,12 @@
-// Module ID: 10250
-// Function ID: 10251
+// Module ID: 10251
+// Function ID: 10252
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [32, 19, 17, 21, 5043, 575, 10251, 5730, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 10252, 5730, 2]
 // Exports: default
 
-// Module 10250 (EmbeddedActivityBackgroundImageWithOverlay)
+// Module 10251 (EmbeddedActivityBackgroundImageWithOverlay)
 import nativeDefault from "native" /* 575 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10251 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10252 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

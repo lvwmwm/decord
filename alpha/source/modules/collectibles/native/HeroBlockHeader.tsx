@@ -1,16 +1,16 @@
-// Module ID: 17500
-// Function ID: 17501
+// Module ID: 17507
+// Function ID: 17508
 // Name: HeroBlockHeader
-// Dependencies: [19, 17, 1071, 21, 11211, 5043, 575, 9889, 6876, 1501, 11214, 5252, 5607, 5040, 9893, 5050, 17501, 17502, 5598, 5730, 5634, 5641, 1112, 6152, 1256, 7558, 2]
+// Dependencies: [19, 17, 1071, 21, 11212, 5043, 575, 9890, 6876, 1501, 11215, 5252, 5607, 5040, 9894, 5050, 17508, 17509, 5598, 5730, 5634, 5641, 1112, 6152, 1256, 7558, 2]
 // Exports: default
 
-// Module 17500 (HeroBlockHeader)
+// Module 17507 (HeroBlockHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import QuestContent from "QuestContent" /* 6876 */;
-import QuestUtils from "QuestUtils" /* 9889 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 11211 */;
+import QuestUtils from "QuestUtils" /* 9890 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 11212 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ export default function HeroBlockHeader(heroBlock) {
   const tmp2 = dependencyMap;
   let obj = heroBlock(1501);
   dependencyMap = obj.useNavigation();
-  let obj2 = heroBlock(11214);
+  let obj2 = heroBlock(11215);
   const analyticsContext = obj2.useCollectiblesAnalyticsContext();
   const tmp4 = category(5252)();
   const tmp5 = closure_10();
@@ -85,7 +85,7 @@ export default function HeroBlockHeader(heroBlock) {
   const hexToRgbaStringResult = hexToRgbaString(obj4.hexWithOpacity(token, 0));
   const obj5 = heroBlock(5607);
   const token1 = obj5.useToken(category(575).colors.BACKGROUND_BASE_LOWEST);
-  const obj6 = heroBlock(9893);
+  const obj6 = heroBlock(9894);
   let isEligibleForQuests = obj6.getIsEligibleForQuests();
   let heroBannerUrl = heroBlock.mobileHeroUrl;
   if (heroBannerUrl == null) {
@@ -98,9 +98,9 @@ export default function HeroBlockHeader(heroBlock) {
     let tmp3Result;
     const tmpResult = tmp(5050);
     if (tmpResult.isThemeDark(tmp4)) {
-      tmp3Result = tmp3(17501);
+      tmp3Result = tmp3(17508);
     } else {
-      tmp3Result = tmp3(17502);
+      tmp3Result = tmp3(17509);
     }
     heroBannerUrl = tmp3Result;
   }

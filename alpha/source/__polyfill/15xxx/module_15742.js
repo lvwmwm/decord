@@ -6,13 +6,11 @@
 import _mod15743 from "module_15743" /* 15743 */;
 
 
-export default function(arg0) {
-  if (_mod15743(arg0)) {
-    const self = this;
-    const self2 = this;
-    const tmp2 = new TypeError("Can't call method on " + arg0);
-    throw tmp2;
-  } else {
-    return arg0;
-  }
-};
+export default !_mod15743(() => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty({}, 1, obj)[1];
+});

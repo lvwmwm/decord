@@ -1,10 +1,10 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15329
+// Function ID: 15330
 // Name: GuildTagActionCreators
 // Dependencies: [5, 1387, 1071, 1285, 572, 2]
 // Exports: adoptGuildIdentity
 
-// Module 15322 (GuildTagActionCreators)
+// Module 15329 (GuildTagActionCreators)
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _adoptGuildIdentity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

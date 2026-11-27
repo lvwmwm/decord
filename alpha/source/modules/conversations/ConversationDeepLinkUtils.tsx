@@ -1,15 +1,15 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9066
+// Function ID: 9067
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 5847, 8305, 5667, 6801, 9040, 5666, 11, 9066, 2]
+// Dependencies: [5, 5847, 8306, 5667, 6801, 9041, 5666, 11, 9067, 2]
 // Exports: consumeConversationFocusParam, getConversationPermalink
 
-// Module 9065 (ConversationDeepLinkUtils)
+// Module 9066 (ConversationDeepLinkUtils)
 import ConversationConstants from "ConversationConstants" /* 5667 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5847 */;
 import ChannelUtils from "ChannelUtils" /* 6801 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8305 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8306 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -34,7 +34,7 @@ let obj = function _resolveConversationFocusLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -177,7 +177,7 @@ export function consumeConversationFocusParam(state) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -225,7 +225,7 @@ export function consumeConversationFocusParam(state) {
                       const conversationFocus = obj.requestConversationFocus();
                     }
                     guildId = 3;
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp16) {
                   guildId = 3;

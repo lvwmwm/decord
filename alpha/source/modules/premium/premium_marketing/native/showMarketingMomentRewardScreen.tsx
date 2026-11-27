@@ -1,10 +1,10 @@
-// Module ID: 9409
-// Function ID: 9410
+// Module ID: 9410
+// Function ID: 9411
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 6311, 6310, 9410, 2]
+// Dependencies: [5, 6311, 6310, 9411, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 9409 (showMarketingMomentRewardScreen)
+// Module 9410 (showMarketingMomentRewardScreen)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6310 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6311 */;
@@ -26,7 +26,7 @@ let obj = function _showMarketingMomentRewardScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _showMarketingMomentRewardScreen() {
             obj.open(obj7);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         c4 = 3;

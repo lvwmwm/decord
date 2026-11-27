@@ -1,10 +1,10 @@
-// Module ID: 17615
-// Function ID: 17616
+// Module ID: 17622
+// Function ID: 17623
 // Name: NotifyFriendsOnCustomStatusUpdateUtils
 // Dependencies: [4988, 1071, 4868, 1256, 2]
 // Exports: onNotifyFriendsOnCustomStatusUpdateSettingsChanged
 
-// Module 17615 (NotifyFriendsOnCustomStatusUpdateUtils)
+// Module 17622 (NotifyFriendsOnCustomStatusUpdateUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import UserSettings from "UserSettings" /* 4868 */;

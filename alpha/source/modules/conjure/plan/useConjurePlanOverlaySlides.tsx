@@ -1,10 +1,10 @@
-// Module ID: 18780
-// Function ID: 18781
+// Module ID: 18797
+// Function ID: 18798
 // Name: useConjurePlanOverlaySlides
 // Dependencies: [32, 19, 5044, 4245, 504, 1112, 2]
 // Exports: useConjurePlanOverlaySlides
 
-// Module 18780 (useConjurePlanOverlaySlides)
+// Module 18797 (useConjurePlanOverlaySlides)
 import _modDef4245 from "module_4245" /* 4245 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

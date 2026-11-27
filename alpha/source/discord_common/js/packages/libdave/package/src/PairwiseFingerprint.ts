@@ -1,11 +1,11 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8670
+// Function ID: 8671
 // Name: PairwiseFingerprint
-// Dependencies: [5, 8668, 8670, 2]
+// Dependencies: [5, 8669, 8671, 2]
 // Exports: generatePairwiseFingerprint
 
-// Module 8669 (PairwiseFingerprint)
-import _asyncToGenerator2 from "_asyncToGenerator" /* 8668 */;
+// Module 8670 (PairwiseFingerprint)
+import _asyncToGenerator2 from "_asyncToGenerator" /* 8669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _generatePairwiseFingerprint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,10 +1,10 @@
-// Module ID: 20392
-// Function ID: 20393
+// Module ID: 20450
+// Function ID: 20451
 // Name: receiveNotification
-// Dependencies: [5, 5847, 5775, 502, 4892, 1387, 6842, 1071, 6814, 4898, 13386, 3, 5725, 1112, 5747, 5220, 1107, 7834, 6126, 8600, 8613, 5219, 18265, 6949, 6133, 6380, 7847, 7849, 1256, 6013, 1379, 12298, 11, 18263, 8249, 10, 8250, 5849, 15104, 13388, 504, 13821, 8966, 5758, 1091, 12169, 8923, 8917, 572, 6130, 1098, 8448, 5846, 2]
+// Dependencies: [5, 5847, 5775, 502, 4892, 1387, 6842, 1071, 6814, 4898, 13394, 3, 5725, 1112, 5747, 5220, 1107, 7834, 6126, 8601, 8614, 5219, 18272, 6949, 6133, 6380, 7847, 7849, 1256, 6013, 1379, 12306, 11, 18270, 8250, 10, 8251, 5849, 15111, 13396, 504, 13828, 8967, 5758, 1091, 12177, 8924, 8918, 572, 6130, 1098, 8449, 5846, 2]
 // Exports: default
 
-// Module 20392 (receiveNotification)
+// Module 20450 (receiveNotification)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -18,9 +18,9 @@ import parseURLDefault from "parseURL" /* 5758 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5847 */;
 import Constants2 from "Constants" /* 6814 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6842 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8923 */;
-import MessageManagerDefault from "MessageManager" /* 8966 */;
-import Constants3 from "Constants" /* 13386 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import MessageManagerDefault from "MessageManager" /* 8967 */;
+import Constants3 from "Constants" /* 13394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -36,7 +36,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f120624 = (arg0) => {
+const f121028 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -48,7 +48,7 @@ function onStageConnectionError() {
   open("STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f120624);
+  const promise = new Promise(f121028);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -69,7 +69,7 @@ let obj = function _waitForDataOrConnection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -124,7 +124,7 @@ let obj = function _waitForDataOrConnection() {
           c2 = true;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c4 = 3;
         throw tmp10;
@@ -148,7 +148,7 @@ obj = function _waitForNavigationReady() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ obj = function _waitForNavigationReady() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp8) {
         c0 = 3;
         throw tmp8;
@@ -217,7 +217,7 @@ obj = function _connectToStage2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -275,7 +275,7 @@ obj = function _connectToStage2() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         let closure_4 = tmp24;
@@ -303,7 +303,7 @@ obj = function _handleStageNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -331,7 +331,7 @@ obj = function _handleStageNotification() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c1 = 3;
@@ -362,7 +362,7 @@ obj = function _handleGuildEventNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -434,7 +434,7 @@ obj = function _handleGuildEventNotification() {
             event = closure_130_6.getGuildScheduledEvent(guild_scheduled_event_id);
             if (null == event) {
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               const obj12 = { eventId: event.id, event };
               const obj4 = closure_130_0(closure_130_3[20]);
@@ -462,7 +462,7 @@ obj = function _handleGuildEventNotification() {
           obj.transitionToChannel(channel_id);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp32) {
         c4 = 3;
         throw tmp32;
@@ -486,7 +486,7 @@ obj = function _handleRelationshipAddNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -546,7 +546,7 @@ obj = function _handleRelationshipAddNotification() {
                 obj4.openPrivateChannel(obj11);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (arg0 === 1) {
@@ -590,7 +590,7 @@ obj = function _handleCallRingNotification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -620,7 +620,7 @@ obj = function _handleCallRingNotification() {
             obj = closure_130_0(closure_130_3[18]);
             obj.transitionToChannel(channel_id.channel_id);
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -644,7 +644,7 @@ obj = function _handleCallConnectNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -712,7 +712,7 @@ obj = function _handleCallConnectNotification() {
             closure_130_1(closure_130_3[31])(closure_0.channel_id);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp50) {
         c4 = 3;
@@ -739,7 +739,7 @@ obj = function _handleFriendSuggestionCreateNotification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -793,7 +793,7 @@ obj = function _handleFriendSuggestionCreateNotification() {
             items[0] = closure_130_1(closure_130_3[25]).PUSH_NOTIFICATION;
             tmp9(obj);
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp23) {
           c4 = 3;
@@ -817,7 +817,7 @@ obj = function _maybeAckNotificationCenter() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -897,7 +897,7 @@ obj = function _maybeAckNotificationCenter() {
           const result1 = obj.markNotificationCenterRemoteItemAcked(prop);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         c4 = 3;
         throw tmp17;
@@ -973,7 +973,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f135741 = () => {
+  const f136196 = () => {
     obj = router_utils;
     const obj2 = { navigationReplace: true, openChannel: true, isAppStartupNavigation };
     obj.transitionTo(gesture.CHANNEL(data.guild_id, data.channel_id), obj2);
@@ -1191,10 +1191,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -1224,7 +1224,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1365,10 +1365,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -1398,7 +1398,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1539,10 +1539,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -1572,7 +1572,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1713,10 +1713,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -1746,7 +1746,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1887,10 +1887,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -1920,7 +1920,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2061,10 +2061,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -2094,7 +2094,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2235,10 +2235,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -2268,7 +2268,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2409,10 +2409,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -2442,7 +2442,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2583,10 +2583,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -2616,7 +2616,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2757,10 +2757,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120624;
+          fn = f121028;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135741;
+          fn2 = f136196;
           promise.then(fn2);
           break;
         }
@@ -2790,7 +2790,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(8448);
+          tmp19Result6 = tmp19(8449);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;

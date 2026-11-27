@@ -1,7 +1,7 @@
 // Module ID: 7834
 // Function ID: 7835
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 6813, 4892, 4914, 4975, 4946, 4900, 7835, 14699, 6991, 14700, 6797, 6816, 8419, 14701, 2]
+// Dependencies: [5, 6813, 4892, 4914, 4975, 4946, 4900, 7835, 14706, 6991, 14707, 6797, 6816, 8420, 14708, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
 // Module 7834 (StageChannelModalActionCreators)
@@ -51,7 +51,7 @@ let obj = function _connectOrLurkStage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

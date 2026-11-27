@@ -1,16 +1,30 @@
 // Module ID: 15510
 // Function ID: 15511
-// Dependencies: [15503]
+// Dependencies: [15511]
 
 // Module 15510
-import _mod15503 from "module_15503" /* 15503 */;
+import _mod15511 from "module_15511" /* 15511 */;
 
 
-export default (arg0, arg1) => {
-  const tmp = _mod15503(arg0, arg1);
-  let version = null;
-  if (tmp) {
-    version = tmp.version;
+export default function(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
-  return version;
+  if (arg0 instanceof _mod15511) {
+    return arg0;
+  } else {
+    try {
+      const self = this;
+      const self2 = this;
+      const tmp5 = new _mod15511(arg0, arg1);
+      return tmp5;
+    } catch (tmp7) {
+      if (flag) {
+        throw tmp7;
+      } else {
+        return null;
+      }
+    }
+  }
 };

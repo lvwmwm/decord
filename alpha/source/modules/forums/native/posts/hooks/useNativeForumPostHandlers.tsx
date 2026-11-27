@@ -1,10 +1,10 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 10737
+// Function ID: 10738
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 5258, 4892, 4985, 1387, 8119, 10737, 1071, 1111, 5625, 38, 5659, 7096, 1380, 8929, 8997, 8804, 1379, 5259, 5260, 8116, 6126, 5228, 10738, 9092, 9089, 2]
+// Dependencies: [19, 5258, 4892, 4985, 1387, 8119, 10738, 1071, 1111, 5625, 38, 5659, 7096, 1380, 8930, 8998, 8805, 1379, 5259, 5260, 8116, 6126, 5228, 10739, 9093, 9090, 2]
 // Exports: default
 
-// Module 10736 (useNativeForumPostHandlers)
+// Module 10737 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
@@ -16,16 +16,16 @@ import useChannelName from "useChannelName" /* 5659 */;
 import transitionToChannel from "transitionToChannel" /* 6126 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7096 */;
 import Tracking from "Tracking" /* 8116 */;
-import openMediaModal from "openMediaModal" /* 8804 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9089 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9092 */;
+import openMediaModal from "openMediaModal" /* 8805 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9090 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9093 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5258 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8119 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 10737 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 10738 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(10738);
+const showLongPressForumPostActionSheetDefault = tmp2(10739);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 let closure_15 = ThreadConstants.OpenThreadAnalyticsLocations;
 let size = size_mod;

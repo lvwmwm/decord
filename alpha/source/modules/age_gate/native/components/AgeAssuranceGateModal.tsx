@@ -1,15 +1,15 @@
-// Module ID: 19647
-// Function ID: 19648
+// Module ID: 19663
+// Function ID: 19664
 // Name: AgeAssuranceGateModal
-// Dependencies: [19, 4892, 1096, 19648, 21, 19649, 7191, 1264, 19650, 11777, 504, 5659, 6825, 6838, 7355, 1112, 2]
+// Dependencies: [19, 4892, 1096, 19664, 21, 19665, 7191, 1264, 19666, 11785, 504, 5659, 6825, 6838, 7355, 1112, 2]
 // Exports: default
 
-// Module 19647 (AgeAssuranceGateModal)
+// Module 19663 (AgeAssuranceGateModal)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateConstants from "AgeGateConstants" /* 1096 */;
 import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6838 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19648 */;
-import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 19649 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19664 */;
+import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 19665 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;

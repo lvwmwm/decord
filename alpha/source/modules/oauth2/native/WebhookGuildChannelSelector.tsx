@@ -1,10 +1,10 @@
-// Module ID: 14728
-// Function ID: 14729
+// Module ID: 14735
+// Function ID: 14736
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 4896, 4985, 1387, 21, 5043, 575, 5257, 8499, 2120, 1112, 5659, 7738, 5634, 1186, 8088, 2]
+// Dependencies: [5, 32, 19, 17, 4896, 4985, 1387, 21, 5043, 575, 5257, 8500, 2120, 1112, 5659, 7738, 5634, 1186, 8088, 2]
 // Exports: default
 
-// Module 14728 (WebhookGuildChannelSelector)
+// Module 14735 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(8499, dependencyMap.paths);
+      const tmp8 = asyncRequire(8500, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);
@@ -111,7 +111,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -150,7 +150,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
                   closure_1_5.current = true;
                 }
                 v3 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp19) {
               v3 = 3;

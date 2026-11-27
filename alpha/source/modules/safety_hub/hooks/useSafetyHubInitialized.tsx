@@ -1,10 +1,10 @@
-// Module ID: 12584
-// Function ID: 12585
+// Module ID: 12592
+// Function ID: 12593
 // Name: useSafetyHubInitialized
 // Dependencies: [7912, 504, 2]
 // Exports: useSafetyHubInitialized
 
-// Module 12584 (useSafetyHubInitialized)
+// Module 12592 (useSafetyHubInitialized)
 import get_initialized from "get initialized" /* 504 */;
 import SafetyHubStore from "SafetyHubStore" /* 7912 */;
 import size from "module_2" /* 2 */;

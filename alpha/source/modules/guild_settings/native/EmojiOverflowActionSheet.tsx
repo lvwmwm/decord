@@ -1,13 +1,13 @@
-// Module ID: 19989
-// Function ID: 19990
+// Module ID: 20014
+// Function ID: 20015
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 5043, 7546, 5730, 1413, 5634, 6140, 6144, 5750, 1112, 9761, 9624, 5792, 5724, 7247, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 7546, 5730, 1413, 5634, 6140, 6144, 5750, 1112, 9762, 9625, 5792, 5724, 7247, 2]
 // Exports: default
 
-// Module 19989 (EmojiOverflowActionSheet)
+// Module 20014 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9761 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9762 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -76,7 +76,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   intl = emoji(1112).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
-    icon: closure_6(emoji(9624).PencilIcon, {}),
+    icon: closure_6(emoji(9625).PencilIcon, {}),
     label: closure_6(Text3, obj10),
     onPress() {
       dependencyMap();
@@ -91,7 +91,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   let tmp5Result = null;
   if (null != onSelectRolesForEmoji) {
     const obj11 = {
-      icon: closure_6(tmp3(9624).PencilIcon, {}),
+      icon: closure_6(tmp3(9625).PencilIcon, {}),
       label: closure_6(Text4, obj12),
       onPress: onClose(function*(arg0, value) {
           let obj2;
@@ -105,7 +105,7 @@ export default function EmojiOverflowActionSheet(emoji) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c4;
@@ -177,7 +177,7 @@ export default function EmojiOverflowActionSheet(emoji) {
                 }
                 closure_130_4();
                 c6 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp38) {
               closure_3 = tmp38;

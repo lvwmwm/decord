@@ -1,10 +1,10 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 10406
+// Function ID: 10407
 // Name: useMuteStates
 // Dependencies: [4948, 502, 2132, 4975, 5691, 1071, 504, 2]
 // Exports: default
 
-// Module 10405 (useMuteStates)
+// Module 10406 (useMuteStates)
 import Constants from "Constants" /* 1071 */;
 import ImpersonateStore_mod from "ImpersonateStore" /* 4948 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

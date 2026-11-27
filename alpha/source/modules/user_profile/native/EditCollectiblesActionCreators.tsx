@@ -1,10 +1,10 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14466
+// Function ID: 14467
 // Name: EditCollectiblesActionCreators
 // Dependencies: [1071, 8109, 2]
 // Exports: navigateToNitroManagement
 
-// Module 14459 (EditCollectiblesActionCreators)
+// Module 14466 (EditCollectiblesActionCreators)
 import Constants from "Constants" /* 1071 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
 import size from "module_2" /* 2 */;

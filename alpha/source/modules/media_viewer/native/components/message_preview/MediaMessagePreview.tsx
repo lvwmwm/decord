@@ -1,22 +1,22 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14145
+// Function ID: 14146
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 8119, 6953, 4892, 6391, 8936, 1071, 21, 8223, 8838, 5043, 8874, 9080, 1654, 1707, 575, 14139, 504, 11706, 1112, 11, 14140, 12025, 9089, 9091, 12066, 5303, 12563, 12158, 6126, 2]
+// Dependencies: [32, 19, 17, 8119, 6953, 4892, 6391, 8937, 1071, 21, 8224, 8839, 5043, 8875, 9081, 1654, 1707, 575, 14146, 504, 11714, 1112, 11, 14147, 12033, 9090, 9092, 12074, 5303, 12571, 12166, 6126, 2]
 // Exports: default
 
-// Module 14138 (MediaMessagePreview)
+// Module 14145 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import RowGeneratorDefault from "RowGenerator" /* 8223 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8838 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9089 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 12025 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 12158 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 14140 */;
+import RowGeneratorDefault from "RowGenerator" /* 8224 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8839 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9090 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 12033 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 12166 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 14147 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -24,7 +24,7 @@ import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8119 */;
 import SearchMessageStore from "SearchMessageStore" /* 6953 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import MessageStore from "MessageStore" /* 6391 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8936 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8937 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -314,7 +314,7 @@ export default function MediaMessagePreview(channelId) {
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(9091).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(9092).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);

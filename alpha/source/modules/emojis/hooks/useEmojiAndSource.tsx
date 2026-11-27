@@ -1,10 +1,10 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 9763
+// Function ID: 9764
 // Name: useEmojiAndSource
 // Dependencies: [5, 32, 19, 4914, 6883, 7053, 1071, 4992, 563, 2]
 // Exports: useEmojiAndSource
 
-// Module 9762 (useEmojiAndSource)
+// Module 9763 (useEmojiAndSource)
 import Constants from "Constants" /* 1071 */;
 import EmojiTypes from "EmojiTypes" /* 4992 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -141,7 +141,7 @@ export function useEmojiAndSource(emojiId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -196,7 +196,7 @@ export function useEmojiAndSource(emojiId) {
               current();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp33) {
             c3 = 3;
             throw tmp33;

@@ -1,14 +1,14 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 10023
+// Function ID: 10024
 // Name: ChannelCallLifecycleStore
-// Dependencies: [4946, 10009, 8910, 1344, 504, 572, 2]
+// Dependencies: [4946, 10010, 8911, 1344, 504, 572, 2]
 
-// Module 10022 (ChannelCallLifecycleStore)
+// Module 10023 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1344 from "module_1344" /* 1344 */;
-import DeviceOrientation from "DeviceOrientation" /* 8910 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10009 */;
+import DeviceOrientation from "DeviceOrientation" /* 8911 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10010 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,9 +20,9 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "s", width: "channel_id", height: "cix", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: null, isInitialized: null, isVisible: null };
+let size = { x: "Array", y: "s", width: "channel_id", height: "HTTP", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: null, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "s", width: "channel_id", height: "cix", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: null, isInitialized: null, isVisible: null };
+const size1 = { x: "Array", y: "s", width: "channel_id", height: "HTTP", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: null, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
 const Store = get_initializedDefault.Store;

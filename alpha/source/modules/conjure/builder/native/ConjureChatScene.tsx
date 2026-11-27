@@ -1,10 +1,10 @@
-// Module ID: 18445
-// Function ID: 18446
+// Module ID: 18452
+// Function ID: 18453
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2165, 1387, 7693, 7668, 6934, 7706, 6937, 21, 5043, 575, 1501, 18446, 1629, 18447, 1643, 1707, 504, 18448, 7667, 11452, 6971, 18449, 14747, 18451, 18452, 5684, 11460, 7727, 18453, 18454, 11457, 1654, 18455, 1112, 4245, 9816, 18457, 1495, 8616, 7725, 7689, 18458, 18463, 18496, 18497, 5257, 18498, 11450, 18560, 18570, 5725, 16695, 18574, 5724, 18576, 18577, 18579, 18593, 18594, 7677, 14064, 14071, 1502, 11455, 18595, 12508, 18598, 18599, 18467, 18608, 18609, 18610, 11448, 9702, 18611, 7745, 10591, 5634, 5641, 18612, 18613, 11459, 18528, 18632, 5220, 5219, 7197, 2]
+// Dependencies: [5, 32, 19, 17, 2165, 1387, 7693, 7668, 6934, 7706, 6937, 21, 5043, 575, 1501, 18453, 1629, 18454, 1643, 1707, 504, 18455, 7667, 11453, 6971, 18456, 14754, 18458, 18459, 5684, 11470, 7727, 18460, 18461, 11467, 1654, 18462, 1112, 4245, 9817, 18464, 1495, 8617, 7725, 7689, 18465, 18470, 18503, 18504, 5257, 18505, 11451, 18571, 18581, 5725, 16702, 18585, 5724, 18587, 18588, 18590, 18604, 18605, 7677, 14071, 14078, 1502, 11465, 18606, 12516, 18609, 18610, 18474, 18619, 18620, 18621, 11449, 9703, 18622, 7745, 10592, 5634, 5641, 18623, 18624, 11469, 18535, 18643, 5220, 5219, 7197, 2]
 // Exports: default
 
-// Module 18445 (ConjureChatScene)
+// Module 18452 (ConjureChatScene)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
@@ -18,16 +18,16 @@ import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7677 */;
 import ConjureConnectionStore2 from "ConjureConnectionStore" /* 7693 */;
 import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7725 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11450 */;
-import ConjureRemix from "ConjureRemix" /* 11452 */;
-import restartFrames from "restartFrames" /* 14071 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18452 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 18455 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18498 */;
-import openConjureShareSheetDefault from "openConjureShareSheet" /* 18560 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 18570 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 18579 */;
-import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 18599 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11451 */;
+import ConjureRemix from "ConjureRemix" /* 11453 */;
+import restartFrames from "restartFrames" /* 14078 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18459 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 18462 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18505 */;
+import openConjureShareSheetDefault from "openConjureShareSheet" /* 18571 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 18581 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 18590 */;
+import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 18610 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -530,7 +530,7 @@ export default function ConjureChatScene(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -594,7 +594,7 @@ export default function ConjureChatScene(guildId) {
           let result = openConjureAppInstallModal(obj6);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         c4 = 3;
         throw tmp15;

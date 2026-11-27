@@ -1,10 +1,10 @@
-// Module ID: 9856
-// Function ID: 9857
+// Module ID: 9857
+// Function ID: 9858
 // Name: BadgeArtImage
 // Dependencies: [32, 5, 19, 17, 21, 5163, 1088, 5827, 7946, 5730, 2]
 // Exports: default
 
-// Module 9856 (BadgeArtImage)
+// Module 9857 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1088 */;
@@ -38,7 +38,7 @@ let obj = function _timeOut() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -119,7 +119,7 @@ function SvgArt(url) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -193,7 +193,7 @@ function SvgArt(url) {
                   c2 = 0;
                 }
                 c4 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               if (0 === c2) {

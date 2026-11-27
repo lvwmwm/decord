@@ -1,14 +1,14 @@
-// Module ID: 9024
-// Function ID: 9025
+// Module ID: 9025
+// Function ID: 9026
 // Name: PhoneHangUpIcon
-// Dependencies: [19, 21, 575, 5729, 9025, 2]
+// Dependencies: [19, 21, 575, 5729, 9026, 2]
 // Exports: PhoneHangUpIcon
 
-// Module 9024 (PhoneHangUpIcon)
+// Module 9025 (PhoneHangUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 9025 */;
+import AssetRegistry from "AssetRegistry" /* 9026 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

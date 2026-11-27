@@ -1,7 +1,7 @@
 // Module ID: 7730
 // Function ID: 7731
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 5043, 575, 7731, 1629, 1654, 5644, 6152, 1112, 12867, 7247, 5634, 7480, 14734, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 7731, 1629, 1654, 5644, 6152, 1112, 12875, 7247, 5634, 7480, 14741, 2]
 // Exports: default
 
 // Module 7730 (OAuth2AuthorizeModal)
@@ -113,7 +113,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowSmallLeftIcon = tmp5(12867).ArrowSmallLeftIcon;
+    const ArrowSmallLeftIcon = tmp5(12875).ArrowSmallLeftIcon;
     tmp13Result = tmp13(ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -133,7 +133,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const obj12 = { bottom: true, style: tmp.contentContainer, children: closure_5(tmp2Result, obj13) };
   const SafeAreaPaddingView = tmp5(7480).SafeAreaPaddingView;
   obj13 = { onScroll: callback, centerContent: true };
-  tmp2Result = tmp2(14734);
+  tmp2Result = tmp2(14741);
   const merged = Object.assign(tmp4);
   items6[1] = closure_5(SafeAreaPaddingView, obj12);
   return closure_6(View, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9314
+// Function ID: 9315
 // Name: TestModeUtils
 // Dependencies: [5686, 5685, 504, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 9313 (TestModeUtils)
+// Module 9314 (TestModeUtils)
 import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5686 */;
 import TestModeStore from "TestModeStore" /* 5685 */;
 import size from "module_2" /* 2 */;

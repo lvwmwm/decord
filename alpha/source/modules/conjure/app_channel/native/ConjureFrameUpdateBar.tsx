@@ -1,19 +1,19 @@
-// Module ID: 18917
-// Function ID: 18918
+// Module ID: 18933
+// Function ID: 18934
 // Name: ConjureFrameUpdateBar
-// Dependencies: [19, 17, 6936, 18913, 21, 5043, 575, 6152, 5634, 1112, 4245, 14077, 14071, 2]
+// Dependencies: [19, 17, 6936, 18929, 21, 5043, 575, 6152, 5634, 1112, 4245, 14084, 14078, 2]
 // Exports: default
 
-// Module 18917 (ConjureFrameUpdateBar)
+// Module 18933 (ConjureFrameUpdateBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import Pressables from "Pressables" /* 6152 */;
-import restartFrames from "restartFrames" /* 14071 */;
-import RefreshIcon2 from "RefreshIcon" /* 14077 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 18913 */;
+import restartFrames from "restartFrames" /* 14078 */;
+import RefreshIcon2 from "RefreshIcon" /* 14084 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 18929 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6936 */;
 import Fragment from "Fragment" /* 21 */;

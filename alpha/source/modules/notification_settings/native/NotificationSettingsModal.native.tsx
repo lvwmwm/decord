@@ -1,10 +1,10 @@
-// Module ID: 20278
-// Function ID: 20279
+// Module ID: 20336
+// Function ID: 20337
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 4896, 4892, 7468, 5664, 4914, 19891, 4985, 6167, 1387, 1071, 6168, 1081, 21, 5043, 575, 5104, 6013, 5257, 10669, 2120, 7476, 7471, 10668, 7251, 1112, 7253, 6140, 7549, 5634, 1186, 5722, 2188, 6144, 10673, 6155, 13792, 4978, 7096, 5659, 8088, 6115, 10674, 1501, 504, 7469, 5617, 7191, 20279, 10667, 7355, 2]
+// Dependencies: [109, 19, 17, 4896, 4892, 7468, 5664, 4914, 19907, 4985, 6167, 1387, 1071, 6168, 1081, 21, 5043, 575, 5104, 6013, 5257, 10670, 2120, 7476, 7471, 10669, 7251, 1112, 7253, 6140, 7549, 5634, 1186, 5722, 2188, 6144, 10674, 6155, 13799, 4978, 7096, 5659, 8088, 6115, 10675, 1501, 504, 7469, 5617, 7191, 20337, 10668, 7355, 2]
 // Exports: default
 
-// Module 20278 (NotificationSettingsModal)
+// Module 20336 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -30,10 +30,10 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7471 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7476 */;
 import TableSwitchRow6 from "TableSwitchRow" /* 7549 */;
 import _mod8088 from "module_8088" /* 8088 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10668 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 10673 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10674 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13792 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10669 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 10674 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10675 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13799 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
@@ -41,7 +41,7 @@ import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7468 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5664 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19891 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19907 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
 import UserStore from "UserStore" /* 1387 */;
@@ -92,7 +92,7 @@ function ConnectedNotificationSettings(guildId) {
     const tmp = closure_1_8(type) || type === constants.GUILD_CATEGORY;
     return tmp;
   }), items1);
-  const obj3 = guildId(10674);
+  const obj3 = guildId(10675);
   shouldUseNewNotificationSystem = obj3.useShouldUseNewNotificationSystem("NotificationSettingsModalNative");
   const items2 = [UserGuildSettingsStore];
   const items3 = [shouldUseNewNotificationSystem, memo, tmp3.channelOverrides];
@@ -165,7 +165,7 @@ class NotificationSettings extends PureComponent {
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp8 = asyncRequire(10669, dependencyMap.paths);
+        const tmp8 = asyncRequire(10670, dependencyMap.paths);
         openLazy(tmp8, "muteSettings" + guildId, obj);
       }
     };
@@ -457,7 +457,7 @@ class NotificationSettings extends PureComponent {
     let tmp11Result = null;
     const tmp11 = mostRecentSelectedTextChannelIds;
     if (muted) {
-      const obj5 = { muteConfig, type: tmp7(10673).MuteSettingType.SERVER };
+      const obj5 = { muteConfig, type: tmp7(10674).MuteSettingType.SERVER };
       const tmp14 = MutedUntilTextDefault;
       tmp11Result = tmp11(tmp14, obj5, "muted-until");
     }

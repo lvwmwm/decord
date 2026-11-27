@@ -1,10 +1,10 @@
-// Module ID: 14245
-// Function ID: 14246
+// Module ID: 14252
+// Function ID: 14253
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1071, 21, 8754, 11631, 11635, 2118, 5641, 1112, 2]
+// Dependencies: [5, 19, 1071, 21, 8755, 11639, 11643, 2118, 5641, 1112, 2]
 // Exports: default
 
-// Module 14245 (GameProfileGameClaimCta)
+// Module 14252 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -36,7 +36,7 @@ export default function GameProfileGameClaimCta(trackAction) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -66,7 +66,7 @@ export default function GameProfileGameClaimCta(trackAction) {
           return obj;
         } else {
           trackAction = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         trackAction = 3;

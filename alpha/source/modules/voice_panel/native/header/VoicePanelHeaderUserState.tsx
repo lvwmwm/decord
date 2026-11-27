@@ -1,16 +1,16 @@
-// Module ID: 19469
-// Function ID: 19470
+// Module ID: 19485
+// Function ID: 19486
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 6933, 21, 1654, 8489, 5043, 575, 19470, 19468, 8648, 7055, 11781, 504, 5253, 2]
+// Dependencies: [19, 6933, 21, 1654, 8490, 5043, 575, 19486, 19484, 8649, 7055, 11789, 504, 5253, 2]
 
-// Module 19469 (VoicePanelHeaderUserState)
+// Module 19485 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import NativeViewDefault from "NativeView" /* 7055 */;
-import native from "native" /* 8489 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import useStableParticipant from "useStableParticipant" /* 19468 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19470 */;
+import native from "native" /* 8490 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import useStableParticipant from "useStableParticipant" /* 19484 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19486 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
 import module_1654 from "module_1654" /* 1654 */;
@@ -45,21 +45,21 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     let tmp11 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items.push;
-      let BackgroundBlurView = tmp11(8489).BackgroundBlurView;
+      let BackgroundBlurView = tmp11(8490).BackgroundBlurView;
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp9.type === tmp11(19470).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(19486).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let push2 = items.push;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp11(8489).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp11(8490).BackgroundBlurView;
       if (tmp9.withLeftMargin) {
         leftMargin = tmp.leftMargin;
       }
-      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(8648).MuteDeafenIcon, obj5) };
+      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(8649).MuteDeafenIcon, obj5) };
       items1[1] = leftMargin;
       obj5 = { style: tmp.floatingIcon, state: tmp9.muteDeafenIconState };
       let push2Result = push2(tmp35(BackgroundBlurView2, obj4, "mute-deafen"));

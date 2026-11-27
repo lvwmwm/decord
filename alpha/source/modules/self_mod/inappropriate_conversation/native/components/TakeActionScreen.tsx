@@ -1,22 +1,22 @@
-// Module ID: 17359
-// Function ID: 17360
+// Module ID: 17366
+// Function ID: 17367
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4985, 1387, 11819, 21, 5043, 575, 504, 11851, 11854, 1501, 7850, 7845, 11826, 8191, 5725, 1112, 5724, 5641, 11862, 9791, 7116, 12477, 5722, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 4985, 1387, 11827, 21, 5043, 575, 504, 11859, 11862, 1501, 7850, 7845, 11834, 8192, 5725, 1112, 5724, 5641, 11870, 9792, 7116, 12485, 5722, 5634, 2]
 // Exports: default
 
-// Module 17359 (TakeActionScreen)
+// Module 17366 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import LinkingDefault from "Linking" /* 5722 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7845 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11826 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
-import Constants from "Constants" /* 11819 */;
+import Constants from "Constants" /* 11827 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -116,7 +116,7 @@ export default function TakeActionButtons(senderId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ export default function TakeActionButtons(senderId) {
           closure_128_3(tmp3(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         setReported = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp21) {
         setReported = 3;
         throw tmp21;

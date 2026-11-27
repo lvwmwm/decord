@@ -1,16 +1,16 @@
-// Module ID: 14131
-// Function ID: 14132
+// Module ID: 14138
+// Function ID: 14139
 // Name: MediaViewerOverlayButtonFavoriteGIF
-// Dependencies: [19, 21, 10812, 10808, 5725, 1112, 10823, 10810, 1232, 8810, 8698, 9767, 575, 9765, 2]
+// Dependencies: [19, 21, 10813, 10809, 5725, 1112, 10824, 10811, 1232, 8811, 8699, 9768, 575, 9766, 2]
 
-// Module 14131 (MediaViewerOverlayButtonFavoriteGIF)
+// Module 14138 (MediaViewerOverlayButtonFavoriteGIF)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10808 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10810 */;
-import GifIcon from "GifIcon" /* 10823 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10809 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 10811 */;
+import GifIcon from "GifIcon" /* 10824 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

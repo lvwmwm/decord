@@ -1,10 +1,10 @@
-// Module ID: 14225
-// Function ID: 14226
+// Module ID: 14232
+// Function ID: 14233
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8761, 21, 8758, 13356, 7324, 8783, 14226, 14228, 8773, 5043, 575, 5722, 14230, 14231, 8794, 1112, 2118, 4865, 14232, 5634, 2]
+// Dependencies: [19, 17, 8762, 21, 8759, 13364, 7324, 8784, 14233, 14235, 8774, 5043, 575, 5722, 14237, 14238, 8795, 1112, 2118, 4865, 14239, 5634, 2]
 // Exports: default
 
-// Module 14225 (GameProfileDetails)
+// Module 14232 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1112 */;
 import Server from "Server" /* 2118 */;
@@ -12,14 +12,14 @@ import DateUtilsAll from "DateUtils" /* 4865 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import LinkingDefault from "Linking" /* 5722 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 7324 */;
-import PlatformType from "PlatformType" /* 8758 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8761 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 8773 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 8783 */;
-import SKUUtils from "SKUUtils" /* 8794 */;
-import ScreenIcon from "ScreenIcon" /* 13356 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 14226 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 14228 */;
+import PlatformType from "PlatformType" /* 8759 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8762 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 8774 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 8784 */;
+import SKUUtils from "SKUUtils" /* 8795 */;
+import ScreenIcon from "ScreenIcon" /* 13364 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 14233 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 14235 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

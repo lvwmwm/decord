@@ -1,26 +1,26 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 12350
+// Function ID: 12351
 // Name: HighFiveSpotIllustration
-// Dependencies: [19, 21, 12343, 12344, 12345, 7261, 5730, 2]
+// Dependencies: [19, 21, 12351, 12352, 12353, 7261, 5730, 2]
 // Exports: HighFiveSpotIllustration
 
-// Module 12342 (HighFiveSpotIllustration)
+// Module 12350 (HighFiveSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef12343 from "module_12343" /* 12343 */;
-import _modDef12344 from "module_12344" /* 12344 */;
-import _modDef12345 from "module_12345" /* 12345 */;
+import _modDef12351 from "module_12351" /* 12351 */;
+import _modDef12352 from "module_12352" /* 12352 */;
+import _modDef12353 from "module_12353" /* 12353 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12343 };
+let obj2 = { uri: _modDef12351 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef12344 };
+let obj3 = { uri: _modDef12352 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef12345 };
-({ uri: _modDef12345 });
+obj[3] = { uri: _modDef12353 };
+({ uri: _modDef12353 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HighFiveSpotIllustration.native.tsx");
 

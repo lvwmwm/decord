@@ -1,17 +1,17 @@
-// Module ID: 11471
-// Function ID: 11472
+// Module ID: 11481
+// Function ID: 11482
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1387, 6934, 7706, 1071, 7714, 1285, 7667, 572, 6134, 11472, 7725, 11474, 2]
+// Dependencies: [5, 1387, 6934, 7706, 1071, 7714, 1285, 7667, 572, 6134, 11482, 7725, 11484, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishLiveApp
 
-// Module 11471 (ConjurePublishActionCreators)
+// Module 11481 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import ConjureAnalytics from "ConjureAnalytics" /* 7714 */;
 import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7725 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11472 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11474 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11482 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11484 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1387 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
@@ -43,7 +43,7 @@ let obj = function _unpublishProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ obj = function _unpublishLiveApp() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -243,7 +243,7 @@ obj = function _refreshPublishedProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -381,7 +381,7 @@ obj = function _refreshPublishedProject() {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -410,7 +410,7 @@ obj = function _refreshPublishedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -452,7 +452,7 @@ obj = function _refreshPublishedApplication() {
               closure_132_14(applicationId, closure_1, closure_2);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c6 = 3;

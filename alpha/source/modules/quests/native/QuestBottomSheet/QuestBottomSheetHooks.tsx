@@ -1,17 +1,17 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16723
+// Function ID: 16724
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 6871, 16684, 16712, 5257, 9928, 16717, 9857, 9861, 6878, 8392, 6874, 2]
+// Dependencies: [5, 19, 6871, 16691, 16719, 5257, 9929, 16724, 9858, 9862, 6878, 8393, 6874, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 16716 (QuestBottomSheetHooks)
+// Module 16723 (QuestBottomSheetHooks)
 import QuestConstants from "QuestConstants" /* 6871 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9857 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9861 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 16717 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9858 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9862 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 16724 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -102,7 +102,7 @@ export function useMobileActivityPressHandler(questId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ export function useMobileActivityPressHandler(questId) {
           }
           captureAdUserAction(obj6);
           launchMobileActivity = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         launchMobileActivity = 3;

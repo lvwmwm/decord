@@ -1,10 +1,10 @@
-// Module ID: 19097
-// Function ID: 19098
+// Module ID: 19113
+// Function ID: 19114
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 1256, 5618, 5273, 9013, 1379, 7048, 10591, 15259, 1112, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 1256, 5618, 5273, 9014, 1379, 7048, 10592, 15266, 1112, 2]
 // Exports: default
 
-// Module 19097 (UsernameSearchScreen)
+// Module 19113 (UsernameSearchScreen)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -72,7 +72,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(9013);
+  let obj = navigation(9014);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj2 = navigation(1379);
   let prop = null;
@@ -90,12 +90,12 @@ export default function UsernameSearchScreen(navigation) {
   items1 = [tmp.content, clientThemesOverride];
   items2 = [, ];
   tmp3Result = ref(7048);
-  items2[0] = closure_8(ref(10591), { absolute: true });
+  items2[0] = closure_8(ref(10592), { absolute: true });
   const obj5 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: items3, children: closure_8(tmp3Result2, obj7) };
   items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(575).space.PX_16 }];
   obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1112).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
   ({ paddingBottom: insets.bottom + ref(575).space.PX_16 });
-  tmp3Result2 = ref(15259);
+  tmp3Result2 = ref(15266);
   intl = tmp7(1112).intl;
   items2[1] = closure_8(closure_4, obj5);
   return closure_8(closure_5, obj3);

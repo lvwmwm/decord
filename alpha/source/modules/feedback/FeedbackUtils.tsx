@@ -1,16 +1,16 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12179
+// Function ID: 12180
 // Name: FeedbackUtils
-// Dependencies: [12168, 1071, 12, 1256, 4868, 1112, 3143, 2]
+// Dependencies: [12176, 1071, 12, 1256, 4868, 1112, 3143, 2]
 // Exports: getAudioFeedbackOptions, getConnectionFeedbackOptions, getPeopleFeedbackOptions, getStreamFeedbackOptions, getVideoBackgroundFeedbackOptions, getVideoFeedbackOptions, processOptOut, shuffleProblems
 
-// Module 12171 (FeedbackUtils)
+// Module 12179 (FeedbackUtils)
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1071 */;
 import intl20 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef3143 from "module_3143" /* 3143 */;
-import Constants from "Constants" /* 12168 */;
+import Constants from "Constants" /* 12176 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -22,8 +22,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f101872 = (disabled) => !disabled.disabled;
-const f101873 = (item) => Object.assign(item, Object.assign({ disabled: 0 }));
+const f102113 = (disabled) => !disabled.disabled;
+const f102114 = (item) => Object.assign(item, Object.assign({ disabled: 0 }));
 ({ ConnectionFeedbackOption: c3, AudioFeedbackOption: closure_4, VideoFeedbackOption: hasOwnProperty, VideoBackgroundFeedbackOption: metroRequire, StreamFeedbackOption: metroImportDefault, FeedbackOptionVariant: metroImportAll, FeedbackType: c9, MAX_REPRESENTABLE_DATE: c10, PeopleFeedbackOption: unpackModuleId } = Constants);
 const AnalyticEvents = Constants2.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/feedback/FeedbackUtils.tsx");
@@ -80,8 +80,8 @@ export function getConnectionFeedbackOptions() {
   const obj6 = { value: constants.CUTTING, variant: metroImportAll.SOMEONE, label: intl6.string(_modDef3143.K5vYQA) };
   intl6 = intl20.intl;
   items[5] = obj6;
-  const found = items.filter(f101872);
-  return found.map(f101873);
+  const found = items.filter(f102113);
+  return found.map(f102114);
 }
 export function getAudioFeedbackOptions(isMobile) {
   let intl;
@@ -137,8 +137,8 @@ export function getAudioFeedbackOptions(isMobile) {
   const obj13 = { value: constants2.NO_GAME_AUDIO, variant: metroImportAll.SELF, label: intl13.string(_modDef3143["2IG95D"]) };
   intl13 = intl20.intl;
   items[12] = obj13;
-  const found = items.filter(f101872);
-  return found.map(f101873);
+  const found = items.filter(f102113);
+  return found.map(f102114);
 }
 export function getVideoFeedbackOptions() {
   let intl;
@@ -165,8 +165,8 @@ export function getVideoFeedbackOptions() {
   const obj6 = { value: hasOwnProperty.DESYNC, variant: metroImportAll.UNSPECIFIED, label: intl6.string(_modDef3143.vRDE5O) };
   intl6 = intl20.intl;
   items[5] = obj6;
-  const found = items.filter(f101872);
-  return found.map(f101873);
+  const found = items.filter(f102113);
+  return found.map(f102114);
 }
 export function getVideoBackgroundFeedbackOptions() {
   let intl;
@@ -185,8 +185,8 @@ export function getVideoBackgroundFeedbackOptions() {
   const obj4 = { value: metroRequire.LAG_ON_MOVEMENT, variant: metroImportAll.SELF, label: intl4.string(_modDef3143["Gg/Y1X"]) };
   intl4 = intl20.intl;
   items[3] = obj4;
-  const found = items.filter(f101872);
-  return found.map(f101873);
+  const found = items.filter(f102113);
+  return found.map(f102114);
 }
 export function getStreamFeedbackOptions(isStreamer) {
   let intl;
@@ -266,14 +266,14 @@ export function getStreamFeedbackOptions(isStreamer) {
   const obj19 = { value: metroImportDefault.DESYNC, variant: metroImportAll.SOMEONE, label: intl19.string(_modDef3143.JfAvQp), disabled: isStreamer };
   intl19 = intl20.intl;
   items[18] = obj19;
-  const found = items.filter(f101872);
-  return found.map(f101873);
+  const found = items.filter(f102113);
+  return found.map(f102114);
 }
 export function getPeopleFeedbackOptions() {
   let intl;
   const obj = { value: unpackModuleId.TOXIC_OR_INAPPROPRIATE, variant: metroImportAll.OTHERS, label: intl.string(_modDef3143.PLBRzF) };
   intl = intl20.intl;
   const items = [obj];
-  const found = items.filter(f101872);
-  return found.map(f101873);
+  const found = items.filter(f102113);
+  return found.map(f102114);
 }

@@ -1,10 +1,10 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16340
+// Function ID: 16341
 // Name: ExplicitMediaRedactionNativeUtils
-// Dependencies: [1387, 6788, 9019, 1195, 1112, 8937, 7870, 6828, 5257, 16334, 2120, 8811, 8816, 2]
+// Dependencies: [1387, 6788, 9020, 1195, 1112, 8938, 7870, 6828, 5257, 16341, 2120, 8812, 8817, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 16333 (ExplicitMediaRedactionNativeUtils)
+// Module 16340 (ExplicitMediaRedactionNativeUtils)
 import intl4 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
@@ -12,10 +12,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6788 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6828 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7870 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8811 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8816 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8937 */;
-import SearchConstants from "SearchConstants" /* 9019 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8812 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8817 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8938 */;
+import SearchConstants from "SearchConstants" /* 9020 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ export function handleSensitiveMediaFilterPress(arg0) {
     push3(obj3);
   }
   const obj4 = ActionSheetActionCreatorsDefault;
-  obj4.openLazy(asyncRequire(16334, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+  obj4.openLazy(asyncRequire(16341, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
 }
 export function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {

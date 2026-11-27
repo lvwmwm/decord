@@ -1,18 +1,18 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13264
+// Function ID: 13265
 // Name: GuildDirectoryAddModal
-// Dependencies: [19, 13257, 21, 5043, 5597, 1264, 7191, 13255, 13258, 13266, 13270, 13280, 7480, 5622, 7355, 1112, 2]
+// Dependencies: [19, 13265, 21, 5043, 5597, 1264, 7191, 13263, 13266, 13274, 13278, 13288, 7480, 5622, 7355, 1112, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 13256 (GuildDirectoryAddModal)
+// Module 13264 (GuildDirectoryAddModal)
 import Fragment from "Fragment" /* 21 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
 import reactDefault from "react" /* 5622 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7480 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13255 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13257 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13263 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13265 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

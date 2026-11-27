@@ -1,10 +1,10 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13153
+// Function ID: 13154
 // Name: AppLauncherOptionIcon
 // Dependencies: [19, 17, 21, 5043, 575, 2]
 // Exports: default
 
-// Module 13145 (AppLauncherOptionIcon)
+// Module 13153 (AppLauncherOptionIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

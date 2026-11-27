@@ -1,9 +1,9 @@
-// Module ID: 19822
-// Function ID: 19823
+// Module ID: 19838
+// Function ID: 19839
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 13671, 1387, 1071, 21, 5043, 575, 5597, 1501, 504, 13678, 1091, 19823, 13699, 13692, 1264, 13691, 7355, 1112, 2]
+// Dependencies: [19, 17, 13678, 1387, 1071, 21, 5043, 575, 5597, 1501, 504, 13685, 1091, 19839, 13706, 13699, 1264, 13698, 7355, 1112, 2]
 
-// Module 19822 (RedesignDiscoverabilityModal)
+// Module 19838 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13671 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13678 */;
-import NUFActionCreators from "NUFActionCreators" /* 13699 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13678 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13685 */;
+import NUFActionCreators from "NUFActionCreators" /* 13706 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -87,7 +87,7 @@ function DiscoverabilityNameScene(onComplete) {
     const result = obj.startContactSyncForDiscoverability(arg0);
     onComplete();
   }, items1);
-  allowPhone(13692);
+  allowPhone(13699);
   if (name == null) {
     name = "";
   }

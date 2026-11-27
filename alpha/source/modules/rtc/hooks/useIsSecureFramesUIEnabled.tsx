@@ -1,11 +1,11 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 8708
+// Function ID: 8709
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [4892, 5851, 8681, 504, 2]
+// Dependencies: [4892, 5851, 8682, 504, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 8707 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 8681 */;
+// Module 8708 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 8682 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
 import size from "module_2" /* 2 */;

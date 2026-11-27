@@ -1,8 +1,8 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 12822
+// Function ID: 12823
 // Dependencies: [2]
 
-// Module 12814
+// Module 12822
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_08_rollerSkates.webp.js");

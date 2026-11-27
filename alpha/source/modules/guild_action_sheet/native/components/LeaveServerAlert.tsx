@@ -1,12 +1,12 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15386
+// Function ID: 15387
 // Name: LeaveServerAlert
-// Dependencies: [1071, 21, 6052, 1112, 6052, 8573, 2]
+// Dependencies: [1071, 21, 6052, 1112, 6052, 8574, 2]
 // Exports: default
 
-// Module 15379 (LeaveServerAlert)
+// Module 15386 (LeaveServerAlert)
 import Constants from "Constants" /* 1071 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

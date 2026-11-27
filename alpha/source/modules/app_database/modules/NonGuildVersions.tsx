@@ -1,21 +1,21 @@
-// Module ID: 8319
-// Function ID: 8320
+// Module ID: 8320
+// Function ID: 8321
 // Name: NonGuildVersions
-// Dependencies: [5, 5076, 3, 8312, 12, 4921, 1088, 2]
+// Dependencies: [5, 5076, 3, 8313, 12, 4921, 1088, 2]
 
-// Module 8319 (NonGuildVersions)
+// Module 8320 (NonGuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
-import isCacheEnabled from "isCacheEnabled" /* 8312 */;
+import isCacheEnabled from "isCacheEnabled" /* 8313 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, guildId;
 
-const f93323 = () => {
+const f93556 = () => {
   let obj = DatabaseDaosDefault;
   const databaseResult = obj.database();
   if (databaseResult != null) {
@@ -54,7 +54,7 @@ class NonGuildVersions {
     if (obj.isCacheEnabled()) {
       const addChangeListener = SelectedGuildStore.addChangeListener;
       let obj2 = _modDef12;
-      addChangeListener(obj2.throttle(f93323, 10 * DurationsDefault.Millis.SECOND));
+      addChangeListener(obj2.throttle(f93556, 10 * DurationsDefault.Millis.SECOND));
     }
     return obj3;
   }
@@ -70,7 +70,7 @@ class NonGuildVersions {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -171,7 +171,7 @@ obj.actions = {
 if (isCacheEnabled.isCacheEnabled()) {
   let addChangeListener = SelectedGuildStore.addChangeListener;
   const importDefaultResult1 = _modDef12;
-  addChangeListener(importDefaultResult1.throttle(f93323, 10 * DurationsDefault.Millis.SECOND));
+  addChangeListener(importDefaultResult1.throttle(f93556, 10 * DurationsDefault.Millis.SECOND));
 }
 let result = size.fileFinishedImporting("modules/app_database/modules/NonGuildVersions.tsx");
 

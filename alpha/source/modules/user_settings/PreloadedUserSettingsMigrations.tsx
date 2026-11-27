@@ -1,9 +1,9 @@
-// Module ID: 15860
-// Function ID: 15861
+// Module ID: 15867
+// Function ID: 15868
 // Name: PreloadedUserSettingsMigrations
-// Dependencies: [4892, 1071, 1195, 4875, 7562, 510, 1233, 504, 1226, 4876, 8183, 2]
+// Dependencies: [4892, 1071, 1195, 4875, 7562, 510, 1233, 504, 1226, 4876, 8184, 2]
 
-// Module 15860 (PreloadedUserSettingsMigrations)
+// Module 15867 (PreloadedUserSettingsMigrations)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /*
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4875 */;
 import dismissible_content from "dismissible_content" /* 4876 */;
 import HotspotStore2 from "HotspotStore" /* 7562 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8184 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
 

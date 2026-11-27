@@ -1,10 +1,10 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 16886
+// Function ID: 16887
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [5, 32, 19, 17, 5067, 1238, 1387, 1192, 1191, 1193, 1194, 5068, 1082, 21, 5043, 575, 1379, 1112, 16880, 11750, 16882, 1495, 563, 5249, 1195, 1241, 5065, 5622, 16612, 5071, 1502, 6379, 6380, 7198, 8486, 8616, 1654, 1707, 5040, 5213, 5253, 5256, 16611, 16059, 16060, 6874, 5725, 5104, 9011, 5634, 7047, 6152, 7197, 16613, 16884, 8617, 16890, 16902, 16911, 7480, 10018, 2]
+// Dependencies: [5, 32, 19, 17, 5067, 1238, 1387, 1192, 1191, 1193, 1194, 5068, 1082, 21, 5043, 575, 1379, 1112, 16887, 11758, 16889, 1495, 563, 5249, 1195, 1241, 5065, 5622, 16619, 5071, 1502, 6379, 6380, 7198, 8487, 8617, 1654, 1707, 5040, 5213, 5253, 5256, 16618, 16066, 16067, 6874, 5725, 5104, 9012, 5634, 7047, 6152, 7197, 16620, 16891, 8618, 16897, 16909, 16918, 7480, 10019, 2]
 // Exports: default
 
-// Module 16879 (SettingsAppearanceThemePickerScreen)
+// Module 16886 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -14,14 +14,14 @@ import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
 import MobileThemesUtils from "MobileThemesUtils" /* 5249 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 11750 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 16059 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16060 */;
-import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16611 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16612 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16613 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 16880 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16882 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 11758 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 16066 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16067 */;
+import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16618 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16619 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16620 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 16887 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -420,7 +420,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -517,7 +517,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -556,7 +556,7 @@ function ThemePicker(defaultIndex) {
                 callback(tmp11);
                 close();
                 c2 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
@@ -571,7 +571,7 @@ function ThemePicker(defaultIndex) {
           close();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp18) {
         c2 = 3;
         throw tmp18;
@@ -626,7 +626,7 @@ function ThemePicker(defaultIndex) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -670,7 +670,7 @@ function ThemePicker(defaultIndex) {
               closure_1_9.dispatch(data.data.action);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp21) {
             c4 = 3;
             throw tmp21;

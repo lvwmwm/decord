@@ -1,22 +1,22 @@
-// Module ID: 16074
-// Function ID: 16075
+// Module ID: 16081
+// Function ID: 16082
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [109, 19, 17, 9437, 6376, 14565, 1081, 1071, 21, 5043, 575, 1112, 16075, 16174, 16055, 14989, 5607, 5104, 8486, 16057, 7350, 8616, 16058, 16063, 504, 16066, 6013, 9439, 16067, 10589, 16071, 13612, 13615, 2]
+// Dependencies: [109, 19, 17, 9438, 6376, 14572, 1081, 1071, 21, 5043, 575, 1112, 16082, 16181, 16062, 14996, 5607, 5104, 8487, 16064, 7350, 8617, 16065, 16070, 504, 16073, 6013, 9440, 16074, 10590, 16078, 13619, 13622, 2]
 
-// Module 16074 (ProfileCustomizationSettingScreen)
+// Module 16081 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl2 from "intl" /* 1112 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9439 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16075 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16174 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9440 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16082 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16181 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9437 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9438 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6376 */;
-import WidgetStore from "WidgetStore" /* 14565 */;
+import WidgetStore from "WidgetStore" /* 14572 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

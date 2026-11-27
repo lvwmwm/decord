@@ -1,10 +1,10 @@
-// Module ID: 18529
-// Function ID: 18530
+// Module ID: 18536
+// Function ID: 18537
 // Name: ConjureFileMention
-// Dependencies: [5, 19, 17, 21, 5043, 575, 18528, 18530, 18533, 5634, 1112, 4245, 18491, 18535, 2120, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 575, 18535, 18537, 18540, 5634, 1112, 4245, 18498, 18542, 2120, 2]
 // Exports: default
 
-// Module 18529 (ConjureFileMention)
+// Module 18536 (ConjureFileMention)
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -50,12 +50,12 @@ export default function ConjureFileMention(variant) {
   let context;
   const tmp = closure_9();
   const tmp3 = dependencyMap;
-  context = react.useContext(context(18528).ConjureFileMentionProjectContext);
-  let obj = context(18530);
+  context = react.useContext(context(18535).ConjureFileMentionProjectContext);
+  let obj = context(18537);
   const conjureStoredAttachment = obj.useConjureStoredAttachment(context, attachmentId);
   const obj2 = { style: tmp.chip, children: items };
   let obj3 = { projectId: context, file: conjureStoredAttachment, style: tmp.thumbnail, iconColor: conjureStoredAttachment(575).colors.MENTION_FOREGROUND };
-  const tmp10 = conjureStoredAttachment(18533);
+  const tmp10 = conjureStoredAttachment(18540);
   items = [closure_7(tmp10, obj3), ];
   let obj4 = { variant: str, style: tmp.name, children: name };
   name = undefined;
@@ -75,7 +75,7 @@ export default function ConjureFileMention(variant) {
   if (null != context) {
     tmp8Result = tmp6Result;
     if (null != conjureStoredAttachment) {
-      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(18491).CONJURE_VIEWABLE_IMAGE_TYPES;
+      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(18498).CONJURE_VIEWABLE_IMAGE_TYPES;
       tmp8Result = tmp6Result;
       if (CONJURE_VIEWABLE_IMAGE_TYPES.has(conjureStoredAttachment.content_type)) {
         let obj5 = {
@@ -91,7 +91,7 @@ export default function ConjureFileMention(variant) {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -140,7 +140,7 @@ export default function ConjureFileMention(variant) {
                         return obj;
                       } else {
                         c3 = 3;
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp12) {
                       c3 = 3;

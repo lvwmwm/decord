@@ -1,10 +1,10 @@
-// Module ID: 11297
-// Function ID: 11298
+// Module ID: 11298
+// Function ID: 11299
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 9104, 1071, 21, 5043, 5634, 2113, 6322, 6323, 9465, 1112, 9415, 2174, 11298, 11245, 11255, 504, 11263, 1379, 11077, 9637, 11299, 575, 2]
+// Dependencies: [19, 17, 9105, 1071, 21, 5043, 5634, 2113, 6322, 6323, 9466, 1112, 9416, 2174, 11299, 11246, 11256, 504, 11264, 1379, 11078, 9638, 11300, 575, 2]
 // Exports: default
 
-// Module 11297 (InlinePriceTag)
+// Module 11298 (InlinePriceTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,14 +16,14 @@ import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6322 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
-import useCurrentUser from "useCurrentUser" /* 9415 */;
-import OrbsIcon from "OrbsIcon" /* 9465 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11245 */;
-import useVirtualCurrencyData from "useVirtualCurrencyData" /* 11255 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 11263 */;
-import useProductDisableState from "useProductDisableState" /* 11298 */;
+import useCurrentUser from "useCurrentUser" /* 9416 */;
+import OrbsIcon from "OrbsIcon" /* 9466 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11246 */;
+import useVirtualCurrencyData from "useVirtualCurrencyData" /* 11256 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 11264 */;
+import useProductDisableState from "useProductDisableState" /* 11299 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 9104 */;
+import IAPStore from "IAPStore" /* 9105 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp6;
-const ExpressiveNitroUpsellDefault = tmp6(11299);
+const ExpressiveNitroUpsellDefault = tmp6(11300);
 function PriceTag(color) {
   let icon;
   let items;
@@ -122,7 +122,7 @@ function OrbsPriceTag(arg0) {
     const tmp11 = PriceTag;
     if (!result) {
       const obj6 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      tmp10Result = tmp10(tmp17(9465).OrbsIcon, obj6);
+      tmp10Result = tmp10(tmp17(9466).OrbsIcon, obj6);
     }
     const intl2 = tmp17(1112).intl;
     const formatToPlainString2 = intl2.formatToPlainString;
@@ -259,10 +259,10 @@ export default function InlinePriceTag(product) {
       }
       if (shopDiscountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
         const obj17 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        tmp26Result5 = tmp26(tmp2(11077).TagIcon, obj17);
+        tmp26Result5 = tmp26(tmp2(11078).TagIcon, obj17);
       } else {
         const obj18 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        tmp26Result5 = tmp26(tmp2(9637).NitroWheelIcon, obj18);
+        tmp26Result5 = tmp26(tmp2(9638).NitroWheelIcon, obj18);
       }
       tmp26Result6 = tmp26(tmp27, obj15);
     }

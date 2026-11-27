@@ -1,17 +1,17 @@
-// Module ID: 15049
-// Function ID: 15050
+// Module ID: 15056
+// Function ID: 15057
 // Name: CheckpointTestingOptions
-// Dependencies: [5, 15047, 12625, 3497, 12628, 15050, 1112, 15048, 2]
+// Dependencies: [5, 15054, 12633, 3497, 12636, 15057, 1112, 15055, 2]
 // Exports: getCheckpointTestingOptions
 
-// Module 15049 (CheckpointTestingOptions)
+// Module 15056 (CheckpointTestingOptions)
 import intl2 from "intl" /* 1112 */;
 import _modDef3497 from "module_3497" /* 3497 */;
-import openCheckpoint2 from "openCheckpoint" /* 12625 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 12628 */;
-import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 15047 */;
-import CheckpointMockData from "CheckpointMockData" /* 15048 */;
-import CheckpointToastUtils from "CheckpointToastUtils" /* 15050 */;
+import openCheckpoint2 from "openCheckpoint" /* 12633 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 12636 */;
+import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 15054 */;
+import CheckpointMockData from "CheckpointMockData" /* 15055 */;
+import CheckpointToastUtils from "CheckpointToastUtils" /* 15057 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let closure_4 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "+95" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -89,7 +89,7 @@ let closure_4 = _asyncToGenerator(async (arg0, value) => {
           const result1 = showCheckpointTestingToast(string(t.fEptJP), "failure");
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       c2 = 3;
@@ -130,7 +130,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "+95" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -170,7 +170,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
           const result1 = showCheckpointTestingToast(string(t.fEptJP), "failure");
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       c2 = 3;

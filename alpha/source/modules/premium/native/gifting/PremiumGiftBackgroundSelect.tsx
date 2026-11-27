@@ -1,17 +1,17 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11318
+// Function ID: 11319
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 1654, 5043, 575, 1495, 1186, 5253, 11318, 11142, 2]
+// Dependencies: [32, 19, 17, 21, 1654, 5043, 575, 1495, 1186, 5253, 11319, 11143, 2]
 // Exports: default
 
-// Module 11317 (PremiumGiftBackgroundSelect)
+// Module 11318 (PremiumGiftBackgroundSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import timing_timing from "timing/timing" /* 5253 */;
-import NativeGiftContext from "NativeGiftContext" /* 11142 */;
+import NativeGiftContext from "NativeGiftContext" /* 11143 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const PremiumGiftBackgroundAnimationDefault = tmp2(11318);
+const PremiumGiftBackgroundAnimationDefault = tmp2(11319);
 class GiftBackgroundSelect {
   constructor(withConsistentHeight) {
     let closure_1;

@@ -1,17 +1,17 @@
-// Module ID: 11227
-// Function ID: 11228
+// Module ID: 11228
+// Function ID: 11229
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2189, 1191, 21, 5043, 575, 1112, 504, 5050, 9133, 5634, 2]
+// Dependencies: [19, 17, 2189, 1191, 21, 5043, 575, 1112, 504, 5050, 9134, 5634, 2]
 // Exports: default
 
-// Module 11227 (LimitedTimeBadge)
+// Module 11228 (LimitedTimeBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1112 */;
 import shared from "shared" /* 5050 */;
-import useCountdownDefault from "useCountdown" /* 9133 */;
+import useCountdownDefault from "useCountdown" /* 9134 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import ThemeStore from "ThemeStore" /* 1191 */;

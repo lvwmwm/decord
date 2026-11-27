@@ -1,9 +1,9 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10850
+// Function ID: 10851
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 4914, 1387, 6927, 10800, 1071, 5272, 21, 5043, 1379, 575, 10830, 9767, 9765, 5257, 10831, 5725, 1112, 504, 1495, 1256, 5634, 10846, 5641, 10848, 10833, 10839, 2174, 4868, 6779, 10850, 2120, 6013, 6991, 6995, 10851, 8109, 10681, 7745, 9636, 10852, 8088, 9771, 5271, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 1387, 6927, 10801, 1071, 5272, 21, 5043, 1379, 575, 10831, 9768, 9766, 5257, 10832, 5725, 1112, 504, 1495, 1256, 5634, 10847, 5641, 10849, 10834, 10840, 2174, 4868, 6779, 10851, 2120, 6013, 6991, 6995, 10852, 8109, 10682, 7745, 9637, 10853, 8088, 9772, 5271, 2]
 
-// Module 10849 (StickerDetailActionSheet)
+// Module 10850 (StickerDetailActionSheet)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
@@ -13,11 +13,11 @@ import StickersUtils from "StickersUtils" /* 6779 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6995 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import StickersHooks from "StickersHooks" /* 10830 */;
-import stickers_StickersUtils from "stickers/StickersUtils" /* 10833 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10839 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10848 */;
-import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10852 */;
+import StickersHooks from "StickersHooks" /* 10831 */;
+import stickers_StickersUtils from "stickers/StickersUtils" /* 10834 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10840 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10849 */;
+import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10853 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,7 +25,7 @@ import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import UserStore from "UserStore" /* 1387 */;
 import StickersStore from "StickersStore" /* 6927 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10800 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10801 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -199,7 +199,7 @@ function UnavailableStickerDetail(arg0) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(10850, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(10851, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   items2 = [closure_21(require("Sticker"), { sticker: renderableSticker, size: 48 }), , ];
@@ -372,7 +372,7 @@ function GuildStickerDetail(sticker) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(10850, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(10851, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items3);
   analyticsLocation = obj.useMemo(() => {
@@ -407,7 +407,7 @@ function GuildStickerDetail(sticker) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -441,7 +441,7 @@ function GuildStickerDetail(sticker) {
               c3(id);
               closure_1_5(true);
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             c3 = 3;

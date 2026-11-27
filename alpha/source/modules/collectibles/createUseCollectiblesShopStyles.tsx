@@ -1,13 +1,13 @@
-// Module ID: 9413
-// Function ID: 9414
+// Module ID: 9414
+// Function ID: 9415
 // Name: createUseCollectiblesShopStyles
-// Dependencies: [32, 5044, 9414, 6321, 563, 2]
+// Dependencies: [32, 5044, 9415, 6321, 563, 2]
 // Exports: default
 
-// Module 9413 (createUseCollectiblesShopStyles)
+// Module 9414 (createUseCollectiblesShopStyles)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import _modDef6321 from "module_6321" /* 6321 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 9414 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 9415 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;

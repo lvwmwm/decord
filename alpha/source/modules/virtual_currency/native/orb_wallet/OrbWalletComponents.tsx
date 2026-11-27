@@ -1,10 +1,10 @@
-// Module ID: 16509
-// Function ID: 16510
+// Module ID: 16516
+// Function ID: 16517
 // Name: OrbWalletComponents
-// Dependencies: [19, 17, 1071, 1389, 6871, 21, 5043, 575, 9637, 5634, 16507, 6380, 16505, 1112, 2387, 9819, 5730, 16510, 9452, 7047, 16511, 7941, 5257, 9889, 6874, 5718, 2188, 11256, 5641, 14297, 13103, 8799, 2]
+// Dependencies: [19, 17, 1071, 1389, 6871, 21, 5043, 575, 9638, 5634, 16514, 6380, 16512, 1112, 2387, 9820, 5730, 16517, 9453, 7047, 16518, 7941, 5257, 9890, 6874, 5718, 2188, 11257, 5641, 14304, 13111, 8800, 2]
 // Exports: OrbBalanceHeader, OrbChallengesCard, OrbWalletFooter
 
-// Module 16509 (OrbWalletComponents)
+// Module 16516 (OrbWalletComponents)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
@@ -18,14 +18,14 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7047 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9637 */;
-import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 9819 */;
-import QuestUtils from "QuestUtils" /* 9889 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13103 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14297 */;
-import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16505 */;
-import OrbWalletUtils from "OrbWalletUtils" /* 16507 */;
-import _modDef16510 from "module_16510" /* 16510 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9638 */;
+import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 9820 */;
+import QuestUtils from "QuestUtils" /* 9890 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13111 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14304 */;
+import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16512 */;
+import OrbWalletUtils from "OrbWalletUtils" /* 16514 */;
+import _modDef16517 from "module_16517" /* 16517 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
@@ -70,9 +70,9 @@ function OrbWalletNitroUpsellTag() {
   let intl;
   let openNitroCheckoutFromOrbWallet;
   let orbWalletAnalyticsPage;
-  let obj = orbWalletAnalyticsPage(16507);
+  let obj = orbWalletAnalyticsPage(16514);
   orbWalletAnalyticsPage = obj.useOrbWalletAnalyticsPage();
-  let obj2 = orbWalletAnalyticsPage(16507);
+  let obj2 = orbWalletAnalyticsPage(16514);
   openNitroCheckoutFromOrbWallet = obj2.useOpenNitroCheckoutFromOrbWallet(openNitroCheckoutFromOrbWallet(6380).ORB_WALLET_HEADER_NITRO_UPSELL_CTA);
   const items = [orbWalletAnalyticsPage, openNitroCheckoutFromOrbWallet];
   const obj3 = { text: intl.string(openNitroCheckoutFromOrbWallet(2387).JZycSO), onPress: callback };
@@ -142,7 +142,7 @@ export function OrbBalanceHeader(arg0) {
   const obj = { style: tmp.header, children: items };
   const obj2 = { style: tmp.headerAssetSlot, importantForAccessibility: "no-hide-descendants", children: authStore(tmp7, obj3) };
   obj3 = { source: obj4, style: tmp.headerAsset, resizeMode: "contain" };
-  obj4 = { uri: _modDef16510 };
+  obj4 = { uri: _modDef16517 };
   tmp7 = FastImageDefault;
   items = [authStore(hasOwnProperty, obj2), ];
   const obj5 = { style: tmp.headerContent, children: items1 };
@@ -155,7 +155,7 @@ export function OrbBalanceHeader(arg0) {
     stringResult = intl.formatToPlainString(tmp8(1112).t.zPaLL9, obj6);
     tmp10 = tmp8;
   }
-  const obj7 = { accessible: true, accessibilityLabel: stringResult, accessibilityState: { busy: null == orbBalance }, children: authStore(tmp10(9452).BalanceCounter, obj8) };
+  const obj7 = { accessible: true, accessibilityLabel: stringResult, accessibilityState: { busy: null == orbBalance }, children: authStore(tmp10(9453).BalanceCounter, obj8) };
   obj8 = { value: orbBalance, onValueChange: onValueReached, onValueReached, targetTotalCounterTime: 1500, trimBottomFontSpace: true, textVariant: "display-md", textColor: "text-strong" };
   items1 = [authStore(hasOwnProperty, obj7), authStore(OrbWalletHeaderTags, { hideNitroUpsell })];
   items[1] = unpackModuleId(hasOwnProperty, obj5);
@@ -267,9 +267,9 @@ export function OrbWalletFooter() {
   let orbWalletAnalyticsPage;
   const tmp = closure_13();
   const tmp2 = orbWalletAnalyticsPage;
-  let obj = orbWalletAnalyticsPage(16507);
+  let obj = orbWalletAnalyticsPage(16514);
   orbWalletAnalyticsPage = obj.useOrbWalletAnalyticsPage();
-  let obj2 = orbWalletAnalyticsPage(11256);
+  let obj2 = orbWalletAnalyticsPage(11257);
   const totalRedeemed = obj2.useFetchVirtualCurrencyTotalRedeemed().totalRedeemed;
   let items = [orbWalletAnalyticsPage];
   const items1 = [orbWalletAnalyticsPage];
@@ -313,7 +313,7 @@ export function OrbWalletFooter() {
   if (tmp7Result) {
     const obj9 = { children: items4 };
     const obj10 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, accessible: false };
-    const TrophyIcon = tmp2(8799).TrophyIcon;
+    const TrophyIcon = tmp2(8800).TrophyIcon;
     items4 = [closure_10(TrophyIcon, obj10), , ];
     const obj11 = { variant: "body-sm/normal", color: "text-muted", children: intl3.format(_modDef2387.B5tZXw, obj12) };
     const Text = tmp2(5634).Text;

@@ -1,10 +1,10 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9579
+// Function ID: 9580
 // Name: Graphic
 // Dependencies: [19, 17, 21, 5043, 5730, 5104, 5206, 2]
 // Exports: Graphic
 
-// Module 9578 (Graphic)
+// Module 9579 (Graphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5104 */;

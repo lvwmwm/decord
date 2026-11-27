@@ -1,11 +1,11 @@
-// Module ID: 8166
-// Function ID: 8167
+// Module ID: 8167
+// Function ID: 8168
 // Name: ForumPostAnalyticsManager
-// Dependencies: [6951, 502, 4892, 7475, 11, 8167, 2]
+// Dependencies: [6951, 502, 4892, 7475, 11, 8168, 2]
 
-// Module 8166 (ForumPostAnalyticsManager)
+// Module 8167 (ForumPostAnalyticsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ForumUtils from "ForumUtils" /* 8167 */;
+import ForumUtils from "ForumUtils" /* 8168 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6951 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

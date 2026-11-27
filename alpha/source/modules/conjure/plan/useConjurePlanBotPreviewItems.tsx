@@ -1,15 +1,15 @@
-// Module ID: 18786
-// Function ID: 18787
+// Module ID: 18804
+// Function ID: 18805
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2165, 4896, 1406, 1387, 6934, 1071, 504, 6134, 6393, 10096, 6400, 18787, 1112, 4245, 5099, 2]
+// Dependencies: [19, 2165, 4896, 1406, 1387, 6934, 1071, 504, 6134, 6393, 10097, 6400, 18805, 1112, 4245, 5099, 2]
 // Exports: useConjurePlanBotExchanges, useConjurePlanBotPreviewItems, useConjurePlanCommandExchanges
 
-// Module 18786 (useConjurePlanBotPreviewItems)
+// Module 18804 (useConjurePlanBotPreviewItems)
 import intl4 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import UserActionCreators from "UserActionCreators" /* 6134 */;
-import conjurePlanBot from "conjurePlanBot" /* 18787 */;
+import conjurePlanBot from "conjurePlanBot" /* 18805 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import UserRecord from "UserRecord" /* 1406 */;

@@ -1,10 +1,10 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10152
+// Function ID: 10153
 // Name: DCDVideoRenderer
-// Dependencies: [5614, 10152, 2]
+// Dependencies: [5614, 10153, 2]
 
-// Module 10151 (DCDVideoRenderer)
-import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 10152 */;
+// Module 10152 (DCDVideoRenderer)
+import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 10153 */;
 import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5614 */;
 import size from "module_2" /* 2 */;
 

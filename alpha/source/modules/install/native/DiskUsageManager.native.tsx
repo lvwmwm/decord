@@ -1,13 +1,13 @@
-// Module ID: 17194
-// Function ID: 17195
+// Module ID: 17201
+// Function ID: 17202
 // Name: DiskUsageManager
-// Dependencies: [5, 1387, 1071, 3, 1357, 510, 10778, 1379, 17195, 1256, 8249, 7475, 10699, 10700, 2]
+// Dependencies: [5, 1387, 1071, 3, 1357, 510, 10779, 1379, 17202, 1256, 8250, 7475, 10700, 10701, 2]
 
-// Module 17194 (DiskUsageManager)
+// Module 17201 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1357 */;
-import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10778 */;
-import react_nativeDefault from "react-native" /* 17195 */;
+import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10779 */;
+import react_nativeDefault from "react-native" /* 17202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

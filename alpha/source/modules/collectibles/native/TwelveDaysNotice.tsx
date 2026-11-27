@@ -1,10 +1,10 @@
-// Module ID: 17538
-// Function ID: 17539
+// Module ID: 17545
+// Function ID: 17546
 // Name: TwelveDaysNotice
-// Dependencies: [32, 19, 17, 1071, 4889, 21, 5635, 5043, 575, 4876, 11214, 6379, 6116, 1264, 5598, 1091, 1501, 17539, 9561, 6152, 1112, 11077, 5634, 7944, 7247, 2]
+// Dependencies: [32, 19, 17, 1071, 4889, 21, 5635, 5043, 575, 4876, 11215, 6379, 6116, 1264, 5598, 1091, 1501, 17546, 9562, 6152, 1112, 11078, 5634, 7944, 7247, 2]
 // Exports: TwelveDaysHomeNagbar, TwelveDaysIndexNotice
 
-// Module 17538 (TwelveDaysNotice)
+// Module 17545 (TwelveDaysNotice)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;

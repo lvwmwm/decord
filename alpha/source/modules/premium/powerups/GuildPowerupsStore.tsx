@@ -1,14 +1,14 @@
-// Module ID: 8296
-// Function ID: 8297
+// Module ID: 8297
+// Function ID: 8298
 // Name: GuildPowerupsStore
-// Dependencies: [32, 4914, 8297, 1071, 504, 572, 2]
+// Dependencies: [32, 4914, 8298, 1071, 504, 572, 2]
 
-// Module 8296 (GuildPowerupsStore)
+// Module 8297 (GuildPowerupsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8297 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8298 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,68 +1,106 @@
 // Module ID: 10948
 // Function ID: 10949
-// Dependencies: [41, 42, 10949, 10880]
+// Dependencies: [10949, 10951, 10952, 10953, 10954, 10955, 10956, 10876, 10883, 10885, 10957, 10958, 10922, 10916]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10948
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10880 */;
-import NUMBER from "NUMBER" /* 10949 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10916 */;
+import _mod10922 from "module_10922" /* 10922 */;
+import _mod10949 from "module_10949" /* 10949 */;
+import _mod10951 from "module_10951" /* 10951 */;
+import _mod10952 from "module_10952" /* 10952 */;
+import _mod10953 from "module_10953" /* 10953 */;
+import _mod10954 from "module_10954" /* 10954 */;
+import _mod10955 from "module_10955" /* 10955 */;
+import _mod10956 from "module_10956" /* 10956 */;
+import _mod10957 from "module_10957" /* 10957 */;
+import _mod10958 from "module_10958" /* 10958 */;
+import { Chrono } from "module_10876" /* 10876 */;
 
-const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
-class JPStandardParser {
-  constructor() {
-    _classCallCheck(this, JPStandardParser);
+const require = globalThis.__r;
+
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10949.default(), , , , ];
+  new module_10949.default();
+  items[1] = new module_10953.default();
+  new module_10953.default();
+  items[2] = new module_10958.default();
+  new module_10958.default();
+  items[3] = new module_10954.default();
+  new module_10954.default();
+  items[4] = new module_10955.default();
+  new module_10955.default();
+  items1 = [new module_10957.default(), , ];
+  new module_10957.default();
+  items1[1] = new module_10956.default();
+  new module_10956.default();
+  items1[2] = new module_10951.default();
+  new module_10951.default();
+  const result = includeCommonConfiguration(obj, flag);
+  const refiners = result.refiners;
+  result.refiners = refiners.filter((item) => !(item instanceof module_10922.default));
+  return result;
 }
-const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re3;
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
-};
-const items = [
-  entry,
-  {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
-      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
-      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
-      let match = arg1[1];
-      if (match) {
-        const str = arg1[1];
-        match = str.match("\u540C|\u4ECA|\u672C");
-      }
-      if (match) {
-        const reference = createParsingComponents.reference;
-        const assign = parsingComponents.assign;
-        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
-        assign("year", dateWithAdjustedTimezone.getFullYear());
-      }
-      if (arg1[2]) {
-        let sum;
-        let num = 1;
-        if ("\u5143" != arg1[4]) {
-          const _parseInt = parseInt;
-          num = parseInt(tmp(10949).toHankaku(tmp8));
-        }
-        if ("\u4EE4\u548C" == arg1[3]) {
-          sum = num + 2018;
-        } else if ("\u5E73\u6210" == arg1[3]) {
-          sum = num + 1988;
-        } else {
-          sum = num;
-          if ("\u662D\u548C" == arg1[3]) {
-            sum = num + 1925;
-          }
-        }
-        parsingComponents.assign("year", sum);
-      } else {
-        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
-      }
-      return parsingComponents;
-    }
-  }
-];
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10952.default();
+  unshift(_default);
+  return tmp;
+}
+const module_10949 = fn(_mod10949);
+const module_10951 = fn(_mod10951);
+const module_10952 = fn(_mod10952);
+const module_10953 = fn(_mod10953);
+const module_10954 = fn(_mod10954);
+const module_10955 = fn(_mod10955);
+const module_10956 = fn(_mod10956);
+const module_10957 = fn(_mod10957);
+const module_10958 = fn(_mod10958);
+const module_10922 = fn(_mod10922);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10952.default();
+unshift(_default);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10876").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10876").Chrono;
 
-export default _createClass(JPStandardParser, items);
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+}
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+}
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

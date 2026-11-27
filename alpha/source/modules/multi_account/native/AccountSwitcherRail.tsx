@@ -1,9 +1,9 @@
-// Module ID: 19066
-// Function ID: 19067
+// Module ID: 19082
+// Function ID: 19083
 // Name: AccountSwitcherRail
-// Dependencies: [19, 17, 1406, 5100, 1387, 13385, 15104, 13386, 1071, 21, 575, 5043, 5105, 5099, 1112, 5730, 1413, 7491, 5747, 1629, 5607, 17662, 504, 18166, 1256, 6380, 13388, 5733, 10454, 9067, 2]
+// Dependencies: [19, 17, 1406, 5100, 1387, 13393, 15111, 13394, 1071, 21, 575, 5043, 5105, 5099, 1112, 5730, 1413, 7491, 5747, 1629, 5607, 17669, 504, 18173, 1256, 6380, 13396, 5733, 10455, 9068, 2]
 
-// Module 19066 (AccountSwitcherRail)
+// Module 19082 (AccountSwitcherRail)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -11,17 +11,17 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
-import SettingsIcon2 from "SettingsIcon" /* 10454 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 13385 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13388 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18166 */;
+import SettingsIcon2 from "SettingsIcon" /* 10455 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 13393 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13396 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 18173 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import StreamerModeStore from "StreamerModeStore" /* 5100 */;
 import UserStore from "UserStore" /* 1387 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15104 */;
-import Constants_mod from "Constants" /* 13386 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15111 */;
+import Constants_mod from "Constants" /* 13394 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

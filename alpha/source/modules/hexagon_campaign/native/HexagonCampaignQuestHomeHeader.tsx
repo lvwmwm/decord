@@ -1,18 +1,18 @@
-// Module ID: 16606
-// Function ID: 16607
+// Module ID: 16613
+// Function ID: 16614
 // Name: HexagonCampaignQuestHomeHeader
-// Dependencies: [19, 17, 5068, 1071, 21, 5043, 575, 5104, 5074, 5607, 671, 8382, 6878, 8392, 6874, 8248, 16607, 5730, 16621, 5598, 16622, 5634, 1112, 16623, 6115, 4663, 16094, 5641, 5050, 2]
+// Dependencies: [19, 17, 5068, 1071, 21, 5043, 575, 5104, 5074, 5607, 671, 8383, 6878, 8393, 6874, 8249, 16614, 5730, 16628, 5598, 16629, 5634, 1112, 16630, 6115, 4663, 16101, 5641, 5050, 2]
 // Exports: default
 
-// Module 16606 (HexagonCampaignQuestHomeHeader)
+// Module 16613 (HexagonCampaignQuestHomeHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 8248 */;
-import AnalyticsActions from "AnalyticsActions" /* 8382 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8249 */;
+import AnalyticsActions from "AnalyticsActions" /* 8383 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -103,12 +103,12 @@ export default function HexagonCampaignQuestHomeHeader() {
   if (isHexagonCampaignQuestHomeHeaderEnabled) {
     const obj4 = { style: tmp.container, children: items3 };
     const obj5 = { style: tmp.banner, children: items2 };
-    const obj6 = { source: token(16621), style: tmp.bannerImage, resizeMode: "cover", accessible: false };
+    const obj6 = { source: token(16628), style: tmp.bannerImage, resizeMode: "cover", accessible: false };
     const tmp5Result = token(5730);
     items2 = [closure_8(tmp5Result, obj6), , , ];
     const obj7 = { colors: memo, locations: [0.716, 0.823, 1], style: absoluteFill.absoluteFill, pointerEvents: "none" };
     items2[1] = closure_8(token(5598), obj7);
-    const obj8 = { source: token(16622), style: tmp.logo, resizeMode: "contain", accessible: false };
+    const obj8 = { source: token(16629), style: tmp.logo, resizeMode: "contain", accessible: false };
     const tmp5Result2 = token(5730);
     items2[2] = closure_8(tmp5Result2, obj8);
     const obj9 = { style: tmp.sponsoredTag, children: closure_8(Text, obj10) };
@@ -119,7 +119,7 @@ export default function HexagonCampaignQuestHomeHeader() {
     items3 = [closure_9(closure_5, obj5), ];
     const obj11 = { style: tmp.cardShadow, children: closure_9(closure_5, obj12) };
     obj12 = { style: tmp.card, children: items4 };
-    const obj13 = { style: tmp.cardArt, children: closure_8(isHexagonCampaignQuestHomeHeaderEnabled(16623).BundleAbstractUI, { accessible: false }) };
+    const obj13 = { style: tmp.cardArt, children: closure_8(isHexagonCampaignQuestHomeHeaderEnabled(16630).BundleAbstractUI, { accessible: false }) };
     items4 = [closure_8(closure_5, obj13), ];
     const obj14 = { direction: "vertical", spacing: token(575).space.PX_12, style: tmp.cardContent, children: items7 };
     const Stack = tmp2(6115).Stack;

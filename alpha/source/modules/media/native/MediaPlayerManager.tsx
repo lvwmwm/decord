@@ -1,10 +1,10 @@
-// Module ID: 15983
-// Function ID: 15984
+// Module ID: 15990
+// Function ID: 15991
 // Name: MediaPlayerManager
-// Dependencies: [17, 4891, 6965, 4892, 6391, 4975, 2119, 1071, 5669, 15984, 1082, 3, 560, 1263, 2122, 5220, 572, 1379, 558, 8244, 6963, 2]
+// Dependencies: [17, 4891, 6965, 4892, 6391, 4975, 2119, 1071, 5669, 15991, 1082, 3, 560, 1263, 2122, 5220, 572, 1379, 558, 8245, 6963, 2]
 // Exports: isPlaybackComplete
 
-// Module 15983 (MediaPlayerManager)
+// Module 15990 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -13,7 +13,7 @@ import Constants2 from "Constants" /* 1082 */;
 import react_native from "react-native" /* 1263 */;
 import RootNavigationRef from "RootNavigationRef" /* 5220 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
 import react_native2 from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import VoicePanelStore from "VoicePanelStore" /* 6965 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4892 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import AppStateStore from "AppStateStore" /* 2119 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15984 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15991 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2122 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Path",
-    showPip: 900,
+    showPip: "Suomi",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: null
+    currentlyDisplayedChannelId: true
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "sa", rate: false, isPlaying: false, wasPipClosedByUser: "M2.99999 8H3.99999V7H2.99999V8Z" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "sa", rate: false, isPlaying: false, wasPipClosedByUser: "INTERACTION_FAILURE" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

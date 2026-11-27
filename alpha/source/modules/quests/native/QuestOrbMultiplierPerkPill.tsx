@@ -1,10 +1,10 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 16763
+// Function ID: 16764
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 5252, 5065, 5607, 5040, 9892, 9911, 1112, 9637, 5634, 6152, 16757, 5598, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 5252, 5065, 5607, 5040, 9893, 9912, 1112, 9638, 5634, 6152, 16764, 5598, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 16756 (QuestOrbMultiplierPerkPill)
+// Module 16763 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ColorUtils from "ColorUtils" /* 5040 */;
@@ -12,9 +12,9 @@ import themes from "themes" /* 5065 */;
 import useTheme from "useTheme" /* 5252 */;
 import useToken from "useToken" /* 5607 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9892 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9911 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 16757 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9893 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9912 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 16764 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -102,7 +102,7 @@ export function QuestOrbMultiplierPerkPill(questId) {
     let tmp19 = tmp21Result;
     const tmp17 = closure_7;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(9637).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(9638).NitroWheelIcon, { size: "xs", color: "white" });
     }
     const obj13 = { children: items2 };
     items2 = [tmp19, ];

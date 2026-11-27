@@ -1,12 +1,12 @@
-// Module ID: 18497
-// Function ID: 18498
+// Module ID: 18504
+// Function ID: 18505
 // Name: useCanShareConjureProject
-// Dependencies: [6934, 7706, 504, 11475, 2]
+// Dependencies: [6934, 7706, 504, 11485, 2]
 // Exports: default
 
-// Module 18497 (useCanShareConjureProject)
+// Module 18504 (useCanShareConjureProject)
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6934 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11475 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11485 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7706 */;
 import size from "module_2" /* 2 */;
 

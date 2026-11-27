@@ -1,10 +1,10 @@
-// Module ID: 15042
-// Function ID: 15043
+// Module ID: 15049
+// Function ID: 15050
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [19, 2149, 14666, 2]
+// Dependencies: [19, 2149, 14673, 2]
 // Exports: default
 
-// Module 15042 (useConnectionFilteredAppIdentities)
+// Module 15049 (useConnectionFilteredAppIdentities)
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2149 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

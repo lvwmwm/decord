@@ -1,10 +1,10 @@
-// Module ID: 14122
-// Function ID: 14123
+// Module ID: 14129
+// Function ID: 14130
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 4892, 4914, 6014, 4985, 1387, 1082, 21, 5043, 575, 5659, 9616, 1186, 5634, 504, 5099, 11565, 6052, 6052, 1112, 2]
+// Dependencies: [19, 17, 4892, 4914, 6014, 4985, 1387, 1082, 21, 5043, 575, 5659, 9617, 1186, 5634, 504, 5099, 11573, 6052, 6052, 1112, 2]
 // Exports: default
 
-// Module 14122 (DestinationFailedAlertModal)
+// Module 14129 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -14,7 +14,7 @@ import UserUtilsDefault from "UserUtils" /* 5099 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import useChannelNameDefault from "useChannelName" /* 5659 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 9616 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 9617 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -96,9 +96,9 @@ function FailedChannelRow(channel) {
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(11565).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(11573).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(11565).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(11573).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "body-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
   items1[1] = closure_10(channel(5634).Text, obj4);

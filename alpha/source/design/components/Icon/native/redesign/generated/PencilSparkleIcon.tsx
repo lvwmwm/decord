@@ -1,14 +1,14 @@
-// Module ID: 11694
-// Function ID: 11695
+// Module ID: 11702
+// Function ID: 11703
 // Name: PencilSparkleIcon
-// Dependencies: [19, 21, 575, 5729, 11695, 2]
+// Dependencies: [19, 21, 575, 5729, 11703, 2]
 // Exports: PencilSparkleIcon
 
-// Module 11694 (PencilSparkleIcon)
+// Module 11702 (PencilSparkleIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 11695 */;
+import AssetRegistry from "AssetRegistry" /* 11703 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18228
+// Function ID: 18229
 // Name: VoicePanelDockStatusViews
-// Dependencies: [19, 17, 5044, 6923, 4892, 4914, 4985, 6852, 1387, 18220, 11805, 21, 5043, 575, 1379, 18222, 11781, 504, 18223, 7052, 1186, 7128, 5659, 1112, 7164, 7167, 5634, 6807, 1654, 5253, 18224, 7488, 12613, 5607, 5644, 13410, 13412, 5730, 2]
+// Dependencies: [19, 17, 5044, 6923, 4892, 4914, 4985, 6852, 1387, 18227, 11813, 21, 5043, 575, 1379, 18229, 11789, 504, 18230, 7052, 1186, 7128, 5659, 1112, 7164, 7167, 5634, 6807, 1654, 5253, 18231, 7488, 12621, 5607, 5644, 13418, 13420, 5730, 2]
 // Exports: DockChannelIcon, DockChannelTitle, DockFace, DockUserTitle
 
-// Module 18221 (VoicePanelDockStatusViews)
+// Module 18228 (VoicePanelDockStatusViews)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7128 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18220 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18227 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -22,7 +22,7 @@ import GuildStore from "GuildStore" /* 4914 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import SpeakingStore from "SpeakingStore" /* 6852 */;
 import UserStore from "UserStore" /* 1387 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11805 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11813 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
@@ -147,7 +147,7 @@ let closure_24 = react.memo(function DockSpeakerHalo(isSpeaking) {
   const tmp3 = closure_19();
   let obj = isSpeaking(5607);
   const token = obj.useToken(ICON_VOICE_SPEAKING);
-  let obj2 = isSpeaking(13410);
+  let obj2 = isSpeaking(13418);
   const voicePanelDockSpeakerLevelProps = obj2.useVoicePanelDockSpeakerLevelProps();
   const obj3 = isSpeaking(1654);
   sharedValue = obj3.useSharedValue(0);
@@ -189,7 +189,7 @@ let closure_24 = react.memo(function DockSpeakerHalo(isSpeaking) {
   items3 = [tmp3.halo, animatedStyle];
   View = sharedValue(1654).View;
   obj6 = { style: StyleSheet.absoluteFill, userId, minScale: 0.84, maxScale: 1, children: closure_16(View, obj7) };
-  tmp14 = sharedValue(13412);
+  tmp14 = sharedValue(13420);
   const merged = Object.assign(voicePanelDockSpeakerLevelProps);
   obj7 = { style: items4 };
   items4 = [tmp3.haloDisc, { backgroundColor: token }];
@@ -215,9 +215,9 @@ export function DockChannelIcon(streaming) {
   let channelId;
   let guildId;
   const tmp = closure_19();
-  const tmp4 = guildId(18222);
+  const tmp4 = guildId(18229);
   const tmp4Result = tmp4(channelId(575).Shadow.SHADOW_MEDIUM);
-  const context = react.useContext(guildId(11781));
+  const context = react.useContext(guildId(11789));
   channelId = context.channelId;
   guildId = context.guildId;
   const items = [GuildStore];
@@ -253,7 +253,7 @@ export function DockChannelIcon(streaming) {
     items4[1] = obj4;
     obj5 = { streaming, children: closure_16(tmp2Result3, obj6) };
     obj6 = { guild: stateFromStores, size: channelId(7052).GuildIconSizes.SMALL_32, style: tmp.guildIconAsset };
-    tmp2Result = guildId(18223);
+    tmp2Result = guildId(18230);
     tmp2Result3 = guildId(7052);
     tmp13 = closure_16(View, obj3);
   } else {
@@ -265,7 +265,7 @@ export function DockChannelIcon(streaming) {
       items5[1] = obj8;
       obj9 = { streaming, children: closure_16(Avatar, obj10) };
       obj10 = { user: stateFromStores1, guildId: "Array", size: channelId(1186).AvatarSizes.REFRESH_MEDIUM_32 };
-      tmp2Result4 = guildId(18223);
+      tmp2Result4 = guildId(18230);
       Avatar = tmp5(1186).Avatar;
       tmp13 = closure_16(View, obj7);
     }

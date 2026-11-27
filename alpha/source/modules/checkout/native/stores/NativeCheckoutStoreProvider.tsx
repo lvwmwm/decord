@@ -1,10 +1,10 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 9269
+// Function ID: 9270
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 9118, 1071, 5760, 1082, 21, 5043, 5622, 9269, 572, 9123, 9124, 7047, 1269, 1242, 5604, 9259, 1256, 9270, 2]
+// Dependencies: [5, 32, 19, 17, 9119, 1071, 5760, 1082, 21, 5043, 5622, 9270, 572, 9124, 9125, 7047, 1269, 1242, 5604, 9260, 1256, 9271, 2]
 // Exports: default
 
-// Module 9268 (NativeCheckoutStoreProvider)
+// Module 9269 (NativeCheckoutStoreProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,12 +13,12 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import v1 from "v1" /* 1269 */;
 import PaymentConstants from "PaymentConstants" /* 5760 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 9259 */;
-import OrderUtils from "OrderUtils" /* 9270 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 9260 */;
+import OrderUtils from "OrderUtils" /* 9271 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 9118 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9119 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
@@ -240,7 +240,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -283,7 +283,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         if (0 === c3) {

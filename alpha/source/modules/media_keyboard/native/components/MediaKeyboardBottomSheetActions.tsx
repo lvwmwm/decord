@@ -1,9 +1,9 @@
-// Module ID: 11094
-// Function ID: 11095
+// Module ID: 11095
+// Function ID: 11096
 // Name: MediaKeyboardBottomSheetActions
 // Dependencies: [19, 17, 21, 5043, 575, 1379, 5213, 671, 1629, 5607, 5598, 6152, 5634, 2]
 
-// Module 11094 (MediaKeyboardBottomSheetActions)
+// Module 11095 (MediaKeyboardBottomSheetActions)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;

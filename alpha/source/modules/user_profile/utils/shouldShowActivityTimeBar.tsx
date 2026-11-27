@@ -1,10 +1,10 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14912
+// Function ID: 14913
 // Name: shouldShowActivityTimeBar
 // Dependencies: [6015, 2]
 // Exports: default
 
-// Module 14905 (shouldShowActivityTimeBar)
+// Module 14912 (shouldShowActivityTimeBar)
 import ActivityTypes from "ActivityTypes" /* 6015 */;
 import size from "module_2" /* 2 */;
 

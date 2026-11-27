@@ -152,7 +152,7 @@ export function isImageLoaded(arg0) {
 }
 export function loadImage(url, bind) {
   let image;
-  const f122188 = async (arg0, value) => {
+  const f122592 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -176,7 +176,7 @@ export function loadImage(url, bind) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -225,7 +225,7 @@ export function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f141070);
+                let failResult = closure_129_2.fail(f141534);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -236,7 +236,7 @@ export function loadImage(url, bind) {
               }
               let num4 = 3;
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp18) {
@@ -293,7 +293,7 @@ export function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f122188);
+    image.onerror = _asyncToGenerator(f122592);
     image.onload = () => {
       let callbacks;
       let url;

@@ -1,10 +1,10 @@
-// Module ID: 18292
-// Function ID: 18293
+// Module ID: 18299
+// Function ID: 18300
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1071, 13694, 21, 5043, 10643, 575, 1379, 1501, 1256, 1186, 5649, 18287, 6152, 18288, 15480, 5634, 1112, 7500, 2]
+// Dependencies: [19, 17, 1071, 13701, 21, 5043, 10644, 575, 1379, 1501, 1256, 1186, 5649, 18294, 6152, 18295, 15487, 5634, 1112, 7500, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 18292 (ForYouShowAllRow)
+// Module 18299 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,11 +15,11 @@ import PlatformUtils from "PlatformUtils" /* 1379 */;
 import useFontScale from "useFontScale" /* 5649 */;
 import Pressables from "Pressables" /* 6152 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7500 */;
-import ChannelListLayout from "ChannelListLayout" /* 10643 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13694 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15480 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18287 */;
-import ChannelWrapper from "ChannelWrapper" /* 18288 */;
+import ChannelListLayout from "ChannelListLayout" /* 10644 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13701 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15487 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18294 */;
+import ChannelWrapper from "ChannelWrapper" /* 18295 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

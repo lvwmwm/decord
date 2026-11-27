@@ -1,9 +1,9 @@
-// Module ID: 18225
-// Function ID: 18226
+// Module ID: 18232
+// Function ID: 18233
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4892, 2132, 6965, 11805, 1071, 21, 5043, 575, 504, 10502, 10405, 5607, 5259, 7944, 1112, 8655, 8657, 10504, 6797, 9025, 13516, 11781, 18222, 18226, 18246, 18249, 2]
+// Dependencies: [19, 17, 4892, 2132, 6965, 11813, 1071, 21, 5043, 575, 504, 10503, 10406, 5607, 5259, 7944, 1112, 8656, 8658, 10505, 6797, 9026, 13524, 11789, 18229, 18233, 18253, 18256, 2]
 
-// Module 18225 (VoicePanelDockControls)
+// Module 18232 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
@@ -12,14 +12,14 @@ import intl2 from "intl" /* 1112 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6797 */;
 import IconButton2 from "IconButton" /* 7944 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9025 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 10502 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11805 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13516 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 18222 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 18226 */;
-import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18249 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9026 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 10503 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11813 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13524 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 18229 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 18233 */;
+import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18256 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
@@ -140,7 +140,7 @@ const memoResult = react.memo(function VoicePanelDockControls(measureGlowOffset)
   const tmp8 = authStore;
   if (obj.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK)) {
     const obj3 = { measureGlowOffset };
-    tmp10Result = tmp10(tmp2(18246), obj3);
+    tmp10Result = tmp10(tmp2(18253), obj3);
     tmp14 = tmp10;
   } else {
     const obj4 = { measureGlowOffset, hideWhilePressed: true, style: items1, children: React4(DockMuteButton, obj6) };

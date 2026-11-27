@@ -1,10 +1,10 @@
-// Module ID: 13800
-// Function ID: 13801
+// Module ID: 13807
+// Function ID: 13808
 // Name: ForumChannel
-// Dependencies: [19, 17, 4976, 6951, 4892, 8117, 6799, 12439, 1071, 11805, 1082, 21, 5043, 575, 6822, 9013, 5634, 1112, 9027, 11705, 504, 13801, 12463, 9, 8746, 8754, 6152, 8749, 7519, 5257, 13803, 2120, 5641, 13117, 13804, 11077, 9033, 13805, 5659, 12469, 12438, 13806, 7482, 8116, 10591, 5725, 5747, 7628, 6379, 6380, 7125, 11910, 11875, 11899, 9031, 13809, 8179, 10765, 10796, 5259, 5260, 10794, 7031, 5618, 11804, 11908, 5647, 13797, 8496, 13812, 13234, 2]
+// Dependencies: [19, 17, 4976, 6951, 4892, 8117, 6799, 12447, 1071, 11813, 1082, 21, 5043, 575, 6822, 9014, 5634, 1112, 9028, 11713, 504, 13808, 12471, 9, 8747, 8755, 6152, 8750, 7519, 5257, 13810, 2120, 5641, 13125, 13811, 11078, 9034, 13812, 5659, 12477, 12446, 13813, 7482, 8116, 10592, 5725, 5747, 7628, 6379, 6380, 7125, 11918, 11883, 11907, 9032, 13816, 8180, 10766, 10797, 5259, 5260, 10795, 7031, 5618, 11812, 11916, 5647, 13804, 8497, 13819, 13242, 2]
 // Exports: default
 
-// Module 13800 (ForumChannel)
+// Module 13807 (ForumChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1082 */;
@@ -15,16 +15,16 @@ import Text_Text from "Text/Text" /* 5634 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5747 */;
 import Tracking from "Tracking" /* 8116 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8179 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8749 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9013 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10765 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11805 */;
-import ForumPostDefault from "ForumPost" /* 12438 */;
-import ForumChannelStore from "ForumChannelStore" /* 12439 */;
-import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 12469 */;
-import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 13809 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8180 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8750 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8755 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9014 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10766 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11813 */;
+import ForumPostDefault from "ForumPost" /* 12446 */;
+import ForumChannelStore from "ForumChannelStore" /* 12447 */;
+import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 12477 */;
+import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 13816 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4976 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6951 */;
@@ -187,7 +187,7 @@ function SortAndViewOptions(channel) {
         obj.hideActionSheet(combined);
       }
     };
-    obj.openLazy(asyncRequire(13803, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequire(13810, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
   const Button = id(5641).Button;
@@ -200,7 +200,7 @@ function SortAndViewOptions(channel) {
   } else {
     stringResult = string(t.xyYt8A);
   }
-  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(13117).ArrowsUpDownIcon, { size: "xxs" }) };
+  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(13125).ArrowsUpDownIcon, { size: "xxs" }) };
   return closure_15(Button, obj);
 }
 function TagFilter(channel) {
@@ -212,10 +212,10 @@ function TagFilter(channel) {
     onPress: function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel };
-      obj.openLazy(asyncRequire(13804, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
+      obj.openLazy(asyncRequire(13811, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
-    icon: closure_15(channel(11077).TagIcon, { size: "xxs" })
+    icon: closure_15(channel(11078).TagIcon, { size: "xxs" })
   };
   const Button = channel(5641).Button;
   intl = channel(1112).intl;
@@ -608,7 +608,7 @@ export default function ForumChannel(channel) {
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(8179).changeThreadSettings;
+        const changeThreadSettings = tmp2(8180).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {

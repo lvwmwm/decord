@@ -1,12 +1,12 @@
-// Module ID: 18462
-// Function ID: 18463
+// Module ID: 18469
+// Function ID: 18470
 // Name: useConjurePublishButton
-// Dependencies: [19, 11459, 1112, 4245, 2]
+// Dependencies: [19, 11469, 1112, 4245, 2]
 // Exports: default
 
-// Module 18462 (useConjurePublishButton)
+// Module 18469 (useConjurePublishButton)
 import intl4 from "intl" /* 1112 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11459 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11469 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

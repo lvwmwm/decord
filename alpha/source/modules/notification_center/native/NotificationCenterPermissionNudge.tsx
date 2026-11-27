@@ -1,19 +1,19 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18266
+// Function ID: 18267
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1071, 4889, 13382, 21, 5043, 575, 1256, 11497, 5634, 1112, 5641, 13383, 6152, 7247, 17097, 9561, 4876, 2]
+// Dependencies: [32, 19, 17, 1071, 4889, 13390, 21, 5043, 575, 1256, 11505, 5634, 1112, 5641, 13391, 6152, 7247, 17104, 9562, 4876, 2]
 // Exports: default
 
-// Module 18259 (NotificationCenterPermissionNudge)
+// Module 18266 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17097 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17104 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13382 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13390 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ function NotificationCenterBannerImpl(onDismiss) {
   let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.iconContainer, children: closure_14(BellSlashIcon, obj3) };
   obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-  BellSlashIcon = onDismiss(11497).BellSlashIcon;
+  BellSlashIcon = onDismiss(11505).BellSlashIcon;
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
   const obj5 = { variant: "body-md/semibold", color: "text-default", children: intl.string(onDismiss(1112).t.G6YBna) };

@@ -1,10 +1,10 @@
-// Module ID: 14658
-// Function ID: 14659
+// Module ID: 14665
+// Function ID: 14666
 // Name: UserProfileApplicationWidgetHeroImage
 // Dependencies: [19, 17, 1071, 21, 5043, 7231, 5598, 5730, 2]
 // Exports: default
 
-// Module 14658 (UserProfileApplicationWidgetHeroImage)
+// Module 14665 (UserProfileApplicationWidgetHeroImage)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;

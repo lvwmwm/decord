@@ -1,21 +1,21 @@
-// Module ID: 14428
-// Function ID: 14429
+// Module ID: 14435
+// Function ID: 14436
 // Name: PremiumGroupInviteSystemMessage
-// Dependencies: [502, 4892, 5043, 575, 14429, 14373, 8821, 9638, 2]
+// Dependencies: [502, 4892, 5043, 575, 14436, 14380, 8822, 9639, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 14428 (PremiumGroupInviteSystemMessage)
+// Module 14435 (PremiumGroupInviteSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9638 */;
-import createCommonMessageDefault from "createCommonMessage" /* 14373 */;
-import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 14429 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9639 */;
+import createCommonMessageDefault from "createCommonMessage" /* 14380 */;
+import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 14436 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const renderer_EmbedUtils = tmp3(8821);
+const renderer_EmbedUtils = tmp3(8822);
 let obj = { iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG };
 let closure_5 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PremiumGroupInviteSystemMessage.tsx");

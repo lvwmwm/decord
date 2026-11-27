@@ -1,10 +1,10 @@
-// Module ID: 18605
-// Function ID: 18606
+// Module ID: 18616
+// Function ID: 18617
 // Name: conjureProjectActions
-// Dependencies: [5, 1387, 7693, 7706, 6934, 4899, 18606, 5724, 6052, 1112, 4245, 7538, 6801, 5725, 5743, 12508, 18607, 7667, 8597, 11497, 7670, 11448, 5745, 12427, 5739, 11081, 10454, 7288, 18517, 18598, 5750, 2]
+// Dependencies: [5, 1387, 7693, 7706, 6934, 4899, 18617, 5724, 6052, 1112, 4245, 7538, 6801, 5725, 5743, 12516, 18618, 7667, 8598, 11505, 7670, 11449, 5745, 12435, 5739, 11082, 10455, 7288, 18522, 18609, 5750, 2]
 // Exports: canUnpublishConjureUserApp, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject, loadConjureProjectActions
 
-// Module 18605 (conjureProjectActions)
+// Module 18616 (conjureProjectActions)
 import intl11 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;
@@ -14,8 +14,8 @@ import CopyIcon from "CopyIcon" /* 5743 */;
 import ChannelUtils from "ChannelUtils" /* 6801 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 12508 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 18607 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 12516 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 18618 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1387 */;
 import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 7693 */;
@@ -56,7 +56,7 @@ let obj = function _importIntoProject() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ let obj = function _importIntoProject() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     let c2;
@@ -169,7 +169,7 @@ let obj = function _importIntoProject() {
                           c2 = 0;
                         }
                         c3 = 3;
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp24) {
                       if (0 === c2) {
@@ -189,7 +189,7 @@ let obj = function _importIntoProject() {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp33) {
           c5 = 3;

@@ -1,23 +1,23 @@
-// Module ID: 16426
-// Function ID: 16427
+// Module ID: 16433
+// Function ID: 16434
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 8213, 21, 5043, 575, 8216, 8211, 12594, 1112, 2847, 5634, 16427, 16428, 6152, 6130, 16431, 2120, 1186, 16433, 2]
+// Dependencies: [19, 17, 8214, 21, 5043, 575, 8217, 8212, 12602, 1112, 2847, 5634, 16434, 16435, 6152, 6130, 16438, 2120, 1186, 16440, 2]
 // Exports: default
 
-// Module 16426 (FamilyCenterAcceptedLinks)
+// Module 16433 (FamilyCenterAcceptedLinks)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import _modDef2847 from "module_2847" /* 2847 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import useUserLinks from "useUserLinks" /* 8211 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8216 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 12594 */;
-import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 16427 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 16428 */;
+import useUserLinks from "useUserLinks" /* 8212 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8217 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 12602 */;
+import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 16434 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 16435 */;
 import react from "react" /* 19 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8214 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -55,13 +55,13 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       onPress: function handleDisconnect() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { otherUser: str };
-          obj.pushLazy(asyncRequire(16431, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(16438, dependencyMap.paths), obj2);
         },
       style: tmp.actionButton,
       children: closure_7(Icon, obj4)
     };
     obj3 = { name: str1 };
-    obj4 = { size: str(1186).Icon.Sizes.SMALL, disableColor: true, source: tmp5(16433) };
+    obj4 = { size: str(1186).Icon.Sizes.SMALL, disableColor: true, source: tmp5(16440) };
     Icon = tmp9(1186).Icon;
     tmp4Result = tmp4(tmp7, obj2);
   }

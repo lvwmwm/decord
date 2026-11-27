@@ -1,15 +1,15 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15872
+// Function ID: 15873
 // Name: validateConjureAppFrame
-// Dependencies: [2165, 6934, 4892, 1071, 5658, 5687, 15866, 6945, 7644, 2]
+// Dependencies: [2165, 6934, 4892, 1071, 5658, 5687, 15873, 6945, 7644, 2]
 // Exports: default, isUserScopedConjureApplication, isVoiceChannelInFrameGuild
 
-// Module 15865 (validateConjureAppFrame)
+// Module 15872 (validateConjureAppFrame)
 import Constants from "Constants" /* 1071 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5658 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
 import isConjureApplicationDefault from "isConjureApplication" /* 6945 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15866 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15873 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

@@ -1,12 +1,12 @@
-// Module ID: 15102
-// Function ID: 15103
+// Module ID: 15109
+// Function ID: 15110
 // Name: InputGuest
-// Dependencies: [5, 3, 15098, 572, 2]
+// Dependencies: [5, 3, 15105, 572, 2]
 
-// Module 15102 (InputGuest)
+// Module 15109 (InputGuest)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import InputEvent from "InputEvent" /* 15098 */;
+import InputEvent from "InputEvent" /* 15105 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ class InputGuest {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -200,7 +200,7 @@ class InputGuest {
               closure_128_0.isMouseCaptured = true;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           let closure_2 = tmp21;

@@ -1,18 +1,18 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 9316
+// Function ID: 9317
 // Name: UserOfferActionCreators
-// Dependencies: [5, 9145, 9143, 9139, 1389, 1071, 1379, 572, 1256, 1285, 9316, 1242, 5075, 4876, 4873, 2]
+// Dependencies: [5, 9146, 9144, 9140, 1389, 1071, 1379, 572, 1256, 1285, 9317, 1242, 5075, 4876, 4873, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 9315 (UserOfferActionCreators)
+// Module 9316 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9145 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9143 */;
-import UserOfferStore from "UserOfferStore" /* 9139 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9146 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9144 */;
+import UserOfferStore from "UserOfferStore" /* 9140 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Array", paymentGatewayOverride: "channel_id" };
+                obj6 = { offerId: "displayName", paymentGatewayOverride: "isArray" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

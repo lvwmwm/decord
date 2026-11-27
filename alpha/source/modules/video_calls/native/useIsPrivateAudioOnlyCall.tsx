@@ -1,10 +1,10 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10011
+// Function ID: 10012
 // Name: useIsPrivateAudioOnlyCall
 // Dependencies: [32, 4891, 6933, 6813, 2132, 5691, 5693, 504, 2]
 // Exports: default
 
-// Module 10010 (useIsPrivateAudioOnlyCall)
+// Module 10011 (useIsPrivateAudioOnlyCall)
 import CallConstants from "CallConstants" /* 5693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;

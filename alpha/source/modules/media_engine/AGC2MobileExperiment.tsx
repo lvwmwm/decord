@@ -1,9 +1,9 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15501
+// Function ID: 15502
 // Name: AGC2MobileExperiment
 // Dependencies: [1451, 2]
 
-// Module 15494 (AGC2MobileExperiment)
+// Module 15501 (AGC2MobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

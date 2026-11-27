@@ -1,20 +1,20 @@
-// Module ID: 8793
-// Function ID: 8794
+// Module ID: 8794
+// Function ID: 8795
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 8791, 21, 5043, 575, 1654, 8794, 8795, 5730, 5598, 8796, 8798, 5634, 8801, 2]
+// Dependencies: [19, 17, 8792, 21, 5043, 575, 1654, 8795, 8796, 5730, 5598, 8797, 8799, 5634, 8802, 2]
 // Exports: default
 
-// Module 8793 (GameProfileHeader)
+// Module 8794 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 8795 */;
-import GameCoverArt from "GameCoverArt" /* 8796 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8801 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 8796 */;
+import GameCoverArt from "GameCoverArt" /* 8797 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8802 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 8791 */;
+import GameProfileConstants from "GameProfileConstants" /* 8792 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -93,7 +93,7 @@ export default function GameProfileHeader(arg0) {
   const genres = game.genres;
   const animatedStyle = useAnimatedStyle(GameProfileHeaderTsx1);
   const name = game.name;
-  const mapped = genres.map(tmp2(8794).getGenreText);
+  const mapped = genres.map(tmp2(8795).getGenreText);
   const joined = mapped.join(", ");
   const l30Rank = game.l30Rank;
   const tmp11 = useGameProfileHeroBackgroundURLDefault(game, 1024);
@@ -130,7 +130,7 @@ export default function GameProfileHeader(arg0) {
   const obj10 = { style: tmp.titleContainer, children: items8 };
   if (tmp16Result) {
     const obj11 = { rank: l30Rank };
-    tmp16Result = tmp16(tmp10(8798), obj11);
+    tmp16Result = tmp16(tmp10(8799), obj11);
   }
   items8 = [tmp16Result, , ];
   const obj13 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: items9, children: name };

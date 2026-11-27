@@ -1,13 +1,13 @@
-// Module ID: 19758
-// Function ID: 19759
+// Module ID: 19774
+// Function ID: 19775
 // Name: ImageLoadMetricsManager
-// Dependencies: [17, 1246, 1193, 5981, 1071, 19759, 1451, 7475, 19760, 1256, 2]
+// Dependencies: [17, 1246, 1193, 5981, 1071, 19775, 1451, 7475, 19776, 1256, 2]
 
-// Module 19758 (ImageLoadMetricsManager)
+// Module 19774 (ImageLoadMetricsManager)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import react_nativeDefault from "react-native" /* 19759 */;
-import buildImageLoadMetricProperties from "buildImageLoadMetricProperties" /* 19760 */;
+import react_nativeDefault from "react-native" /* 19775 */;
+import buildImageLoadMetricProperties from "buildImageLoadMetricProperties" /* 19776 */;
 import react_native from "react-native" /* 17 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;

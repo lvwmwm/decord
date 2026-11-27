@@ -1,20 +1,20 @@
-// Module ID: 11169
-// Function ID: 11170
+// Module ID: 11170
+// Function ID: 11171
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 9467, 7557, 21, 5043, 575, 9504, 5607, 9505, 9496, 7231, 5730, 11170, 2]
+// Dependencies: [19, 17, 9468, 7557, 21, 5043, 575, 9505, 5607, 9506, 9497, 7231, 5730, 11171, 2]
 // Exports: default
 
-// Module 11169 (ProfileFrameSamplePreview)
+// Module 11170 (ProfileFrameSamplePreview)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5607 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import _modDef7231 from "module_7231" /* 7231 */;
 import Constants from "Constants" /* 7557 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9467 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9496 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 9504 */;
-import ProfileFrameDefault from "ProfileFrame" /* 9505 */;
-import _modDef11170 from "module_11170" /* 11170 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9468 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9497 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 9505 */;
+import ProfileFrameDefault from "ProfileFrame" /* 9506 */;
+import _modDef11171 from "module_11171" /* 11171 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -105,7 +105,7 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   items3[1] = tmp16;
   const obj16 = { style: items3, children: metroRequire(tmp3Result, obj17) };
   obj17 = { source: obj18, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj18 = { uri: _modDef11170 };
+  obj18 = { uri: _modDef11171 };
   tmp3Result = FastImageDefault;
   items2[1] = metroRequire(React3, obj16);
   const obj19 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: previewHeight - overflowTop - overflowBottom };

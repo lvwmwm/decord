@@ -1,9 +1,9 @@
-// Module ID: 8764
-// Function ID: 8765
+// Module ID: 8765
+// Function ID: 8766
 // Name: ThirdPartyGameApplicationWebsiteCategory
 // Dependencies: [2]
 
-// Module 8764 (ThirdPartyGameApplicationWebsiteCategory)
+// Module 8765 (ThirdPartyGameApplicationWebsiteCategory)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThirdPartyGameApplicationWebsiteCategory.tsx");

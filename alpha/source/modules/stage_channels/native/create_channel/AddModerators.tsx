@@ -1,10 +1,10 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 8570
+// Function ID: 8571
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 4914, 7842, 21, 5043, 575, 1501, 38, 8524, 6809, 2118, 1112, 7191, 7751, 5634, 7941, 8570, 4900, 2]
+// Dependencies: [32, 19, 17, 4914, 7842, 21, 5043, 575, 1501, 38, 8525, 6809, 2118, 1112, 7191, 7751, 5634, 7941, 8571, 4900, 2]
 // Exports: default
 
-// Module 8569 (AddModerators)
+// Module 8570 (AddModerators)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import HeaderActionButton from "HeaderActionButton" /* 7751 */;

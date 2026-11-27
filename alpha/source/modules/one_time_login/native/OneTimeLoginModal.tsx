@@ -1,10 +1,10 @@
-// Module ID: 15265
-// Function ID: 15266
+// Module ID: 15272
+// Function ID: 15273
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1387, 1071, 1240, 21, 5043, 575, 1629, 1495, 1359, 1256, 6130, 5219, 1098, 6048, 6052, 7278, 1112, 6052, 6839, 10591, 5213, 5730, 15266, 5634, 7305, 2]
+// Dependencies: [5, 19, 17, 502, 1387, 1071, 1240, 21, 5043, 575, 1629, 1495, 1359, 1256, 6130, 5219, 1098, 6048, 6052, 7278, 1112, 6052, 6839, 10592, 5213, 5730, 15273, 5634, 7305, 2]
 // Exports: default
 
-// Module 15265 (OneTimeLoginModal)
+// Module 15272 (OneTimeLoginModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
@@ -16,7 +16,7 @@ import FastImageDefault from "FastImage" /* 5730 */;
 import useAlertStore from "useAlertStore" /* 6048 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7278 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10591 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10592 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -183,7 +183,7 @@ export default function OneTimeLoginModal(token) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function OneTimeLoginModal(token) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp41) {
         bottom = tmp41;
@@ -282,7 +282,7 @@ export default function OneTimeLoginModal(token) {
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(15266), style: tmp.logo };
+  let obj6 = { source: token(15273), style: tmp.logo };
   const tmp12 = FastImageDefault;
   items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };

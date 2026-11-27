@@ -1,18 +1,18 @@
-// Module ID: 18709
-// Function ID: 18710
+// Module ID: 18726
+// Function ID: 18727
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 18703, 18710, 18711, 5634, 1112, 18636, 8600, 18712, 4245, 5257, 18713, 2]
+// Dependencies: [19, 21, 18718, 18727, 18728, 5634, 1112, 18647, 8601, 18729, 4245, 5257, 18730, 2]
 // Exports: default
 
-// Module 18709 (ConjurePublishNoticeLine)
+// Module 18726 (ConjurePublishNoticeLine)
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import transitionToGuild from "transitionToGuild" /* 8600 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 18703 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 18710 */;
-import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 18711 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 18712 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 18713 */;
+import transitionToGuild from "transitionToGuild" /* 8601 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 18718 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 18727 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 18728 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 18729 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 18730 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -133,7 +133,7 @@ export default function ConjurePublishNoticeLine(arg0) {
   const children = [format(publishNoticeMessageResult, obj), ];
   if (null != tmp4.guildId) {
     const obj2 = { guildId: tmp4.guildId, update: notice.update };
-    tmp10 = closure_3(tmp6(18711).ConjureAutomodSettingsLink, obj2);
+    tmp10 = closure_3(tmp6(18728).ConjureAutomodSettingsLink, obj2);
   } else {
     tmp10 = null;
     if (!tmp4.automod) {

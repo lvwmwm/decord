@@ -1,13 +1,13 @@
-// Module ID: 14081
-// Function ID: 14082
+// Module ID: 14088
+// Function ID: 14089
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 4892, 8120, 21, 5043, 1502, 11900, 9004, 5641, 1112, 9031, 504, 7406, 8116, 2]
+// Dependencies: [19, 17, 4892, 8120, 21, 5043, 1502, 11908, 9005, 5641, 1112, 9032, 504, 7406, 8116, 2]
 
-// Module 14081 (ForumChannelSearch)
+// Module 14088 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Tracking from "Tracking" /* 8116 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9031 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9032 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import ForumSearchStore from "ForumSearchStore" /* 8120 */;
@@ -65,7 +65,7 @@ const memoResult1 = react.memo(function SearchInput(channelId) {
   ({ guildId: importDefault, placeholder } = channelId);
   let tmp2 = channelId;
   let tmp = closure_8();
-  let obj = channelId(11900);
+  let obj = channelId(11908);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let obj2 = channelId(504);
   const items = [ForumSearchStore];

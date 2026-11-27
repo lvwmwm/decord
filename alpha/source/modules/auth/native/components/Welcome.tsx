@@ -1,10 +1,10 @@
-// Module ID: 17658
-// Function ID: 17659
+// Module ID: 17665
+// Function ID: 17666
 // Name: Welcome
-// Dependencies: [19, 17, 17659, 5660, 8246, 1406, 5762, 10433, 1071, 7867, 5776, 21, 5043, 575, 13659, 1112, 38, 1186, 5099, 5634, 5730, 14513, 7309, 15266, 1501, 1629, 504, 17660, 5604, 8249, 1256, 510, 6839, 5622, 17661, 17655, 1502, 6863, 5641, 5104, 5597, 12571, 2]
+// Dependencies: [19, 17, 17666, 5660, 8247, 1406, 5762, 10434, 1071, 7867, 5776, 21, 5043, 575, 13666, 1112, 38, 1186, 5099, 5634, 5730, 14520, 7309, 15273, 1501, 1629, 504, 17667, 5604, 8250, 1256, 510, 6839, 5622, 17668, 17662, 1502, 6863, 5641, 5104, 5597, 12579, 2]
 // Exports: default
 
-// Module 17658 (Welcome)
+// Module 17665 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -17,19 +17,19 @@ import FastImageDefault from "FastImage" /* 5730 */;
 import Constants2 from "Constants" /* 5776 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7309 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7867 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8249 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13659 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14513 */;
-import AssetRegistry from "AssetRegistry" /* 15266 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17655 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8250 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13666 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14520 */;
+import AssetRegistry from "AssetRegistry" /* 15273 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17662 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 17659 */;
+import AgeGateStore from "AgeGateStore" /* 17666 */;
 import ExperimentStore from "ExperimentStore" /* 5660 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 8246 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 8247 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import InviteStore from "InviteStore" /* 5762 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 10433 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 10434 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

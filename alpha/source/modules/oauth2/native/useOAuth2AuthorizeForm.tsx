@@ -1,7 +1,7 @@
 // Module ID: 7731
 // Function ID: 7732
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4990, 5044, 2143, 7462, 1387, 7732, 1071, 21, 5043, 4980, 504, 5273, 1654, 5253, 6971, 5779, 5780, 1083, 7733, 1285, 1269, 7734, 7736, 7738, 5658, 7517, 1242, 7739, 7740, 6013, 7741, 6110, 7742, 5641, 1112, 7047, 6178, 7744, 14721, 5781, 7737, 14722, 14726, 14725, 14727, 14728, 14729, 14730, 14733, 7488, 2]
+// Dependencies: [5, 32, 19, 17, 4990, 5044, 2143, 7462, 1387, 7732, 1071, 21, 5043, 4980, 504, 5273, 1654, 5253, 6971, 5779, 5780, 1083, 7733, 1285, 1269, 7734, 7736, 7738, 5658, 7517, 1242, 7739, 7740, 6013, 7741, 6110, 7742, 5641, 1112, 7047, 6178, 7744, 14728, 5781, 7737, 14729, 14733, 14732, 14734, 14735, 14736, 14737, 14740, 7488, 2]
 // Exports: default
 
 // Module 7731 (useOAuth2AuthorizeForm)
@@ -456,7 +456,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -530,7 +530,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_48.current = false;
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -819,7 +819,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -909,7 +909,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_56.current = false;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {

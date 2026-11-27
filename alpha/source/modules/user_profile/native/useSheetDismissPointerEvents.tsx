@@ -1,10 +1,10 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14874
+// Function ID: 14875
 // Name: useSheetDismissPointerEvents
 // Dependencies: [5275, 1654, 5303, 2]
 // Exports: default
 
-// Module 14868 (useSheetDismissPointerEvents)
+// Module 14874 (useSheetDismissPointerEvents)
 import _mod1654 from "module_1654" /* 1654 */;
 import BottomSheetModal from "BottomSheetModal" /* 5275 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;

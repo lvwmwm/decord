@@ -1,14 +1,14 @@
-// Module ID: 8700
-// Function ID: 8701
+// Module ID: 8701
+// Function ID: 8702
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 5043, 8701, 7941, 1112, 2]
+// Dependencies: [17, 21, 5043, 8702, 7941, 1112, 2]
 // Exports: default
 
-// Module 8700 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8701 (SecureFramesExistingVerificationsHelpMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8701 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8702 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 

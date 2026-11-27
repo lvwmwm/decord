@@ -1,9 +1,9 @@
-// Module ID: 8404
-// Function ID: 8405
+// Module ID: 8405
+// Function ID: 8406
 // Name: StreamRTCConnection
-// Dependencies: [2139, 5862, 6029, 6813, 502, 4892, 8405, 2132, 5981, 5851, 5942, 1071, 5855, 1088, 5857, 8406, 4887, 6816, 8407, 12, 572, 8408, 5960, 5868, 8409, 1256, 5049, 8415, 5827, 6030, 8416, 8417, 14356, 5970, 2]
+// Dependencies: [2139, 5862, 6029, 6813, 502, 4892, 8406, 2132, 5981, 5851, 5942, 1071, 5855, 1088, 5857, 8407, 4887, 6816, 8408, 12, 572, 8409, 5960, 5868, 8410, 1256, 5049, 8416, 5827, 6030, 8417, 8418, 14363, 5970, 2]
 
-// Module 8404 (StreamRTCConnection)
+// Module 8405 (StreamRTCConnection)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
@@ -14,18 +14,18 @@ import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5862 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5868 */;
 import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6030 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
-import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 8406 */;
-import VideoStreamStatsDefault from "VideoStreamStats" /* 8407 */;
-import _slicedToArrayDefault from "_slicedToArray" /* 8408 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 8409 */;
-import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 8415 */;
-import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 8416 */;
+import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 8407 */;
+import VideoStreamStatsDefault from "VideoStreamStats" /* 8408 */;
+import _slicedToArrayDefault from "_slicedToArray" /* 8409 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 8410 */;
+import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 8416 */;
+import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 8417 */;
 import ClipsStore from "ClipsStore" /* 2139 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6029 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import HookErrorStore from "HookErrorStore" /* 8405 */;
+import HookErrorStore from "HookErrorStore" /* 8406 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import NetworkStore from "NetworkStore" /* 5981 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;

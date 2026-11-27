@@ -1,17 +1,17 @@
-// Module ID: 11073
-// Function ID: 11074
+// Module ID: 11074
+// Function ID: 11075
 // Name: verifyGuildMembers
-// Dependencies: [32, 5849, 502, 4955, 1387, 4961, 1405, 572, 10096, 559, 6991, 4887, 2]
+// Dependencies: [32, 5849, 502, 4955, 1387, 4961, 1405, 572, 10097, 559, 6991, 4887, 2]
 // Exports: verifyGuildMembers
 
-// Module 11073 (verifyGuildMembers)
+// Module 11074 (verifyGuildMembers)
 import BackoffDefault from "Backoff" /* 559 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import Timers from "Timers" /* 4887 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4961 */;
 import GatewayConnectionStore2 from "GatewayConnectionStore" /* 5849 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
-import createMessage from "createMessage" /* 10096 */;
+import createMessage from "createMessage" /* 10097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;

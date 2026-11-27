@@ -1,10 +1,10 @@
-// Module ID: 19060
-// Function ID: 19061
+// Module ID: 19076
+// Function ID: 19077
 // Name: ChannelDetailsLinkedLobby
 // Dependencies: [19, 17, 1071, 21, 5043, 575, 7515, 5634, 1112, 2188, 2]
 // Exports: default
 
-// Module 19060 (ChannelDetailsLinkedLobby)
+// Module 19076 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

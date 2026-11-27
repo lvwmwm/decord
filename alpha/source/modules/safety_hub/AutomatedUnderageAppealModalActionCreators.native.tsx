@@ -1,9 +1,9 @@
-// Module ID: 12544
-// Function ID: 12545
+// Module ID: 12552
+// Function ID: 12553
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 7886, 6827, 21, 12541, 572, 5257, 12545, 2120, 7885, 12543, 6828, 7910, 7870, 6130, 7922, 12546, 2]
+// Dependencies: [5, 7886, 6827, 21, 12549, 572, 5257, 12553, 2120, 7885, 12551, 6828, 7910, 7870, 6130, 7922, 12554, 2]
 
-// Module 12544 (AutomatedUnderageAppealModalActionCreators)
+// Module 12552 (AutomatedUnderageAppealModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
@@ -29,7 +29,7 @@ let obj = {
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { classificationId, onClose };
-    obj2.openLazy(asyncRequire(12545, dependencyMap.paths), React3, obj3);
+    obj2.openLazy(asyncRequire(12553, dependencyMap.paths), React3, obj3);
   },
   openV2(classificationId, onClose) {
     _require = classificationId;
@@ -41,7 +41,7 @@ let obj = {
     let tmp4 = _require;
     let obj2 = require("SafetyHubUtils");
     if (obj2.isCurrentUserSuspended()) {
-      const tmp4Result = tmp4(12543);
+      const tmp4Result = tmp4(12551);
       if (tmp4Result.isExpressiveModalV2Enabled(tmp4(6828).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
         let tmp6 = globalThis;
         const _Math = Math;
@@ -64,7 +64,7 @@ let obj = {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -135,7 +135,7 @@ let obj = {
                   }), obj8, closure_1_6);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp23) {
               c3 = 3;

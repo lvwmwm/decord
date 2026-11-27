@@ -1,13 +1,13 @@
-// Module ID: 8714
-// Function ID: 8715
+// Module ID: 8715
+// Function ID: 8716
 // Name: useDisplayNameFontsAvailable
-// Dependencies: [5, 19, 17, 8715, 2]
+// Dependencies: [5, 19, 17, 8716, 2]
 // Exports: useDisplayNameFontsAvailable
 
-// Module 8714 (useDisplayNameFontsAvailable)
+// Module 8715 (useDisplayNameFontsAvailable)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import react_nativeDefault from "react-native" /* 8715 */;
+import react_nativeDefault from "react-native" /* 8716 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _load() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -112,7 +112,7 @@ let obj = function _load() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp17) {
           if (0 === c2) {
             c4 = 3;

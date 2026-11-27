@@ -1,10 +1,10 @@
-// Module ID: 9800
-// Function ID: 9801
+// Module ID: 9801
+// Function ID: 9802
 // Name: ViewMeasureUtils
 // Dependencies: [2]
 // Exports: measureView, measureViewInView, measureViewInWindow, measureViewRef, measureViewRefInView, measureViewRefInWindow
 
-// Module 9800 (ViewMeasureUtils)
+// Module 9801 (ViewMeasureUtils)
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

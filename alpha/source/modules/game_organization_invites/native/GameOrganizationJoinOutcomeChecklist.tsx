@@ -1,15 +1,15 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 12354
+// Function ID: 12355
 // Name: GameOrganizationJoinOutcomeChecklist
-// Dependencies: [19, 17, 21, 5043, 575, 12341, 7525, 5752, 7278, 6115, 5634, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 12349, 7525, 5752, 7278, 6115, 5634, 2]
 // Exports: default
 
-// Module 12346 (GameOrganizationJoinOutcomeChecklist)
+// Module 12354 (GameOrganizationJoinOutcomeChecklist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
-import useGameOrganizationJoinOutcome from "useGameOrganizationJoinOutcome" /* 12341 */;
+import useGameOrganizationJoinOutcome from "useGameOrganizationJoinOutcome" /* 12349 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

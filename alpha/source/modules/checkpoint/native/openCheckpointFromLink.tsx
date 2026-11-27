@@ -1,10 +1,10 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15488
+// Function ID: 15489
 // Name: openCheckpointFromLink
-// Dependencies: [5847, 6769, 12625, 2]
+// Dependencies: [5847, 6769, 12633, 2]
 // Exports: openCheckpointFromLink
 
-// Module 15481 (openCheckpointFromLink)
+// Module 15488 (openCheckpointFromLink)
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5847 */;
 import CheckpointExperiments from "CheckpointExperiments" /* 6769 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 8633
-// Function ID: 8634
+// Module ID: 8634
+// Function ID: 8635
 // Name: CheckmarkSmallBoldIcon
 // Dependencies: [19, 21, 575, 5729, 7183, 2]
 // Exports: CheckmarkSmallBoldIcon
 
-// Module 8633 (CheckmarkSmallBoldIcon)
+// Module 8634 (CheckmarkSmallBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;

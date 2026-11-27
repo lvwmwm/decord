@@ -1,10 +1,10 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 10617
+// Function ID: 10618
 // Name: GuildLeaderboardSystemMessageCopy
 // Dependencies: [4963, 2719, 1088, 1112, 2]
 // Exports: getLeaderboardSystemMessage, getMobileLeaderboardSystemMessage, resolveGuildSpaceLeaderboardMessage
 
-// Module 10616 (GuildLeaderboardSystemMessageCopy)
+// Module 10617 (GuildLeaderboardSystemMessageCopy)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef2719 from "module_2719" /* 2719 */;

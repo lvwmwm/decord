@@ -1,10 +1,10 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15617
+// Function ID: 15618
 // Name: EmptyState
 // Dependencies: [19, 17, 21, 5043, 575, 5050, 5730, 5634, 2]
 // Exports: default
 
-// Module 15610 (EmptyState)
+// Module 15617 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import shared from "shared" /* 5050 */;

@@ -1,12 +1,12 @@
-// Module ID: 19260
-// Function ID: 19261
+// Module ID: 19276
+// Function ID: 19277
 // Name: NativeMenuPresenter
-// Dependencies: [10274, 504, 2]
+// Dependencies: [10275, 504, 2]
 // Exports: default
 
-// Module 19260 (NativeMenuPresenter)
+// Module 19276 (NativeMenuPresenter)
 import get_initialized from "get initialized" /* 504 */;
-import NativeMenuStore from "NativeMenuStore" /* 10274 */;
+import NativeMenuStore from "NativeMenuStore" /* 10275 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/native_menu/native/NativeMenuPresenter.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 19543
-// Function ID: 19544
+// Module ID: 19559
+// Function ID: 19560
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 4891, 6933, 10022, 6813, 502, 4892, 1387, 11782, 19383, 1071, 5693, 10191, 21, 5043, 575, 1654, 5598, 11781, 19447, 10152, 1107, 5104, 11791, 7055, 19382, 563, 2146, 1495, 1707, 10200, 19379, 5968, 10156, 1186, 11173, 10183, 11784, 19380, 5952, 19544, 5954, 2]
+// Dependencies: [32, 19, 17, 4891, 6933, 10023, 6813, 502, 4892, 1387, 11790, 19399, 1071, 5693, 10192, 21, 5043, 575, 1654, 5598, 11789, 19463, 10153, 1107, 5104, 11799, 7055, 19398, 563, 2146, 1495, 1707, 10201, 19395, 5968, 10157, 1186, 11174, 10184, 11792, 19396, 5952, 19560, 5954, 2]
 
-// Module 19543 (VoicePanelPIPContent)
+// Module 19559 (VoicePanelPIPContent)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import useWindowDimensions from "useWindowDimensions" /* 1495 */;
@@ -13,23 +13,23 @@ import native from "native" /* 5104 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import ExternalPipDefault from "ExternalPip" /* 5952 */;
 import NativeViewDefault from "NativeView" /* 7055 */;
-import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 10152 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10183 */;
-import Constants2 from "Constants" /* 10191 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
-import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 11784 */;
-import useUserTileBackgroundDefault from "useUserTileBackground" /* 19379 */;
-import VideoActionCreators from "VideoActionCreators" /* 19380 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19382 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19383 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 19447 */;
+import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 10153 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10184 */;
+import Constants2 from "Constants" /* 10192 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11790 */;
+import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 11792 */;
+import useUserTileBackgroundDefault from "useUserTileBackground" /* 19395 */;
+import VideoActionCreators from "VideoActionCreators" /* 19396 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19398 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19399 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 19463 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10022 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10023 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -542,7 +542,7 @@ function User(participantId) {
     nativeEvent = nativeEvent.nativeEvent;
     layoutManager.setTargetDimensions(participantId, nativeEvent.width, nativeEvent.height);
   }, items13);
-  const tmp3Result11 = tmp3(10156);
+  const tmp3Result11 = tmp3(10157);
   canRenderParticipantVideo = tmp3Result11.useCanRenderParticipantVideo(stateFromStores);
   if (canRenderParticipantVideo) {
     canRenderParticipantVideo = !(tmp17 && isReactingToThermalState);
@@ -582,7 +582,7 @@ function User(participantId) {
     if (null != user1) {
       const obj8 = { source: tmp3Result12.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp17 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
       const Avatar = tmp3(1186).Avatar;
-      tmp3Result12 = tmp3(11173);
+      tmp3Result12 = tmp3(11174);
       AvatarSizes = tmp3(1186).AvatarSizes;
       userAvatarDecoration = undefined;
       if (stateFromStores != null) {
@@ -654,7 +654,7 @@ function Stream(participantId) {
   let layoutTransition;
   let obj5;
   let onStreamReady;
-  let tmp22;
+  let tmp23;
   let transitionCleanUp;
   let transitionState;
   participantId = participantId.participantId;
@@ -668,7 +668,7 @@ function Stream(participantId) {
   let tmp = closure_23();
   let tmp2 = participantId;
   let tmp3 = dependencyMap;
-  let obj = participantId(11791);
+  let obj = participantId(11799);
   const mode = obj.usePIPState().mode;
   const items = [transitionState, transitionCleanUp];
   const effect = streamId.useEffect(() => {
@@ -705,7 +705,7 @@ function Stream(participantId) {
     }
   }, items);
   let tmp5 = transitionState === participantId(5104).TransitionStates.YEETED ? tmp.onTop : tmp.onBottom;
-  const context = obj2.useContext(mode(11781));
+  const context = obj2.useContext(mode(11789));
   ({ channelId: c2, layoutManager } = context);
   const items1 = [callback2];
   const tmp2Result = tmp2(563);
@@ -811,23 +811,23 @@ function Stream(participantId) {
   }, items7);
   if (stateFromStores === constants.ENDED) {
     const obj3 = { style: tmp.streamEmptyImage, resizeMode: "contain" };
-    tmp22 = closure_21(tmp2(19544).StreamEnded, obj3);
+    tmp23 = closure_21(tmp2(19560).StreamEnded, obj3);
   } else {
-    tmp22 = null;
+    tmp23 = null;
     if (stateFromStores !== tmp17.FAILED) {
-      let tmp24Result;
+      let tmp18Result;
       if (null != streamId) {
         const obj4 = { style: tmp5, participantId, children: closure_21(VideoStream, obj5) };
         obj5 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, style: tmp.video, onSize: callback, onLayout: callback1, onReady: onStreamReady };
-        tmp24Result = tmp24(AnimatedVideoWrapper, obj4);
+        tmp18Result = tmp18(AnimatedVideoWrapper, obj4);
       } else {
         const obj6 = { participantId, layoutTransition };
-        tmp24Result = tmp24(User, obj6);
+        tmp18Result = tmp18(User, obj6);
       }
-      tmp22 = tmp24Result;
+      tmp23 = tmp18Result;
     }
   }
-  return tmp22;
+  return tmp23;
 }
 function getFocusedKey(id) {
   return id.id;

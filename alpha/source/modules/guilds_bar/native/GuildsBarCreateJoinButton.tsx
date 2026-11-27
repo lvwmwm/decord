@@ -1,17 +1,17 @@
-// Module ID: 18139
-// Function ID: 18140
+// Module ID: 18146
+// Function ID: 18147
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5076, 1071, 1389, 21, 5043, 10286, 2120, 13703, 7561, 9586, 6380, 18083, 504, 18036, 1112, 18140, 13095, 575, 2]
+// Dependencies: [5, 19, 17, 5076, 1071, 1389, 21, 5043, 10287, 2120, 13710, 7561, 9587, 6380, 18090, 504, 18043, 1112, 18147, 13103, 575, 2]
 
-// Module 18139 (GuildsBarCreateJoinButton)
+// Module 18146 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 13095 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18083 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 13103 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
@@ -44,7 +44,7 @@ let obj = function _handleCreateJoinGuildPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _handleCreateJoinGuildPress() {
             closure_1.openCreateGuildModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         c3 = 3;

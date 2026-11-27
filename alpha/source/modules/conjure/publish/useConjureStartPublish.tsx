@@ -1,14 +1,14 @@
-// Module ID: 18463
-// Function ID: 18464
+// Module ID: 18470
+// Function ID: 18471
 // Name: useConjureStartPublish
-// Dependencies: [5, 19, 6934, 7706, 11459, 18464, 18465, 18467, 2]
+// Dependencies: [5, 19, 6934, 7706, 11469, 18471, 18472, 18474, 2]
 // Exports: default
 
-// Module 18463 (useConjureStartPublish)
-import useConjurePublishAction from "useConjurePublishAction" /* 11459 */;
-import conjurePublishReview from "conjurePublishReview" /* 18464 */;
-import conjureViewPlacement from "conjureViewPlacement" /* 18465 */;
-import openConjurePublishReview from "openConjurePublishReview" /* 18467 */;
+// Module 18470 (useConjureStartPublish)
+import useConjurePublishAction from "useConjurePublishAction" /* 11469 */;
+import conjurePublishReview from "conjurePublishReview" /* 18471 */;
+import conjureViewPlacement from "conjureViewPlacement" /* 18472 */;
+import openConjurePublishReview from "openConjurePublishReview" /* 18474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
@@ -34,7 +34,7 @@ let obj = function _publishNow() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -71,7 +71,7 @@ let obj = function _publishNow() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;

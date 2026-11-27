@@ -1,11 +1,11 @@
-// Module ID: 19751
-// Function ID: 19752
+// Module ID: 19767
+// Function ID: 19768
 // Name: openInteractionIframeModal
-// Dependencies: [5, 19752, 6130, 19753, 2120, 2]
+// Dependencies: [5, 19768, 6130, 19769, 2120, 2]
 // Exports: default
 
-// Module 19751 (openInteractionIframeModal)
-import InteractionIframeConstants from "InteractionIframeConstants" /* 19752 */;
+// Module 19767 (openInteractionIframeModal)
+import InteractionIframeConstants from "InteractionIframeConstants" /* 19768 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _openInteractionIframeModal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -42,7 +42,7 @@ let obj = function _openInteractionIframeModal() {
           obj = require("ModalActionCreators");
           obj.pushLazy(require("asyncRequire")(paths[3], paths.paths), closure_0, closure_2_4);
           c1 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         c1 = 3;

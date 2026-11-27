@@ -1,10 +1,10 @@
-// Module ID: 8611
-// Function ID: 8612
+// Module ID: 8612
+// Function ID: 8613
 // Name: GuildEventsListActionSheet
-// Dependencies: [19, 17, 6932, 4898, 1071, 6168, 21, 5043, 8612, 7507, 1112, 8507, 8473, 8463, 8604, 8613, 5604, 1256, 7467, 5271, 14322, 7054, 2]
+// Dependencies: [19, 17, 6932, 4898, 1071, 6168, 21, 5043, 8613, 7507, 1112, 8508, 8474, 8464, 8605, 8614, 5604, 1256, 7467, 5271, 14329, 7054, 2]
 // Exports: default
 
-// Module 8611 (GuildEventsListActionSheet)
+// Module 8612 (GuildEventsListActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,10 +12,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
 import ReadStateConstants from "ReadStateConstants" /* 6168 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7467 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8473 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8604 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8612 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8613 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8474 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8605 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8613 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8614 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -64,7 +64,7 @@ function GuildEventsListHeader(arg0) {
           }
         }
     };
-    const ActionSheetHeaderPressableText = tmp4(8507).ActionSheetHeaderPressableText;
+    const ActionSheetHeaderPressableText = tmp4(8508).ActionSheetHeaderPressableText;
     intl3 = tmp4(1112).intl;
     intl4 = tmp4(1112).intl;
     tmp3Result = tmp3(ActionSheetHeaderPressableText, obj3);
@@ -83,7 +83,7 @@ export default function GuildEventsListActionSheet(guild) {
   let type;
   guild = guild.guild;
   let events;
-  events = events(8463)(guild.id);
+  events = events(8464)(guild.id);
   const tmp = closure_10();
   const items = [events, guild.id];
   const ref = react.useRef(ReadStateStore.ackMessageId(guild.id, ReadStateTypes.GUILD_EVENT));
@@ -130,6 +130,6 @@ export default function GuildEventsListActionSheet(guild) {
   const intl = guild(1112).intl;
   let obj2 = { eventCount: events.length, guild };
   ({ inActionSheet: true, events, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: events(7054)(ref) });
-  events(14322);
+  events(14329);
   return <BottomSheet showGradient scrollable={events.length > 0} startExpanded dismissAccessibilityLabel={intl.string(guild(1112).t.VSlyAn)} header={null}>{null}</BottomSheet>;
 };

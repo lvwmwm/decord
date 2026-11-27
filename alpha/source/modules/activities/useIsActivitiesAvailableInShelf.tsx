@@ -1,11 +1,11 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 10037
+// Function ID: 10038
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 10037, 10038, 10039, 2]
+// Dependencies: [19, 10038, 10039, 10040, 2]
 // Exports: default
 
-// Module 10036 (useIsActivitiesAvailableInShelf)
-import fetchShelf from "fetchShelf" /* 10039 */;
+// Module 10037 (useIsActivitiesAvailableInShelf)
+import fetchShelf from "fetchShelf" /* 10040 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ export default function useIsActivitiesAvailableInShelf(guildId, arg1) {
   let obj = require("useIsActivitiesEnabledForCurrentPlatform");
   const isActivitiesEnabledForCurrentPlatform = obj.useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != guildId;
-  const tmp2 = isActivitiesEnabledForCurrentPlatform(10038)(arg1);
+  const tmp2 = isActivitiesEnabledForCurrentPlatform(10039)(arg1);
   if (tmp3) {
     tmp3 = "" !== guildId;
   }

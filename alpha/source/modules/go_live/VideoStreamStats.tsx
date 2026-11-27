@@ -1,9 +1,9 @@
-// Module ID: 8407
-// Function ID: 8408
+// Module ID: 8408
+// Function ID: 8409
 // Name: VideoStreamStats
 // Dependencies: [6029, 1071, 4887, 5827, 2]
 
-// Module 8407 (VideoStreamStats)
+// Module 8408 (VideoStreamStats)
 import Constants from "Constants" /* 1071 */;
 import TimeUtils from "TimeUtils" /* 5827 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6029 */;

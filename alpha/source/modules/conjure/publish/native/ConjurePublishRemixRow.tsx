@@ -1,10 +1,10 @@
-// Module ID: 18495
-// Function ID: 18496
+// Module ID: 18502
+// Function ID: 18503
 // Name: ConjurePublishRemixRow
-// Dependencies: [19, 17, 21, 5043, 575, 1112, 4245, 7186, 5634, 9067, 5641, 14795, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1112, 4245, 7186, 5634, 9068, 5641, 14801, 2]
 // Exports: default
 
-// Module 18495 (ConjurePublishRemixRow)
+// Module 18502 (ConjurePublishRemixRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
@@ -21,7 +21,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const ChevronLargeDownIcon = tmp2(14795);
+const ChevronLargeDownIcon = tmp2(14801);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;

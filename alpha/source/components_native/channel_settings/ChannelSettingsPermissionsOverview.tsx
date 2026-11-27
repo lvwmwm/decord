@@ -1,10 +1,10 @@
-// Module ID: 19167
-// Function ID: 19168
+// Module ID: 19183
+// Function ID: 19184
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 4950, 4892, 4949, 4914, 4985, 1387, 1071, 21, 5043, 575, 6046, 1112, 5659, 4980, 12118, 8528, 8112, 12, 6140, 6144, 14077, 1501, 13792, 10797, 16924, 504, 2118, 11436, 19168, 13752, 9004, 7847, 1654, 2]
+// Dependencies: [32, 5, 19, 17, 4950, 4892, 4949, 4914, 4985, 1387, 1071, 21, 5043, 575, 6046, 1112, 5659, 4980, 12126, 8529, 8112, 12, 6140, 6144, 14084, 1501, 13799, 10798, 16931, 504, 2118, 11437, 19184, 13759, 9005, 7847, 1654, 2]
 // Exports: default
 
-// Module 19167 (ChannelSettingsPermissionsOverview)
+// Module 19183 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,10 +14,10 @@ import GuildRoleRecord from "GuildRoleRecord" /* 4950 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4980 */;
 import TableRow3 from "TableRow" /* 6144 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import RoleLabel from "RoleLabel" /* 10797 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11436 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 16924 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19168 */;
+import RoleLabel from "RoleLabel" /* 10798 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11437 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 16931 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19184 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -96,7 +96,7 @@ function ChannelPermissionSyncModule(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function ChannelPermissionSyncModule(channel) {
               saveChannel(id, obj);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -165,7 +165,7 @@ function ChannelPermissionSyncModule(channel) {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(14077).RefreshIcon, {}), label: intl2.string(tmp3(1112).t.NVwuHq), onPress: callback };
+  obj6 = { icon: tmp6(tmp3(14084).RefreshIcon, {}), label: intl2.string(tmp3(1112).t.NVwuHq), onPress: callback };
   TableRow = tmp3(6144).TableRow;
   intl2 = tmp3(1112).intl;
   return closure_16(tmp7, obj2);
@@ -230,7 +230,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(16924).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(16931).CircleMinusIcon;
       intl = tmp3(1112).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }

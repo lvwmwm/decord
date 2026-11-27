@@ -1,10 +1,10 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11644
+// Function ID: 11645
 // Name: ProductDetailsActionSheetSkeleton
 // Dependencies: [19, 17, 21, 5043, 575, 5647, 1654, 5253, 2]
 // Exports: default
 
-// Module 11636 (ProductDetailsActionSheetSkeleton)
+// Module 11644 (ProductDetailsActionSheetSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;

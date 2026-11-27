@@ -1,9 +1,9 @@
-// Module ID: 18267
-// Function ID: 18268
+// Module ID: 18274
+// Function ID: 18275
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5044, 2165, 4892, 4914, 1387, 18261, 1071, 6842, 21, 5043, 5634, 575, 6119, 18266, 1112, 1405, 14424, 12231, 11696, 10866, 8085, 504, 8818, 1186, 13627, 18268, 1501, 5758, 5846, 6949, 1256, 14484, 9778, 12165, 5725, 12188, 2120, 5257, 18269, 5750, 18263, 7543, 18270, 18271, 11, 6152, 18272, 6950, 15071, 1502, 4868, 5704, 18282, 18283, 18284, 18285, 18286, 18292, 674, 18293, 18294, 1255, 18265, 8486, 11804, 7482, 18295, 2]
+// Dependencies: [5, 32, 19, 17, 5044, 2165, 4892, 4914, 1387, 18268, 1071, 6842, 21, 5043, 5634, 575, 6119, 18273, 1112, 1405, 14431, 12239, 11704, 10867, 8085, 504, 8819, 1186, 13634, 18275, 1501, 5758, 5846, 6949, 1256, 14491, 9779, 12173, 5725, 12196, 2120, 5257, 18276, 5750, 18270, 7543, 18277, 18278, 11, 6152, 18279, 6950, 15078, 1502, 4868, 5704, 18289, 18290, 18291, 18292, 18293, 18299, 674, 18300, 18301, 1255, 18272, 8487, 11812, 7482, 18302, 2]
 
-// Module 18267 (ForYouItems)
+// Module 18274 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
 import _mod674 from "module_674" /* 674 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
@@ -15,17 +15,17 @@ import handleSupportedURLDefault from "handleSupportedURL" /* 5846 */;
 import CustomMarkupAll from "CustomMarkup" /* 6119 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6842 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6949 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13627 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18265 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 18266 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 18282 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 18283 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 18284 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 18285 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 18286 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 18292 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 18293 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 18294 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13634 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18272 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 18273 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 18289 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 18290 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 18291 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 18292 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 18293 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 18299 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 18300 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 18301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import UserStore from "UserStore" /* 1387 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 18261 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 18268 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -177,10 +177,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp19 = guild_id(14424)(first);
+    const tmp19 = guild_id(14431)(first);
     result = stringResult;
     if (null != tmp19) {
-      const tmp4Result = item(12231);
+      const tmp4Result = item(12239);
       result = tmp4Result.formatPollResultNotificationCenterText(tmp19);
     }
   } else if (length2 > 0) {
@@ -280,8 +280,8 @@ function ForYouMessagePreviewV2(item) {
   const message10 = item.message;
   const obj5 = { content: result, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id };
   id = undefined;
-  const renderMessageContentMarkup = item(8818).renderMessageContentMarkup;
-  item(8818);
+  const renderMessageContentMarkup = item(8819).renderMessageContentMarkup;
+  item(8819);
   if (message10 != null) {
     id = message10.author.id;
   }
@@ -296,9 +296,9 @@ function ForYouMessagePreviewV2(item) {
     const obj6 = { style: tmp.messagePreviewIconV2Container, children: closure_21(Icon, obj7) };
     Icon = tmp4(1186).Icon;
     if (constants4.ATTACHMENT === ATTACHMENT) {
-      tmp33 = guild_id(11696);
+      tmp33 = guild_id(11704);
     } else if (constants4.STICKER === ATTACHMENT) {
-      tmp33 = guild_id(10866);
+      tmp33 = guild_id(10867);
     } else {
       tmp33 = null;
       if (constants4.VOICE_MESSAGE === ATTACHMENT) {
@@ -565,7 +565,7 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -607,7 +607,7 @@ let closure_35 = react.memo(function ForYouRowWrapped(item) {
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp18) {
             let closure_2 = tmp18;

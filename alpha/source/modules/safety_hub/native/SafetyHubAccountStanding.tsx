@@ -1,10 +1,10 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16255
+// Function ID: 16256
 // Name: SafetyHubAccountStanding
-// Dependencies: [32, 19, 17, 1387, 7912, 7886, 21, 7887, 16249, 5043, 575, 1112, 16241, 7525, 7278, 10183, 7284, 7303, 504, 1413, 9418, 1186, 5634, 2]
+// Dependencies: [32, 19, 17, 1387, 7912, 7886, 21, 7887, 16256, 5043, 575, 1112, 16248, 7525, 7278, 10184, 7284, 7303, 504, 1413, 9419, 1186, 5634, 2]
 // Exports: default
 
-// Module 16248 (SafetyHubAccountStanding)
+// Module 16255 (SafetyHubAccountStanding)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
@@ -15,9 +15,9 @@ import AssetRegistryDefault from "AssetRegistry" /* 7303 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 7525 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 7886 */;
 import SafetyHubModels from "SafetyHubModels" /* 7887 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10183 */;
-import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16241 */;
-import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 16249 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10184 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16248 */;
+import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 16256 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
@@ -178,7 +178,7 @@ export default function SafetyHubAccountStanding() {
     let obj2 = height(1413);
     userAvatarSource = obj2.getUserAvatarSource(stateFromStores);
   } else {
-    userAvatarSource = height(9418);
+    userAvatarSource = height(9419);
   }
   const style = tmp13.style;
   let obj3 = { style: tmp4.container, children: items3 };

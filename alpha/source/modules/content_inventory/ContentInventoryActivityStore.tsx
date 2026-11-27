@@ -1,19 +1,19 @@
-// Module ID: 14895
-// Function ID: 14896
+// Module ID: 14902
+// Function ID: 14903
 // Name: ContentInventoryActivityStore
-// Dependencies: [6014, 8755, 8590, 8588, 8928, 6015, 8757, 8756, 12, 504, 572, 2]
+// Dependencies: [6014, 8756, 8591, 8589, 8929, 6015, 8758, 8757, 12, 504, 572, 2]
 
-// Module 14895 (ContentInventoryActivityStore)
+// Module 14902 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;
-import utils from "utils" /* 8588 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8590 */;
-import matchUtils from "matchUtils" /* 8756 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8757 */;
+import utils from "utils" /* 8589 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8591 */;
+import matchUtils from "matchUtils" /* 8757 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8758 */;
 import PresenceStore from "PresenceStore" /* 6014 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8755 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8756 */;
 import size from "module_2" /* 2 */;
 
 let _require;
@@ -27,10 +27,10 @@ function getMatchingActivity(author_type) {
   let tmp3 = null;
   const obj = require("utils");
   if (!obj.isEntryExpired(author_type)) {
-    let tmpResult = tmp(8588);
+    let tmpResult = tmp(8589);
     let found;
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8928).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(8929).ContentInventoryAuthorType.USER) {
         const activities = PresenceStore.getActivities(author_type.author_id);
         found = activities.find((type) => {
           let result;

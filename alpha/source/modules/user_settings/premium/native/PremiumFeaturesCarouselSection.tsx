@@ -1,10 +1,10 @@
-// Module ID: 13932
-// Function ID: 13933
+// Module ID: 13939
+// Function ID: 13940
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1071, 9126, 1389, 21, 575, 5043, 5598, 1091, 5634, 5730, 1112, 13933, 13934, 13935, 13936, 5273, 1626, 11176, 1186, 6379, 8486, 1495, 1256, 2]
+// Dependencies: [32, 19, 17, 1071, 9127, 1389, 21, 575, 5043, 5598, 1091, 5634, 5730, 1112, 13940, 13941, 13942, 13943, 5273, 1626, 11177, 1186, 6379, 8487, 1495, 1256, 2]
 // Exports: default
 
-// Module 13932 (PremiumFeaturesCarouselSection)
+// Module 13939 (PremiumFeaturesCarouselSection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
@@ -13,7 +13,7 @@ import PremiumConstants from "PremiumConstants" /* 1389 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import ColorConstants from "ColorConstants" /* 9126 */;
+import ColorConstants from "ColorConstants" /* 9127 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -162,7 +162,7 @@ function PremiumFeaturesCarousel(arg0) {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp5[1]
       };
-      tmp19 = closure_10(currentIndex(11176), obj3);
+      tmp19 = closure_10(currentIndex(11177), obj3);
     }
     let items3 = [tmp19, ];
     let obj4 = { containerStyle: tmp.indicators, numberOfItems: mapped.length, currentIndex };
@@ -214,8 +214,8 @@ export default function PremiumFeaturesCarouselSection(style) {
   const analyticsLocations = first(6379)().analyticsLocations;
   let obj = react;
   [first, dependencyMap] = react.useState(false);
-  ({ width, ref, onLayout } = first(8486)());
-  const tmp5 = first(8486)();
+  ({ width, ref, onLayout } = first(8487)());
+  const tmp5 = first(8487)();
   if (undefined === width) {
     let obj2 = analyticsLocations(1495);
     width = obj2.getWindowDimensions().width;

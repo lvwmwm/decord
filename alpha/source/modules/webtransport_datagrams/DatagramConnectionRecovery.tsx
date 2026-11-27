@@ -1,11 +1,11 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15103
+// Function ID: 15104
 // Name: DatagramConnectionRecovery
-// Dependencies: [15097, 15094, 2]
+// Dependencies: [15104, 15101, 2]
 
-// Module 15096 (DatagramConnectionRecovery)
-import DatagramEvent from "DatagramEvent" /* 15094 */;
-import DatagramRecoveryDefault from "DatagramRecovery" /* 15097 */;
+// Module 15103 (DatagramConnectionRecovery)
+import DatagramEvent from "DatagramEvent" /* 15101 */;
+import DatagramRecoveryDefault from "DatagramRecovery" /* 15104 */;
 import size from "module_2" /* 2 */;
 
 let c1;

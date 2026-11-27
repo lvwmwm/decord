@@ -1,16 +1,16 @@
-// Module ID: 11107
-// Function ID: 11108
+// Module ID: 11108
+// Function ID: 11109
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 5043, 575, 11096, 5634, 1112, 5641, 5730, 11108, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 11097, 5634, 1112, 5641, 5730, 11109, 2]
 
-// Module 11107 (MediaKeyboardFooter)
+// Module 11108 (MediaKeyboardFooter)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import DeviceMediaDefault from "DeviceMedia" /* 11096 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11108 */;
+import DeviceMediaDefault from "DeviceMedia" /* 11097 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16134
+// Function ID: 16135
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8579, 21, 5043, 1379, 575, 8578, 5105, 6144, 5257, 1112, 7052, 8722, 7254, 14310, 12, 5052, 14313, 6380, 7546, 7507, 5641, 7406, 5271, 5634, 7482, 8088, 2]
+// Dependencies: [32, 19, 17, 8580, 21, 5043, 1379, 575, 8579, 5105, 6144, 5257, 1112, 7052, 8723, 7254, 14317, 12, 5052, 14320, 6380, 7546, 7507, 5641, 7406, 5271, 5634, 7482, 8088, 2]
 // Exports: default
 
-// Module 16127 (UserPrimaryGuildListBottomSheet)
+// Module 16134 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
 import _mod8088 from "module_8088" /* 8088 */;
-import GuildTagConstants from "GuildTagConstants" /* 8579 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14313 */;
+import GuildTagConstants from "GuildTagConstants" /* 8580 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14320 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,9 +65,9 @@ let closure_11 = react.memo(function Item(item) {
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge;
-    const getGuildTagBadgeUrl = item(8578).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = item(8579).getGuildTagBadgeUrl;
     let id = item.id;
-    item(8578);
+    item(8579);
     if (profile != null) {
       badge = profile.badge;
     }
@@ -122,7 +122,7 @@ let closure_11 = react.memo(function Item(item) {
     const obj9 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-sm/semibold", textColor: "text-strong" };
     ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp);
     tag = profile.tag;
-    const BaseGuildTagChiplet = tmp8(8722).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp8(8723).BaseGuildTagChiplet;
     tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
   items = [tmp11Result2, closure_7(item(7254).FormRadio, { selected })];

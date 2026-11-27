@@ -1,10 +1,10 @@
-// Module ID: 11952
-// Function ID: 11953
+// Module ID: 11960
+// Function ID: 11961
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 5043, 575, 1502, 7480, 5730, 11953, 11954, 5634, 1112, 5641, 6130, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1502, 7480, 5730, 11961, 11962, 5634, 1112, 5641, 6130, 2]
 // Exports: default
 
-// Module 11952 (GiftCodeRedeemError)
+// Module 11960 (GiftCodeRedeemError)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import Link from "Link" /* 1502 */;
@@ -48,9 +48,9 @@ export default function GiftCodeRedeemError(message) {
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(11953);
+    tmp8Result = tmp8(11961);
   } else {
-    tmp8Result = tmp8(11954);
+    tmp8Result = tmp8(11962);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/semibold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };

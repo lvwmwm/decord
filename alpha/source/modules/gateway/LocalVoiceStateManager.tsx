@@ -1,16 +1,16 @@
-// Module ID: 15143
-// Function ID: 15144
+// Module ID: 15150
+// Function ID: 15151
 // Name: LocalVoiceStateManager
-// Dependencies: [5850, 6029, 502, 4892, 4914, 2132, 5942, 1071, 6814, 15141, 4868, 1405, 14356, 6816, 15144, 15145, 2]
+// Dependencies: [5850, 6029, 502, 4892, 4914, 2132, 5942, 1071, 6814, 15148, 4868, 1405, 14363, 6816, 15151, 15152, 2]
 
-// Module 15143 (LocalVoiceStateManager)
+// Module 15150 (LocalVoiceStateManager)
 import FlagUtils from "FlagUtils" /* 1405 */;
 import UserSettings from "UserSettings" /* 4868 */;
 import Constants2 from "Constants" /* 6814 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
-import isClipsEnabled from "isClipsEnabled" /* 14356 */;
-import StreamDrawingChannel from "StreamDrawingChannel" /* 15144 */;
-import StreamDrawingExperiment from "StreamDrawingExperiment" /* 15145 */;
+import isClipsEnabled from "isClipsEnabled" /* 14363 */;
+import StreamDrawingChannel from "StreamDrawingChannel" /* 15151 */;
+import StreamDrawingExperiment from "StreamDrawingExperiment" /* 15152 */;
 import PassTheControllerStore from "PassTheControllerStore" /* 5850 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6029 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -19,7 +19,7 @@ import GuildStore from "GuildStore" /* 4914 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import RTCRegionStore from "RTCRegionStore" /* 5942 */;
 import Constants from "Constants" /* 1071 */;
-import StateManager from "StateManager" /* 15141 */;
+import StateManager from "StateManager" /* 15148 */;
 import size from "module_2" /* 2 */;
 
 let c10;

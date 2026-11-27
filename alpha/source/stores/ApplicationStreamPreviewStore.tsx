@@ -1,9 +1,9 @@
-// Module ID: 8421
-// Function ID: 8422
+// Module ID: 8422
+// Function ID: 8423
 // Name: ApplicationStreamPreviewStore
 // Dependencies: [6814, 12, 6816, 504, 572, 2]
 
-// Module 8421 (ApplicationStreamPreviewStore)
+// Module 8422 (ApplicationStreamPreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

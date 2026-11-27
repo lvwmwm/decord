@@ -1,14 +1,14 @@
-// Module ID: 13592
-// Function ID: 13593
+// Module ID: 13600
+// Function ID: 13601
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 13593, 1112, 13594, 10523, 6052, 2]
+// Dependencies: [21, 13601, 1112, 13602, 10524, 6052, 2]
 // Exports: default
 
-// Module 13592 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 13600 (UserSettingsAuthedAppDeleteWarningModal)
 import intl7 from "intl" /* 1112 */;
-import InfoBox from "InfoBox" /* 10523 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 13593 */;
-import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13594 */;
+import InfoBox from "InfoBox" /* 10524 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 13601 */;
+import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13602 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16788
+// Function ID: 16789
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5044, 6871, 16680, 21, 5043, 16782, 16677, 504, 5730, 16783, 5104, 9898, 2]
+// Dependencies: [19, 17, 5044, 6871, 16687, 21, 5043, 16789, 16684, 504, 5730, 16790, 5104, 9899, 2]
 
-// Module 16781 (QuestDockBountyIllustration)
+// Module 16788 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 5104 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9898 */;
-import QuestDockHooks from "QuestDockHooks" /* 16677 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16782 */;
-import _modDef16783 from "module_16783" /* 16783 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9899 */;
+import QuestDockHooks from "QuestDockHooks" /* 16684 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16789 */;
+import _modDef16790 from "module_16790" /* 16790 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
-import QuestDockConstants from "QuestDockConstants" /* 16680 */;
+import QuestDockConstants from "QuestDockConstants" /* 16687 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ function QuestDock3DOrbsIllustration() {
   const obj2 = QuestDockHooks;
   let tmp6 = tmp5 && !obj2.useIsQuestDockExpanded();
   const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp6, accessible: false };
-  obj4 = { uri: _modDef16783 };
+  obj4 = { uri: _modDef16790 };
   const tmp4Result = FastImageDefault;
   const tmp7 = jsx;
   if (tmp6) {

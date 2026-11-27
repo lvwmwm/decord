@@ -1,10 +1,10 @@
-// Module ID: 10094
-// Function ID: 10095
+// Module ID: 10095
+// Function ID: 10096
 // Name: PlaintextResolvers
-// Dependencies: [32, 6883, 6931, 4892, 4973, 4955, 4949, 4914, 4975, 4985, 1387, 1071, 1390, 8349, 5659, 11, 6869, 4989, 8347, 4993, 2]
+// Dependencies: [32, 6883, 6931, 4892, 4973, 4955, 4949, 4914, 4975, 4985, 1387, 1071, 1390, 8350, 5659, 11, 6869, 4989, 8348, 4993, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 10094 (PlaintextResolvers)
+// Module 10095 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1071 */;
 import EmojiConstants from "EmojiConstants" /* 1390 */;
@@ -12,7 +12,7 @@ import GuildChannelStore2 from "GuildChannelStore" /* 4973 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4989 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import AutocompleteUtils from "AutocompleteUtils" /* 6869 */;
-import SlateUtils from "SlateUtils" /* 8349 */;
+import SlateUtils from "SlateUtils" /* 8350 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6931 */;
@@ -208,7 +208,7 @@ function resolvePlaintextInlineVoid(text, id5, id, arg3) {
     if (null != match) {
       const tmp8 = match[1];
       const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(id5);
-      let tmp11 = tmp4(8347)(disambiguatedEmojiContext, tmp8);
+      let tmp11 = tmp4(8348)(disambiguatedEmojiContext, tmp8);
       let channel = null;
       if (null != id) {
         let tmp13 = ChannelStore;

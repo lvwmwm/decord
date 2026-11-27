@@ -1,10 +1,10 @@
-// Module ID: 9427
-// Function ID: 9428
+// Module ID: 9428
+// Function ID: 9429
 // Name: useMaybeFetchCollectiblesCategoriesShared
 // Dependencies: [32, 19, 5660, 6311, 1073, 504, 6357, 6310, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 9427 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 9428 (useMaybeFetchCollectiblesCategoriesShared)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6310 */;
 import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 6357 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

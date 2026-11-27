@@ -1,10 +1,10 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9070
+// Function ID: 9071
 // Name: ContextMenuState
 // Dependencies: [19, 560, 1263, 1707, 5259, 1654, 2]
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState, useIsContextMenuActive
 
-// Module 9069 (ContextMenuState)
+// Module 9070 (ContextMenuState)
 import react_native from "react-native" /* 1263 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import _mod1707 from "module_1707" /* 1707 */;

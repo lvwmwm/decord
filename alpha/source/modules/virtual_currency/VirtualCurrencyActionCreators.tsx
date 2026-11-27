@@ -1,10 +1,10 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 9443
+// Function ID: 9444
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 6360, 1071, 3, 572, 1285, 5792, 9313, 1242, 2]
+// Dependencies: [5, 6360, 1071, 3, 572, 1285, 5792, 9314, 1242, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9442 (VirtualCurrencyActionCreators)
+// Module 9443 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
@@ -104,7 +104,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -205,7 +205,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               tmp61(billingError);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

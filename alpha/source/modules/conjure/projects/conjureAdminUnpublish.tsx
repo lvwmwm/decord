@@ -1,10 +1,10 @@
-// Module ID: 18598
-// Function ID: 18599
+// Module ID: 18609
+// Function ID: 18610
 // Name: conjureAdminUnpublish
-// Dependencies: [5, 19, 2165, 6163, 4973, 4914, 4975, 1387, 6934, 7692, 504, 6134, 12508, 2]
+// Dependencies: [5, 19, 2165, 6163, 4973, 4914, 4975, 1387, 6934, 7692, 504, 6134, 12516, 2]
 // Exports: conjureAdminUnpublishTarget, loadConjureAdminUnpublishLookup, useConjureAdminUnpublishLookup, useConjureAdminUnpublishTarget
 
-// Module 18598 (conjureAdminUnpublish)
+// Module 18609 (conjureAdminUnpublish)
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6934 */;
 import conjureAppInServer from "conjureAppInServer" /* 7692 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 const ConjureProjectStore = ConjureProjectStore2;
 let _require, c1, c2;
 
-const f115629 = () => {
+const f115893 = () => {
   project = null;
   const tmp = readUnknownBotUserId;
   if (null != closure_0) {
@@ -88,7 +88,7 @@ let obj = function _loadConjureAdminUnpublishLookup() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -119,7 +119,7 @@ let obj = function _loadConjureAdminUnpublishLookup() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -145,7 +145,7 @@ obj = function _loadBotServers() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -182,7 +182,7 @@ obj = function _loadBotServers() {
             c3 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         if (0 === c3) {
@@ -218,7 +218,7 @@ export function useConjureAdminUnpublishLookup(projectId) {
   const items = [ConjureProjectStore, UserStore, GuildStore, GuildChannelStore, ApplicationStore, UserProfileStore, PermissionStore];
   const items1 = [projectId];
   obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f115629, items1);
+  stateFromStores = obj.useStateFromStores(items, f115893, items1);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null != stateFromStores) {
@@ -235,7 +235,7 @@ export function useConjureAdminUnpublishTarget(id) {
   const items = [ConjureProjectStore, UserStore, GuildStore, GuildChannelStore, ApplicationStore, UserProfileStore, PermissionStore];
   const items1 = [id];
   obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f115629, items1);
+  const stateFromStores = obj.useStateFromStores(items, f115893, items1);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null != stateFromStores) {

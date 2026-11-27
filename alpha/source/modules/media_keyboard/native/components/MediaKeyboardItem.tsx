@@ -1,10 +1,10 @@
-// Module ID: 11100
-// Function ID: 11101
+// Module ID: 11101
+// Function ID: 11102
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8124, 11101, 21, 1654, 5043, 575, 5040, 1186, 10842, 5634, 504, 8134, 11102, 1112, 8154, 8136, 11103, 11104, 5253, 1495, 11105, 7153, 9618, 2]
+// Dependencies: [19, 17, 8124, 11102, 21, 1654, 5043, 575, 5040, 1186, 10843, 5634, 504, 8135, 11103, 1112, 8155, 8137, 11104, 11105, 5253, 1495, 11106, 7153, 9619, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 11100 (MediaKeyboardItem)
+// Module 11101 (MediaKeyboardItem)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -13,13 +13,13 @@ import _mod1654 from "module_1654" /* 1654 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import ImageIcon from "ImageIcon" /* 7153 */;
-import AttachmentIcon from "AttachmentIcon" /* 9618 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10842 */;
-import CameraIcon from "CameraIcon" /* 11105 */;
+import AttachmentIcon from "AttachmentIcon" /* 9619 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10843 */;
+import CameraIcon from "CameraIcon" /* 11106 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8124 */;
-import DeviceConstants from "DeviceConstants" /* 11101 */;
+import DeviceConstants from "DeviceConstants" /* 11102 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import ColorUtils_mod from "ColorUtils" /* 5040 */;

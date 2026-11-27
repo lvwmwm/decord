@@ -1,9 +1,9 @@
-// Module ID: 16182
-// Function ID: 16183
+// Module ID: 16189
+// Function ID: 16190
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 16183, 9555, 1071, 21, 5043, 575, 1501, 6145, 5730, 16184, 5634, 1112, 5641, 504, 16185, 7315, 6843, 6140, 16186, 11962, 16187, 16190, 5604, 12541, 2]
+// Dependencies: [32, 19, 17, 16190, 9556, 1071, 21, 5043, 575, 1501, 6145, 5730, 16191, 5634, 1112, 5641, 504, 16192, 7315, 6843, 6140, 16193, 11970, 16194, 16197, 5604, 12549, 2]
 
-// Module 16182 (SettingsAccountScreen)
+// Module 16189 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,14 +13,14 @@ import FastImageDefault from "FastImage" /* 5730 */;
 import TableRowGroup from "TableRowGroup" /* 6140 */;
 import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6843 */;
 import MFAUtils from "MFAUtils" /* 7315 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12541 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16186 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16187 */;
-import SettingLayoutDefault from "SettingLayout" /* 16190 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12549 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16193 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16194 */;
+import SettingLayoutDefault from "SettingLayout" /* 16197 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16183 */;
+import WebAuthnStore from "WebAuthnStore" /* 16190 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ function AccountTwoFALabel() {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(16185);
+  const obj2 = first(16192);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {

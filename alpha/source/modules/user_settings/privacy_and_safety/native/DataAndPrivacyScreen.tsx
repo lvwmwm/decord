@@ -1,14 +1,14 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17574
+// Function ID: 17575
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6841, 9555, 1071, 21, 17559, 1112, 2188, 8680, 1501, 16362, 16365, 11962, 16319, 16190, 2]
+// Dependencies: [19, 6841, 9556, 1071, 21, 17566, 1112, 2188, 8681, 1501, 16369, 16372, 11970, 16326, 16197, 2]
 // Exports: default
 
-// Module 17567 (DataAndPrivacyScreen)
+// Module 17574 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1112 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8680 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8681 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import react from "react" /* 19 */;
 import ConsentStore from "ConsentStore" /* 6841 */;
 import Constants from "Constants" /* 1071 */;
@@ -62,7 +62,7 @@ export default function DataAndPrivacySettings() {
   let stackNavigation;
   let obj = stackNavigation(1501);
   stackNavigation = obj.useStackNavigation();
-  let obj2 = stackNavigation(17559);
+  let obj2 = stackNavigation(17566);
   const pinotDataPrivacySections = obj2.usePinotDataPrivacySections();
   let obj3 = { settings: items, subLabel: format(prop, obj4) };
   items = [MobileUserSettings.USE_DATA_TO_IMPROVE_DISCORD];
@@ -170,8 +170,8 @@ export default function DataAndPrivacySettings() {
     HermesBuiltin.arraySpread(items, items3, tmp3 + 1);
     return createList(obj);
   }, items8);
-  const obj22 = { screen: stackNavigation(16319).SettingsScreen.DATA_AND_PRIVACY };
-  const tmp13 = items1(16319);
-  items9 = [closure_8(tmp13, obj22), closure_8(items1(16190), { node: memo })];
+  const obj22 = { screen: stackNavigation(16326).SettingsScreen.DATA_AND_PRIVACY };
+  const tmp13 = items1(16326);
+  items9 = [closure_8(tmp13, obj22), closure_8(items1(16197), { node: memo })];
   return closure_10(closure_9, obj21);
 };

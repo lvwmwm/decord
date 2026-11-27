@@ -1,10 +1,10 @@
-// Module ID: 15303
-// Function ID: 15304
+// Module ID: 15310
+// Function ID: 15311
 // Name: useFilteredGuilds
 // Dependencies: [19, 4914, 6164, 1387, 504, 38, 2]
 // Exports: default
 
-// Module 15303 (useFilteredGuilds)
+// Module 15310 (useFilteredGuilds)
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import SortedGuildStore from "SortedGuildStore" /* 6164 */;

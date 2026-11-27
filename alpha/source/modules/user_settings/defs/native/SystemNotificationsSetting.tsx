@@ -1,17 +1,17 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17110
+// Function ID: 17111
 // Name: SystemNotificationsSetting
-// Dependencies: [5, 9555, 1071, 7872, 13382, 7879, 13389, 1256, 10277, 11962, 1112, 2]
+// Dependencies: [5, 9556, 1071, 7872, 13390, 7879, 13397, 1256, 10278, 11970, 1112, 2]
 
-// Module 17103 (SystemNotificationsSetting)
+// Module 17110 (SystemNotificationsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
 import react_nativeDefault from "react-native" /* 7879 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13382 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13390 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -32,7 +32,7 @@ let obj = function _handleEnableSystemNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ let obj = function _handleEnableSystemNotification() {
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp26) {
         c3 = 3;

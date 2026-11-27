@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Error", left: "names", right: "category", bottom: "rejectWithError" };
+let closure_0 = { top: "Array", left: "s", right: "channel_id", bottom: "HTTP" };
 
 export default function insetsDiffer(arg0, arg1) {
   const rect = arg0 || closure_0;

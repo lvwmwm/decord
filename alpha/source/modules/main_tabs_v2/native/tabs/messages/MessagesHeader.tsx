@@ -1,10 +1,10 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 17762
+// Function ID: 17763
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1071, 21, 575, 13153, 6124, 5647, 5043, 1654, 5644, 5645, 17750, 5220, 13286, 7192, 7944, 9631, 1112, 5634, 7408, 17756, 5641, 5734, 2]
+// Dependencies: [19, 17, 1071, 21, 575, 13161, 6124, 5647, 5043, 1654, 5644, 5645, 17757, 5220, 13294, 7192, 7944, 9632, 1112, 5634, 7408, 17763, 5641, 5734, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 17755 (MessagesHeader)
+// Module 17762 (MessagesHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _modDef1654 from "module_1654" /* 1654 */;
@@ -13,8 +13,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 5734 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6124 */;
 import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7192 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7408 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13153 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17756 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13161 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17763 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -100,7 +100,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   MessagesHeaderTsx1.__workletHash = 7032090280260;
   MessagesHeaderTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(MessagesHeaderTsx1);
-  const tmp3Result = height(17750);
+  const tmp3Result = height(17757);
   const isHomeDrawerEnabled = tmp3Result.useIsHomeDrawerEnabled();
   const callback = obj.useCallback(() => {
     const obj = height(dependencyMap[13]);
@@ -142,7 +142,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   const tmp17 = HeaderDebugOverlayDefault("bespoke");
   const IconButton = tmp3(7944).IconButton;
   obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
-  PlusLargeIcon = tmp3(9631).PlusLargeIcon;
+  PlusLargeIcon = tmp3(9632).PlusLargeIcon;
   intl = tmp3(1112).intl;
   const obj4 = { style: memo, children: items3 };
   const obj5 = { style: tmp.headerPanelTitle, children: closure_6(Text, { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: stringResult }) };

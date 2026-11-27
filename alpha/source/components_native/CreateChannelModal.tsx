@@ -1,10 +1,10 @@
-// Module ID: 8521
-// Function ID: 8522
+// Module ID: 8522
+// Function ID: 8523
 // Name: CreateChannelModal
-// Dependencies: [32, 19, 17, 4896, 4910, 4892, 4914, 4975, 4985, 1387, 1071, 7842, 21, 5043, 575, 7146, 7154, 7167, 7163, 7160, 7153, 7172, 7144, 7152, 7164, 7162, 7159, 7151, 7171, 1112, 5634, 2188, 5105, 6144, 7254, 8088, 1186, 5618, 504, 38, 5659, 6809, 8522, 8523, 1501, 8524, 8526, 6013, 7191, 8529, 7751, 8530, 12, 8532, 6115, 7274, 6140, 8534, 8541, 7549, 7161, 7941, 8545, 6801, 8554, 1264, 8569, 5622, 7355, 2]
+// Dependencies: [32, 19, 17, 4896, 4910, 4892, 4914, 4975, 4985, 1387, 1071, 7842, 21, 5043, 575, 7146, 7154, 7167, 7163, 7160, 7153, 7172, 7144, 7152, 7164, 7162, 7159, 7151, 7171, 1112, 5634, 2188, 5105, 6144, 7254, 8088, 1186, 5618, 504, 38, 5659, 6809, 8523, 8524, 1501, 8525, 8527, 6013, 7191, 8530, 7751, 8531, 12, 8533, 6115, 7274, 6140, 8535, 8542, 7549, 7161, 7941, 8546, 6801, 8555, 1264, 8570, 5622, 7355, 2]
 // Exports: default
 
-// Module 8521 (CreateChannelModal)
+// Module 8522 (CreateChannelModal)
 import nativeDefault from "native" /* 575 */;
 import intl16 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -33,8 +33,8 @@ import NavigatorHeader from "NavigatorHeader" /* 7191 */;
 import FormRadio from "FormRadio" /* 7254 */;
 import HeaderActionButton from "HeaderActionButton" /* 7751 */;
 import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7842 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8529 */;
-import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8532 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8530 */;
+import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8533 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;

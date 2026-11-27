@@ -1,10 +1,10 @@
-// Module ID: 20272
-// Function ID: 20273
+// Module ID: 20330
+// Function ID: 20331
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
 // Dependencies: [19, 17, 1387, 21, 5043, 575, 1112, 563, 6807, 5730, 5634, 1089, 1186, 7554, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 20272 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 20330 (GuildRoleSubscriptionTierTemplateRolePreview)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;

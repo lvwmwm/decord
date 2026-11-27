@@ -1,12 +1,12 @@
-// Module ID: 17096
-// Function ID: 17097
+// Module ID: 17103
+// Function ID: 17104
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1258, 1379, 10277, 1263, 4958, 2]
+// Dependencies: [5, 1258, 1379, 10278, 1263, 4958, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 17096 (AndroidNotificationSettingsStore)
+// Module 17103 (AndroidNotificationSettingsStore)
 import _slicedToArray from "_slicedToArray" /* 4958 */;
-import PushNotificationDefault from "PushNotification" /* 10277 */;
+import PushNotificationDefault from "PushNotification" /* 10278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -132,7 +132,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp24) {
         if (0 === c2) {
           c4 = 3;
@@ -145,7 +145,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1258.createWithEqualityFn(() => ({ isLightsEnabled: "Error", isVibrationsEnabled: "names", isSoundsEnabled: "category", isNotifyEveryTime: "rejectWithError" }));
+let closure_4 = module_1258.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "s", isSoundsEnabled: "channel_id", isNotifyEveryTime: "HTTP" }));
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
 export function initializeAndroidNotificationSettingsStore() {

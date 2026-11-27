@@ -1,10 +1,10 @@
-// Module ID: 9027
-// Function ID: 9028
+// Module ID: 9028
+// Function ID: 9029
 // Name: ForumHooks
-// Dependencies: [5, 19, 6883, 6931, 6951, 8123, 4892, 6856, 4914, 4975, 6932, 1387, 9028, 8119, 9029, 8120, 8168, 1071, 4899, 1111, 504, 8167, 572, 12, 1255, 5604, 11, 8185, 4901, 9030, 6770, 8818, 8929, 9031, 7467, 2]
+// Dependencies: [5, 19, 6883, 6931, 6951, 8123, 4892, 6856, 4914, 4975, 6932, 1387, 9029, 8119, 9030, 8120, 8169, 1071, 4899, 1111, 504, 8168, 572, 12, 1255, 5604, 11, 8186, 4901, 9031, 6770, 8819, 8930, 9032, 7467, 2]
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanSearchForumPosts, useCanViewArchivedPosts, useChannelTemplate, useDefaultReactionEmoji, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumSearchState, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions, useUnreadThreadsCountForParent
 
-// Module 9027 (ForumHooks)
+// Module 9028 (ForumHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -14,10 +14,10 @@ import ChannelConstants from "ChannelConstants" /* 4899 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 4901 */;
 import useMessageAuthor from "useMessageAuthor" /* 6770 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7467 */;
-import ForumUtils from "ForumUtils" /* 8167 */;
-import ForumConstants from "ForumConstants" /* 8168 */;
-import ThreadUtils from "ThreadUtils" /* 8185 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8818 */;
+import ForumUtils from "ForumUtils" /* 8168 */;
+import ForumConstants from "ForumConstants" /* 8169 */;
+import ThreadUtils from "ThreadUtils" /* 8186 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8819 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
@@ -30,9 +30,9 @@ import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import UserStore from "UserStore" /* 1387 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 9028 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 9029 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8119 */;
-import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9029 */;
+import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9030 */;
 import ForumSearchStore from "ForumSearchStore" /* 8120 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -44,9 +44,9 @@ let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-const f94921 = (count) => count.count + count.burst_count;
-const f94922 = (burst_count) => burst_count.burst_count;
-const f94924 = () => PermissionStore.can(constants.READ_MESSAGE_HISTORY, closure_0);
+const f95154 = (count) => count.count + count.burst_count;
+const f95155 = (burst_count) => burst_count.burst_count;
+const f95157 = () => PermissionStore.can(constants.READ_MESSAGE_HISTORY, closure_0);
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
@@ -180,7 +180,7 @@ export function useMostUsedReaction(reactions) {
       reactions = [];
     }
     if (0 !== reactions.length) {
-      const items = [f94921, f94922];
+      const items = [f95154, f95155];
       const obj = _modDef12;
       return obj.orderBy(reactions, items, ["desc", "desc"])[0];
     }
@@ -289,7 +289,7 @@ export function useSomeForumPostReactions(message) {
     }
     let orderByResult = reactions;
     if (flag) {
-      const items = [f94921, f94922];
+      const items = [f95154, f95155];
       const obj = _modDef12;
       orderByResult = obj.orderBy(reactions, items, ["desc", "desc"]);
     }
@@ -366,7 +366,7 @@ export function useMaxPossibleForumPostReactions(message) {
     if (reactions == null) {
       reactions = [];
     }
-    const items = [f94921, f94922];
+    const items = [f95154, f95155];
     const obj = _modDef12;
     return obj.orderBy(reactions, items, ["desc", "desc"]);
   }, items1);
@@ -675,7 +675,7 @@ export function useCanSearchForumPosts(channel) {
   _require = channel;
   const items = [PermissionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f94924);
+  return obj.useStateFromStores(items, f95157);
 }
 export function useCanViewArchivedPosts(channel) {
   _require = channel;
@@ -729,7 +729,7 @@ export function useAutomaticForumSearch(channel, tagFilter, tagSetting) {
   _require = channel;
   let obj2 = require("get initialized");
   const items1 = [PermissionStore];
-  const stateFromStores = obj2.useStateFromStores(items1, f94924);
+  const stateFromStores = obj2.useStateFromStores(items1, f95157);
   const ref = isSearchLoading.useRef(null);
   const useRef = isSearchLoading.useRef;
   set = new Set();
@@ -772,7 +772,7 @@ export function useAutomaticForumSearch(channel, tagFilter, tagSetting) {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     let c2;
@@ -811,7 +811,7 @@ export function useAutomaticForumSearch(channel, tagFilter, tagSetting) {
                           c2 = 0;
                         }
                         c0 = 3;
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp15) {
                       if (0 === c2) {

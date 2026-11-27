@@ -1,17 +1,17 @@
-// Module ID: 10775
-// Function ID: 10776
+// Module ID: 10776
+// Function ID: 10777
 // Name: useCreateThread
-// Dependencies: [5, 19, 8117, 5048, 6379, 10060, 8244, 8344, 10064, 10062, 10776, 8132, 8147, 10065, 2]
+// Dependencies: [5, 19, 8117, 5048, 6379, 10061, 8245, 8345, 10065, 10063, 10777, 8133, 8148, 10066, 2]
 // Exports: default, useCreateForumPost
 
-// Module 10775 (useCreateThread)
+// Module 10776 (useCreateThread)
 import MessageConstants from "MessageConstants" /* 5048 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
 import DraftStore from "DraftStore" /* 8117 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
-import MessageParserDefault from "MessageParser" /* 8344 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10062 */;
-import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 10064 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
+import MessageParserDefault from "MessageParser" /* 8345 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10063 */;
+import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 10065 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ export default function useCreateThread(arg0) {
   let useDefaultThreadName;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  let obj = analyticsLocations(10060);
+  let obj = analyticsLocations(10061);
   let obj2 = {
     parentChannel,
     parentMessageId,
@@ -111,7 +111,7 @@ export function useCreateForumPost(parentChannel) {
   const callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
-  const tmp2 = parentChannel(10060);
+  const tmp2 = parentChannel(10061);
   let obj = { parentChannel, name: str, appliedTags, analyticsLocations, onThreadCreated, upload: callback };
   str = undefined;
   const useCreateForumPostCommon = tmp2.useCreateForumPostCommon;

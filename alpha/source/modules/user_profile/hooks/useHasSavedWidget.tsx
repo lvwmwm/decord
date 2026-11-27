@@ -1,10 +1,10 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14584
+// Function ID: 14585
 // Name: useHasSavedWidget
 // Dependencies: [502, 6163, 504, 2]
 // Exports: useHasSavedWidget
 
-// Module 14577 (useHasSavedWidget)
+// Module 14584 (useHasSavedWidget)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;
 import size from "module_2" /* 2 */;

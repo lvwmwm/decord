@@ -1,18 +1,18 @@
-// Module ID: 18371
-// Function ID: 18372
+// Module ID: 18378
+// Function ID: 18379
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 4914, 8913, 21, 5043, 575, 9420, 7052, 504, 5252, 8917, 8922, 1654, 5644, 1504, 6152, 17398, 5634, 1112, 5050, 2]
+// Dependencies: [32, 19, 17, 4914, 8914, 21, 5043, 575, 9421, 7052, 504, 5252, 8918, 8923, 1654, 5644, 1504, 6152, 17405, 5634, 1112, 5050, 2]
 // Exports: default
 
-// Module 18371 (NewContentPill)
+// Module 18378 (NewContentPill)
 import nativeDefault from "native" /* 575 */;
 import GuildIcon from "GuildIcon" /* 7052 */;
-import ClipView from "ClipView" /* 9420 */;
+import ClipView from "ClipView" /* 9421 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import ICYMIStore from "ICYMIStore" /* 8913 */;
+import ICYMIStore from "ICYMIStore" /* 8914 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

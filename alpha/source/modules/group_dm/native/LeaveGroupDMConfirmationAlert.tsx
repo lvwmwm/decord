@@ -1,10 +1,10 @@
-// Module ID: 10058
-// Function ID: 10059
+// Module ID: 10059
+// Function ID: 10060
 // Name: LeaveGroupDMConfirmationAlert
 // Dependencies: [32, 19, 21, 6052, 6140, 7181, 1112, 5257, 6048, 2]
 // Exports: openLeaveGroupDMConfirmationAlert
 
-// Module 10058 (LeaveGroupDMConfirmationAlert)
+// Module 10059 (LeaveGroupDMConfirmationAlert)
 import intl2 from "intl" /* 1112 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import useAlertStore from "useAlertStore" /* 6048 */;

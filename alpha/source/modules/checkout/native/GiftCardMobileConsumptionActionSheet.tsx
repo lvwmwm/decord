@@ -1,10 +1,10 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13915
+// Function ID: 13916
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 4889, 21, 5043, 575, 1629, 5257, 5271, 6115, 13909, 5634, 1112, 2485, 5641, 2]
+// Dependencies: [19, 17, 4889, 21, 5043, 575, 1629, 5257, 5271, 6115, 13916, 5634, 1112, 2485, 5641, 2]
 // Exports: default
 
-// Module 13908 (GiftCardMobileConsumptionActionSheet)
+// Module 13915 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
@@ -88,7 +88,7 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
   Stack = markAsDismissed(6115).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(13909).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(13916).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
   const obj5 = { variant: "body-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2485.V3DI1E) };
   const Text = markAsDismissed(5634).Text;

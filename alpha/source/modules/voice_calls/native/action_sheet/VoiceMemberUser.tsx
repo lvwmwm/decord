@@ -1,17 +1,17 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14348
+// Function ID: 14349
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 6923, 1191, 502, 6940, 4892, 4955, 2132, 6014, 1071, 21, 5043, 575, 8650, 6943, 504, 5050, 14342, 14343, 1186, 14344, 14345, 14346, 14347, 10183, 5634, 1112, 8088, 8399, 10573, 5219, 8449, 5257, 6152, 7849, 6807, 7863, 5099, 2]
+// Dependencies: [19, 17, 6923, 1191, 502, 6940, 4892, 4955, 2132, 6014, 1071, 21, 5043, 575, 8651, 6943, 504, 5050, 14349, 14350, 1186, 14351, 14352, 14353, 14354, 10184, 5634, 1112, 8088, 8400, 10574, 5219, 8450, 5257, 6152, 7849, 6807, 7863, 5099, 2]
 
-// Module 14341 (VoiceMemberUser)
+// Module 14348 (VoiceMemberUser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7849 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8399 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8449 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8400 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8450 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SoundboardStore from "SoundboardStore" /* 6923 */;
@@ -90,7 +90,7 @@ function StreamingUserRow(user) {
     let guildId;
     const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
     const tmp15 = closure_3;
-    tmp17 = channel(10573);
+    tmp17 = channel(10574);
     if (channel != null) {
       guildId = channel.getGuildId();
     }
@@ -235,9 +235,9 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
   ({ isActionSheet, onPress: dependencyMap } = user);
   const isSpectating = user.isSpectating;
   const merged = Object.assign(user, Object.assign({ user: 0, name: 0, channel: 0, voiceState: 0, withStream: 0, isSpectating: 0, isActionSheet: 0, onPress: 0 }));
-  const withLocalSelfMuteDeaf = user(8650).withLocalSelfMuteDeaf;
-  const tmp4 = user(8650);
-  let obj = user(8650);
+  const withLocalSelfMuteDeaf = user(8651).withLocalSelfMuteDeaf;
+  const tmp4 = user(8651);
+  let obj = user(8651);
   const result = withLocalSelfMuteDeaf(voiceState, obj.useLocalSelfMuteDeaf());
   const tmp5 = closure_15();
   const tmp6 = closure_16();
@@ -330,7 +330,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       const tmp26 = closure_13;
       const tmp27 = id;
       if (isSpectating) {
-        const obj11 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14347), style: tmp22 };
+        const obj11 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14354), style: tmp22 };
         const Icon = tmp2(1186).Icon;
         tmp23Result = tmp23(Icon, obj11);
       }
@@ -340,9 +340,9 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
         let tmp8Result;
         const tmp2Result = user(5050);
         if (tmp2Result.isThemeDark(stateFromStores1)) {
-          tmp8Result = tmp8(14342);
+          tmp8Result = tmp8(14349);
         } else {
-          tmp8Result = tmp8(14343);
+          tmp8Result = tmp8(14350);
         }
         const obj12 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result, style: tmp5.voiceStatusIconMargin, color: tmp22.tintColor, disableColor: localMute };
         const Icon2 = tmp2(1186).Icon;
@@ -351,7 +351,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       items4[1] = tmp23Result5;
       let tmp23Result6 = null;
       if (tmp16) {
-        const obj13 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14344), style: tmp22 };
+        const obj13 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14351), style: tmp22 };
         const Icon3 = tmp2(1186).Icon;
         tmp23Result6 = tmp23(Icon3, obj13);
       }
@@ -361,10 +361,10 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
         let obj15;
         const Icon4 = tmp2(1186).Icon;
         if (localVideoDisabled) {
-          obj15 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14345), style: tmp5.voiceStatusIconMargin, disableColor: true };
-          const obj14 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14345), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          obj15 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14352), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          const obj14 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14352), style: tmp5.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj15 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14346), style: tmp22 };
+          obj15 = { size: user(1186).Icon.Sizes.REFRESH_SMALL_16, source: channel(14353), style: tmp22 };
         }
         tmp23Result7 = tmp23(Icon4, obj15);
       }
@@ -401,7 +401,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
   }
   if (localVideoAutoDisabled) {
     const obj21 = { style: tmp5.autoDisabledVideo, children: items7 };
-    const obj22 = { source: channel(10183), size: user(1186).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj22 = { source: channel(10184), size: user(1186).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const Icon5 = tmp2(1186).Icon;
     items7 = [closure_12(Icon5, obj22), ];
     const obj23 = { variant: "body-xs/medium", color: "text-default", style: tmp5.autoDisabledVideoLabel, children: intl3.string(user(1112).t.m2Hyj0) };

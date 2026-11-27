@@ -1,11 +1,11 @@
-// Module ID: 18467
-// Function ID: 18468
+// Module ID: 18474
+// Function ID: 18475
 // Name: openConjurePublishReview
-// Dependencies: [18468, 2]
+// Dependencies: [18475, 2]
 // Exports: openConjurePublishReview
 
-// Module 18467 (openConjurePublishReview)
-import showConjurePublishSheetDefault from "showConjurePublishSheet" /* 18468 */;
+// Module 18474 (openConjurePublishReview)
+import showConjurePublishSheetDefault from "showConjurePublishSheet" /* 18475 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/openConjurePublishReview.native.tsx");

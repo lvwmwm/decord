@@ -1,10 +1,10 @@
-// Module ID: 17193
-// Function ID: 17194
+// Module ID: 17200
+// Function ID: 17201
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 5043, 575, 17194, 4921, 5052, 1112, 6115, 5634, 5798, 1379, 6145, 17196, 2]
+// Dependencies: [5, 32, 19, 21, 5043, 575, 17201, 4921, 5052, 1112, 6115, 5634, 5798, 1379, 6145, 17203, 2]
 // Exports: default, useDiskUsageMeasurement
 
-// Module 17193 (CacheActionsDiskUsageSection)
+// Module 17200 (CacheActionsDiskUsageSection)
 import nativeDefault from "native" /* 575 */;
 import intl24 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5634 */;
 import FileSizeUtils from "FileSizeUtils" /* 5798 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
 import Card_Card from "Card/Card" /* 6145 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 17196 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 17203 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -260,7 +260,7 @@ export function useDiskUsageMeasurement() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp43;
@@ -373,7 +373,7 @@ export function useDiskUsageMeasurement() {
             closure_129_1.current = false;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp43) {
           if (0 === c3) {
             c5 = 3;

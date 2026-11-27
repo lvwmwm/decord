@@ -1,12 +1,12 @@
-// Module ID: 11281
-// Function ID: 11282
+// Module ID: 11282
+// Function ID: 11283
 // Name: CollectiblesCollectionSalePromotionUtils
-// Dependencies: [11127, 7595, 11251, 2]
+// Dependencies: [11128, 7595, 11252, 2]
 // Exports: getCollectionSalePromotionForCollectiblesProduct
 
-// Module 11281 (CollectiblesCollectionSalePromotionUtils)
+// Module 11282 (CollectiblesCollectionSalePromotionUtils)
 import StorefrontTypes from "StorefrontTypes" /* 7595 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 11127 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 11128 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = StorefrontPromotionRecord.getCollectiblesCollectionSale;
@@ -23,7 +23,7 @@ export function getCollectionSalePromotionForCollectiblesProduct(skuId, rewardSt
     const tmp4 = require;
     if (rewardStatus.rewardStatus === StorefrontTypes.StorefrontPromotionRewardEligibilityStatus.EARNED) {
       tmp3 = null;
-      const tmp4Result = tmp4(11251);
+      const tmp4Result = tmp4(11252);
       if (tmp4Result.isStorefrontPromotionActive(rewardStatus, timestamp)) {
         const skuIds = rewardStatus.skuIds;
         let hasItem;

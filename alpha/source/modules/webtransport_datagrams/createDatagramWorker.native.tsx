@@ -1,10 +1,10 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15102
+// Function ID: 15103
 // Name: createDatagramWorker
 // Dependencies: [2]
 // Exports: createDatagramWorker
 
-// Module 15095 (createDatagramWorker)
+// Module 15102 (createDatagramWorker)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/webtransport_datagrams/createDatagramWorker.native.tsx");

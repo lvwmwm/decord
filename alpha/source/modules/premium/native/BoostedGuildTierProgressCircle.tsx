@@ -1,17 +1,17 @@
-// Module ID: 13968
-// Function ID: 13969
+// Module ID: 13975
+// Function ID: 13976
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 13969, 13973, 13974, 13975, 10369, 5730, 10363, 13584, 5634, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 13976, 13980, 13981, 13982, 10370, 5730, 10364, 13592, 5634, 2]
 // Exports: default
 
-// Module 13968 (BoostedGuildTierProgressCircle)
+// Module 13975 (BoostedGuildTierProgressCircle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 10363 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 10369 */;
-import ProgressCircleDefault from "ProgressCircle" /* 13584 */;
-import Tier048Px from "Tier048Px" /* 13969 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 10364 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 10370 */;
+import ProgressCircleDefault from "ProgressCircle" /* 13592 */;
+import Tier048Px from "Tier048Px" /* 13976 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,11 +75,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== hasOwnProperty.NONE) {
         const premiumTier = guild.premiumTier;
         if (hasOwnProperty.TIER_1 === premiumTier) {
-          tmp2Result4 = tmp2(13973);
+          tmp2Result4 = tmp2(13980);
         } else if (hasOwnProperty.TIER_2 === premiumTier) {
-          tmp2Result4 = tmp2(13974);
+          tmp2Result4 = tmp2(13981);
         } else if (hasOwnProperty.TIER_3 === premiumTier) {
-          tmp2Result4 = tmp2(13975);
+          tmp2Result4 = tmp2(13982);
         }
       }
       const obj5 = { source: tmp2Result4, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };

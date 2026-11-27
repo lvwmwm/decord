@@ -1,10 +1,10 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15479
+// Function ID: 15480
 // Name: GhostInput
 // Dependencies: [109, 19, 21, 5043, 5634, 575, 7294, 5106, 7282, 7275, 7297, 7300, 7276, 2]
 // Exports: GhostInput
 
-// Module 15472 (GhostInput)
+// Module 15479 (GhostInput)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5106 */;

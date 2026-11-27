@@ -1,9 +1,9 @@
-// Module ID: 13229
-// Function ID: 13230
+// Module ID: 13237
+// Function ID: 13238
 // Name: VoicePanelHeaderGlassBlur
 // Dependencies: [19, 17, 21, 5043, 1379, 1654, 5644, 5645, 5252, 5610, 5050, 7055, 2]
 
-// Module 13229 (VoicePanelHeaderGlassBlur)
+// Module 13237 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import shared from "shared" /* 5050 */;

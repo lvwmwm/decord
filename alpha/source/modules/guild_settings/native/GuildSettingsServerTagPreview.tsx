@@ -1,13 +1,13 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15328
+// Function ID: 15329
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1387, 8579, 21, 5043, 575, 504, 6807, 1413, 15322, 5634, 1112, 6115, 5730, 15323, 8722, 15324, 15368, 5641, 6145, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 8580, 21, 5043, 575, 504, 6807, 1413, 15329, 5634, 1112, 6115, 5730, 15330, 8723, 15331, 15375, 5641, 6145, 2]
 // Exports: default
 
-// Module 15321 (GuildSettingsServerTagPreview)
+// Module 15328 (GuildSettingsServerTagPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildTagConstants from "GuildTagConstants" /* 8579 */;
+import GuildTagConstants from "GuildTagConstants" /* 8580 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -123,7 +123,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -188,7 +188,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   let obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  const obj6 = { source: tmp4(15323), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj6 = { source: tmp4(15330), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result = tmp4(5730);
   items4 = [tmp17(tmp4Result, obj6), ];
   const obj7 = { style: tmp.messageBody, children: items5 };
@@ -213,10 +213,10 @@ export default function GuildSettingsServerTagPreview(guildId) {
   if (tmp17Result3) {
     const obj13 = { guildTag: tag, guildBadge: tmp17Result };
     tmp17Result = undefined;
-    const BaseGuildTagChiplet = tmp2(8722).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp2(8723).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
-      const GuildBadge = tmp2(15324).GuildBadge;
+      const GuildBadge = tmp2(15331).GuildBadge;
       ({ SIZE_12: obj15.width, SIZE_12: obj15.height } = GuildTagBadgeSize);
       tmp17Result = tmp17(GuildBadge, size);
     }
@@ -233,7 +233,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const obj16 = { style: items10, children: items11 };
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
-  const obj17 = { source: tmp4(15368), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj17 = { source: tmp4(15375), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result2 = tmp4(5730);
   items11 = [tmp17(tmp4Result2, obj17), ];
   const obj18 = { style: tmp.messageBody, children: items12 };

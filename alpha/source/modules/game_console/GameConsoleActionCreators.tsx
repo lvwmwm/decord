@@ -1,15 +1,15 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 10512
+// Function ID: 10513
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 5851, 5853, 5852, 1071, 1256, 572, 6046, 1112, 6002, 10512, 1285, 1242, 2]
+// Dependencies: [5, 5851, 5853, 5852, 1071, 1256, 572, 6046, 1112, 6002, 10513, 1285, 1242, 2]
 // Exports: connectToRemote, fetchDevices, getConnectNonce, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, waitForSession
 
-// Module 10511 (GameConsoleActionCreators)
+// Module 10512 (GameConsoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import AudioSettingsUtils from "AudioSettingsUtils" /* 6002 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 10512 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 10513 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
 import SessionsStore from "SessionsStore" /* 5853 */;
@@ -39,7 +39,7 @@ let obj = function _disconnectRemote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -122,7 +122,7 @@ let obj = function _disconnectRemote() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         let closure_2 = tmp30;
@@ -200,7 +200,7 @@ obj = function _fetchDevices() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -284,7 +284,7 @@ obj = function _cancelCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ obj = function _cancelCommand() {
             obj = closure_132_1(closure_132_2[6]);
             obj.dispatch(obj11);
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_5 = tmp25;

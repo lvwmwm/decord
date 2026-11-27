@@ -1,10 +1,10 @@
-// Module ID: 18546
-// Function ID: 18547
+// Module ID: 18557
+// Function ID: 18558
 // Name: conjurePublishSchedule
 // Dependencies: [1112, 4245, 2]
 // Exports: formatPublishScheduleTime, publishScheduleDetails
 
-// Module 18546 (conjurePublishSchedule)
+// Module 18557 (conjurePublishSchedule)
 import intl7 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import size from "module_2" /* 2 */;

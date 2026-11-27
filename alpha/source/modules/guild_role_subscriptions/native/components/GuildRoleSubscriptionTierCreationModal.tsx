@@ -1,18 +1,18 @@
-// Module ID: 20229
-// Function ID: 20230
+// Module ID: 20287
+// Function ID: 20288
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 20219, 16816, 21, 16836, 5724, 1112, 20230, 20215, 20231, 2]
+// Dependencies: [5, 32, 19, 20277, 16823, 21, 16843, 5724, 1112, 20288, 20273, 20289, 2]
 // Exports: default
 
-// Module 20229 (GuildRoleSubscriptionTierCreationModal)
+// Module 20287 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16836 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16843 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20219 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16816 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20277 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16823 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -50,7 +50,7 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
               closure_128_3();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c2 = 3;
@@ -125,9 +125,9 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(20230).EditStateContextProvider;
+  const EditStateContextProvider = guildId(20288).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20215).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20273).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

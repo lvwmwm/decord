@@ -1,9 +1,9 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 8372
+// Function ID: 8373
 // Name: QuestRewardTypes
 // Dependencies: [2]
 
-// Module 8371 (QuestRewardTypes)
+// Module 8372 (QuestRewardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardTypes.tsx");

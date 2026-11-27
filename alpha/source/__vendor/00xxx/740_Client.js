@@ -32,7 +32,7 @@ const _mod739 = tmp2(739);
 const DEFAULT_TRANSPORT_BUFFER_SIZE = tmp2(742);
 const _INTERNAL_captureLog = tmp2(744);
 const _INTERNAL_captureMetric = tmp2(749);
-const f79814 = (item) => {
+const f80042 = (item) => {
   if (Array.isArray(item)) {
     let num4;
     const first = item[0];
@@ -91,7 +91,7 @@ function estimateMetricSizeInBytes(name) {
     c0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f79814);
+    const item = values.forEach(f80042);
     num3 = c0;
   }
   return num + 8 + num3;
@@ -109,7 +109,7 @@ function estimateLogSizeInBytes(message) {
     closure_0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f79814);
+    const item = values.forEach(f80042);
     num3 = closure_0;
   }
   return num + num3;
@@ -126,12 +126,12 @@ class Client {
   constructor(_options) {
     let envelopeEndpointWithUrlEncodedAuth;
     let recordDroppedEvent;
-    const f79811 = () => {
+    const f80039 = () => {
       sum = 0;
       clearTimeout(closure_3);
       c5 = false;
     };
-    const f79812 = (arg0) => {
+    const f80040 = (arg0) => {
       sum = sum + closure_1(arg0);
       if (sum >= 800000) {
         closure_2(self);
@@ -146,7 +146,7 @@ class Client {
         }
       }
     };
-    const f79813 = () => {
+    const f80041 = () => {
       closure_2(self);
     };
     const self = this;
@@ -208,9 +208,9 @@ class Client {
       let c3;
       c4 = 0;
       c5 = false;
-      self.on("flushLogs", f79811);
-      self.on("afterCaptureLog", f79812);
-      self.on("flush", f79813);
+      self.on("flushLogs", f80039);
+      self.on("afterCaptureLog", f80040);
+      self.on("flush", f80041);
     }
     let flag2 = self._options.enableMetrics;
     if (flag2 == null) {
@@ -230,9 +230,9 @@ class Client {
       closure_3 = undefined;
       let sum = 0;
       c5 = false;
-      self.on("flushMetrics", f79811);
-      self.on("afterCaptureMetric", f79812);
-      self.on("flush", f79813);
+      self.on("flushMetrics", f80039);
+      self.on("afterCaptureMetric", f80040);
+      self.on("flush", f80041);
     }
   }
 }
@@ -646,7 +646,7 @@ _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -807,7 +807,7 @@ React = _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

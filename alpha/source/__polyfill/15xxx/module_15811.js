@@ -1,44 +1,26 @@
 // Module ID: 15811
 // Function ID: 15812
-// Dependencies: []
+// Dependencies: [15812, 15816, 15819]
 
 // Module 15811
-const obj = {
-  isASCIIDigit(decodeResult) {
-    return decodeResult >= 48 && decodeResult <= 57;
-  },
-  isASCIIAlpha(input) {
-    let tmp = input >= 65 && input <= 90;
-    if (!tmp) {
-      tmp = input >= 97 && input <= 122;
-      const tmp2 = input >= 97 && input <= 122;
-    }
-    return tmp;
-  },
-  isASCIIAlphanumeric(arg0) {
-    let tmp = arg0 >= 65 && arg0 <= 90;
-    if (!tmp) {
-      tmp = arg0 >= 97 && arg0 <= 122;
-      const tmp2 = arg0 >= 97 && arg0 <= 122;
-    }
-    if (!tmp) {
-      tmp = arg0 >= 48 && arg0 <= 57;
-      const tmp3 = arg0 >= 48 && arg0 <= 57;
-    }
-    return tmp;
-  },
-  isASCIIHex(decodeResult) {
-    let tmp = decodeResult >= 48 && decodeResult <= 57;
-    if (!tmp) {
-      tmp = decodeResult >= 65 && decodeResult <= 70;
-      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
-    }
-    if (!tmp) {
-      tmp = decodeResult >= 97 && decodeResult <= 102;
-      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
-    }
-    return tmp;
-  }
-};
+import _mod15812 from "module_15812" /* 15812 */;
+import _mod15816 from "module_15816" /* 15816 */;
+import _mod15819 from "module_15819" /* 15819 */;
 
-export default obj;
+const obj = {};
+const _URL = _mod15812.URL;
+_URL.install(obj);
+const _URLSearchParams = _mod15812.URLSearchParams;
+_URLSearchParams.install(obj);
+({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
+
+export const parseURL = _mod15816.parseURL;
+export const basicURLParse = _mod15816.basicURLParse;
+export const serializeURL = _mod15816.serializeURL;
+export const serializeHost = _mod15816.serializeHost;
+export const serializeInteger = _mod15816.serializeInteger;
+export const serializeURLOrigin = _mod15816.serializeURLOrigin;
+export const setTheUsername = _mod15816.setTheUsername;
+export const setThePassword = _mod15816.setThePassword;
+export const cannotHaveAUsernamePasswordPort = _mod15816.cannotHaveAUsernamePasswordPort;
+export const percentDecode = _mod15819.percentDecode;

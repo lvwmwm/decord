@@ -1,10 +1,10 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11157
+// Function ID: 11158
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 6383, 1387, 1112, 2943, 11157, 504, 5075, 4876, 6138, 6388, 2]
+// Dependencies: [19, 6383, 1387, 1112, 2943, 11158, 504, 5075, 4876, 6138, 6388, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, useGiftingBadgeCoachmarkVariant
 
-// Module 11156 (GiftingBadgesUtils)
+// Module 11157 (GiftingBadgesUtils)
 import intl2 from "intl" /* 1112 */;
 import _modDef2943 from "module_2943" /* 2943 */;
 import BadgeId from "BadgeId" /* 6138 */;

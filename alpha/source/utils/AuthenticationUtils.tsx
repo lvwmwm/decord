@@ -1,10 +1,10 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8332
+// Function ID: 8333
 // Name: AuthenticationUtils
 // Dependencies: [1097, 2]
 // Exports: getToken, isAuthenticated
 
-// Module 8331 (AuthenticationUtils)
+// Module 8332 (AuthenticationUtils)
 import TokenManagerAll from "TokenManager" /* 1097 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 8943
+// Function ID: 8944
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 8302, 8305, 8913, 4892, 6391, 8936, 8943, 8944, 21, 5043, 575, 1495, 8945, 504, 8940, 8939, 7197, 8962, 5725, 1112, 1255, 8964, 6048, 8965, 8966, 6126, 8999, 9000, 6801, 5259, 5260, 5724, 7538, 1379, 9003, 7751, 5739, 10591, 11524, 14107, 11538, 2]
+// Dependencies: [5, 32, 19, 17, 8303, 8306, 8914, 4892, 6391, 8937, 8944, 8945, 21, 5043, 575, 1495, 8946, 504, 8941, 8940, 7197, 8963, 5725, 1112, 1255, 8965, 6048, 8966, 8967, 6126, 9000, 9001, 6801, 5259, 5260, 5724, 7538, 1379, 9004, 7751, 5739, 10592, 11532, 14114, 11546, 2]
 // Exports: default
 
-// Module 8942 (ForwardModal)
+// Module 8943 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -16,21 +16,21 @@ import LinkIcon from "LinkIcon" /* 5739 */;
 import ChannelUtils from "ChannelUtils" /* 6801 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 8939 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 8940 */;
-import ForwardConstants from "ForwardConstants" /* 8943 */;
-import UserRowConstants from "UserRowConstants" /* 8944 */;
-import formatResults from "formatResults" /* 8945 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 8962 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 8940 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 8941 */;
+import ForwardConstants from "ForwardConstants" /* 8944 */;
+import UserRowConstants from "UserRowConstants" /* 8945 */;
+import formatResults from "formatResults" /* 8946 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 8963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8302 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8305 */;
-import ICYMIStore from "ICYMIStore" /* 8913 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8303 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8306 */;
+import ICYMIStore from "ICYMIStore" /* 8914 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import MessageStore from "MessageStore" /* 6391 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8936 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8937 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -210,7 +210,7 @@ export default function ForwardModal(message) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -367,7 +367,7 @@ export default function ForwardModal(message) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

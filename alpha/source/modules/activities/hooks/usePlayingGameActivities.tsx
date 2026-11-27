@@ -1,11 +1,11 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 8717
+// Function ID: 8718
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 6014, 7654, 504, 8717, 2]
+// Dependencies: [19, 502, 6014, 7654, 504, 8718, 2]
 // Exports: default
 
-// Module 8716 (usePlayingGameActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8717 */;
+// Module 8717 (usePlayingGameActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8718 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 6014 */;

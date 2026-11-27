@@ -1,9 +1,9 @@
-// Module ID: 19174
-// Function ID: 19175
+// Module ID: 19190
+// Function ID: 19191
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 575, 5043, 4980, 1112, 9076, 8708, 19175, 5105, 2]
+// Dependencies: [19, 17, 21, 575, 5043, 4980, 1112, 9077, 8709, 19191, 5105, 2]
 
-// Module 19174 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 19190 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PermissionUtils from "PermissionUtils" /* 4980 */;
@@ -125,20 +125,23 @@ let closure_9 = createStyles(obj);
 let items = [PermissionUtils.DENY, PermissionUtils.PASSTHROUGH, PermissionUtils.ALLOW];
 const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbox(permissionTitle) {
   let disabled;
-  let length;
+  let states;
   let str;
   permissionTitle = permissionTitle.permissionTitle;
   ({ value: importDefault, disabled } = permissionTitle);
   if (disabled === undefined) {
     disabled = false;
   }
-  const onValueChange = permissionTitle.onValueChange;
+  ({ onValueChange: dependencyMap, states } = permissionTitle);
+  if (states === undefined) {
+    states = items;
+  }
   let tmp = closure_9();
   const styles = tmp;
   items = [tmp.ternaryCheckBox, ];
   let disabled2 = disabled;
   let tmp2 = jsx;
-  const tmp3 = closure_4;
+  const tmp3 = styles;
   if (disabled) {
     disabled2 = tmp.disabled;
   }
@@ -147,7 +150,7 @@ const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbo
     pointerEvents: str,
     accessibilityRole: "radiogroup",
     accessibilityLabel: permissionTitle,
-    children: items.map((type, index) => {
+    children: states.map((type, index) => {
       let tmp4;
       permissionTitle = type;
       const tmp = jsx;
@@ -158,7 +161,7 @@ const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbo
         styles,
         hitSlop: tmp4,
         onPress() {
-          if (onValueChange != null) {
+          if (dependencyMap != null) {
             tmp(type);
           }
         }
@@ -167,7 +170,7 @@ const memoResult = react.memo(function ChannelSettingsPermissionsOverrideCheckbo
       if (0 === index) {
         tmp4 = closure_1_6;
       } else {
-        tmp4 = index === items.length - 1 ? closure_1_8 : closure_1_7;
+        tmp4 = index === tmp3 - 1 ? closure_1_8 : closure_1_7;
       }
       return tmp(tmp2, obj, "checkbox-" + index);
     })

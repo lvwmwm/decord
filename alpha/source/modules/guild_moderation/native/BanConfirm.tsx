@@ -1,9 +1,9 @@
-// Module ID: 12509
-// Function ID: 12510
+// Module ID: 12517
+// Function ID: 12518
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 4914, 1387, 21, 1112, 1088, 5043, 575, 5618, 9799, 504, 6991, 5730, 12510, 5634, 5099, 7251, 7253, 7440, 5641, 2]
+// Dependencies: [32, 19, 17, 4914, 1387, 21, 1112, 1088, 5043, 575, 5618, 9800, 504, 6991, 5730, 12518, 5634, 5099, 7251, 7253, 7440, 5641, 2]
 
-// Module 12509 (BanConfirm)
+// Module 12517 (BanConfirm)
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import intl7 from "intl" /* 1112 */;
@@ -127,7 +127,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   let tmp4Result5;
   let tmp4Result6;
   let v8jV9fx;
-  const f102608 = () => ({ banning: false, banError: false });
+  const f102849 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
@@ -146,10 +146,10 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   const ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f102608), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f102849), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f102608), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f102849), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {

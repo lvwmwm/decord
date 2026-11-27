@@ -1,10 +1,10 @@
-// Module ID: 14450
-// Function ID: 14451
+// Module ID: 14457
+// Function ID: 14458
 // Name: utils
 // Dependencies: [1071, 1405, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 14450 (utils)
+// Module 14457 (utils)
 import Constants from "Constants" /* 1071 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import size from "module_2" /* 2 */;

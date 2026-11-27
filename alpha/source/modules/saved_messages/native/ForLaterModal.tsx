@@ -1,16 +1,16 @@
-// Module ID: 11716
-// Function ID: 11717
+// Module ID: 11724
+// Function ID: 11725
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 5043, 575, 1629, 1112, 11714, 7198, 9004, 1379, 7191, 6130, 11717, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1629, 1112, 11722, 7198, 9005, 1379, 7191, 6130, 11725, 2]
 // Exports: default
 
-// Module 11716 (ForLaterModal)
+// Module 11724 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import HeaderShared from "HeaderShared" /* 9004 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 11717 */;
+import HeaderShared from "HeaderShared" /* 9005 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 11725 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

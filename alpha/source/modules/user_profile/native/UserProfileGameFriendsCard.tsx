@@ -1,13 +1,13 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15046
+// Function ID: 15047
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 5043, 7515, 1112, 13627, 7556, 5634, 2]
+// Dependencies: [19, 21, 5043, 7515, 1112, 13634, 7556, 5634, 2]
 // Exports: default
 
-// Module 15039 (UserProfileGameFriendsCard)
+// Module 15046 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7515 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13627 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13634 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 20299
-// Function ID: 20300
+// Module ID: 20357
+// Function ID: 20358
 // Name: ContentInventoryFeature
 // Dependencies: [2]
 
-// Module 20299 (ContentInventoryFeature)
+// Module 20357 (ContentInventoryFeature)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryFeature.tsx");

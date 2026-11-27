@@ -1,10 +1,10 @@
-// Module ID: 8528
-// Function ID: 8529
+// Module ID: 8529
+// Function ID: 8530
 // Name: DefaultChannelThresholdUtils
 // Dependencies: [5, 4914, 7455, 7456, 1071, 7454, 7461, 1083, 6046, 1112, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8528 (DefaultChannelThresholdUtils)
+// Module 8529 (DefaultChannelThresholdUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7454 */;
 import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7456 */;
@@ -33,7 +33,7 @@ let obj = function _isDefaultChannelThresholdMetAfterDelete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _isChattableChannelThresholdMetAfterChannelChange() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

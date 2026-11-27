@@ -1,20 +1,20 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11254
+// Function ID: 11255
 // Name: CollectiblesSequencedOfferPromotionUtils
-// Dependencies: [11127, 7595, 11254, 6323, 11251, 2]
+// Dependencies: [11128, 7595, 11255, 6323, 11252, 2]
 // Exports: getActiveSequencedOfferPromotion, getNextSequencedOfferPromotion, getSequencedOfferPromotionForCollectiblesProduct, isOrbsBackPromotion
 
-// Module 11253 (CollectiblesSequencedOfferPromotionUtils)
+// Module 11254 (CollectiblesSequencedOfferPromotionUtils)
 import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
 import StorefrontTypes from "StorefrontTypes" /* 7595 */;
-import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 11254 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 11127 */;
+import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 11255 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 11128 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 let tmp3;
-const CollectiblesPromoPriceUtils = tmp3(11251);
+const CollectiblesPromoPriceUtils = tmp3(11252);
 function isSequencedOfferRewardAvailable(rewardStatus) {
   let tmp = null != rewardStatus && null != _false(rewardStatus);
   if (tmp) {

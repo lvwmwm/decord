@@ -1,17 +1,17 @@
-// Module ID: 19655
-// Function ID: 19656
+// Module ID: 19671
+// Function ID: 19672
 // Name: AgeVerificationManager
-// Dependencies: [6952, 4892, 6391, 4946, 1387, 1071, 3, 1093, 12587, 8083, 8244, 11705, 7475, 6825, 6782, 2]
+// Dependencies: [6952, 4892, 6391, 4946, 1387, 1071, 3, 1093, 12595, 8083, 8245, 11713, 7475, 6825, 6782, 2]
 
-// Module 19655 (AgeVerificationManager)
+// Module 19671 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1093 */;
 import UserStore2 from "UserStore" /* 1387 */;
 import ChannelMessagesDefault from "ChannelMessages" /* 6782 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6825 */;
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8083 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12587 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12595 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6952 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import MessageStore from "MessageStore" /* 6391 */;

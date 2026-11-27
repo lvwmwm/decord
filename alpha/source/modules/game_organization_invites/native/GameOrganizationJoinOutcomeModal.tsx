@@ -1,10 +1,10 @@
-// Module ID: 12340
-// Function ID: 12341
+// Module ID: 12348
+// Function ID: 12349
 // Name: GameOrganizationJoinOutcomeModal
-// Dependencies: [19, 17, 11917, 21, 5043, 6130, 12341, 7888, 7890, 6115, 575, 12342, 5634, 12346, 11615, 5641, 7355, 7191, 11618, 2]
+// Dependencies: [19, 17, 11925, 21, 5043, 6130, 12349, 7888, 7890, 6115, 575, 12350, 5634, 12354, 11623, 5641, 7355, 7191, 11626, 2]
 // Exports: default
 
-// Module 12340 (GameOrganizationJoinOutcomeModal)
+// Module 12348 (GameOrganizationJoinOutcomeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
@@ -14,9 +14,9 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
 import ModalScreen2 from "ModalScreen" /* 7888 */;
 import ModalContent2 from "ModalContent" /* 7890 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
-import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 12341 */;
-import HighFiveSpotIllustration from "HighFiveSpotIllustration" /* 12342 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11925 */;
+import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 12349 */;
+import HighFiveSpotIllustration from "HighFiveSpotIllustration" /* 12350 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -27,7 +27,7 @@ let importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const GameOrganizationJoinOutcomeChecklistDefault = tmp2(12346);
+const GameOrganizationJoinOutcomeChecklistDefault = tmp2(12354);
 function closeGameOrganizationJoinOutcomeModal() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(closure_4);
@@ -70,7 +70,7 @@ function GameOrganizationJoinOutcomeScreen(arg0) {
   items[1] = metroRequire(Stack2, obj3);
   items2 = [hasOwnProperty(ModalContent, obj7), ];
   const obj8 = { children: hasOwnProperty(components_Button_Button.Button, obj9) };
-  const ModalFooter = tmp6(11615).ModalFooter;
+  const ModalFooter = tmp6(11623).ModalFooter;
   obj9 = { text: cta.text, size: "lg", onPress: cta.action, disabled: isWaitingForGuild, loading: isWaitingForGuild };
   items2[1] = hasOwnProperty(ModalFooter, obj8);
   return metroRequire(ModalScreen, obj6);
@@ -107,5 +107,5 @@ export default function GameOrganizationJoinOutcomeModal(code) {
     return obj;
   }, items);
   let obj2 = { screens: navigatorScreens, initialRouteName: constants.OUTCOME, gradientColor: "purple" };
-  return closure_5(code(11618).Modal, obj2);
+  return closure_5(code(11626).Modal, obj2);
 };

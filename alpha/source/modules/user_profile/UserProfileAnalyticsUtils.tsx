@@ -1,7 +1,7 @@
 // Module ID: 6382
 // Function ID: 6383
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [6383, 6389, 8322, 6813, 4955, 6014, 4985, 1387, 6163, 6137, 1071, 1082, 1413, 6015, 6162, 1256, 6013, 14844, 2]
+// Dependencies: [6383, 6389, 8323, 6813, 4955, 6014, 4985, 1387, 6163, 6137, 1071, 1082, 1413, 6015, 6162, 1256, 6013, 14850, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
 // Module 6382 (UserProfileAnalyticsUtils)
@@ -14,9 +14,9 @@ import ActivityTypes from "ActivityTypes" /* 6015 */;
 import Constants3 from "Constants" /* 6137 */;
 import useDisplayProfile from "useDisplayProfile" /* 6162 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6389 */;
-import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 14844 */;
+import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 14850 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8322 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8323 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import PresenceStore from "PresenceStore" /* 6014 */;

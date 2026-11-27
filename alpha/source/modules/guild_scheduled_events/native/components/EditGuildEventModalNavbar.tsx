@@ -1,15 +1,15 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 8485
+// Function ID: 8486
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 5043, 8479, 1255, 7480, 5634, 1112, 7751, 7752, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 8480, 1255, 7480, 5634, 1112, 7751, 7752, 2]
 // Exports: default
 
-// Module 8484 (EditGuildEventModalNavbar)
+// Module 8485 (EditGuildEventModalNavbar)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7752 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8479 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8480 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

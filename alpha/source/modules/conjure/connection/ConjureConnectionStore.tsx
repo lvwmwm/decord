@@ -1,7 +1,7 @@
 // Module ID: 7693
 // Function ID: 7694
 // Name: ConjureConnectionStore
-// Dependencies: [32, 5, 1387, 7659, 7694, 6934, 7697, 7698, 7699, 7701, 7702, 7703, 7704, 7705, 7706, 7709, 7710, 7711, 7712, 572, 7713, 7715, 7716, 7719, 7721, 7722, 7723, 7724, 14748, 11461, 11481, 14749, 11453, 14751, 14753, 14754, 14755, 14756, 7714, 14757, 14745, 7674, 14758, 559, 14759, 7673, 14760, 7727, 14761, 10070, 14742, 504, 2]
+// Dependencies: [32, 5, 1387, 7659, 7694, 6934, 7697, 7698, 7699, 7701, 7702, 7703, 7704, 7705, 7706, 7709, 7710, 7711, 7712, 572, 7713, 7715, 7716, 7719, 7721, 7722, 7723, 7724, 14755, 11471, 11491, 14756, 11454, 14758, 14760, 14761, 14762, 14763, 7714, 14764, 14752, 7674, 11460, 559, 14765, 7673, 14766, 7727, 14767, 10071, 14749, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
 // Module 7693 (ConjureConnectionStore)
@@ -18,20 +18,20 @@ import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 7722 
 import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 7723 */;
 import conjurePreviewConnection from "conjurePreviewConnection" /* 7724 */;
 import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7727 */;
-import createNonce from "createNonce" /* 10070 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 11453 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 11461 */;
-import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 11481 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 14742 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 14745 */;
-import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14748 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14749 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 14751 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14753 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 14754 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 14755 */;
-import conjureUsageConnection from "conjureUsageConnection" /* 14756 */;
-import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14761 */;
+import createNonce from "createNonce" /* 10071 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 11454 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 11471 */;
+import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 11491 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 14749 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 14752 */;
+import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14755 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14756 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 14758 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14760 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 14761 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 14762 */;
+import conjureUsageConnection from "conjureUsageConnection" /* 14763 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14767 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1387 */;
@@ -420,7 +420,7 @@ let obj = function _openWithFreshTicket() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -474,7 +474,7 @@ let obj = function _openWithFreshTicket() {
             c7 = 0;
             if (closure_1.disposed) {
               c9 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               open = tmp79;
               let status;
@@ -537,7 +537,7 @@ let obj = function _openWithFreshTicket() {
             if (closure_1.disposed) {
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               const ws = closure_1.ws;
               open = ws.open;
@@ -571,7 +571,7 @@ let obj = function _openWithFreshTicket() {
             }
           }
           c9 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp79) {
         if (0 === c7) {

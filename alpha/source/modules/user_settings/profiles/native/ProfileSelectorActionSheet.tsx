@@ -1,10 +1,10 @@
-// Module ID: 16073
-// Function ID: 16074
+// Module ID: 16080
+// Function ID: 16081
 // Name: ProfileSelectorActionSheet
-// Dependencies: [32, 19, 17, 4914, 6164, 16072, 21, 5043, 575, 7253, 1112, 11654, 7052, 504, 6869, 5618, 6049, 5052, 5257, 5271, 7507, 7406, 5634, 7482, 2]
+// Dependencies: [32, 19, 17, 4914, 6164, 16079, 21, 5043, 575, 7253, 1112, 11662, 7052, 504, 6869, 5618, 6049, 5052, 5257, 5271, 7507, 7406, 5634, 7482, 2]
 // Exports: default
 
-// Module 16073 (ProfileSelectorActionSheet)
+// Module 16080 (ProfileSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import GuildIcon from "GuildIcon" /* 7052 */;
 import TableRadioRow2 from "TableRadioRow" /* 7253 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 16072 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 16079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -78,7 +78,7 @@ let closure_13 = react.memo(function ProfileOptionRow(option) {
   }
   if ("main" === option.type) {
     const obj2 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    const ClydeIcon = tmp2(11654).ClydeIcon;
+    const ClydeIcon = tmp2(11662).ClydeIcon;
     tmpResult = tmp(ClydeIcon, obj2);
   } else {
     const obj3 = { guild: option.guild, size: GuildIcon.GuildIconSizes.XSMALL };

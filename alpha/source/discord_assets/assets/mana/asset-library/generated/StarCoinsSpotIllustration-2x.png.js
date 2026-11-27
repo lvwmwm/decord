@@ -1,8 +1,8 @@
-// Module ID: 20193
-// Function ID: 20194
+// Module ID: 20251
+// Function ID: 20252
 // Dependencies: [2]
 
-// Module 20193
+// Module 20251
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StarCoinsSpotIllustration-2x.png.js");

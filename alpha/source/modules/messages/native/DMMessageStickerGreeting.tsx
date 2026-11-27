@@ -1,14 +1,14 @@
-// Module ID: 13220
-// Function ID: 13221
+// Module ID: 13228
+// Function ID: 13229
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6927, 6391, 1387, 21, 5043, 575, 5213, 5607, 5040, 5725, 13221, 8244, 1112, 504, 1087, 5099, 13222, 10831, 1654, 5253, 1186, 10830, 5598, 6152, 10681, 5634, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 6927, 6391, 1387, 21, 5043, 575, 5213, 5607, 5040, 5725, 13229, 8245, 1112, 504, 1087, 5099, 13230, 10832, 1654, 5253, 1186, 10831, 5598, 6152, 10682, 5634, 5641, 2]
 // Exports: default
 
-// Module 13220 (DMMessageStickerGreeting)
+// Module 13228 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5213 */;
-import StickersActionCreators from "StickersActionCreators" /* 10831 */;
+import StickersActionCreators from "StickersActionCreators" /* 10832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -85,7 +85,7 @@ export default function DMMessageStickerGreeting(channel) {
   }
   const intl2 = tmp(1112).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1112).t.m0zYbV, { username: name });
-  const tmpResult = tmp(13222);
+  const tmpResult = tmp(13230);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -131,7 +131,7 @@ export default function DMMessageStickerGreeting(channel) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -163,7 +163,7 @@ export default function DMMessageStickerGreeting(channel) {
                 v1(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: channel.id, source: "In-channel greet" };
@@ -200,7 +200,7 @@ export default function DMMessageStickerGreeting(channel) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {
@@ -266,7 +266,7 @@ export default function DMMessageStickerGreeting(channel) {
   const tmpResult11 = tmp(5040);
   items10[0] = tmpResult11.hexWithOpacity(token, 0);
   items10[1] = token;
-  const tmpResult12 = tmp(10830);
+  const tmpResult12 = tmp(10831);
   const shouldAnimateSticker = tmpResult12.useShouldAnimateSticker(false);
   let tmp39Result2 = null;
   if (showConvoStarterInDM) {
@@ -282,7 +282,7 @@ export default function DMMessageStickerGreeting(channel) {
       let tmp40Result = null;
       if (null != stateFromStores2) {
         const obj9 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp40Result = tmp40(tmp7(10681), obj9);
+        tmp40Result = tmp40(tmp7(10682), obj9);
       }
       items12 = [tmp40Result, ];
       const obj10 = { style: tmp4.toastContent, variant: "body-md/semibold", children: formatToPlainStringResult };
@@ -292,7 +292,7 @@ export default function DMMessageStickerGreeting(channel) {
       let tmp40Result2 = null;
       const tmp42 = closure_12;
       if (null != stateFromStores2) {
-        const obj11 = { style: tmp4.stickerContainer, children: closure_10(showConvoStarterInDM(10681), obj12) };
+        const obj11 = { style: tmp4.stickerContainer, children: closure_10(showConvoStarterInDM(10682), obj12) };
         obj12 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
         tmp40Result2 = tmp40(tmp41, obj11);
       }

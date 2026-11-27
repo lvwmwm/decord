@@ -1,16 +1,16 @@
-// Module ID: 17893
-// Function ID: 17894
+// Module ID: 17900
+// Function ID: 17901
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 10364, 8297, 1071, 13527, 6379, 9111, 10366, 10363, 6864, 13528, 2]
+// Dependencies: [5, 19, 10365, 8298, 1071, 13535, 6379, 9112, 10367, 10364, 6864, 13536, 2]
 // Exports: default
 
-// Module 17893 (useGuildPowerupsBoostAction)
+// Module 17900 (useGuildPowerupsBoostAction)
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
-import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 13527 */;
+import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 13535 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 10364 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8297 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 10365 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8298 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 19457
-// Function ID: 19458
+// Module ID: 19473
+// Function ID: 19474
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6933, 8871, 6965, 11782, 11780, 5693, 11783, 21, 3, 5644, 5043, 575, 1654, 1626, 11781, 1629, 5303, 9795, 1707, 11786, 19458, 19459, 5259, 11812, 19382, 5607, 11787, 10267, 12996, 11791, 19443, 11536, 5952, 19460, 5812, 19462, 19463, 6379, 6380, 1263, 19464, 5621, 19465, 19487, 19521, 19525, 19528, 19529, 9997, 19530, 19532, 19542, 19550, 2]
+// Dependencies: [32, 19, 17, 6933, 8872, 6965, 11790, 11788, 5693, 11791, 21, 3, 5644, 5043, 575, 1654, 1626, 11789, 1629, 5303, 9796, 1707, 11794, 19474, 19475, 5259, 11820, 19398, 5607, 11795, 10268, 13004, 11799, 19459, 11544, 5952, 19476, 5812, 19478, 19479, 6379, 6380, 1263, 19480, 5621, 19481, 19503, 19537, 19541, 19544, 19545, 9998, 19546, 19548, 19558, 19566, 2]
 
-// Module 19457 (VoicePanelUI)
+// Module 19473 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
@@ -12,18 +12,18 @@ import spring_spring from "spring/spring" /* 5644 */;
 import CallConstants from "CallConstants" /* 5693 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10267 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11780 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11783 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12996 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10268 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11788 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11791 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
-import AppFreezeStore from "AppFreezeStore" /* 8871 */;
+import AppFreezeStore from "AppFreezeStore" /* 8872 */;
 import VoicePanelStore from "VoicePanelStore" /* 6965 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11790 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1626 */;
@@ -67,26 +67,26 @@ let unpackModuleId;
 const _mod1707 = tmp3(1707);
 const ReleaseChannelUtils = tmp3(5812);
 const ExternalPipDefault = tmp(5952);
-const cheapWorkletShallowEqual = tmp3(9795);
-const closeVoicePanelsDefault = tmp2(9997);
-const roundToNearestPixelDefault = tmp(11536);
-const updateSharedValueIfChangedDefault = tmp(11786);
-const calculateVoicePanelHeaderSpecsDefault = tmp2(11787);
-const VoicePanelPIPStateContext = tmp3(11791);
-const PanelSizeUtils = tmp3(19443);
-const useControlsLockDefault = tmp2(19458);
-const VoicePanelDockSheet = tmp3(19460);
-const VoicePanelDockSheetLayersDefault = tmp(19462);
-const voicePanelLayoutTransitionDefault = tmp(19463);
-const useControlsHoverGestureDefault = tmp2(19464);
-const VoicePanelHeaderDefault = tmp2(19465);
-const VoicePanelCardViewDefault = tmp2(19487);
-const VoicePanelPreJoinContentDefault = tmp2(19521);
-const VoicePanelVoiceChannelAppDefault = tmp2(19525);
-const VoicePanelSystemUIManagerDefault = tmp2(19528);
-const VoicePanelAccessibilityViewDefault = tmp2(19529);
-const VoicePanelDismissableContentDefault = tmp2(19530);
-const VoicePanelControlsDefault = tmp2(19550);
+const cheapWorkletShallowEqual = tmp3(9796);
+const closeVoicePanelsDefault = tmp2(9998);
+const roundToNearestPixelDefault = tmp(11544);
+const updateSharedValueIfChangedDefault = tmp(11794);
+const calculateVoicePanelHeaderSpecsDefault = tmp2(11795);
+const VoicePanelPIPStateContext = tmp3(11799);
+const PanelSizeUtils = tmp3(19459);
+const useControlsLockDefault = tmp2(19474);
+const VoicePanelDockSheet = tmp3(19476);
+const VoicePanelDockSheetLayersDefault = tmp(19478);
+const voicePanelLayoutTransitionDefault = tmp(19479);
+const useControlsHoverGestureDefault = tmp2(19480);
+const VoicePanelHeaderDefault = tmp2(19481);
+const VoicePanelCardViewDefault = tmp2(19503);
+const VoicePanelPreJoinContentDefault = tmp2(19537);
+const VoicePanelVoiceChannelAppDefault = tmp2(19541);
+const VoicePanelSystemUIManagerDefault = tmp2(19544);
+const VoicePanelAccessibilityViewDefault = tmp2(19545);
+const VoicePanelDismissableContentDefault = tmp2(19546);
+const VoicePanelControlsDefault = tmp2(19566);
 function NOOP() {
 
 }
@@ -1092,7 +1092,7 @@ const memoResult = react.memo(function VoicePanelUI() {
   VoicePanelUITsx3.__initData = tmp25;
   let items5 = [closure_31, , , , , , ];
   const useAnimatedReaction = tmp24.useAnimatedReaction;
-  items5[1] = tmp14(9795).cheapWorkletShallowEqual;
+  items5[1] = tmp14(9796).cheapWorkletShallowEqual;
   const tmp29 = VoicePanelModes;
   items5[2] = VoicePanelModes;
   items5[3] = tmp14(1707).scheduleOnRN;
@@ -2343,11 +2343,11 @@ const memoResult = react.memo(function VoicePanelUI() {
     const tmp119 = AnimatedWrapper;
     if (isDockEnabled) {
       const obj22 = { children: tmp113 };
-      tmp111Result = tmp111(tmp14(19460).VoicePanelContentWithDock, obj22);
+      tmp111Result = tmp111(tmp14(19476).VoicePanelContentWithDock, obj22);
     }
     items37[1] = tmp111(tmp119, obj21);
     obj23 = { children: items36 };
-    items37[2] = tmp111(tmp2(isDockEnabled ? 19532 : 19542), {});
+    items37[2] = tmp111(tmp2(isDockEnabled ? 19548 : 19558), {});
     const obj24 = { gestureState: sharedValue4 };
     items37[3] = tmp111(VoicePanelControlsDefault, obj24);
     items36[2] = tmp111(GestureDetector3, obj19);

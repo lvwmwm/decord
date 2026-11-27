@@ -1,13 +1,13 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11611
+// Function ID: 11612
 // Name: CollectiblesShopManager
-// Dependencies: [11280, 11601, 11604, 11606, 572, 2]
+// Dependencies: [11281, 11609, 11612, 11614, 572, 2]
 
-// Module 11603 (CollectiblesShopManager)
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 11604 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 11606 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 11280 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 11601 */;
+// Module 11611 (CollectiblesShopManager)
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 11612 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 11614 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 11281 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 11609 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

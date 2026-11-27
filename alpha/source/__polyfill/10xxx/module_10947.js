@@ -1,106 +1,91 @@
 // Module ID: 10947
 // Function ID: 10948
-// Dependencies: [10948, 10950, 10951, 10952, 10953, 10954, 10955, 10875, 10882, 10884, 10956, 10957, 10921, 10915]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 93, 95, 98, 10942, 10880, 10882, 10883, 10887]
 
 // Module 10947
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10915 */;
-import _mod10921 from "module_10921" /* 10921 */;
-import _mod10948 from "module_10948" /* 10948 */;
-import _mod10950 from "module_10950" /* 10950 */;
-import _mod10951 from "module_10951" /* 10951 */;
-import _mod10952 from "module_10952" /* 10952 */;
-import _mod10953 from "module_10953" /* 10953 */;
-import _mod10954 from "module_10954" /* 10954 */;
-import _mod10955 from "module_10955" /* 10955 */;
-import _mod10956 from "module_10956" /* 10956 */;
-import _mod10957 from "module_10957" /* 10957 */;
-import { Chrono } from "module_10875" /* 10875 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10880 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10887 */;
+import _mod10942 from "module_10942" /* 10942 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-function createConfiguration(flag) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10948.default(), , , , ];
-  new module_10948.default();
-  items[1] = new module_10952.default();
-  new module_10952.default();
-  items[2] = new module_10957.default();
-  new module_10957.default();
-  items[3] = new module_10953.default();
-  new module_10953.default();
-  items[4] = new module_10954.default();
-  new module_10954.default();
-  items1 = [new module_10956.default(), , ];
-  new module_10956.default();
-  items1[1] = new module_10955.default();
-  new module_10955.default();
-  items1[2] = new module_10950.default();
-  new module_10950.default();
-  const result = includeCommonConfiguration(obj, flag);
-  const refiners = result.refiners;
-  result.refiners = refiners.filter((item) => !(item instanceof module_10921.default));
-  return result;
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+class FRTimeUnitAgoFormatParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FRTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(FRTimeUnitAgoFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    return tmp3(self, constructResult);
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  const tmp = createConfiguration(false);
-  const parsers = tmp.parsers;
-  const unshift = parsers.unshift;
-  const _default = new module_10951.default();
-  unshift(_default);
-  return tmp;
 }
-const module_10948 = fn(_mod10948);
-const module_10950 = fn(_mod10950);
-const module_10951 = fn(_mod10951);
-const module_10952 = fn(_mod10952);
-const module_10953 = fn(_mod10953);
-const module_10954 = fn(_mod10954);
-const module_10955 = fn(_mod10955);
-const module_10956 = fn(_mod10956);
-const module_10957 = fn(_mod10957);
-const module_10921 = fn(_mod10921);
-const configuration = createConfiguration(false);
-let parsers = configuration.parsers;
-let unshift = parsers.unshift;
-let _default = new module_10951.default();
-unshift(_default);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_10875").Chrono(createConfiguration(true));
-const Chrono_export = require("module_10875").Chrono;
+_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    const NUMBER_PATTERN = _mod10942.NUMBER_PATTERN;
+    const regExp = new RegExp("(?:les?|la|l'|du|des?)\\s*(" + NUMBER_PATTERN + ")?(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10942.TIME_UNIT_DICTIONARY) + ")(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?", "i");
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let num = 1;
+      if (arg1[1]) {
+        num = _mod10942.parseNumberPattern(arg1[1]);
+      }
+      const obj = {};
+      obj[_mod10942.TIME_UNIT_DICTIONARY[arg1[3].toLowerCase(arg1[3])]] = num;
+      const str2 = arg1[2] || arg1[4] || "";
+      const formatted = str2.toLowerCase();
+      if (formatted) {
+        const obj2 = /derni[eè]re?s?/;
+        let isMatch = obj2.test(formatted);
+        if (!isMatch) {
+          const obj3 = /pass[ée]e?s?/;
+          isMatch = obj3.test(formatted);
+        }
+        if (!isMatch) {
+          const obj4 = /pr[ée]c[ée]dents?/;
+          isMatch = obj4.test(formatted);
+        }
+        let reverseDurationResult = obj;
+        if (isMatch) {
+          reverseDurationResult = tmp3(10882).reverseDuration(obj);
+        }
+        const ParsingComponents = tmp3(10883).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+    }
+  }
+];
 
-export function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-}
-export function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-}
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(FRTimeUnitAgoFormatParser, items);

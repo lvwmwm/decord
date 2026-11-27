@@ -1,10 +1,10 @@
-// Module ID: 16598
-// Function ID: 16599
+// Module ID: 16605
+// Function ID: 16606
 // Name: BountiesShopCarouselExperiment
 // Dependencies: [1451, 2]
 // Exports: getBountiesEntryPointButtonVariant
 
-// Module 16598 (BountiesShopCarouselExperiment)
+// Module 16605 (BountiesShopCarouselExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

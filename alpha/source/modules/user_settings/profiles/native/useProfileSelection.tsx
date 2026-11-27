@@ -1,16 +1,16 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16064
+// Function ID: 16065
 // Name: useProfileSelection
-// Dependencies: [32, 19, 9437, 6164, 1081, 6137, 504, 9439, 2]
+// Dependencies: [32, 19, 9438, 6164, 1081, 6137, 504, 9440, 2]
 // Exports: default
 
-// Module 16057 (useProfileSelection)
+// Module 16064 (useProfileSelection)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import Constants from "Constants" /* 6137 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9439 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9440 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9437 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9438 */;
 import SortedGuildStore from "SortedGuildStore" /* 6164 */;
 import size from "module_2" /* 2 */;
 

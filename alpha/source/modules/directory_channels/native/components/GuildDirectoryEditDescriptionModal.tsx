@@ -1,12 +1,12 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13270
+// Function ID: 13271
 // Name: GuildDirectoryEditDescriptionModal
-// Dependencies: [5, 19, 17, 21, 5043, 5597, 13263, 13261, 7480, 5634, 1112, 13264, 7191, 7355, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 5597, 13271, 13269, 7480, 5634, 1112, 13272, 7191, 7355, 2]
 // Exports: default
 
-// Module 13262 (GuildDirectoryEditDescriptionModal)
+// Module 13270 (GuildDirectoryEditDescriptionModal)
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13261 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13269 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -46,7 +46,7 @@ function GuildDirectoryEditDescription(entry) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function GuildDirectoryEditDescription(entry) {
             obj = closure_1(c3[7]);
             obj.close();
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -105,7 +105,7 @@ function GuildDirectoryEditDescription(entry) {
     entry,
     directoryChannelId: entry.channelId
   };
-  const tmp2 = obj(13264);
+  const tmp2 = obj(13272);
   intl2 = entry(1112).intl;
   items[1] = closure_7(tmp2, obj6);
   return closure_7(SafeAreaPaddingView, obj);

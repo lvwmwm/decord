@@ -1,15 +1,15 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12468
+// Function ID: 12469
 // Name: ForumPostContainer
-// Dependencies: [19, 17, 21, 5043, 575, 7429, 1654, 10736, 6145, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 7429, 1654, 10737, 6145, 2]
 // Exports: ForumPostDisabledContainer, ForumPostPressableContainer, useForumPostContainerPressedIn
 
-// Module 12460 (ForumPostContainer)
+// Module 12468 (ForumPostContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10736 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10737 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 7429 */;

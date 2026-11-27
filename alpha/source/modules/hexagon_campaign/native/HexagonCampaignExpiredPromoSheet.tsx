@@ -1,10 +1,10 @@
-// Module ID: 19318
-// Function ID: 19319
+// Module ID: 19334
+// Function ID: 19335
 // Name: HexagonCampaignExpiredPromoSheet
-// Dependencies: [5, 32, 19, 4889, 21, 16060, 6874, 16616, 5604, 5725, 1112, 8392, 16094, 10747, 16623, 4663, 5634, 5641, 2]
+// Dependencies: [5, 32, 19, 4889, 21, 16067, 6874, 16623, 5604, 5725, 1112, 8393, 16101, 10748, 16630, 4663, 5634, 5641, 2]
 // Exports: default
 
-// Module 19318 (HexagonCampaignExpiredPromoSheet)
+// Module 19334 (HexagonCampaignExpiredPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4663 from "module_4663" /* 4663 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
@@ -32,9 +32,9 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
   importDefault = undefined;
   let callback;
   react = undefined;
-  const tmp = markAsDismissed(16060);
+  const tmp = markAsDismissed(16067);
   const useTrackHexagonCampaignContentViewed = tmp.useTrackHexagonCampaignContentViewed;
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6874).QuestContent.AD_PERK_MODAL, markAsDismissed(16060).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6874).QuestContent.AD_PERK_MODAL, markAsDismissed(16067).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
   const tmp3 = callback(react.useState(false), 2);
   [tmp4, c1] = tmp3;
   dependencyMap = react.useRef(false);
@@ -54,7 +54,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -182,7 +182,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
           open("HEXAGON_CAMPAIGN_RESTORE_ERROR", obj);
         }
         ref = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp14) {
         ref = 3;
         throw tmp14;
@@ -199,7 +199,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
     const obj3 = markAsDismissed(ref[12]);
     const result1 = obj3.openHexagonCampaignLearnMore();
   }, []);
-  const PromoSheet = markAsDismissed(10747).PromoSheet;
+  const PromoSheet = markAsDismissed(10748).PromoSheet;
   let intl = markAsDismissed(1112).intl;
   const intl2 = markAsDismissed(1112).intl;
   let obj3 = {

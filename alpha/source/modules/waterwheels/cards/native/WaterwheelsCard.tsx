@@ -1,21 +1,21 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18021
+// Function ID: 18022
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 7462, 13381, 1071, 7872, 21, 5043, 575, 8932, 504, 18015, 5730, 5634, 18016, 5641, 7056, 1112, 7558, 2]
+// Dependencies: [19, 17, 7462, 13389, 1071, 7872, 21, 5043, 575, 8933, 504, 18022, 5730, 5634, 18023, 5641, 7056, 1112, 7558, 2]
 // Exports: WaterwheelsCard, useWaterwheelsCardEligible
 
-// Module 18014 (WaterwheelsCard)
+// Module 18021 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8932 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18015 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8933 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18022 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7462 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13381 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13389 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -161,8 +161,8 @@ function WaterwheelsCardContent(card) {
       if (action != null) {
         type = action.type;
       }
-      if (type === tmp2(8932).WaterwheelsActionType.OPEN_CONNECTION) {
-        const obj12 = { style: tmp.card, children: closure_10(onAction(18016), obj13) };
+      if (type === tmp2(8933).WaterwheelsActionType.OPEN_CONNECTION) {
+        const obj12 = { style: tmp.card, children: closure_10(onAction(18023), obj13) };
         obj13 = { post: layout, action, onAction: handleAction };
         tmp25Result = closure_10(closure_5, obj12);
       } else {

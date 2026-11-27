@@ -1,10 +1,10 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 10593
+// Function ID: 10594
 // Name: ChannelContainer
-// Dependencies: [19, 17, 4976, 4892, 4946, 1071, 4889, 21, 5043, 5222, 10593, 504, 10041, 6831, 5075, 4876, 11756, 11757, 10287, 2]
+// Dependencies: [19, 17, 4976, 4892, 4946, 1071, 4889, 21, 5043, 5222, 10594, 504, 10042, 6831, 5075, 4876, 11764, 11765, 10288, 2]
 // Exports: ChannelContainer
 
-// Module 10592 (ChannelContainer)
+// Module 10593 (ChannelContainer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
@@ -26,8 +26,8 @@ let c10;
 let tmp;
 let tmp2;
 let unpackModuleId;
-const NotificationsDefault = tmp2(10593);
-const useChannelStylesShared = tmp(11756);
+const NotificationsDefault = tmp2(10594);
+const useChannelStylesShared = tmp(11764);
 function NotificationsContainer() {
   let tmp4 = null;
   const tmp = closure_12();
@@ -79,7 +79,7 @@ export function ChannelContainer(children) {
   let voiceChannelId = stateFromStoresObject.voiceChannelId;
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(10041)(voiceChannelId);
+    tmp5 = channelId(10042)(voiceChannelId);
   }
   const items1 = [LurkingStore];
   let isPrivateResult = null != channel;
@@ -128,13 +128,13 @@ export function ChannelContainer(children) {
     tmp15 = null;
     if (stateFromStores) {
       const obj4 = { channel };
-      tmp15 = closure_10(tmp4(11757), obj4);
+      tmp15 = closure_10(tmp4(11765), obj4);
     }
   }
   items3 = [tmp15, children, ];
   if (tmp5) {
     const obj5 = { style: channelStyles.callPTTButton };
-    tmp5 = closure_10(tmp4(10287), obj5);
+    tmp5 = closure_10(tmp4(10288), obj5);
   }
   items3[2] = tmp5;
   items4 = [closure_11(closure_4, obj3), closure_10(NotificationsContainer, {})];

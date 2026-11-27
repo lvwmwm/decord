@@ -1,15 +1,15 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12431
+// Function ID: 12432
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 5044, 4892, 4946, 8823, 21, 8824, 38, 7067, 8818, 504, 4868, 8853, 12424, 12158, 12068, 2]
+// Dependencies: [32, 19, 5044, 4892, 4946, 8824, 21, 8825, 38, 7067, 8819, 504, 4868, 8854, 12432, 12166, 12076, 2]
 // Exports: default
 
-// Module 12423 (TextDisplayComponent)
+// Module 12431 (TextDisplayComponent)
 import Fragment from "Fragment" /* 21 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8818 */;
-import InteractionComponentConstants from "InteractionComponentConstants" /* 8823 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 12158 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8819 */;
+import InteractionComponentConstants from "InteractionComponentConstants" /* 8824 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 12166 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -25,7 +25,7 @@ export default function TextDisplayComponent(type) {
   let renderOptions;
   let tmp6;
   let tmp7;
-  const f102346 = () => {
+  const f102587 = () => {
     const items = [, ];
     ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
     return items;
@@ -51,8 +51,8 @@ export default function TextDisplayComponent(type) {
   }, items);
   let obj2 = type(content[11]);
   const items1 = [AccessibilityStore];
-  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f102346), 2);
-  channelId(obj2.useStateFromStoresArray(items1, f102346), 2);
+  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f102587), 2);
+  channelId(obj2.useStateFromStoresArray(items1, f102587), 2);
   const AnimateEmoji = type(content[12]).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj3 = type(content[11]);

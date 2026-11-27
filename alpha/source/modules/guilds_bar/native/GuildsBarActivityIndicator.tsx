@@ -1,10 +1,10 @@
-// Module ID: 18117
-// Function ID: 18118
+// Module ID: 18124
+// Function ID: 18125
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 5043, 575, 5607, 7055, 1186, 8608, 8606, 7163, 8107, 13356, 18118, 10639, 18119, 7167, 18120, 7172, 7101, 18116, 2]
+// Dependencies: [19, 21, 5043, 575, 5607, 7055, 1186, 8609, 8607, 7163, 8107, 13364, 18125, 10640, 18126, 7167, 18127, 7172, 7101, 18123, 2]
 // Exports: useActivityIndicatorState
 
-// Module 18117 (GuildsBarActivityIndicator)
+// Module 18124 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5607 */;
@@ -14,14 +14,14 @@ import StageIcon from "StageIcon" /* 7163 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 7167 */;
 import AppsIcon from "AppsIcon" /* 7172 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8107 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8606 */;
-import CalendarIcon from "CalendarIcon" /* 8608 */;
-import VideoIcon from "VideoIcon" /* 10639 */;
-import ScreenIcon from "ScreenIcon" /* 13356 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 18116 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18118 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 18119 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 18120 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8607 */;
+import CalendarIcon from "CalendarIcon" /* 8609 */;
+import VideoIcon from "VideoIcon" /* 10640 */;
+import ScreenIcon from "ScreenIcon" /* 13364 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 18123 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 18125 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 18126 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 18127 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 9015
-// Function ID: 9016
+// Module ID: 9016
+// Function ID: 9017
 // Name: useActiveTheme
 // Dependencies: [1193, 5067, 1238, 1194, 504, 5218, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 9015 (useActiveTheme)
+// Module 9016 (useActiveTheme)
 import get_initialized from "get initialized" /* 504 */;
 import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5218 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;

@@ -1,10 +1,10 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 9402
+// Function ID: 9403
 // Name: PromotionUtils
-// Dependencies: [5, 1231, 9163, 9162, 1389, 1071, 5050, 1285, 1379, 1256, 1405, 4876, 11, 4877, 9211, 2]
+// Dependencies: [5, 1231, 9164, 9163, 1389, 1071, 5050, 1285, 1379, 1256, 1405, 4876, 11, 4877, 9212, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 9401 (PromotionUtils)
+// Module 9402 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
@@ -12,11 +12,11 @@ import FlagUtils from "FlagUtils" /* 1405 */;
 import dismissible_content from "dismissible_content" /* 4876 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 4877 */;
 import shared from "shared" /* 5050 */;
-import promotions_constants from "promotions/constants" /* 9211 */;
+import promotions_constants from "promotions/constants" /* 9212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9163 */;
-import PromotionsStore from "PromotionsStore" /* 9162 */;
+import PromotionRecord from "PromotionRecord" /* 9164 */;
+import PromotionsStore from "PromotionsStore" /* 9163 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f95839 = (startDate, startDate2) => {
+const f96072 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -57,7 +57,7 @@ let obj = function _claimOutboundPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ export function getNextUnseenOutboundPromotionId() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f95839)[0].id;
+    id = found1.sort(f96072)[0].id;
   }
   return id;
 }
@@ -262,7 +262,7 @@ export function shouldShowOutboundPromotionNotice() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f95839)[0].id;
+    id = found1.sort(f96072)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

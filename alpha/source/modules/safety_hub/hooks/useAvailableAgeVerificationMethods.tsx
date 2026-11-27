@@ -1,10 +1,10 @@
-// Module ID: 16244
-// Function ID: 16245
+// Module ID: 16251
+// Function ID: 16252
 // Name: useAvailableAgeVerificationMethods
 // Dependencies: [32, 19, 7917, 572, 7918, 2]
 // Exports: useAvailableAgeVerificationMethods
 
-// Module 16244 (useAvailableAgeVerificationMethods)
+// Module 16251 (useAvailableAgeVerificationMethods)
 import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7917 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

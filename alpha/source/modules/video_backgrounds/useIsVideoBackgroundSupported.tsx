@@ -1,10 +1,10 @@
-// Module ID: 10393
-// Function ID: 10394
+// Module ID: 10394
+// Function ID: 10395
 // Name: useIsVideoBackgroundSupported
 // Dependencies: [2132, 504, 6026, 2]
 // Exports: default
 
-// Module 10393 (useIsVideoBackgroundSupported)
+// Module 10394 (useIsVideoBackgroundSupported)
 import get_initialized from "get initialized" /* 504 */;
 import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 6026 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;

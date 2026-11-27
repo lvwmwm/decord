@@ -1,13 +1,13 @@
-// Module ID: 18132
-// Function ID: 18133
+// Module ID: 18139
+// Function ID: 18140
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 5077, 4910, 5076, 6164, 21, 5043, 575, 18083, 5607, 504, 7052, 18114, 18086, 5079, 6997, 18036, 18121, 18075, 1654, 18103, 5730, 2]
+// Dependencies: [19, 5077, 4910, 5076, 6164, 21, 5043, 575, 18090, 5607, 504, 7052, 18121, 18093, 5079, 6997, 18043, 18128, 18082, 1654, 18110, 5730, 2]
 
-// Module 18132 (GuildsBarPendingGuild)
+// Module 18139 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import GuildIcon from "GuildIcon" /* 7052 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18075 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18082 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5077 */;
 import GuildRecord from "GuildRecord" /* 4910 */;

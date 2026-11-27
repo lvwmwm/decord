@@ -1,10 +1,10 @@
-// Module ID: 8183
-// Function ID: 8184
+// Module ID: 8184
+// Function ID: 8185
 // Name: ApplicationCommandUtils
-// Dependencies: [4896, 8117, 7073, 1071, 1082, 8184, 2118, 5695, 1083, 12, 38, 14, 6013, 2]
+// Dependencies: [4896, 8117, 7073, 1071, 1082, 8185, 2118, 5695, 1083, 12, 38, 14, 6013, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 8183 (ApplicationCommandUtils)
+// Module 8184 (ApplicationCommandUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef14 from "module_14" /* 14 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -14,7 +14,7 @@ import ChannelRecord from "ChannelRecord" /* 4896 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
 import DraftStore from "DraftStore" /* 8117 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 8184 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 8185 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
 import Constants from "Constants" /* 1071 */;
 import BigFlagUtils from "BigFlagUtils" /* 1083 */;
@@ -37,7 +37,7 @@ function buildCommand(arg0) {
   let rootCommand;
   let subCommandPath;
   let useKeyedPermissions;
-  const f92874 = (choices) => {
+  const f93106 = (choices) => {
     let description;
     let mapped;
     let mapped1;
@@ -63,7 +63,7 @@ function buildCommand(arg0) {
     const options = choices.options;
     mapped1 = undefined;
     if (options != null) {
-      mapped1 = options.map(f92874);
+      mapped1 = options.map(f93106);
     }
     ({ name_localized: obj.serverLocalizedName, name_localized } = choices);
     if (name_localized == null) {
@@ -147,7 +147,7 @@ function buildCommand(arg0) {
   ({ description: obj3.untranslatedDescription, options } = command);
   mapped2 = undefined;
   if (options != null) {
-    mapped2 = options.map(f92874);
+    mapped2 = options.map(f93106);
   }
   deserializeResult = undefined;
   if (null != rootCommand.default_member_permissions) {
@@ -342,8 +342,8 @@ export function getApplicationCommandOptionQueryOptions(activeOption) {
   const tmp4 = activeOption.type === tmp(2118).ApplicationCommandOptionType.ROLE || activeOption.type === tmp(2118).ApplicationCommandOptionType.MENTIONABLE;
   return { canMentionEveryone: type === STRING || tmp4, canMentionHere: type === STRING, canMentionChannels: type === STRING || type2 === CHANNEL, canMentionUsers: type === STRING || tmp3, canMentionRoles: type === STRING || tmp4, canMentionAnyGuildUser: tmp3, canMentionNonMentionableRoles: tmp4, canMentionOtherGlobals: type === STRING };
 }
-export function allChannelsSentinel(contextGuildId) {
-  const obj = _modDef14(contextGuildId);
+export function allChannelsSentinel(guildId) {
+  const obj = _modDef14(guildId);
   const str = obj.subtract(1);
   return str.toString();
 }

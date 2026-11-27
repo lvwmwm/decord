@@ -1,24 +1,24 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14913
+// Function ID: 14914
 // Name: Badges
-// Dependencies: [19, 17, 2189, 21, 575, 5043, 14904, 8588, 5634, 504, 7756, 12113, 14907, 1112, 14909, 14911, 14303, 10685, 8799, 1088, 2]
+// Dependencies: [19, 17, 2189, 21, 575, 5043, 14911, 8589, 5634, 504, 7756, 12121, 14914, 1112, 14916, 14918, 14310, 10686, 8800, 1088, 2]
 // Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 14906 (Badges)
+// Module 14913 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import intl3 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import utils from "utils" /* 8588 */;
-import TrophyIcon from "TrophyIcon" /* 8799 */;
-import RetryIcon from "RetryIcon" /* 10685 */;
-import TimerIcon2 from "TimerIcon" /* 12113 */;
-import FireIcon from "FireIcon" /* 14303 */;
-import NewUserIcon from "NewUserIcon" /* 14907 */;
-import FlashIcon from "FlashIcon" /* 14909 */;
-import TrendingType from "TrendingType" /* 14911 */;
+import utils from "utils" /* 8589 */;
+import TrophyIcon from "TrophyIcon" /* 8800 */;
+import RetryIcon from "RetryIcon" /* 10686 */;
+import TimerIcon2 from "TimerIcon" /* 12121 */;
+import FireIcon from "FireIcon" /* 14310 */;
+import NewUserIcon from "NewUserIcon" /* 14914 */;
+import FlashIcon from "FlashIcon" /* 14916 */;
+import TrendingType from "TrendingType" /* 14918 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,7 +36,7 @@ class ActiveTimestamp {
   constructor(entry) {
     entry = entry.entry;
     const style = entry.style;
-    obj = entry(14904);
+    obj = entry(14911);
     const now = obj.useTimestampTickedNow().now;
     const items = [entry, now];
     const children = react.useMemo(() => {

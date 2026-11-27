@@ -1,10 +1,10 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12310
+// Function ID: 12311
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2140, 6813, 502, 4892, 4914, 4975, 6014, 5851, 10350, 7768, 1379, 12279, 6015, 504, 2]
+// Dependencies: [2140, 6813, 502, 4892, 4914, 4975, 6014, 5851, 10351, 7768, 1379, 12287, 6015, 504, 2]
 // Exports: default
 
-// Module 12302 (useCanFulfillStreamRequest)
+// Module 12310 (useCanFulfillStreamRequest)
 import ActivityTypes from "ActivityTypes" /* 6015 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
@@ -53,7 +53,7 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
     const application = channel_id.application;
     id = undefined;
     const tmp16 = null != obj.getCurrentUserActiveStream();
-    const obj8 = flag(10350);
+    const obj8 = flag(10351);
     const videoPermission = obj8.getVideoPermission(channel);
     if (application != null) {
       id = application.id;
@@ -65,7 +65,7 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
     dependencyMap = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.IOS;
     let tmp4 = id;
     const obj5 = { guildId: channel.guild_id, location: "canFulfillStreamRequest" };
-    const obj6 = id(12279);
+    const obj6 = id(12287);
     const tmp5 = obj6.getConfig(obj5).enabled && null == id;
     if (null == id) {
       if (!tmp5) {

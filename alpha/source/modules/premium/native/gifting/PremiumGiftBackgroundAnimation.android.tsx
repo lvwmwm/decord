@@ -1,13 +1,13 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11319
+// Function ID: 11320
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 5044, 21, 5043, 504, 11319, 11320, 5628, 2]
+// Dependencies: [32, 19, 17, 5044, 21, 5043, 504, 11320, 11321, 5628, 2]
 // Exports: default
 
-// Module 11318 (PremiumGiftBackgroundAnimation)
+// Module 11319 (PremiumGiftBackgroundAnimation)
 import react_native from "react-native" /* 17 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 11319 */;
-import GiftAnimationData from "GiftAnimationData" /* 11320 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 11320 */;
+import GiftAnimationData from "GiftAnimationData" /* 11321 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -71,7 +71,7 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
         tmp8 = null != first2;
       }
       tmp4(tmp8);
-      closure_5(tmp6(11319).AnimationState.ACTION);
+      closure_5(tmp6(11320).AnimationState.ACTION);
     }
   }, items3);
   const items4 = [first, first3];

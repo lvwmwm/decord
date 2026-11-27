@@ -1,11 +1,11 @@
-// Module ID: 13525
-// Function ID: 13526
+// Module ID: 13533
+// Function ID: 13534
 // Name: useGuildPowerupOnToggle
-// Dependencies: [32, 19, 13475, 2]
+// Dependencies: [32, 19, 13483, 2]
 // Exports: default
 
-// Module 13525 (useGuildPowerupOnToggle)
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13475 */;
+// Module 13533 (useGuildPowerupOnToggle)
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13483 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

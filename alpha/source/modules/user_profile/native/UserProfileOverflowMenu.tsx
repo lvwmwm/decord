@@ -1,10 +1,10 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 14866
+// Function ID: 14867
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 6933, 4892, 4985, 4946, 7557, 1071, 5693, 21, 504, 12088, 14861, 12908, 12089, 12092, 12096, 14867, 6381, 6379, 6380, 6162, 14848, 14849, 14868, 14869, 14870, 7863, 6133, 1112, 7847, 5257, 6130, 14876, 2120, 14877, 2651, 12122, 7849, 4868, 7538, 5099, 5724, 2151, 5687, 10087, 13092, 14879, 1654, 9067, 14874, 7944, 7745, 575, 14880, 2]
+// Dependencies: [32, 19, 17, 6933, 4892, 4985, 4946, 7557, 1071, 5693, 21, 504, 12096, 14867, 12916, 12097, 12100, 12104, 14873, 6381, 6379, 6380, 6162, 14854, 14855, 14874, 14875, 14876, 7863, 6133, 14882, 1112, 7847, 5257, 6130, 14883, 2120, 14884, 2651, 12130, 7849, 4868, 7538, 5099, 5724, 2151, 5687, 10088, 13100, 14886, 1654, 9068, 14880, 7944, 7745, 575, 14887, 2]
 // Exports: default
 
-// Module 14860 (UserProfileOverflowMenu)
+// Module 14866 (UserProfileOverflowMenu)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
@@ -17,13 +17,13 @@ import ClipboardUtils from "ClipboardUtils" /* 7538 */;
 import Constants2 from "Constants" /* 7557 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7849 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12088 */;
-import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 12122 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 13092 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 14861 */;
-import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 14870 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14874 */;
-import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 14879 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12096 */;
+import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 12130 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 13100 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 14867 */;
+import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 14876 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14880 */;
+import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 14886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
@@ -73,7 +73,7 @@ export default function UserProfileOverflowMenu(user) {
   let obj23;
   let obj24;
   let relationshipType;
-  let tmp69;
+  let tmp74;
   user = user.user;
   const currentUser = user.currentUser;
   const application = user.application;
@@ -140,11 +140,11 @@ export default function UserProfileOverflowMenu(user) {
   newestAnalyticsLocation = tmp7ResultResult.newestAnalyticsLocation;
   let guild_id;
   let id = user.id;
-  const tmp7Result2 = currentUser(tmp2[22]);
+  const tmp7Result3 = currentUser(tmp2[22]);
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const tmp7Result1Result = tmp7Result2(id, guild_id);
+  const tmp7Result1Result = tmp7Result3(id, guild_id);
   guildId = undefined;
   if (displayProfile != null) {
     guildId = displayProfile.guildId;
@@ -214,14 +214,24 @@ export default function UserProfileOverflowMenu(user) {
     id4 = channel.id;
   }
   closure_15 = tmp33;
+  let id5;
+  const tmp7Result4 = currentUser(tmp2[30]);
+  if (application != null) {
+    id5 = application.id;
+  }
   let guildId2;
   if (displayProfile != null) {
     guildId2 = displayProfile.guildId;
   }
+  const tmp7Result2Result = tmp7Result4(user, id5, guildId2);
+  let guildId3;
+  if (displayProfile != null) {
+    guildId3 = displayProfile.guildId;
+  }
   const items5 = [];
-  if (null != guildId2) {
+  if (null != guildId3) {
     let obj5 = {
-      label: intl.string(tmp(tmp2[30]).t.GISTta),
+      label: intl.string(tmp(tmp2[31]).t.GISTta),
       action() {
           const obj = { action: "PRESS_VIEW_MAIN_PROFILE", analyticsLocations };
           trackUserProfileAction(obj);
@@ -229,24 +239,24 @@ export default function UserProfileOverflowMenu(user) {
         }
     };
     const push = items5.push;
-    intl = tmp(tmp2[30]).intl;
+    intl = tmp(tmp2[31]).intl;
     push(obj5);
   }
-  let guildId3;
+  let guildId4;
   if (tmp7Result1Result != null) {
-    guildId3 = tmp7Result1Result.guildId;
+    guildId4 = tmp7Result1Result.guildId;
   }
-  let tmp37 = null != guildId3;
-  if (tmp37) {
-    let guildId4;
+  let tmp41 = null != guildId4;
+  if (tmp41) {
+    let guildId5;
     if (displayProfile != null) {
-      guildId4 = displayProfile.guildId;
+      guildId5 = displayProfile.guildId;
     }
-    tmp37 = null == guildId4;
+    tmp41 = null == guildId5;
   }
-  if (tmp37) {
+  if (tmp41) {
     let obj6 = {
-      label: intl2.string(tmp(tmp2[30]).t.DisZzB),
+      label: intl2.string(tmp(tmp2[31]).t.DisZzB),
       action() {
           const obj = { action: "PRESS_VIEW_SERVER_PROFILE", analyticsLocations };
           trackUserProfileAction(obj);
@@ -254,24 +264,24 @@ export default function UserProfileOverflowMenu(user) {
         }
     };
     const push2 = items5.push;
-    intl2 = tmp(tmp2[30]).intl;
+    intl2 = tmp(tmp2[31]).intl;
     push2(obj6);
   }
   const items6 = [];
   if (id3 !== id2) {
-    let tmp40 = null != channel && !channel.isThread() && channel.isOwner(currentUser.id);
-    if (tmp40) {
+    let tmp44 = null != channel && !channel.isThread() && channel.isOwner(currentUser.id);
+    if (tmp44) {
       const recipients = channel.recipients;
       let hasItem;
       if (recipients != null) {
         hasItem = recipients.includes(id2);
       }
-      tmp40 = hasItem;
+      tmp44 = hasItem;
     }
-    if (tmp40) {
+    if (tmp44) {
       const push3 = items6.push;
       const obj7 = {
-        label: intl3.string(tmp(tmp2[30]).t["n5zMI+"]),
+        label: intl3.string(tmp(tmp2[31]).t["n5zMI+"]),
         variant: "destructive",
         action() {
               const obj = ChannelActionCreatorsDefault;
@@ -280,15 +290,15 @@ export default function UserProfileOverflowMenu(user) {
               obj2.hideActionSheet();
             }
       };
-      intl3 = tmp(tmp2[30]).intl;
+      intl3 = tmp(tmp2[31]).intl;
       push3(obj7);
     }
     if (relationshipType === tmp31.FRIEND) {
       let stringResult;
       const push4 = items5.push;
-      const intl4 = tmp(tmp2[30]).intl;
+      const intl4 = tmp(tmp2[31]).intl;
       const string = intl4.string;
-      const t = tmp(tmp2[30]).t;
+      const t = tmp(tmp2[31]).t;
       if (tmp6) {
         stringResult = string(t["8pOYUE"]);
       } else {
@@ -301,7 +311,7 @@ export default function UserProfileOverflowMenu(user) {
               trackUserProfileAction(obj);
               const obj2 = ModalActionCreatorsDefault;
               const obj3 = { userId: id2, showUserProfile: callback1 };
-              obj2.pushLazy(asyncRequire(14876, dependencyMap.paths), obj3);
+              obj2.pushLazy(asyncRequire(14883, dependencyMap.paths), obj3);
               const obj4 = ActionSheetActionCreatorsDefault;
               obj4.hideActionSheet();
             }
@@ -311,38 +321,38 @@ export default function UserProfileOverflowMenu(user) {
     if (isShopThisLookMobileEnabled && equippedCollectibleSkuIds.length > 0) {
       const push5 = items5.push;
       const obj9 = {
-        label: intl5.string(tmp(tmp2[30]).t.xNdRDO),
+        label: intl5.string(tmp(tmp2[31]).t.xNdRDO),
         action() {
               const obj = openShopThisLookActionSheet;
               const obj2 = { userId: id2, guildId };
               const result = obj.openShopThisLookActionSheet(obj2);
             }
       };
-      intl5 = tmp(tmp2[30]).intl;
+      intl5 = tmp(tmp2[31]).intl;
       push5(obj9);
     }
     const obj10 = { isIgnored, isBlocked: relationshipType === BLOCKED };
-    const tmpResult23 = tmp(tmp2[36]);
+    const tmpResult23 = tmp(tmp2[37]);
     const ignoreMenuItem = tmpResult23.getIgnoreMenuItem(obj4, obj10);
     if (null != ignoreMenuItem) {
       items6.push(ignoreMenuItem);
     }
     const push6 = items6.push;
     const obj11 = { isBlocked: relationshipType === BLOCKED };
-    const tmpResult24 = tmp(tmp2[36]);
+    const tmpResult24 = tmp(tmp2[37]);
     push6(tmpResult24.getBlockMenuItem(obj4, obj11));
     if (relationshipType !== BLOCKED) {
       const obj12 = { isInIarUserReportingExperiment: result, guildId: guildId1, reportEntrypoint: "UserProfileOverflowMenu" };
-      const tmpResult25 = tmp(tmp2[36]);
+      const tmpResult25 = tmp(tmp2[37]);
       const reportMenuItem = tmpResult25.getReportMenuItem(obj4, obj12);
       if (null != reportMenuItem) {
         items6.push(reportMenuItem);
       }
-      const tmp52 = !user.bot && tmp9;
-      if (tmp52) {
+      const tmp56 = !user.bot && tmp9;
+      if (tmp56) {
         const push7 = items5.push;
         const obj13 = {
-          label: intl6.string(tmp(tmp2[30]).t.Sd8Ixw),
+          label: intl6.string(tmp(tmp2[31]).t.Sd8Ixw),
           action() {
                   const obj = { action: "PRESS_INVITE_TO_SERVER", analyticsLocations };
                   trackUserProfileAction(obj);
@@ -350,37 +360,37 @@ export default function UserProfileOverflowMenu(user) {
                   const result = obj2.showGuildInviteActionSheet(id2, newestAnalyticsLocation);
                 }
         };
-        intl6 = tmp(tmp2[30]).intl;
+        intl6 = tmp(tmp2[31]).intl;
         push7(obj13);
       }
       if (isLinkedGameOrganizationInviteRecipient) {
         const push8 = items5.push;
         const obj14 = {
-          label: intl7.string(currentUser(tmp2[37])["wkSug+"]),
+          label: intl7.string(currentUser(tmp2[38])["wkSug+"]),
           subLabel: invitableGameOrganizationsFullSubLabel,
           disabled: null != invitableGameOrganizationsFullSubLabel,
           action() {
                   return openGameOrganizationInvitePickerDefault(id2);
                 }
         };
-        intl7 = tmp(tmp2[30]).intl;
+        intl7 = tmp(tmp2[31]).intl;
         push8(obj14);
       }
     }
   }
-  let tmp55 = !canRing;
+  let tmp59 = !canRing;
   if (canRing) {
-    tmp55 = null == selectedVoiceChannelId;
+    tmp59 = null == selectedVoiceChannelId;
   }
-  if (!tmp55) {
-    tmp55 = userIsInCall && !isUserRinging;
+  if (!tmp59) {
+    tmp59 = userIsInCall && !isUserRinging;
   }
-  if (!tmp55) {
+  if (!tmp59) {
     let string2Result;
     const push9 = items5.push;
-    const intl8 = tmp(tmp2[30]).intl;
+    const intl8 = tmp(tmp2[31]).intl;
     const string2 = intl8.string;
-    const t2 = tmp(tmp2[30]).t;
+    const t2 = tmp(tmp2[31]).t;
     if (userIsInCall) {
       string2Result = string2(t2.ygslb0);
     } else {
@@ -408,12 +418,12 @@ export default function UserProfileOverflowMenu(user) {
     };
     push9(obj15);
   }
-  const DeveloperMode = tmp(tmp2[40]).DeveloperMode;
+  const DeveloperMode = tmp(tmp2[41]).DeveloperMode;
   const setting = DeveloperMode.getSetting();
   if (!setting) {
     const push10 = items5.push;
     const obj16 = {
-      label: intl9.string(tmp(tmp2[30]).t.y5MwJy),
+      label: intl9.string(tmp(tmp2[31]).t.y5MwJy),
       action() {
           const obj = { action: "COPY_USERNAME", analyticsLocations };
           trackUserProfileAction(obj);
@@ -425,18 +435,18 @@ export default function UserProfileOverflowMenu(user) {
           const result = obj3.presentUsernameCopied();
         }
     };
-    intl9 = tmp(tmp2[30]).intl;
+    intl9 = tmp(tmp2[31]).intl;
     push10(obj16);
   }
   if (user.bot) {
     if (null != application) {
-      const tmpResult26 = tmp(tmp2[44]);
-      closure_16 = tmpResult26.supportsEmbeddedSurface(application, tmp(tmp2[45]).EmbeddedSurfaceType.MAIN);
-      const tmpResult27 = tmp(tmp2[46]);
+      const tmpResult26 = tmp(tmp2[45]);
+      closure_16 = tmpResult26.supportsEmbeddedSurface(application, tmp(tmp2[46]).EmbeddedSurfaceType.MAIN);
+      const tmpResult27 = tmp(tmp2[47]);
       installAppPropsFromProfileApplication = tmpResult27.getInstallAppPropsFromProfileApplication(application);
       const push13 = items5.push;
       const obj17 = {
-        label: intl11.string(tmp(tmp2[30]).t.WqhZss),
+        label: intl11.string(tmp(tmp2[31]).t.WqhZss),
         action() {
               let activityLaunchURL;
               const obj = { action: "COPY_APP_LINK", analyticsLocations };
@@ -457,19 +467,19 @@ export default function UserProfileOverflowMenu(user) {
               obj6.presentLinkCopied();
             }
       };
-      intl11 = tmp(tmp2[30]).intl;
+      intl11 = tmp(tmp2[31]).intl;
       push13(obj17);
     }
   }
   if (setting) {
     const push11 = items5.push;
-    let guildId5;
-    const getDeveloperCopyMenuItem = tmp(tmp2[36]).getDeveloperCopyMenuItem;
-    tmp(tmp2[36]);
+    let guildId6;
+    const getDeveloperCopyMenuItem = tmp(tmp2[37]).getDeveloperCopyMenuItem;
+    tmp(tmp2[37]);
     if (displayProfile != null) {
-      guildId5 = displayProfile.guildId;
+      guildId6 = displayProfile.guildId;
     }
-    const obj18 = { avatarGuildId: guildId5, bannerUrl: bannerURL };
+    const obj18 = { avatarGuildId: guildId6, bannerUrl: bannerURL };
     bannerURL = undefined;
     if (displayProfile != null) {
       const obj19 = { canAnimate: true, size: canRing };
@@ -485,21 +495,24 @@ export default function UserProfileOverflowMenu(user) {
   if (hasItem1) {
     const push12 = items5.push;
     const obj20 = {
-      label: intl10.string(tmp(tmp2[30]).t.PHjkRE),
+      label: intl10.string(tmp(tmp2[31]).t.PHjkRE),
       action() {
           const obj = { userId: id2, selectedChannel, showUserProfile: callback1, analyticsLocations };
           return openUserContextMenuCommandsDefault(obj);
         }
     };
-    intl10 = tmp(tmp2[30]).intl;
+    intl10 = tmp(tmp2[31]).intl;
     push12(obj20);
+  }
+  if (null != tmp7Result2Result) {
+    items5.push(tmp7Result2Result);
   }
   if (0 !== items5.length) {
     const obj21 = { value: analyticsLocations, children: items8 };
     const obj22 = { ref, children: closure_15(View, obj23) };
     const AnalyticsLocationProvider = tmp(tmp2[20]).AnalyticsLocationProvider;
-    obj23 = { style: tmp23, children: closure_15(tmp(tmp2[50]).ContextMenu, obj24) };
-    View = tmp7(tmp2[49]).View;
+    obj23 = { style: tmp23, children: closure_15(tmp(tmp2[51]).ContextMenu, obj24) };
+    View = tmp7(tmp2[50]).View;
     obj24 = {
       items: items7,
       onOpen() {
@@ -515,22 +528,22 @@ export default function UserProfileOverflowMenu(user) {
           let obj2;
           ref = ref.ref;
           const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref, size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(user(application[30]).t["+zofAD"]), icon: closure_15(MoreHorizontalIcon, obj2) };
-          const IconButton = user(application[52]).IconButton;
+          const obj = { ref, size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(user(application[31]).t["+zofAD"]), icon: closure_15(MoreHorizontalIcon, obj2) };
+          const IconButton = user(application[53]).IconButton;
           const merged1 = Object.assign(merged);
-          intl = user(application[30]).intl;
-          obj2 = { size: "sm", color: currentUser(application[54]).colors.WHITE };
-          MoreHorizontalIcon = user(application[53]).MoreHorizontalIcon;
+          intl = user(application[31]).intl;
+          obj2 = { size: "sm", color: currentUser(application[55]).colors.WHITE };
+          MoreHorizontalIcon = user(application[54]).MoreHorizontalIcon;
           return closure_15(IconButton, obj);
         }
     };
     items7 = [items5, items6];
     items8 = [closure_15(selectedVoiceChannelId, obj22), ];
     const obj25 = { targetRef: ref, visible: isVisible, onDismiss: markAsDismissed, onPress: callback };
-    items8[1] = closure_15(currentUser(tmp2[55]), obj25);
-    tmp69 = closure_16(AnalyticsLocationProvider, obj21);
+    items8[1] = closure_15(currentUser(tmp2[56]), obj25);
+    tmp74 = closure_16(AnalyticsLocationProvider, obj21);
   } else {
-    tmp69 = null;
+    tmp74 = null;
   }
-  return tmp69;
+  return tmp74;
 };

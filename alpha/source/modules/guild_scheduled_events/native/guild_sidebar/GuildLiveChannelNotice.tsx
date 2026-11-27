@@ -1,10 +1,10 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17917
+// Function ID: 17918
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6812, 4897, 6813, 4975, 5854, 4898, 1082, 21, 575, 1186, 7067, 10654, 7178, 6124, 1379, 5647, 5043, 5634, 13517, 10643, 6833, 2019, 8449, 7834, 5252, 9014, 5641, 5050, 5659, 504, 1112, 7096, 8608, 8480, 8504, 8613, 6861, 6855, 6811, 8463, 7163, 17909, 11406, 6145, 2]
+// Dependencies: [19, 17, 6812, 4897, 6813, 4975, 5854, 4898, 1082, 21, 575, 1186, 7067, 10655, 7178, 6124, 1379, 5647, 5043, 5634, 13525, 10644, 6833, 2019, 8450, 7834, 5252, 9015, 5641, 5050, 5659, 504, 1112, 7096, 8609, 8481, 8505, 8614, 6861, 6855, 6811, 8464, 7163, 17916, 11407, 6145, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 17910 (GuildLiveChannelNotice)
+// Module 17917 (GuildLiveChannelNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -17,12 +17,12 @@ import useChannelNameDefault from "useChannelName" /* 5659 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6124 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6855 */;
 import MarkupRulesUtils from "MarkupRulesUtils" /* 7178 */;
-import EntityUtils from "EntityUtils" /* 8480 */;
-import LocationIcon from "LocationIcon" /* 8504 */;
-import CalendarIcon from "CalendarIcon" /* 8608 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8613 */;
-import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 10654 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11406 */;
+import EntityUtils from "EntityUtils" /* 8481 */;
+import LocationIcon from "LocationIcon" /* 8505 */;
+import CalendarIcon from "CalendarIcon" /* 8609 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8614 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 10655 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11407 */;
 import react from "react" /* 19 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6812 */;
 import StageInstanceStore from "StageInstanceStore" /* 4897 */;
@@ -123,8 +123,8 @@ function UserSummaryRow(arg0) {
       items2 = [, ];
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       let obj4 = { size: "custom", style: obj5.makeSizeStyle(14) };
-      const HeadphonesIcon = max(13517).HeadphonesIcon;
-      obj5 = max(10643);
+      const HeadphonesIcon = max(13525).HeadphonesIcon;
+      obj5 = max(10644);
       items3 = [tmp8(HeadphonesIcon, obj4), ];
       let obj6 = { variant: "body-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
       items3[1] = closure_13(max(5634).Text, obj6);
@@ -162,7 +162,7 @@ function JoinChannelButton(label) {
   const tmp = closure_29();
   const tmp2 = isChannelContentGated(5252)();
   isChannelContentGated = undefined;
-  const tmp3 = isChannelContentGated(9014)();
+  const tmp3 = isChannelContentGated(9015)();
   const obj = channel(6833);
   isChannelContentGated = obj.useIsChannelContentGated(channel);
   const items = [channel, isChannelContentGated];
@@ -214,7 +214,7 @@ function GuildVoiceEventNotice(channel) {
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items1, () => PermissionStore.can(Permissions.CONNECT, channel));
   const items2 = [ApplicationStreamingStore];
-  const obj4 = { heading: intl.string(channel(1112).t["X2K3/4"]), topic: guildEvent.name, location: tmp2, LocationIcon: obj5.getChannelIconComponent(channel), LiveIcon: channel(8608).CalendarIcon, voiceUsers: closure_13(UserSummaryRow, obj6), joinButton: tmp7Result };
+  const obj4 = { heading: intl.string(channel(1112).t["X2K3/4"]), topic: guildEvent.name, location: tmp2, LocationIcon: obj5.getChannelIconComponent(channel), LiveIcon: channel(8609).CalendarIcon, voiceUsers: closure_13(UserSummaryRow, obj6), joinButton: tmp7Result };
   const obj3 = channel(504);
   const stateFromStores1 = obj3.useStateFromStores(items2, () => ApplicationStreamingStore.getAllApplicationStreamsForChannel(channel.id).length > 0);
   intl = channel(1112).intl;
@@ -285,7 +285,7 @@ function GuildLiveStageNotice(channel) {
   const stateFromStores1 = obj3.useStateFromStores(items2, () => PermissionStore.can(Permissions.CONNECT, channel));
   const obj4 = channel(6811);
   const stageHasStream = obj4.useStageHasStream(channel.id);
-  const obj5 = channel(8463);
+  const obj5 = channel(8464);
   const guildActiveEvent = obj5.useGuildActiveEvent(channel.guild_id);
   const obj6 = { heading: intl.string(channel(1112).t["X2K3/4"]), location: tmp2, LocationIcon: channelIconComponent, LiveIcon: StageIcon, topic: stageInstance.topic, voiceUsers: closure_13(UserSummaryRow, obj7), joinButton: tmp9Result };
   intl = channel(1112).intl;
@@ -296,7 +296,7 @@ function GuildLiveStageNotice(channel) {
     channelIconComponent = tmp3Result.getChannelIconComponent(channel);
   }
   if (null != guildActiveEvent) {
-    StageIcon = tmp3(8608).CalendarIcon;
+    StageIcon = tmp3(8609).CalendarIcon;
   } else {
     StageIcon = tmp3(7163).StageIcon;
   }
@@ -448,9 +448,9 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   const style = guild.style;
   const tmp2 = activeEventOrStageInstanceChannel;
   const tmp = closure_29();
-  let obj = activeEventOrStageInstanceChannel(17909);
+  let obj = activeEventOrStageInstanceChannel(17916);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
-  let obj2 = activeEventOrStageInstanceChannel(8463);
+  let obj2 = activeEventOrStageInstanceChannel(8464);
   const guildActiveEvent = obj2.useGuildActiveEvent(guild.id);
   let obj3 = activeEventOrStageInstanceChannel(504);
   const items = [StageInstanceStore];

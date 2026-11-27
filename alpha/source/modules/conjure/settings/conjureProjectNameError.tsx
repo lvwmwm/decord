@@ -1,10 +1,10 @@
-// Module ID: 18480
-// Function ID: 18481
+// Module ID: 18487
+// Function ID: 18488
 // Name: conjureProjectNameError
 // Dependencies: [1112, 4245, 6935, 2]
 // Exports: conjureProjectNameError
 
-// Module 18480 (conjureProjectNameError)
+// Module 18487 (conjureProjectNameError)
 import intl3 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;

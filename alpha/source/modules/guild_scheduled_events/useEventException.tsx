@@ -1,10 +1,10 @@
-// Module ID: 8470
-// Function ID: 8471
+// Module ID: 8471
+// Function ID: 8472
 // Name: useEventException
 // Dependencies: [5775, 504, 2]
 // Exports: default, getEventException
 
-// Module 8470 (useEventException)
+// Module 8471 (useEventException)
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
 import size from "module_2" /* 2 */;
 

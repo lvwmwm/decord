@@ -1,10 +1,10 @@
-// Module ID: 14482
-// Function ID: 14483
+// Module ID: 14489
+// Function ID: 14490
 // Name: SurveyIndication
-// Dependencies: [6842, 1112, 8821, 5050, 14483, 14484, 2]
+// Dependencies: [6842, 1112, 8822, 5050, 14490, 14491, 2]
 // Exports: createSurveyIndication
 
-// Module 14482 (SurveyIndication)
+// Module 14489 (SurveyIndication)
 import intl2 from "intl" /* 1112 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6842 */;
 import size from "module_2" /* 2 */;
@@ -33,13 +33,13 @@ export function createSurveyIndication(message, forcedTheme, pushFeedbackType) {
     TOP_MESSAGE_PUSH = tmp.TOP_MESSAGE_PUSH;
   }
   const obj2 = { content: formatToParts(GwWhce, { handleMessage: obj }), feedbackIconUrl: getAssetUriForEmbed(tmp8Result) };
-  getAssetUriForEmbed = tmp2(8821).getAssetUriForEmbed;
-  tmp2(8821);
+  getAssetUriForEmbed = tmp2(8822).getAssetUriForEmbed;
+  tmp2(8822);
   const tmp2Result2 = tmp2(5050);
   if (tmp2Result2.isThemeDark(forcedTheme)) {
-    tmp8Result = tmp8(14483);
+    tmp8Result = tmp8(14490);
   } else {
-    tmp8Result = tmp8(14484);
+    tmp8Result = tmp8(14491);
   }
   return obj2;
 }

@@ -1,9 +1,9 @@
-// Module ID: 19864
-// Function ID: 19865
+// Module ID: 19880
+// Function ID: 19881
 // Name: SelfPresenceStoreManager
 // Dependencies: [7654, 7475, 572, 2]
 
-// Module 19864 (SelfPresenceStoreManager)
+// Module 19880 (SelfPresenceStoreManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7654 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;

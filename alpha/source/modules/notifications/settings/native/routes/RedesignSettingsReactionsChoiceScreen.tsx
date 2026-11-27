@@ -1,12 +1,12 @@
-// Module ID: 17639
-// Function ID: 17640
+// Module ID: 17646
+// Function ID: 17647
 // Name: RedesignSettingsReactionsChoiceScreen
-// Dependencies: [19, 21, 1501, 1112, 3207, 11962, 17626, 17632, 2]
+// Dependencies: [19, 21, 1501, 1112, 3207, 11970, 17633, 17639, 2]
 
-// Module 17639 (RedesignSettingsReactionsChoiceScreen)
+// Module 17646 (RedesignSettingsReactionsChoiceScreen)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3207 from "module_3207" /* 3207 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 17632 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 17639 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

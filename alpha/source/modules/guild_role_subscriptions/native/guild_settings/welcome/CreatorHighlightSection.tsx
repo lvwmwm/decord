@@ -1,10 +1,10 @@
-// Module ID: 20195
-// Function ID: 20196
+// Module ID: 20253
+// Function ID: 20254
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5043, 575, 5634, 1186, 9722, 1112, 20196, 5722, 20145, 5730, 16850, 5641, 7482, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5634, 1186, 9723, 1112, 20254, 5722, 20203, 5730, 16857, 5641, 7482, 2]
 // Exports: default
 
-// Module 20195 (CreatorHighlightSection)
+// Module 20253 (CreatorHighlightSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -12,8 +12,8 @@ import native from "native" /* 1186 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import LinkingDefault from "Linking" /* 5722 */;
 import defaultMVCPConfig from "defaultMVCPConfig" /* 7482 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9722 */;
-import EmojiIconDefault from "EmojiIcon" /* 16850 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9723 */;
+import EmojiIconDefault from "EmojiIcon" /* 16857 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -82,12 +82,12 @@ function CreatorGuildCard(highlightedCreatorGuild) {
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp4 = guild_id(20196)(guild_id, 3, 60);
+  const tmp4 = guild_id(20254)(guild_id, 3, 60);
   dependencyMap = tmp4;
   const hasAllImperativeDetails = tmp4.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp4];
   if (tmp4.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(20145), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(20203), {}) };
     return closure_5(View, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp4.details;

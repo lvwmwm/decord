@@ -1,10 +1,10 @@
-// Module ID: 8718
-// Function ID: 8719
+// Module ID: 8719
+// Function ID: 8720
 // Name: useGetGameForAppId
-// Dependencies: [19, 2165, 2141, 7515, 8719, 504, 1255, 2]
+// Dependencies: [19, 2165, 2141, 7515, 8720, 504, 1255, 2]
 // Exports: default, useGetGameResultsForAppIds, useGetGamesForAppIds
 
-// Module 8718 (useGetGameForAppId)
+// Module 8719 (useGetGameForAppId)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7515 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const useGame = tmp(8719);
+const useGame = tmp(8720);
 const result = size.fileFinishedImporting("modules/games/hooks/useGetGameForAppId.tsx");
 
 export default function useGetGameForAppId(applicationId) {

@@ -1,12 +1,12 @@
-// Module ID: 17427
-// Function ID: 17428
+// Module ID: 17434
+// Function ID: 17435
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [9555, 1071, 11962, 17428, 2]
+// Dependencies: [9556, 1071, 11970, 17435, 2]
 
-// Module 17427 (DesignSystemSegmentedControlSetting)
+// Module 17434 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1071 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

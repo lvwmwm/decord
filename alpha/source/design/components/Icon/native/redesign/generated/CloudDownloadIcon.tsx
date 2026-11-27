@@ -1,14 +1,14 @@
-// Module ID: 18905
-// Function ID: 18906
+// Module ID: 18921
+// Function ID: 18922
 // Name: CloudDownloadIcon
-// Dependencies: [19, 21, 575, 5729, 18906, 2]
+// Dependencies: [19, 21, 575, 5729, 18922, 2]
 // Exports: CloudDownloadIcon
 
-// Module 18905 (CloudDownloadIcon)
+// Module 18921 (CloudDownloadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 18906 */;
+import AssetRegistry from "AssetRegistry" /* 18922 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

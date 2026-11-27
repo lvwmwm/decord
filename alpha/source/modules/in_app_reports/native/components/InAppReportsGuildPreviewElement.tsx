@@ -1,10 +1,10 @@
-// Module ID: 14680
-// Function ID: 14681
+// Module ID: 14687
+// Function ID: 14688
 // Name: InAppReportsGuildPreviewElement
 // Dependencies: [19, 17, 21, 5043, 575, 5040, 5634, 1112, 7052, 2]
 // Exports: default
 
-// Module 14680 (InAppReportsGuildPreviewElement)
+// Module 14687 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

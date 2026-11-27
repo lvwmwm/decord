@@ -1,10 +1,10 @@
-// Module ID: 19820
-// Function ID: 19821
+// Module ID: 19836
+// Function ID: 19837
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 4894, 1071, 21, 7191, 5043, 575, 5634, 1112, 18046, 5607, 1413, 6152, 2655, 5257, 18022, 9420, 7052, 6115, 8735, 4906, 7558, 18025, 504, 18050, 18051, 1256, 7197, 7480, 9004, 18026, 1654, 19821, 5641, 2]
+// Dependencies: [32, 19, 17, 4894, 1071, 21, 7191, 5043, 575, 5634, 1112, 18053, 5607, 1413, 6152, 2655, 5257, 18029, 9421, 7052, 6115, 8736, 4906, 7558, 18032, 504, 18057, 18058, 1256, 7197, 7480, 9005, 18033, 1654, 19837, 5641, 2]
 // Exports: default
 
-// Module 19820 (InterestGuildRecommendations)
+// Module 19836 (InterestGuildRecommendations)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -13,12 +13,12 @@ import _modDef2655 from "module_2655" /* 2655 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 8735 */;
-import ClipViewDefault from "ClipView" /* 9420 */;
-import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 18022 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 18025 */;
-import InterestGuildActions from "InterestGuildActions" /* 18026 */;
-import InterestGhostDefault from "InterestGhost" /* 18046 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 8736 */;
+import ClipViewDefault from "ClipView" /* 9421 */;
+import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 18029 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 18032 */;
+import InterestGuildActions from "InterestGuildActions" /* 18033 */;
+import InterestGhostDefault from "InterestGhost" /* 18053 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildMembershipStore from "GuildMembershipStore" /* 4894 */;

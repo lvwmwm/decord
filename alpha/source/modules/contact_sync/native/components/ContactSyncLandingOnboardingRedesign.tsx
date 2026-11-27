@@ -1,18 +1,18 @@
-// Module ID: 13687
-// Function ID: 13688
+// Module ID: 13694
+// Function ID: 13695
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 7872, 21, 5043, 575, 5597, 7873, 5730, 13688, 5634, 1112, 5641, 13689, 13680, 2]
+// Dependencies: [5, 19, 17, 7872, 21, 5043, 575, 5597, 7873, 5730, 13695, 5634, 1112, 5641, 13696, 13687, 2]
 // Exports: default
 
-// Module 13687 (ContactSyncLandingOnboardingRedesign)
+// Module 13694 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 13680 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13688 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 13689 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 13687 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13695 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 13696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -78,7 +78,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -111,7 +111,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
             closure_128_0();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c2 = 3;

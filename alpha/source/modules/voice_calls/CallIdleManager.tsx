@@ -1,14 +1,14 @@
-// Module ID: 19669
-// Function ID: 19670
+// Module ID: 19685
+// Function ID: 19686
 // Name: CallIdleManager
-// Dependencies: [4891, 4892, 5691, 5854, 19670, 8244, 1112, 6797, 7475, 4887, 2]
+// Dependencies: [4891, 4892, 5691, 5854, 19686, 8245, 1112, 6797, 7475, 4887, 2]
 
-// Module 19669 (CallIdleManager)
+// Module 19685 (CallIdleManager)
 import intl2 from "intl" /* 1112 */;
 import Timers from "Timers" /* 4887 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6797 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
-import CampInDmExperiment from "CampInDmExperiment" /* 19670 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
+import CampInDmExperiment from "CampInDmExperiment" /* 19686 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import VoiceStateStore from "VoiceStateStore" /* 5691 */;

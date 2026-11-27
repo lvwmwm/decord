@@ -1,10 +1,10 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14031
+// Function ID: 14032
 // Name: useGiftInventorySubscriptionsLoaded
 // Dependencies: [5, 32, 19, 5806, 2]
 // Exports: default
 
-// Module 14024 (useGiftInventorySubscriptionsLoaded)
+// Module 14031 (useGiftInventorySubscriptionsLoaded)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -36,7 +36,7 @@ export default function useGiftInventorySubscriptionsLoaded() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -84,7 +84,7 @@ export default function useGiftInventorySubscriptionsLoaded() {
                 closure_0(succeeded);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             if (0 === c2) {

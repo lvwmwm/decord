@@ -1,21 +1,21 @@
-// Module ID: 14557
-// Function ID: 14558
+// Module ID: 14564
+// Function ID: 14565
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 6137, 6172, 21, 5043, 575, 14558, 6381, 7944, 11268, 1112, 14563, 14575, 14570, 14576, 6109, 14578, 14599, 14600, 6170, 14601, 14583, 14603, 14585, 14604, 14607, 6174, 14608, 14676, 2]
+// Dependencies: [19, 17, 6137, 6172, 21, 5043, 575, 14565, 6381, 7944, 11269, 1112, 14570, 14582, 14577, 14583, 6109, 14585, 14606, 14607, 6170, 14608, 14590, 14610, 14592, 14611, 14614, 6174, 14615, 14683, 2]
 // Exports: default
 
-// Module 14557 (UserProfileWidgetsBoard)
+// Module 14564 (UserProfileWidgetsBoard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 6109 */;
 import Constants from "Constants" /* 6137 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6174 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14558 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 14563 */;
-import WidgetUtils from "WidgetUtils" /* 14570 */;
-import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 14583 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 14585 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 14608 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14565 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 14570 */;
+import WidgetUtils from "WidgetUtils" /* 14577 */;
+import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 14590 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 14592 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 14615 */;
 import react from "react" /* 19 */;
 import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6172 */;
 import Fragment from "Fragment" /* 21 */;
@@ -52,7 +52,7 @@ function AddGameButton(ref) {
   };
   const IconButton = ref(7944).IconButton;
   obj2 = { size: "sm", color: widgetType(575).colors.ICON_DEFAULT };
-  PlusSmallIcon = ref(11268).PlusSmallIcon;
+  PlusSmallIcon = ref(11269).PlusSmallIcon;
   intl = ref(1112).intl;
   return closure_8(IconButton, obj);
 }

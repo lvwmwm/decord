@@ -1,10 +1,10 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11557
+// Function ID: 11558
 // Name: useFrameRunsInBackground
 // Dependencies: [1193, 6936, 504, 7690, 2]
 // Exports: default
 
-// Module 11549 (useFrameRunsInBackground)
+// Module 11557 (useFrameRunsInBackground)
 import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 7690 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
 import FramesStore from "FramesStore" /* 6936 */;

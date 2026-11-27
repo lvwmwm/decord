@@ -1,9 +1,9 @@
-// Module ID: 11419
-// Function ID: 11420
+// Module ID: 11420
+// Function ID: 11421
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 4892, 1071, 21, 5043, 575, 5618, 504, 5659, 5622, 1413, 11420, 7847, 1112, 5725, 11421, 6152, 5634, 7274, 5641, 11423, 2]
+// Dependencies: [5, 32, 19, 17, 4892, 1071, 21, 5043, 575, 5618, 504, 5659, 5622, 1413, 11421, 7847, 1112, 5725, 11422, 6152, 5634, 7274, 5641, 11424, 2]
 
-// Module 11419 (ChatGDMCustomize)
+// Module 11420 (ChatGDMCustomize)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -195,7 +195,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -301,7 +301,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
           c3 = 0;
           closure_129_10(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
         const tmp31 = closure_129_4;
         if (tmp31) {

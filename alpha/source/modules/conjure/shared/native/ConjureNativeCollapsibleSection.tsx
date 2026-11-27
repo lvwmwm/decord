@@ -1,10 +1,10 @@
-// Module ID: 18771
-// Function ID: 18772
+// Module ID: 18788
+// Function ID: 18789
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 5043, 575, 5634, 9816, 7558, 8489, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5634, 9817, 7558, 8490, 2]
 // Exports: ConjureNativeCollapsibleMeta, default
 
-// Module 18771 (ConjureNativeCollapsibleSection)
+// Module 18788 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
@@ -61,7 +61,7 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
   ({ hideLabel, children } = showHeader);
   const tmp = closure_6();
   if (flag3) {
-    ChevronSmallRightIcon = tmp2(9816).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp2(9817).ChevronSmallDownIcon;
     tmp4 = tmp2;
   } else {
     ChevronSmallRightIcon = tmp2(7558).ChevronSmallRightIcon;
@@ -81,7 +81,7 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
       if (null != onToggleExpanded) {
         const obj5 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj6, accessibilityLabel: showLabel, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj7) };
         obj6 = { expanded: flag3 };
-        const PressableScale = tmp4(8489).PressableScale;
+        const PressableScale = tmp4(8490).PressableScale;
         if (flag3) {
           showLabel = hideLabel;
         }

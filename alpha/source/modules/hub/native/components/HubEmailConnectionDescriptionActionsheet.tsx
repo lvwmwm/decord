@@ -1,10 +1,10 @@
-// Module ID: 13767
-// Function ID: 13768
+// Module ID: 13774
+// Function ID: 13775
 // Name: HubEmailConnectionDescriptionActionsheet
 // Dependencies: [19, 17, 21, 5043, 575, 5271, 7507, 1112, 5634, 2]
 // Exports: default
 
-// Module 13767 (HubEmailConnectionDescriptionActionsheet)
+// Module 13774 (HubEmailConnectionDescriptionActionsheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;

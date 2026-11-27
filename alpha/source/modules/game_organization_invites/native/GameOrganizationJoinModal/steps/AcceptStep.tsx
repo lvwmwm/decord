@@ -1,17 +1,17 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12346
+// Function ID: 12347
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 11917, 12333, 21, 5043, 575, 12331, 1501, 7191, 12095, 12339, 12347, 5725, 1112, 7888, 7890, 6115, 12335, 5634, 2651, 12349, 2653, 12350, 11615, 6863, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 11925, 12341, 21, 5043, 575, 12339, 1501, 7191, 12103, 12347, 12355, 5725, 1112, 7888, 7890, 6115, 12343, 5634, 2651, 12357, 2653, 12358, 11623, 6863, 5641, 2]
 // Exports: AcceptStep
 
-// Module 12338 (AcceptStep)
+// Module 12346 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12333 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12341 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11925 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -71,7 +71,7 @@ export function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -165,7 +165,7 @@ export function AcceptStep(code) {
             c4 = 0;
             closure_130_5(false);
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp57) {
           closure_3 = tmp57;

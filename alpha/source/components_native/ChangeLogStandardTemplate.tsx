@@ -1,10 +1,10 @@
-// Module ID: 14418
-// Function ID: 14419
+// Module ID: 14425
+// Function ID: 14426
 // Name: ChangeLogStandardTemplate
-// Dependencies: [19, 17, 2189, 1071, 21, 5043, 575, 1186, 563, 14419, 1256, 5722, 2069, 14420, 7067, 7480, 7944, 14233, 1112, 4855, 13309, 13307, 2]
+// Dependencies: [19, 17, 2189, 1071, 21, 5043, 575, 1186, 563, 14426, 1256, 5722, 2069, 14427, 7067, 7480, 7944, 14240, 1112, 4855, 13317, 13315, 2]
 // Exports: changelogRules, getRenderChangelog
 
-// Module 14418 (ChangeLogStandardTemplate)
+// Module 14425 (ChangeLogStandardTemplate)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -12,7 +12,7 @@ import _mod2069 from "module_2069" /* 2069 */;
 import getLocalizedLinkDefault from "getLocalizedLink" /* 4855 */;
 import LinkingDefault from "Linking" /* 5722 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
-import ChangeLogUtilsDefault from "ChangeLogUtils" /* 14420 */;
+import ChangeLogUtilsDefault from "ChangeLogUtils" /* 14427 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
@@ -43,7 +43,7 @@ const Link = (arg0) => {
 };
 function LHeading(className) {
   let items;
-  const f130258 = (item) => {
+  const f130664 = (item) => {
     let obj;
     if ("marginTop" === item) {
       obj = { marginTop: 10 };
@@ -68,7 +68,7 @@ function LHeading(className) {
   const tmp2 = unpackModuleId;
   if (null != className.className) {
     const parts = str.split(" ");
-    const mapped = parts.map(f130258);
+    const mapped = parts.map(f130664);
     combined = mapped.concat(tmp5);
   }
   items = [authStore(LegacyText, { accessibilityRole: "header", style: combined, children }), ];
@@ -76,7 +76,7 @@ function LHeading(className) {
   let combined1;
   if (null != className.className) {
     const parts1 = str.split(" ");
-    const mapped1 = parts1.map(f130258);
+    const mapped1 = parts1.map(f130664);
     combined1 = mapped1.concat(tmp7);
   }
   items[1] = authStore(React3, { style: combined1 });
@@ -92,7 +92,7 @@ function LinkInner(target) {
   let obj = target(563);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = target(14419);
+  let obj2 = target(14426);
   const changelog = obj2.useChangelog(changelogId, stateFromStores).changelog;
   const obj3 = {
     accessibilityRole: "link",
@@ -210,7 +210,7 @@ const memoResult1 = react.memo((video) => {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(14233).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(14240).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl.string(onScroll(1112).t["/lXfom"]),
     onPress() {
       const obj = LinkingDefault;
@@ -224,7 +224,7 @@ const memoResult1 = react.memo((video) => {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(13309).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(13317).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl2.string(onScroll(1112).t["h0or/l"]),
     onPress() {
       const obj = LinkingDefault;
@@ -238,7 +238,7 @@ const memoResult1 = react.memo((video) => {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(13307).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(13315).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl3.string(onScroll(1112).t["5uVPyf"]),
     onPress() {
       const obj = LinkingDefault;

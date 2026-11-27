@@ -1,10 +1,10 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8497
+// Function ID: 8498
 // Name: FloatingActionButton
 // Dependencies: [19, 21, 5043, 575, 5647, 1654, 5644, 6148, 2]
 // Exports: FloatingActionButton
 
-// Module 8496 (FloatingActionButton)
+// Module 8497 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;

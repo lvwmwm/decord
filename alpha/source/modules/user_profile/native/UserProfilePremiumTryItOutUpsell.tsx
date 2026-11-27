@@ -1,17 +1,17 @@
-// Module ID: 16172
-// Function ID: 16173
+// Module ID: 16179
+// Function ID: 16180
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 7557, 21, 5043, 16152, 1629, 1654, 5644, 1112, 2]
+// Dependencies: [19, 7557, 21, 5043, 16159, 1629, 1654, 5644, 1112, 2]
 // Exports: default
 
-// Module 16172 (UserProfilePremiumTryItOutUpsell)
+// Module 16179 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import Constants from "Constants" /* 7557 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 16152 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 16159 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

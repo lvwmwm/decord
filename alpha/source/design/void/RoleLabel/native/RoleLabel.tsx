@@ -1,10 +1,10 @@
-// Module ID: 10797
-// Function ID: 10798
+// Module ID: 10798
+// Function ID: 10799
 // Name: RoleLabel
 // Dependencies: [19, 17, 5044, 21, 5043, 504, 1186, 8088, 2]
 // Exports: RoleLabel
 
-// Module 10797 (RoleLabel)
+// Module 10798 (RoleLabel)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import _mod8088 from "module_8088" /* 8088 */;

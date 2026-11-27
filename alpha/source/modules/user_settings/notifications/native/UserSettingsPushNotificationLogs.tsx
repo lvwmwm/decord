@@ -1,10 +1,10 @@
-// Module ID: 17191
-// Function ID: 17192
+// Module ID: 17198
+// Function ID: 17199
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1071, 21, 5043, 575, 7295, 510, 10695, 1629, 7406, 6152, 1112, 8690, 10696, 12871, 7482, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1071, 21, 5043, 575, 7295, 510, 10696, 1629, 7406, 6152, 1112, 8691, 10697, 12879, 7482, 5634, 2]
 // Exports: default
 
-// Module 17191 (UserSettingsPushNotificationLogs)
+// Module 17198 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -81,7 +81,7 @@ export default function UserSettingsPushNotificationLogs() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -114,7 +114,7 @@ export default function UserSettingsPushNotificationLogs() {
               closure_0 = value;
               c2(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -195,7 +195,7 @@ export default function UserSettingsPushNotificationLogs() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export default function UserSettingsPushNotificationLogs() {
             const tmp9 = tmp(c2[15]);
             showShareActionSheet(obj, "push-notification-logs");
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -238,7 +238,7 @@ export default function UserSettingsPushNotificationLogs() {
         }
       }
     }),
-    children: closure_7(defaultValue(12871).ShareIcon, {})
+    children: closure_7(defaultValue(12879).ShareIcon, {})
   };
   const PressableOpacity = defaultValue(6152).PressableOpacity;
   intl = defaultValue(1112).intl;

@@ -1,10 +1,10 @@
-// Module ID: 19108
-// Function ID: 19109
+// Module ID: 19124
+// Function ID: 19125
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 6163, 2189, 16192, 6976, 1387, 18162, 1071, 1073, 4889, 7557, 21, 1654, 10481, 5043, 1359, 575, 671, 5220, 563, 1112, 6152, 16069, 8486, 14850, 6116, 1264, 6162, 1629, 9485, 5252, 14856, 5222, 1495, 4868, 1502, 19109, 1413, 9511, 7309, 14260, 6381, 10042, 9490, 14847, 6380, 9504, 5000, 4876, 9561, 5730, 19110, 12964, 5621, 19118, 19119, 5104, 19120, 9505, 9496, 14853, 1089, 11103, 9470, 19122, 12571, 6309, 11115, 8109, 6310, 9529, 8249, 2]
+// Dependencies: [32, 19, 17, 6163, 2189, 16199, 6976, 1387, 18169, 1071, 1073, 4889, 7557, 21, 1654, 10482, 5043, 1359, 575, 671, 5220, 563, 1112, 6152, 16076, 8487, 14856, 6116, 1264, 6162, 1629, 9486, 5252, 14862, 5222, 1495, 4868, 1502, 19125, 1413, 9512, 7309, 14267, 6381, 10043, 9491, 14853, 6380, 9505, 5000, 4876, 9562, 5730, 19126, 12972, 5621, 19134, 19135, 5104, 19136, 9506, 9497, 14859, 1089, 11104, 9471, 19138, 12579, 6309, 11116, 8109, 6310, 9530, 8250, 2]
 // Exports: default
 
-// Module 19108 (YouScreen)
+// Module 19124 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -15,18 +15,18 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
 import RootNavigationRef from "RootNavigationRef" /* 5220 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6309 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 10481 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 14260 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16069 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 10482 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 14267 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16076 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16192 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16199 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6976 */;
 import UserStore from "UserStore" /* 1387 */;
-import YouConstants from "YouConstants" /* 18162 */;
+import YouConstants from "YouConstants" /* 18169 */;
 import Constants from "Constants" /* 7557 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1654_mod from "module_1654" /* 1654 */;

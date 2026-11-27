@@ -1,10 +1,10 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 17984
+// Function ID: 17985
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 5044, 1071, 4889, 21, 5043, 575, 10042, 563, 5271, 1112, 8880, 5634, 6115, 5641, 8573, 5257, 2]
+// Dependencies: [32, 19, 17, 5044, 1071, 4889, 21, 5043, 575, 10043, 563, 5271, 1112, 8881, 5634, 6115, 5641, 8574, 5257, 2]
 // Exports: default
 
-// Module 17977 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 17984 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 10042 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 10043 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -98,7 +98,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8880), size) };
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8881), size) };
   const BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
   size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true };

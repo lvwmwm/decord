@@ -1,14 +1,14 @@
-// Module ID: 9569
-// Function ID: 9570
+// Module ID: 9570
+// Function ID: 9571
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 1269, 5623, 9570, 1495, 9575, 2]
+// Dependencies: [32, 5, 19, 21, 3, 1269, 5623, 9571, 1495, 9576, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 9569 (useTooltip)
+// Module 9570 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 9570 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9571 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -79,7 +79,7 @@ export function useTooltip(ref, memo) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -130,7 +130,7 @@ export function useTooltip(ref, memo) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -205,7 +205,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -256,7 +256,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               closure_3 = tmp18;

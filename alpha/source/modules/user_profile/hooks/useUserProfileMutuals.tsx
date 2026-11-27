@@ -1,15 +1,15 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 13607
+// Function ID: 13608
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 8322, 6164, 6163, 504, 12, 8623, 2]
+// Dependencies: [32, 19, 8323, 6164, 6163, 504, 12, 8624, 2]
 // Exports: default
 
-// Module 13600 (useUserProfileMutuals)
+// Module 13607 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 8623 */;
+import reactDefault from "react" /* 8624 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8322 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8323 */;
 import SortedGuildStore from "SortedGuildStore" /* 6164 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;
 import size from "module_2" /* 2 */;

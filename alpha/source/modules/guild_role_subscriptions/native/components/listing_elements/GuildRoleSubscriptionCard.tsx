@@ -1,16 +1,16 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 16853
+// Function ID: 16854
 // Name: GuildRoleSubscriptionCard
-// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 16836, 16847, 1112, 1186, 16848, 16849, 16852, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 16843, 16854, 1112, 1186, 16855, 16856, 16859, 2]
 // Exports: Content
 
-// Module 16846 (GuildRoleSubscriptionCard)
+// Module 16853 (GuildRoleSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16836 */;
-import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 16849 */;
-import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 16852 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16843 */;
+import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 16856 */;
+import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 16859 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -70,11 +70,11 @@ export function Content(arg0) {
   const role = obj4.useRole(listingId, guildId);
   size = first.size;
   const obj5 = { separator: closure_6(Separator, {}), children: items1 };
-  const SeparatedList = guildId(16847).SeparatedList;
+  const SeparatedList = guildId(16854).SeparatedList;
   const obj6 = { children: items };
   const obj7 = { children: intl.string(guildId(1112).t["DJ+bGu"]) };
   intl = guildId(1112).intl;
-  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1186).Spacer, { size: 8 }), closure_6(guildId(16848).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1186).Spacer, { size: 8 }), closure_6(guildId(16855).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   items1 = [closure_8(closure_7, obj6), , , ];
   let tmp6Result = null;
   if (size > 0) {

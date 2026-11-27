@@ -1,10 +1,10 @@
-// Module ID: 20275
-// Function ID: 20276
+// Module ID: 20333
+// Function ID: 20334
 // Name: GuildRoleSubscriptionTierTemplateActionCreators
 // Dependencies: [5, 1071, 572, 1285, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 20275 (GuildRoleSubscriptionTierTemplateActionCreators)
+// Module 20333 (GuildRoleSubscriptionTierTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
@@ -28,7 +28,7 @@ let obj = function _getTemplates() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _getTemplates() {
               obj.dispatch(obj7);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c4 = 3;

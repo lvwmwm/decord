@@ -1,10 +1,10 @@
-// Module ID: 19616
-// Function ID: 19617
+// Module ID: 19632
+// Function ID: 19633
 // Name: updateRules
 // Dependencies: [19, 1071, 21, 5057, 5607, 575, 5722, 2069, 1186, 2]
 // Exports: default
 
-// Module 19616 (updateRules)
+// Module 19632 (updateRules)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;

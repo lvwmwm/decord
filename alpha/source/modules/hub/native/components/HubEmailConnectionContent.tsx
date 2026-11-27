@@ -1,10 +1,10 @@
-// Module ID: 13766
-// Function ID: 13767
+// Module ID: 13773
+// Function ID: 13774
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 4892, 13754, 1071, 21, 5043, 575, 5057, 1501, 5618, 5257, 13767, 2120, 13768, 5792, 1112, 5634, 13762, 13769, 7273, 1186, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 4892, 13761, 1071, 21, 5043, 575, 5057, 1501, 5618, 5257, 13774, 2120, 13775, 5792, 1112, 5634, 13769, 13776, 7273, 1186, 5641, 2]
 // Exports: default
 
-// Module 13766 (HubEmailConnectionContent)
+// Module 13773 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl8 from "intl" /* 1112 */;
@@ -15,7 +15,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import HubConstants from "HubConstants" /* 13754 */;
+import HubConstants from "HubConstants" /* 13761 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -33,8 +33,8 @@ let tmp;
 const native = tmp(1186);
 const Text_Text = tmp(5634);
 const components_Button_Button = tmp(5641);
-const HubEmailConnectionModal = tmp(13762);
-const InkQuillSpotIllustration = tmp(13769);
+const HubEmailConnectionModal = tmp(13769);
+const InkQuillSpotIllustration = tmp(13776);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ HubEmailConnectionSteps: c9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
@@ -97,7 +97,7 @@ export default function HubEmailConnectionContent(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -225,7 +225,7 @@ export default function HubEmailConnectionContent(arg0) {
             c5 = 0;
             closure_131_5(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp78) {
           closure_4 = tmp78;

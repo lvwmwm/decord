@@ -1,12 +1,12 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8857
+// Function ID: 8858
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1088, 8588, 4887, 2]
+// Dependencies: [32, 19, 1088, 8589, 4887, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 8856 (useActivityTimer)
+// Module 8857 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1088 */;
-import utils from "utils" /* 8588 */;
+import utils from "utils" /* 8589 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

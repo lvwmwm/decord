@@ -1,16 +1,16 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 9772
+// Function ID: 9773
 // Name: ExpressionGuildDetails
-// Dependencies: [19, 17, 7053, 21, 5043, 575, 7052, 1413, 5730, 5634, 1112, 6152, 9770, 7056, 1186, 2]
+// Dependencies: [19, 17, 7053, 21, 5043, 575, 7052, 1413, 5730, 5634, 1112, 6152, 9771, 7056, 1186, 2]
 
-// Module 9771 (ExpressionGuildDetails)
+// Module 9772 (ExpressionGuildDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
 import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7053 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9770 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9771 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

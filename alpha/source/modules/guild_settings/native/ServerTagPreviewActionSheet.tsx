@@ -1,16 +1,16 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15327
+// Function ID: 15328
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 8542, 21, 5043, 575, 8543, 8544, 15321, 5257, 5634, 1112, 5641, 7395, 7546, 7507, 2]
+// Dependencies: [19, 17, 8543, 21, 5043, 575, 8544, 8545, 15328, 5257, 5634, 1112, 5641, 7395, 7546, 7507, 2]
 // Exports: default
 
-// Module 15320 (ServerTagPreviewActionSheet)
+// Module 15327 (ServerTagPreviewActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import GuildProfileStore from "GuildProfileStore" /* 8542 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8544 */;
-import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 15321 */;
+import GuildProfileStore from "GuildProfileStore" /* 8543 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8545 */;
+import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 15328 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -37,7 +37,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
   let tmp8;
   guildId = guildId.guildId;
   const tmp = closure_8();
-  let obj = guildId(8543);
+  let obj = guildId(8544);
   const guildProfile1 = obj.useGuildProfile(guildId);
   let guildProfile = guildProfile1.guildProfile;
   const items = [guildId];

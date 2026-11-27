@@ -1,10 +1,10 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9495
+// Function ID: 9496
 // Name: FileManagerUtils
 // Dependencies: [5, 3, 1148, 1379, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 9494 (FileManagerUtils)
+// Module 9495 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_nativeDefault from "react-native" /* 1148 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
@@ -49,7 +49,7 @@ let obj = function _readFile() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;

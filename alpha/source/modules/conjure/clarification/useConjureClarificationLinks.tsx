@@ -1,10 +1,10 @@
-// Module ID: 18803
-// Function ID: 18804
+// Module ID: 18821
+// Function ID: 18822
 // Name: useConjureClarificationLinks
-// Dependencies: [5, 32, 19, 6934, 18640, 18543, 504, 6935, 18549, 2]
+// Dependencies: [5, 32, 19, 6934, 18651, 18554, 504, 6935, 18560, 2]
 // Exports: default
 
-// Module 18803 (useConjureClarificationLinks)
+// Module 18821 (useConjureClarificationLinks)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -73,7 +73,7 @@ export default function useConjureClarificationLinks(arg0, arg1, arg2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c5;
@@ -121,7 +121,7 @@ export default function useConjureClarificationLinks(arg0, arg1, arg2) {
                 c5 = 0;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp14) {
             if (0 === c5) {

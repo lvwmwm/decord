@@ -1,10 +1,10 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14198
+// Function ID: 14199
 // Name: GameProfileGuildCard
-// Dependencies: [19, 17, 21, 575, 5043, 7309, 14188, 7052, 5634, 8735, 1186, 1112, 5641, 2]
+// Dependencies: [19, 17, 21, 575, 5043, 7309, 14195, 7052, 5634, 8736, 1186, 1112, 5641, 2]
 // Exports: GameProfileGuildCardSkeleton, default
 
-// Module 14191 (GameProfileGuildCard)
+// Module 14198 (GameProfileGuildCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5634 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
 import GuildIcon from "GuildIcon" /* 7052 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7309 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 8735 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 14188 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 8736 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 14195 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

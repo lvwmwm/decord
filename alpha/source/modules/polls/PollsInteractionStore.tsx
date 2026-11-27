@@ -1,10 +1,10 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 11933
+// Function ID: 11934
 // Name: PollsInteractionStore
 // Dependencies: [1258, 1263, 558, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 11925 (PollsInteractionStore)
+// Module 11933 (PollsInteractionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import module_1258 from "module_1258" /* 1258 */;

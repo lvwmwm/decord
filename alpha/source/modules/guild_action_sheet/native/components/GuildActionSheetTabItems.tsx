@@ -1,18 +1,18 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15397
+// Function ID: 15398
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 4892, 4973, 4946, 1071, 21, 15370, 10369, 504, 10431, 10428, 6863, 7944, 1112, 9365, 575, 6013, 15391, 15392, 5257, 6864, 10548, 8598, 7476, 10455, 8573, 15393, 2]
+// Dependencies: [19, 4892, 4973, 4946, 1071, 21, 15377, 10370, 504, 10432, 10429, 6863, 7944, 1112, 9366, 575, 6013, 15398, 15399, 5257, 6864, 10549, 8599, 7476, 10456, 8574, 15400, 2]
 // Exports: default
 
-// Module 15390 (GuildActionSheetTabItems)
+// Module 15397 (GuildActionSheetTabItems)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6864 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7476 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 10431 */;
-import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 15391 */;
-import GuildActionSheetTypes from "GuildActionSheetTypes" /* 15392 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 10432 */;
+import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 15398 */;
+import GuildActionSheetTypes from "GuildActionSheetTypes" /* 15399 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildChannelStore from "GuildChannelStore" /* 4973 */;
@@ -30,7 +30,7 @@ let map1;
 let metroImportAll;
 let tmp3;
 let unpackModuleId;
-const instant_invite_InstantInviteUtils = tmp3(10428);
+const instant_invite_InstantInviteUtils = tmp3(10429);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsSections: c10, InstantInviteSources: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 let result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetTabItems.tsx");
@@ -46,14 +46,14 @@ export default function GuildActionSheetTabItems(guild) {
   let obj7;
   guild = guild.guild;
   const tmp = guild;
-  let obj = guild(15370);
+  let obj = guild(15377);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = canAccessSettings;
-  const total = canAccessSettings(10369)(guild.id).total;
+  const total = canAccessSettings(10370)(guild.id).total;
   let obj2 = guild(504);
   const items = [GuildChannelStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj3 = guild(10431);
+  let obj3 = guild(10432);
   let shouldRenderInviteResult = obj3.shouldRenderInvite(stateFromStores, guild);
   const items1 = [stateFromStores, guild];
   dependencyMap = react.useCallback(() => {
@@ -101,13 +101,13 @@ export default function GuildActionSheetTabItems(guild) {
     }
   };
   obj7 = { color: tmp3(575).unsafe_rawColors.GUILD_BOOSTING_PINK };
-  BoostGemIcon = tmp(9365).BoostGemIcon;
+  BoostGemIcon = tmp(9366).BoostGemIcon;
   items2 = [tmp7(IconButton, obj6), , , , ];
   if (shouldRenderInviteResult) {
     const obj8 = {
       variant: "secondary",
       label: intl3.string(tmp(1112).t.VINpSK),
-      icon: tmp3(10548),
+      icon: tmp3(10549),
       grow: true,
       onPress() {
           const obj = GuildActionSheetAnalyticsUtils;
@@ -126,7 +126,7 @@ export default function GuildActionSheetTabItems(guild) {
   const obj9 = {
     variant: "secondary",
     label: intl4.string(tmp(1112).t.HcoRu0),
-    icon: tmp3(8598),
+    icon: tmp3(8599),
     grow: true,
     onPress() {
       const obj = GuildActionSheetAnalyticsUtils;
@@ -145,7 +145,7 @@ export default function GuildActionSheetTabItems(guild) {
     const obj10 = {
       variant: "secondary",
       label: intl5.string(tmp(1112).t["3D5yo/"]),
-      icon: tmp3(10455),
+      icon: tmp3(10456),
       grow: true,
       onPress() {
           const obj = GuildActionSheetAnalyticsUtils;
@@ -162,6 +162,6 @@ export default function GuildActionSheetTabItems(guild) {
     canAccessSettings = tmp7(IconButton4, obj10);
   }
   items2[3] = canAccessSettings;
-  items2[4] = closure_12(tmp3(15393), { guild });
+  items2[4] = closure_12(tmp3(15400), { guild });
   return tmp6(ButtonGroup, obj4);
 };

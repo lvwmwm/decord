@@ -1,10 +1,10 @@
-// Module ID: 18524
-// Function ID: 18525
+// Module ID: 18530
+// Function ID: 18531
 // Name: conjureSettingsRequired
 // Dependencies: [2]
 // Exports: conjureMissingRequiredSettings, isConjureSettingRequired
 
-// Module 18524 (conjureSettingsRequired)
+// Module 18530 (conjureSettingsRequired)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["select", "checkbox", "channel", "role", "user", "game"]);

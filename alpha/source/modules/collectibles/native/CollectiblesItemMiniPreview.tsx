@@ -1,9 +1,9 @@
-// Module ID: 11285
-// Function ID: 11286
+// Module ID: 11286
+// Function ID: 11287
 // Name: CollectiblesItemMiniPreview
-// Dependencies: [19, 17, 6316, 2111, 6317, 6318, 9506, 9467, 21, 575, 5043, 9417, 11169, 5730, 11170, 9470, 2110, 9479, 2]
+// Dependencies: [19, 17, 6316, 2111, 6317, 6318, 9507, 9468, 21, 575, 5043, 9418, 11170, 5730, 11171, 9471, 2110, 9480, 2]
 
-// Module 11285 (CollectiblesItemMiniPreview)
+// Module 11286 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils from "utils" /* 2110 */;
@@ -12,13 +12,13 @@ import FastImageDefault from "FastImage" /* 5730 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6316 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 6317 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 6318 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9417 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9467 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9470 */;
-import NameplateDefault from "Nameplate" /* 9479 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 9506 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 11169 */;
-import _modDef11170 from "module_11170" /* 11170 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9418 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9468 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9471 */;
+import NameplateDefault from "Nameplate" /* 9480 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 9507 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 11170 */;
+import _modDef11171 from "module_11171" /* 11171 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function CollectiblesItemMiniPreview(arg0) {
     const obj7 = { style: items, children: authStore(View, obj8) };
     obj8 = { style: tmp.profileEffect, accessible: false, importantForAccessibility: "no", children: items1 };
     const obj9 = { source: obj10, style: tmp.sampleProfile, resizeMode: "cover" };
-    obj10 = { uri: _modDef11170 };
+    obj10 = { uri: _modDef11171 };
     const tmp17 = FastImageDefault;
     items1 = [React4(tmp17, obj9), ];
     const obj11 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };

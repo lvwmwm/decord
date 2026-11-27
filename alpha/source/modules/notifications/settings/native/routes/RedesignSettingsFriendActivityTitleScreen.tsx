@@ -1,10 +1,10 @@
-// Module ID: 17637
-// Function ID: 17638
+// Module ID: 17644
+// Function ID: 17645
 // Name: RedesignSettingsFriendActivityTitleScreen
-// Dependencies: [2, 17636]
+// Dependencies: [2, 17643]
 
-// Module 17637 (RedesignSettingsFriendActivityTitleScreen)
-import RedesignSettingsCategoryFriendsActivityScreenDefault from "RedesignSettingsCategoryFriendsActivityScreen" /* 17636 */;
+// Module 17644 (RedesignSettingsFriendActivityTitleScreen)
+import RedesignSettingsCategoryFriendsActivityScreenDefault from "RedesignSettingsCategoryFriendsActivityScreen" /* 17643 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsFriendActivityTitleScreen.tsx");

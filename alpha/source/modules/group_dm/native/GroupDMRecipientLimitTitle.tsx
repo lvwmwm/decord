@@ -1,17 +1,17 @@
-// Module ID: 19083
-// Function ID: 19084
+// Module ID: 19099
+// Function ID: 19100
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 1379, 12099, 5607, 1112, 5634, 9637, 13154, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 1379, 12107, 5607, 1112, 5634, 9638, 13162, 2]
 // Exports: default
 
-// Module 19083 (GroupDMRecipientLimitTitle)
+// Module 19099 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import useToken from "useToken" /* 5607 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12099 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 13154 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12107 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 13162 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -80,7 +80,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9637).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9638).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }

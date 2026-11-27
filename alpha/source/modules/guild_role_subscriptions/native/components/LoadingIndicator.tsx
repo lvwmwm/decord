@@ -1,10 +1,10 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 16833
+// Function ID: 16834
 // Name: LoadingIndicator
 // Dependencies: [19, 17, 21, 5043, 2]
 // Exports: default
 
-// Module 16826 (LoadingIndicator)
+// Module 16833 (LoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

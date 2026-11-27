@@ -1,11 +1,11 @@
-// Module ID: 18543
-// Function ID: 18544
+// Module ID: 18554
+// Function ID: 18555
 // Name: conjureLinkedApps
-// Dependencies: [5, 14746, 2]
+// Dependencies: [5, 14753, 2]
 // Exports: fetchLinkedAppStart, fetchLinkedAppTargets, linkConjureApp, unlinkConjureApp
 
-// Module 18543 (conjureLinkedApps)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 14746 */;
+// Module 18554 (conjureLinkedApps)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 14753 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _fetchLinkedApps() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ obj = function _linkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -235,7 +235,7 @@ obj = function _linkConjureApp() {
             closure_5 = value;
             if (closure_5.ok) {
               c6 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -273,7 +273,7 @@ obj = function _unlinkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -306,7 +306,7 @@ obj = function _unlinkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;

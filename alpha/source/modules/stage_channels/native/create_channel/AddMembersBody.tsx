@@ -1,10 +1,10 @@
-// Module ID: 8570
-// Function ID: 8571
+// Module ID: 8571
+// Function ID: 8572
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 4955, 4949, 1387, 7842, 1082, 21, 5043, 575, 4980, 5618, 504, 5668, 8526, 1186, 1112, 8555, 5052, 5275, 8560, 6990, 5634, 7941, 8565, 2]
+// Dependencies: [109, 32, 19, 17, 4955, 4949, 1387, 7842, 1082, 21, 5043, 575, 4980, 5618, 504, 5668, 8527, 1186, 1112, 8556, 5052, 5275, 8561, 6990, 5634, 7941, 8566, 2]
 // Exports: default
 
-// Module 8570 (AddMembersBody)
+// Module 8571 (AddMembersBody)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl6 from "intl" /* 1112 */;
@@ -42,7 +42,7 @@ let obj5;
 let size;
 let size1;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(8526);
+const ChannelPermissionsUtilsAll = tmp10(8527);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -238,7 +238,7 @@ export default function AddMembersBody(pendingAdditions) {
     },
     autoFocus: true
   };
-  tmp4Result = tmp4(8560);
+  tmp4Result = tmp4(8561);
   intl3 = tmp6(1112).intl;
   const items5 = [closure_16(closure_7, obj9), , , ];
   let tmp27Result = null;
@@ -263,7 +263,7 @@ export default function AddMembersBody(pendingAdditions) {
       let tmp27Result2;
       if (0 === membersRows.length) {
         const obj15 = { children: closure_16(EmptyState, obj16) };
-        obj16 = { Illustration: guild(8565).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1112).t.ErpIY3, obj17) };
+        obj16 = { Illustration: guild(8566).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1112).t.ErpIY3, obj17) };
         EmptyState = tmp6(1186).EmptyState;
         ({ emptyState: obj21.style, emptyStateText: obj21.bodyStyle } = tmp3);
         intl5 = tmp6(1112).intl;

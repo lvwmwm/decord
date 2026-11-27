@@ -1,10 +1,10 @@
-// Module ID: 20082
-// Function ID: 20083
+// Module ID: 20140
+// Function ID: 20141
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 20083, 4914, 8574, 1071, 21, 5043, 575, 7191, 7751, 1112, 20084, 10439, 5634, 19905, 7274, 5730, 20085, 1501, 504, 5617, 2]
+// Dependencies: [19, 17, 20141, 4914, 8575, 1071, 21, 5043, 575, 7191, 7751, 1112, 20142, 10440, 5634, 19921, 7274, 5730, 20143, 1501, 504, 5617, 2]
 // Exports: default
 
-// Module 20082 (GuildSettingsModalVanityURL)
+// Module 20140 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,14 +13,14 @@ import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7274 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
-import getInviteURLDefault from "getInviteURL" /* 10439 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 19905 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20084 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20085 */;
+import getInviteURLDefault from "getInviteURL" /* 10440 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 19921 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20142 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20143 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20083 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20141 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8575 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

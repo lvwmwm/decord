@@ -1,13 +1,13 @@
-// Module ID: 17732
-// Function ID: 17733
+// Module ID: 17739
+// Function ID: 17740
 // Name: getJankScreenName
-// Dependencies: [17733, 5220, 17734, 2]
+// Dependencies: [17740, 5220, 17741, 2]
 // Exports: default, getBaseScreenName, getChatPanelScreenName, getComponentDisplayName, getPanelListScreenName, getWideViewScreenName, isModalScreenName
 
-// Module 17732 (getJankScreenName)
+// Module 17739 (getJankScreenName)
 import RootNavigationRef from "RootNavigationRef" /* 5220 */;
-import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17734 */;
-import JankScreenConstants from "JankScreenConstants" /* 17733 */;
+import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17741 */;
+import JankScreenConstants from "JankScreenConstants" /* 17740 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f113076 = (name) => name.name === tabs;
+const f113319 = (name) => name.name === tabs;
 function resolveScreenName(items) {
   const params = tmp.params;
   if (items[items.length - 1].name === channel) {
@@ -181,7 +181,7 @@ export default function getJankScreenName() {
               let tmp14 = tmp11;
               if (name === channel) {
                 let routes1 = tmp9.routes;
-                let found = routes1.find(f113076);
+                let found = routes1.find(f113319);
                 if (found == null) {
                   found = tmp11;
                 }
@@ -327,7 +327,7 @@ export function getPanelListScreenName() {
         let tmp6 = tmp3;
         if (name === channel) {
           let routes1 = rootState.routes;
-          let found = routes1.find(f113076);
+          let found = routes1.find(f113319);
           if (found == null) {
             found = tmp3;
           }

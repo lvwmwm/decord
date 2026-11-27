@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16727
+// Function ID: 16728
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 5043, 5065, 5252, 5598, 5730, 16721, 16722, 2]
+// Dependencies: [19, 17, 21, 5043, 5065, 5252, 5598, 5730, 16728, 16729, 2]
 // Exports: default
 
-// Module 16720 (QuestModalContentCloudBackground)
+// Module 16727 (QuestModalContentCloudBackground)
 import themes from "themes" /* 5065 */;
 import useTheme from "useTheme" /* 5252 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
@@ -30,11 +30,11 @@ let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { height: 380, zIndex: 1 };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: obj, cloudsImage: obj3, cloudsImageLight: obj5, gradient: obj6, solidBackground: obj7 };
-  const tmp3 = arg0 ? { top: "r" } : { bottom: "r" };
+  const tmp3 = arg0 ? { top: "top" } : { bottom: "top" };
   const merged1 = Object.assign(tmp3);
   obj3 = { width: "100%" };
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const tmp6 = arg0 ? { top: "r" } : { bottom: "r" };
+  const tmp6 = arg0 ? { top: "top" } : { bottom: "top" };
   const merged3 = Object.assign(tmp6);
   if (arg0) {
     obj4 = {};
@@ -92,7 +92,7 @@ export default function QuestModalContentCloudBackground(align) {
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16721 : 16722), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16728 : 16729), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

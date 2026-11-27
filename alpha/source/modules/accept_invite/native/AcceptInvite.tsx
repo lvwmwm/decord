@@ -1,10 +1,10 @@
-// Module ID: 13751
-// Function ID: 13752
+// Module ID: 13758
+// Function ID: 13759
 // Name: AcceptInvite
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 1654, 6145, 1255, 5607, 13752, 13753, 13756, 1413, 1448, 13761, 1495, 5730, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 1654, 6145, 1255, 5607, 13759, 13760, 13763, 1413, 1448, 13768, 1495, 5730, 2]
 // Exports: default
 
-// Module 13751 (AcceptInvite)
+// Module 13758 (AcceptInvite)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
@@ -15,9 +15,9 @@ import _mod1654 from "module_1654" /* 1654 */;
 import useToken from "useToken" /* 5607 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import Card_Card from "Card/Card" /* 6145 */;
-import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13752 */;
-import InviteDetailsDefault from "InviteDetails" /* 13753 */;
-import InviteErrorDefault from "InviteError" /* 13756 */;
+import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13759 */;
+import InviteDetailsDefault from "InviteDetails" /* 13760 */;
+import InviteErrorDefault from "InviteError" /* 13763 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -156,7 +156,7 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(13761);
+    guildSplashSource = tmp3(13768);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };
@@ -168,7 +168,7 @@ export default function AcceptInvite(invite) {
   const obj5 = { style: items, children: items2 };
   items = [tmp2.parentContainer, { height, width }];
   const obj6 = { style: { height, width }, children: metroRequire(FastImageDefault, obj7) };
-  const layout = tmp3(13752)().layout;
+  const layout = tmp3(13759)().layout;
   obj7 = { source: guildSplashSource, style: items1 };
   items1 = [tmp2.imageStyle, { height, width }];
   items2 = [metroRequire(React3, obj6), ];

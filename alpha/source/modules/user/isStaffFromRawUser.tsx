@@ -1,10 +1,10 @@
-// Module ID: 13387
-// Function ID: 13388
+// Module ID: 13395
+// Function ID: 13396
 // Name: isStaffFromRawUser
 // Dependencies: [1071, 2]
 // Exports: default
 
-// Module 13387 (isStaffFromRawUser)
+// Module 13395 (isStaffFromRawUser)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 11938
+// Function ID: 11939
 // Name: actions/GiftCodeActionCreators
-// Dependencies: [5, 1071, 9109, 9304, 572, 1285, 1256, 5792, 6130, 11931, 2120, 2]
+// Dependencies: [5, 1071, 9110, 9305, 572, 1285, 1256, 5792, 6130, 11939, 2120, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 11930 (actions/GiftCodeActionCreators)
+// Module 11938 (actions/GiftCodeActionCreators)
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -38,7 +38,7 @@ let value = function _redeemGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ let value = function _redeemGiftCode() {
               if (obj18.getIsPaymentsBlocked()) {
                 closure_130_1(closure_130_2[3])();
                 c6 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } else {
                 channelId = options.channelId;
                 let tmp36 = null;
@@ -175,7 +175,7 @@ let value = function _redeemGiftCode() {
 function openGiftCodeRedeemModal(c0, fromServer) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { code: c0, giftCodeDebugOverride: fromServer };
-  obj.pushLazy(asyncRequire(11931, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(asyncRequire(11939, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 let closure_6 = Object.freeze({});

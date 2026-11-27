@@ -1,10 +1,10 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 8930
+// Function ID: 8931
 // Name: ForumPostMediaUtils
 // Dependencies: [19, 8123, 4892, 6391, 1387, 1071, 1089, 6403, 4868, 1405, 1380, 1255, 6395, 2118, 6402, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8929 (ForumPostMediaUtils)
+// Module 8930 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;

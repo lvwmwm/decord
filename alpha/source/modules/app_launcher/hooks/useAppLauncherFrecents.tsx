@@ -1,18 +1,18 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13087
+// Function ID: 13088
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 6389, 1387, 13080, 2145, 7073, 2118, 10095, 504, 7517, 5781, 13081, 10084, 10087, 10109, 2]
+// Dependencies: [19, 6389, 1387, 13088, 2145, 7073, 2118, 10096, 504, 7517, 5781, 13089, 10085, 10088, 10110, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 13079 (useAppLauncherFrecents)
+// Module 13087 (useAppLauncherFrecents)
 import Server from "Server" /* 2118 */;
 import Constants from "Constants" /* 2145 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6389 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7517 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10095 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10096 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 13080 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 13088 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
 import size from "module_2" /* 2 */;
 

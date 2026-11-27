@@ -1,19 +1,19 @@
-// Module ID: 11739
-// Function ID: 11740
+// Module ID: 11747
+// Function ID: 11748
 // Name: ForLaterIntro
-// Dependencies: [17, 5272, 21, 5043, 575, 11714, 11740, 11744, 5634, 1112, 5730, 11748, 11726, 5752, 7558, 2]
+// Dependencies: [17, 5272, 21, 5043, 575, 11722, 11748, 11752, 5634, 1112, 5730, 11756, 11734, 5752, 7558, 2]
 // Exports: default
 
-// Module 11739 (ForLaterIntro)
+// Module 11747 (ForLaterIntro)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import ClockIcon from "ClockIcon" /* 5752 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 11714 */;
-import BookmarkIcon from "BookmarkIcon" /* 11726 */;
-import _modDef11748 from "module_11748" /* 11748 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 11722 */;
+import BookmarkIcon from "BookmarkIcon" /* 11734 */;
+import _modDef11756 from "module_11756" /* 11756 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -53,7 +53,7 @@ function IntroDemo(isReminder) {
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   const obj3 = { source: obj4, style: tmp.avatar };
-  obj4 = { uri: _modDef11748 };
+  obj4 = { uri: _modDef11756 };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj3), ];
   const obj5 = { style: tmp.messageLines, children: items1 };
@@ -158,9 +158,9 @@ export default function ForLaterIntro(type) {
   const tmp = closure_7();
   const tmp4 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp4) {
-    BookmarksSpotIllustration = tmp2(11740).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11748).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp2(11744).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11752).BookmarksSpotIllustration;
   }
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroRequire(React3, obj2) };
   obj2 = { style: tmp.container, children: items };

@@ -8,7 +8,7 @@
 let closure_4;
 
 function optional() {
-  const f88941 = () => {
+  const f89169 = () => {
     let obj = {
       match(arg0) {
         let obj3;
@@ -37,7 +37,7 @@ function optional() {
     };
     return obj;
   };
-  const obj = { [closure_2_1]: f88941 };
+  const obj = { [closure_2_1]: f89169 };
   const obj2 = {
     optional,
     and(arg0) {
@@ -58,7 +58,7 @@ function optional() {
   };
   return Object.assign(obj, obj2);
 }
-const f88944 = () => {
+const f89172 = () => {
   let obj = {
     match(arg0) {
       const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -69,7 +69,7 @@ const f88944 = () => {
 };
 function startsWith(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -98,7 +98,7 @@ function startsWith(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -119,7 +119,7 @@ function startsWith(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -129,14 +129,14 @@ function startsWith(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f124250 = (str) => {
+  const f124654 = (str) => {
     let startsWithResult = typeof str === "string";
     if (typeof str === "string") {
-      startsWithResult = str.startsWith(f124250);
+      startsWithResult = str.startsWith(f124654);
     }
     return startsWithResult;
   };
-  const obj = { [closure_2_1]: f88944 };
+  const obj = { [closure_2_1]: f89172 };
   const tmp = closure_2_12(closure_0, obj);
   closure_0 = tmp;
   const obj2 = {
@@ -162,7 +162,7 @@ function startsWith(arg0) {
 }
 function endsWith(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -191,7 +191,7 @@ function endsWith(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -212,7 +212,7 @@ function endsWith(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -222,14 +222,14 @@ function endsWith(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f124251 = (str) => {
+  const f124655 = (str) => {
     let endsWithResult = typeof str === "string";
     if (typeof str === "string") {
-      endsWithResult = str.endsWith(f124251);
+      endsWithResult = str.endsWith(f124655);
     }
     return endsWithResult;
   };
-  const obj = { [closure_2_1]: f88944 };
+  const obj = { [closure_2_1]: f89172 };
   const tmp = closure_2_12(closure_0, obj);
   closure_0 = tmp;
   const obj2 = {
@@ -255,7 +255,7 @@ function endsWith(arg0) {
 }
 function minLength(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -284,7 +284,7 @@ function minLength(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -305,7 +305,7 @@ function minLength(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -315,14 +315,14 @@ function minLength(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f137055 = (str) => {
+  const f137510 = (str) => {
     let tmp = typeof str === "string";
     if (typeof str === "string") {
-      tmp = str.length >= f137055;
+      tmp = str.length >= f137510;
     }
     return tmp;
   };
-  const obj = { [closure_2_1]: f88944 };
+  const obj = { [closure_2_1]: f89172 };
   let tmp = closure_2_12(closure_0, obj);
   closure_0 = tmp;
   const obj2 = {
@@ -348,7 +348,7 @@ function minLength(arg0) {
 }
 function maxLength(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -377,7 +377,7 @@ function maxLength(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -398,7 +398,7 @@ function maxLength(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -408,14 +408,14 @@ function maxLength(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f137056 = (str) => {
+  const f137511 = (str) => {
     let tmp = typeof str === "string";
     if (typeof str === "string") {
-      tmp = str.length <= f137056;
+      tmp = str.length <= f137511;
     }
     return tmp;
   };
-  const obj = { [closure_2_1]: f88944 };
+  const obj = { [closure_2_1]: f89172 };
   let tmp = closure_2_12(closure_0, obj);
   closure_0 = tmp;
   const obj2 = {
@@ -441,7 +441,7 @@ function maxLength(arg0) {
 }
 function includes(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -470,7 +470,7 @@ function includes(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -491,7 +491,7 @@ function includes(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -501,14 +501,14 @@ function includes(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  let f124252 = (str) => {
+  let f124656 = (str) => {
     let hasItem = typeof str === "string";
     if (typeof str === "string") {
-      hasItem = str.includes(f124252);
+      hasItem = str.includes(f124656);
     }
     return hasItem;
   };
-  let obj = { [closure_2_1]: f88944 };
+  let obj = { [closure_2_1]: f89172 };
   let tmp = closure_2_12(closure_0, obj);
   closure_0 = tmp;
   let obj2 = {
@@ -534,7 +534,7 @@ function includes(arg0) {
 }
 function regex(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -563,7 +563,7 @@ function regex(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -584,7 +584,7 @@ function regex(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -593,15 +593,15 @@ function regex(arg0) {
     };
     return obj;
   };
-  let f124253 = (str) => {
+  let f124657 = (str) => {
     let BooleanResult = typeof str === "string";
     if (typeof str === "string") {
       const _Boolean = Boolean;
-      BooleanResult = Boolean(str.match(f124253));
+      BooleanResult = Boolean(str.match(f124657));
     }
     return BooleanResult;
   };
-  let obj = { [closure_2_1]: f88944 };
+  let obj = { [closure_2_1]: f89172 };
   let tmp = closure_2_12(closure_1_0, obj);
   closure_0 = tmp;
   let obj2 = {
@@ -628,7 +628,7 @@ function regex(arg0) {
 function between(arg0, arg1) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -657,7 +657,7 @@ function between(arg0, arg1) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -678,7 +678,7 @@ function between(arg0, arg1) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -689,10 +689,10 @@ function between(arg0, arg1) {
   };
   if (typeof closure_2_15 === "function") {
     let closure_1 = arg1;
-    const f88958 = (num) => {
+    const f89186 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = f88958 <= num;
+        tmp = f89186 <= num;
       }
       if (tmp) {
         tmp = closure_1_1 >= num;
@@ -700,7 +700,7 @@ function between(arg0, arg1) {
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -732,7 +732,7 @@ function between(arg0, arg1) {
 function lt(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -761,7 +761,7 @@ function lt(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -782,7 +782,7 @@ function lt(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -792,15 +792,15 @@ function lt(arg0) {
     return obj;
   };
   if (typeof closure_2_16 === "function") {
-    const f88959 = (num) => {
+    const f89187 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num < f88959;
+        tmp = num < f89187;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -832,7 +832,7 @@ function lt(arg0) {
 function gt(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -861,7 +861,7 @@ function gt(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -882,7 +882,7 @@ function gt(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -892,15 +892,15 @@ function gt(arg0) {
     return obj;
   };
   if (typeof closure_2_17 === "function") {
-    const f88960 = (num) => {
+    const f89188 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num > f88960;
+        tmp = num > f89188;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -932,7 +932,7 @@ function gt(arg0) {
 function lte(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -961,7 +961,7 @@ function lte(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -982,7 +982,7 @@ function lte(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -992,15 +992,15 @@ function lte(arg0) {
     return obj;
   };
   if (typeof closure_2_18 === "function") {
-    const f88961 = (num) => {
+    const f89189 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num <= f88961;
+        tmp = num <= f89189;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1032,7 +1032,7 @@ function lte(arg0) {
 function gte(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1061,7 +1061,7 @@ function gte(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1082,7 +1082,7 @@ function gte(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1092,15 +1092,15 @@ function gte(arg0) {
     return obj;
   };
   if (typeof closure_2_19 === "function") {
-    const f88962 = (num) => {
+    const f89190 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num >= f88962;
+        tmp = num >= f89190;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1131,7 +1131,7 @@ function gte(arg0) {
 }
 function int() {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1160,7 +1160,7 @@ function int() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1181,7 +1181,7 @@ function int() {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1190,7 +1190,7 @@ function int() {
     };
     return obj;
   };
-  const f889632 = (num) => {
+  const f891912 = (num) => {
     let isIntegerResult = typeof num === "number";
     if (typeof num === "number") {
       const _Number = Number;
@@ -1199,9 +1199,9 @@ function int() {
     return isIntegerResult;
   };
   if (typeof closure_2_20 === "function") {
-    const f88963 = f889632;
+    const f89191 = f891912;
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1232,7 +1232,7 @@ function int() {
 }
 function finite() {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1261,7 +1261,7 @@ function finite() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1282,7 +1282,7 @@ function finite() {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1291,7 +1291,7 @@ function finite() {
     };
     return obj;
   };
-  const f889642 = (scrollLength) => {
+  const f891922 = (scrollLength) => {
     let isFiniteResult = typeof scrollLength === "number";
     if (typeof scrollLength === "number") {
       const _Number = Number;
@@ -1300,9 +1300,9 @@ function finite() {
     return isFiniteResult;
   };
   if (typeof closure_2_21 === "function") {
-    const f88964 = f889642;
+    const f89192 = f891922;
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1334,7 +1334,7 @@ function finite() {
 function positive() {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1363,7 +1363,7 @@ function positive() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1384,7 +1384,7 @@ function positive() {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1393,7 +1393,7 @@ function positive() {
     };
     return obj;
   };
-  const f889652 = (num) => {
+  const f891932 = (num) => {
     let tmp = typeof num === "number";
     if (typeof num === "number") {
       tmp = num > 0;
@@ -1401,10 +1401,10 @@ function positive() {
     return tmp;
   };
   if (typeof closure_2_22 === "function") {
-    let f88965 = f889652;
+    let f89193 = f891932;
     let obj = {};
     let tmp3 = closure_2_1;
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     let tmpResult = tmp(tmp2, obj);
     let tmp5 = globalThis;
     let _Object = Object;
@@ -1438,7 +1438,7 @@ function positive() {
 function negative() {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1467,7 +1467,7 @@ function negative() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1488,7 +1488,7 @@ function negative() {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1497,7 +1497,7 @@ function negative() {
     };
     return obj;
   };
-  const f889662 = (num) => {
+  const f891942 = (num) => {
     let tmp = typeof num === "number";
     if (typeof num === "number") {
       tmp = num < 0;
@@ -1505,10 +1505,10 @@ function negative() {
     return tmp;
   };
   if (typeof closure_2_23 === "function") {
-    let f88966 = f889662;
+    let f89194 = f891942;
     let obj = {};
     let tmp3 = closure_2_1;
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     let tmpResult = tmp(tmp2, obj);
     let tmp5 = globalThis;
     let _Object = Object;
@@ -1542,7 +1542,7 @@ function negative() {
 const between2 = function between(arg0, arg1) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1571,7 +1571,7 @@ const between2 = function between(arg0, arg1) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1592,7 +1592,7 @@ const between2 = function between(arg0, arg1) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1603,10 +1603,10 @@ const between2 = function between(arg0, arg1) {
   };
   if (typeof closure_2_24 === "function") {
     let closure_1 = arg1;
-    const f88976 = (arg0) => {
+    const f89204 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = f88976 <= arg0;
+        tmp = f89204 <= arg0;
       }
       if (tmp) {
         tmp = closure_1_1 >= arg0;
@@ -1614,7 +1614,7 @@ const between2 = function between(arg0, arg1) {
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1646,7 +1646,7 @@ const between2 = function between(arg0, arg1) {
 const lt2 = function lt(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1675,7 +1675,7 @@ const lt2 = function lt(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1696,7 +1696,7 @@ const lt2 = function lt(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1706,15 +1706,15 @@ const lt2 = function lt(arg0) {
     return obj;
   };
   if (typeof closure_2_25 === "function") {
-    const f88977 = (arg0) => {
+    const f89205 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = arg0 < f88977;
+        tmp = arg0 < f89205;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1746,7 +1746,7 @@ const lt2 = function lt(arg0) {
 const gt2 = function gt(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1775,7 +1775,7 @@ const gt2 = function gt(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1796,7 +1796,7 @@ const gt2 = function gt(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1806,15 +1806,15 @@ const gt2 = function gt(arg0) {
     return obj;
   };
   if (typeof closure_2_26 === "function") {
-    const f88978 = (arg0) => {
+    const f89206 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = arg0 > f88978;
+        tmp = arg0 > f89206;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1846,7 +1846,7 @@ const gt2 = function gt(arg0) {
 const lte2 = function lte(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1875,7 +1875,7 @@ const lte2 = function lte(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1896,7 +1896,7 @@ const lte2 = function lte(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -1906,15 +1906,15 @@ const lte2 = function lte(arg0) {
     return obj;
   };
   if (typeof closure_2_27 === "function") {
-    const f88979 = (arg0) => {
+    const f89207 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = arg0 <= f88979;
+        tmp = arg0 <= f89207;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -1946,7 +1946,7 @@ const lte2 = function lte(arg0) {
 const gte2 = function gte(arg0) {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -1975,7 +1975,7 @@ const gte2 = function gte(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -1996,7 +1996,7 @@ const gte2 = function gte(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -2006,15 +2006,15 @@ const gte2 = function gte(arg0) {
     return obj;
   };
   if (typeof closure_2_28 === "function") {
-    const f88980 = (arg0) => {
+    const f89208 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = arg0 >= f88980;
+        tmp = arg0 >= f89208;
       }
       return tmp;
     };
     const obj = {};
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     const tmpResult = tmp(tmp2, obj);
     const _Object = Object;
     closure_0 = tmpResult;
@@ -2046,7 +2046,7 @@ const gte2 = function gte(arg0) {
 const positive2 = function positive() {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -2075,7 +2075,7 @@ const positive2 = function positive() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -2096,7 +2096,7 @@ const positive2 = function positive() {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -2105,7 +2105,7 @@ const positive2 = function positive() {
     };
     return obj;
   };
-  const f889812 = (arg0) => {
+  const f892092 = (arg0) => {
     let tmp = typeof arg0 === "bigint";
     if (typeof arg0 === "bigint") {
       tmp = arg0 > 0;
@@ -2113,10 +2113,10 @@ const positive2 = function positive() {
     return tmp;
   };
   if (typeof closure_2_29 === "function") {
-    let f88981 = f889812;
+    let f89209 = f892092;
     let obj = {};
     let tmp3 = closure_2_1;
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     let tmpResult = tmp(tmp2, obj);
     let tmp5 = globalThis;
     let _Object = Object;
@@ -2150,7 +2150,7 @@ const positive2 = function positive() {
 const negative2 = function negative() {
   let tmp;
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -2179,7 +2179,7 @@ const negative2 = function negative() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -2200,7 +2200,7 @@ const negative2 = function negative() {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -2209,7 +2209,7 @@ const negative2 = function negative() {
     };
     return obj;
   };
-  const f889822 = (arg0) => {
+  const f892102 = (arg0) => {
     let tmp = typeof arg0 === "bigint";
     if (typeof arg0 === "bigint") {
       tmp = arg0 < 0;
@@ -2217,10 +2217,10 @@ const negative2 = function negative() {
     return tmp;
   };
   if (typeof closure_2_30 === "function") {
-    let f88982 = f889822;
+    let f89210 = f892102;
     let obj = {};
     let tmp3 = closure_2_1;
-    obj[closure_2_1] = f88944;
+    obj[closure_2_1] = f89172;
     let tmpResult = tmp(tmp2, obj);
     let tmp5 = globalThis;
     let _Object = Object;
@@ -2371,7 +2371,7 @@ const isMatching = function s() {
 };
 const fn2 = function p() {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -2400,7 +2400,7 @@ const fn2 = function p() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -2471,7 +2471,7 @@ const fn2 = function p() {
 };
 const fn3 = function y() {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -2500,7 +2500,7 @@ const fn3 = function y() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -2580,7 +2580,7 @@ const fn3 = function y() {
 };
 const fn4 = function b() {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -2609,7 +2609,7 @@ const fn4 = function b() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -2908,8 +2908,8 @@ function g(arg0, arg1) {
 function m(arg0, arg1) {
 
 }
-const f36139 = (arg0) => true;
-let obj = { [forResult]: f88944 };
+const f36197 = (arg0) => true;
+let obj = { [forResult]: f89172 };
 let obj2 = {
   optional,
   and(arg0) {
@@ -2932,7 +2932,7 @@ const merged = Object.assign(obj, obj2);
 function S(str) {
   return typeof str === "string";
 }
-let obj3 = { [forResult]: f88944 };
+let obj3 = { [forResult]: f89172 };
 const obj4 = {
   optional,
   and(arg0) {
@@ -2954,7 +2954,7 @@ const obj4 = {
 const obj5 = { startsWith, endsWith, minLength, maxLength, includes, regex };
 class B {
   constructor(arg0, arg1) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -2965,22 +2965,22 @@ class B {
     };
     closure_0 = arg0;
     let closure_1 = arg1;
-    const f88958 = (num) => {
+    const f89186 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = f88958 <= num;
+        tmp = f89186 <= num;
       }
       if (tmp) {
         tmp = closure_1_1 >= num;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 class I {
   constructor(arg0) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -2990,19 +2990,19 @@ class I {
       return obj;
     };
     closure_0 = arg0;
-    const f88959 = (num) => {
+    const f89187 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num < f88959;
+        tmp = num < f89187;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 class E {
   constructor(arg0) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3012,19 +3012,19 @@ class E {
       return obj;
     };
     closure_0 = arg0;
-    const f88960 = (num) => {
+    const f89188 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num > f88960;
+        tmp = num > f89188;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 class K {
   constructor(arg0) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3034,19 +3034,19 @@ class K {
       return obj;
     };
     closure_0 = arg0;
-    const f88961 = (num) => {
+    const f89189 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num <= f88961;
+        tmp = num <= f89189;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 class T {
   constructor(arg0) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3056,18 +3056,18 @@ class T {
       return obj;
     };
     closure_0 = arg0;
-    const f88962 = (num) => {
+    const f89190 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
-        tmp = num >= f88962;
+        tmp = num >= f89190;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 const fn7 = function k() {
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3076,7 +3076,7 @@ const fn7 = function k() {
     };
     return obj;
   };
-  const f889632 = (num) => {
+  const f891912 = (num) => {
     let isIntegerResult = typeof num === "number";
     if (typeof num === "number") {
       const _Number = Number;
@@ -3084,12 +3084,12 @@ const fn7 = function k() {
     }
     return isIntegerResult;
   };
-  const f88963 = f889632;
-  return { [closure_1_1]: f88944 };
+  const f89191 = f891912;
+  return { [closure_1_1]: f89172 };
 };
 class P {
   constructor() {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3098,7 +3098,7 @@ class P {
       };
       return obj;
     };
-    const f889642 = (scrollLength) => {
+    const f891922 = (scrollLength) => {
       let isFiniteResult = typeof scrollLength === "number";
       if (typeof scrollLength === "number") {
         const _Number = Number;
@@ -3106,12 +3106,12 @@ class P {
       }
       return isFiniteResult;
     };
-    const f88964 = f889642;
-    return { [closure_1_1]: f88944 };
+    const f89192 = f891922;
+    return { [closure_1_1]: f89172 };
   }
 }
 const fn8 = function _() {
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3120,19 +3120,19 @@ const fn8 = function _() {
     };
     return obj;
   };
-  const f889652 = (num) => {
+  const f891932 = (num) => {
     let tmp = typeof num === "number";
     if (typeof num === "number") {
       tmp = num > 0;
     }
     return tmp;
   };
-  const f88965 = f889652;
-  return { [closure_1_1]: f88944 };
+  const f89193 = f891932;
+  return { [closure_1_1]: f89172 };
 };
 class M {
   constructor() {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3141,21 +3141,21 @@ class M {
       };
       return obj;
     };
-    const f889662 = (num) => {
+    const f891942 = (num) => {
       let tmp = typeof num === "number";
       if (typeof num === "number") {
         tmp = num < 0;
       }
       return tmp;
     };
-    const f88966 = f889662;
-    return { [closure_1_1]: f88944 };
+    const f89194 = f891942;
+    return { [closure_1_1]: f89172 };
   }
 }
 function w(num) {
   return typeof num === "number";
 }
-let obj6 = { [forResult]: f88944 };
+let obj6 = { [forResult]: f89172 };
 const assign2 = Object.assign;
 const obj7 = {
   optional,
@@ -3179,7 +3179,7 @@ const obj8 = assign(Object.assign(obj3, obj4), obj5);
 const obj9 = { between, lt, gt, lte, gte, int, finite, positive, negative };
 class N {
   constructor(arg0, arg1) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3190,21 +3190,21 @@ class N {
     };
     closure_0 = arg0;
     let closure_1 = arg1;
-    const f88976 = (arg0) => {
+    const f89204 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = f88976 <= arg0;
+        tmp = f89204 <= arg0;
       }
       if (tmp) {
         tmp = closure_1_1 >= arg0;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 const fn9 = function z(arg0) {
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3214,18 +3214,18 @@ const fn9 = function z(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f88977 = (arg0) => {
+  const f89205 = (arg0) => {
     let tmp = typeof arg0 === "bigint";
     if (typeof arg0 === "bigint") {
-      tmp = arg0 < f88977;
+      tmp = arg0 < f89205;
     }
     return tmp;
   };
-  return { [closure_1_1]: f88944 };
+  return { [closure_1_1]: f89172 };
 };
 class L {
   constructor(arg0) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3235,19 +3235,19 @@ class L {
       return obj;
     };
     closure_0 = arg0;
-    const f88978 = (arg0) => {
+    const f89206 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = arg0 > f88978;
+        tmp = arg0 > f89206;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 class R {
   constructor(arg0) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3257,19 +3257,19 @@ class R {
       return obj;
     };
     closure_0 = arg0;
-    const f88979 = (arg0) => {
+    const f89207 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = arg0 <= f88979;
+        tmp = arg0 <= f89207;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 class U {
   constructor(arg0) {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3279,19 +3279,19 @@ class U {
       return obj;
     };
     closure_0 = arg0;
-    const f88980 = (arg0) => {
+    const f89208 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
-        tmp = arg0 >= f88980;
+        tmp = arg0 >= f89208;
       }
       return tmp;
     };
-    return { [closure_1_1]: f88944 };
+    return { [closure_1_1]: f89172 };
   }
 }
 class C {
   constructor() {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3300,20 +3300,20 @@ class C {
       };
       return obj;
     };
-    const f889812 = (arg0) => {
+    const f892092 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
         tmp = arg0 > 0;
       }
       return tmp;
     };
-    const f88981 = f889812;
-    return { [closure_1_1]: f88944 };
+    const f89209 = f892092;
+    return { [closure_1_1]: f89172 };
   }
 }
 class F {
   constructor() {
-    const f88944 = () => {
+    const f89172 = () => {
       let obj = {
         match(arg0) {
           const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -3322,22 +3322,22 @@ class F {
       };
       return obj;
     };
-    const f889822 = (arg0) => {
+    const f892102 = (arg0) => {
       let tmp = typeof arg0 === "bigint";
       if (typeof arg0 === "bigint") {
         tmp = arg0 < 0;
       }
       return tmp;
     };
-    const f88982 = f889822;
-    return { [closure_1_1]: f88944 };
+    const f89210 = f892102;
+    return { [closure_1_1]: f89172 };
   }
 }
 function j(arg0) {
   return typeof arg0 === "bigint";
 }
-const f36156 = (flag) => typeof flag === "boolean";
-const obj10 = { [forResult]: f88944 };
+const f36214 = (flag) => typeof flag === "boolean";
+const obj10 = { [forResult]: f89172 };
 const obj11 = {
   optional,
   and(arg0) {
@@ -3356,7 +3356,7 @@ const obj11 = {
     return tmp3;
   }
 };
-const obj13 = { [forResult]: f88944 };
+const obj13 = { [forResult]: f89172 };
 const assign2Result = assign2(Object.assign(obj6, obj7), obj9);
 const obj12 = { between: between2, lt: lt2, gt: gt2, lte: lte2, gte: gte2, positive: positive2, negative: negative2 };
 const obj14 = {
@@ -3378,8 +3378,8 @@ const obj14 = {
   }
 };
 const merged1 = Object.assign(Object.assign(obj10, obj11), obj12);
-const f36157 = (arg0) => typeof arg0 === "symbol";
-const obj15 = { [forResult]: f88944 };
+const f36215 = (arg0) => typeof arg0 === "symbol";
+const obj15 = { [forResult]: f89172 };
 const obj16 = {
   optional,
   and(arg0) {
@@ -3399,8 +3399,8 @@ const obj16 = {
   }
 };
 const merged2 = Object.assign(obj13, obj14);
-const f36158 = (arg0) => null == arg0;
-const obj17 = { [forResult]: f88944 };
+const f36216 = (arg0) => null == arg0;
+const obj17 = { [forResult]: f89172 };
 const obj34 = {
   optional,
   and(arg0) {
@@ -3425,7 +3425,7 @@ const merged5 = Object.assign({ matcher: null, optional: null, array: null, set:
 merged5[0] = forResult;
 merged5[1] = function v(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -3454,7 +3454,7 @@ merged5[1] = function v(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -3475,7 +3475,7 @@ merged5[1] = function v(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88941 = () => {
+  const f89169 = () => {
     let obj = {
       match(arg0) {
         let obj3;
@@ -3505,7 +3505,7 @@ merged5[1] = function v(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const obj = { [closure_1]: f88941 };
+  const obj = { [closure_1]: f89169 };
   const obj2 = {
     optional,
     and(arg0) {
@@ -3529,7 +3529,7 @@ merged5[1] = function v(arg0) {
 merged5[2] = function array() {
   function optional() {
     function optional() {
-      const f88941 = () => {
+      const f89169 = () => {
         let obj = {
           match(arg0) {
             let obj3;
@@ -3558,7 +3558,7 @@ merged5[2] = function array() {
         };
         return obj;
       };
-      const obj = { [closure_2_1]: f88941 };
+      const obj = { [closure_2_1]: f89169 };
       const obj2 = {
         optional,
         and(arg0) {
@@ -3579,7 +3579,7 @@ merged5[2] = function array() {
       };
       return Object.assign(obj, obj2);
     }
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -3608,7 +3608,7 @@ merged5[2] = function array() {
       };
       return obj;
     };
-    const f124240 = () => {
+    const f124644 = () => {
       const fn = function t() {
         return globalThis.regeneratorRuntime.wrap((next) => {
           next = next.next;
@@ -3624,7 +3624,7 @@ merged5[2] = function array() {
       };
       return globalThis.regeneratorRuntime.mark(fn)();
     };
-    let obj = { [closure_2_1]: f88941 };
+    let obj = { [closure_2_1]: f89169 };
     let obj2 = {
       optional,
       and(arg0) {
@@ -3644,13 +3644,13 @@ merged5[2] = function array() {
       }
     };
     let merged = Object.assign(obj, obj2);
-    let obj3 = { [Symbol.iterator]: f124240 };
+    let obj3 = { [Symbol.iterator]: f124644 };
     let obj4 = { optional, select };
     return Object.assign(Object.assign(merged, obj3), obj4);
   }
   function select(arg0) {
     let tmp3;
-    const f124240 = () => {
+    const f124644 = () => {
       const fn = function t() {
         return globalThis.regeneratorRuntime.wrap((next) => {
           next = next.next;
@@ -3676,11 +3676,11 @@ merged5[2] = function array() {
       tmp3 = closure_2_14(arg0, closure_1_0);
     }
     let closure_0 = tmp3;
-    let obj = { [Symbol.iterator]: f124240 };
+    let obj = { [Symbol.iterator]: f124644 };
     let obj2 = { optional, select };
     return Object.assign(Object.assign(tmp3, obj), obj2);
   }
-  const f124240 = () => {
+  const f124644 = () => {
     const fn = function t() {
       return globalThis.regeneratorRuntime.wrap((next) => {
         next = next.next;
@@ -3746,13 +3746,13 @@ merged5[2] = function array() {
       return obj;
     }
   };
-  let obj2 = { [Symbol.iterator]: f124240 };
+  let obj2 = { [Symbol.iterator]: f124644 };
   const obj3 = { optional, select };
   return Object.assign(Object.assign(obj, obj2), obj3);
 };
 merged5[3] = function set() {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -3781,7 +3781,7 @@ merged5[3] = function set() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -3872,7 +3872,7 @@ merged5[3] = function set() {
 };
 merged5[4] = function map() {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -3901,7 +3901,7 @@ merged5[4] = function map() {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -4025,7 +4025,7 @@ merged5[5] = fn2;
 merged5[6] = fn3;
 merged5[7] = function not(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -4054,7 +4054,7 @@ merged5[7] = function not(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -4116,7 +4116,7 @@ merged5[7] = function not(arg0) {
   return Object.assign(obj, obj2);
 };
 merged5[8] = function d(arg0) {
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -4126,7 +4126,7 @@ merged5[8] = function d(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  return { [closure_1_1]: f88944 };
+  return { [closure_1_1]: f89172 };
 };
 merged5[9] = fn4;
 merged5[10] = merged;
@@ -4155,7 +4155,7 @@ merged5[32] = merged3;
 merged5[33] = merged4;
 merged5[34] = function instanceOf(Value) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -4184,7 +4184,7 @@ merged5[34] = function instanceOf(Value) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -4205,7 +4205,7 @@ merged5[34] = function instanceOf(Value) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -4215,8 +4215,8 @@ merged5[34] = function instanceOf(Value) {
     return obj;
   };
   closure_0 = Value;
-  const f124262 = (arg0) => arg0 instanceof f124262;
-  const obj = { [closure_1]: f88944 };
+  const f124666 = (arg0) => arg0 instanceof f124666;
+  const obj = { [closure_1]: f89172 };
   const obj2 = {
     optional,
     and(arg0) {
@@ -4239,7 +4239,7 @@ merged5[34] = function instanceOf(Value) {
 };
 merged5[35] = function shape(arg0) {
   function optional() {
-    const f88941 = () => {
+    const f89169 = () => {
       let obj = {
         match(arg0) {
           let obj3;
@@ -4268,7 +4268,7 @@ merged5[35] = function shape(arg0) {
       };
       return obj;
     };
-    const obj = { [closure_2_1]: f88941 };
+    const obj = { [closure_2_1]: f89169 };
     const obj2 = {
       optional,
       and(arg0) {
@@ -4289,7 +4289,7 @@ merged5[35] = function shape(arg0) {
     };
     return Object.assign(obj, obj2);
   }
-  const f88944 = () => {
+  const f89172 = () => {
     let obj = {
       match(arg0) {
         const obj = { matched: Boolean(closure_1_0(arg0)) };
@@ -4299,7 +4299,7 @@ merged5[35] = function shape(arg0) {
     return obj;
   };
   closure_0 = fn(arg0);
-  const obj = { [closure_1]: f88944 };
+  const obj = { [closure_1]: f89172 };
   const obj2 = {
     optional,
     and(arg0) {
@@ -4320,7 +4320,7 @@ merged5[35] = function shape(arg0) {
   };
   return Object.assign(obj, obj2);
 };
-let closure_31 = { matched: false, value: "r" };
+let closure_31 = { matched: false, value: "Array" };
 class n {
   constructor(arg0, arg1) {
 

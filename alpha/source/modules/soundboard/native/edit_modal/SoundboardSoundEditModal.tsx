@@ -1,9 +1,9 @@
-// Module ID: 20015
-// Function ID: 20016
+// Module ID: 20040
+// Function ID: 20041
 // Name: SoundboardSoundEditModal
-// Dependencies: [19, 1071, 21, 6130, 1112, 7191, 20016, 5604, 1256, 7355, 2]
+// Dependencies: [19, 1071, 21, 6130, 1112, 7191, 20041, 5604, 1256, 7355, 2]
 
-// Module 20015 (SoundboardSoundEditModal)
+// Module 20040 (SoundboardSoundEditModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

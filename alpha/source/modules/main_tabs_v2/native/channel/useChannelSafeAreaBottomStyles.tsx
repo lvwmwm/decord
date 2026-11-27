@@ -1,10 +1,10 @@
-// Module ID: 11813
-// Function ID: 11814
+// Module ID: 11821
+// Function ID: 11822
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5849, 4976, 4892, 2132, 5851, 1071, 4899, 5043, 575, 11814, 7081, 5230, 563, 1627, 1379, 5607, 9013, 2]
+// Dependencies: [19, 5849, 4976, 4892, 2132, 5851, 1071, 4899, 5043, 575, 11822, 7081, 5230, 563, 1627, 1379, 5607, 9014, 2]
 // Exports: default
 
-// Module 11813 (useChannelSafeAreaBottomStyles)
+// Module 11821 (useChannelSafeAreaBottomStyles)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;

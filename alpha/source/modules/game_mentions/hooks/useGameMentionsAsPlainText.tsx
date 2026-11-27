@@ -1,10 +1,10 @@
-// Module ID: 9528
-// Function ID: 9529
+// Module ID: 9529
+// Function ID: 9530
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2141, 1387, 7074, 8719, 504, 2153, 7176, 1112, 2]
+// Dependencies: [19, 2141, 1387, 7074, 8720, 504, 2153, 7176, 1112, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9528 (useGameMentionsAsPlainText)
+// Module 9529 (useGameMentionsAsPlainText)
 import StringUtils from "StringUtils" /* 2153 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2141 */;

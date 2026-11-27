@@ -1,14 +1,14 @@
-// Module ID: 19054
-// Function ID: 19055
+// Module ID: 19070
+// Function ID: 19071
 // Name: WebhookIcon
-// Dependencies: [19, 21, 575, 5729, 19055, 2]
+// Dependencies: [19, 21, 575, 5729, 19071, 2]
 // Exports: WebhookIcon
 
-// Module 19054 (WebhookIcon)
+// Module 19070 (WebhookIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 19055 */;
+import AssetRegistry from "AssetRegistry" /* 19071 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8702
-// Function ID: 8703
+// Module ID: 8703
+// Function ID: 8704
 // Name: SecureFramesCode
 // Dependencies: [19, 17, 1082, 21, 5043, 575, 5634, 2]
 // Exports: default
 
-// Module 8702 (SecureFramesCode)
+// Module 8703 (SecureFramesCode)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import Text_Text from "Text/Text" /* 5634 */;

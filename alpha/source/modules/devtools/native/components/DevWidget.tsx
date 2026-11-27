@@ -1,10 +1,10 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17650
+// Function ID: 17651
 // Name: DevWidget
-// Dependencies: [19, 8383, 573, 21, 5043, 575, 1654, 11808, 12996, 5303, 1707, 5644, 5645, 6152, 16023, 17202, 17644, 17201, 2]
+// Dependencies: [19, 8384, 573, 21, 5043, 575, 1654, 11816, 13004, 5303, 1707, 5644, 5645, 6152, 16030, 17209, 17651, 17208, 2]
 // Exports: default
 
-// Module 17643 (DevWidget)
+// Module 17650 (DevWidget)
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
@@ -13,12 +13,12 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import springPresets from "springPresets" /* 5645 */;
 import Pressables from "Pressables" /* 6152 */;
-import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11808 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12996 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 17202 */;
-import VEVOODefault from "VEVOO" /* 17644 */;
+import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11816 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13004 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 17209 */;
+import VEVOODefault from "VEVOO" /* 17651 */;
 import react from "react" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8383 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8384 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

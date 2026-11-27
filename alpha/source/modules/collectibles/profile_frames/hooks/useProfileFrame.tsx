@@ -1,10 +1,10 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9502
+// Function ID: 9503
 // Name: useProfileFrame
 // Dependencies: [6311, 6329, 6318, 504, 2]
 // Exports: default
 
-// Module 9501 (useProfileFrame)
+// Module 9502 (useProfileFrame)
 import ProfileFrameRecord from "ProfileFrameRecord" /* 6318 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6311 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6329 */;

@@ -1,8 +1,8 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16712
+// Function ID: 16713
 // Dependencies: [2]
 
-// Module 16705
+// Module 16712
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusCouchSpotIllustration-3x.png.js");

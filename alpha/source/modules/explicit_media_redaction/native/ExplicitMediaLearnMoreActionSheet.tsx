@@ -1,10 +1,10 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 12543
+// Function ID: 12544
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 6788, 1071, 21, 5043, 575, 12536, 6825, 8937, 8109, 5257, 5722, 2188, 7870, 1112, 3595, 6828, 12223, 2120, 5271, 7891, 5634, 5641, 2]
+// Dependencies: [19, 17, 6788, 1071, 21, 5043, 575, 12544, 6825, 8938, 8109, 5257, 5722, 2188, 7870, 1112, 3595, 6828, 12231, 2120, 5271, 7891, 5634, 5641, 2]
 // Exports: default
 
-// Module 12535 (ExplicitMediaLearnMoreActionSheet)
+// Module 12543 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1112 */;
@@ -16,7 +16,7 @@ import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /*
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6828 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7870 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8937 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8938 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;

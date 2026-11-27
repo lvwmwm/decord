@@ -1,16 +1,16 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18186
+// Function ID: 18187
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5044, 7654, 1387, 16683, 1071, 21, 5043, 575, 504, 1186, 5104, 1654, 6944, 9420, 5644, 1707, 5607, 9419, 14455, 5259, 8109, 2120, 5303, 2]
+// Dependencies: [5, 32, 19, 17, 5044, 7654, 1387, 16690, 1071, 21, 5043, 575, 504, 1186, 5104, 1654, 6944, 9421, 5644, 1707, 5607, 9420, 14462, 5259, 8109, 2120, 5303, 2]
 
-// Module 18179 (YouBarAvatar)
+// Module 18186 (YouBarAvatar)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import _mod1707 from "module_1707" /* 1707 */;
 import native2 from "native" /* 5104 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import ClipView from "ClipView" /* 9420 */;
+import ClipView from "ClipView" /* 9421 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7654 */;
 import UserStore from "UserStore" /* 1387 */;
-import YouBarConstants from "YouBarConstants" /* 16683 */;
+import YouBarConstants from "YouBarConstants" /* 16690 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -264,7 +264,7 @@ function YouBarAvatarLarge(transitionState) {
     items7[2] = animatedStyle;
     const View = tmp40(1654).View;
     let nativeCutouts;
-    const tmp40Result = OFFLINE(9420);
+    const tmp40Result = OFFLINE(9421);
     const tmp45 = closure_23;
     if (memo != null) {
       nativeCutouts = memo.nativeCutouts;
@@ -283,7 +283,7 @@ function YouBarAvatarLarge(transitionState) {
     rect = { right: closure_14 - closure_19, bottom: closure_14 - closure_19 };
     items8[1] = closure_22(Avatar, obj6);
     let mapped;
-    const tmp40Result3 = OFFLINE(9420);
+    const tmp40Result3 = OFFLINE(9421);
     if (memo != null) {
       const nativeCutouts1 = memo.nativeCutouts;
       if (nativeCutouts1 != null) {
@@ -302,14 +302,14 @@ function YouBarAvatarLarge(transitionState) {
     let tmp46Result = null != avatarDecoration;
     if (tmp46Result) {
       const obj9 = { size: tmp2Result20.getDecorationSizeForAvatarSize(size), avatarDecoration, decorationStyle: rect1, animate: stateFromStores1 && "always", cutout: getDecorationCutoutForAvatarCutout(memo, (tmp2Result24.getDecorationSizeForAvatarSize(size) - tmp5) / 2) };
-      const tmp40Result4 = OFFLINE(9419);
-      tmp2Result20 = tmp2(14455);
+      const tmp40Result4 = OFFLINE(9420);
+      tmp2Result20 = tmp2(14462);
       rect1 = { position: "absolute", top: -tmp2Result21.getDecorationSizeForAvatarSize(size) - tmp5 / 2, left: -tmp2Result22.getDecorationSizeForAvatarSize(size) - tmp5 / 2 };
-      tmp2Result21 = tmp2(14455);
-      tmp2Result22 = tmp2(14455);
-      getDecorationCutoutForAvatarCutout = tmp2(14455).getDecorationCutoutForAvatarCutout;
-      tmp2(14455);
-      tmp2Result24 = tmp2(14455);
+      tmp2Result21 = tmp2(14462);
+      tmp2Result22 = tmp2(14462);
+      getDecorationCutoutForAvatarCutout = tmp2(14462).getDecorationCutoutForAvatarCutout;
+      tmp2(14462);
+      tmp2Result24 = tmp2(14462);
       tmp46Result = tmp46(tmp40Result4, obj9, avatarDecoration.asset);
     }
     items8[3] = tmp46Result;
@@ -540,7 +540,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -572,7 +572,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_2(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         _undefined = 3;

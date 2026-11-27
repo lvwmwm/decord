@@ -1,10 +1,10 @@
-// Module ID: 17883
-// Function ID: 17884
+// Module ID: 17890
+// Function ID: 17891
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 5076, 8295, 4889, 21, 3, 5043, 575, 17884, 6784, 504, 5257, 1112, 5271, 17885, 5634, 7251, 7253, 7941, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 5076, 8296, 4889, 21, 3, 5043, 575, 17891, 6784, 504, 5257, 1112, 5271, 17892, 5634, 7251, 7253, 7941, 5641, 2]
 // Exports: default
 
-// Module 17883 (GuildThemeNuxActionSheet)
+// Module 17890 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
-import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 8295 */;
+import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 8296 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   const tmp = closure_14();
   let tmp2 = guildId;
   const tmp3 = dependencyMap;
-  const tmp4 = _slicedToArray(react.useState(guildId(17884).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = _slicedToArray(react.useState(guildId(17891).getInitialGuildThemeNuxSelection), 2);
   [tmp5, c2] = tmp4;
   [tmp7, c3] = _slicedToArray(react.useState(null), 2);
   const tmp6 = _slicedToArray(react.useState(null), 2);
@@ -153,7 +153,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -205,7 +205,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
           obj.hideActionSheet(GuildThemeNuxActionSheet_str);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp36) {
         closure_2 = tmp36;
         if (0 === v0) {
@@ -231,7 +231,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   let obj3 = { startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1112).t.cpT0Cq), onDismiss: callback3, contentStyles: tmp.container, children: items7 };
   const BottomSheet = tmp2(5271).BottomSheet;
   intl2 = tmp2(1112).intl;
-  items7 = [closure_10(markAsDismissed(17885), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  items7 = [closure_10(markAsDismissed(17892), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   let obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl3.string(tmp2(1112).t.Q9zFy9) };
   const Text = tmp2(5634).Text;
   intl3 = tmp2(1112).intl;

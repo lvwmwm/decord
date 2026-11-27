@@ -1,13 +1,13 @@
-// Module ID: 8527
-// Function ID: 8528
+// Module ID: 8528
+// Function ID: 8529
 // Name: ChannelSettingsPermissionsActionCreators
-// Dependencies: [5, 8528, 572, 7847, 2]
+// Dependencies: [5, 8529, 572, 7847, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 8527 (ChannelSettingsPermissionsActionCreators)
+// Module 8528 (ChannelSettingsPermissionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 8528 */;
+import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 8529 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _updatePermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _updatePermission() {
           const obj2 = closure_133_1(closure_133_2[2]);
           obj2.dispatch(obj7);
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp15) {
           c7 = 3;
           throw tmp15;

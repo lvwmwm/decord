@@ -1,10 +1,10 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 11224
+// Function ID: 11225
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 6163, 6379, 2153, 504, 11115, 11123, 5050, 1112, 2]
+// Dependencies: [5, 32, 19, 6163, 6379, 2153, 504, 11116, 11124, 5050, 1112, 2]
 // Exports: useWishlistButtonState
 
-// Module 11223 (useWishlistButtonState)
+// Module 11224 (useWishlistButtonState)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -84,7 +84,7 @@ export function useWishlistButtonState(onRemoveSuccess) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -200,7 +200,7 @@ export function useWishlistButtonState(onRemoveSuccess) {
             closure_129_10(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp81) {
           onAddSuccess = tmp81;
           if (0 === c3) {

@@ -1,10 +1,10 @@
-// Module ID: 8221
-// Function ID: 8222
+// Module ID: 8222
+// Function ID: 8223
 // Name: InAppReportsTextElement
 // Dependencies: [19, 17, 21, 5043, 6119, 5634, 2]
 // Exports: default
 
-// Module 8221 (InAppReportsTextElement)
+// Module 8222 (InAppReportsTextElement)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import CustomMarkupAll from "CustomMarkup" /* 6119 */;

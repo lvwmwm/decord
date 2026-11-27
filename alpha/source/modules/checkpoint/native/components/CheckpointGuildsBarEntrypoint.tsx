@@ -1,21 +1,21 @@
-// Module ID: 18129
-// Function ID: 18130
+// Module ID: 18136
+// Function ID: 18137
 // Name: CheckpointGuildsBarEntrypoint
-// Dependencies: [19, 17, 18074, 6396, 4889, 18071, 21, 1654, 1707, 5043, 575, 18095, 5634, 1112, 3495, 5607, 18083, 12625, 12629, 5219, 18130, 9568, 5598, 14118, 2]
+// Dependencies: [19, 17, 18081, 6396, 4889, 18078, 21, 1654, 1707, 5043, 575, 18102, 5634, 1112, 3495, 5607, 18090, 12633, 12637, 5219, 18137, 9569, 5598, 14125, 2]
 
-// Module 18129 (CheckpointGuildsBarEntrypoint)
+// Module 18136 (CheckpointGuildsBarEntrypoint)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef3495 from "module_3495" /* 3495 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import CheckpointConstants from "CheckpointConstants" /* 6396 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18071 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 18095 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18130 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18078 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 18102 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18137 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18074 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18081 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,28 +1,21 @@
 // Module ID: 15512
 // Function ID: 15513
-// Dependencies: [15504]
+// Dependencies: []
 
 // Module 15512
-import _mod15504 from "module_15504" /* 15504 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-
-export default function(version, pre, major2, arg3, arg4) {
-  let tmp = arg4;
-  let tmp2 = arg3;
-  if (typeof major2 === "string") {
-    tmp = arg3;
-    tmp2 = major2;
-  }
-  try {
-    const tmp7 = _mod15504;
-    if (version instanceof _mod15504) {
-      version = version.version;
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
     }
-    const self = this;
-    const self2 = this;
-    const tmp72 = new tmp7(version, major2);
-    return tmp72.inc(pre, tmp2, tmp).version;
-  } catch (err) {
-    return null;
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
   }
+  return tmp2;
 };

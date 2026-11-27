@@ -1,10 +1,10 @@
-// Module ID: 12905
-// Function ID: 12906
+// Module ID: 12913
+// Function ID: 12914
 // Name: useFriendsAnimationState
 // Dependencies: [32, 19, 6767, 2]
 // Exports: useFriendsAnimationState
 
-// Module 12905 (useFriendsAnimationState)
+// Module 12913 (useFriendsAnimationState)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

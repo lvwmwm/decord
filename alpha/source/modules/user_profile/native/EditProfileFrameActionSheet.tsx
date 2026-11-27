@@ -1,19 +1,19 @@
-// Module ID: 16116
-// Function ID: 16117
+// Module ID: 16123
+// Function ID: 16124
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 6329, 6318, 1071, 21, 5043, 575, 6162, 8724, 6379, 6380, 1256, 11946, 9431, 5271, 7507, 1112, 14457, 11149, 504, 16117, 14464, 6375, 6309, 16118, 14470, 14471, 14458, 11287, 5598, 2]
+// Dependencies: [32, 19, 17, 6329, 6318, 1071, 21, 5043, 575, 6162, 8725, 6379, 6380, 1256, 11954, 9432, 5271, 7507, 1112, 14464, 11150, 504, 16124, 14471, 6375, 6309, 16125, 14477, 14478, 14465, 11288, 5598, 2]
 // Exports: default
 
-// Module 16116 (EditProfileFrameActionSheet)
+// Module 16123 (EditProfileFrameActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6309 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 6318 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
-import useShopProductItems from "useShopProductItems" /* 9431 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11946 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 16118 */;
+import useShopProductItems from "useShopProductItems" /* 9432 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11954 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 16125 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -135,7 +135,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(14458)(previewSkuId);
+  const tmp2 = purchase(14465)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -159,7 +159,7 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(11287), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  items1 = [closure_9(purchase(11288), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
   const tmp4 = purchase(5598);

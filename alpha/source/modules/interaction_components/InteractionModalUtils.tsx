@@ -1,10 +1,10 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12428
+// Function ID: 12429
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 4892, 8117, 4955, 5076, 8124, 12421, 8825, 1071, 8824, 2118, 1413, 5684, 7611, 504, 5622, 11, 572, 10062, 1112, 38, 6395, 10097, 8829, 6400, 8128, 1285, 1088, 2]
+// Dependencies: [5, 32, 19, 502, 4892, 8117, 4955, 5076, 8124, 12429, 8826, 1071, 8825, 2118, 1413, 5684, 7611, 504, 5622, 11, 572, 10063, 1112, 38, 6395, 10098, 8830, 6400, 8128, 1285, 1088, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 12420 (InteractionModalUtils)
+// Module 12428 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,9 +12,9 @@ import intl2 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import Server from "Server" /* 2118 */;
 import DraftStore from "DraftStore" /* 8117 */;
-import ComponentStateContext from "ComponentStateContext" /* 8824 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10062 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 12421 */;
+import ComponentStateContext from "ComponentStateContext" /* 8825 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10063 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 12429 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8124 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8825 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8826 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let _require, c0, c1, c5, c6, importDefault, set;
 let tmp5;
 const getURLForApplicationDefault = tmp5(5684);
 function getData(arg0, arr, arg2) {
-  const f102333 = (type) => {
+  const f102574 = (type) => {
     let components;
     let items;
     let mapped;
@@ -45,7 +45,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f102333) };
+      const obj4 = { type: type.type, components: components.map(f102574) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -106,7 +106,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f102333)[0] };
+                const obj21 = { type: type.type, component: items.map(f102574)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -168,7 +168,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f102333);
+  return arr.map(f102574);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -205,7 +205,7 @@ let obj = function _submitModal() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -297,7 +297,7 @@ let obj = function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c6 = 3;
@@ -400,7 +400,7 @@ export function useModalState(components, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -437,7 +437,7 @@ export function useModalState(components, arg1) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;

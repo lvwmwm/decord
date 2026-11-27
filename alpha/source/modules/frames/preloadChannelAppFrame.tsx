@@ -1,14 +1,14 @@
-// Module ID: 17949
-// Function ID: 17950
+// Module ID: 17956
+// Function ID: 17957
 // Name: preloadChannelAppFrame
-// Dependencies: [6936, 17950, 7687, 7685, 7679, 2]
+// Dependencies: [6936, 17957, 7687, 7685, 7679, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 17949 (preloadChannelAppFrame)
+// Module 17956 (preloadChannelAppFrame)
 import frameLaunchSteps from "frameLaunchSteps" /* 7679 */;
 import FrameLaunchTimingTypes from "FrameLaunchTimingTypes" /* 7685 */;
 import FrameLaunchTimingManager from "FrameLaunchTimingManager" /* 7687 */;
-import getChannelAppLaunchTargetDefault from "getChannelAppLaunchTarget" /* 17950 */;
+import getChannelAppLaunchTargetDefault from "getChannelAppLaunchTarget" /* 17957 */;
 import FramesStore from "FramesStore" /* 6936 */;
 import size from "module_2" /* 2 */;
 

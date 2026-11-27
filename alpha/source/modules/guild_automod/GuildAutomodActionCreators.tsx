@@ -1,17 +1,17 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12535
+// Function ID: 12536
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 4949, 4914, 4975, 1071, 12528, 1255, 11, 1285, 12521, 6013, 8241, 572, 2]
+// Dependencies: [5, 4949, 4914, 4975, 1071, 12536, 1255, 11, 1285, 12529, 6013, 8242, 572, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12527 (GuildAutomodActionCreators)
+// Module 12535 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
-import AutomodFeedback from "AutomodFeedback" /* 8241 */;
-import DataUtils from "DataUtils" /* 12528 */;
+import AutomodFeedback from "AutomodFeedback" /* 8242 */;
+import DataUtils from "DataUtils" /* 12536 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;

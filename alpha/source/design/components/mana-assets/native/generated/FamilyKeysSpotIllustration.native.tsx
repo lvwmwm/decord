@@ -1,26 +1,26 @@
-// Module ID: 19839
-// Function ID: 19840
+// Module ID: 19855
+// Function ID: 19856
 // Name: FamilyKeysSpotIllustration
-// Dependencies: [19, 21, 19840, 19841, 19842, 7261, 5730, 2]
+// Dependencies: [19, 21, 19856, 19857, 19858, 7261, 5730, 2]
 // Exports: FamilyKeysSpotIllustration
 
-// Module 19839 (FamilyKeysSpotIllustration)
+// Module 19855 (FamilyKeysSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef19840 from "module_19840" /* 19840 */;
-import _modDef19841 from "module_19841" /* 19841 */;
-import _modDef19842 from "module_19842" /* 19842 */;
+import _modDef19856 from "module_19856" /* 19856 */;
+import _modDef19857 from "module_19857" /* 19857 */;
+import _modDef19858 from "module_19858" /* 19858 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19840 };
+let obj2 = { uri: _modDef19856 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19841 };
+let obj3 = { uri: _modDef19857 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19842 };
-({ uri: _modDef19842 });
+obj[3] = { uri: _modDef19858 };
+({ uri: _modDef19858 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FamilyKeysSpotIllustration.native.tsx");
 

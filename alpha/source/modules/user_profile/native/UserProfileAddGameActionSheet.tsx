@@ -1,10 +1,10 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14571
+// Function ID: 14572
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 14565, 6137, 21, 5043, 575, 6144, 2152, 2153, 8058, 5730, 13354, 5618, 7405, 13353, 504, 14566, 6171, 14567, 10871, 14573, 14568, 14569, 14570, 5052, 1112, 6109, 6382, 9213, 5257, 14563, 5271, 7507, 7406, 7047, 5634, 7411, 2]
+// Dependencies: [32, 19, 17, 502, 14572, 6137, 21, 5043, 575, 6144, 2152, 2153, 8058, 5730, 13362, 5618, 7405, 13361, 504, 14573, 6171, 14574, 10872, 14580, 14575, 14576, 14577, 5052, 1112, 6109, 6382, 9214, 5257, 14570, 5271, 7507, 7406, 7047, 5634, 7411, 2]
 // Exports: default
 
-// Module 14564 (UserProfileAddGameActionSheet)
+// Module 14571 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -16,14 +16,14 @@ import Constants from "Constants" /* 6137 */;
 import TableRow2 from "TableRow" /* 6144 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6171 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6382 */;
-import _extends from "_extends" /* 9213 */;
-import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 13354 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 14563 */;
-import WidgetUtils from "WidgetUtils" /* 14570 */;
+import _extends from "_extends" /* 9214 */;
+import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 13362 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 14570 */;
+import WidgetUtils from "WidgetUtils" /* 14577 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 14565 */;
+import WidgetStore from "WidgetStore" /* 14572 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

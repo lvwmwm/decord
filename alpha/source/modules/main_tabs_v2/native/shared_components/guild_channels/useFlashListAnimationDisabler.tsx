@@ -1,10 +1,10 @@
-// Module ID: 15601
-// Function ID: 15602
+// Module ID: 15608
+// Function ID: 15609
 // Name: useFlashListAnimationDisabler
 // Dependencies: [19, 1654, 2]
 // Exports: useFlashListAnimationDisabler
 
-// Module 15601 (useFlashListAnimationDisabler)
+// Module 15608 (useFlashListAnimationDisabler)
 import _mod1654 from "module_1654" /* 1654 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 11883
+// Function ID: 11884
 // Name: PinotLazy
-// Dependencies: [2, 11876, 11878, 11886, 11896, 11898]
+// Dependencies: [2, 11884, 11886, 11894, 11904, 11906]
 
-// Module 11875 (PinotLazy)
-import useIsPinotChannelLabelVisible from "useIsPinotChannelLabelVisible" /* 11876 */;
-import usePinotMemberNotice from "usePinotMemberNotice" /* 11878 */;
-import PinotChannelLabel from "PinotChannelLabel" /* 11886 */;
-import PinotMemberNoticeBar from "PinotMemberNoticeBar" /* 11896 */;
-import PinotMemberNoticeHeaderArrow from "PinotMemberNoticeHeaderArrow" /* 11898 */;
+// Module 11883 (PinotLazy)
+import useIsPinotChannelLabelVisible from "useIsPinotChannelLabelVisible" /* 11884 */;
+import usePinotMemberNotice from "usePinotMemberNotice" /* 11886 */;
+import PinotChannelLabel from "PinotChannelLabel" /* 11894 */;
+import PinotMemberNoticeBar from "PinotMemberNoticeBar" /* 11904 */;
+import PinotMemberNoticeHeaderArrow from "PinotMemberNoticeHeaderArrow" /* 11906 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pinot/native/PinotLazy.tsx");

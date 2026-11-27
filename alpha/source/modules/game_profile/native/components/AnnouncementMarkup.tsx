@@ -1,17 +1,17 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14205
+// Function ID: 14206
 // Name: AnnouncementMarkup
-// Dependencies: [19, 21, 1379, 12, 6119, 7067, 2069, 14199, 14203, 1242, 6122, 2]
+// Dependencies: [19, 21, 1379, 12, 6119, 7067, 2069, 14206, 14210, 1242, 6122, 2]
 // Exports: default
 
-// Module 14198 (AnnouncementMarkup)
+// Module 14205 (AnnouncementMarkup)
 import Fragment from "Fragment" /* 21 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import _modDef2069 from "module_2069" /* 2069 */;
 import CustomMarkup from "CustomMarkup" /* 6119 */;
 import Spoiler from "Spoiler" /* 6122 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
-import parseNativeMarkupDefault from "parseNativeMarkup" /* 14203 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 14210 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import module_12_mod from "module_12" /* 12 */;

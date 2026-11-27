@@ -1,17 +1,17 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17475
+// Function ID: 17476
 // Name: UserSettingsDesignSystemAnimatedAsset
-// Dependencies: [32, 19, 17, 21, 17469, 575, 5043, 5634, 5057, 6115, 5641, 6140, 6144, 5257, 17470, 2120, 7549, 1359, 17471, 17472, 7251, 7253, 2]
+// Dependencies: [32, 19, 17, 21, 17476, 575, 5043, 5634, 5057, 6115, 5641, 6140, 6144, 5257, 17477, 2120, 7549, 1359, 17478, 17479, 7251, 7253, 2]
 // Exports: default
 
-// Module 17468 (UserSettingsDesignSystemAnimatedAsset)
+// Module 17475 (UserSettingsDesignSystemAnimatedAsset)
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 7251 */;
 import TableRadioRow from "TableRadioRow" /* 7253 */;
-import valuesAll from "values" /* 17469 */;
+import valuesAll from "values" /* 17476 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -272,7 +272,7 @@ function AnimationPlayground(arg0) {
           closure_1_0(arg0);
         }
       };
-      const tmp2 = asyncRequire(17470, dependencyMap.paths);
+      const tmp2 = asyncRequire(17477, dependencyMap.paths);
       openLazy(tmp2, UserSettingsDesignSystemAnimatedAssetPicker, obj);
     }
   };
@@ -345,9 +345,9 @@ let c10 = "Asset default";
 const UserSettingsDesignSystemAnimatedAssetPicker = "UserSettingsDesignSystemAnimatedAssetPicker";
 let closure_12 = { "100%": "100%", "75%": "75%", "50%": "50%" };
 let closure_13 = { "Fill the width": {}, "Width 50%": { width: "50%" }, "Width 200": { width: 200 }, "Height 120": { height: 120 }, "300 \u00d7 300": { width: 300, height: 300 }, "340 \u00d7 120": { width: 340, height: 120 } };
-let closure_14 = { "Asset's own": "id", "1/1": "t", "16/9": "includes", "4/3": "t", "9/16": "ao" };
+let closure_14 = { "Asset's own": "id", "1/1": null, "16/9": null, "4/3": null, "9/16": null };
 let items = ["Asset default", "center", "top", "bottom", "left", "right", "top-left", "top-right", "bottom-left", "bottom-right"];
-let obj = { "Asset default": "id", Transparent: null, "Opaque #5865f2": null, "Translucent #5865f280": null, "Translucent red #ff000080": null, "Token: background base low": nativeDefault.colors.BACKGROUND_BASE_LOW };
+let obj = { "Asset default": "id", Transparent: false, "Opaque #5865f2": false, "Translucent #5865f280": false, "Translucent red #ff000080": false, "Token: background base low": nativeDefault.colors.BACKGROUND_BASE_LOW };
 let createStyles = createStyles_mod;
 let obj2 = { container: obj3, stage: obj4, greyStage: obj5, measure: { alignItems: "flex-start" }, boxEdge: rect };
 obj3 = { padding: nativeDefault.space.PX_16 };

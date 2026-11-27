@@ -1,10 +1,10 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 9081
+// Function ID: 9082
 // Name: ChatItem
-// Dependencies: [32, 19, 17, 5044, 1071, 8224, 21, 575, 9081, 1087, 9082, 6978, 9083, 5043, 1379, 8838, 5607, 671, 5598, 2]
+// Dependencies: [32, 19, 17, 5044, 1071, 8225, 21, 575, 9082, 1087, 9083, 6978, 9084, 5043, 1379, 8839, 5607, 671, 5598, 2]
 // Exports: default
 
-// Module 9080 (ChatItem)
+// Module 9081 (ChatItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,13 +12,13 @@ import Constants from "Constants" /* 1071 */;
 import MessageTypes2 from "MessageTypes" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import isSystemMessageDefault from "isSystemMessage" /* 6978 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9081 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9082 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9083 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9082 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9083 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9084 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5044 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8224 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8225 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let c9;
 let metroImportAll;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(8838);
+const RowGeneratorTypes = tmp(8839);
 function DCDChatItem(message) {
   let tmp3Result;
   message = message.message;

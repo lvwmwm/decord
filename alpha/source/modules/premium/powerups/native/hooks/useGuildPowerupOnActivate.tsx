@@ -1,15 +1,15 @@
-// Module ID: 13524
-// Function ID: 13525
+// Module ID: 13532
+// Function ID: 13533
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 4914, 10364, 8297, 13525, 504, 13526, 6379, 13527, 10363, 5257, 13504, 6864, 13528, 6130, 9102, 2]
+// Dependencies: [19, 4914, 10365, 8298, 13533, 504, 13534, 6379, 13535, 10364, 5257, 13512, 6864, 13536, 6130, 9103, 2]
 // Exports: default
 
-// Module 13524 (useGuildPowerupOnActivate)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 10363 */;
+// Module 13532 (useGuildPowerupOnActivate)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 10364 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 10364 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8297 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 10365 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8298 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

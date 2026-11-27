@@ -1,10 +1,10 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16467
+// Function ID: 16468
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 6389, 1071, 21, 5043, 575, 7735, 8546, 14731, 5747, 504, 1502, 7517, 5634, 1112, 1501, 6144, 8537, 7347, 7351, 2]
+// Dependencies: [19, 17, 6389, 1071, 21, 5043, 575, 7735, 8547, 14738, 5747, 504, 1502, 7517, 5634, 1112, 1501, 6144, 8538, 7347, 7351, 2]
 // Exports: AuthorizedAppRow, AuthorizedAppsEmpty, AuthorizedAppsHeader, DisclosureIcon, useAuthorizedApps
 
-// Module 16460 (UserSettingsAuthedApps)
+// Module 16467 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
@@ -13,9 +13,9 @@ import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6389 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7347 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7351 */;
 import applications from "applications" /* 7735 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8537 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 8546 */;
-import EmbedIcon from "EmbedIcon" /* 14731 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8538 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 8547 */;
+import EmbedIcon from "EmbedIcon" /* 14738 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;

@@ -1,10 +1,10 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 15951
+// Function ID: 15952
 // Name: frameToast
 // Dependencies: [32, 2]
 // Exports: canShowFrameToast
 
-// Module 15944 (frameToast)
+// Module 15951 (frameToast)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

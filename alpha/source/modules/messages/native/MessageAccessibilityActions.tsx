@@ -1,15 +1,15 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12615
+// Function ID: 12616
 // Name: MessageAccessibilityActions
-// Dependencies: [4868, 9549, 1112, 9552, 12206, 2]
+// Dependencies: [4868, 9550, 1112, 9553, 12214, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 12607 (MessageAccessibilityActions)
+// Module 12615 (MessageAccessibilityActions)
 import intl10 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4868 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9549 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 9552 */;
-import canReplyToMessage from "canReplyToMessage" /* 12206 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9550 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 9553 */;
+import canReplyToMessage from "canReplyToMessage" /* 12214 */;
 import size from "module_2" /* 2 */;
 
 const MessageAccessibilityAction = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };

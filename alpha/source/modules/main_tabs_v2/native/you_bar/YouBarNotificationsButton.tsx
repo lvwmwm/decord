@@ -1,15 +1,15 @@
-// Module ID: 18186
-// Function ID: 18187
+// Module ID: 18193
+// Function ID: 18194
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11718, 16683, 21, 5043, 575, 16070, 1654, 5644, 504, 5259, 11713, 11714, 1112, 8597, 18183, 7944, 1186, 5220, 2]
+// Dependencies: [19, 17, 11726, 16690, 21, 5043, 575, 16077, 1654, 5644, 504, 5259, 11721, 11722, 1112, 8598, 18190, 7944, 1186, 5220, 2]
 
-// Module 18186 (YouBarNotificationsButton)
+// Module 18193 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16070 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16077 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11718 */;
-import YouBarConstants from "YouBarConstants" /* 16683 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11726 */;
+import YouBarConstants from "YouBarConstants" /* 16690 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -108,7 +108,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   }, items3);
   let obj = { size: "custom", style: tmp.icon, color: str };
   str = undefined;
-  const BellIcon = tmp4(8597).BellIcon;
+  const BellIcon = tmp4(8598).BellIcon;
   if (hasNameplate) {
     str = "white";
   }
@@ -122,7 +122,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1112).t.yBmFPA, obj2);
   }
-  const YouBarButtonContainer = tmp4(18183).YouBarButtonContainer;
+  const YouBarButtonContainer = tmp4(18190).YouBarButtonContainer;
   const obj3 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,
@@ -153,7 +153,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   items4 = [, ];
   const obj4 = { children: closure_8(IconButton, obj3) };
   const obj6 = { icon: tmp17Result, hasBadge: stateFromStores > 0 && 0 === value, badgeStyle: tmp.overdueReminderDot };
-  items4[0] = closure_8(onLongPress(18183).YouBarButtonIcon, obj6);
+  items4[0] = closure_8(onLongPress(18190).YouBarButtonIcon, obj6);
   const obj7 = { style: animatedStyle, children: closure_8(onLongPress(1186).Badge, { value }) };
   View = _modDef1654.View;
   items4[1] = closure_8(View, obj7);

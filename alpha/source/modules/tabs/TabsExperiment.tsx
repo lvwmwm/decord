@@ -1,10 +1,10 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11537
+// Function ID: 11538
 // Name: TabsExperiment
 // Dependencies: [1451, 1359, 2]
 // Exports: getTabsExperimentEnabled, useTabsExperimentEnabled
 
-// Module 11529 (TabsExperiment)
+// Module 11537 (TabsExperiment)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;

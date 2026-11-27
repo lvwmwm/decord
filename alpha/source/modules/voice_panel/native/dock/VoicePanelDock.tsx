@@ -1,27 +1,27 @@
-// Module ID: 18196
-// Function ID: 18197
+// Module ID: 18203
+// Function ID: 18204
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 4892, 11782, 11805, 11806, 21, 5043, 575, 18197, 1654, 9067, 1112, 9068, 5259, 11781, 504, 1643, 1379, 12996, 1629, 11812, 1707, 5952, 11786, 5303, 5253, 18195, 18219, 18225, 2]
+// Dependencies: [19, 17, 4892, 11790, 11813, 11814, 21, 5043, 575, 18204, 1654, 9068, 1112, 9069, 5259, 11789, 504, 1643, 1379, 13004, 1629, 11820, 1707, 5952, 11794, 5303, 5253, 18202, 18226, 18232, 2]
 
-// Module 18196 (VoicePanelDock)
+// Module 18203 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import _mod1707 from "module_1707" /* 1707 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import ContextMenu from "ContextMenu" /* 9067 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9068 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11786 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11812 */;
-import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 18197 */;
+import ContextMenu from "ContextMenu" /* 9068 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9069 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11789 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11790 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11794 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11820 */;
+import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 18204 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11805 */;
-import GestureConstants from "GestureConstants" /* 11806 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11813 */;
+import GestureConstants from "GestureConstants" /* 11814 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

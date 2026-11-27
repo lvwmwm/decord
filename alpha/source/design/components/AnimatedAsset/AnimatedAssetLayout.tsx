@@ -1,10 +1,10 @@
-// Module ID: 17472
-// Function ID: 17473
+// Module ID: 17479
+// Function ID: 17480
 // Name: AnimatedAssetLayout
 // Dependencies: [2]
 // Exports: getAnimatedAssetLayout, getMediaWidthScale
 
-// Module 17472 (AnimatedAssetLayout)
+// Module 17479 (AnimatedAssetLayout)
 import size_mod from "module_2" /* 2 */;
 
 function getAnimatedAssetBox(padColor) {

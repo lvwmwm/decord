@@ -1,10 +1,10 @@
-// Module ID: 19760
-// Function ID: 19761
+// Module ID: 19776
+// Function ID: 19777
 // Name: buildImageLoadMetricProperties
 // Dependencies: [1071, 2]
 // Exports: buildImageLoadMetricProperties
 
-// Module 19760 (buildImageLoadMetricProperties)
+// Module 19776 (buildImageLoadMetricProperties)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

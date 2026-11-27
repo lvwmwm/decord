@@ -1,15 +1,15 @@
-// Module ID: 9928
-// Function ID: 9929
+// Module ID: 9929
+// Function ID: 9930
 // Name: ContentImpressionTrackerHooks
-// Dependencies: [19, 8374, 6878, 504, 8392, 6831, 9929, 2]
+// Dependencies: [19, 8375, 6878, 504, 8393, 6831, 9930, 2]
 // Exports: useAdContentImpressionTrackerProps, useGetOptionalQuestImpressionId, useGetQuestImpressionId, useQuestImpression, useQuestImpressionId, useQuestImpressionRef, useQuestStatusChanged
 
-// Module 9928 (ContentImpressionTrackerHooks)
+// Module 9929 (ContentImpressionTrackerHooks)
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import react2 from "react" /* 9929 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import react2 from "react" /* 9930 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 8374 */;
+import QuestStore from "QuestStore" /* 8375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

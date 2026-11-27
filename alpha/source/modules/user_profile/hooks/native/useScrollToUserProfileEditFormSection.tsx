@@ -1,13 +1,13 @@
-// Module ID: 16080
-// Function ID: 16081
+// Module ID: 16087
+// Function ID: 16088
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 5044, 9437, 504, 2]
+// Dependencies: [19, 5044, 9438, 504, 2]
 // Exports: default
 
-// Module 16080 (useScrollToUserProfileEditFormSection)
+// Module 16087 (useScrollToUserProfileEditFormSection)
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9437 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9438 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

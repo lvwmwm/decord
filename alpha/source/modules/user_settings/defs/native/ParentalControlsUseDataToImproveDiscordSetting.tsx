@@ -1,17 +1,17 @@
-// Module ID: 17605
-// Function ID: 17606
+// Module ID: 17612
+// Function ID: 17613
 // Name: ParentalControlsUseDataToImproveDiscordSetting
-// Dependencies: [8212, 9555, 1071, 16328, 8214, 16323, 11962, 1112, 2]
+// Dependencies: [8213, 9556, 1071, 16335, 8215, 16330, 11970, 1112, 2]
 
-// Module 17605 (ParentalControlsUseDataToImproveDiscordSetting)
+// Module 17612 (ParentalControlsUseDataToImproveDiscordSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8214 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16323 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16328 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8215 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16330 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16335 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8213 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

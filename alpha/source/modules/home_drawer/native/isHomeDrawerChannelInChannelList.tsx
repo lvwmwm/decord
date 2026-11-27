@@ -1,10 +1,10 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18112
+// Function ID: 18113
 // Name: isHomeDrawerChannelInChannelList
 // Dependencies: [6167, 504, 6975, 2]
 // Exports: useIsHomeDrawerChannelInChannelList
 
-// Module 18105 (isHomeDrawerChannelInChannelList)
+// Module 18112 (isHomeDrawerChannelInChannelList)
 import get_initialized from "get initialized" /* 504 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
 import size from "module_2" /* 2 */;

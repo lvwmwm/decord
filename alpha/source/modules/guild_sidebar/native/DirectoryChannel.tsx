@@ -1,15 +1,15 @@
-// Module ID: 17931
-// Function ID: 17932
+// Module ID: 17938
+// Function ID: 17939
 // Name: DirectoryChannel
-// Dependencies: [19, 4892, 4973, 6123, 6168, 21, 5043, 575, 563, 1098, 11406, 17844, 8587, 2]
+// Dependencies: [19, 4892, 4973, 6123, 6168, 21, 5043, 575, 563, 1098, 11407, 17851, 8588, 2]
 
-// Module 17931 (DirectoryChannel)
+// Module 17938 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1098 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6123 */;
 import ReadStateConstants from "ReadStateConstants" /* 6168 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11406 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11407 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildChannelStore from "GuildChannelStore" /* 4973 */;
@@ -54,9 +54,9 @@ const memoResult = react.memo(function DirectoryChannel(guildId) {
   let tmp7 = null;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    id(17844);
+    id(17851);
     const obj4 = { selected };
-    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(8587)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(8588)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }
   return tmp7;
 });

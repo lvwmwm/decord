@@ -1,20 +1,20 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14896
+// Function ID: 14897
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 10047, 1071, 1500, 21, 13109, 10111, 5257, 7538, 13092, 5724, 1380, 12476, 11268, 1112, 5641, 575, 6971, 7847, 5228, 1627, 1256, 2]
+// Dependencies: [5, 32, 19, 10048, 1071, 1500, 21, 13117, 10112, 5257, 7538, 13100, 5724, 1380, 12484, 11269, 1112, 5641, 575, 6971, 7847, 5228, 1627, 1256, 2]
 // Exports: default
 
-// Module 14889 (AddOrOpenAppButton)
+// Module 14896 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10047 */;
-import ApplicationUtils from "ApplicationUtils" /* 10111 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 13092 */;
-import useIsAppDMDefault from "useIsAppDM" /* 13109 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10048 */;
+import ApplicationUtils from "ApplicationUtils" /* 10112 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 13100 */;
+import useIsAppDMDefault from "useIsAppDM" /* 13117 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ function AddAppButton(application) {
     let tmp6;
     let obj2 = guildId(1380);
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(12476).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(12484).LinkExternalSmallIcon;
       tmp6 = application;
     }
     const items1 = [application];
@@ -68,7 +68,7 @@ function AddAppButton(application) {
     ({ size: "sm", color: guildId(575).colors.WHITE });
     return <Button text={intl.string(tmp6(1112).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
   }
-  PlusSmallIcon = application(11268).PlusSmallIcon;
+  PlusSmallIcon = application(11269).PlusSmallIcon;
   tmp6 = application;
 }
 function OpenAppButton(profileApplication) {
@@ -96,7 +96,7 @@ function OpenAppButton(profileApplication) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -179,7 +179,7 @@ function OpenAppButton(profileApplication) {
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
         tmp = application1;
         closure_130_3(false);

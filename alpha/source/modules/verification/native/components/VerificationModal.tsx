@@ -1,17 +1,17 @@
-// Module ID: 19892
-// Function ID: 19893
+// Module ID: 19908
+// Function ID: 19909
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 19893, 4886, 1387, 1071, 21, 5043, 1186, 19894, 1112, 5641, 1502, 1264, 7191, 7751, 8625, 7543, 6839, 19898, 7262, 7271, 7268, 7336, 7400, 7401, 7263, 19899, 7433, 7349, 504, 5257, 5228, 7355, 2]
+// Dependencies: [5, 19, 17, 19909, 4886, 1387, 1071, 21, 5043, 1186, 19910, 1112, 5641, 1502, 1264, 7191, 7751, 8626, 7543, 6839, 19914, 7262, 7271, 7268, 7336, 7400, 7401, 7263, 19915, 7433, 7349, 504, 5257, 5228, 7355, 2]
 // Exports: default
 
-// Module 19892 (VerificationModal)
+// Module 19908 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1502 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 19893 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 19909 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4886 */;
 import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
@@ -50,7 +50,7 @@ function PhoneThenEmailInterstitial(navigation) {
   });
   const Button = navigation(5641).Button;
   intl3 = navigation(1112).intl;
-  return <EmptyState Illustration={navigation(19894).VerifyPhone} title={intl.string(navigation(1112).t.KLnLIP)} body={intl2.string(navigation(1112).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(19910).VerifyPhone} title={intl.string(navigation(1112).t.KLnLIP)} body={intl2.string(navigation(1112).t.XGbCq3)}>{null}</EmptyState>;
 }
 const View = react_native.View;
 ({ UserRequiredActions: c9, VerificationModalScenes: c10 } = Constants);
@@ -267,7 +267,7 @@ export default function VerificationModal() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     let c4;
@@ -353,7 +353,7 @@ export default function VerificationModal() {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -388,7 +388,7 @@ export default function VerificationModal() {
                           closure_0.push(constants2.OVERVIEW);
                         }
                         c2 = 3;
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp14) {
                       c2 = 3;

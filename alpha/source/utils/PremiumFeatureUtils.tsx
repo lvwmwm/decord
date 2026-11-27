@@ -1,10 +1,10 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9693
+// Function ID: 9694
 // Name: PremiumFeatureUtils
 // Dependencies: [1388, 1071, 1389, 2109, 8129, 2]
 // Exports: getUserMaxFileSize
 
-// Module 9692 (PremiumFeatureUtils)
+// Module 9693 (PremiumFeatureUtils)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2109 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1388 */;
 import Constants from "Constants" /* 1071 */;

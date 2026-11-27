@@ -1,12 +1,12 @@
-// Module ID: 9257
-// Function ID: 9258
+// Module ID: 9258
+// Function ID: 9259
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1082, 9258, 9113, 6325, 2]
+// Dependencies: [19, 1082, 9259, 9114, 6325, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 9257 (useDiscountedPremiumProductInfo)
+// Module 9258 (useDiscountedPremiumProductInfo)
 import Constants from "Constants" /* 1082 */;
-import premium_ProductIds from "premium/ProductIds" /* 9113 */;
+import premium_ProductIds from "premium/ProductIds" /* 9114 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

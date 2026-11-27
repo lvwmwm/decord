@@ -1,10 +1,10 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17505
+// Function ID: 17506
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 6311, 21, 5043, 575, 504, 5701, 11214, 17499, 17524, 17526, 17532, 2]
+// Dependencies: [19, 17, 6311, 21, 5043, 575, 504, 5701, 11215, 17506, 17531, 17533, 17539, 2]
 // Exports: default
 
-// Module 17498 (ShopBlockItem)
+// Module 17505 (ShopBlockItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,15 +1,15 @@
-// Module ID: 18094
-// Function ID: 18095
+// Module ID: 18101
+// Function ID: 18102
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6976, 4914, 6164, 6167, 5691, 1071, 21, 5043, 504, 11497, 5634, 1112, 18095, 5225, 5222, 2]
+// Dependencies: [19, 17, 6976, 4914, 6164, 6167, 5691, 1071, 21, 5043, 504, 11505, 5634, 1112, 18102, 5225, 5222, 2]
 // Exports: default
 
-// Module 18094 (HomeDrawerFolderRow)
+// Module 18101 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 11497 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 11505 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6976 */;
 import GuildStore from "GuildStore" /* 4914 */;

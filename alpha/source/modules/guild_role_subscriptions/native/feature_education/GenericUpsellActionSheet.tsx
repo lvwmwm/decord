@@ -1,10 +1,10 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 17980
+// Function ID: 17981
 // Name: GenericUpsellActionSheet
-// Dependencies: [19, 17, 4889, 21, 5043, 575, 8724, 5271, 5730, 5606, 5634, 1186, 5641, 2]
+// Dependencies: [19, 17, 4889, 21, 5043, 575, 8725, 5271, 5730, 5606, 5634, 1186, 5641, 2]
 // Exports: default
 
-// Module 17973 (GenericUpsellActionSheet)
+// Module 17980 (GenericUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
@@ -44,7 +44,7 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp = closure_7();
-  const obj = markAsDismissed(8724);
+  const obj = markAsDismissed(8725);
   const bottomSheetRef1 = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   const obj2 = {

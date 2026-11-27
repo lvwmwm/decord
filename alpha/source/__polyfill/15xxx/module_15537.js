@@ -1,41 +1,88 @@
 // Module ID: 15537
 // Function ID: 15538
-// Dependencies: [15533, 15504]
+// Dependencies: [15533, 15534, 15531, 15535, 15532, 15536]
 
 // Module 15537
-import _mod15504 from "module_15504" /* 15504 */;
+import _mod15531 from "module_15531" /* 15531 */;
+import _mod15532 from "module_15532" /* 15532 */;
+import _mod15533 from "module_15533" /* 15533 */;
+import _mod15534 from "module_15534" /* 15534 */;
+import _mod15535 from "module_15535" /* 15535 */;
+import _mod15536 from "module_15536" /* 15536 */;
 
-const require = globalThis.__r;
-let _require, c1, dependencyMap;
 
-
-export default function(arr, arg1, arg2) {
-  let closure_0;
-  _require = arg2;
-  dependencyMap = null;
-  let closure_2 = null;
-  let regex = null;
-  try {
-    let tmp = arg1;
-    let self = this;
-    let self2 = this;
-    const tmp6 = new require("module_15533")(arg1, arg2);
-    let tmp7 = tmp6;
-    regex = tmp6;
-    const item = arr.forEach(function(item) {
-      if (regex.test(item)) {
-        const tmp = c1 && -1 !== closure_2.compare(item);
-        if (!tmp) {
-          c1 = item;
-          const self = this;
-          const self2 = this;
-          closure_2 = new _mod15504(c1, closure_0);
-          const tmp7 = new _mod15504(c1, closure_0);
-        }
+export default function(version, arg1, version2, arg3) {
+  let tmp13;
+  let tmp13Result;
+  switch (arg1) {
+    case "===":
+    {
+      let version3 = version;
+      if (typeof version === "object") {
+        version3 = version.version;
       }
-    });
-    return dependencyMap;
-  } catch (err) {
-    return null;
+      let version4 = version2;
+      if (typeof version2 === "object") {
+        version4 = version2.version;
+      }
+      return version3 === version4;
+    }
+    case "!==":
+    {
+      if (typeof version === "object") {
+        const versionValue = version.version;
+      }
+      if (typeof version2 === "object") {
+        version2 = version2.version;
+      }
+      return version !== version2;
+    }
+    case "":
+    {
+      tmp13 = _mod15533;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "=":
+    {
+      tmp13 = _mod15533;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "==":
+    {
+      tmp13 = _mod15533;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "!=":
+    {
+      return _mod15534(version, version2, arg3);
+    }
+    case ">":
+    {
+      return _mod15531(version, version2, arg3);
+    }
+    case ">=":
+    {
+      return _mod15535(version, version2, arg3);
+    }
+    case "<":
+    {
+      return _mod15532(version, version2, arg3);
+    }
+    case "<=":
+    {
+      return _mod15536(version, version2, arg3);
+    }
+    default:
+    {
+      const _TypeError = TypeError;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("Invalid operator: " + arg1);
+      throw typeError;
+    }
   }
 };

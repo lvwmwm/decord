@@ -1,10 +1,10 @@
-// Module ID: 12395
-// Function ID: 12396
+// Module ID: 12403
+// Function ID: 12404
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 4892, 1071, 5048, 21, 5043, 575, 8244, 8344, 1256, 6380, 5618, 504, 7440, 1112, 12396, 10806, 5641, 6130, 5622, 7191, 7355, 2]
+// Dependencies: [32, 5, 19, 17, 4892, 1071, 5048, 21, 5043, 575, 8245, 8345, 1256, 6380, 5618, 504, 7440, 1112, 12404, 10807, 5641, 6130, 5622, 7191, 7355, 2]
 // Exports: default
 
-// Module 12395 (GiftIntentGifModal)
+// Module 12403 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -50,7 +50,7 @@ let obj = function _sendGiftIntentGif() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ let obj = function _sendGiftIntentGif() {
               items[0] = closure_130_1(closure_130_2[13]).PREMIUM_GIFT_INTENT_CARD;
               track(GIFT_INTENT_MESSAGE_SENT, obj10);
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
             const id = user.id;
             const sendMessage = closure_130_1(closure_130_2[10]).sendMessage;
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f102267 = () => {
+  const f102508 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f102267) };
-  require("react")(f102267);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f102508) };
+  require("react")(f102508);
   return closure_10(require("Navigator").Navigator, obj);
 };

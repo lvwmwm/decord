@@ -1,9 +1,9 @@
-// Module ID: 15489
-// Function ID: 15490
+// Module ID: 15496
+// Function ID: 15497
 // Name: AutoclippingDefaultOverrideExperiment
 // Dependencies: [1451, 2]
 
-// Module 15489 (AutoclippingDefaultOverrideExperiment)
+// Module 15496 (AutoclippingDefaultOverrideExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

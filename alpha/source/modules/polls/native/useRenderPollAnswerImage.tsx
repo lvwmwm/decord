@@ -1,10 +1,10 @@
-// Module ID: 13178
-// Function ID: 13179
+// Module ID: 13186
+// Function ID: 13187
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 8117, 8124, 1390, 21, 504, 13172, 5730, 7488, 4992, 1413, 2]
+// Dependencies: [32, 19, 17, 8117, 8124, 1390, 21, 504, 13180, 5730, 7488, 4992, 1413, 2]
 // Exports: default
 
-// Module 13178 (useRenderPollAnswerImage)
+// Module 13186 (useRenderPollAnswerImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1390 */;
@@ -55,7 +55,7 @@ export default function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentStat
       status = mediaAttachmentState.status;
     }
   }
-  const tmp8 = status === tmp(13172).PollMediaUploadAttachmentStatus.PREPARING;
+  const tmp8 = status === tmp(13180).PollMediaUploadAttachmentStatus.PREPARING;
   closure_7 = tmp8;
   let obj3 = {
     renderImage: obj2.useMemo(() => {

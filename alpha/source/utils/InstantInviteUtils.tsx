@@ -1,15 +1,15 @@
-// Module ID: 10430
-// Function ID: 10431
+// Module ID: 10431
+// Function ID: 10432
 // Name: InstantInviteUtils
-// Dependencies: [4891, 4892, 4955, 6932, 4985, 1387, 7578, 1071, 6869, 5777, 10431, 1112, 2]
+// Dependencies: [4891, 4892, 4955, 6932, 4985, 1387, 7578, 1071, 6869, 5777, 10432, 1112, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 10430 (InstantInviteUtils)
+// Module 10431 (InstantInviteUtils)
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 5777 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6869 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 10431 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 10432 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;

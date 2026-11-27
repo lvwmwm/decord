@@ -1,10 +1,10 @@
-// Module ID: 11943
-// Function ID: 11944
+// Module ID: 11951
+// Function ID: 11952
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5044, 4955, 21, 5043, 575, 2110, 6944, 11944, 504, 5099, 6771, 1186, 9511, 9479, 9808, 9809, 5634, 2]
+// Dependencies: [19, 17, 5044, 4955, 21, 5043, 575, 2110, 6944, 11952, 504, 5099, 6771, 1186, 9512, 9480, 9809, 9810, 5634, 2]
 // Exports: NameplatePreview
 
-// Module 11943 (NameplatePreview)
+// Module 11951 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const profile_customization_ProfileCustomizationUtils = tmp(9511);
+const profile_customization_ProfileCustomizationUtils = tmp(9512);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

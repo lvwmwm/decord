@@ -1,16 +1,16 @@
-// Module ID: 8661
-// Function ID: 8662
+// Module ID: 8662
+// Function ID: 8663
 // Name: useIsSecureFramesVerified
-// Dependencies: [502, 5851, 8662, 8663, 8664, 8707, 504, 8712, 6816, 2]
+// Dependencies: [502, 5851, 8663, 8664, 8665, 8708, 504, 8713, 6816, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
-// Module 8661 (useIsSecureFramesVerified)
+// Module 8662 (useIsSecureFramesVerified)
 import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
-import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 8662 */;
-import TransientKeyStore from "TransientKeyStore" /* 8663 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 8664 */;
+import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 8663 */;
+import TransientKeyStore from "TransientKeyStore" /* 8664 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 8665 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesVerified.tsx");

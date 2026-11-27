@@ -1,15 +1,15 @@
-// Module ID: 10086
-// Function ID: 10087
+// Module ID: 10087
+// Function ID: 10088
 // Name: getFrameSurfaces
-// Dependencies: [1071, 10087, 2151, 5687, 6973, 2]
+// Dependencies: [1071, 10088, 2151, 5687, 6973, 2]
 // Exports: canOpenFrame, isFrameApp
 
-// Module 10086 (getFrameSurfaces)
+// Module 10087 (getFrameSurfaces)
 import Constants from "Constants" /* 1071 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2151 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6973 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10087 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10088 */;
 import size from "module_2" /* 2 */;
 
 let set;

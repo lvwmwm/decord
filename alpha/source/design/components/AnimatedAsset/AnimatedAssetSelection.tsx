@@ -1,10 +1,10 @@
-// Module ID: 17471
-// Function ID: 17472
+// Module ID: 17478
+// Function ID: 17479
 // Name: AnimatedAssetSelection
 // Dependencies: [2]
 // Exports: getVideoFormatMimeType, getVideoFormatUrl, pickWebpSize, selectFormats
 
-// Module 17471 (AnimatedAssetSelection)
+// Module 17478 (AnimatedAssetSelection)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { renderer: "poster" };
@@ -12,7 +12,7 @@ let closure_1 = { webm: "video/webm", mp4: "video/mp4", hevc: "video/mp4; codecs
 const result = size.fileFinishedImporting("design/components/AnimatedAsset/AnimatedAssetSelection.tsx");
 
 export function selectFormats(asset, arg1) {
-  const f112569 = (item) => {
+  const f112812 = (item) => {
     let hevcUrl;
     if ("webm" === item) {
       hevcUrl = tmp.webmUrl;
@@ -51,7 +51,7 @@ export function selectFormats(asset, arg1) {
         }
         const items = ["hevc"];
         closure_0 = asset;
-        const found = items.filter(f112569);
+        const found = items.filter(f112812);
         let tmp8 = null;
         if (found.length > 0) {
           tmp8 = { renderer: "video", formats: found };
@@ -81,7 +81,7 @@ export function selectFormats(asset, arg1) {
     }
     const items1 = ["webm"];
     closure_0 = asset;
-    const found1 = items1.filter(f112569);
+    const found1 = items1.filter(f112812);
     let tmp11 = null;
     if (found1.length > 0) {
       tmp11 = { renderer: "video", formats: found1 };
@@ -95,7 +95,7 @@ export function selectFormats(asset, arg1) {
   if ("ios" === arg1) {
     const items2 = ["mp4"];
     closure_0 = asset;
-    const found2 = items2.filter(f112569);
+    const found2 = items2.filter(f112812);
     let tmp4 = null;
     if (found2.length > 0) {
       tmp4 = { renderer: "video", formats: found2 };
@@ -108,7 +108,7 @@ export function selectFormats(asset, arg1) {
   } else {
     const items3 = ["webm", "mp4"];
     closure_0 = asset;
-    const found3 = items3.filter(f112569);
+    const found3 = items3.filter(f112812);
     const tmp = null;
     let tmp2 = null;
     if (found3.length > 0) {

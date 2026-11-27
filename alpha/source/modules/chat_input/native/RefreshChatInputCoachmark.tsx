@@ -1,14 +1,14 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 12991
+// Function ID: 12992
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 4889, 9561, 4876, 5057, 1112, 12984, 5196, 9568, 2]
+// Dependencies: [32, 19, 4889, 9562, 4876, 5057, 1112, 12992, 5196, 9569, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 12983 (RefreshChatInputCoachmark)
+// Module 12991 (RefreshChatInputCoachmark)
 import intl3 from "intl" /* 1112 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
-import useCoachmark from "useCoachmark" /* 9568 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12984 */;
+import useCoachmark from "useCoachmark" /* 9569 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12992 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 19441
-// Function ID: 19442
+// Module ID: 19457
+// Function ID: 19458
 // Name: GuildScheduledEventsNoticesActionCreators
 // Dependencies: [572, 2]
 // Exports: dismissEventBanner, hideLiveChannelNotice, hideUpcomingEventNotice, markUpcomingEventNoticeAsSeen
 
-// Module 19441 (GuildScheduledEventsNoticesActionCreators)
+// Module 19457 (GuildScheduledEventsNoticesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

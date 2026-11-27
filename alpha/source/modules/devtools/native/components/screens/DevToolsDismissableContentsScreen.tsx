@@ -1,10 +1,10 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17247
+// Function ID: 17248
 // Name: DevToolsDismissableContentsScreen
-// Dependencies: [32, 19, 17, 4879, 21, 5043, 575, 4876, 17241, 7549, 6140, 5702, 6144, 4873, 5750, 6156, 17242, 7406, 5634, 9740, 6988, 1629, 10336, 504, 7482, 2]
+// Dependencies: [32, 19, 17, 4879, 21, 5043, 575, 4876, 17248, 7549, 6140, 5702, 6144, 4873, 5750, 6156, 17249, 7406, 5634, 9741, 6988, 1629, 10337, 504, 7482, 2]
 // Exports: default
 
-// Module 17240 (DevToolsDismissableContentsScreen)
+// Module 17247 (DevToolsDismissableContentsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
@@ -19,9 +19,9 @@ import TableRowArrow from "TableRowArrow" /* 6156 */;
 import fuzzysearchDefault from "fuzzysearch" /* 6988 */;
 import SearchBar from "SearchBar" /* 7406 */;
 import TableSwitchRow3 from "TableSwitchRow" /* 7549 */;
-import SearchEmpty from "SearchEmpty" /* 9740 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17241 */;
-import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 17242 */;
+import SearchEmpty from "SearchEmpty" /* 9741 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17248 */;
+import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 17249 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4879 */;
@@ -130,12 +130,12 @@ export default function DevToolsDismissableContentsScreen() {
   let items4;
   let obj4;
   let tmp5;
-  const f111924 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
+  const f112167 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
   let tmp = callback1();
   let tmp2 = useSafeAreaInsetsDefault();
   const ref = initialSearchQuery.useRef(null);
   importDefault = initialSearchQuery.useRef(0);
-  let obj = ref(10336);
+  let obj = ref(10337);
   let tmp4 = _slicedToArray(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   [dependencyMap, tmp5] = tmp4;
   _slicedToArray = tmp5;
@@ -173,7 +173,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f111924);
+    const sorted = items.sort(f112167);
     return items;
   });
   let items = [closure_6];
@@ -219,7 +219,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f111924);
+    const sorted = items.sort(f112167);
     tmp2(items);
     callback();
   }, items1);

@@ -1,16 +1,16 @@
-// Module ID: 13333
-// Function ID: 13334
+// Module ID: 13341
+// Function ID: 13342
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 13287, 13288, 1071, 559, 13332, 13316, 572, 1285, 2]
+// Dependencies: [5, 13295, 13296, 1071, 559, 13340, 13324, 572, 1285, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 13333 (SuggestedSearchActionCreators)
+// Module 13341 (SuggestedSearchActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 13332 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 13340 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13287 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13288 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13295 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13296 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ obj = function _fetchInitialSuggestedSearches() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -157,7 +157,7 @@ obj = function _fetchInitialSuggestedSearches() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;

@@ -1,10 +1,10 @@
-// Module ID: 14838
-// Function ID: 14839
+// Module ID: 14844
+// Function ID: 14845
 // Name: MonotonicClock
 // Dependencies: [1368, 2]
 // Exports: monotonicNowMs
 
-// Module 14838 (MonotonicClock)
+// Module 14844 (MonotonicClock)
 import clock from "clock" /* 1368 */;
 import size from "module_2" /* 2 */;
 

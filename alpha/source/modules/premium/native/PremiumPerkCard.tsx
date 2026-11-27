@@ -1,10 +1,10 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9376
+// Function ID: 9377
 // Name: PremiumPerkCard
-// Dependencies: [19, 17, 1389, 1071, 21, 5649, 9376, 2174, 9377, 9378, 8109, 6380, 1112, 9380, 9381, 9382, 9383, 9384, 9385, 9386, 9387, 9388, 9389, 9390, 9391, 9392, 9393, 9394, 9395, 9396, 5634, 2188, 5043, 575, 5730, 9397, 5641, 2]
+// Dependencies: [19, 17, 1389, 1071, 21, 5649, 9377, 2174, 9378, 9379, 8109, 6380, 1112, 9381, 9382, 9383, 9384, 9385, 9386, 9387, 9388, 9389, 9390, 9391, 9392, 9393, 9394, 9395, 9396, 9397, 5634, 2188, 5043, 575, 5730, 9398, 5641, 2]
 // Exports: default, usePerkCardHeight, usePremiumPerkCard
 
-// Module 9375 (PremiumPerkCard)
+// Module 9376 (PremiumPerkCard)
 import nativeDefault from "native" /* 575 */;
 import intl38 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
@@ -14,24 +14,24 @@ import useFontScale from "useFontScale" /* 5649 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9380 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9381 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9382 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9383 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9384 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9385 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9386 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9387 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 9388 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 9389 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 9390 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 9391 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 9392 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 9393 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 9394 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 9395 */;
-import _modDef9396 from "module_9396" /* 9396 */;
-import PillTextDefault from "PillText" /* 9397 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9381 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9382 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9383 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9384 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9385 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9386 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9387 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9388 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 9389 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 9390 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 9391 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 9392 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 9393 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 9394 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 9395 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 9396 */;
+import _modDef9397 from "module_9397" /* 9397 */;
+import PillTextDefault from "PillText" /* 9398 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
@@ -248,17 +248,17 @@ export function usePremiumPerkCard() {
   let subscriptionPlansLoaded;
   let tmp12Result;
   const tmp = subscriptionPlansLoaded;
-  let obj = subscriptionPlansLoaded(9376);
+  let obj = subscriptionPlansLoaded(9377);
   subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
   let obj2 = subscriptionPlansLoaded(2174);
   const maxFileSizeForPremiumType = obj2.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2);
-  let obj3 = subscriptionPlansLoaded(9377);
+  let obj3 = subscriptionPlansLoaded(9378);
   const isUserEligibleForThirdPartyPerks = obj3.useIsUserEligibleForThirdPartyPerks();
   let state;
   if (isUserEligibleForThirdPartyPerks != null) {
     state = isUserEligibleForThirdPartyPerks.state;
   }
-  const UPSELL = tmp(9378).ThirdPartyPerkClaimState.UPSELL;
+  const UPSELL = tmp(9379).ThirdPartyPerkClaimState.UPSELL;
   const callback = react.useCallback(() => {
     const obj2 = { screen: constants.COLLECTIBLES_SHOP, params: { analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD } };
     const obj = subscriptionPlansLoaded(dependencyMap[10]);
@@ -339,10 +339,10 @@ export function usePremiumPerkCard() {
   intl32 = tmp(1112).intl;
   intl33 = tmp(1112).intl;
   intl34 = tmp(1112).intl;
-  obj21 = { title: intl35.string(tmp(1112).t.aJE9i1), imageSrc: { uri: _modDef9396 }, imageStyle: { aspectRatio: 1.9789473684210526 }, imageOverlayText: stringResult, bodyComponent: closure_9(Text, obj23) };
+  obj21 = { title: intl35.string(tmp(1112).t.aJE9i1), imageSrc: { uri: _modDef9397 }, imageStyle: { aspectRatio: 1.9789473684210526 }, imageOverlayText: stringResult, bodyComponent: closure_9(Text, obj23) };
   intl35 = tmp(1112).intl;
   stringResult = null;
-  ({ uri: _modDef9396 });
+  ({ uri: _modDef9397 });
   if (state === UPSELL) {
     const intl36 = tmp(1112).intl;
     stringResult = intl36.string(tmp(1112).t["/VzCKE"]);

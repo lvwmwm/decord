@@ -1,10 +1,10 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13301
+// Function ID: 13302
 // Name: SearchUtils
-// Dependencies: [32, 4892, 4973, 6834, 4914, 4985, 4946, 1387, 9019, 1071, 2169, 1112, 13294, 11, 13292, 12, 572, 5659, 5099, 13297, 2]
+// Dependencies: [32, 4892, 4973, 6834, 4914, 4985, 4946, 1387, 9020, 1071, 2169, 1112, 13302, 11, 13300, 12, 572, 5659, 5099, 13305, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 13293 (SearchUtils)
+// Module 13301 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,10 +12,10 @@ import intl11 from "intl" /* 1112 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import useChannelName from "useChannelName" /* 5659 */;
-import SearchConstants from "SearchConstants" /* 9019 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 13292 */;
-import SearchTokens from "SearchTokens" /* 13294 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13297 */;
+import SearchConstants from "SearchConstants" /* 9020 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 13300 */;
+import SearchTokens from "SearchTokens" /* 13302 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13305 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildChannelStore from "GuildChannelStore" /* 4973 */;
@@ -38,7 +38,7 @@ let closure_16;
 let closure_17;
 let map1;
 let unpackModuleId;
-const f103929 = (arg0, arg1) => "\\" + arg1;
+const f104170 = (arg0, arg1) => "\\" + arg1;
 const SearchTabs = SearchConstants.SearchTabs;
 ({ SearchTypes: unpackModuleId, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: map1, IS_SEARCH_ANSWER_TOKEN: closure_14, IS_SEARCH_FILTER_TOKEN: closure_15, SearchModes: closure_16, ME, GuildFeatures: closure_17 } = Constants);
@@ -504,7 +504,7 @@ export function getAutocompleteMode(cursorScope, tokens) {
     if (currentToken.type === QueryTokenizerDefault.NON_TOKEN_TYPE) {
       if (null != previousToken) {
         let obj7;
-        const tmp10Result = tmp10(13294);
+        const tmp10Result = tmp10(13302);
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
           obj7 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
           const obj6 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
@@ -513,7 +513,7 @@ export function getAutocompleteMode(cursorScope, tokens) {
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(13292).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(13300).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: map1.FILTER_ALL, filter: null, token: tmp4 };
@@ -523,7 +523,7 @@ export function quoteChannelName(channelName) {
   let combined = channelName;
   if (null != channelName.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + channelName.replaceAll(/([\\"])/g, f103929) + "\"";
+    combined = "\"" + channelName.replaceAll(/([\\"])/g, f104170) + "\"";
   }
   return combined;
 }
@@ -544,7 +544,7 @@ export function getFlattenedAutocompleteResults(arg0, arg1) {
             let combined = str;
             if (null != text.text.match(/([\\" ])/g)) {
               const _HermesInternal = HermesInternal;
-              combined = "\"" + str.replaceAll(/([\\"])/g, f103929) + "\"";
+              combined = "\"" + str.replaceAll(/([\\"])/g, f104170) + "\"";
             }
             tmp = combined;
           }
@@ -675,7 +675,7 @@ export function getChannelDisplayName(isDM) {
   let combined = str;
   if (null != str.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + str.replaceAll(/([\\"])/g, f103929) + "\"";
+    combined = "\"" + str.replaceAll(/([\\"])/g, f104170) + "\"";
   }
   let combined1 = combined;
   if (flag) {

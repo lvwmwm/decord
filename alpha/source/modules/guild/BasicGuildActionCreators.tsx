@@ -1,16 +1,16 @@
-// Module ID: 20311
-// Function ID: 20312
+// Module ID: 20369
+// Function ID: 20370
 // Name: BasicGuildActionCreators
-// Dependencies: [5, 4914, 11920, 1071, 572, 1285, 2]
+// Dependencies: [5, 4914, 11928, 1071, 572, 1285, 2]
 // Exports: fetchBasicGuild
 
-// Module 20311 (BasicGuildActionCreators)
+// Module 20369 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import BasicGuildStore from "BasicGuildStore" /* 11920 */;
+import BasicGuildStore from "BasicGuildStore" /* 11928 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, closure_3;
@@ -32,7 +32,7 @@ let obj = function _fetchBasicGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _fetchBasicGuild() {
             closure_130_7.delete(guildId);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {

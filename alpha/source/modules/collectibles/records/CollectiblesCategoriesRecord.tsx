@@ -8,24 +8,24 @@ import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 6331 */;
 import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 6312 */;
 import size from "module_2" /* 2 */;
 
-const f89844 = (item) => CollectiblesCategoryRecord.fromServer(item);
-const f89845 = (item) => StorefrontCollectionRecord.fromServer(item);
+const f90072 = (item) => CollectiblesCategoryRecord.fromServer(item);
+const f90073 = (item) => StorefrontCollectionRecord.fromServer(item);
 class CollectiblesCategoriesRecord {
   constructor(categories) {
     const obj = Object.create(new.target.prototype);
     categories = categories.categories;
-    obj.categories = categories.map(f89844);
+    obj.categories = categories.map(f90072);
     const collections = categories.collections;
-    obj.collections = collections.map(f89845);
+    obj.collections = collections.map(f90073);
     return obj;
   }
   static fromServer(categories) {
     if (typeof CollectiblesCategoriesRecord === "function") {
       const obj = Object.create(tmp.prototype);
       categories = categories.categories;
-      obj.categories = categories.map(f89844);
+      obj.categories = categories.map(f90072);
       const collections = categories.collections;
-      obj.collections = collections.map(f89845);
+      obj.collections = collections.map(f90073);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

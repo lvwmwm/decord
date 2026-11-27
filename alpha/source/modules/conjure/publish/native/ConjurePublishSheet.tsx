@@ -1,10 +1,10 @@
-// Module ID: 18469
-// Function ID: 18470
+// Module ID: 18476
+// Function ID: 18477
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6934, 21, 5043, 575, 5257, 18468, 11459, 504, 8486, 18470, 6110, 5602, 5725, 1112, 4245, 18482, 7546, 7480, 5641, 18483, 7052, 1186, 5634, 2]
+// Dependencies: [5, 19, 17, 6934, 21, 5043, 575, 5257, 18475, 11469, 504, 8487, 18477, 6110, 5602, 5725, 1112, 4245, 18489, 7546, 7480, 5641, 18490, 7052, 1186, 5634, 2]
 // Exports: default
 
-// Module 18469 (ConjurePublishSheet)
+// Module 18476 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,8 +12,8 @@ import native from "native" /* 1186 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import GuildIcon from "GuildIcon" /* 7052 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11459 */;
-import showConjurePublishSheet from "showConjurePublishSheet" /* 18468 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11469 */;
+import showConjurePublishSheet from "showConjurePublishSheet" /* 18475 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
@@ -71,7 +71,7 @@ function PublishSheetBody(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -154,7 +154,7 @@ function PublishSheetBody(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ function PublishSheetBody(project) {
               c1(c2[18])(closure_128_0.id);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c2 = 3;
@@ -209,7 +209,7 @@ function PublishSheetBody(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ function PublishSheetBody(project) {
               run(tmp11, obj);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp24) {
           c2 = 3;

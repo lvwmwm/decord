@@ -1,14 +1,14 @@
-// Module ID: 11445
-// Function ID: 11446
+// Module ID: 11446
+// Function ID: 11447
 // Name: ServerIcon
-// Dependencies: [19, 21, 575, 5729, 11446, 2]
+// Dependencies: [19, 21, 575, 5729, 11447, 2]
 // Exports: ServerIcon
 
-// Module 11445 (ServerIcon)
+// Module 11446 (ServerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 11446 */;
+import AssetRegistry from "AssetRegistry" /* 11447 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

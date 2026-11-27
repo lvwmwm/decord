@@ -1,15 +1,15 @@
-// Module ID: 18987
-// Function ID: 18988
+// Module ID: 19003
+// Function ID: 19004
 // Name: FormRowPlaceholder
-// Dependencies: [19, 17, 9019, 21, 5043, 575, 18956, 1654, 2]
+// Dependencies: [19, 17, 9020, 21, 5043, 575, 18972, 1654, 2]
 // Exports: default
 
-// Module 18987 (FormRowPlaceholder)
+// Module 19003 (FormRowPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1654 from "module_1654" /* 1654 */;
-import SearchConstants from "SearchConstants" /* 9019 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 18956 */;
+import SearchConstants from "SearchConstants" /* 9020 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 18972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

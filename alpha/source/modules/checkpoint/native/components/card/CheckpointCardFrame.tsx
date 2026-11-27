@@ -1,15 +1,15 @@
-// Module ID: 12634
-// Function ID: 12635
+// Module ID: 12642
+// Function ID: 12643
 // Name: CheckpointCardFrame
-// Dependencies: [19, 17, 21, 5043, 6422, 7946, 12635, 11654, 575, 12636, 2]
+// Dependencies: [19, 17, 21, 5043, 6422, 7946, 12643, 11662, 575, 12644, 2]
 // Exports: default
 
-// Module 12634 (CheckpointCardFrame)
+// Module 12642 (CheckpointCardFrame)
 import nativeDefault from "native" /* 575 */;
 import CheckpointCardColors from "CheckpointCardColors" /* 6422 */;
 import inlineStyles from "inlineStyles" /* 7946 */;
-import _modDef12635 from "module_12635" /* 12635 */;
-import CheckpointCharacterCompositeDefault from "CheckpointCharacterComposite" /* 12636 */;
+import _modDef12643 from "module_12643" /* 12643 */;
+import CheckpointCharacterCompositeDefault from "CheckpointCharacterComposite" /* 12644 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -151,7 +151,7 @@ export default function CheckpointCardFrame(canvasHeight) {
     const _HermesInternal4 = HermesInternal;
     obj9 = { rotation: 180, origin: "" + x + width / 2 + ", " + c10 + c12 / 2, children: metroRequire(Image2, size3) };
     G2 = tmp3(7946).G;
-    size3 = { href: _modDef12635, x, y: c10 - 0.4348 * c12, width, height: 1.4348 * c12, preserveAspectRatio: "none" };
+    size3 = { href: _modDef12643, x, y: c10 - 0.4348 * c12, width, height: 1.4348 * c12, preserveAspectRatio: "none" };
     Image2 = tmp3(7946).Image;
     items8[1] = metroRequire(G, obj8);
     items9 = [metroImportDefault(tmp13Result, size1), ];
@@ -172,7 +172,7 @@ export default function CheckpointCardFrame(canvasHeight) {
     const _HermesInternal7 = HermesInternal;
     obj13 = { rotation: 180, origin: "" + styles.x + styles.width / 2 + ", " + styles.y + styles.height / 2, children: metroRequire(Image3, obj14) };
     G4 = tmp3(7946).G;
-    obj14 = { href: _modDef12635, opacity: 0.5, preserveAspectRatio: "xMidYMid slice" };
+    obj14 = { href: _modDef12643, opacity: 0.5, preserveAspectRatio: "xMidYMid slice" };
     Image3 = tmp3(7946).Image;
     const merged = Object.assign(styles);
     items11[1] = metroRequire(G3, obj12);
@@ -189,7 +189,7 @@ export default function CheckpointCardFrame(canvasHeight) {
     ClipPath = tmp3(7946).ClipPath;
     size7 = { width: canvasWidth, height: num };
     items13 = [metroRequire(Defs, obj15), ];
-    const size8 = { href: _modDef12635, width: canvasWidth, height: num, preserveAspectRatio: "xMidYMid slice", clipPath: "url(#" + id + ")" };
+    const size8 = { href: _modDef12643, width: canvasWidth, height: num, preserveAspectRatio: "xMidYMid slice", clipPath: "url(#" + id + ")" };
     const Image = tmp3(7946).Image;
     const _HermesInternal = HermesInternal;
     items13[1] = metroRequire(Image, size8);
@@ -202,7 +202,7 @@ export default function CheckpointCardFrame(canvasHeight) {
   const tmp13Result6 = inlineStylesDefault;
   items15 = [metroRequire(tmp13Result6, size9), ];
   const obj18 = { size: "custom", color: nativeDefault.colors.BLACK, style: memo2 };
-  const ClydeIcon = tmp3(11654).ClydeIcon;
+  const ClydeIcon = tmp3(11662).ClydeIcon;
   items15[1] = metroRequire(ClydeIcon, obj18);
   items14[1] = metroImportDefault(hasOwnProperty, obj17);
   items14[2] = children;

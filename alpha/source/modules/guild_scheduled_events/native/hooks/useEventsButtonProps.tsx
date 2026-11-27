@@ -1,17 +1,17 @@
-// Module ID: 13338
-// Function ID: 13339
+// Module ID: 13346
+// Function ID: 13347
 // Name: useEventsButtonProps
-// Dependencies: [19, 6932, 6167, 6168, 504, 8463, 7125, 7031, 8473, 5257, 13339, 2120, 1112, 13343, 2]
+// Dependencies: [19, 6932, 6167, 6168, 504, 8464, 7125, 7031, 8474, 5257, 13347, 2120, 1112, 13351, 2]
 // Exports: default
 
-// Module 13338 (useEventsButtonProps)
+// Module 13346 (useEventsButtonProps)
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ReadStateConstants from "ReadStateConstants" /* 6168 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7031 */;
 import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7125 */;
-import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 8463 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8473 */;
+import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 8464 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8474 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
@@ -61,7 +61,7 @@ export default function useEventsButtonProps(id) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { guildId: user.id };
-    const tmp2 = asyncRequire(13339, dependencyMap.paths);
+    const tmp2 = asyncRequire(13347, dependencyMap.paths);
     openLazy(tmp2, "UpcomingEventsLongPress-" + user.id, obj);
   }, items4);
   if (arr4.length > 0) {
@@ -72,10 +72,10 @@ export default function useEventsButtonProps(id) {
     const intl = tmp(1112).intl;
     name = intl.string(tmp(1112).t.tlopTM);
   }
-  let mode = tmp(13343).ChannelModes.DEFAULT;
+  let mode = tmp(13351).ChannelModes.DEFAULT;
   const tmp8 = hasUnread && !eventsMuted;
   if (tmp8) {
-    mode = tmp(13343).ChannelModes.UNREAD_IMPORTANT;
+    mode = tmp(13351).ChannelModes.UNREAD_IMPORTANT;
   }
   return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

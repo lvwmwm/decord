@@ -1,10 +1,10 @@
-// Module ID: 10526
-// Function ID: 10527
+// Module ID: 10527
+// Function ID: 10528
 // Name: XboxInstallAlert
 // Dependencies: [19, 7767, 21, 5043, 575, 6118, 1112, 1186, 7775, 1379, 5722, 2]
 // Exports: default
 
-// Module 10526 (XboxInstallAlert)
+// Module 10527 (XboxInstallAlert)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;

@@ -1,7 +1,7 @@
 // Module ID: 8116
 // Function ID: 8117
 // Name: Tracking
-// Dependencies: [4892, 8117, 8119, 8120, 1071, 6013, 8121, 1256, 8169, 8170, 1379, 8174, 2]
+// Dependencies: [4892, 8117, 8119, 8120, 1071, 6013, 8121, 1256, 8170, 8171, 1379, 8175, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
 // Module 8116 (Tracking)
@@ -10,9 +10,9 @@ import PlatformUtils from "PlatformUtils" /* 1379 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
 import DraftStore2 from "DraftStore" /* 8117 */;
 import TrackingUtils from "TrackingUtils" /* 8121 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8169 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8170 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8174 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8170 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8171 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8175 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8119 */;
 import ForumSearchStore from "ForumSearchStore" /* 8120 */;

@@ -1,10 +1,10 @@
-// Module ID: 19220
-// Function ID: 19221
+// Module ID: 19236
+// Function ID: 19237
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 5043, 7052, 19221, 1112, 13617, 5634, 6152, 2]
+// Dependencies: [19, 17, 21, 5043, 7052, 19237, 1112, 13624, 5634, 6152, 2]
 // Exports: default
 
-// Module 19220 (MessageRequestMutualServers)
+// Module 19236 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(19221);
+  let obj = iconSize(19237);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -64,7 +64,7 @@ export default function MessageRequestMutualServers(textVariant) {
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(13617).GuildIconPile;
+    const GuildIconPile = tmp4(13624).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];

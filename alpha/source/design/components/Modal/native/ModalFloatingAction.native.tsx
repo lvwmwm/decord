@@ -1,10 +1,10 @@
-// Module ID: 11538
-// Function ID: 11539
+// Module ID: 11546
+// Function ID: 11547
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 5043, 1654, 5057, 1629, 5644, 5645, 5598, 671, 11539, 2]
+// Dependencies: [19, 17, 21, 5043, 1654, 5057, 1629, 5644, 5645, 5598, 671, 11547, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 11538 (ModalFloatingAction)
+// Module 11546 (ModalFloatingAction)
 import spring_spring from "spring/spring" /* 5644 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -112,7 +112,7 @@ export function ModalFloatingAction(isVisible) {
   items4[1] = floatingBackgroundColor;
   items5 = [closure_6(tmp7Result, obj2), ];
   const obj4 = { variant: "primary" };
-  const ModalActionButton = tmp3(11539).ModalActionButton;
+  const ModalActionButton = tmp3(11547).ModalActionButton;
   const merged1 = Object.assign(merged);
   items5[1] = closure_6(ModalActionButton, obj4);
   return tmp17(View, obj);

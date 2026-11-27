@@ -1,10 +1,10 @@
-// Module ID: 13507
-// Function ID: 13508
+// Module ID: 13515
+// Function ID: 13516
 // Name: useGetGuildPowerupBannerImage
 // Dependencies: [5044, 504, 2]
 // Exports: default, getGuildPowerupBannerImage
 
-// Module 13507 (useGetGuildPowerupBannerImage)
+// Module 13515 (useGetGuildPowerupBannerImage)
 import get_initialized from "get initialized" /* 504 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;

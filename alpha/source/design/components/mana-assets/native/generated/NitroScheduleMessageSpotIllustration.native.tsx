@@ -1,26 +1,26 @@
-// Module ID: 9644
-// Function ID: 9645
+// Module ID: 9645
+// Function ID: 9646
 // Name: NitroScheduleMessageSpotIllustration
-// Dependencies: [19, 21, 9645, 9646, 9647, 7261, 5730, 2]
+// Dependencies: [19, 21, 9646, 9647, 9648, 7261, 5730, 2]
 // Exports: NitroScheduleMessageSpotIllustration
 
-// Module 9644 (NitroScheduleMessageSpotIllustration)
+// Module 9645 (NitroScheduleMessageSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef9645 from "module_9645" /* 9645 */;
 import _modDef9646 from "module_9646" /* 9646 */;
 import _modDef9647 from "module_9647" /* 9647 */;
+import _modDef9648 from "module_9648" /* 9648 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef9645 };
+let obj2 = { uri: _modDef9646 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef9646 };
+let obj3 = { uri: _modDef9647 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef9647 };
-({ uri: _modDef9647 });
+obj[3] = { uri: _modDef9648 };
+({ uri: _modDef9648 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/NitroScheduleMessageSpotIllustration.native.tsx");
 

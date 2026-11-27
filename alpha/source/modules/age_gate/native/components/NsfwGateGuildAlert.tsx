@@ -1,10 +1,10 @@
-// Module ID: 12153
-// Function ID: 12154
+// Module ID: 12161
+// Function ID: 12162
 // Name: NsfwGateGuildAlert
 // Dependencies: [19, 4955, 1387, 7569, 1071, 21, 1256, 7570, 6052, 1112, 5722, 2188, 6048, 2]
 // Exports: showNsfwGateGuildAlert
 
-// Module 12153 (NsfwGateGuildAlert)
+// Module 12161 (NsfwGateGuildAlert)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useAlertStore from "useAlertStore" /* 6048 */;
@@ -70,7 +70,7 @@ class NsfwGateGuildAlert {
     const AlertActionButton2 = guildId(6052).AlertActionButton;
     const intl4 = guildId(1112).intl;
     items1[1] = <AlertActionButton2 key="dismiss" variant="secondary" text={intl4.string(guildId(1112).t.WAI6xu)} />;
-    return <AlertModal title={intl.string(guildId(1112).t.JqfHGt)} content={intl2.string(guildId(1112).t.EdXn1A)} actions={items1} />;
+    return <AlertModal title={intl.string(guildId(1112).t.JqfHGt)} content={intl2.string(guildId(1112).t["24d90k"])} actions={items1} />;
   }
 }
 const NsfwGateSource = Constants2.NsfwGateSource;

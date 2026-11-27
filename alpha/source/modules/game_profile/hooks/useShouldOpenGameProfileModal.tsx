@@ -1,15 +1,15 @@
-// Module ID: 8746
-// Function ID: 8747
+// Module ID: 8747
+// Function ID: 8748
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2141, 1071, 1256, 1405, 8747, 5672, 8748, 38, 2]
+// Dependencies: [19, 2141, 1071, 1256, 1405, 8748, 5672, 8749, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, isGameDisabled, trackEntryPoint
 
-// Module 8746 (useShouldOpenGameProfileModal)
+// Module 8747 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import FlagUtilsAll from "FlagUtils" /* 1405 */;
-import GameFlags from "GameFlags" /* 8747 */;
+import GameFlags from "GameFlags" /* 8748 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2141 */;
 import size from "module_2" /* 2 */;

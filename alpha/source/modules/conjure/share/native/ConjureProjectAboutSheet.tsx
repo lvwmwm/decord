@@ -1,23 +1,23 @@
-// Module ID: 12374
-// Function ID: 12375
+// Module ID: 12382
+// Function ID: 12383
 // Name: ConjureProjectAboutSheet
-// Dependencies: [5, 19, 17, 21, 5043, 575, 12375, 8486, 11488, 12376, 5257, 12373, 1112, 4245, 7546, 7507, 7480, 12379, 5634, 11556, 11996, 6115, 12380, 11562, 12382, 5641, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 575, 12383, 8487, 11463, 12384, 5257, 12381, 1112, 4245, 7546, 7507, 7480, 12387, 5634, 11564, 12004, 6115, 12388, 11570, 12390, 5641, 2]
 // Exports: default
 
-// Module 12374 (ConjureProjectAboutSheet)
+// Module 12382 (ConjureProjectAboutSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8486 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 11556 */;
-import ConjureCreatorBylineDefault from "ConjureCreatorByline" /* 11562 */;
-import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 11996 */;
-import openConjureProjectAboutSheet from "openConjureProjectAboutSheet" /* 12373 */;
-import useConjureSharedProjectDefault from "useConjureSharedProject" /* 12375 */;
-import useConjureSharedProjectCoverActionDefault from "useConjureSharedProjectCoverAction" /* 12376 */;
-import useConjureProjectCreator from "useConjureProjectCreator" /* 12380 */;
-import openConjureSharedProjectRemixSheetDefault from "openConjureSharedProjectRemixSheet" /* 12382 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8487 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 11564 */;
+import ConjureCreatorBylineDefault from "ConjureCreatorByline" /* 11570 */;
+import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 12004 */;
+import openConjureProjectAboutSheet from "openConjureProjectAboutSheet" /* 12381 */;
+import useConjureSharedProjectDefault from "useConjureSharedProject" /* 12383 */;
+import useConjureSharedProjectCoverActionDefault from "useConjureSharedProjectCoverAction" /* 12384 */;
+import useConjureProjectCreator from "useConjureProjectCreator" /* 12388 */;
+import openConjureSharedProjectRemixSheetDefault from "openConjureSharedProjectRemixSheet" /* 12390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -142,7 +142,7 @@ export default function ConjureProjectAboutSheet(arg0) {
       project = tmp3.project;
     }
   }
-  let obj = run(11488);
+  let obj = run(11463);
   let tmp9 = null;
   if (obj.useIsConjureMobileEnabled(null != project, "ConjureProjectAboutSheet")) {
     tmp9 = project;
@@ -173,7 +173,7 @@ export default function ConjureProjectAboutSheet(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -205,7 +205,7 @@ export default function ConjureProjectAboutSheet(arg0) {
             obj.hideActionSheet(tmp3(c2[11]).CONJURE_PROJECT_ABOUT_SHEET_KEY);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -243,7 +243,7 @@ export default function ConjureProjectAboutSheet(arg0) {
   obj6 = { style: tmp5Result.body, children: items4 };
   if (null != application) {
     const obj7 = { application, action: type, launching, onPress: callback };
-    const items1 = [closure_6(tmp(12379), obj7), , ];
+    const items1 = [closure_6(tmp(12387), obj7), , ];
     let tmp14Result4 = null;
     const tmp21 = closure_8;
     if (launchFailed) {

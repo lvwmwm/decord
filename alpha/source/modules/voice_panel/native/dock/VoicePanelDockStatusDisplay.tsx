@@ -1,9 +1,9 @@
-// Module ID: 18219
-// Function ID: 18220
+// Module ID: 18226
+// Function ID: 18227
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 6940, 4892, 5691, 18220, 11805, 21, 5634, 5043, 1654, 1112, 3431, 5253, 5644, 18221, 5104, 1707, 11781, 504, 2]
+// Dependencies: [32, 19, 17, 6940, 4892, 5691, 18227, 11813, 21, 5634, 5043, 1654, 1112, 3431, 5253, 5644, 18228, 5104, 1707, 11789, 504, 2]
 
-// Module 18219 (VoicePanelDockStatusDisplay)
+// Module 18226 (VoicePanelDockStatusDisplay)
 import _mod1654 from "module_1654" /* 1654 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import Text_Text from "Text/Text" /* 5634 */;
@@ -14,8 +14,8 @@ import react_native from "react-native" /* 17 */;
 import CallStore from "CallStore" /* 6940 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import VoiceStateStore from "VoiceStateStore" /* 5691 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18220 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11805 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18227 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11813 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -627,7 +627,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let tmp12;
   let tmp17;
   let userId;
-  const f114379 = () => {
+  const f114622 = () => {
     let items;
     if ("channel" === obj5.kind) {
       items = [];
@@ -706,8 +706,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp13 = first(obj.useState(() => ({ status: obj5, enter: null })), 2);
   first = tmp13[0];
-  [arr7, tmp17] = first(obj.useState(f114379), 2);
-  first(obj.useState(f114379), 2);
+  [arr7, tmp17] = first(obj.useState(f114622), 2);
+  first(obj.useState(f114622), 2);
   const tmp18 = first(obj.useState(() => {
     map = new Map();
     return map;

@@ -1,10 +1,10 @@
-// Module ID: 13218
-// Function ID: 13219
+// Module ID: 13226
+// Function ID: 13227
 // Name: ChatInputScrimGradient
 // Dependencies: [19, 17, 21, 5213, 5607, 575, 1089, 5598, 2]
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
-// Module 13218 (ChatInputScrimGradient)
+// Module 13226 (ChatInputScrimGradient)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;

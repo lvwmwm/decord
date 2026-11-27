@@ -1,19 +1,19 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16571
+// Function ID: 16572
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [19, 5044, 6871, 21, 5253, 5256, 16565, 9928, 9930, 6878, 8392, 6876, 16566, 16528, 504, 1654, 16529, 9574, 2]
+// Dependencies: [19, 5044, 6871, 21, 5253, 5256, 16572, 9929, 9931, 6878, 8393, 6876, 16573, 16535, 504, 1654, 16536, 9575, 2]
 // Exports: default
 
-// Module 16564 (BountiesModalAdvertiserCta)
+// Module 16571 (BountiesModalAdvertiserCta)
 import Fragment from "Fragment" /* 21 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import timingPresets from "timingPresets" /* 5256 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
 import QuestContent from "QuestContent" /* 6876 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9574 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9930 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9575 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9931 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ export default function BountiesModalAdvertiserCta(visible) {
   visible = visible.visible;
   let merged = Object.assign(visible, Object.assign({ visible: 0 }));
   let animatedStyle;
-  let obj = animatedStyle(16528);
+  let obj = animatedStyle(16535);
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   const obj2 = animatedStyle(504);
   let items = [AccessibilityStore];
@@ -147,7 +147,7 @@ export default function BountiesModalAdvertiserCta(visible) {
     const merged = Object.assign(arg0);
     return <BountiesModalAdvertiserCtaContent opacityStyle={arg1} transformStyle={animatedStyle} />;
   }, items3);
-  const tmp2Result2 = animatedStyle(16529);
+  const tmp2Result2 = animatedStyle(16536);
   const obj3 = { visible, entranceTiming: animatedStyle(5256).timingStandard, exitTiming: animatedStyle(5256).timingFast };
   const visibilityTransition = tmp2Result2.useVisibilityTransition(obj3);
   let shouldRender = visibilityTransition.shouldRender;

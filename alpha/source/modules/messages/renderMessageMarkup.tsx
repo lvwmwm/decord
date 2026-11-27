@@ -1,17 +1,17 @@
-// Module ID: 8818
-// Function ID: 8819
+// Module ID: 8819
+// Function ID: 8820
 // Name: renderMessageMarkup
-// Dependencies: [8819, 7067, 2]
+// Dependencies: [8820, 7067, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupToASTWithParser, renderMessageMarkupWithParser
 
-// Module 8818 (renderMessageMarkup)
+// Module 8819 (renderMessageMarkup)
 import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
-import MarkupPostProcessors from "MarkupPostProcessors" /* 8819 */;
+import MarkupPostProcessors from "MarkupPostProcessors" /* 8820 */;
 import size from "module_2" /* 2 */;
 
 let hasSpoilerEmbeds;
 
-const f94231 = (arg0) => {
+const f94464 = (arg0) => {
   let tmp = arg0;
   if (!Array.isArray(arg0)) {
     const items = [arg0];
@@ -157,9 +157,9 @@ export function renderMessageContentMarkup(notifCenterV2MessagePreviewParser, gu
 }
 export function renderAutomodMessageMarkup(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f94231);
+  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f94464);
 }
 export function renderAutomodMessageMarkupToAST(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f94231);
+  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f94464);
 }

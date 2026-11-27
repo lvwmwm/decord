@@ -1,17 +1,17 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 9572
+// Function ID: 9573
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 5607, 9572, 5644, 5634, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 5607, 9573, 5644, 5634, 2]
 // Exports: Tooltip
 
-// Module 9571 (Tooltip)
+// Module 9572 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import useToken from "useToken" /* 5607 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import spring_spring from "spring/spring" /* 5644 */;
-import reactDefault from "react" /* 9572 */;
+import reactDefault from "react" /* 9573 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

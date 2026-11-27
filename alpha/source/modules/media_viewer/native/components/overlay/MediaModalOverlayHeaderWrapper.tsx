@@ -1,10 +1,10 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 8698
+// Function ID: 8699
 // Name: MediaModalOverlayHeaderWrapper
 // Dependencies: [19, 17, 21, 5043, 5597, 1629, 2]
 // Exports: MediaModalOverlayHeaderWrapper
 
-// Module 8697 (MediaModalOverlayHeaderWrapper)
+// Module 8698 (MediaModalOverlayHeaderWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;

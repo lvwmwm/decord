@@ -1,9 +1,9 @@
-// Module ID: 9010
-// Function ID: 9011
+// Module ID: 9011
+// Function ID: 9012
 // Name: shared_components/Badge
 // Dependencies: [19, 17, 21, 5043, 575, 2]
 
-// Module 9010 (shared_components/Badge)
+// Module 9011 (shared_components/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

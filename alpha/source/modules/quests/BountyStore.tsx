@@ -1,9 +1,9 @@
-// Module ID: 8373
-// Function ID: 8374
+// Module ID: 8374
+// Function ID: 8375
 // Name: BountyStore
 // Dependencies: [6878, 504, 572, 2]
 
-// Module 8373 (BountyStore)
+// Module 8374 (BountyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;

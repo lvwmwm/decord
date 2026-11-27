@@ -1,16 +1,16 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 8285
+// Function ID: 8286
 // Name: ChannelListStore
-// Dependencies: [4891, 4947, 5775, 6931, 4977, 1231, 502, 7474, 4892, 8285, 4975, 6932, 4946, 6167, 1081, 8286, 12, 1255, 4964, 11, 504, 572, 2]
+// Dependencies: [4891, 4947, 5775, 6931, 4977, 1231, 502, 7474, 4892, 8286, 4975, 6932, 4946, 6167, 1081, 8287, 12, 1255, 4964, 11, 504, 572, 2]
 
-// Module 8284 (ChannelListStore)
+// Module 8285 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4964 */;
-import ChannelListStateDefault from "ChannelListState" /* 8286 */;
+import ChannelListStateDefault from "ChannelListState" /* 8287 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import GatedChannelStore from "GatedChannelStore" /* 4947 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
@@ -20,7 +20,7 @@ import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 7474 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8285 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8286 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;

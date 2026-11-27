@@ -1,19 +1,19 @@
-// Module ID: 18356
-// Function ID: 18357
+// Module ID: 18363
+// Function ID: 18364
 // Name: ReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5272, 1390, 21, 1112, 5043, 575, 9537, 5625, 6152, 9704, 8590, 8923, 9541, 5215, 9013, 1495, 7546, 5634, 10591, 5213, 5104, 18351, 5730, 1413, 7274, 5099, 7944, 5741, 18304, 2]
+// Dependencies: [5, 32, 19, 17, 5272, 1390, 21, 1112, 5043, 575, 9538, 5625, 6152, 9705, 8591, 8924, 9542, 5215, 9014, 1495, 7546, 5634, 10592, 5213, 5104, 18358, 5730, 1413, 7274, 5099, 7944, 5741, 18311, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 18356 (ReactActionSheet)
+// Module 18363 (ReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
 import EmojiConstants from "EmojiConstants" /* 1390 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
 import MessageReactionsTypes from "MessageReactionsTypes" /* 5625 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8923 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9537 */;
-import ICYMIContext from "ICYMIContext" /* 18304 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9538 */;
+import ICYMIContext from "ICYMIContext" /* 18311 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -122,7 +122,7 @@ function ReactActionSheetBase(content) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ function ReactActionSheetBase(content) {
             closure_128_5(false);
             closure_128_8("");
             sendMessage = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           sendMessage = 3;
@@ -184,7 +184,7 @@ function ReactActionSheetBase(content) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -217,7 +217,7 @@ function ReactActionSheetBase(content) {
             } else {
               closure_1_5(false);
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp8) {
             c3 = 3;

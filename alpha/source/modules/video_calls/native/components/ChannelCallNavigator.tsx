@@ -1,23 +1,23 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10257
+// Function ID: 10258
 // Name: ChannelCallNavigator
-// Dependencies: [5, 32, 19, 17, 10257, 10009, 1071, 10112, 21, 5043, 1495, 10130, 1654, 1707, 10258, 10590, 10012, 6833, 6130, 7730, 2120, 1107, 10344, 11777, 5215, 10273, 1379, 5104, 5245, 7355, 2]
+// Dependencies: [5, 32, 19, 17, 10258, 10010, 1071, 10113, 21, 5043, 1495, 10131, 1654, 1707, 10259, 10591, 10013, 6833, 6130, 7730, 2120, 1107, 10345, 11785, 5215, 10274, 1379, 5104, 5245, 7355, 2]
 // Exports: default
 
-// Module 10256 (ChannelCallNavigator)
+// Module 10257 (ChannelCallNavigator)
 import Constants from "Constants" /* 1071 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import _mod1707 from "module_1707" /* 1707 */;
 import reactDefault from "react" /* 5245 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10009 */;
-import Constants2 from "Constants" /* 10112 */;
-import VoiceChatModalContext from "VoiceChatModalContext" /* 10130 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10010 */;
+import Constants2 from "Constants" /* 10113 */;
+import VoiceChatModalContext from "VoiceChatModalContext" /* 10131 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10257 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10258 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -190,7 +190,7 @@ function CallWithVoiceChat(channel) {
   let tmp31 = null;
   if (channel.isGuildStageVoice()) {
     const obj4 = { channel };
-    tmp31 = authStore2(tmp2(10258), obj4);
+    tmp31 = authStore2(tmp2(10259), obj4);
   }
   items9 = [tmp31, ];
   const obj5 = { pointerEvents: "box-none", style: items10 };
@@ -201,7 +201,7 @@ function CallWithVoiceChat(channel) {
   tmp33Result = null;
   if (tmp20) {
     const obj7 = { channel };
-    tmp33Result = tmp33(tmp2(10590), obj7);
+    tmp33Result = tmp33(tmp2(10591), obj7);
   }
   items11[1] = authStore2(metroRequire, obj6);
   return map1(View, obj2);
@@ -215,7 +215,7 @@ function MainCallScreen(channel) {
   let isConnectedToVoiceChannel;
   let tmp3 = dependencyMap;
   let tmp = closure_14();
-  let obj = isConnectedToVoiceChannel(10012);
+  let obj = isConnectedToVoiceChannel(10013);
   isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const id = react.useId();
   const items = [isConnectedToVoiceChannel, id];
@@ -258,7 +258,7 @@ function MainCallScreen(channel) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -294,7 +294,7 @@ function MainCallScreen(channel) {
             } else {
               c0 = true;
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp6) {
             c3 = 3;
@@ -319,11 +319,11 @@ function MainCallScreen(channel) {
       }
     };
   }, []);
-  isConnectedToVoiceChannel(10344);
+  isConnectedToVoiceChannel(10345);
   if (isChannelContentGated) {
     let obj3 = { onReturnToSafety: id(6130).pop, guildId: null, channelId: null };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
-    const tmp20 = id(11777);
+    const tmp20 = id(11785);
     tmp14Result2 = closure_12(tmp20, obj3);
     tmp11 = closure_12;
   } else {
@@ -340,13 +340,13 @@ function MainCallScreen(channel) {
     if (channel.isGuildStageVoice()) {
       let tmp17 = id;
       const obj7 = { channel };
-      tmp14Result = tmp14(id(10258), obj7);
+      tmp14Result = tmp14(id(10259), obj7);
     }
     tmp14Result2 = tmp14(tmp15, obj5);
     tmp11 = tmp14;
   }
   const tmp21 = id(5215)();
-  const tmp22 = id(10273);
+  const tmp22 = id(10274);
   const tmp2Result = isConnectedToVoiceChannel(1379);
   const tmp23 = tmp2Result.isAndroid() || !isConnectedToVoiceChannel;
   const obj8 = { forceHide: tmp23, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(5104).ThemeContextProvider, { gradient: tmp21, children: tmp14Result2 }) };

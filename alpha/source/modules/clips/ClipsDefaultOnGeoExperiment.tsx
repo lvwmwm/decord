@@ -1,9 +1,9 @@
-// Module ID: 20292
-// Function ID: 20293
+// Module ID: 20350
+// Function ID: 20351
 // Name: ClipsDefaultOnGeoExperiment
 // Dependencies: [1451, 2]
 
-// Module 20292 (ClipsDefaultOnGeoExperiment)
+// Module 20350 (ClipsDefaultOnGeoExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

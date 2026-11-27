@@ -1,18 +1,18 @@
-// Module ID: 19791
-// Function ID: 19792
+// Module ID: 19807
+// Function ID: 19808
 // Name: NewUserManager
-// Dependencies: [5, 7306, 7462, 1387, 5848, 13700, 1071, 13754, 19792, 13670, 13699, 1091, 10428, 572, 7475, 13677, 13785, 2]
+// Dependencies: [5, 7306, 7462, 1387, 5848, 13707, 1071, 13761, 19808, 13677, 13706, 1091, 10429, 572, 7475, 13684, 13792, 2]
 
-// Module 19791 (NewUserManager)
+// Module 19807 (NewUserManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10428 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13670 */;
-import NUFActionCreators from "NUFActionCreators" /* 13699 */;
-import NUFConstants from "NUFConstants" /* 13700 */;
-import HubConstants from "HubConstants" /* 13754 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19792 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10429 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13677 */;
+import NUFActionCreators from "NUFActionCreators" /* 13706 */;
+import NUFConstants from "NUFConstants" /* 13707 */;
+import HubConstants from "HubConstants" /* 13761 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PhoneStore from "PhoneStore" /* 7306 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7462 */;

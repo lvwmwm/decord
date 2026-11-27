@@ -1,20 +1,20 @@
-// Module ID: 18037
-// Function ID: 18038
+// Module ID: 18044
+// Function ID: 18045
 // Name: WaterwheelsDiscoverHeader
-// Dependencies: [19, 17, 8924, 18030, 21, 575, 5043, 5259, 18038, 504, 14568, 17218, 5634, 1112, 2655, 5641, 7756, 18054, 2]
+// Dependencies: [19, 17, 8925, 18037, 21, 575, 5043, 5259, 18045, 504, 14575, 17225, 5634, 1112, 2655, 5641, 7756, 18061, 2]
 // Exports: default
 
-// Module 18037 (WaterwheelsDiscoverHeader)
+// Module 18044 (WaterwheelsDiscoverHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef2655 from "module_2655" /* 2655 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
-import useGameRecordsDefault from "useGameRecords" /* 14568 */;
-import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 18038 */;
-import InterestGameCoverDefault from "InterestGameCover" /* 18054 */;
+import useGameRecordsDefault from "useGameRecords" /* 14575 */;
+import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 18045 */;
+import InterestGameCoverDefault from "InterestGameCover" /* 18061 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8924 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18030 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8925 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18037 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

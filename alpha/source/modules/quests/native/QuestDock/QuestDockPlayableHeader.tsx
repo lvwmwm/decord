@@ -1,17 +1,17 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 16815
+// Function ID: 16816
 // Name: QuestDockPlayableHeader
-// Dependencies: [19, 17, 6871, 16680, 21, 575, 5043, 16714, 16681, 1654, 5644, 8619, 16799, 16677, 16699, 6874, 8392, 16786, 16781, 1379, 5730, 5634, 6152, 1112, 2]
+// Dependencies: [19, 17, 6871, 16687, 21, 575, 5043, 16721, 16688, 1654, 5644, 8620, 16806, 16684, 16706, 6874, 8393, 16793, 16788, 1379, 5730, 5634, 6152, 1112, 2]
 
-// Module 16808 (QuestDockPlayableHeader)
+// Module 16815 (QuestDockPlayableHeader)
 import nativeDefault from "native" /* 575 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16699 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16706 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockConstants from "QuestDockConstants" /* 16680 */;
+import QuestDockConstants from "QuestDockConstants" /* 16687 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

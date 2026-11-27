@@ -1,10 +1,10 @@
-// Module ID: 19745
-// Function ID: 19746
+// Module ID: 19761
+// Function ID: 19762
 // Name: HolidayEventsUtils
-// Dependencies: [19743, 2]
+// Dependencies: [19759, 2]
 
-// Module 19745 (HolidayEventsUtils)
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19743 */;
+// Module 19761 (HolidayEventsUtils)
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19759 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -69,7 +69,7 @@ let obj = {
     if (tmp5) {
       soundpack = null;
       if (null != HolidayEventsConfigDefault.soundpack) {
-        soundpack = tmp(19743).soundpack;
+        soundpack = tmp(19759).soundpack;
       }
     }
     return soundpack;

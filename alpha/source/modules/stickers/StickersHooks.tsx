@@ -1,17 +1,17 @@
-// Module ID: 10830
-// Function ID: 10831
+// Module ID: 10831
+// Function ID: 10832
 // Name: StickersHooks
-// Dependencies: [5, 32, 19, 4914, 5076, 6164, 1387, 6926, 6927, 1071, 504, 10831, 4868, 6779, 8471, 6780, 10363, 1112, 4980, 10813, 10832, 2]
+// Dependencies: [5, 32, 19, 4914, 5076, 6164, 1387, 6926, 6927, 1071, 504, 10832, 4868, 6779, 8472, 6780, 10364, 1112, 4980, 10814, 10833, 2]
 // Exports: useFavoriteStickerIds, useFavoriteStickers, useFetchStickerPack, useFetchStickerPacks, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickerIds, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 10830 (StickersHooks)
+// Module 10831 (StickersHooks)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4868 */;
 import StickersUtils from "StickersUtils" /* 6779 */;
 import StickersTypes from "StickersTypes" /* 6780 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10813 */;
-import StickersActionCreators from "StickersActionCreators" /* 10831 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10814 */;
+import StickersActionCreators from "StickersActionCreators" /* 10832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -26,7 +26,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c1, dependencyMap, flattenedGuildIds, rowCount, rowIndex, visibleRowIndex;
 
-const f98293 = () => {
+const f98526 = () => {
   const obj = pack_id(dependencyMap[11]);
   const stickerPacks = obj.fetchStickerPacks();
 };
@@ -208,7 +208,7 @@ let result = size.fileFinishedImporting("modules/stickers/StickersHooks.tsx");
 
 export function useFetchStickerPack(pack_id) {
   _require = pack_id;
-  const effect = react.useEffect(f98293, []);
+  const effect = react.useEffect(f98526, []);
   let obj = require("get initialized");
   const items = [StickersStore];
   const stateFromStores = obj.useStateFromStores(items, () => StickersStore.hasLoadedStickerPacks);
@@ -394,7 +394,7 @@ export function useHasSendableSticker() {
   return true;
 }
 export function useFetchStickerPacks() {
-  const effect = react.useEffect(f98293, []);
+  const effect = react.useEffect(f98526, []);
 }
 export function useFavoriteStickerIds() {
   const obj = FrecencyUserSettingsHooks;
@@ -410,7 +410,7 @@ export function useFavoriteStickerIds() {
 }
 export function useFavoriteStickers() {
   let stickerIds;
-  const obj = stickerIds(10813);
+  const obj = stickerIds(10814);
   const favoriteStickers = obj.useFrecencySettings().favoriteStickers;
   const tmp = stickerIds;
   stickerIds = undefined;
@@ -470,7 +470,7 @@ export function useLatestFrecentStickerIds() {
 }
 export function useLatestFrecentStickers() {
   let keys1;
-  const obj = keys1(10813);
+  const obj = keys1(10814);
   const frecencySettings = obj.useFrecencySettings();
   const tmp = keys1;
   keys1 = closure_13;
@@ -553,7 +553,7 @@ export function useStickerForRenderableSticker(renderableSticker, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -604,7 +604,7 @@ export function useStickerForRenderableSticker(renderableSticker, arg1) {
             closure_128_3(true);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp12) {
           if (0 === c2) {
             c3 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10211
+// Function ID: 10212
 // Name: EmbeddedAppShimActionCreators
 // Dependencies: [572, 2]
 // Exports: disconnectShim, shimConnected, shimPipeOpened, updateShimState
 
-// Module 10210 (EmbeddedAppShimActionCreators)
+// Module 10211 (EmbeddedAppShimActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

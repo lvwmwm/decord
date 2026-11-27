@@ -1,10 +1,10 @@
-// Module ID: 11254
-// Function ID: 11255
+// Module ID: 11255
+// Function ID: 11256
 // Name: CollectiblesPromotionDiscountUtils
 // Dependencies: [7595, 2]
 // Exports: getPromotionFiatPercentOff
 
-// Module 11254 (CollectiblesPromotionDiscountUtils)
+// Module 11255 (CollectiblesPromotionDiscountUtils)
 import StorefrontTypes from "StorefrontTypes" /* 7595 */;
 import size from "module_2" /* 2 */;
 

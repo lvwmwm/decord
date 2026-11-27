@@ -1,9 +1,9 @@
-// Module ID: 15843
-// Function ID: 15844
+// Module ID: 15850
+// Function ID: 15851
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 5849, 4896, 502, 4892, 2132, 5851, 4985, 4946, 1387, 5691, 5854, 1071, 5855, 3, 15844, 572, 15845, 1256, 6013, 6380, 6797, 11, 7849, 5996, 10356, 1269, 15846, 5659, 7847, 1379, 2122, 2]
+// Dependencies: [5, 32, 17, 5849, 4896, 502, 4892, 2132, 5851, 4985, 4946, 1387, 5691, 5854, 1071, 5855, 3, 15851, 572, 15852, 1256, 6013, 6380, 6797, 11, 7849, 5996, 10357, 1269, 15853, 5659, 7847, 1379, 2122, 2]
 
-// Module 15843 (SystemTelecomManager)
+// Module 15850 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -19,9 +19,9 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6797 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7849 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10356 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 15845 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 15846 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10357 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 15852 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 15853 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
@@ -36,7 +36,7 @@ import VoiceStateStore from "VoiceStateStore" /* 5691 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5854 */;
 import Constants_mod from "Constants" /* 1071 */;
 import Constants_mod2 from "Constants" /* 5855 */;
-import react_native2 from "react-native" /* 15844 */;
+import react_native2 from "react-native" /* 15851 */;
 import LifecycleManager from "LifecycleManager" /* 2122 */;
 import size from "module_2" /* 2 */;
 
@@ -579,7 +579,7 @@ class SystemTelecomManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -642,7 +642,7 @@ class SystemTelecomManager {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp26) {
           if (0 === c3) {
             c5 = 3;

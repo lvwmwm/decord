@@ -1,10 +1,10 @@
-// Module ID: 10356
-// Function ID: 10357
+// Module ID: 10357
+// Function ID: 10358
 // Name: RequestGatewaySocket
-// Dependencies: [5, 1071, 10357, 1256, 2]
+// Dependencies: [5, 1071, 10358, 1256, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 10356 (RequestGatewaySocket)
+// Module 10357 (RequestGatewaySocket)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -58,7 +58,7 @@ let obj = function _withRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -148,7 +148,7 @@ export function startBridgeTo(arg0) {
     num = 0;
   }
   let result = obj.set(combined, num + 1);
-  let obj2 = combined(10357);
+  let obj2 = combined(10358);
   obj2.requestSafeIdleCallback(() => {
     if (map.has(combined)) {
       const _performance = performance;

@@ -1,189 +1,162 @@
 // Module ID: 9972
 // Function ID: 9973
-// Dependencies: [9959]
-// Exports: existsOne, filter, findAll, findOneChild
+// Dependencies: []
+// Exports: append, appendChild, prepend, prependChild, removeElement, replaceElement
 
 // Module 9972
-import DomHandler from "DomHandler" /* 9959 */;
 
-function find(fn, arg1, arg2, arg3) {
-  const items = [];
-  let tmp = arg1;
-  if (!Array.isArray(arg1)) {
-    const items1 = [arg1];
-    tmp = items1;
+export function removeElement(prev) {
+  if (prev.prev) {
+    prev.prev.next = prev.next;
   }
-  let tmp2 = arg3;
-  const items2 = [tmp];
-  const items3 = [0];
-  while (true) {
-    if (items3[0] >= items2[0].length) {
-      if (1 === items3.length) {
-        return items;
-      } else {
-        let arr = items2.shift();
-        let arr2 = items3.shift();
-        continue;
-      }
-    } else {
-      let tmp13 = +items3[0];
-      items3[0] = tmp13 + 1;
-      let tmp14 = items2[0][tmp13];
-      let diff = tmp2;
-      if (fn(tmp14)) {
-        let arr3 = items.push(tmp14);
-        diff = tmp2 - 1;
-        if (diff <= 0) {
-          break;
-        }
-      }
-      let hasChildrenResult = arg2;
-      if (hasChildrenResult) {
-        hasChildrenResult = DomHandler.hasChildren(tmp14);
-      }
-      if (hasChildrenResult) {
-        hasChildrenResult = tmp14.children.length > 0;
-      }
-      tmp2 = diff;
-      if (!hasChildrenResult) {
-        continue;
-      } else {
-        let arr4 = items3.unshift(0);
-        let arr9 = items2.unshift(tmp14.children);
-        tmp2 = diff;
-        continue;
-      }
-      continue;
+  if (prev.next) {
+    prev.next.prev = prev.prev;
+  }
+  if (prev.parent) {
+    const children = prev.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
     }
   }
-  return items;
+  prev.next = null;
+  prev.prev = null;
+  prev.parent = null;
 }
-function findOne(fn, children, flag) {
-  let tmp;
-  if (undefined === flag) {
-    flag = true;
+export function replaceElement(prev, next) {
+  prev = prev.prev;
+  next.prev = prev;
+  if (prev) {
+    prev.next = next;
   }
-  let arr = children;
-  if (!Array.isArray(children)) {
-    const items = [children];
-    arr = items;
+  next = prev.next;
+  next.next = next;
+  if (next) {
+    next.prev = next;
   }
-  let num = 0;
-  if (0 < arr.length) {
-    while (true) {
-      tmp = arr[num];
-      let tmp2 = require;
-      if (DomHandler.isTag(tmp)) {
-        if (fn(tmp)) {
-          break;
-        }
-      }
-      if (flag) {
-        if (tmp2(9959).hasChildren(tmp)) {
-          if (tmp.children.length > 0) {
-            let tmp6 = findOne(fn, tmp.children, true);
-            if (tmp6) {
-              return tmp6;
-            }
-          }
-        }
-      }
-      num = num + 1;
-    }
-    return tmp;
+  const parent = prev.parent;
+  next.parent = parent;
+  if (parent) {
+    const children = parent.children;
+    children[children.lastIndexOf(prev)] = next;
+    prev.parent = null;
   }
-  return null;
 }
-
-export function filter(arg0, arg1, arg2, arg3) {
-  let flag = arg2;
-  if (undefined === arg2) {
-    flag = true;
+export function appendChild(element, node) {
+  if (node.prev) {
+    node.prev.next = node.next;
   }
-  let num = arg3;
-  if (undefined === arg3) {
-    num = Infinity;
+  if (node.next) {
+    node.next.prev = node.prev;
   }
-  let tmp2 = arg1;
-  const tmp = find;
-  if (!Array.isArray(arg1)) {
-    const items = [arg1];
-    tmp2 = items;
-  }
-  return tmp(arg0, tmp2, flag, num);
-}
-export { find };
-export function findOneChild(arg0, arr) {
-  return arr.find(arg0);
-}
-export { findOne };
-export function existsOne(arg0, arg1) {
-  const f96838 = (children) => {
-    let isTagResult = DomHandler.isTag(children);
-    if (isTagResult) {
-      isTagResult = closure_0(children);
-    }
-    if (!isTagResult) {
-      let hasChildrenResult = DomHandler.hasChildren(children);
-      if (hasChildrenResult) {
-        children = children.children;
-        const _Array = Array;
-        let obj = children;
-        if (!Array.isArray(children)) {
-          const items = [children];
-          obj = items;
-        }
-        hasChildrenResult = obj.some(f96838);
-      }
-      isTagResult = hasChildrenResult;
-    }
-    return isTagResult;
-  };
-  let closure_0 = arg0;
-  let obj = arg1;
-  if (!Array.isArray(arg1)) {
-    let items = [arg1];
-    obj = items;
-  }
-  return obj.some(f96838);
-}
-export function findAll(fn, arg1) {
-  const items = [];
-  let tmp = arg1;
-  if (!Array.isArray(arg1)) {
-    const items1 = [arg1];
-    tmp = items1;
-  }
-  const items2 = [tmp];
-  const items3 = [0];
-  while (true) {
-    if (items3[0] >= items2[0].length) {
-      if (1 === items2.length) {
-        break;
-      } else {
-        let arr = items2.shift();
-        let arr2 = items3.shift();
-        continue;
-      }
-    } else {
-      let tmp9 = +items3[0];
-      items3[0] = tmp9 + 1;
-      let tmp10 = items2[0][tmp9];
-      let tmp11 = require;
-      let tmp2 = DomHandler.isTag(tmp10) && fn(tmp10);
-      if (tmp2) {
-        let arr3 = items.push(tmp10);
-      }
-      let tmp4 = tmp11(9959).hasChildren(tmp10) && tmp10.children.length > 0;
-      if (!tmp4) {
-        continue;
-      } else {
-        let arr4 = items3.unshift(0);
-        let arr9 = items2.unshift(tmp10.children);
-        continue;
-      }
-      continue;
+  if (node.parent) {
+    const children = node.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(node);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
     }
   }
-  return items;
+  node.next = null;
+  node.prev = null;
+  node.parent = null;
+  node.next = null;
+  node.parent = element;
+  const children1 = element.children;
+  if (children1.push(node) > 1) {
+    element.children[element.children.length - 2].next = node;
+    node.prev = element.children[element.children.length - 2];
+  } else {
+    node.prev = null;
+  }
+}
+export function append(prev, prev2) {
+  let next;
+  let parent;
+  if (prev2.prev) {
+    prev2.prev.next = prev2.next;
+  }
+  if (prev2.next) {
+    prev2.next.prev = prev2.prev;
+  }
+  if (prev2.parent) {
+    const children = prev2.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev2);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
+    }
+  }
+  prev2.next = null;
+  prev2.prev = null;
+  prev2.parent = null;
+  ({ parent, next } = prev);
+  prev2.next = next;
+  prev2.prev = prev;
+  prev.next = prev2;
+  prev2.parent = parent;
+  if (next) {
+    next.prev = prev2;
+    if (parent) {
+      const children1 = parent.children;
+      children1.splice(children1.lastIndexOf(next), 0, prev2);
+    }
+  } else if (parent) {
+    const children2 = parent.children;
+    children2.push(prev2);
+  }
+}
+export function prependChild(parent, prev) {
+  if (prev.prev) {
+    prev.prev.next = prev.next;
+  }
+  if (prev.next) {
+    prev.next.prev = prev.prev;
+  }
+  if (prev.parent) {
+    const children = prev.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
+    }
+  }
+  prev.next = null;
+  prev.prev = null;
+  prev.parent = parent;
+  prev.prev = null;
+  const children1 = parent.children;
+  if (1 !== children1.unshift(prev)) {
+    parent.children[1].prev = prev;
+    prev.next = parent.children[1];
+  } else {
+    prev.next = null;
+  }
+}
+export function prepend(parent, prev) {
+  if (prev.prev) {
+    prev.prev.next = prev.next;
+  }
+  if (prev.next) {
+    prev.next.prev = prev.prev;
+  }
+  if (prev.parent) {
+    const children = prev.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
+    }
+  }
+  prev.next = null;
+  prev.prev = null;
+  prev.parent = null;
+  parent = parent.parent;
+  if (parent) {
+    const children1 = parent.children;
+    children1.splice(children1.indexOf(parent), 0, prev);
+  }
+  if (parent.prev) {
+    parent.prev.next = prev;
+  }
+  prev.parent = parent;
+  prev.prev = parent.prev;
+  prev.next = parent;
+  parent.prev = prev;
 }

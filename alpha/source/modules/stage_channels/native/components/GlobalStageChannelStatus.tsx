@@ -1,10 +1,10 @@
-// Module ID: 10276
-// Function ID: 10277
+// Module ID: 10277
+// Function ID: 10278
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5258, 4897, 1071, 21, 5043, 575, 5659, 1112, 504, 5604, 10277, 8086, 10264, 6854, 7870, 6828, 7839, 7835, 1186, 5634, 10282, 5642, 5641, 10266, 10041, 5252, 5065, 10018, 7096, 2]
+// Dependencies: [5, 32, 19, 17, 5258, 4897, 1071, 21, 5043, 575, 5659, 1112, 504, 5604, 10278, 8086, 10265, 6854, 7870, 6828, 7839, 7835, 1186, 5634, 10283, 5642, 5641, 10267, 10042, 5252, 5065, 10019, 7096, 2]
 // Exports: default
 
-// Module 10276 (GlobalStageChannelStatus)
+// Module 10277 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,9 +12,9 @@ import intl5 from "intl" /* 1112 */;
 import useMountEffectDefault from "useMountEffect" /* 5604 */;
 import useChannelNameDefault from "useChannelName" /* 5659 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7839 */;
-import StatusBarDefault from "StatusBar" /* 10018 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10266 */;
-import PushNotificationDefault from "PushNotification" /* 10277 */;
+import StatusBarDefault from "StatusBar" /* 10019 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10267 */;
+import PushNotificationDefault from "PushNotification" /* 10278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -80,7 +80,7 @@ class StageChannelRaiseHandAck {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -132,7 +132,7 @@ class StageChannelRaiseHandAck {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp27) {
             if (0 === c3) {
               c4 = 3;
@@ -188,7 +188,7 @@ class StageChannelRaiseHandAck {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(10264);
+    channel(10265);
     if (channel != null) {
       const id = channel.id;
     }
@@ -206,7 +206,7 @@ class StageChannelRaiseHandAck {
       items3 = [closure_10(View, obj4), , ];
       if (stageBlockedUsersCount > 0) {
         const obj6 = { style: tmp.row, children: closure_10(Text, obj7) };
-        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(10282)(stageBlockedUsersCount, stageIgnoredUsersCount) };
+        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(10283)(stageBlockedUsersCount, stageIgnoredUsersCount) };
         Text = tmp6(5634).Text;
         tmp22Result = tmp22(tmp21, obj6);
       } else {
@@ -291,7 +291,7 @@ export default function GlobalStageChannelStatus(arg0) {
     stringResult = intl.string(id(1112).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(10041)(id);
+  let invitedHeaderText = tmp3(10042)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);

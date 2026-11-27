@@ -1,9 +1,9 @@
-// Module ID: 11845
-// Function ID: 11846
+// Module ID: 11853
+// Function ID: 11854
 // Name: IgnoreConfirmationActionSheet
-// Dependencies: [32, 19, 17, 4892, 1387, 7851, 11843, 1071, 21, 5043, 575, 6139, 1112, 5749, 6140, 6144, 1186, 1629, 6379, 6380, 504, 1256, 6134, 5271, 5275, 7289, 5634, 6807, 9077, 5257, 11844, 2120, 1264, 5641, 7850, 2188, 5722, 2]
+// Dependencies: [32, 19, 17, 4892, 1387, 7851, 11851, 1071, 21, 5043, 575, 6139, 1112, 5749, 6140, 6144, 1186, 1629, 6379, 6380, 504, 1256, 6134, 5271, 5275, 7289, 5634, 6807, 9078, 5257, 11852, 2120, 1264, 5641, 7850, 2188, 5722, 2]
 
-// Module 11845 (IgnoreConfirmationActionSheet)
+// Module 11853 (IgnoreConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import UserStore from "UserStore" /* 1387 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11843 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11851 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -260,14 +260,14 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
           obj.track(unpackModuleId.USER_REMEDIATION_ACTION, obj2);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(11844, dependencyMap.paths);
+          const tmp3 = asyncRequire(11852, dependencyMap.paths);
           const obj3 = { userId, channelId, onBlock: dependencyMap, onIgnore: _slicedToArray, onSuccess: react, impressionName: discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION };
           openLazy(tmp3, React4, obj3, "replaceTopSheet");
         },
       arrow: true
     };
     TableRow = tmp7(6144).TableRow;
-    obj19 = { size: userId(1186).Icon.Sizes.MEDIUM, source: channelId(9077), color: tmp.destructiveIcon.color };
+    obj19 = { size: userId(1186).Icon.Sizes.MEDIUM, source: channelId(9078), color: tmp.destructiveIcon.color };
     Icon2 = tmp7(1186).Icon;
     intl4 = tmp7(1112).intl;
     obj20 = { variant: "body-xs/medium", color: "text-feedback-critical", children: intl5.string(userId(1112).t.NTnf1T) };

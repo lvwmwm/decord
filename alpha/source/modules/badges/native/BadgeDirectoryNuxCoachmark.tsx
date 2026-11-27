@@ -1,17 +1,17 @@
-// Module ID: 14972
-// Function ID: 14973
+// Module ID: 14979
+// Function ID: 14980
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 4889, 21, 5043, 575, 9856, 14973, 14974, 14975, 14970, 14976, 14980, 14984, 1112, 9866, 9867, 9568, 2]
+// Dependencies: [19, 17, 4889, 21, 5043, 575, 9857, 14980, 14981, 14982, 14977, 14983, 14987, 14991, 1112, 9867, 9868, 9569, 2]
 // Exports: default
 
-// Module 14972 (BadgeDirectoryNuxCoachmark)
+// Module 14979 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 9856 */;
-import _modDef14973 from "module_14973" /* 14973 */;
-import _modDef14974 from "module_14974" /* 14974 */;
-import _modDef14975 from "module_14975" /* 14975 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 9857 */;
+import _modDef14980 from "module_14980" /* 14980 */;
+import _modDef14981 from "module_14981" /* 14981 */;
+import _modDef14982 from "module_14982" /* 14982 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -30,14 +30,14 @@ function NoProgressGraphic() {
   const obj = { style: items, children: items1 };
   items = [, ];
   ({ graphicRow: arr[0], badgeGraphicRow: arr[1] } = closure_9());
-  const obj2 = { url: _modDef14973, height: 44 };
+  const obj2 = { url: _modDef14980, height: 44 };
   closure_9();
   const tmp2 = BadgeArtImageDefault;
   items1 = [metroRequire(tmp2, obj2), , ];
-  const obj3 = { url: _modDef14974, height: 72 };
+  const obj3 = { url: _modDef14981, height: 72 };
   const tmp3 = BadgeArtImageDefault;
   items1[1] = metroRequire(tmp3, obj3);
-  const obj4 = { url: _modDef14975, height: 44 };
+  const obj4 = { url: _modDef14982, height: 44 };
   const tmp4 = BadgeArtImageDefault;
   items1[2] = metroRequire(tmp4, obj4);
   return metroImportDefault(View, obj);

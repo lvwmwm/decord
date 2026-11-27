@@ -1,18 +1,18 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15391
+// Function ID: 15392
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 15385, 4914, 7630, 1071, 21, 5043, 575, 1359, 8733, 1112, 11889, 6152, 5725, 8736, 1186, 8740, 5634, 7309, 504, 4906, 15386, 15387, 1495, 7052, 1413, 5730, 1448, 9013, 5607, 8735, 11895, 2]
+// Dependencies: [19, 17, 15392, 4914, 7630, 1071, 21, 5043, 575, 1359, 8734, 1112, 11897, 6152, 5725, 8737, 1186, 8741, 5634, 7309, 504, 4906, 15393, 15394, 1495, 7052, 1413, 5730, 1448, 9014, 5607, 8736, 11903, 2]
 // Exports: default
 
-// Module 15384 (GuildActionSheetHeader)
+// Module 15391 (GuildActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15386 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15393 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 15385 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 15392 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7630 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function CommunityPill(guildVisibility) {
   _require = string(tmp4 ? t.op2cJ6 : t.TME4LJ);
   let ExperimentalWebIcon;
   if (tmp4) {
-    ExperimentalWebIcon = tmp2(11889).ExperimentalWebIcon;
+    ExperimentalWebIcon = tmp2(11897).ExperimentalWebIcon;
   }
   let obj = {
     style: tmp.communityPill,
@@ -62,11 +62,11 @@ function CommunityPill(guildVisibility) {
   const tmp6 = closure_10;
   if (tmp4) {
     let obj2 = { size: "xs", color: ExperimentalWebIcon(575).colors.BADGE_INVERTED_BACKGROUND, secondaryColor: ExperimentalWebIcon(575).colors.BADGE_INVERTED_TEXT, style: tmp.communityPillIcon };
-    const ExperimentalWebBadgeIcon = tmp2(8736).ExperimentalWebBadgeIcon;
+    const ExperimentalWebBadgeIcon = tmp2(8737).ExperimentalWebBadgeIcon;
     tmp7Result = tmp7(ExperimentalWebBadgeIcon, obj2);
     tmp10 = tmp7;
   } else {
-    const obj3 = { style: tmp.communityPillIcon, source: ExperimentalWebIcon(8740), disableColor: true };
+    const obj3 = { style: tmp.communityPillIcon, source: ExperimentalWebIcon(8741), disableColor: true };
     const Icon = tmp2(1186).Icon;
     tmp7Result = tmp7(Icon, obj3);
     tmp10 = tmp7;

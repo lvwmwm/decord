@@ -1,12 +1,12 @@
-// Module ID: 17467
-// Function ID: 17468
+// Module ID: 17474
+// Function ID: 17475
 // Name: DesignSystemAnimatedAssetSetting
-// Dependencies: [9555, 1071, 11962, 17468, 2]
+// Dependencies: [9556, 1071, 11970, 17475, 2]
 
-// Module 17467 (DesignSystemAnimatedAssetSetting)
+// Module 17474 (DesignSystemAnimatedAssetSetting)
 import Constants from "Constants" /* 1071 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

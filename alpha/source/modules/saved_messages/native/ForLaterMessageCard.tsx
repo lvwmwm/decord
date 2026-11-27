@@ -1,12 +1,12 @@
-// Module ID: 11723
-// Function ID: 11724
+// Module ID: 11731
+// Function ID: 11732
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 4975, 1071, 21, 5043, 575, 6145, 7278, 5634, 1112, 7944, 5751, 11724, 11728, 6130, 1256, 11714, 2169, 11729, 11730, 504, 11738, 9615, 9617, 2]
+// Dependencies: [5, 19, 17, 4975, 1071, 21, 5043, 575, 6145, 7278, 5634, 1112, 7944, 5751, 11732, 11736, 6130, 1256, 11722, 2169, 11737, 11738, 504, 11746, 9616, 9618, 2]
 
-// Module 11723 (ForLaterMessageCard)
+// Module 11731 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 11724 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 11732 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
@@ -108,7 +108,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -195,7 +195,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
                       }
                       track(FOR_LATER_SAVED_MESSAGE_JUMP, obj7);
                       c2 = 3;
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp25) {
                     c2 = 3;
@@ -221,7 +221,7 @@ const memoResult = react.memo(function ForLaterMessageCard(savedMessage) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;

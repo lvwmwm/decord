@@ -1,9 +1,9 @@
-// Module ID: 11424
-// Function ID: 11425
+// Module ID: 11425
+// Function ID: 11426
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 7821, 8113, 1071, 21, 5043, 575, 5604, 1285, 12, 11425, 7395, 1186, 11443, 11444, 1112, 7482, 7191, 1264, 7355, 2]
+// Dependencies: [5, 32, 19, 17, 7821, 8113, 1071, 21, 5043, 575, 5604, 1285, 12, 11426, 7395, 1186, 11444, 11445, 1112, 7482, 7191, 1264, 7355, 2]
 
-// Module 11424 (GroupDMInviteManagementScreen)
+// Module 11425 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -58,7 +58,7 @@ function GroupDMInviteManagement(channelId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -102,7 +102,7 @@ function GroupDMInviteManagement(channelId) {
               c2(closure_0);
               c3(false);
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -141,7 +141,7 @@ function GroupDMInviteManagement(channelId) {
     const EmptyState = channelId(1186).EmptyState;
     const intl = channelId(1112).intl;
     const intl2 = channelId(1112).intl;
-    tmp13 = <EmptyState lightSource={tmp5(11443)} darkSource={tmp5(11444)} title={intl.string(channelId(1112).t["+nLJkZ"])} body={intl2.string(channelId(1112).t.F53CAc)} />;
+    tmp13 = <EmptyState lightSource={tmp5(11444)} darkSource={tmp5(11445)} title={intl.string(channelId(1112).t["+nLJkZ"])} body={intl2.string(channelId(1112).t.F53CAc)} />;
   } else {
     const tmp12 = channelId;
     tmp13 = jsx(channelId(7482).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });

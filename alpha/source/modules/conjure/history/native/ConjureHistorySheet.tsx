@@ -1,10 +1,10 @@
-// Module ID: 18579
-// Function ID: 18580
+// Module ID: 18590
+// Function ID: 18591
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 6115, 5634, 5641, 1112, 4245, 7047, 18576, 6140, 6144, 15457, 18580, 6145, 9067, 7944, 7746, 8486, 8616, 13612, 5257, 8506, 2120, 2169, 1629, 18581, 18578, 18582, 6052, 18577, 5725, 5724, 18574, 18584, 18584, 7546, 7507, 5275, 18585, 18583, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 6115, 5634, 5641, 1112, 4245, 7047, 18587, 6140, 6144, 15464, 18591, 6145, 9068, 7944, 7746, 8487, 8617, 13619, 5257, 8507, 2120, 2169, 1629, 18592, 18589, 18593, 6052, 18588, 5725, 5724, 18585, 18595, 18595, 7546, 7507, 5275, 18596, 18594, 2]
 // Exports: default
 
-// Module 18579 (ConjureHistorySheet)
+// Module 18590 (ConjureHistorySheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1112 */;
@@ -16,11 +16,11 @@ import Stack_Stack from "Stack/Stack" /* 6115 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7047 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7746 */;
 import IconButton2 from "IconButton" /* 7944 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8486 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 18574 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 18576 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 18580 */;
-import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 18584 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8487 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 18585 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 18587 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 18591 */;
+import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 18595 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -38,7 +38,7 @@ const components_Button_Button = tmp4(5641);
 const TableRowGroup3 = tmp4(6140);
 const TableRow2 = tmp4(6144);
 const Card_Card = tmp4(6145);
-const ContextMenu = tmp4(9067);
+const ContextMenu = tmp4(9068);
 function HistoryMessage(onRetry) {
   let Button;
   let Stack;
@@ -102,7 +102,7 @@ function HistoryDayGroups(renderItem) {
     })
   };
   const Stack = renderItem(6115).Stack;
-  const obj2 = renderItem(18576);
+  const obj2 = renderItem(18587);
   groupHistoryByDayResult = obj2.groupHistoryByDay(items, getMs, nowMs);
   return closure_7(Stack, obj);
 }
@@ -458,7 +458,7 @@ function HistoryTabs(onChange) {
     items[2] = obj3;
     return items;
   }, []);
-  let obj = onChange(8616);
+  let obj = onChange(8617);
   let obj2 = {
     items: memo,
     pageWidth: num,
@@ -469,7 +469,7 @@ function HistoryTabs(onChange) {
       }
     }
   };
-  let obj3 = { ref, onLayout, accessibilityLabel: intl.string(_modDef4245["/2GnYy"]), children: closure_7(onChange(13612).Tabs, { state: segmentedControlState }) };
+  let obj3 = { ref, onLayout, accessibilityLabel: intl.string(_modDef4245["/2GnYy"]), children: closure_7(onChange(13619).Tabs, { state: segmentedControlState }) };
   segmentedControlState = obj.useSegmentedControlState(obj2);
   intl = onChange(1112).intl;
   return closure_7(View, obj3);
@@ -523,13 +523,13 @@ export default function ConjureHistorySheet(projectId) {
   const tmp3 = onSaveBackup(onRestoreVersion(1629)().bottom + onRestoreVersion(575).space.PX_16);
   let tmp4 = versionTitles(conjureDatabaseBusy.useState("versions"), 2);
   [tmp5, tmp6] = tmp4;
-  const tmp7 = onRestoreVersion(18581)(projectId);
+  const tmp7 = onRestoreVersion(18592)(projectId);
   ({ sharedDatabase: c2, versions, databases, refreshAllBackups } = tmp7);
   versionTitles = tmp7.versionTitles;
   ({ previewBackups, previewBackupsLoading } = tmp7);
-  let obj = projectId(18578);
+  let obj = projectId(18589);
   conjureDatabaseBusy = obj.useConjureDatabaseBusy(projectId);
-  const tmp10 = onRestoreVersion(18582)(projectId);
+  const tmp10 = onRestoreVersion(18593)(projectId);
   [tmp12, c6] = versionTitles(conjureDatabaseBusy.useState(false), 2);
   const refresh = versions.refresh;
   const tmp11 = versionTitles(conjureDatabaseBusy.useState(false), 2);
@@ -550,7 +550,7 @@ export default function ConjureHistorySheet(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -595,7 +595,7 @@ export default function ConjureHistorySheet(projectId) {
             tmp();
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp29) {
         closure_4 = tmp29;
@@ -648,7 +648,7 @@ export default function ConjureHistorySheet(projectId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -702,7 +702,7 @@ export default function ConjureHistorySheet(projectId) {
               presentError(string(uyjFNZ));
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp38) {
           c3 = 3;
@@ -764,7 +764,7 @@ export default function ConjureHistorySheet(projectId) {
               });
             }
           };
-          const tmp5 = asyncRequire(8506, dependencyMap.paths);
+          const tmp5 = asyncRequire(8507, dependencyMap.paths);
           intl = intl8.intl;
           [obj.minimumDate, obj.maximumDate] = items;
           openLazy(tmp5, "ConjureHistoryRewindTime", obj, "stack");
@@ -780,7 +780,7 @@ export default function ConjureHistorySheet(projectId) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { projectId, environment, onSaved: refreshAllBackups };
-    const tmp2 = asyncRequire(18584, dependencyMap.paths);
+    const tmp2 = asyncRequire(18595, dependencyMap.paths);
     return openLazy(tmp2, ConjureSaveBackupSheet.CONJURE_SAVE_BACKUP_SHEET_KEY, obj, "stack");
   }, items4);
   let obj2 = { scrollable: true, startExpanded: true, header: callback1(onRestoreBackup, obj3), children: tmp15(BottomSheetScrollView, obj5) };
@@ -808,14 +808,14 @@ export default function ConjureHistorySheet(projectId) {
     let str = "publishes";
     if ("publishes" === tmp5) {
       const obj7 = { projectId };
-      tmp16Result = tmp15(tmp(18585), obj7, projectId);
+      tmp16Result = tmp15(tmp(18596), obj7, projectId);
     } else {
       const obj8 = { children: items6 };
       const obj9 = { variant: "body-sm/normal", color: "text-muted", children: formatToPlainString(ptsHZu, obj10) };
       const Text = tmp8(5634).Text;
       let intl2 = tmp8(1112).intl;
       formatToPlainString = intl2.formatToPlainString;
-      obj10 = { days: projectId(18583).RESTORE_WINDOW_DAYS };
+      obj10 = { days: projectId(18594).RESTORE_WINDOW_DAYS };
       ptsHZu = tmp(4245).ptsHZu;
       items6 = [
         tmp15(Text, obj9),

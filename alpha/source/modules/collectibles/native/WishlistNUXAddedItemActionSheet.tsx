@@ -1,10 +1,10 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 11221
+// Function ID: 11222
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1387, 6137, 21, 5043, 575, 504, 2113, 5257, 6133, 6380, 11165, 5271, 11166, 5634, 1112, 6863, 5641, 2]
+// Dependencies: [32, 19, 17, 1387, 6137, 21, 5043, 575, 504, 2113, 5257, 6133, 6380, 11166, 5271, 11167, 5634, 1112, 6863, 5641, 2]
 // Exports: default
 
-// Module 11220 (WishlistNUXAddedItemActionSheet)
+// Module 11221 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
 import Constants from "Constants" /* 6137 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
-import SKUPreview from "SKUPreview" /* 11165 */;
+import SKUPreview from "SKUPreview" /* 11166 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;

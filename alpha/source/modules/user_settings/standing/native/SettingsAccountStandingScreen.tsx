@@ -1,12 +1,12 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16249
+// Function ID: 16250
 // Name: SettingsAccountStandingScreen
-// Dependencies: [21, 16243, 2]
+// Dependencies: [21, 16250, 2]
 // Exports: default
 
-// Module 16242 (SettingsAccountStandingScreen)
+// Module 16249 (SettingsAccountStandingScreen)
 import Fragment from "Fragment" /* 21 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 16243 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 16250 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

@@ -1,14 +1,14 @@
-// Module ID: 13842
-// Function ID: 13843
+// Module ID: 13849
+// Function ID: 13850
 // Name: QuestContentImpressionTracker
-// Dependencies: [32, 19, 2119, 9860, 1071, 21, 7482, 6831, 504, 9928, 13843, 6878, 2]
+// Dependencies: [32, 19, 2119, 9861, 1071, 21, 7482, 6831, 504, 9929, 13850, 6878, 2]
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
-// Module 13842 (QuestContentImpressionTracker)
+// Module 13849 (QuestContentImpressionTracker)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9860 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9861 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AppStateStore from "AppStateStore" /* 2119 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   const tmp5 = visibilityRef;
   const ref = react.useRef(null);
   let tmp6 = visibilityRef(6831)(tmp3);
-  const obj2 = adContentIds2(9928);
+  const obj2 = adContentIds2(9929);
   const adContentImpressionTrackerProps = obj2.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   const obj3 = { adContentIds };
@@ -171,7 +171,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
     tmp16 = key;
   }
   const obj7 = { key: tmp16, adContentIds };
-  const QuestContentImpressionTracker = tmp(13843).QuestContentImpressionTracker;
+  const QuestContentImpressionTracker = tmp(13850).QuestContentImpressionTracker;
   const tmp18 = "questOrQuests" in skipRemountKey;
   const merged3 = Object.assign(obj6);
   const tmp17 = createElement;

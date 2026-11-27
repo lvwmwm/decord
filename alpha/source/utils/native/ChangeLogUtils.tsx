@@ -1,15 +1,15 @@
-// Module ID: 14421
-// Function ID: 14422
+// Module ID: 14428
+// Function ID: 14429
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5043, 575, 6868, 6119, 5634, 14422, 7178, 14423, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 6868, 6119, 5634, 14429, 7178, 14430, 2]
 
-// Module 14421 (utils/ChangeLogUtils)
+// Module 14428 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import LegacyTokens from "LegacyTokens" /* 6868 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 14423 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 14430 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import CustomMarkup from "CustomMarkup" /* 6119 */;
@@ -103,12 +103,12 @@ function ChangeLogParagraph(state) {
     Paragraph = output(5634).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(14422);
+  const obj = output(14429);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(14422);
+    const tmp5Result = tmp5(14429);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;

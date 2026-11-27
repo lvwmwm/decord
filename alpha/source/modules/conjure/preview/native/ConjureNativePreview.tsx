@@ -1,10 +1,10 @@
-// Module ID: 18613
-// Function ID: 18614
+// Module ID: 18624
+// Function ID: 18625
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 6936, 502, 4892, 6932, 2119, 18600, 6934, 1071, 6937, 21, 5043, 575, 6145, 5634, 18614, 14737, 504, 7677, 14064, 7727, 7691, 9996, 5618, 18615, 18616, 18617, 18619, 15956, 18621, 1112, 4245, 5641, 9487, 5252, 9489, 6174, 14663, 14608, 7725, 7847, 7467, 11773, 1379, 18623, 6115, 2]
+// Dependencies: [32, 19, 17, 6936, 502, 4892, 6932, 2119, 18611, 6934, 1071, 6937, 21, 5043, 575, 6145, 5634, 18625, 14744, 504, 7677, 14071, 7727, 7691, 9997, 5618, 18626, 18627, 18628, 18630, 15963, 18632, 1112, 4245, 5641, 9488, 5252, 9490, 6174, 14670, 14615, 7725, 7847, 7467, 11781, 1379, 18634, 6115, 2]
 // Exports: default
 
-// Module 18613 (ConjureNativePreview)
+// Module 18624 (ConjureNativePreview)
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
@@ -19,11 +19,11 @@ import conjurePreviewSurface from "conjurePreviewSurface" /* 7677 */;
 import leaveFrame from "leaveFrame" /* 7691 */;
 import ConjurePlatformUtils from "ConjurePlatformUtils" /* 7727 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9487 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9996 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 14608 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 18614 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 18615 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9488 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9997 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 14615 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 18625 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 18626 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -32,7 +32,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import AppStateStore from "AppStateStore" /* 2119 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 18600 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 18611 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
@@ -278,7 +278,7 @@ function PreviewWidget(applicationId) {
   const tmp = closure_24();
   const tmp4 = UserProfileSharedStylesDefault();
   const tmp5 = useThemeDefault();
-  let obj = applicationId(9489);
+  let obj = applicationId(9490);
   const containerBackground = obj.useUserProfileColors({ theme: tmp5, primaryColor: null, secondaryColor: null }).containerBackground;
   const items = [AuthenticationStore];
   const obj2 = applicationId(504);
@@ -433,14 +433,14 @@ function PreviewBot(projectId) {
   } else {
     const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: tmp19, screenIndex: "conjure-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    items8 = [closure_22(previewApplicationId(11773), obj7, stateFromStores.id), ];
+    items8 = [closure_22(previewApplicationId(11781), obj7, stateFromStores.id), ];
     let tmp30Result = null;
     const tmp28 = closure_23;
     const tmp29 = id;
     const tmp30 = closure_22;
     const tmp7Result4 = projectId(1379);
     if (tmp7Result4.isAndroid()) {
-      tmp30Result = tmp30(tmp7(18623).PortalKeyboardRenderer, { portal: true });
+      tmp30Result = tmp30(tmp7(18634).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp30Result;
     tmp28Result = tmp28(tmp29, obj6);

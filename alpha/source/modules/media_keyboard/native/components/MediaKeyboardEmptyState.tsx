@@ -1,10 +1,10 @@
-// Module ID: 11110
-// Function ID: 11111
+// Module ID: 11111
+// Function ID: 11112
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 7872, 21, 5043, 575, 5730, 5634, 5641, 10454, 1112, 11111, 11105, 11112, 2]
+// Dependencies: [19, 17, 7872, 21, 5043, 575, 5730, 5634, 5641, 10455, 1112, 11112, 11106, 11113, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 11110 (MediaKeyboardEmptyState)
+// Module 11111 (MediaKeyboardEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -12,10 +12,10 @@ import Text_Text from "Text/Text" /* 5634 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
-import SettingsIcon from "SettingsIcon" /* 10454 */;
-import CameraIcon from "CameraIcon" /* 11105 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11111 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11112 */;
+import SettingsIcon from "SettingsIcon" /* 10455 */;
+import CameraIcon from "CameraIcon" /* 11106 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11112 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11113 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

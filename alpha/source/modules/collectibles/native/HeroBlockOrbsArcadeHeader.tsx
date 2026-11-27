@@ -1,10 +1,10 @@
-// Module ID: 17503
-// Function ID: 17504
+// Module ID: 17510
+// Function ID: 17511
 // Name: HeroBlockOrbsArcadeHeader
-// Dependencies: [32, 19, 17, 5044, 9890, 1071, 21, 575, 9903, 17504, 5043, 9889, 6876, 7946, 5607, 671, 5040, 504, 16601, 1502, 5649, 8880, 5730, 17505, 5598, 5634, 1112, 5641, 5252, 5050, 5104, 2]
+// Dependencies: [32, 19, 17, 5044, 9891, 1071, 21, 575, 9904, 17511, 5043, 9890, 6876, 7946, 5607, 671, 5040, 504, 16608, 1502, 5649, 8881, 5730, 17512, 5598, 5634, 1112, 5641, 5252, 5050, 5104, 2]
 // Exports: default
 
-// Module 17503 (HeroBlockOrbsArcadeHeader)
+// Module 17510 (HeroBlockOrbsArcadeHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import shared from "shared" /* 5050 */;
@@ -13,16 +13,16 @@ import useThemeDefault from "useTheme" /* 5252 */;
 import useToken from "useToken" /* 5607 */;
 import QuestContent from "QuestContent" /* 6876 */;
 import inlineStyles from "inlineStyles" /* 7946 */;
-import QuestUtils from "QuestUtils" /* 9889 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9890 */;
-import _modDef17504 from "module_17504" /* 17504 */;
+import QuestUtils from "QuestUtils" /* 9890 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9891 */;
+import _modDef17511 from "module_17511" /* 17511 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import AssetUtils from "AssetUtils" /* 9903 */;
+import AssetUtils from "AssetUtils" /* 9904 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -218,7 +218,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
         preventsDisplaySleepDuringVideoPlayback: false,
         importantForAccessibility: "no-hide-descendants"
       };
-      obj9 = { uri: require("module_17504") };
+      obj9 = { uri: require("module_17511") };
       const VideoComponent = tmp2(tmp3[21]).VideoComponent;
       tmp28 = !isInView;
       if (isInView) {
@@ -278,7 +278,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
     return closure_11(fontScale, obj5);
   }
   const obj21 = { source: obj22, style: tmp.image, accessible: false };
-  obj22 = { uri: require("module_17505") };
+  obj22 = { uri: require("module_17512") };
   const tmp4Result = require("FastImage");
   tmp26Result = tmp26(tmp4Result, obj21);
 }
@@ -290,7 +290,7 @@ const QuestHomeSection = QuestHomeNavigationStore.QuestHomeSection;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let c13 = 289;
 const PX_16 = nativeDefault.space.PX_16;
-const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef17504);
+const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef17511);
 const PX_48 = nativeDefault.space.PX_48;
 const ellipse = { cx: 85.5, cy: 267.5, rx: 329, ry: 217, rotation: 63 };
 const ellipse2 = { cx: 67, cy: 231, rx: 185, ry: 155 };

@@ -1,17 +1,17 @@
-// Module ID: 11719
-// Function ID: 11720
+// Module ID: 11727
+// Function ID: 11728
 // Name: useSavedMessagesForPage
-// Dependencies: [32, 19, 11718, 11714, 11720, 11722, 504, 1255, 2]
+// Dependencies: [32, 19, 11726, 11722, 11728, 11730, 504, 1255, 2]
 // Exports: default
 
-// Module 11719 (useSavedMessagesForPage)
+// Module 11727 (useSavedMessagesForPage)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 11714 */;
-import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 11720 */;
-import useBookmarksPaginationDefault from "useBookmarksPagination" /* 11722 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 11722 */;
+import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 11728 */;
+import useBookmarksPaginationDefault from "useBookmarksPagination" /* 11730 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11718 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11726 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, map;
@@ -35,12 +35,12 @@ export default function useSavedMessagesForPage() {
   let closure_3;
   let items1;
   let obj2;
-  const f100665 = (saveData) => saveData.saveData;
+  const f100906 = (saveData) => saveData.saveData;
   let ALL = arg0;
   if (arg0 === undefined) {
     let tmp = ALL;
     let tmp2 = dependencyMap;
-    ALL = ALL(11714).SavedMessageSortTypes.ALL;
+    ALL = ALL(11722).SavedMessageSortTypes.ALL;
   }
   importDefault = undefined;
   dependencyMap = undefined;
@@ -55,7 +55,7 @@ export default function useSavedMessagesForPage() {
     } else {
       messageBookmarks = SavedMessagesStore.getSavedMessages();
     }
-    return messageBookmarks.map(f100665);
+    return messageBookmarks.map(f100906);
   }), 2);
   [c1, c2] = tmp3;
   _slicedToArray = react.useRef(SavedMessagesStore.getIsStale());
@@ -75,12 +75,12 @@ export default function useSavedMessagesForPage() {
             const tmp4 = require;
             if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
               messageBookmarks = obj.getMessageBookmarks();
-            } else if (tmp4(11714).SavedMessageSortTypes.REMINDER === tmp3) {
+            } else if (tmp4(11722).SavedMessageSortTypes.REMINDER === tmp3) {
               messageBookmarks = obj.getMessageReminders();
             } else {
               messageBookmarks = obj.getSavedMessages();
             }
-            tmp2(messageBookmarks.map(f100665));
+            tmp2(messageBookmarks.map(f100906));
           }
         }
         c2((arg0) => {
@@ -126,7 +126,7 @@ export default function useSavedMessagesForPage() {
     })
   };
   items1 = [SavedMessagesStore];
-  const tmp6Result = tmp6(ALL !== ALL(11714).SavedMessageSortTypes.REMINDER);
+  const tmp6Result = tmp6(ALL !== ALL(11722).SavedMessageSortTypes.REMINDER);
   obj2 = ALL(504);
   const merged = Object.assign(tmp6Result);
   return obj;

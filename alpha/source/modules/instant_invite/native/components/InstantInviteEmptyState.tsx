@@ -1,17 +1,17 @@
-// Module ID: 10452
-// Function ID: 10453
+// Module ID: 10453
+// Function ID: 10454
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 10429, 21, 5043, 575, 504, 1186, 10453, 1112, 7302, 6152, 10454, 5634, 10430, 5641, 2]
+// Dependencies: [19, 17, 10430, 21, 5043, 575, 504, 1186, 10454, 1112, 7302, 6152, 10455, 5634, 10431, 5641, 2]
 // Exports: default
 
-// Module 10452 (InstantInviteEmptyState)
+// Module 10453 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FreeFormTextInputDefault from "FreeFormTextInput" /* 7302 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10430 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10453 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10431 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10454 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10429 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10430 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ export default function InstantInviteEmptyState(link) {
     str = "";
   }
   items2 = [closure_5(tmp9, obj5), ];
-  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1112).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(10454).SettingsIcon, {}) };
+  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1112).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(10455).SettingsIcon, {}) };
   const PressableOpacity = tmp2(6152).PressableOpacity;
   intl3 = tmp2(1112).intl;
   items2[1] = closure_5(PressableOpacity, obj6);
@@ -79,7 +79,7 @@ export default function InstantInviteEmptyState(link) {
       }
       str3 = str4;
     }
-    const getMaxUsesOptions = tmp8(10430).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(10431).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     let str5 = "";
     if (null != found) {

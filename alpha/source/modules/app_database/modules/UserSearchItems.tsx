@@ -1,16 +1,16 @@
-// Module ID: 8320
-// Function ID: 8321
+// Module ID: 8321
+// Function ID: 8322
 // Name: UserSearchItems
-// Dependencies: [5, 8321, 8322, 4985, 1387, 1071, 3, 4921, 8324, 2]
+// Dependencies: [5, 8322, 8323, 4985, 1387, 1071, 3, 4921, 8325, 2]
 
-// Module 8320 (UserSearchItems)
+// Module 8321 (UserSearchItems)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
-import UserSearchUtils from "UserSearchUtils" /* 8324 */;
+import UserSearchUtils from "UserSearchUtils" /* 8325 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 8321 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8322 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8322 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8323 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;

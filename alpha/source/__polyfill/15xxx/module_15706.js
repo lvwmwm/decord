@@ -1,74 +1,54 @@
 // Module ID: 15706
 // Function ID: 15707
-// Dependencies: [15707, 15708, 1158, 15709, 15710]
-// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
+// Dependencies: [15707, 15708, 15710, 1158, 15712, 15711]
+// Exports: getCanonicalLocales
 
 // Module 15706
-import _mod1158 from "module_1158" /* 1158 */;
-import calendars2 from "calendars" /* 15707 */;
-import hourCycles from "hourCycles" /* 15708 */;
-import timezones from "timezones" /* 15709 */;
-import weekData2 from "weekData" /* 15710 */;
+import emitUnicodeLanguageId from "emitUnicodeLanguageId" /* 15707 */;
+import canonicalizeUnicodeLanguageId from "canonicalizeUnicodeLanguageId" /* 15708 */;
+import likelySubtags from "likelySubtags" /* 15711 */;
+import _mod15712 from "module_15712" /* 15712 */;
+import module_1158_mod from "module_1158" /* 1158 */;
 
+const require = globalThis.__r;
 
-export function getCalendarPreferenceDataForRegion(region) {
-  let str = null;
-  if (region) {
-    str = region.toUpperCase();
-  }
-  const calendars = calendars2.calendars;
-  if (!str) {
-    str = "";
-  }
-  const arr = calendars[str] || calendars2.calendars["001"];
-  return arr.map((item) => {
-    let str = "gregory";
-    if ("gregorian" !== item) {
-      let str2 = "islamicc";
-      if ("islamic-civil" !== item) {
-        str2 = item;
-      }
-      str = str2;
-    }
-    return str;
-  });
-}
-export function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
-  const formatted = locale.toLowerCase();
-  let str = "";
-  if (region) {
-    str = region.toUpperCase();
-  }
-  let v001 = hourCycles.hourCycles[formatted] || tmp2(15708).hourCycles[str];
-  if (!v001) {
-    const concat = "".concat;
-    v001 = tmp2(15708).hourCycles["".concat("", formatted, "-001")];
-  }
-  if (!v001) {
-    v001 = tmp2(15708).hourCycles["001"];
-  }
-  const tmp2Result = _mod1158;
-  return tmp2Result.__spreadArray([], v001, true);
-}
-export function getTimeZonePreferenceForRegion(region) {
-  const formatted = region.toLowerCase();
-  const items = [];
-  if (timezones.timezones[formatted]) {
-    const tmp2Result = _mod1158;
-    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
+let module_1158 = module_1158_mod;
+module_1158.__exportStar(emitUnicodeLanguageId, exports);
+module_1158 = module_1158_mod;
+module_1158.__exportStar(_mod15712, exports);
+module_1158 = module_1158_mod;
+module_1158.__exportStar(likelySubtags, exports);
+
+export function getCanonicalLocales(items) {
+  if (undefined === items) {
+    items = [];
   } else {
-    return items;
+    let arr3 = items;
+    if (typeof items === "string") {
+      const items1 = [items];
+      arr3 = items1;
+    }
+    const items2 = [];
+    let num3 = 0;
+    items = items2;
+    if (0 < arr3.length) {
+      do {
+        let tmp = arr3[num3];
+        let emitUnicodeLocaleId = emitUnicodeLanguageId.emitUnicodeLocaleId;
+        let emitUnicodeLocaleIdResult = emitUnicodeLocaleId(canonicalizeUnicodeLanguageId.CanonicalizeUnicodeLocaleId(require("SEPARATOR").parseUnicodeLocaleId(tmp)));
+        if (items2.indexOf(emitUnicodeLocaleIdResult) < 0) {
+          let arr = items2.push(emitUnicodeLocaleIdResult);
+        }
+        num3 = num3 + 1;
+        items = items2;
+      } while (num3 < arr3.length);
+    }
   }
+  return items;
 }
-export function getWeekDataForRegion(region) {
-  let str = "";
-  if (region) {
-    str = region.toUpperCase();
-  }
-  const weekData = weekData2.weekData;
-  if (!str) {
-    str = "001";
-  }
-  const tmp3 = weekData[str] || weekData2.weekData["001"];
-  return tmp3;
-}
+export const isStructurallyValidLanguageTag = require("SEPARATOR").isStructurallyValidLanguageTag;
+export const isUnicodeLanguageSubtag = require("SEPARATOR").isUnicodeLanguageSubtag;
+export const isUnicodeRegionSubtag = require("SEPARATOR").isUnicodeRegionSubtag;
+export const isUnicodeScriptSubtag = require("SEPARATOR").isUnicodeScriptSubtag;
+export const parseUnicodeLanguageId = require("SEPARATOR").parseUnicodeLanguageId;
+export const parseUnicodeLocaleId = require("SEPARATOR").parseUnicodeLocaleId;

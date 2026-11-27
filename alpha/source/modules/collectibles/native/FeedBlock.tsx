@@ -1,10 +1,10 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17533
+// Function ID: 17534
 // Name: FeedBlock
-// Dependencies: [19, 17, 5044, 1191, 1073, 1071, 21, 5043, 575, 504, 5050, 11265, 17508, 17489, 11600, 17509, 6310, 11245, 9269, 16593, 6380, 6379, 11214, 1112, 5634, 6152, 5257, 17527, 2120, 5747, 5641, 1256, 17521, 5730, 17528, 17529, 17530, 17531, 2]
+// Dependencies: [19, 17, 5044, 1191, 1073, 1071, 21, 5043, 575, 504, 5050, 11266, 17515, 17496, 11608, 17516, 6310, 11246, 9270, 16600, 6380, 6379, 11215, 1112, 5634, 6152, 5257, 17534, 2120, 5747, 5641, 1256, 17528, 5730, 17535, 17536, 17537, 17538, 2]
 // Exports: default
 
-// Module 17526 (FeedBlock)
+// Module 17533 (FeedBlock)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,8 +13,8 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6310 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11245 */;
-import uniqByDefault from "uniqBy" /* 17509 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11246 */;
+import uniqByDefault from "uniqBy" /* 17516 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
@@ -81,17 +81,17 @@ export default function _default(screen) {
     const obj = screen(closure_2[10]);
     return obj.isThemeDark(memo.theme);
   });
-  let obj2 = screen(11265);
+  let obj2 = screen(11266);
   const isInImprovedMobileShopLoading = obj2.useIsInImprovedMobileShopLoading();
-  let tmp7 = isInImprovedMobileShopLoading(17508)();
+  let tmp7 = isInImprovedMobileShopLoading(17515)();
   dependencyMap = tmp7;
-  const tmp8 = isInImprovedMobileShopLoading(17489)(feedBlock);
+  const tmp8 = isInImprovedMobileShopLoading(17496)(feedBlock);
   const shownSkuIds = tmp8.shownSkuIds;
   ({ resolvedSkuIds, isPersonalized } = tmp8);
   if (!isInImprovedMobileShopLoading) {
     resolvedSkuIds = closure_11;
   }
-  const tmp2Result = screen(11600);
+  const tmp2Result = screen(11608);
   collectiblesShopProducts = tmp2Result.useCollectiblesShopProducts(resolvedSkuIds);
   const items1 = [isInImprovedMobileShopLoading, tmp7, shownSkuIds, resolvedSkuIds, collectiblesShopProducts];
   memo = shownSkuIds.useMemo(() => {
@@ -132,7 +132,7 @@ export default function _default(screen) {
     }
     return googleSkuIds;
   }, items3);
-  const tmp6Result = isInImprovedMobileShopLoading(9269);
+  const tmp6Result = isInImprovedMobileShopLoading(9270);
   loadedGoogleSkuIds = tmp6Result.useLoadedGoogleSkuIds(memo1);
   const items4 = [isInImprovedMobileShopLoading, memo, loadedGoogleSkuIds];
   const memo2 = shownSkuIds.useMemo(() => {
@@ -149,8 +149,8 @@ export default function _default(screen) {
     }
     return found;
   }, items4);
-  const tmp2Result4 = screen(16593);
-  const obj3 = { products: memo2, maxProducts: screen(17489).MAX_FEED_PRODUCTS, screen };
+  const tmp2Result4 = screen(16600);
+  const obj3 = { products: memo2, maxProducts: screen(17496).MAX_FEED_PRODUCTS, screen };
   const filteredAndSortedProducts = tmp2Result4.useFilteredAndSortedProducts(obj3);
   const ORBS = loadedGoogleSkuIds.ORBS;
   const items5 = [collectiblesShopProducts];
@@ -158,7 +158,7 @@ export default function _default(screen) {
   const stateFromStores1 = tmp2Result5.useStateFromStores(items5, () => collectiblesShopProducts.useReducedMotion);
   const tmp6Result4 = isInImprovedMobileShopLoading(6379);
   analyticsLocations = tmp6Result4(tmp6(6380).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations;
-  const tmp2Result6 = screen(11214);
+  const tmp2Result6 = screen(11215);
   closure_9 = tmp2Result6.useCollectiblesAnalyticsContext();
   const intl = tmp2(1112).intl;
   const string = intl.string;
@@ -231,8 +231,8 @@ export default function _default(screen) {
   }
   items7[1] = tmp19Result;
   items8 = [closure_10(resolvedSkuIds, obj6), , ];
-  const obj10 = { products: filteredAndSortedProducts, loadingCardsNum: screen(17489).MAX_FEED_PRODUCTS, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground };
-  const tmp6Result5 = isInImprovedMobileShopLoading(17521);
+  const obj10 = { products: filteredAndSortedProducts, loadingCardsNum: screen(17496).MAX_FEED_PRODUCTS, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground };
+  const tmp6Result5 = isInImprovedMobileShopLoading(17528);
   items8[1] = closure_9(tmp6Result5, obj10);
   const obj11 = { style: tmp.feedFooter, children: items9 };
   const obj12 = { variant: "heading-lg/semibold", accessibilityRole: "header", children: intl4.string(screen(1112).t.Yr70c4) };
@@ -279,15 +279,15 @@ export default function _default(screen) {
   if (screen === ORBS) {
     const obj14 = { source: obj15, enableAnimation: !stateFromStores1, resizeMode: "contain", style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     tmp26 = obj14;
-    obj15 = { uri: isInImprovedMobileShopLoading(stateFromStores1 ? 17528 : 17529) };
+    obj15 = { uri: isInImprovedMobileShopLoading(stateFromStores1 ? 17535 : 17536) };
   } else {
     const obj16 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     if (stateFromStores) {
-      obj16.source = screen(17530);
+      obj16.source = screen(17537);
       obj16.style = tmp.feedFooterImage;
       tmp26 = obj16;
     } else {
-      obj16.source = screen(17531);
+      obj16.source = screen(17538);
       obj16.style = tmp.feedFooterImage;
       tmp26 = obj16;
     }

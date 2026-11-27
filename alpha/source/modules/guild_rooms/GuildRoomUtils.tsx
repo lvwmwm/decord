@@ -1,15 +1,15 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8428
+// Function ID: 8429
 // Name: GuildRoomUtils
-// Dependencies: [8424, 8428, 8429, 8426, 8425, 2]
+// Dependencies: [8425, 8429, 8430, 8427, 8426, 2]
 // Exports: findSeat, serverGuildRoomToClient
 
-// Module 8427 (GuildRoomUtils)
-import GuildRoomTypes from "GuildRoomTypes" /* 8425 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 8426 */;
-import GuildRoomConstants from "GuildRoomConstants" /* 8428 */;
-import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 8429 */;
-import GuildRoomStore from "GuildRoomStore" /* 8424 */;
+// Module 8428 (GuildRoomUtils)
+import GuildRoomTypes from "GuildRoomTypes" /* 8426 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 8427 */;
+import GuildRoomConstants from "GuildRoomConstants" /* 8429 */;
+import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 8430 */;
+import GuildRoomStore from "GuildRoomStore" /* 8425 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;

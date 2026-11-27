@@ -1,10 +1,10 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12159
+// Function ID: 12160
 // Name: handleAcceptEventInstantInvite
-// Dependencies: [5775, 5774, 7819, 8473, 12152, 2]
+// Dependencies: [5775, 5774, 7819, 8474, 12160, 2]
 // Exports: default
 
-// Module 12151 (handleAcceptEventInstantInvite)
+// Module 12159 (handleAcceptEventInstantInvite)
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7819 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ export default function handleAcceptEventInstantInvite(code) {
           return obj.acceptInvite(obj2);
         }
         let obj2 = { onConfirm: acceptInvite };
-        const tmpResult = tmp(12152);
+        const tmpResult = tmp(12160);
         if (!tmpResult.handleNSFWGuildInvite(code, obj2)) {
           const obj3 = { inviteKey: code, context: { location: "Guild Scheduled Event Invite Button Embed" }, callback };
           const obj4 = guildScheduledEvent(7819);

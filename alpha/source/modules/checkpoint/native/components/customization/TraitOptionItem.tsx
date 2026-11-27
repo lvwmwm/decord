@@ -1,10 +1,10 @@
-// Module ID: 12919
-// Function ID: 12920
+// Module ID: 12927
+// Function ID: 12928
 // Name: TraitOptionItem
-// Dependencies: [17, 6396, 21, 575, 6765, 5043, 6397, 9637, 7946, 6444, 5730, 5105, 2]
+// Dependencies: [17, 6396, 21, 575, 6765, 5043, 6397, 9638, 7946, 6444, 5730, 5105, 2]
 // Exports: default
 
-// Module 12919 (TraitOptionItem)
+// Module 12927 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 5105 */;
 import FastImageDefault from "FastImage" /* 5730 */;
@@ -32,7 +32,7 @@ let metroImportDefault;
 let metroRequire;
 let obj4;
 let tmp2;
-const NitroWheelIcon = tmp2(9637);
+const NitroWheelIcon = tmp2(9638);
 function RarityIndicator(rarity) {
   let tmp4Result;
   rarity = rarity.rarity;

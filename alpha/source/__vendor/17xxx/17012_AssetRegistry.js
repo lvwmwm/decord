@@ -1,0 +1,10 @@
+// Module ID: 17012
+// Function ID: 17013
+// Name: AssetRegistry
+// Dependencies: [1118]
+
+// Module 17012 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1118 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "64819f390c3fa24ca76c3246977f2a01", name: "EmojiSmilingFaceWithHornsIcon", type: "png" });

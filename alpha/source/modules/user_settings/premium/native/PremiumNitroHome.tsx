@@ -1,10 +1,10 @@
-// Module ID: 9367
-// Function ID: 9368
+// Module ID: 9368
+// Function ID: 9369
 // Name: PremiumNitroHome
-// Dependencies: [32, 19, 17, 5044, 2179, 9368, 1071, 4889, 1389, 21, 671, 575, 5043, 1501, 6152, 7195, 5634, 1112, 9369, 9370, 9375, 9399, 9166, 9403, 9404, 9405, 13872, 13877, 1256, 13900, 13901, 13903, 13904, 13905, 1629, 13913, 8486, 504, 6358, 9374, 13914, 8616, 5303, 1654, 5644, 5050, 13915, 5075, 4876, 13916, 4877, 5730, 13917, 13918, 13615, 8617, 5598, 1379, 5610, 2]
+// Dependencies: [32, 19, 17, 5044, 2179, 9369, 1071, 4889, 1389, 21, 671, 575, 5043, 1501, 6152, 7195, 5634, 1112, 9370, 9371, 9376, 9400, 9167, 9404, 9405, 9406, 13879, 13884, 1256, 13907, 13908, 13910, 13911, 13912, 1629, 13920, 8487, 504, 6358, 9375, 13921, 8617, 5303, 1654, 5644, 5050, 13922, 5075, 4876, 13923, 4877, 5730, 13924, 13925, 13622, 8618, 5598, 1379, 5610, 2]
 // Exports: default
 
-// Module 9367 (PremiumNitroHome)
+// Module 9368 (PremiumNitroHome)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -17,14 +17,14 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5075 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7195 */;
-import PremiumNitroNavigationStore2 from "PremiumNitroNavigationStore" /* 9368 */;
-import PremiumReferralTrialPill from "PremiumReferralTrialPill" /* 9369 */;
-import PremiumPerkCardDefault from "PremiumPerkCard" /* 9375 */;
-import reactDefault from "react" /* 9403 */;
-import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 9404 */;
-import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 9405 */;
-import PremiumPerkCarouselDefault from "PremiumPerkCarousel" /* 13900 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 13916 */;
+import PremiumNitroNavigationStore2 from "PremiumNitroNavigationStore" /* 9369 */;
+import PremiumReferralTrialPill from "PremiumReferralTrialPill" /* 9370 */;
+import PremiumPerkCardDefault from "PremiumPerkCard" /* 9376 */;
+import reactDefault from "react" /* 9404 */;
+import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 9405 */;
+import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 9406 */;
+import PremiumPerkCarouselDefault from "PremiumPerkCarousel" /* 13907 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 13923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -349,13 +349,13 @@ export default function PremiumNitroHome(onClose) {
   let tmp = bottom;
   const tmp2 = dependencyMap;
   onClose = onClose.onClose;
-  let obj = bottom(13903);
-  const commonTriggerPoint = obj.useCommonTriggerPoint(bottom(13904).OpenNitroTriggerPoint);
-  let obj2 = bottom(13905);
+  let obj = bottom(13910);
+  const commonTriggerPoint = obj.useCommonTriggerPoint(bottom(13911).OpenNitroTriggerPoint);
+  let obj2 = bottom(13912);
   const giftCardMobileConsumptionHalfsheet = obj2.useGiftCardMobileConsumptionHalfsheet();
   const tmp5 = closure_22();
   bottom = navigation(1629)().bottom;
-  let obj3 = bottom(13913);
+  let obj3 = bottom(13920);
   const youBarSettingsCustomHeaderPaddingTop = obj3.useYouBarSettingsCustomHeaderPaddingTop();
   let obj4 = bottom(1501);
   navigation = obj4.useNavigation();
@@ -363,7 +363,7 @@ export default function PremiumNitroHome(onClose) {
   const layoutEffect = react.useLayoutEffect(() => {
     navigation.setOptions({ headerShown: false });
   }, items);
-  const tmp10 = navigation(8486)();
+  const tmp10 = navigation(8487)();
   const width = tmp10.width;
   let num = 0;
   ({ ref, onLayout } = tmp10);
@@ -397,9 +397,9 @@ export default function PremiumNitroHome(onClose) {
     }
   }, []);
   const tmp19 = navigation(6358)();
-  const tmpResult13 = tmp(9374);
+  const tmpResult13 = tmp(9375);
   const isInReverseTrial = tmpResult13.useIsInReverseTrial();
-  const tmpResult14 = tmp(13914);
+  const tmpResult14 = tmp(13921);
   const maybeFetchTieredTenureBadgeData = tmpResult14.useMaybeFetchTieredTenureBadgeData();
   const field = PremiumNitroNavigationStore.useField("scrollToSectionId");
   const effect = obj5.useEffect(() => () => {
@@ -407,8 +407,8 @@ export default function PremiumNitroHome(onClose) {
   }, []);
   const obj6 = { items: items3, pageWidth: num, onPageChange: callback1 };
   const obj7 = { label: intl.string(tmp(1112).t.tahjbP), id: intl2.string(tmp(1112).t.tahjbP), page: closure_16(NewTab, obj8) };
-  const useSegmentedControlState = tmp(8616).useSegmentedControlState;
-  tmp(8616);
+  const useSegmentedControlState = tmp(8617).useSegmentedControlState;
+  tmp(8617);
   intl = tmp(1112).intl;
   intl2 = tmp(1112).intl;
   items3 = [obj7, ];
@@ -462,9 +462,9 @@ export default function PremiumNitroHome(onClose) {
   const tmpResult19 = tmp(5050);
   const isThemeDarkResult = tmpResult19.isThemeDark(theme);
   const ONYX = constants2.ONYX;
-  const tmp6Result = navigation(13915);
-  const tmp6ResultResult = tmp6Result(tmp19.endsAt, tmp(13915).CountDownMessageTypes.ENDS_IN);
-  const tmpResult20 = tmp(9370);
+  const tmp6Result = navigation(13922);
+  const tmp6ResultResult = tmp6Result(tmp19.endsAt, tmp(13922).CountDownMessageTypes.ENDS_IN);
+  const tmpResult20 = tmp(9371);
   isEligibleSenderForReferralProgram = tmpResult20.useIsEligibleSenderForReferralProgram();
   const items7 = [isEligibleSenderForReferralProgram];
   const effect2 = obj5.useEffect(() => {
@@ -493,8 +493,8 @@ export default function PremiumNitroHome(onClose) {
       const result = tmpResult.UNSAFE_markDismissibleContentAsDismissed(tmp(tmp2[48]).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD);
     }
   }, []);
-  const tmpResult21 = tmp(9399);
-  promotionMarketingSurface = tmpResult21.usePromotionMarketingSurface(tmp(9166).MarketingSurfaceType.PREMIUM_TAB);
+  const tmpResult21 = tmp(9400);
+  promotionMarketingSurface = tmpResult21.usePromotionMarketingSurface(tmp(9167).MarketingSurfaceType.PREMIUM_TAB);
   const items8 = [promotionMarketingSurface];
   const effect4 = obj5.useEffect(() => {
     let isDismissed = null == promotionMarketingSurface;
@@ -510,17 +510,17 @@ export default function PremiumNitroHome(onClose) {
   }, items8);
   const obj11 = { style: items9, children: items10 };
   items9 = [tmp5.container, { paddingTop: youBarSettingsCustomHeaderPaddingTop }];
-  const obj12 = { style: tmp5.background, source: navigation(13917) };
+  const obj12 = { style: tmp5.background, source: navigation(13924) };
   const tmp6Result3 = navigation(5730);
   items10 = [closure_16(tmp6Result3, obj12), closure_16(NitroHomeHeader, { onClose, subscription: stateFromStores1 }), , , ];
   let tmp25Result = tmp19.fractionalState !== FractionalPremiumStates.NONE && !isInReverseTrial;
   if (tmp25Result) {
     const obj13 = { countdownText: tmp6ResultResult };
-    tmp25Result = tmp25(tmp6(13918), obj13);
+    tmp25Result = tmp25(tmp6(13925), obj13);
   }
   items10[2] = tmp25Result;
   const obj14 = { style: tmp5.tabContent, children: items11 };
-  items11 = [closure_16(tmp(13615).SegmentedControlPages, { state: segmentedControlState, nativeGesture: memo }), ];
+  items11 = [closure_16(tmp(13622).SegmentedControlPages, { state: segmentedControlState, nativeGesture: memo }), ];
   if (tmp25Result4) {
     const obj15 = { style: tmp5.backSwipeSensor };
     tmp25Result4 = closure_16(sharedValue, obj15);
@@ -528,7 +528,7 @@ export default function PremiumNitroHome(onClose) {
   items11[1] = tmp25Result4;
   items10[3] = closure_17(sharedValue, obj14);
   const obj16 = { style: animatedStyle, onLayout: callback, children: items12 };
-  const obj17 = { style: tmp5.segmentedControlActual, ref, onLayout, children: closure_16(tmp(8617).SegmentedControl, { state: segmentedControlState, variant: "experimental_Small" }) };
+  const obj17 = { style: tmp5.segmentedControlActual, ref, onLayout, children: closure_16(tmp(8618).SegmentedControl, { state: segmentedControlState, variant: "experimental_Small" }) };
   const View = tmp6(1654).View;
   items12 = [closure_16(sharedValue, obj17), , ];
   let tmp25Result5 = !isThemeDarkResult;

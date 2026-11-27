@@ -1,13 +1,13 @@
-// Module ID: 14600
-// Function ID: 14601
+// Module ID: 14607
+// Function ID: 14608
 // Name: UserProfileGameWidgetEmptyStatePrompt
-// Dependencies: [19, 21, 14570, 5634, 1112, 2]
+// Dependencies: [19, 21, 14577, 5634, 1112, 2]
 // Exports: default
 
-// Module 14600 (UserProfileGameWidgetEmptyStatePrompt)
+// Module 14607 (UserProfileGameWidgetEmptyStatePrompt)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import WidgetUtils from "WidgetUtils" /* 14570 */;
+import WidgetUtils from "WidgetUtils" /* 14577 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

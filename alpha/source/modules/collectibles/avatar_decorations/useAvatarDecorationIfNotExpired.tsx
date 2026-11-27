@@ -1,10 +1,10 @@
-// Module ID: 9522
-// Function ID: 9523
+// Module ID: 9523
+// Function ID: 9524
 // Name: useAvatarDecorationIfNotExpired
 // Dependencies: [32, 19, 1071, 2105, 4887, 2]
 // Exports: default
 
-// Module 9522 (useAvatarDecorationIfNotExpired)
+// Module 9523 (useAvatarDecorationIfNotExpired)
 import Constants from "Constants" /* 1071 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2105 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

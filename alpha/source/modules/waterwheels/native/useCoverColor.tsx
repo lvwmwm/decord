@@ -1,10 +1,10 @@
-// Module ID: 18031
-// Function ID: 18032
+// Module ID: 18038
+// Function ID: 18039
 // Name: useCoverColor
 // Dependencies: [5, 32, 19, 5050, 1455, 671, 1492, 2]
 // Exports: coverArtColor, default
 
-// Module 18031 (useCoverColor)
+// Module 18038 (useCoverColor)
 import _modDef671 from "module_671" /* 671 */;
 import LRUCacheDefault from "LRUCache" /* 1455 */;
 import shared from "shared" /* 5050 */;
@@ -81,7 +81,7 @@ function fetchCoverColor(arg0, uri) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -206,7 +206,7 @@ export default function useCoverColor(arg0, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -243,7 +243,7 @@ export default function useCoverColor(arg0, arg1) {
                 c2(obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             c3 = 3;

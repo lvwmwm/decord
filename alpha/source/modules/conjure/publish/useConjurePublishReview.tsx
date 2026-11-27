@@ -1,17 +1,17 @@
-// Module ID: 18470
-// Function ID: 18471
+// Module ID: 18477
+// Function ID: 18478
 // Name: useConjurePublishReview
-// Dependencies: [5, 32, 19, 4914, 4975, 1387, 6934, 7706, 1071, 6935, 18471, 18473, 18474, 18475, 504, 18480, 18464, 18481, 18465, 8526, 7667, 2]
+// Dependencies: [5, 32, 19, 4914, 4975, 1387, 6934, 7706, 1071, 6935, 18478, 18480, 18481, 18482, 504, 18487, 18471, 18488, 18472, 8527, 7667, 2]
 // Exports: default
 
-// Module 18470 (useConjurePublishReview)
+// Module 18477 (useConjurePublishReview)
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8526 */;
-import conjurePublishReview from "conjurePublishReview" /* 18464 */;
-import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18471 */;
-import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18474 */;
-import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18475 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8527 */;
+import conjurePublishReview from "conjurePublishReview" /* 18471 */;
+import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18478 */;
+import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18481 */;
+import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18482 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -28,7 +28,7 @@ let _require, c1, c4, closure_2, constants, dependencyMap, importDefault;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const useConjureViewPlacementDefault = tmp(18481);
+const useConjureViewPlacementDefault = tmp(18488);
 let isProjectOwner = ConjureProjectStore.isProjectOwner;
 ({ ChannelTypes: unpackModuleId, Permissions: closure_12 } = Constants);
 let items = ["app_channel", ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL];
@@ -63,7 +63,7 @@ export default function useConjurePublishReview(id, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -137,7 +137,7 @@ export default function useConjurePublishReview(id, arg1) {
             const _Error = Error;
             const self = this;
             const self2 = this;
-            const error = new Error("Saving who can remix failed");
+            const error = new Error("Saving who can make a copy failed");
             throw error;
           }
           c1 = 3;
@@ -209,7 +209,7 @@ export default function useConjurePublishReview(id, arg1) {
   if (null == tmp20) {
     length = memo.filter((creates) => creates.creates).length;
   } else {
-    const conjureViewPlacementCreatedChannels = tmp4(18465).conjureViewPlacementCreatedChannels;
+    const conjureViewPlacementCreatedChannels = tmp4(18472).conjureViewPlacementCreatedChannels;
     const draft = tmp20.draft;
     require("conjureViewPlacement");
     if (appChannels == null) {

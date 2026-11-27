@@ -1,10 +1,10 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8825
+// Function ID: 8826
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8243, 4976, 4892, 4955, 6799, 1387, 8825, 21, 2118, 6405, 6401, 6400, 504, 8827, 7628, 8828, 8831, 572, 5604, 6395, 2]
+// Dependencies: [32, 19, 8244, 4976, 4892, 4955, 6799, 1387, 8826, 21, 2118, 6405, 6401, 6400, 504, 8828, 7628, 8829, 8832, 572, 5604, 6395, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext, useExecuteComponentInteraction, useGetActionComponentState
 
-// Module 8824 (ComponentStateContext)
+// Module 8825 (ComponentStateContext)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Server from "Server" /* 2118 */;
@@ -13,13 +13,13 @@ import InteractionTypes from "InteractionTypes" /* 6400 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 6405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InteractionStore from "InteractionStore" /* 8243 */;
+import InteractionStore from "InteractionStore" /* 8244 */;
 import LurkingStore from "LurkingStore" /* 4976 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 6799 */;
 import UserStore from "UserStore" /* 1387 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8825 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8826 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -139,8 +139,8 @@ function useShouldDisableInteractiveComponents(channel_id) {
     return flag;
   });
   let guild_id;
-  const useCurrentUserCommunicationDisabled = channel(8827).useCurrentUserCommunicationDisabled;
-  channel(8827);
+  const useCurrentUserCommunicationDisabled = channel(8828).useCurrentUserCommunicationDisabled;
+  channel(8828);
   if (channel != null) {
     guild_id = channel.guild_id;
   }

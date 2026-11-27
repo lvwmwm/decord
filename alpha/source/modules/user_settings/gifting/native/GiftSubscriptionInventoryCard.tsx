@@ -1,9 +1,9 @@
-// Module ID: 14032
-// Function ID: 14033
+// Module ID: 14039
+// Function ID: 14040
 // Name: GiftSubscriptionInventoryCard
-// Dependencies: [32, 19, 17, 11927, 1387, 6359, 6360, 1389, 21, 5043, 575, 1112, 14020, 2451, 2911, 504, 5099, 6145, 11928, 5730, 14033, 5634, 7508, 7047, 14034, 2]
+// Dependencies: [32, 19, 17, 11935, 1387, 6359, 6360, 1389, 21, 5043, 575, 1112, 14027, 2451, 2911, 504, 5099, 6145, 11936, 5730, 14040, 5634, 7508, 7047, 14041, 2]
 
-// Module 14032 (GiftSubscriptionInventoryCard)
+// Module 14039 (GiftSubscriptionInventoryCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
@@ -11,11 +11,11 @@ import _modDef2451 from "module_2451" /* 2451 */;
 import _modDef2911 from "module_2911" /* 2911 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7508 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11928 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14033 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11936 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GiftCodeStore from "GiftCodeStore" /* 11927 */;
+import GiftCodeStore from "GiftCodeStore" /* 11935 */;
 import UserStore from "UserStore" /* 1387 */;
 import EntitlementStore from "EntitlementStore" /* 6359 */;
 import SKUStore from "SKUStore" /* 6360 */;
@@ -80,7 +80,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
   let closure_7;
   const tmp = closure_13();
   let tmp2 = recipientUserId;
-  let obj = recipientUserId(14020);
+  let obj = recipientUserId(14027);
   const giftedSubscriptionRowState = obj.getGiftedSubscriptionRowState(subscription);
   recipientUserId = null;
   if ("pending" !== giftedSubscriptionRowState.kind) {
@@ -197,7 +197,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
   const Text = tmp2(5634).Text;
   const intl4 = tmp2(1112).intl;
   const stringResult = intl4.string(tmp2(1112).t.lG6a5x);
-  const tmp2Result10 = tmp2(14020);
+  const tmp2Result10 = tmp2(14027);
   const giftSubscriptionInterval = tmp2Result10.getGiftSubscriptionInterval(subscription.planId);
   let formatToPlainString2Result = stringResult;
   if (null != giftSubscriptionInterval) {
@@ -258,7 +258,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
           tmp20Result6 = null;
           if (null != stateFromStores2) {
             const obj15 = { giftCode, sku: stateFromStores2, isFirst: true, canRevoke: false, showCopy: true };
-            tmp20Result6 = tmp20(tmp23(14034), obj15);
+            tmp20Result6 = tmp20(tmp23(14041), obj15);
           }
         }
       }

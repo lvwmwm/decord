@@ -1,16 +1,16 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9563
+// Function ID: 9564
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1231, 5076, 4879, 4884, 1071, 1081, 1256, 4876, 9563, 4877, 504, 9564, 5097, 9565, 9566, 4875, 2]
+// Dependencies: [32, 19, 1231, 5076, 4879, 4884, 1071, 1081, 1256, 4876, 9564, 4877, 504, 9565, 5097, 9566, 9567, 4875, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 9562 (useGetDismissibleContent)
+// Module 9563 (useGetDismissibleContent)
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4875 */;
 import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 4884 */;
-import DismissibleContentAvailability from "DismissibleContentAvailability" /* 9565 */;
-import markScopedDismissibleContentAsDismissed from "markScopedDismissibleContentAsDismissed" /* 9566 */;
+import DismissibleContentAvailability from "DismissibleContentAvailability" /* 9566 */;
+import markScopedDismissibleContentAsDismissed from "markScopedDismissibleContentAsDismissed" /* 9567 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -36,7 +36,7 @@ function useScopedDismissibleContentSelection(items1, groupName, deduplicateImpr
   let recurringStates;
   let snowflakeId;
   let version;
-  const f126852 = (scope) => {
+  const f127256 = (scope) => {
     let items1;
     const obj = groupName(closure_2[13]);
     if (obj.isGuildScopedDismissibleContent(scope)) {
@@ -47,7 +47,7 @@ function useScopedDismissibleContentSelection(items1, groupName, deduplicateImpr
     }
     return items1;
   };
-  const f126855 = (item, index) => {
+  const f127259 = (item, index) => {
     items = [item, closure_3[index]];
     return items;
   };
@@ -55,8 +55,8 @@ function useScopedDismissibleContentSelection(items1, groupName, deduplicateImpr
   _require = found.some((kind) => "single_use" === kind.kind);
   let tmp = _require;
   let closure_1 = found.some(require("DismissibleContentScope").isRecurringScopedDismissibleContent);
-  let items = [...new Set(found.flatMap(f126852))];
-  new Set(found.flatMap(f126852));
+  let items = [...new Set(found.flatMap(f127256))];
+  new Set(found.flatMap(f127256));
   let obj = require("get initialized");
   items1 = [closure_5];
   const stateFromStoresObject = obj.useStateFromStoresObject(items1, () => {
@@ -88,8 +88,8 @@ function useScopedDismissibleContentSelection(items1, groupName, deduplicateImpr
     let guildDismissedContentState;
     return items.map((item) => guildDismissedContentState.getGuildDismissedContentState(item));
   });
-  let obj3 = { dismissedContents, recurringStates, guildStates: new Map(items.map(f126855)) };
-  new Map(items.map(f126855));
+  let obj3 = { dismissedContents, recurringStates, guildStates: new Map(items.map(f127259)) };
+  new Map(items.map(f127259));
   let tmp6 = require("NewUserDismissibleContentRegistry");
   const useNewUserDismissibleContent = tmp6.useNewUserDismissibleContent;
   const found1 = found.filter(checksNewUsersWithHook);
@@ -112,7 +112,7 @@ function useScopedDismissibleContentSelection(items1, groupName, deduplicateImpr
     found2 = null;
   }
   if (null != found2) {
-    const tmpResult = tmp(9564);
+    const tmpResult = tmp(9565);
     dismissibleContentShowing = tmpResult.getDismissibleContentShowing(found2);
   } else {
     dismissibleContentShowing = closure_12;
@@ -134,7 +134,7 @@ function useScopedDismissibleContentSelection(items1, groupName, deduplicateImpr
   guildId = stateFromStores;
   if (null != found2) {
     guildId = stateFromStores;
-    const tmpResult7 = tmp(9564);
+    const tmpResult7 = tmp(9565);
     if (tmpResult7.isGuildScopedDismissibleContent(found2)) {
       guildId = found2.scope.guildId;
     }
@@ -156,7 +156,7 @@ function useScopedDismissibleContentSelection(items1, groupName, deduplicateImpr
     }
     return hasItem;
   });
-  const tmpResult8 = tmp(9563);
+  const tmpResult8 = tmp(9564);
   [first] = tmpResult8.useOverlayLockState();
   let closure_7 = tmp14;
   let result = null != content;
@@ -241,7 +241,7 @@ let result = size.fileFinishedImporting("modules/dismissible_content/useGetDismi
 
 export { useScopedDismissibleContentSelection };
 export function useGetDismissibleContent(items3, groupName) {
-  const f96126 = (item) => {
+  const f96359 = (item) => {
     const obj = require("DismissibleContentScope");
     let result = obj.scopeDismissibleContentEntry(item);
     if (result == null) {
@@ -250,8 +250,8 @@ export function useGetDismissibleContent(items3, groupName) {
     return result;
   };
   const items = [, ];
-  ({ visibleContent: arr[0], markAsDismissed: arr[1] } = useScopedDismissibleContentSelection(items3.flatMap(f96126), groupName));
-  useScopedDismissibleContentSelection(items3.flatMap(f96126), groupName);
+  ({ visibleContent: arr[0], markAsDismissed: arr[1] } = useScopedDismissibleContentSelection(items3.flatMap(f96359), groupName));
+  useScopedDismissibleContentSelection(items3.flatMap(f96359), groupName);
   const items1 = [, ];
   [arr2[0], arr2[1]] = items;
   _slicedToArray(items, 2);
@@ -338,14 +338,14 @@ export function useGetTimeRecurringSnowflakeBoundDismissibleContent(content, tim
   return items2;
 }
 export function useGetSingleUseGuildDismissibleContent_UNSAFE(arr, id, CHANNEL_NOTICES) {
-  const f96127 = (content) => {
+  const f96360 = (content) => {
     const obj = { kind: "single_use_guild", content, scope: obj2 };
     return obj;
   };
   let closure_0 = id;
   const items = [, ];
-  ({ visibleContent: arr[0], markAsDismissed: arr[1] } = useScopedDismissibleContentSelection(arr.map(f96127), CHANNEL_NOTICES));
-  useScopedDismissibleContentSelection(arr.map(f96127), CHANNEL_NOTICES);
+  ({ visibleContent: arr[0], markAsDismissed: arr[1] } = useScopedDismissibleContentSelection(arr.map(f96360), CHANNEL_NOTICES));
+  useScopedDismissibleContentSelection(arr.map(f96360), CHANNEL_NOTICES);
   return items;
 }
 export function useGetTimeRecurringGuildDismissibleContent_UNSAFE(content, guildId, timeRecurringConfig, GUILD_HEADER_TOOLTIPS) {

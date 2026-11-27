@@ -1,7 +1,7 @@
 // Module ID: 7818
 // Function ID: 7819
 // Name: getOnClick
-// Dependencies: [32, 5, 2165, 5775, 7590, 502, 4955, 4914, 5762, 6391, 4946, 5076, 6164, 1071, 1073, 7591, 572, 5763, 7819, 8478, 2120, 6991, 7604, 8613, 5761, 5765, 5785, 5718, 1256, 12938, 10086, 14494, 12291, 8354, 14712, 5786, 11645, 9893, 1380, 9889, 6876, 5789, 6310, 6013, 5666, 8839, 12071, 2]
+// Dependencies: [32, 5, 2165, 5775, 7590, 502, 4955, 4914, 5762, 6391, 4946, 5076, 6164, 1071, 1073, 7591, 572, 5763, 7819, 8479, 2120, 6991, 7604, 8614, 5761, 5765, 5785, 5718, 1256, 12946, 10087, 14501, 12299, 8355, 14719, 5786, 11653, 9894, 1380, 9890, 6876, 5789, 6310, 6013, 5666, 8840, 12079, 2]
 // Exports: default
 
 // Module 7818 (getOnClick)
@@ -17,10 +17,10 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7591 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 7604 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7819 */;
-import activityBookmarkUtils from "activityBookmarkUtils" /* 8354 */;
-import QuestUtils from "QuestUtils" /* 9889 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12071 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12291 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 8355 */;
+import QuestUtils from "QuestUtils" /* 9890 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12079 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 12299 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
@@ -52,7 +52,7 @@ let map1;
 let tmp;
 let tmp11;
 const QuestContent = tmp11(6876);
-const SocialLayerStorefrontNativeActionCreators = tmp(11645);
+const SocialLayerStorefrontNativeActionCreators = tmp(11653);
 function openInviteModal() {
   return obj(...arguments);
 }
@@ -71,7 +71,7 @@ let obj = function _openInviteModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -99,7 +99,7 @@ let obj = function _openInviteModal() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -128,7 +128,7 @@ obj = function _handleInviteCodedLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -254,7 +254,7 @@ obj = function _handleInviteCodedLink() {
             return { value, done: true };
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp63) {
           c7 = 3;
           throw tmp63;
@@ -322,7 +322,7 @@ export default function getOnClick(assetURL) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "channel_id" };
+            result = { applicationId: "displayName", skuId: "isArray" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -414,7 +414,7 @@ export default function getOnClick(assetURL) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(14712, dependencyMap.paths);
+        const promise = asyncRequire(14719, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });
@@ -470,7 +470,7 @@ export default function getOnClick(assetURL) {
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(5765).CodedLinkType.QUESTS_EMBED) {
-      const tmp2Result = tmp2(9893);
+      const tmp2Result = tmp2(9894);
       if (tmp2Result.getIsEligibleForQuests()) {
         return function(preventDefault) {
           if (preventDefault != null) {
@@ -622,7 +622,7 @@ export default function getOnClick(assetURL) {
   const tmp2Result3 = tmp2(5666);
   let result = tmp2Result3.tryParseEventDetailsPath(pathname);
   if (!skipExtensionCheck) {
-    const tmp2Result4 = tmp2(8839);
+    const tmp2Result4 = tmp2(8840);
     if (null != tmp2Result4.isSuspiciousDownload(assetURL)) {
       fn = (preventDefault) => {
         if (preventDefault != null) {

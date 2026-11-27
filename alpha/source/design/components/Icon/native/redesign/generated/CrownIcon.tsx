@@ -1,14 +1,14 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11385
+// Function ID: 11386
 // Name: CrownIcon
-// Dependencies: [19, 21, 575, 5729, 11385, 2]
+// Dependencies: [19, 21, 575, 5729, 11386, 2]
 // Exports: CrownIcon
 
-// Module 11384 (CrownIcon)
+// Module 11385 (CrownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 11385 */;
+import AssetRegistry from "AssetRegistry" /* 11386 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

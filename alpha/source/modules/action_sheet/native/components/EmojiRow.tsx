@@ -1,22 +1,22 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 12264
+// Function ID: 12265
 // Name: EmojiRow
-// Dependencies: [19, 17, 5272, 21, 5043, 5257, 5259, 9091, 4987, 8244, 9548, 5607, 575, 12257, 12258, 9092, 12259, 6380, 2]
+// Dependencies: [19, 17, 5272, 21, 5043, 5257, 5259, 9092, 4987, 8245, 9549, 5607, 575, 12265, 12266, 9093, 12267, 6380, 2]
 // Exports: default
 
-// Module 12256 (EmojiRow)
+// Module 12264 (EmojiRow)
 import react_native from "react-native" /* 17 */;
 import ReactionUtils from "ReactionUtils" /* 4987 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
 import useToken from "useToken" /* 5607 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 9091 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9092 */;
-import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9548 */;
-import useEmojisForReactionRow from "useEmojisForReactionRow" /* 12257 */;
-import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 12258 */;
-import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 12259 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 9092 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9093 */;
+import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9549 */;
+import useEmojisForReactionRow from "useEmojisForReactionRow" /* 12265 */;
+import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 12266 */;
+import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 12267 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -27,7 +27,7 @@ let dependencyMap;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const MessageActionCreatorsDefault = tmp3(8244);
+const MessageActionCreatorsDefault = tmp3(8245);
 const View = react_native.View;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

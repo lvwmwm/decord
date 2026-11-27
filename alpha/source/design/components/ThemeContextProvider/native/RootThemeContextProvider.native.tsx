@@ -1,10 +1,10 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 10590
+// Function ID: 10591
 // Name: ThemeContextProvider/RootThemeContextProvider
 // Dependencies: [19, 1082, 21, 5104, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 10589 (ThemeContextProvider/RootThemeContextProvider)
+// Module 10590 (ThemeContextProvider/RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1082 */;
 import native from "native" /* 5104 */;

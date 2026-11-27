@@ -1,17 +1,17 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18026
+// Function ID: 18027
 // Name: useWaterwheelsDiscoverAnalytics
-// Dependencies: [32, 19, 17, 502, 5076, 1071, 18018, 1502, 18020, 18021, 8932, 18010, 572, 2]
+// Dependencies: [32, 19, 17, 502, 5076, 1071, 18025, 1502, 18027, 18028, 8933, 18017, 572, 2]
 // Exports: default
 
-// Module 18019 (useWaterwheelsDiscoverAnalytics)
+// Module 18026 (useWaterwheelsDiscoverAnalytics)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8932 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 18010 */;
-import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 18018 */;
-import WaterwheelsDiscoverAnalytics from "WaterwheelsDiscoverAnalytics" /* 18021 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8933 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 18017 */;
+import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 18025 */;
+import WaterwheelsDiscoverAnalytics from "WaterwheelsDiscoverAnalytics" /* 18028 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -130,7 +130,7 @@ export default function useWaterwheelsDiscoverAnalytics(arg0, arg1) {
       const result = obj.toDiscoverAnalyticsItem(itemId);
       const obj2 = WaterwheelsDiscoverAnalytics;
       const discoverActionParameters = obj2.getDiscoverActionParameters(type, arg2);
-      const tmp6 = type.type === WaterwheelsCardTypes.WaterwheelsActionType.JOIN_GUILD || type.type === tmp2(8932).WaterwheelsActionType.OPEN_GAME;
+      const tmp6 = type.type === WaterwheelsCardTypes.WaterwheelsActionType.JOIN_GUILD || type.type === tmp2(8933).WaterwheelsActionType.OPEN_GAME;
       const trackActionResult = trackAction(result, discoverActionParameters, tmp6);
       if (null != trackActionResult) {
         const tmp2Result = WaterwheelsDiscoverJoinAttribution;

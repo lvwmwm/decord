@@ -1,10 +1,10 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 18076
+// Function ID: 18077
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 4955, 4914, 1387, 7569, 1071, 21, 5043, 575, 504, 1256, 7570, 17861, 1186, 6822, 1112, 2188, 2]
+// Dependencies: [19, 17, 4955, 4914, 1387, 7569, 1071, 21, 5043, 575, 504, 1256, 7570, 17868, 1186, 6822, 1112, 2188, 2]
 // Exports: default
 
-// Module 18069 (NsfwGateGuildSidebar)
+// Module 18076 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -35,7 +35,7 @@ let closure_14 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/age_gate/native/components/NsfwGateGuildSidebar.tsx");
 
 export default function NsfwGateGuildSidebar(guildId) {
-  let NQuXf0;
+  let YHWOSK;
   let format;
   let intl;
   let items2;
@@ -74,13 +74,13 @@ export default function NsfwGateGuildSidebar(guildId) {
     items2 = [tmp.container, style];
     const obj3 = { guild: stateFromStores, showExtraButtons: false };
     items3 = [closure_12(stateFromStores(tmp3[13]), obj3), ];
-    const obj4 = { titleStyle: stateFromStores(currentUser[15])(constants3.DISPLAY_SEMIBOLD, undefined, 20), bodyStyle: stateFromStores(currentUser[15])(constants3.PRIMARY_NORMAL, undefined, 14), containerStyle: tmp.emptyStateContainer, title: intl.string(tmp2(currentUser[16]).t.bAVpRR), body: format(NQuXf0, obj5) };
+    const obj4 = { titleStyle: stateFromStores(currentUser[15])(constants3.DISPLAY_SEMIBOLD, undefined, 20), bodyStyle: stateFromStores(currentUser[15])(constants3.PRIMARY_NORMAL, undefined, 14), containerStyle: tmp.emptyStateContainer, title: intl.string(tmp2(currentUser[16]).t.bAVpRR), body: format(YHWOSK, obj5) };
     const RefreshEmptyState = tmp2(tmp3[14]).RefreshEmptyState;
     intl = tmp2(tmp3[16]).intl;
     const intl2 = tmp2(tmp3[16]).intl;
     format = intl2.format;
     obj5 = { helpURL: obj6.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
-    NQuXf0 = tmp2(tmp3[16]).t.NQuXf0;
+    YHWOSK = tmp2(tmp3[16]).t.YHWOSK;
     obj6 = stateFromStores(currentUser[17]);
     items3[1] = closure_12(RefreshEmptyState, obj4);
     tmp7 = closure_13(View, obj2);

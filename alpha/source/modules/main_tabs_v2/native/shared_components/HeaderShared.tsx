@@ -1,20 +1,20 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 9005
+// Function ID: 9006
 // Name: HeaderShared
-// Dependencies: [19, 17, 9005, 21, 5043, 575, 5607, 7192, 5634, 6152, 1379, 9006, 9011, 1629, 1502, 9013, 558, 9016, 14087, 1186, 2]
+// Dependencies: [19, 17, 9006, 21, 5043, 575, 5607, 7192, 5634, 6152, 1379, 9007, 9012, 1629, 1502, 9014, 558, 9017, 14094, 1186, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9004 (HeaderShared)
+// Module 9005 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import useToken2 from "useToken" /* 5607 */;
 import Pressables from "Pressables" /* 6152 */;
-import react_native from "react-native" /* 9005 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9011 */;
-import ChannelActionsDefault from "ChannelActions" /* 9016 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14087 */;
+import react_native from "react-native" /* 9006 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9012 */;
+import ChannelActionsDefault from "ChannelActions" /* 9017 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14094 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,17 +1,17 @@
-// Module ID: 16536
-// Function ID: 16537
+// Module ID: 16543
+// Function ID: 16544
 // Name: useBountyVideoEndAppStoreOverlay
-// Dependencies: [19, 6871, 21, 16537, 9898, 9928, 16538, 6876, 8392, 8382, 6878, 9984, 9931, 2]
+// Dependencies: [19, 6871, 21, 16544, 9899, 9929, 16545, 6876, 8393, 8383, 6878, 9985, 9932, 2]
 // Exports: BountyVideoEndAppStoreProvider, canUseBountyVideoEndAppStoreOverlay, useBountyVideoEndAppStoreContext, useBountyVideoEndAppStoreOverlay
 
-// Module 16536 (useBountyVideoEndAppStoreOverlay)
+// Module 16543 (useBountyVideoEndAppStoreOverlay)
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
 import QuestContent from "QuestContent" /* 6876 */;
-import AnalyticsActions from "AnalyticsActions" /* 8382 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9898 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16537 */;
+import AnalyticsActions from "AnalyticsActions" /* 8383 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9899 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16544 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export function useBountyVideoEndAppStoreContext() {
 export function canUseBountyVideoEndAppStoreOverlay(cta) {
   const obj = QuestCustomAppStoreOverlayUtils;
   if (obj.canOpenCustomAppStoreOverlayFromCta(cta.cta)) {
-    const BountiesMobileQuestBarExperiment = tmp(9898).BountiesMobileQuestBarExperiment;
+    const BountiesMobileQuestBarExperiment = tmp(9899).BountiesMobileQuestBarExperiment;
     const obj2 = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
     const config = BountiesMobileQuestBarExperiment.getConfig(obj2);
     const tmp5 = config.enabled && tmp6 === BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarCtrVariant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;

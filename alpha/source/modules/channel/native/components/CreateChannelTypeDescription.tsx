@@ -1,16 +1,16 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8542
+// Function ID: 8543
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8542, 1071, 21, 8543, 7015, 5634, 1112, 2]
+// Dependencies: [19, 17, 8543, 1071, 21, 8544, 7015, 5634, 1112, 2]
 // Exports: default
 
-// Module 8541 (CreateChannelTypeDescription)
+// Module 8542 (CreateChannelTypeDescription)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import GuildProfileStore from "GuildProfileStore" /* 8542 */;
-import useGuildProfile from "useGuildProfile" /* 8543 */;
+import GuildProfileStore from "GuildProfileStore" /* 8543 */;
+import useGuildProfile from "useGuildProfile" /* 8544 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

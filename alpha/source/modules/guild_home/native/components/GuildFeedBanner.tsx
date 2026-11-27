@@ -1,9 +1,9 @@
-// Module ID: 18411
-// Function ID: 18412
+// Module ID: 18418
+// Function ID: 18419
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 15385, 4914, 18412, 1071, 21, 5043, 575, 1654, 1495, 5252, 15386, 1379, 1413, 7056, 504, 7309, 11984, 5730, 5050, 18413, 18414, 5253, 5256, 7052, 5634, 1186, 6152, 5725, 1112, 11889, 8736, 2]
+// Dependencies: [19, 17, 15392, 4914, 18419, 1071, 21, 5043, 575, 1654, 1495, 5252, 15393, 1379, 1413, 7056, 504, 7309, 11992, 5730, 5050, 18420, 18421, 5253, 5256, 7052, 5634, 1186, 6152, 5725, 1112, 11897, 8737, 2]
 
-// Module 18411 (GuildFeedBanner)
+// Module 18418 (GuildFeedBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -11,11 +11,11 @@ import PlatformUtils from "PlatformUtils" /* 1379 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import timingPresets from "timingPresets" /* 5256 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15386 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15393 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 15385 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 15392 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import GuildFeedConstants from "GuildFeedConstants" /* 18412 */;
+import GuildFeedConstants from "GuildFeedConstants" /* 18419 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -132,7 +132,7 @@ function GuildFeedBanner(guild) {
   size = tmp8(1495)();
   width = size.width;
   height = size.height;
-  const tmp2Result5 = tmp2(11984);
+  const tmp2Result5 = tmp2(11992);
   drawerWidth = tmp2Result5.useDrawerWidth();
   const items6 = [width, height, tmp14, drawerWidth];
   let obj4 = { style: tmp.container, children: items8 };
@@ -166,9 +166,9 @@ function GuildFeedBanner(guild) {
     let tmp8Result3;
     const tmp2Result6 = tmp2(5050);
     if (tmp2Result6.isThemeDark(tmp10)) {
-      tmp8Result3 = tmp8(18413);
+      tmp8Result3 = tmp8(18420);
     } else {
-      tmp8Result3 = tmp8(18414);
+      tmp8Result3 = tmp8(18421);
     }
     memo = tmp8Result3;
   }
@@ -220,7 +220,7 @@ function GuildFeedBanner(guild) {
       };
       const PressableOpacity = tmp2(6152).PressableOpacity;
       const obj17 = { size: "custom", color: sharedValue(575).colors.BADGE_INVERTED_BACKGROUND, secondaryColor: sharedValue(575).colors.BADGE_INVERTED_TEXT, style: tmp.publicIcon };
-      const ExperimentalWebBadgeIcon = tmp2(8736).ExperimentalWebBadgeIcon;
+      const ExperimentalWebBadgeIcon = tmp2(8737).ExperimentalWebBadgeIcon;
       items13 = [closure_10(ExperimentalWebBadgeIcon, obj17), ];
       const obj18 = { variant: "body-xs/medium", color: "text-default", children: intl.string(tmp2(1112).t["B/vjCu"]) };
       const Text = tmp2(5634).Text;

@@ -1,10 +1,10 @@
-// Module ID: 10603
-// Function ID: 10604
+// Module ID: 10604
+// Function ID: 10605
 // Name: NotificationTextUtils
-// Dependencies: [4891, 4976, 6946, 4977, 6965, 4896, 4892, 4914, 5851, 4985, 4946, 5076, 7654, 6167, 4886, 1387, 10604, 1071, 5669, 1111, 6833, 4868, 1405, 10605, 6982, 6775, 5220, 6963, 8348, 5659, 1112, 8817, 6807, 6978, 10606, 3, 5657, 5099, 2118, 8344, 10617, 504, 2]
+// Dependencies: [4891, 4976, 6946, 4977, 6965, 4896, 4892, 4914, 5851, 4985, 4946, 5076, 7654, 6167, 4886, 1387, 10605, 1071, 5669, 1111, 6833, 4868, 1405, 10606, 6982, 6775, 5220, 6963, 8349, 5659, 1112, 8818, 6807, 6978, 10607, 3, 5657, 5099, 2118, 8345, 10618, 504, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 10603 (NotificationTextUtils)
+// Module 10604 (NotificationTextUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
@@ -22,12 +22,12 @@ import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
 import AgeGateUtils from "AgeGateUtils" /* 6833 */;
 import isSystemMessageDefault from "isSystemMessage" /* 6978 */;
 import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6982 */;
-import MessageParserDefault from "MessageParser" /* 8344 */;
-import IsolateString from "IsolateString" /* 8348 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8817 */;
-import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 10605 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 10606 */;
-import FocusModeUtils from "FocusModeUtils" /* 10617 */;
+import MessageParserDefault from "MessageParser" /* 8345 */;
+import IsolateString from "IsolateString" /* 8349 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8818 */;
+import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 10606 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 10607 */;
+import FocusModeUtils from "FocusModeUtils" /* 10618 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import LurkingStore from "LurkingStore" /* 4976 */;
 import MessageRequestStore from "MessageRequestStore" /* 6946 */;
@@ -44,7 +44,7 @@ import SelfPresenceStore from "SelfPresenceStore" /* 7654 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4886 */;
 import UserStore from "UserStore" /* 1387 */;
-import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 10604 */;
+import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 10605 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

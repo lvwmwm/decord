@@ -1,10 +1,10 @@
-// Module ID: 20199
-// Function ID: 20200
+// Module ID: 20257
+// Function ID: 20258
 // Name: useCreateCreatorMonetizationEnableRequest
-// Dependencies: [5, 32, 19, 20150, 5793, 2]
+// Dependencies: [5, 32, 19, 20208, 5793, 2]
 // Exports: default
 
-// Module 20199 (useCreateCreatorMonetizationEnableRequest)
+// Module 20257 (useCreateCreatorMonetizationEnableRequest)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -44,7 +44,7 @@ export default function useCreateCreatorMonetizationEnableRequest(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -101,7 +101,7 @@ export default function useCreateCreatorMonetizationEnableRequest(arg0) {
             closure_129_2(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp38) {
           dependencyMap = tmp38;
           if (0 === c3) {

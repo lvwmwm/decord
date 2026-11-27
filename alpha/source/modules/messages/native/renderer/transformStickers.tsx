@@ -1,13 +1,13 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14551
+// Function ID: 14552
 // Name: transformStickers
-// Dependencies: [6779, 10682, 8846, 1112, 2]
+// Dependencies: [6779, 10683, 8847, 1112, 2]
 // Exports: default
 
-// Module 14544 (transformStickers)
+// Module 14551 (transformStickers)
 import intl3 from "intl" /* 1112 */;
 import StickersUtils from "StickersUtils" /* 6779 */;
-import getAccessibilityLabelOrCheapFallbackUnsafe2 from "getAccessibilityLabelOrCheapFallbackUnsafe" /* 8846 */;
+import getAccessibilityLabelOrCheapFallbackUnsafe2 from "getAccessibilityLabelOrCheapFallbackUnsafe" /* 8847 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/transformStickers.tsx");
@@ -40,7 +40,7 @@ export default function transformStickers(message) {
     if (str2 == null) {
       str2 = "";
     }
-    NativeLottieRenderMode = tmp(10682).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(10683).NativeLottieRenderMode;
     obj4 = {
       expensive() {
         const intl = closure_2_0(closure_2_1[3]).intl;

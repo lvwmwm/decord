@@ -1,10 +1,10 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18069
+// Function ID: 18070
 // Name: useFavoritesPruneInactiveThreads
-// Dependencies: [5, 19, 5849, 4895, 504, 10741, 2]
+// Dependencies: [5, 19, 5849, 4895, 504, 10742, 2]
 // Exports: default
 
-// Module 18062 (useFavoritesPruneInactiveThreads)
+// Module 18069 (useFavoritesPruneInactiveThreads)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
@@ -44,7 +44,7 @@ export default function useFavoritesPruneInactiveThreads() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -69,7 +69,7 @@ export default function useFavoritesPruneInactiveThreads() {
             } else if (1 === tmp3) {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c0 = 3;
               throw value;
@@ -81,7 +81,7 @@ export default function useFavoritesPruneInactiveThreads() {
             } else {
               c2 = 0;
               c0 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp6) {
             if (0 === c2) {

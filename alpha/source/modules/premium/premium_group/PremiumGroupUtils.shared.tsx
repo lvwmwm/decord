@@ -1,9 +1,9 @@
-// Module ID: 9700
-// Function ID: 9701
+// Module ID: 9701
+// Function ID: 9702
 // Dependencies: [2178, 2174, 6325, 2]
 // Exports: getPriceString
 
-// Module 9700
+// Module 9701
 import PremiumUtils from "PremiumUtils" /* 2174 */;
 import PriceUtils from "PriceUtils" /* 6325 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;

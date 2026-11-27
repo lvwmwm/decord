@@ -1,10 +1,10 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14033
+// Function ID: 14034
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1071, 21, 5043, 575, 6868, 5271, 7507, 1112, 5634, 7067, 5252, 9401, 14027, 6047, 14028, 2120, 9400, 5730, 5641, 5257, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5043, 575, 6868, 5271, 7507, 1112, 5634, 7067, 5252, 9402, 14034, 6047, 14035, 2120, 9401, 5730, 5641, 5257, 2]
 // Exports: default
 
-// Module 14026 (OutboundPromotionCard)
+// Module 14033 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

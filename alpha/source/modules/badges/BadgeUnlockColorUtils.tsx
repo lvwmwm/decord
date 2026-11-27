@@ -1,10 +1,10 @@
-// Module ID: 13854
-// Function ID: 13855
+// Module ID: 13861
+// Function ID: 13862
 // Name: BadgeUnlockColorUtils
 // Dependencies: [5040, 2]
 // Exports: pickBadgeColor
 
-// Module 13854 (BadgeUnlockColorUtils)
+// Module 13861 (BadgeUnlockColorUtils)
 import ColorUtils from "ColorUtils" /* 5040 */;
 import size from "module_2" /* 2 */;
 

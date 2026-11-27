@@ -1,18 +1,18 @@
-// Module ID: 17849
-// Function ID: 17850
+// Module ID: 17856
+// Function ID: 17857
 // Name: VoiceUsers
-// Dependencies: [19, 17, 4955, 21, 5043, 575, 10643, 9014, 8650, 504, 17850, 6124, 1112, 13517, 5634, 17854, 12464, 17855, 2]
+// Dependencies: [19, 17, 4955, 21, 5043, 575, 10644, 9015, 8651, 504, 17857, 6124, 1112, 13525, 5634, 17861, 12472, 17862, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 17849 (VoiceUsers)
+// Module 17856 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6124 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9014 */;
-import ChannelListLayout from "ChannelListLayout" /* 10643 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 13517 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9015 */;
+import ChannelListLayout from "ChannelListLayout" /* 10644 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 13525 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import Fragment from "Fragment" /* 21 */;
@@ -82,10 +82,10 @@ let closure_12 = react.memo(function VoiceStateUserItem(voiceState) {
   const collapsed = voiceState.collapsed;
   const voiceState2 = voiceState.voiceState;
   const isFirst = voiceState.isFirst;
-  const tmp3 = closure_11(channel(9014)());
-  const withLocalSelfMuteDeaf = user(8650).withLocalSelfMuteDeaf;
-  user(8650);
-  let obj = user(8650);
+  const tmp3 = closure_11(channel(9015)());
+  const withLocalSelfMuteDeaf = user(8651).withLocalSelfMuteDeaf;
+  user(8651);
+  let obj = user(8651);
   const result = withLocalSelfMuteDeaf(voiceState2, obj.useLocalSelfMuteDeaf());
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
@@ -106,7 +106,7 @@ let closure_12 = react.memo(function VoiceStateUserItem(voiceState) {
   }
   const obj3 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj6, user.id) };
   obj6 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: result.sessionId, channel, isGuest };
-  tmpResult = tmp(17850);
+  tmpResult = tmp(17857);
   if (member == null) {
     member = storeMember;
   }

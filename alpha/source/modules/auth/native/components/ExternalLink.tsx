@@ -1,10 +1,10 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 17699
+// Function ID: 17700
 // Name: ExternalLink
 // Dependencies: [19, 17, 21, 5043, 575, 7308, 1501, 7332, 1112, 5634, 6863, 5641, 2]
 // Exports: default
 
-// Module 17692 (ExternalLink)
+// Module 17699 (ExternalLink)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

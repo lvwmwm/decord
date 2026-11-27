@@ -1,15 +1,15 @@
-// Module ID: 9584
-// Function ID: 9585
+// Module ID: 9585
+// Function ID: 9586
 // Name: useComputeEmojiPickerFunctions
-// Dependencies: [32, 19, 6886, 9540, 9585, 4989, 12, 9541, 2161, 2]
+// Dependencies: [32, 19, 6886, 9541, 9586, 4989, 12, 9542, 2161, 2]
 // Exports: default
 
-// Module 9584 (useComputeEmojiPickerFunctions)
+// Module 9585 (useComputeEmojiPickerFunctions)
 import FunctionUtils from "FunctionUtils" /* 2161 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4989 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9540 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9541 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9585 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9541 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9542 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9586 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmojiPickerConstants from "EmojiPickerConstants" /* 6886 */;

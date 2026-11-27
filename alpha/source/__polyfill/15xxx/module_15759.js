@@ -1,21 +1,47 @@
 // Module ID: 15759
 // Function ID: 15760
-// Dependencies: [15750, 15760, 15758, 15761]
+// Dependencies: [15739, 15760]
 
 // Module 15759
-import _mod15750 from "module_15750" /* 15750 */;
-import _mod15758 from "module_15758" /* 15758 */;
+import _mod15739 from "module_15739" /* 15739 */;
 import _mod15760 from "module_15760" /* 15760 */;
 
-let tmp;
-const _mod15761 = tmp(15761);
-
-export default _mod15750 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = _mod15760("Symbol");
-  let tmpResultResult = _mod15758(tmp3);
-  if (tmpResultResult) {
-    const tmpResult = _mod15761;
-    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
+let tmp4;
+let tmp = _mod15739.process && _mod15739.process.versions;
+if (!tmp) {
+  tmp = _mod15739.Deno && _mod15739.Deno.version;
+  _mod15739.Deno && _mod15739.Deno.version;
+}
+let tmp3;
+if (tmp && tmp.v8) {
+  let num3;
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    num3 = +parts[0] + parts[1];
+  } else {
+    num3 = 1;
   }
-  return tmpResultResult;
-});
+  tmp3 = num3;
+  tmp4 = parts;
+}
+let match1 = !tmp3 && _mod15760;
+if (match1) {
+  const str3 = _mod15760;
+  const match = str3.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
+  }
+  match1 = tmp8;
+  tmp4 = match;
+}
+if (match1) {
+  const str4 = _mod15760;
+  match1 = str4.match(/Chrome\/(\d+)/);
+  tmp4 = match1;
+}
+if (match1) {
+  tmp3 = +tmp4[1];
+}
+
+export default tmp3;

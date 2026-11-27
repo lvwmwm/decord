@@ -1,15 +1,15 @@
-// Module ID: 8297
-// Function ID: 8298
+// Module ID: 8298
+// Function ID: 8299
 // Name: GuildPowerupsConstants
-// Dependencies: [1389, 1071, 8298, 8300, 4876, 1112, 7625, 2]
+// Dependencies: [1389, 1071, 8299, 8301, 4876, 1112, 7625, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 8297 (GuildPowerupsConstants)
+// Module 8298 (GuildPowerupsConstants)
 import intl15 from "intl" /* 1112 */;
 import dismissible_content from "dismissible_content" /* 4876 */;
 import GameServerExperiment from "GameServerExperiment" /* 7625 */;
-import GameServerConstants from "GameServerConstants" /* 8298 */;
-import Powerups from "Powerups" /* 8300 */;
+import GameServerConstants from "GameServerConstants" /* 8299 */;
+import Powerups from "Powerups" /* 8301 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 20357
-// Function ID: 20358
+// Module ID: 20415
+// Function ID: 20416
 // Name: LogOutDisclaimer
-// Dependencies: [21, 15479, 5634, 1112, 3175, 6839, 2]
+// Dependencies: [21, 15486, 5634, 1112, 3175, 6839, 2]
 // Exports: default
 
-// Module 20357 (LogOutDisclaimer)
+// Module 20415 (LogOutDisclaimer)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef3175 from "module_3175" /* 3175 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6839 */;
-import ModalDisclaimer2 from "ModalDisclaimer" /* 15479 */;
+import ModalDisclaimer2 from "ModalDisclaimer" /* 15486 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

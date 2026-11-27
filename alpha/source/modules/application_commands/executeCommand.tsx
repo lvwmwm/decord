@@ -1,25 +1,25 @@
-// Module ID: 10090
-// Function ID: 10091
+// Module ID: 10091
+// Function ID: 10092
 // Name: executeCommand
-// Dependencies: [5, 6883, 2189, 4914, 8124, 1387, 8182, 1071, 5048, 5695, 572, 8114, 8183, 2118, 10091, 10093, 38, 10094, 6013, 8180, 10062, 4989, 1255, 10070, 8829, 6400, 6790, 8828, 10095, 6134, 10096, 8244, 8147, 8132, 8128, 1112, 10097, 2]
+// Dependencies: [5, 6883, 2189, 4914, 8124, 1387, 8183, 1071, 5048, 5695, 572, 8114, 8184, 2118, 10092, 10094, 38, 10095, 6013, 8181, 10063, 4989, 1255, 10071, 8830, 6400, 6790, 8829, 10096, 6134, 10097, 8245, 8148, 8133, 8128, 1112, 10098, 2]
 // Exports: default, retryCommandMessage
 
-// Module 10090 (executeCommand)
+// Module 10091 (executeCommand)
 import MessageConstants from "MessageConstants" /* 5048 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
 import MessageQueue from "MessageQueue" /* 6790 */;
 import UploadUtils from "UploadUtils" /* 8128 */;
-import FileUtils from "FileUtils" /* 8132 */;
-import UploadLimits from "UploadLimits" /* 8147 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8829 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10095 */;
+import FileUtils from "FileUtils" /* 8133 */;
+import UploadLimits from "UploadLimits" /* 8148 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8830 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10096 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8124 */;
 import UserStore from "UserStore" /* 1387 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8182 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8183 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let obj = function _executeCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -652,7 +652,7 @@ let obj = function _executeCommand() {
               }
             }
             c16 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         }
       }
@@ -678,7 +678,7 @@ obj = function _retryCommandMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -718,7 +718,7 @@ obj = function _retryCommandMessage() {
             closure_4(obj5);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp12) {
           c6 = 3;
           throw tmp12;
@@ -753,7 +753,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce, attachments, maxSizeCallback, analytics_location: tmp2, sectionName: tmp3, source: tmp4 };
     nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      const obj2 = onMessageSuccess(10070);
+      const obj2 = onMessageSuccess(10071);
       nonce = obj2.createNonce();
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
@@ -842,7 +842,7 @@ obj = function _displayInteractionLifecycleInChat() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1016,7 +1016,7 @@ obj = function _getMaxAndTotalFileSize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {

@@ -1,10 +1,10 @@
-// Module ID: 10234
-// Function ID: 10235
+// Module ID: 10235
+// Function ID: 10236
 // Name: EmbeddedAppShimExperiment
 // Dependencies: [1451, 2]
 // Exports: getEmbeddedAppShimVersion, useEmbeddedAppShimVersion
 
-// Module 10234 (EmbeddedAppShimExperiment)
+// Module 10235 (EmbeddedAppShimExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

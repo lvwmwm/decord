@@ -1,10 +1,10 @@
-// Module ID: 11218
-// Function ID: 11219
+// Module ID: 11219
+// Function ID: 11220
 // Name: CollectiblesWishlistUtils
 // Dependencies: [2113, 1112, 6323, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 11218 (CollectiblesWishlistUtils)
+// Module 11219 (CollectiblesWishlistUtils)
 import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
 import size from "module_2" /* 2 */;

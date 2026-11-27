@@ -1,10 +1,10 @@
-// Module ID: 8488
-// Function ID: 8489
+// Module ID: 8489
+// Function ID: 8490
 // Name: GuildEventModalComponents
-// Dependencies: [19, 17, 4898, 1071, 21, 5043, 7274, 1112, 8466, 5634, 8489, 2019, 5257, 8499, 2120, 8500, 8501, 8502, 7167, 8503, 8504, 8107, 7163, 7251, 7253, 7440, 2169, 8506, 6115, 2]
+// Dependencies: [19, 17, 4898, 1071, 21, 5043, 7274, 1112, 8467, 5634, 8490, 2019, 5257, 8500, 2120, 8501, 8502, 8503, 7167, 8504, 8505, 8107, 7163, 7251, 7253, 7440, 2169, 8507, 6115, 2]
 // Exports: GuildEventDatetime, GuildEventDescription, GuildEventEntityTypeSelection, GuildEventLocation, GuildEventRecurrence, GuildEventTopic
 
-// Module 8488 (GuildEventModalComponents)
+// Module 8489 (GuildEventModalComponents)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
@@ -16,11 +16,11 @@ import VoiceNormalIcon from "VoiceNormalIcon" /* 7167 */;
 import TableRadioRow2 from "TableRadioRow" /* 7253 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7274 */;
 import TextArea2 from "TextArea" /* 7440 */;
-import ScheduleUtils from "ScheduleUtils" /* 8466 */;
-import useGuildsUserCanStartStageIn from "useGuildsUserCanStartStageIn" /* 8501 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8502 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8503 */;
-import LocationIcon from "LocationIcon" /* 8504 */;
+import ScheduleUtils from "ScheduleUtils" /* 8467 */;
+import useGuildsUserCanStartStageIn from "useGuildsUserCanStartStageIn" /* 8502 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8503 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8504 */;
+import LocationIcon from "LocationIcon" /* 8505 */;
 import react from "react" /* 19 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
 import Fragment from "Fragment" /* 21 */;
@@ -95,7 +95,7 @@ export function GuildEventRecurrence(startDate) {
   }, items);
   const tmp2 = startDate;
   let tmp3 = dependencyMap;
-  let obj = startDate(8466);
+  let obj = startDate(8467);
   recurrenceOptions = obj.getRecurrenceOptions(startDate);
   const found = recurrenceOptions.find((value) => value.value === selectedItem);
   let label;
@@ -126,18 +126,18 @@ export function GuildEventRecurrence(startDate) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp3 = asyncRequire(8499, dependencyMap.paths);
+      const tmp3 = asyncRequire(8500, dependencyMap.paths);
       intl = intl7.intl;
       openLazy(tmp3, "SelectRecurrenceOption", obj2);
     },
     text: intl2.string(tmp2(1112).t["59TVxL"]),
     value: label,
-    icon: recurrenceRule(8500),
+    icon: recurrenceRule(8501),
     iconPosition: "end",
     accessibilityLabel: intl3.string(tmp2(1112).t["59TVxL"]),
     accessibilityHint: label
   };
-  const InputButton = tmp2(8489).InputButton;
+  const InputButton = tmp2(8490).InputButton;
   intl2 = tmp2(1112).intl;
   intl3 = tmp2(1112).intl;
   items1[1] = closure_11(InputButton, obj5);
@@ -258,7 +258,7 @@ export function GuildEventDatetime(dateLabel) {
       ActionSheetActionCreatorsDefault;
       const obj3 = date;
       const obj4 = dependencyMap;
-      const tmp10 = asyncRequire(8506, dependencyMap.paths);
+      const tmp10 = asyncRequire(8507, dependencyMap.paths);
       if (null != dependencyMap) {
         toDateResult = obj4.toDate();
       } else {
@@ -298,7 +298,7 @@ export function GuildEventDatetime(dateLabel) {
   const obj5 = { style: tmp5.formHeader, variant: "body-sm/semibold", color: "text-subtle", children: dateLabel };
   items[0] = closure_11(dateLabel(5634).Text, obj5);
   const obj6 = { text: dateLabel, value: date.format("MMM Do YYYY"), onPress, disabled };
-  const InputButton = dateLabel(8489).InputButton;
+  const InputButton = dateLabel(8490).InputButton;
   date = "date";
   items[1] = closure_11(InputButton, obj6);
   items1 = [closure_12(disabled, obj4), ];
@@ -307,7 +307,7 @@ export function GuildEventDatetime(dateLabel) {
   const obj8 = { style: tmp5.formHeader, variant: "body-sm/semibold", color: "text-subtle", children: timeLabel };
   items2[0] = closure_11(dateLabel(5634).Text, obj8);
   const obj9 = { text: timeLabel, value: date.format("LT"), onPress, disabled };
-  const InputButton2 = dateLabel(8489).InputButton;
+  const InputButton2 = dateLabel(8490).InputButton;
   const time = "time";
   items2[1] = closure_11(InputButton2, obj9);
   items1[1] = closure_12(disabled, obj7);

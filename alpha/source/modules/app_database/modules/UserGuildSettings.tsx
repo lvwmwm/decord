@@ -1,9 +1,9 @@
-// Module ID: 8265
-// Function ID: 8266
+// Module ID: 8266
+// Function ID: 8267
 // Name: UserGuildSettings
 // Dependencies: [5, 6167, 3, 4921, 12, 2]
 
-// Module 8265 (UserGuildSettings)
+// Module 8266 (UserGuildSettings)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
@@ -45,7 +45,7 @@ class UserGuildSettings {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

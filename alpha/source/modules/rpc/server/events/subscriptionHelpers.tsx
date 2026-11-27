@@ -1,23 +1,23 @@
-// Module ID: 15922
-// Function ID: 15923
+// Module ID: 15929
+// Function ID: 15930
 // Name: subscriptionHelpers
-// Dependencies: [4891, 14740, 8374, 1071, 2145, 6937, 10191, 7637, 15870, 15871, 10042, 15872, 8389, 2]
+// Dependencies: [4891, 14747, 8375, 1071, 2145, 6937, 10192, 7637, 15877, 15878, 10043, 15879, 8390, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 15922 (subscriptionHelpers)
+// Module 15929 (subscriptionHelpers)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 2145 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
 import getSocketFrameDefault from "getSocketFrame" /* 7637 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8389 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 10042 */;
-import Constants3 from "Constants" /* 10191 */;
-import useThermalState from "useThermalState" /* 15870 */;
-import ThermalStates from "ThermalStates" /* 15871 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15872 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8390 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 10043 */;
+import Constants3 from "Constants" /* 10192 */;
+import useThermalState from "useThermalState" /* 15877 */;
+import ThermalStates from "ThermalStates" /* 15878 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15879 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14740 */;
-import QuestStore from "QuestStore" /* 8374 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14747 */;
+import QuestStore from "QuestStore" /* 8375 */;
 import size from "module_2" /* 2 */;
 
 const RPCEvents = Constants.RPCEvents;

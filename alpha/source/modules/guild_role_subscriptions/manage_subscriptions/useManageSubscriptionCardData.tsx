@@ -1,10 +1,10 @@
-// Module ID: 16832
-// Function ID: 16833
+// Module ID: 16839
+// Function ID: 16840
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 4914, 4968, 1071, 2169, 6325, 1112, 16825, 504, 16823, 2]
+// Dependencies: [32, 19, 4914, 4968, 1071, 2169, 6325, 1112, 16832, 504, 16830, 2]
 // Exports: default
 
-// Module 16832 (useManageSubscriptionCardData)
+// Module 16839 (useManageSubscriptionCardData)
 import Constants from "Constants" /* 1071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

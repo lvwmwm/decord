@@ -1,10 +1,10 @@
-// Module ID: 19991
-// Function ID: 19992
+// Module ID: 20016
+// Function ID: 20017
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 19985, 1071, 1390, 21, 5043, 575, 8471, 9761, 1256, 1112, 1269, 8136, 5641, 5634, 504, 2]
+// Dependencies: [5, 32, 19, 17, 20010, 1071, 1390, 21, 5043, 575, 8472, 9762, 1256, 1112, 1269, 8137, 5641, 5634, 504, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 19991 (HeaderRow)
+// Module 20016 (HeaderRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5634 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19985 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 20010 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -81,7 +81,7 @@ function HeaderRow(guild) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -205,7 +205,7 @@ function HeaderRow(guild) {
             c5 = 0;
             closure_132_4(false);
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           upload_id = tmp28;
@@ -230,7 +230,7 @@ function HeaderRow(guild) {
   [c6, c7] = tmp6;
   let tmp7 = guild;
   let tmp8 = dependencyMap;
-  obj = guild(8471);
+  obj = guild(8472);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1112).intl;
   let obj2 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1, text: stringResult };

@@ -1,18 +1,18 @@
-// Module ID: 12046
-// Function ID: 12047
+// Module ID: 12054
+// Function ID: 12055
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 1071, 21, 5043, 7536, 7554, 575, 1089, 1186, 12047, 12048, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 7536, 7554, 575, 1089, 1186, 12055, 12056, 2]
 // Exports: default
 
-// Module 12046 (OfficialConnectionIcon)
+// Module 12054 (OfficialConnectionIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import native from "native" /* 1186 */;
 import useRoleIconProps2 from "useRoleIconProps" /* 7536 */;
 import RoleIconDefault from "RoleIcon" /* 7554 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12047 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12048 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12055 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12056 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;

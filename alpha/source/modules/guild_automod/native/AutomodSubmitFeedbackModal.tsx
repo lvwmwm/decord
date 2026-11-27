@@ -1,10 +1,10 @@
-// Module ID: 12526
-// Function ID: 12527
+// Module ID: 12534
+// Function ID: 12535
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1071, 21, 5043, 575, 7480, 7751, 1112, 7752, 8241, 1629, 5634, 8088, 1186, 5641, 6013, 12527, 8240, 5724, 7355, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5043, 575, 7480, 7751, 1112, 7752, 8242, 1629, 5634, 8088, 1186, 5641, 6013, 12535, 8241, 5724, 7355, 2]
 // Exports: default
 
-// Module 12526 (AutomodSubmitFeedbackModal)
+// Module 12534 (AutomodSubmitFeedbackModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,7 +15,7 @@ import components_Button_Button from "components/Button/Button" /* 5641 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7480 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7752 */;
-import AutomodFeedback from "AutomodFeedback" /* 8241 */;
+import AutomodFeedback from "AutomodFeedback" /* 8242 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;

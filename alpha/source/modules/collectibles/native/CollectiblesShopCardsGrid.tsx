@@ -1,13 +1,13 @@
-// Module ID: 17523
-// Function ID: 17524
+// Module ID: 17530
+// Function ID: 17531
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 6311, 21, 5043, 11211, 11214, 17522, 12, 2]
+// Dependencies: [19, 17, 6311, 21, 5043, 11212, 11215, 17529, 12, 2]
 // Exports: default
 
-// Module 17523 (CollectiblesShopCardsGrid)
+// Module 17530 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 11211 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 11214 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 11212 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 11215 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6311 */;
@@ -67,7 +67,7 @@ export default function CollectiblesShopCardsGrid(products) {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom, header } = products);
   const rowContainer = closure_9();
-  let obj = products(17522);
+  let obj = products(17529);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;
@@ -77,9 +77,9 @@ export default function CollectiblesShopCardsGrid(products) {
     const obj = _modDef12;
     return obj.chunk(products, columns);
   }, items);
-  const obj2 = { accessibilityLabel, accessibilityRole: "list", scrollEnabled, showsVerticalScrollIndicator: false, onScroll, ref, onLayout, contentContainerStyle: { gap: products(11211).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" }, children: items1 };
+  const obj2 = { accessibilityLabel, accessibilityRole: "list", scrollEnabled, showsVerticalScrollIndicator: false, onScroll, ref, onLayout, contentContainerStyle: { gap: products(11212).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" }, children: items1 };
   items1 = [header, ];
-  ({ gap: products(11211).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
+  ({ gap: products(11212).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
   items1[1] = memo.map((arr, index) => {
     let closure_0 = index;
     let obj = {

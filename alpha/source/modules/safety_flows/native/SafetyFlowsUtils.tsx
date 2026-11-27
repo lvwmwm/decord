@@ -1,17 +1,17 @@
-// Module ID: 20356
-// Function ID: 20357
+// Module ID: 20414
+// Function ID: 20415
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1387, 20350, 20352, 6130, 20351, 5725, 1112, 3175, 1501, 20355, 2]
+// Dependencies: [5, 19, 1387, 20408, 20410, 6130, 20409, 5725, 1112, 3175, 1501, 20413, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 20356 (SafetyFlowsUtils)
+// Module 20414 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1112 */;
 import _modDef3175 from "module_3175" /* 3175 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import types from "types" /* 20350 */;
-import constants from "constants" /* 20351 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20352 */;
+import types from "types" /* 20408 */;
+import constants from "constants" /* 20409 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20410 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
@@ -36,7 +36,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ export function useOnTaskComplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ export function useOnTaskComplete() {
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = 3;

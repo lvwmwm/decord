@@ -1,22 +1,22 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14005
+// Function ID: 14006
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2189, 1387, 2178, 2179, 9104, 1071, 1389, 21, 5043, 504, 2174, 9376, 9111, 9113, 5634, 1379, 6326, 6325, 1112, 2026, 2]
+// Dependencies: [32, 19, 17, 2189, 1387, 2178, 2179, 9105, 1071, 1389, 21, 5043, 504, 2174, 9377, 9112, 9114, 5634, 1379, 6326, 6325, 1112, 2026, 2]
 // Exports: default
 
-// Module 13998 (PremiumSubscriptionPricingUpsell)
+// Module 14005 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 9376 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 9377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import UserStore from "UserStore" /* 1387 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import IAPStore from "IAPStore" /* 9104 */;
+import IAPStore from "IAPStore" /* 9105 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -65,7 +65,7 @@ function PricingSubheadingCopy() {
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f105462 = () => {
+  const f105703 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -101,8 +101,8 @@ function PricingSubheadingCopy() {
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f105462), 5);
-  str2(obj7.useStateFromStoresArray(items4, f105462), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f105703), 5);
+  str2(obj7.useStateFromStoresArray(items4, f105703), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];

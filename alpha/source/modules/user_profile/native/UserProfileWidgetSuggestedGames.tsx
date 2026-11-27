@@ -1,17 +1,17 @@
-// Module ID: 14607
-// Function ID: 14608
+// Module ID: 14614
+// Function ID: 14615
 // Name: UserProfileWidgetSuggestedGames
-// Dependencies: [19, 17, 502, 6137, 21, 575, 5043, 14584, 1112, 14586, 14573, 6109, 14558, 14570, 5052, 6382, 5634, 7944, 10761, 2]
+// Dependencies: [19, 17, 502, 6137, 21, 575, 5043, 14591, 1112, 14593, 14580, 6109, 14565, 14577, 5052, 6382, 5634, 7944, 10762, 2]
 // Exports: default
 
-// Module 14607 (UserProfileWidgetSuggestedGames)
+// Module 14614 (UserProfileWidgetSuggestedGames)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import react_native from "react-native" /* 6109 */;
 import Constants from "Constants" /* 6137 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6382 */;
-import WidgetUtils from "WidgetUtils" /* 14570 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14584 */;
+import WidgetUtils from "WidgetUtils" /* 14577 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14591 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -27,7 +27,7 @@ let hasOwnProperty;
 let metroImportAll;
 let obj2;
 let tmp;
-const GameCoverImageDefault = tmp(14586);
+const GameCoverImageDefault = tmp(14593);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native2);
 let closure_7 = Constants.TrackUserProfileEditActions;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

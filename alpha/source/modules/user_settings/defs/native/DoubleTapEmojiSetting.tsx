@@ -1,9 +1,9 @@
-// Module ID: 17592
-// Function ID: 17593
+// Module ID: 17599
+// Function ID: 17600
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 9555, 1071, 1390, 21, 5043, 575, 4868, 9549, 1413, 7488, 9537, 1256, 6380, 9556, 11962, 1112, 2]
+// Dependencies: [5, 19, 9556, 1071, 1390, 21, 5043, 575, 4868, 9550, 1413, 7488, 9538, 1256, 6380, 9557, 11970, 1112, 2]
 
-// Module 17592 (DoubleTapEmojiSetting)
+// Module 17599 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,12 +12,12 @@ import EmojiConstants from "EmojiConstants" /* 1390 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import UserSettings from "UserSettings" /* 4868 */;
 import EmojiDefault from "Emoji" /* 7488 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9549 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9550 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -102,7 +102,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -141,7 +141,7 @@ let obj3 = {
               const obj = emoji(closure_2[15]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             constants = 3;

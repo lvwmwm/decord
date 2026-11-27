@@ -1,10 +1,10 @@
-// Module ID: 19982
-// Function ID: 19983
+// Module ID: 20094
+// Function ID: 20095
 // Name: openGuildSettingsRemoveAppAlert
-// Dependencies: [5, 32, 19, 2165, 21, 504, 6971, 12503, 8573, 1112, 18607, 6052, 5634, 6048, 2]
+// Dependencies: [5, 32, 19, 2165, 21, 504, 6971, 12511, 8574, 1112, 18618, 6052, 5634, 6048, 2]
 // Exports: default
 
-// Module 19982 (openGuildSettingsRemoveAppAlert)
+// Module 20094 (openGuildSettingsRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 6048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -53,7 +53,7 @@ function RemoveAppAlert(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -93,7 +93,7 @@ function RemoveAppAlert(guildId) {
             c3 = 0;
             closure_128_6.current = null;
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           closure_2 = tmp17;
@@ -129,7 +129,7 @@ function RemoveAppAlert(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -175,7 +175,7 @@ function RemoveAppAlert(guildId) {
           } else {
             c2 = 0;
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           if (0 === c2) {
@@ -214,7 +214,7 @@ function RemoveAppAlert(guildId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -252,7 +252,7 @@ function RemoveAppAlert(guildId) {
                 id = 0;
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             if (0 === id) {

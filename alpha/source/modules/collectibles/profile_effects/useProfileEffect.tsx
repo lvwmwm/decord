@@ -1,10 +1,10 @@
-// Module ID: 9477
-// Function ID: 9478
+// Module ID: 9478
+// Function ID: 9479
 // Name: useProfileEffect
 // Dependencies: [19, 6311, 6329, 6317, 504, 6310, 2]
 // Exports: default
 
-// Module 9477 (useProfileEffect)
+// Module 9478 (useProfileEffect)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6310 */;
 import ProfileEffectRecord from "ProfileEffectRecord" /* 6317 */;
 import react from "react" /* 19 */;

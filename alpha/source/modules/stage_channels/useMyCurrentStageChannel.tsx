@@ -1,10 +1,10 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10273
+// Function ID: 10274
 // Name: useMyCurrentStageChannel
 // Dependencies: [4892, 4946, 504, 2]
 // Exports: default
 
-// Module 10272 (useMyCurrentStageChannel)
+// Module 10273 (useMyCurrentStageChannel)
 import get_initialized from "get initialized" /* 504 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;

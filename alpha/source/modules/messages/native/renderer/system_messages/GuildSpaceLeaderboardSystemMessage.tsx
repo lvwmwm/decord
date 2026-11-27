@@ -1,18 +1,18 @@
-// Module ID: 14445
-// Function ID: 14446
+// Module ID: 14452
+// Function ID: 14453
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [4892, 1387, 5043, 575, 4963, 10616, 6807, 12000, 1112, 14372, 8821, 8800, 14373, 2]
+// Dependencies: [4892, 1387, 5043, 575, 4963, 10617, 6807, 12008, 1112, 14379, 8822, 8801, 14380, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 14445 (GuildSpaceLeaderboardSystemMessage)
+// Module 14452 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 575 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4963 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8800 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 10616 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12000 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14372 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8801 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8822 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 10617 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12008 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14379 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import UserStore from "UserStore" /* 1387 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -123,7 +123,7 @@ export function createGuildSpaceLeaderboardSystemMessage(theme) {
           }
           const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult10.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
           tmpResult10 = renderer_EmbedUtils;
-          const merged1 = Object.assign(tmp26(14373)(theme));
+          const merged1 = Object.assign(tmp26(14380)(theme));
           return obj5;
         }
       }

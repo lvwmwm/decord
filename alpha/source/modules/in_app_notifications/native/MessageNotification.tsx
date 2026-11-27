@@ -1,20 +1,20 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10636
+// Function ID: 10637
 // Name: MessageNotification
-// Dependencies: [19, 5044, 10627, 21, 5043, 10636, 504, 1186, 1112, 6770, 10665, 8344, 5052, 6130, 6126, 10666, 2120, 10675, 10679, 2]
+// Dependencies: [19, 5044, 10628, 21, 5043, 10637, 504, 1186, 1112, 6770, 10666, 8345, 5052, 6130, 6126, 10667, 2120, 10676, 10680, 2]
 
-// Module 10635 (MessageNotification)
+// Module 10636 (MessageNotification)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
 import transitionToChannel from "transitionToChannel" /* 6126 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import MessageParserDefault from "MessageParser" /* 8344 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 10636 */;
+import MessageParserDefault from "MessageParser" /* 8345 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 10637 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10627 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10628 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ const memoResult = react.memo(function MessageNotification(notification) {
   const callback1 = guild.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: channel.id };
-    return obj.pushLazy(asyncRequire(10666, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+    return obj.pushLazy(asyncRequire(10667, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
   }, items3);
   const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items4);
   const NotificationPressable = tmp11(tmp12[17]).NotificationPressable;

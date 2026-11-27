@@ -1,10 +1,10 @@
-// Module ID: 12538
-// Function ID: 12539
+// Module ID: 12546
+// Function ID: 12547
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2189, 7912, 7886, 1071, 21, 5043, 575, 5634, 7887, 1112, 504, 3595, 12539, 5722, 10078, 6144, 5641, 12540, 12542, 12543, 6828, 1256, 12544, 5811, 5816, 12554, 7480, 12559, 7885, 2]
+// Dependencies: [19, 17, 2189, 7912, 7886, 1071, 21, 5043, 575, 5634, 7887, 1112, 504, 3595, 12547, 5722, 10079, 6144, 5641, 12548, 12550, 12551, 6828, 1256, 12552, 5811, 5816, 12562, 7480, 12567, 7885, 2]
 // Exports: default
 
-// Module 12538 (ClassificationDetail)
+// Module 12546 (ClassificationDetail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -17,9 +17,9 @@ import MonitoringAgentDefault from "MonitoringAgent" /* 5811 */;
 import MetricEvents from "MetricEvents" /* 5816 */;
 import TableRow2 from "TableRow" /* 6144 */;
 import SafetyHubModels from "SafetyHubModels" /* 7887 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 12539 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12544 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12554 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12547 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12552 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12562 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
@@ -287,7 +287,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj4) };
   obj4 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
   tmp2 = TouchableHitBoxDefault;
-  ShieldIcon = policyExplainerLink(10078).ShieldIcon;
+  ShieldIcon = policyExplainerLink(10079).ShieldIcon;
   items = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: closure_13(Text, obj6) };
   obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1112).t.zxUdpj, { classificationDescription: classificationTypeText }) };

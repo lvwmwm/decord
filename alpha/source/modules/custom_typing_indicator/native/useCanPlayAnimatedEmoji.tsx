@@ -1,10 +1,10 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 12988
+// Function ID: 12989
 // Name: useCanPlayAnimatedEmoji
 // Dependencies: [19, 5057, 4868, 2]
 // Exports: default
 
-// Module 12980 (useCanPlayAnimatedEmoji)
+// Module 12988 (useCanPlayAnimatedEmoji)
 import UserSettings from "UserSettings" /* 4868 */;
 import react2 from "react" /* 5057 */;
 import react from "react" /* 19 */;

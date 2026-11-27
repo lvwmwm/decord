@@ -1,13 +1,13 @@
-// Module ID: 18711
-// Function ID: 18712
+// Module ID: 18728
+// Function ID: 18729
 // Name: useConjureAutomodSettingsLink
-// Dependencies: [19, 4914, 4975, 6934, 7706, 1071, 21, 504, 6935, 1112, 4245, 8573, 2]
+// Dependencies: [19, 4914, 4975, 6934, 7706, 1071, 21, 504, 6935, 1112, 4245, 8574, 2]
 // Exports: ConjureAutomodSettingsLink, default
 
-// Module 18711 (useConjureAutomodSettingsLink)
+// Module 18728 (useConjureAutomodSettingsLink)
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;

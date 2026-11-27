@@ -1,21 +1,21 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11804
+// Function ID: 11805
 // Name: SummaryStore
-// Dependencies: [32, 5660, 8946, 4892, 4914, 6932, 4946, 6167, 1387, 11797, 8947, 504, 11, 1088, 11798, 572, 11799, 12, 2]
+// Dependencies: [32, 5660, 8947, 4892, 4914, 6932, 4946, 6167, 1387, 11805, 8948, 504, 11, 1088, 11806, 572, 11807, 12, 2]
 
-// Module 11796 (SummaryStore)
+// Module 11804 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import _mod8947 from "module_8947" /* 8947 */;
-import SummaryConstants from "SummaryConstants" /* 11797 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11798 */;
-import Summary from "Summary" /* 11799 */;
+import _mod8948 from "module_8948" /* 8948 */;
+import SummaryConstants from "SummaryConstants" /* 11805 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11806 */;
+import Summary from "Summary" /* 11807 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 5660 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 8946 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 8947 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
@@ -30,7 +30,7 @@ let dependencyMap, findIndexResult, flag, id, results, startId;
 function handleQuickSwitcherUpdate() {
   results = QuickSwitcherStore.getProps().results;
   const found = results.filter((type) => {
-    const tmp = type.type === _mod8947.AutocompleterResultTypes.TEXT_CHANNEL && 0 === type.record.type;
+    const tmp = type.type === _mod8948.AutocompleterResultTypes.TEXT_CHANNEL && 0 === type.record.type;
     return tmp;
   });
   closure_24 = found.map((record) => record.record.id);

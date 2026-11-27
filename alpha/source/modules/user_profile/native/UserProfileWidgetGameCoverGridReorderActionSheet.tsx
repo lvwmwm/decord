@@ -1,17 +1,17 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14604
+// Function ID: 14605
 // Name: UserProfileWidgetGameCoverGridReorderActionSheet
-// Dependencies: [19, 17, 502, 21, 5043, 575, 14584, 14586, 5303, 6147, 504, 14566, 6171, 14570, 14575, 1654, 14596, 1112, 14598, 14558, 2]
+// Dependencies: [19, 17, 502, 21, 5043, 575, 14591, 14593, 5303, 6147, 504, 14573, 6171, 14577, 14582, 1654, 14603, 1112, 14605, 14565, 2]
 // Exports: default
 
-// Module 14597 (UserProfileWidgetGameCoverGridReorderActionSheet)
+// Module 14604 (UserProfileWidgetGameCoverGridReorderActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import DragHandle from "DragHandle" /* 6147 */;
-import WidgetUtils from "WidgetUtils" /* 14570 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14584 */;
-import GameCoverImageDefault from "GameCoverImage" /* 14586 */;
+import WidgetUtils from "WidgetUtils" /* 14577 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14591 */;
+import GameCoverImageDefault from "GameCoverImage" /* 14593 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;

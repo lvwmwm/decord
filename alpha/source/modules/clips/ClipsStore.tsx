@@ -1,17 +1,17 @@
 // Module ID: 2139
 // Function ID: 2140
 // Name: ClipsStore
-// Dependencies: [32, 5, 2140, 502, 8131, 1071, 5943, 15484, 4854, 15485, 1405, 15486, 15488, 15489, 504, 572, 2]
+// Dependencies: [32, 5, 2140, 502, 8131, 1071, 5943, 15491, 4854, 15492, 1405, 15493, 15495, 15496, 504, 572, 2]
 
 // Module 2139 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import DiscordNativeDefault from "DiscordNative" /* 4854 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15484 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15486 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15488 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15489 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15491 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15493 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15495 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
@@ -49,7 +49,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_54.emitChange();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {

@@ -1,10 +1,10 @@
-// Module ID: 9521
-// Function ID: 9522
+// Module ID: 9522
+// Function ID: 9523
 // Name: HeaderAvatar
-// Dependencies: [19, 17, 5044, 4955, 6014, 21, 5043, 575, 1186, 504, 6015, 9522, 6375, 9523, 9511, 6152, 2]
+// Dependencies: [19, 17, 5044, 4955, 6014, 21, 5043, 575, 1186, 504, 6015, 9523, 6375, 9524, 9512, 6152, 2]
 // Exports: default
 
-// Module 9521 (HeaderAvatar)
+// Module 9522 (HeaderAvatar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -84,7 +84,7 @@ export default function HeaderAvatar(animate) {
   });
   const obj4 = { pendingValue: pendingAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
   avatarDecoration = undefined;
-  const tmp11 = id(9522);
+  const tmp11 = id(9523);
   const getProfilePreviewValue = guildId(6375).getProfilePreviewValue;
   guildId(6375);
   const tmp10 = id;
@@ -95,7 +95,7 @@ export default function HeaderAvatar(animate) {
   if (stateFromStores1 != null) {
     avatarDecoration1 = stateFromStores1.avatarDecoration;
   }
-  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(9523)(activities), animate: flag, avatarDecoration: tmp11Result };
+  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(9524)(activities), animate: flag, avatarDecoration: tmp11Result };
   tmp16 = null;
   tmp11Result = tmp11(getProfilePreviewValue(obj4));
   if (!disableStatus) {
@@ -112,7 +112,7 @@ export default function HeaderAvatar(animate) {
     const Avatar = tmp5(1186).Avatar;
     if (undefined !== pendingAvatarSrc) {
       const obj7 = { source: tmp5Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result = guildId(9511);
+      tmp5Result = guildId(9512);
       const merged2 = Object.assign(obj5);
       obj8 = obj7;
     } else {
@@ -127,7 +127,7 @@ export default function HeaderAvatar(animate) {
     const tmp45 = View;
     if (undefined !== pendingAvatarSrc) {
       const obj10 = { source: tmp5Result2.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result2 = guildId(9511);
+      tmp5Result2 = guildId(9512);
       const merged5 = Object.assign(obj5);
       obj11 = obj10;
     } else {

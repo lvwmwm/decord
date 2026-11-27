@@ -1,9 +1,9 @@
-// Module ID: 10847
-// Function ID: 10848
+// Module ID: 10848
+// Function ID: 10849
 // Name: StickerPickerListRowNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 10847 (StickerPickerListRowNativeComponent)
+// Module 10848 (StickerPickerListRowNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

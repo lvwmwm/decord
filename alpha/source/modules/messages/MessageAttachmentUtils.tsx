@@ -1,17 +1,17 @@
-// Module ID: 12450
-// Function ID: 12451
+// Module ID: 12458
+// Function ID: 12459
 // Name: MessageAttachmentUtils
-// Dependencies: [4975, 1071, 8811, 8816, 8815, 8929, 563, 4868, 8853, 1112, 2]
+// Dependencies: [4975, 1071, 8812, 8817, 8816, 8930, 563, 4868, 8854, 1112, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure
 
-// Module 12450 (MessageAttachmentUtils)
+// Module 12458 (MessageAttachmentUtils)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8811 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 8815 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8816 */;
-import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 8853 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8929 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8812 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 8816 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8817 */;
+import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 8854 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8930 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import size from "module_2" /* 2 */;
 
@@ -83,11 +83,11 @@ export function getObscureReasonForAttachment(attachment, enabledHarmTypesBitmas
   if (mediaObscuredReasonFromBitmask.length > 0) {
     first = mediaObscuredReasonFromBitmask[0];
   } else if (tmp4) {
-    first = tmp(8815).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(8816).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (flag) {
-      first = tmp(8815).ObscureReason.SPOILER;
+      first = tmp(8816).ObscureReason.SPOILER;
     }
   }
   return first;
@@ -107,11 +107,11 @@ export function getObscureReasonForEmbed(embed, message, flag2, enabledContentHa
   if (mediaObscuredReasonFromBitmask.length > 0) {
     first = mediaObscuredReasonFromBitmask[0];
   } else if (isMediaScanPendingResult) {
-    first = tmp(8815).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(8816).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (flag2) {
-      first = tmp(8815).ObscureReason.SPOILER;
+      first = tmp(8816).ObscureReason.SPOILER;
     }
   }
   return first;
@@ -137,17 +137,17 @@ export function getObscureReasonForUnfurledMediaItem(unfurledMediaItem, enabledH
     isMediaScanPendingResult = isMediaScanPending(obj3, enabledHarmTypesBitmaskForChannelAndAuthorId);
   }
   if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.EXPLICIT_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(8815).ObscureReason.EXPLICIT_CONTENT;
+    EXPLICIT_CONTENT = tmp(8816).ObscureReason.EXPLICIT_CONTENT;
   } else if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.GORE_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(8815).ObscureReason.GORE_CONTENT;
+    EXPLICIT_CONTENT = tmp(8816).ObscureReason.GORE_CONTENT;
   } else if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.SELF_HARM_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(8815).ObscureReason.SELF_HARM_CONTENT;
+    EXPLICIT_CONTENT = tmp(8816).ObscureReason.SELF_HARM_CONTENT;
   } else if (isMediaScanPendingResult) {
-    EXPLICIT_CONTENT = tmp(8815).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    EXPLICIT_CONTENT = tmp(8816).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     EXPLICIT_CONTENT = null;
     if (flag) {
-      EXPLICIT_CONTENT = tmp(8815).ObscureReason.SPOILER;
+      EXPLICIT_CONTENT = tmp(8816).ObscureReason.SPOILER;
     }
   }
   return EXPLICIT_CONTENT;
@@ -164,8 +164,8 @@ export function useShouldObscure(channel) {
   });
   const RenderSpoilers = channel(4868).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
-  const obj2 = channel(8811);
-  const enabledHarmTypesBitmaskForChannelType = obj2.getEnabledHarmTypesBitmaskForChannelType(channel(8816).ContentHarmTypeChannel.GUILD);
+  const obj2 = channel(8812);
+  const enabledHarmTypesBitmaskForChannelType = obj2.getEnabledHarmTypesBitmaskForChannelType(channel(8817).ContentHarmTypeChannel.GUILD);
   return getForumPostShouldObscure(media, !computeGlobalSpoilerDisplayDefault(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
 }
 export function getObscuredAlt(arg0) {

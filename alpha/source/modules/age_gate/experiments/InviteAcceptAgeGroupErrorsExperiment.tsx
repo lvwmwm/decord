@@ -1,10 +1,10 @@
-// Module ID: 12157
-// Function ID: 12158
+// Module ID: 12165
+// Function ID: 12166
 // Name: InviteAcceptAgeGroupErrorsExperiment
 // Dependencies: [1451, 2]
 // Exports: getIsInviteAcceptAgeGroupErrorsEnabled
 
-// Module 12157 (InviteAcceptAgeGroupErrorsExperiment)
+// Module 12165 (InviteAcceptAgeGroupErrorsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

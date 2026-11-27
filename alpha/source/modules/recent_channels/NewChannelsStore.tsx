@@ -1,9 +1,9 @@
-// Module ID: 8290
-// Function ID: 8291
+// Module ID: 8291
+// Function ID: 8292
 // Name: NewChannelsStore
 // Dependencies: [1231, 502, 4892, 4973, 4955, 4914, 6932, 6167, 1071, 1088, 6954, 7467, 11, 504, 6848, 572, 2]
 
-// Module 8290 (NewChannelsStore)
+// Module 8291 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -142,11 +142,11 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f125773 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f126177 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f125773));
-    new Set(items.filter(f125773));
+    closure_16[item] = new Set(items.filter(f126177));
+    new Set(items.filter(f126177));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;

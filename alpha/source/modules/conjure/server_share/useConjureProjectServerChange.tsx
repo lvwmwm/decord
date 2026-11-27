@@ -1,12 +1,12 @@
-// Module ID: 18508
-// Function ID: 18509
+// Module ID: 18515
+// Function ID: 18516
 // Name: useConjureProjectServerChange
-// Dependencies: [5, 32, 19, 6934, 18509, 504, 7575, 7667, 12508, 18510, 1112, 4245, 18511, 2]
+// Dependencies: [5, 32, 19, 6934, 18516, 504, 7575, 7667, 12516, 18517, 1112, 4245, 11457, 2]
 // Exports: default, useConjureProjectServerCandidates
 
-// Module 18508 (useConjureProjectServerChange)
+// Module 18515 (useConjureProjectServerChange)
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
-import conjureChangeRows from "conjureChangeRows" /* 18510 */;
+import conjureChangeRows from "conjureChangeRows" /* 18517 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -137,7 +137,7 @@ export default function useConjureProjectServerChange(id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;

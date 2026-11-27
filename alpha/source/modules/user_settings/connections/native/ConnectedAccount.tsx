@@ -1,9 +1,9 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16458
+// Function ID: 16459
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 7462, 4914, 1071, 6371, 21, 5043, 1186, 575, 6822, 7532, 504, 5641, 1112, 5634, 7052, 6178, 6141, 5104, 16452, 10523, 6046, 6118, 7747, 16453, 16456, 7549, 6370, 12056, 5722, 2188, 7944, 8708, 14077, 3627, 1413, 5050, 8710, 6143, 6144, 2]
+// Dependencies: [5, 32, 19, 17, 7462, 4914, 1071, 6371, 21, 5043, 1186, 575, 6822, 7532, 504, 5641, 1112, 5634, 7052, 6178, 6141, 5104, 16459, 10524, 6046, 6118, 7747, 16460, 16463, 7549, 6370, 12064, 5722, 2188, 7944, 8709, 14084, 3627, 1413, 5050, 8711, 6143, 6144, 2]
 
-// Module 16451 (ConnectedAccount)
+// Module 16458 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -20,11 +20,11 @@ import Constants2 from "Constants" /* 6371 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
 import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7532 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7549 */;
-import XLargeBoldIcon from "XLargeBoldIcon" /* 8710 */;
-import InfoBoxDefault from "InfoBox" /* 10523 */;
-import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 16452 */;
-import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 16453 */;
-import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 16456 */;
+import XLargeBoldIcon from "XLargeBoldIcon" /* 8711 */;
+import InfoBoxDefault from "InfoBox" /* 10524 */;
+import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 16459 */;
+import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 16460 */;
+import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 16463 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -245,7 +245,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -304,7 +304,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -334,7 +334,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -393,7 +393,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -423,7 +423,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -464,7 +464,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -495,7 +495,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -536,7 +536,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -657,35 +657,35 @@ class ConnectedAccount extends PureComponent {
     const type = account.type;
     const tmp4 = MetadataFields;
     if (constants.REDDIT === type) {
-      const tmp2Result = account(12056);
+      const tmp2Result = account(12064);
       redditMetadataItems = tmp2Result.generateRedditMetadataItems(metadata);
     } else if (constants.STEAM === type) {
-      const tmp2Result7 = account(12056);
+      const tmp2Result7 = account(12064);
       redditMetadataItems = tmp2Result7.generateSteamMetadataItems(metadata);
     } else if (constants.LETTERBOXD === type) {
-      const tmp2Result8 = account(12056);
+      const tmp2Result8 = account(12064);
       redditMetadataItems = tmp2Result8.generateLetterboxdMetadataItems(metadata);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.TWITTER !== type) {
           if (constants.MASTODON !== type) {
             if (constants.EBAY === type) {
-              const tmp2Result9 = account(12056);
+              const tmp2Result9 = account(12064);
               redditMetadataItems = tmp2Result9.generateEbayMetadataItems(metadata);
             } else if (constants.PAYPAL === type) {
-              const tmp2Result10 = account(12056);
+              const tmp2Result10 = account(12064);
               redditMetadataItems = tmp2Result10.generatePaypalMetadataItems(metadata);
             } else {
               redditMetadataItems = [];
               if (constants.TIKTOK === type) {
-                const tmp2Result11 = account(12056);
+                const tmp2Result11 = account(12064);
                 redditMetadataItems = tmp2Result11.generateTikTokMetadataItems(metadata);
               }
             }
           }
         }
       }
-      const tmp2Result12 = account(12056);
+      const tmp2Result12 = account(12064);
       redditMetadataItems = tmp2Result12.generateTwitterMetadataItems(metadata);
     }
     if (null !== createdAtDate) {
@@ -766,9 +766,9 @@ class ConnectedAccount extends PureComponent {
       let tmp19Result;
       const IconButton = tmp2(7944).IconButton;
       if (self.state.metadataAlreadyRefreshed) {
-        tmp19Result = tmp19(tmp2(8708).CheckmarkLargeBoldIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(8709).CheckmarkLargeBoldIcon, { size: "sm" });
       } else {
-        tmp19Result = tmp19(tmp2(14077).RefreshIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(14084).RefreshIcon, { size: "sm" });
       }
       const obj12 = { size: "sm", variant: "icon-only", icon: tmp19Result, accessibilityLabel: intl2.string(account(1112).t.wzzjk9), onPress: handleRefresh, disabled: self.state.metadataRefreshing || self.state.metadataAlreadyRefreshed };
       intl2 = tmp2(1112).intl;

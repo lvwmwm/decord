@@ -1,18 +1,18 @@
-// Module ID: 11284
-// Function ID: 11285
+// Module ID: 11285
+// Function ID: 11286
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1073, 21, 5043, 575, 11285, 5303, 1112, 9431, 6323, 11286, 5634, 2]
+// Dependencies: [32, 19, 17, 1073, 21, 5043, 575, 11286, 5303, 1112, 9432, 6323, 11287, 5634, 2]
 // Exports: default
 
-// Module 11284 (BundleProductDetailsActionSheetPreview)
+// Module 11285 (BundleProductDetailsActionSheetPreview)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import intl2 from "intl" /* 1112 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
-import useShopProductItems from "useShopProductItems" /* 9431 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 11286 */;
+import useShopProductItems from "useShopProductItems" /* 9432 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 11287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

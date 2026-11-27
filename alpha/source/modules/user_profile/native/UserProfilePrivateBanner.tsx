@@ -1,10 +1,10 @@
-// Module ID: 15067
-// Function ID: 15068
+// Module ID: 15074
+// Function ID: 15075
 // Name: UserProfilePrivateBanner
 // Dependencies: [19, 17, 7557, 21, 5043, 575, 1089, 7161, 5634, 1112, 2]
 // Exports: default
 
-// Module 15067 (UserProfilePrivateBanner)
+// Module 15074 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;

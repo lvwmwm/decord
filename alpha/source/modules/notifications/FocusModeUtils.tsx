@@ -1,10 +1,10 @@
-// Module ID: 10617
-// Function ID: 10618
+// Module ID: 10618
+// Function ID: 10619
 // Name: FocusModeUtils
-// Dependencies: [7654, 4988, 1071, 4868, 4873, 1226, 1256, 6046, 1112, 10618, 2]
+// Dependencies: [7654, 4988, 1071, 4868, 4873, 1226, 1256, 6046, 1112, 10619, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10617 (FocusModeUtils)
+// Module 10618 (FocusModeUtils)
 import wrappers from "wrappers" /* 1226 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import UserSettings from "UserSettings" /* 4868 */;

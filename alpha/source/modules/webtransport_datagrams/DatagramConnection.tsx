@@ -1,11 +1,11 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15100
+// Function ID: 15101
 // Name: DatagramConnection
-// Dependencies: [5871, 15094, 15095, 5960, 2]
+// Dependencies: [5871, 15101, 15102, 5960, 2]
 
-// Module 15093 (DatagramConnection)
+// Module 15100 (DatagramConnection)
 import RTCConnectionEvent from "RTCConnectionEvent" /* 5960 */;
-import DatagramEvent from "DatagramEvent" /* 15094 */;
+import DatagramEvent from "DatagramEvent" /* 15101 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 5871 */;
 import size from "module_2" /* 2 */;
 
@@ -23,13 +23,13 @@ class DatagramConnection extends TypedEventEmitter {
     obj.rtc = rtc;
     const onWebTransportAck = obj.onWebTransportAck;
     obj.webTransportAck = onWebTransportAck.bind(obj);
-    obj.on(obj(15094).DatagramEvent.Connect, () => {
+    obj.on(obj(15101).DatagramEvent.Connect, () => {
       obj.state = Connected.Connected;
       obj.clearConnectTimeout();
     });
     ({ on, onDisconnect } = obj);
-    on(obj(15094).DatagramEvent.Disconnect, onDisconnect.bind(obj));
-    const obj2 = obj(15095);
+    on(obj(15101).DatagramEvent.Disconnect, onDisconnect.bind(obj));
+    const obj2 = obj(15102);
     obj.worker = obj2.createDatagramWorker();
     if (null != obj.worker) {
       obj.worker.onmessage = (data) => {
@@ -124,7 +124,7 @@ class DatagramConnection extends TypedEventEmitter {
       if (isConnected) {
         if (worker != null) {
           const postMessage = worker.postMessage;
-          const items = [tmp3(15094).DatagramCommand.Close];
+          const items = [tmp3(15101).DatagramCommand.Close];
           postMessage(items);
         }
       } else if (worker != null) {

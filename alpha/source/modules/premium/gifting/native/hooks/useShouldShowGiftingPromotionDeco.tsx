@@ -1,12 +1,12 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11162
+// Function ID: 11163
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1389, 11142, 2]
+// Dependencies: [1389, 11143, 2]
 // Exports: default
 
-// Module 11161 (useShouldShowGiftingPromotionDeco)
+// Module 11162 (useShouldShowGiftingPromotionDeco)
 import PremiumConstants from "PremiumConstants" /* 1389 */;
-import NativeGiftContext from "NativeGiftContext" /* 11142 */;
+import NativeGiftContext from "NativeGiftContext" /* 11143 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;

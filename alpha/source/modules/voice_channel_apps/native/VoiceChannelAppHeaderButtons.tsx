@@ -1,14 +1,14 @@
-// Module ID: 19482
-// Function ID: 19483
+// Module ID: 19498
+// Function ID: 19499
 // Name: VoiceChannelAppHeaderButtons
-// Dependencies: [19, 21, 19483, 19418, 17433, 7101, 1112, 4343, 11509, 10314, 2]
+// Dependencies: [19, 21, 19499, 19434, 17440, 7101, 1112, 4343, 11517, 10315, 2]
 // Exports: default
 
-// Module 19482 (VoiceChannelAppHeaderButtons)
+// Module 19498 (VoiceChannelAppHeaderButtons)
 import _modDef4343 from "module_4343" /* 4343 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10314 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 11509 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19418 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10315 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 11517 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19434 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -27,17 +27,17 @@ export default function VoiceChannelAppHeaderButtons(arg0) {
   let string;
   ({ channel, inCall } = arg0);
   let id;
-  let obj = id(19483);
+  let obj = id(19499);
   const voiceChannelAppAvailable = obj.useVoiceChannelAppAvailable(channel, inCall);
-  const obj2 = id(19483);
+  const obj2 = id(19499);
   const voiceChannelAppOpen = obj2.useVoiceChannelAppOpen(channel, inCall);
-  const obj3 = id(19483);
+  const obj3 = id(19499);
   const voiceChannelAppVisible = obj3.useVoiceChannelAppVisible(channel);
   id = channel.id;
   let tmp7Result = null;
   if (voiceChannelAppAvailable) {
     const obj4 = {
-      icon: importDefault(voiceChannelAppVisible ? 17433 : 7101),
+      icon: importDefault(voiceChannelAppVisible ? 17440 : 7101),
       accessibilityLabel: string(ZtYyOx),
       onPress() {
           const obj = VoiceChannelAppActionCreators;

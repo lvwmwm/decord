@@ -1,9 +1,9 @@
-// Module ID: 14741
-// Function ID: 14742
+// Module ID: 14748
+// Function ID: 14749
 // Name: ConjureGameCapturesStore
 // Dependencies: [504, 572, 2]
 
-// Module 14741 (ConjureGameCapturesStore)
+// Module 14748 (ConjureGameCapturesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12628
+// Function ID: 12629
 // Name: CheckpointStore
-// Dependencies: [1387, 2109, 6443, 6442, 12621, 12622, 6767, 504, 572, 2]
+// Dependencies: [1387, 2109, 6443, 6442, 12629, 12630, 6767, 504, 572, 2]
 
-// Module 12620 (CheckpointStore)
+// Module 12628 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2109 */;
 import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6442 */;
 import CheckpointTrait from "CheckpointTrait" /* 6443 */;
-import CheckpointFlows from "CheckpointFlows" /* 12622 */;
+import CheckpointFlows from "CheckpointFlows" /* 12630 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 10804
-// Function ID: 10805
+// Module ID: 10805
+// Function ID: 10806
 // Name: useExpressionPickerInsets
 // Dependencies: [19, 1071, 1629, 5618, 575, 2]
 // Exports: default
 
-// Module 10804 (useExpressionPickerInsets)
+// Module 10805 (useExpressionPickerInsets)
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5618 */;

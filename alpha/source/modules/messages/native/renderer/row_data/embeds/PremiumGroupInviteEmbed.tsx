@@ -1,16 +1,16 @@
-// Module ID: 14429
-// Function ID: 14430
+// Module ID: 14436
+// Function ID: 14437
 // Name: PremiumGroupInviteEmbed
-// Dependencies: [2187, 5043, 575, 8821, 14430, 9699, 1112, 3691, 2]
+// Dependencies: [2187, 5043, 575, 8822, 14437, 9700, 1112, 3691, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 14429 (PremiumGroupInviteEmbed)
+// Module 14436 (PremiumGroupInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import createStyles from "createStyles" /* 5043 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 9699 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14430 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8822 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 9700 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14437 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
 import size from "module_2" /* 2 */;
 

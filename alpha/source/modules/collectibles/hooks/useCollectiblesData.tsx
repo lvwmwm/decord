@@ -1,10 +1,10 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 14465
+// Function ID: 14466
 // Name: useCollectiblesData
 // Dependencies: [32, 6311, 6329, 563, 2]
 // Exports: default
 
-// Module 14458 (useCollectiblesData)
+// Module 14465 (useCollectiblesData)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6311 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6329 */;

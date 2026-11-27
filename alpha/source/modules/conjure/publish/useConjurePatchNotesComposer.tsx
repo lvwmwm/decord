@@ -1,14 +1,14 @@
-// Module ID: 18714
-// Function ID: 18715
+// Module ID: 18731
+// Function ID: 18732
 // Name: useConjurePatchNotesComposer
-// Dependencies: [5, 32, 19, 4973, 5048, 504, 7602, 9640, 18715, 11461, 8344, 8244, 2]
+// Dependencies: [5, 32, 19, 4973, 5048, 504, 7602, 9641, 18732, 11471, 8345, 8245, 2]
 // Exports: default
 
-// Module 18714 (useConjurePatchNotesComposer)
+// Module 18731 (useConjurePatchNotesComposer)
 import GuildChannelStore2 from "GuildChannelStore" /* 4973 */;
 import MessageConstants from "MessageConstants" /* 5048 */;
 import ConjureUtils from "ConjureUtils" /* 7602 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 18715 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 18732 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -119,7 +119,7 @@ export default function useConjurePatchNotesComposer(projectId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -147,7 +147,7 @@ export default function useConjurePatchNotesComposer(projectId) {
               c2 = 0;
               if (closure_129_0.cancelled) {
                 c4 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } else {
                 closure_1_10(false);
                 closure_1_11(true);
@@ -180,7 +180,7 @@ export default function useConjurePatchNotesComposer(projectId) {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp38) {
             if (0 === c2) {
@@ -235,7 +235,7 @@ export default function useConjurePatchNotesComposer(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

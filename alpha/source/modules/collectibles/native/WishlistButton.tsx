@@ -1,10 +1,10 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 11229
+// Function ID: 11230
 // Name: WishlistButton
-// Dependencies: [5, 32, 19, 17, 502, 1387, 1073, 1082, 21, 1654, 5647, 5043, 575, 5104, 7293, 5050, 5057, 5725, 1112, 5253, 1707, 5644, 5645, 11229, 9788, 504, 11219, 11223, 11231, 11218, 2]
+// Dependencies: [5, 32, 19, 17, 502, 1387, 1073, 1082, 21, 1654, 5647, 5043, 575, 5104, 7293, 5050, 5057, 5725, 1112, 5253, 1707, 5644, 5645, 11230, 9789, 504, 11220, 11224, 11232, 11219, 2]
 // Exports: default
 
-// Module 11228 (WishlistButton)
+// Module 11229 (WishlistButton)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import Constants from "Constants" /* 1082 */;
@@ -13,8 +13,8 @@ import _mod1654 from "module_1654" /* 1654 */;
 import native from "native" /* 5104 */;
 import ButtonConstants from "ButtonConstants" /* 5647 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 11218 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 11231 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 11219 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 11232 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

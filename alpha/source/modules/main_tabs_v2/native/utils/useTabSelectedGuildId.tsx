@@ -1,10 +1,10 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16071
+// Function ID: 16072
 // Name: useTabSelectedGuildId
 // Dependencies: [5076, 6164, 563, 2]
 // Exports: default
 
-// Module 16064 (useTabSelectedGuildId)
+// Module 16071 (useTabSelectedGuildId)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
 import SortedGuildStore from "SortedGuildStore" /* 6164 */;

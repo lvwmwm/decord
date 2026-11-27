@@ -1,20 +1,20 @@
-// Module ID: 19566
-// Function ID: 19567
+// Module ID: 19582
+// Function ID: 19583
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 4892, 21, 5043, 575, 11781, 19480, 504, 1112, 6833, 6849, 7834, 6797, 6048, 19567, 19570, 19571, 14705, 19565, 5634, 2]
+// Dependencies: [19, 4892, 21, 5043, 575, 11789, 19496, 504, 1112, 6833, 6849, 7834, 6797, 6048, 19583, 19586, 19587, 14712, 19581, 5634, 2]
 // Exports: default
 
-// Module 19566 (VoicePanelConnectButton)
+// Module 19582 (VoicePanelConnectButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import useAlertStore from "useAlertStore" /* 6048 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6797 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7834 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14705 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 19567 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 19570 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 19571 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14712 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 19583 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 19586 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 19587 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import createStyles from "createStyles" /* 5043 */;

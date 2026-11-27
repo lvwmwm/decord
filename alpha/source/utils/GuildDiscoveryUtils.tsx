@@ -1,10 +1,10 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 8936
+// Function ID: 8937
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4976, 5664, 4914, 1071, 1098, 8600, 7604, 6991, 1256, 1285, 1489, 2]
+// Dependencies: [5, 4976, 5664, 4914, 1071, 1098, 8601, 7604, 6991, 1256, 1285, 1489, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 8935 (GuildDiscoveryUtils)
+// Module 8936 (GuildDiscoveryUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _modDef1489 from "module_1489" /* 1489 */;

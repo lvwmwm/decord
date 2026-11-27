@@ -1,10 +1,10 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11428
+// Function ID: 11429
 // Name: useShowUnlinkChannelAlert
 // Dependencies: [5, 19, 8112, 6047, 1112, 6118, 2]
 // Exports: default
 
-// Module 11427 (useShowUnlinkChannelAlert)
+// Module 11428 (useShowUnlinkChannelAlert)
 import intl5 from "intl" /* 1112 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
 import AlertDefault from "Alert" /* 6118 */;
@@ -35,7 +35,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp21) {
         closure_2 = tmp21;

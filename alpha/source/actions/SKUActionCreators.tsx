@@ -1,19 +1,19 @@
-// Module ID: 9311
-// Function ID: 9312
+// Module ID: 9312
+// Function ID: 9313
 // Name: SKUActionCreators
-// Dependencies: [5, 9312, 6360, 1071, 572, 5803, 1285, 4864, 9313, 6357, 5792, 5794, 4856, 5806, 5825, 1255, 2]
+// Dependencies: [5, 9313, 6360, 1071, 572, 5803, 1285, 4864, 9314, 6357, 5792, 5794, 4856, 5806, 5825, 1255, 2]
 // Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 9311 (SKUActionCreators)
+// Module 9312 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import BillingUtils from "BillingUtils" /* 4856 */;
 import StoreUtils from "StoreUtils" /* 5803 */;
 import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5825 */;
 import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 6357 */;
-import TestModeUtils from "TestModeUtils" /* 9313 */;
+import TestModeUtils from "TestModeUtils" /* 9314 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9312 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9313 */;
 import SKUStore from "SKUStore" /* 6360 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let obj = function _fetchSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _fetchSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -125,7 +125,7 @@ obj = function _fetchPublicSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -181,7 +181,7 @@ obj = function _fetchPublicSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -215,7 +215,7 @@ obj = function _fetchPublishedSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -308,7 +308,7 @@ obj = function _fetchPublishedSKU() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp36) {
           closure_6 = tmp36;
           if (0 === c7) {
@@ -338,7 +338,7 @@ obj = function _fetchTestSKUsForApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -441,7 +441,7 @@ obj = function _previewPurchaseSku() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let currency;
@@ -572,7 +572,7 @@ obj = function _grantChannelBranchEntitlement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -664,7 +664,7 @@ obj = function _orderSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -776,7 +776,7 @@ obj = function _purchaseSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1026,7 +1026,7 @@ obj = function _resendPaymentVerificationEmail() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

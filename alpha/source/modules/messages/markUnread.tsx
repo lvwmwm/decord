@@ -1,10 +1,10 @@
-// Module ID: 10760
-// Function ID: 10761
+// Module ID: 10761
+// Function ID: 10762
 // Name: markUnread
 // Dependencies: [5, 4977, 4892, 6391, 6932, 1387, 1071, 3, 11, 8114, 1285, 2]
 // Exports: default
 
-// Module 10760 (markUnread)
+// Module 10761 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1071 */;
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

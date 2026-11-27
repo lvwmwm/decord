@@ -1,10 +1,10 @@
-// Module ID: 12946
-// Function ID: 12947
+// Module ID: 12954
+// Function ID: 12955
 // Name: UnlinkedGamePlayerPlaceholders
 // Dependencies: [1071, 2]
 // Exports: getFirstMessagePerAuthor, isUnlinkedGamePlayerPlaceholder
 
-// Module 12946 (UnlinkedGamePlayerPlaceholders)
+// Module 12954 (UnlinkedGamePlayerPlaceholders)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

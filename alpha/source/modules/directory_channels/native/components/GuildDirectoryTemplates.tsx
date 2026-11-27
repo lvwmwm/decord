@@ -1,16 +1,16 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13278
+// Function ID: 13279
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 13252, 13257, 21, 5043, 13271, 1186, 13272, 1501, 1629, 13256, 5634, 1112, 6140, 7301, 2]
+// Dependencies: [19, 17, 13260, 13265, 21, 5043, 13279, 1186, 13280, 1501, 1629, 13264, 5634, 1112, 6140, 7301, 2]
 // Exports: default
 
-// Module 13270 (GuildDirectoryTemplates)
+// Module 13278 (GuildDirectoryTemplates)
 import native from "native" /* 1186 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13257 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 13272 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13265 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 13280 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13252 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13260 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ class GuildTemplatesItem {
         return onGuildTemplatePress(guildTemplate);
       }
     };
-    return closure_9(onGuildTemplatePress(13271), obj);
+    return closure_9(onGuildTemplatePress(13279), obj);
   }
 }
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);

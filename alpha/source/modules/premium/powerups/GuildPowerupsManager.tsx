@@ -1,19 +1,19 @@
-// Module ID: 19737
-// Function ID: 19738
+// Module ID: 19753
+// Function ID: 19754
 // Name: GuildPowerupsManager
-// Dependencies: [4914, 4975, 5076, 8296, 7475, 4917, 7625, 13484, 13485, 13500, 17889, 5802, 13475, 10366, 2]
+// Dependencies: [4914, 4975, 5076, 8297, 7475, 4917, 7625, 13492, 13493, 13508, 17896, 5802, 13483, 10367, 2]
 
-// Module 19737 (GuildPowerupsManager)
+// Module 19753 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 4917 */;
 import shared_PlatformUtils from "shared/PlatformUtils" /* 5802 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 10366 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13475 */;
-import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13500 */;
-import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17889 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 10367 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13483 */;
+import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13508 */;
+import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17896 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 8296 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 8297 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
@@ -44,10 +44,10 @@ class GuildPowerupsManager extends AutomaticLifecycleManager {
           const GameServerExperiment = tmp7(7625).GameServerExperiment;
           const obj = { guildId: guild.id, location: "GuildPowerupsManager" };
           GameServerExperiment.trackExposure(obj);
-          const ServerThemeExperiment = tmp7(13484).ServerThemeExperiment;
+          const ServerThemeExperiment = tmp7(13492).ServerThemeExperiment;
           const obj2 = { guildId: guild.id, location: "GuildPowerupsManager" };
           ServerThemeExperiment.trackExposure(obj2);
-          const ServerThemeApexShadowExperiment = tmp7(13485).ServerThemeApexShadowExperiment;
+          const ServerThemeApexShadowExperiment = tmp7(13493).ServerThemeApexShadowExperiment;
           const obj4 = { guildId: guild.id, location: "GuildPowerupsManager" };
           const config = ServerThemeApexShadowExperiment.getConfig(obj4);
           const tmp7Result = useHasAllocateBoostPermission;

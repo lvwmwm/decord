@@ -1,12 +1,12 @@
-// Module ID: 8370
-// Function ID: 8371
+// Module ID: 8371
+// Function ID: 8372
 // Name: Reward
-// Dependencies: [6874, 8371, 2]
+// Dependencies: [6874, 8372, 2]
 // Exports: questRewardsConfigV2FromServer
 
-// Module 8370 (Reward)
+// Module 8371 (Reward)
 import QuestTypes from "QuestTypes" /* 6874 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 8371 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 8372 */;
 import size from "module_2" /* 2 */;
 
 function _rewardRedemptionInstructionsFromServer(redemption_instructions_by_platform) {

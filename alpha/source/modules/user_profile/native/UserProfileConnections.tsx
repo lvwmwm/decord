@@ -1,10 +1,10 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15047
+// Function ID: 15048
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2189, 5100, 7557, 1071, 6371, 21, 1186, 5043, 575, 12056, 5607, 5050, 12061, 12062, 6381, 6370, 6178, 1413, 7812, 6013, 5722, 5259, 7538, 5724, 1112, 5634, 6144, 5729, 12476, 5104, 504, 15041, 7556, 6140, 15044, 2]
+// Dependencies: [19, 17, 2189, 5100, 7557, 1071, 6371, 21, 1186, 5043, 575, 12064, 5607, 5050, 12069, 12070, 6381, 6370, 6178, 1413, 7812, 6013, 5722, 5259, 7538, 5724, 1112, 5634, 6144, 5729, 12484, 5104, 504, 15048, 7556, 6140, 15051, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 15040 (UserProfileConnections)
+// Module 15047 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,10 +18,10 @@ import TableRowGroup from "TableRowGroup" /* 6140 */;
 import Constants2 from "Constants" /* 6371 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7812 */;
-import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 12056 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12061 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12062 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 15044 */;
+import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 12064 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12069 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12070 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 15051 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import StreamerModeStore from "StreamerModeStore" /* 5100 */;
@@ -468,8 +468,8 @@ export function UserProfileAccountConnectionsCard(userId) {
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(15041)(userId));
-  theme(15041)(userId);
+  ({ connections, appIdentities } = theme(15048)(userId));
+  theme(15048)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];

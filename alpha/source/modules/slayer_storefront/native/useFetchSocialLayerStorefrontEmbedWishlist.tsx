@@ -1,16 +1,16 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12000
+// Function ID: 12001
 // Name: useFetchSocialLayerStorefrontEmbedWishlist
-// Dependencies: [19, 6163, 11116, 502, 1387, 504, 6309, 11123, 11122, 2]
+// Dependencies: [19, 6163, 11117, 502, 1387, 504, 6309, 11124, 11123, 2]
 // Exports: useFetchSocialLayerStorefrontEmbedWishlist
 
-// Module 11992 (useFetchSocialLayerStorefrontEmbedWishlist)
+// Module 12000 (useFetchSocialLayerStorefrontEmbedWishlist)
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6309 */;
-import WishlistFetchSource from "WishlistFetchSource" /* 11122 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 11123 */;
+import WishlistFetchSource from "WishlistFetchSource" /* 11123 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 11124 */;
 import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;
-import WishlistStore from "WishlistStore" /* 11116 */;
+import WishlistStore from "WishlistStore" /* 11117 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let closure_8 = { user: "a", profile: "Path", wishlistId: "context", wishlist: "main-app", updatedAt: "app", storedUpdatedAt: null, fetching: 32, error: 64 };
+let closure_8 = { user: "a", profile: "Path", wishlistId: "context", wishlist: "nl-SX", updatedAt: "nl", storedUpdatedAt: false, fetching: null, error: null };
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx");
 
 export function useFetchSocialLayerStorefrontEmbedWishlist(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 18364
-// Function ID: 18365
+// Module ID: 18371
+// Function ID: 18372
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 1654, 5634, 18303, 575, 8923, 18320, 18316, 5220, 5253, 5607, 14909, 1112, 5641, 18342, 5598, 1091, 671, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1654, 5634, 18310, 575, 8924, 18327, 18323, 5220, 5253, 5607, 14916, 1112, 5641, 18349, 5598, 1091, 671, 2]
 // Exports: default
 
-// Module 18364 (CaughtUpRow)
+// Module 18371 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1654 from "module_1654" /* 1654 */;
-import createICYMIStyles from "createICYMIStyles" /* 18303 */;
+import createICYMIStyles from "createICYMIStyles" /* 18310 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -101,7 +101,7 @@ export default function ExploreServersRow(visible) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ export default function ExploreServersRow(visible) {
             }, 500);
           }, 100);
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -268,7 +268,7 @@ export default function ExploreServersRow(visible) {
   let obj2 = { children: items13 };
   let obj3 = { style: tmp.container, children: items11 };
   let obj4 = { style: tmp.textContainer, children: items8 };
-  let obj5 = { style: items7, children: closure_7(tmp2(14909).FlashIcon, obj6) };
+  let obj5 = { style: items7, children: closure_7(tmp2(14916).FlashIcon, obj6) };
   items7 = [tmp.iconWrapper, animatedStyle];
   View = sharedValue(1654).View;
   obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
@@ -292,7 +292,7 @@ export default function ExploreServersRow(visible) {
   intl4 = tmp2(1112).intl;
   items12[1] = closure_7(Button2, obj11);
   items11[1] = closure_8(View, obj9);
-  items13 = [closure_8(View, obj3), closure_7(tmp2(18342).Separator, {}), ];
+  items13 = [closure_8(View, obj3), closure_7(tmp2(18349).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: tmp2(1091).VerticalGradient.START, end: tmp2(1091).VerticalGradient.END, colors: items14, pointerEvents: "none" };
   const tmp33 = sharedValue(5598);
   items14 = [, ];

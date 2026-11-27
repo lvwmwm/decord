@@ -1,13 +1,13 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9485
+// Function ID: 9486
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 6376, 7557, 21, 5043, 575, 504, 6162, 9485, 9487, 9488, 9489, 6375, 9490, 9502, 8578, 9503, 9504, 5104, 9505, 9496, 9510, 9472, 9520, 9525, 9527, 9807, 13866, 9470, 2]
+// Dependencies: [32, 19, 17, 6376, 7557, 21, 5043, 575, 504, 6162, 9486, 9488, 9489, 9490, 6375, 9491, 9503, 8579, 9504, 9505, 5104, 9506, 9497, 9511, 9473, 9521, 9526, 9528, 9808, 13873, 9471, 2]
 // Exports: default
 
-// Module 9484 (UserProfilePreview)
+// Module 9485 (UserProfilePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 9504 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 9505 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6376 */;
@@ -157,14 +157,14 @@ export default function UserProfilePreview(compact) {
   ({ pendingAccentColor, pendingThemeColors, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingDisplayNameStyles, pendingPronouns } = stateFromStoresObject);
   ({ pendingAvatar, pendingBanner, pendingGlobalName, pendingLegacyUsernameDisabled, pendingPrimaryGuildId } = stateFromStoresObject);
   const tmp5 = isPremiumTryItOut(6162)(user.id, guildId);
-  ({ theme, primaryColor, secondaryColor } = isPremiumTryItOut(9485)({ user, displayProfile: tmp5, pendingThemeColors, isPreview: isPremiumTryItOut }));
-  isPremiumTryItOut(9485)({ user, displayProfile: tmp5, pendingThemeColors, isPreview: isPremiumTryItOut });
+  ({ theme, primaryColor, secondaryColor } = isPremiumTryItOut(9486)({ user, displayProfile: tmp5, pendingThemeColors, isPreview: isPremiumTryItOut }));
+  isPremiumTryItOut(9486)({ user, displayProfile: tmp5, pendingThemeColors, isPreview: isPremiumTryItOut });
   const tmp8 = closure_12(flag, null != primaryColor, maxWidth);
-  const tmp9 = isPremiumTryItOut(9487)();
-  const obj2 = guildId(9488);
+  const tmp9 = isPremiumTryItOut(9488)();
+  const obj2 = guildId(9489);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let tmp31Result5 = null != customStatusActivity && !flag;
-  const tmpResult = tmp(9489);
+  const tmpResult = tmp(9490);
   const userProfileColors = tmpResult.useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ containerBackground, gradientFallbackBackground, avatarBackground } = userProfileColors);
   if (undefined !== avatarDecorationOverride) {
@@ -213,18 +213,18 @@ export default function UserProfilePreview(compact) {
     profilePreviewValue2 = getProfilePreviewValue2(obj4);
   }
   let skuId1;
-  const tmp4Result = isPremiumTryItOut(9490);
+  const tmp4Result = isPremiumTryItOut(9491);
   if (profilePreviewValue2 != null) {
     skuId1 = profilePreviewValue2.skuId;
   }
   const tmp4ResultResult = tmp4Result(skuId1);
   dependencyMap = tmp4ResultResult;
   const obj5 = { userId: user.id, image: pendingAvatar };
-  const tmpResult7 = tmp(9502);
+  const tmpResult7 = tmp(9503);
   const pendingAvatarSrc = tmpResult7.getPendingAvatarSrc(obj5);
-  const tmpResult8 = tmp(8578);
+  const tmpResult8 = tmp(8579);
   const userPrimaryGuild = tmpResult8.useUserPrimaryGuild(pendingPrimaryGuildId);
-  const arr2 = isPremiumTryItOut(9503)(tmp5, pendingLegacyUsernameDisabled);
+  const arr2 = isPremiumTryItOut(9504)(tmp5, pendingLegacyUsernameDisabled);
   set = new Set(arr2.map((id) => id.id));
   const items1 = [...arr2, ...additionalBadges.filter((id) => !set.has(id.id))];
   const tmp27 = set(first.useState({ width: 0, height: 0 }), 2);
@@ -265,16 +265,16 @@ export default function UserProfilePreview(compact) {
   obj8 = { importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: { flexShrink: 1 }, children: items4 };
   const ThemeContextProvider = tmp(5104).ThemeContextProvider;
   if (tmp31Result) {
-    const obj9 = { frame: tmp4ResultResult, filterLayer, profileThemeType: constants.PREVIEW, frameOrder: tmp(9496).ProfileFrameLayerOrder.BACK, containerWidth: null, containerHeight: null };
+    const obj9 = { frame: tmp4ResultResult, filterLayer, profileThemeType: constants.PREVIEW, frameOrder: tmp(9497).ProfileFrameLayerOrder.BACK, containerWidth: null, containerHeight: null };
     ({ width: obj12.containerWidth, height: obj12.containerHeight } = first);
-    const tmp4Result7 = isPremiumTryItOut(9505);
+    const tmp4Result7 = isPremiumTryItOut(9506);
     tmp31Result = tmp31(tmp4Result7, obj9);
   }
   items4 = [tmp31Result, , ];
   const obj10 = { onLayout: callback, style: tmp8.profileContentContainer, children: items5 };
-  const obj11 = { user, displayProfile: tmp5, bannerHeight: tmp(9472).PFX_MOBILE_ACTION_SHEET_BANNER_HEIGHT, pendingBanner, pendingAvatarSrc, pendingAccentColor: tmp39, pendingThemeColors: tmp40, disableInteraction: true };
+  const obj11 = { user, displayProfile: tmp5, bannerHeight: tmp(9473).PFX_MOBILE_ACTION_SHEET_BANNER_HEIGHT, pendingBanner, pendingAvatarSrc, pendingAccentColor: tmp39, pendingThemeColors: tmp40, disableInteraction: true };
   tmp39 = undefined;
-  const tmp4Result8 = isPremiumTryItOut(9510);
+  const tmp4Result8 = isPremiumTryItOut(9511);
   if (null != pendingAccentColor) {
     tmp39 = pendingAccentColor;
   }
@@ -284,12 +284,12 @@ export default function UserProfilePreview(compact) {
   }
   items5 = [closure_9(tmp4Result8, obj11), , ];
   const obj13 = { style: tmp8.profileInnerContent, children: items6 };
-  items6 = [closure_9(tmp4(9520), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration, backgroundColor: avatarBackground, disableStatus: true }), ];
+  items6 = [closure_9(tmp4(9521), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration, backgroundColor: avatarBackground, disableStatus: true }), ];
   const obj14 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items7, children: items8 };
   items7 = [, , ];
   ({ profileContentWrapper: arr9[0], profileContent: arr9[1] } = tmp9);
   let tmp42 = !tmp31Result5;
-  const tmp4Result9 = isPremiumTryItOut(9525);
+  const tmp4Result9 = isPremiumTryItOut(9526);
   if (!tmp31Result5) {
     tmp42 = { paddingTop };
     const obj15 = { paddingTop };
@@ -298,11 +298,11 @@ export default function UserProfilePreview(compact) {
   if (tmp31Result5) {
     const obj16 = { customStatusActivity, themeType: constants.PREVIEW, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null };
     ({ customStatusBubble: obj18.style, emojiOnlyCustomStatusBubble: obj18.emojiOnlyStyle } = tmp9);
-    tmp31Result5 = tmp31(tmp4(9527), obj16);
+    tmp31Result5 = tmp31(tmp4(9528), obj16);
   }
   items8 = [tmp31Result5, , ];
   const obj17 = { user, themeType: constants.PREVIEW, displayName, pronouns: tmp47, badges: items1, badgeContainerBackground: containerBackground, showBadgeToastOnPress: false, pendingDisplayNameStyles, primaryGuildOverride: tmp49, guildId, hideBadges: flag3 };
-  const tmp4Result10 = isPremiumTryItOut(9807);
+  const tmp4Result10 = isPremiumTryItOut(9808);
   if (displayName == null) {
     displayName = pendingGlobalName;
   }
@@ -328,7 +328,7 @@ export default function UserProfilePreview(compact) {
     items9 = [tmp9.card, tmp8.aboutMeCard, ];
     const obj20 = { backgroundColor: containerBackground };
     items9[2] = obj20;
-    tmp31Result6 = tmp31(tmp4(13866), obj19);
+    tmp31Result6 = tmp31(tmp4(13873), obj19);
   }
   items8[2] = tmp31Result6;
   items6[1] = closure_10(tmp4Result9, obj14);
@@ -337,7 +337,7 @@ export default function UserProfilePreview(compact) {
   if (tmp31Result7) {
     let skuId;
     const obj21 = { skuId: profilePreviewValue.skuId, style: tmp8.profileEffect };
-    const tmp4Result11 = isPremiumTryItOut(9470);
+    const tmp4Result11 = isPremiumTryItOut(9471);
     if (null != profileEffectRestartKey) {
       const _HermesInternal = HermesInternal;
       skuId = "" + profilePreviewValue.skuId + "-" + profileEffectRestartKey;
@@ -350,9 +350,9 @@ export default function UserProfilePreview(compact) {
   items4[1] = closure_10(closure_5, obj10);
   let tmp31Result8 = null != tmp4ResultResult;
   if (tmp31Result8) {
-    const obj22 = { frame: tmp4ResultResult, filterLayer, profileThemeType: constants.PREVIEW, frameOrder: tmp(9496).ProfileFrameLayerOrder.FRONT, containerWidth: null, containerHeight: null };
+    const obj22 = { frame: tmp4ResultResult, filterLayer, profileThemeType: constants.PREVIEW, frameOrder: tmp(9497).ProfileFrameLayerOrder.FRONT, containerWidth: null, containerHeight: null };
     ({ width: obj23.containerWidth, height: obj23.containerHeight } = first);
-    const tmp4Result12 = isPremiumTryItOut(9505);
+    const tmp4Result12 = isPremiumTryItOut(9506);
     tmp31Result8 = tmp31(tmp4Result12, obj22);
   }
   items4[2] = tmp31Result8;

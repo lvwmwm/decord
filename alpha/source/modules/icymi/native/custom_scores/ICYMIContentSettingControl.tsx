@@ -1,25 +1,25 @@
-// Module ID: 18310
-// Function ID: 18311
+// Module ID: 18317
+// Function ID: 18318
 // Name: ICYMIContentSettingControl
-// Dependencies: [32, 19, 17, 6167, 8913, 21, 5043, 575, 8922, 1112, 1186, 18311, 18312, 18313, 8616, 8617, 504, 18314, 5634, 7549, 5659, 2]
+// Dependencies: [32, 19, 17, 6167, 8914, 21, 5043, 575, 8923, 1112, 1186, 18318, 18319, 18320, 8617, 8618, 504, 18321, 5634, 7549, 5659, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 18310 (ICYMIContentSettingControl)
+// Module 18317 (ICYMIContentSettingControl)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import SegmentedControlState from "SegmentedControlState" /* 8616 */;
-import SegmentedControl from "SegmentedControl" /* 8617 */;
-import ICYMIUtils from "ICYMIUtils" /* 8922 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18311 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18312 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18313 */;
-import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 18314 */;
+import SegmentedControlState from "SegmentedControlState" /* 8617 */;
+import SegmentedControl from "SegmentedControl" /* 8618 */;
+import ICYMIUtils from "ICYMIUtils" /* 8923 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18318 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18319 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18320 */;
+import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 18321 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
-import ICYMIStore from "ICYMIStore" /* 8913 */;
+import ICYMIStore from "ICYMIStore" /* 8914 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -97,9 +97,9 @@ function ContentSettingsControl(initialValue) {
     onSetActiveIndex(arg0) {
       let MORE = ICYMIUtils.ICYMICustomScore.DEFAULT;
       if (0 === arg0) {
-        MORE = tmp(8922).ICYMICustomScore.LESS;
+        MORE = tmp(8923).ICYMICustomScore.LESS;
       } else if (2 === arg0) {
-        MORE = tmp(8922).ICYMICustomScore.MORE;
+        MORE = tmp(8923).ICYMICustomScore.MORE;
       }
       _undefined(MORE);
       require(MORE);
@@ -107,7 +107,7 @@ function ContentSettingsControl(initialValue) {
     items: items1,
     defaultIndex: num
   };
-  const useSegmentedControlState = tmp4(8616).useSegmentedControlState;
+  const useSegmentedControlState = tmp4(8617).useSegmentedControlState;
   num = 0;
   SegmentedControlState;
   if (ICYMIUtils.ICYMICustomScore.LESS !== tmp3) {
@@ -158,10 +158,10 @@ export function GuildScoreSettings(guild) {
   let obj = id(504);
   const items = [ICYMIStore];
   const stateFromStores = obj.useStateFromStores(items, () => ICYMIStore.getCustomGuildScore(id));
-  let obj2 = id(8922);
+  let obj2 = id(8923);
   const numberToCustomScoreResult = obj2.numberToCustomScore(stateFromStores);
   let c1 = numberToCustomScoreResult;
-  const tmp5 = numberToCustomScoreResult === id(8922).ICYMICustomScore.MUTED;
+  const tmp5 = numberToCustomScoreResult === id(8923).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = react.useCallback((arg0) => {

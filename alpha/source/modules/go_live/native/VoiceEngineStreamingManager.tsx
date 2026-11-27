@@ -1,9 +1,9 @@
-// Module ID: 8417
-// Function ID: 8418
+// Module ID: 8418
+// Function ID: 8419
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6813, 4892, 4946, 1071, 2145, 3, 4887, 4868, 572, 1285, 8418, 2122, 2134, 38, 8419, 6129, 6816, 1495, 1379, 10354, 10277, 1112, 2]
+// Dependencies: [5, 17, 6813, 4892, 4946, 1071, 2145, 3, 4887, 4868, 572, 1285, 8419, 2122, 2134, 38, 8420, 6129, 6816, 1495, 1379, 10355, 10278, 1112, 2]
 
-// Module 8417 (VoiceEngineStreamingManager)
+// Module 8418 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -16,9 +16,9 @@ import Constants2 from "Constants" /* 2145 */;
 import UserSettings from "UserSettings" /* 4868 */;
 import Timers from "Timers" /* 4887 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
-import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 8418 */;
-import StreamActionCreators from "StreamActionCreators" /* 8419 */;
-import PushNotificationDefault from "PushNotification" /* 10277 */;
+import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 8419 */;
+import StreamActionCreators from "StreamActionCreators" /* 8420 */;
+import PushNotificationDefault from "PushNotification" /* 10278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(10354);
+const useScreenshareUtils = tmp2(10355);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }
@@ -55,7 +55,7 @@ let obj = function _handleThumbnailUpload() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -111,7 +111,7 @@ let obj = function _handleThumbnailUpload() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp21) {
         closure_4 = tmp21;
         if (0 === c5) {

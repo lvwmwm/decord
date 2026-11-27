@@ -1,9 +1,9 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15881
+// Function ID: 15882
 // Name: definitions
-// Dependencies: [1082, 10191, 7768, 10217, 1092, 5687, 2173, 5781, 2146, 15875, 15871, 15876, 5777, 6015, 11375, 15877, 2]
+// Dependencies: [1082, 10192, 7768, 10218, 1092, 5687, 2173, 5781, 2146, 15882, 15878, 15883, 5777, 6015, 11376, 15884, 2]
 
-// Module 15874 (definitions)
+// Module 15881 (definitions)
 import Constants2 from "Constants" /* 1082 */;
 import ChannelTypes from "ChannelTypes" /* 1092 */;
 import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2146 */;
@@ -13,13 +13,13 @@ import InviteTargetTypes from "InviteTargetTypes" /* 5777 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 5781 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7768 */;
-import ActivityPlatform from "ActivityPlatform" /* 10217 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 11375 */;
-import ThermalStates from "ThermalStates" /* 15871 */;
-import SKUTypes from "SKUTypes" /* 15875 */;
-import discord_common_helpers from "discord_common/helpers" /* 15876 */;
-import contextMenuIcons from "contextMenuIcons" /* 15877 */;
-import Constants from "Constants" /* 10191 */;
+import ActivityPlatform from "ActivityPlatform" /* 10218 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 11376 */;
+import ThermalStates from "ThermalStates" /* 15878 */;
+import SKUTypes from "SKUTypes" /* 15882 */;
+import discord_common_helpers from "discord_common/helpers" /* 15883 */;
+import contextMenuIcons from "contextMenuIcons" /* 15884 */;
+import Constants from "Constants" /* 10192 */;
 import size_mod from "module_2" /* 2 */;
 
 let ActivityIntent;

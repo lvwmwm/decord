@@ -1,10 +1,10 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 10482
+// Function ID: 10483
 // Name: VisualEffectViewThemed
 // Dependencies: [19, 21, 5252, 5050, 5611, 2]
 // Exports: default
 
-// Module 10481 (VisualEffectViewThemed)
+// Module 10482 (VisualEffectViewThemed)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5050 */;
 import useThemeDefault from "useTheme" /* 5252 */;

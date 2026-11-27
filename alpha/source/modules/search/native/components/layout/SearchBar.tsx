@@ -1,25 +1,25 @@
-// Module ID: 18930
-// Function ID: 18931
+// Module ID: 18946
+// Function ID: 18947
 // Name: SearchBar
-// Dependencies: [19, 17, 4892, 4914, 4985, 1387, 13300, 9019, 9018, 1071, 21, 5043, 1112, 5659, 504, 18927, 5649, 13286, 13317, 5052, 13313, 13294, 8560, 18931, 2]
+// Dependencies: [19, 17, 4892, 4914, 4985, 1387, 13308, 9020, 9019, 1071, 21, 5043, 1112, 5659, 504, 18943, 5649, 13294, 13325, 5052, 13321, 13302, 8561, 18947, 2]
 
-// Module 18930 (SearchBar)
+// Module 18946 (SearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl8 from "intl" /* 1112 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
-import TrackingConstants from "TrackingConstants" /* 9018 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13286 */;
-import TrackingDefault from "Tracking" /* 13313 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13317 */;
+import TrackingConstants from "TrackingConstants" /* 9019 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13294 */;
+import TrackingDefault from "Tracking" /* 13321 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13325 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
-import SearchQueryStore from "SearchQueryStore" /* 13300 */;
-import SearchConstants from "SearchConstants" /* 9019 */;
+import SearchQueryStore from "SearchQueryStore" /* 13308 */;
+import SearchConstants from "SearchConstants" /* 9020 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
@@ -218,7 +218,7 @@ const memoResult = react.memo(function SearchBarWithRef(searchContext) {
       const tmp2 = importDefault;
       if (!SearchQueryStore.isAutocompleteVisible(searchContext)) {
         const isInitialSearchQueryResult = SearchQueryStore.isInitialSearchQuery(searchContext);
-        const tmp2Result = tmp2(13286);
+        const tmp2Result = tmp2(13294);
         if (isInitialSearchQueryResult) {
           const initialMessages = tmp2Result.fetchInitialMessages(tmp);
         } else {
@@ -256,7 +256,7 @@ const memoResult = react.memo(function SearchBarWithRef(searchContext) {
       const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
       const tmp6 = importDefault;
       if (queryString !== searchResultsQuery) {
-        const tmp6Result = tmp6(13286);
+        const tmp6Result = tmp6(13294);
         if (tmp11) {
           const initialMessages = tmp6Result.fetchInitialMessages(tmp);
         } else {

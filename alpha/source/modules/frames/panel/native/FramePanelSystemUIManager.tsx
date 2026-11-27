@@ -1,12 +1,12 @@
-// Module ID: 19433
-// Function ID: 19434
+// Module ID: 19449
+// Function ID: 19450
 // Name: FramePanelSystemUIManager
-// Dependencies: [19, 21, 19422, 19419, 2]
+// Dependencies: [19, 21, 19438, 19435, 2]
 
-// Module 19433 (FramePanelSystemUIManager)
+// Module 19449 (FramePanelSystemUIManager)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelSystemUIManager from "ActivityPanelSystemUIManager" /* 19419 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19422 */;
+import ActivityPanelSystemUIManager from "ActivityPanelSystemUIManager" /* 19435 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19438 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

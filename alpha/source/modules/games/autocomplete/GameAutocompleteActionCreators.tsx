@@ -1,10 +1,10 @@
-// Module ID: 8954
-// Function ID: 8955
+// Module ID: 8955
+// Function ID: 8956
 // Name: GameAutocompleteActionCreators
 // Dependencies: [5, 7174, 1071, 7175, 572, 1285, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 8954 (GameAutocompleteActionCreators)
+// Module 8955 (GameAutocompleteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7175 */;
@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _fetchGameAutocomplete() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp28) {
           closure_6 = tmp28;
           if (0 === c7) {

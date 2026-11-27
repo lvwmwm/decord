@@ -1,10 +1,10 @@
-// Module ID: 18863
-// Function ID: 18864
+// Module ID: 18879
+// Function ID: 18880
 // Name: ConjureProjectList
-// Dependencies: [5, 32, 19, 17, 1231, 6934, 21, 5043, 575, 1629, 1501, 18864, 18865, 18452, 18866, 18509, 5257, 18867, 11450, 5220, 18605, 7670, 18498, 7544, 7191, 7198, 13792, 1112, 5634, 4245, 5641, 7667, 18877, 6140, 6144, 14279, 7669, 504, 6950, 14287, 17940, 18610, 7745, 2]
+// Dependencies: [5, 32, 19, 17, 1231, 6934, 21, 5043, 575, 1629, 1501, 18880, 18881, 18459, 18882, 18516, 5257, 18883, 11451, 5220, 18616, 7670, 18505, 7544, 7191, 7198, 13799, 1112, 5634, 4245, 5641, 7667, 18893, 6140, 6144, 14286, 7669, 504, 6950, 14294, 17947, 18621, 7745, 2]
 // Exports: default
 
-// Module 18863 (ConjureProjectList)
+// Module 18879 (ConjureProjectList)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
@@ -13,11 +13,11 @@ import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import TableRowGroup2 from "TableRowGroup" /* 6140 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11450 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 14287 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18452 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 18610 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 18867 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11451 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 14294 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18459 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 18621 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 18883 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -87,7 +87,7 @@ function ProjectRow(project) {
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { value: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(17940), obj6);
+      tmp14Result3 = tmp14(tmp18(17947), obj6);
     }
     items2 = [tmp14Result3, ];
     const obj7 = { IconComponent: project(7745).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1112).t["UKOtz+"]) };
@@ -257,7 +257,7 @@ export default function ConjureProjectList(guildId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -358,7 +358,7 @@ export default function ConjureProjectList(guildId) {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp36) {
           closure_3 = tmp36;
           if (0 === c4) {

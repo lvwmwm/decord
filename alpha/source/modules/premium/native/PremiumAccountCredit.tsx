@@ -1,10 +1,10 @@
-// Module ID: 9364
-// Function ID: 9365
+// Module ID: 9365
+// Function ID: 9366
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 6359, 1071, 21, 5043, 575, 7519, 2174, 1112, 3691, 9365, 5634, 504, 12, 2]
+// Dependencies: [19, 17, 6359, 1071, 21, 5043, 575, 7519, 2174, 1112, 3691, 9366, 5634, 504, 12, 2]
 // Exports: default
 
-// Module 9364 (PremiumAccountCredit)
+// Module 9365 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -107,7 +107,7 @@ function AccountCreditTier(arg0) {
   if (result1) {
     const obj7 = { style: tmp.boostIcon, children: metroRequire(BoostGemIcon, obj8) };
     obj8 = { size: "md", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    BoostGemIcon = tmp2(9365).BoostGemIcon;
+    BoostGemIcon = tmp2(9366).BoostGemIcon;
     tmp22Result = tmp22(tmp20, obj7);
     tmp25 = tmp22;
   } else {

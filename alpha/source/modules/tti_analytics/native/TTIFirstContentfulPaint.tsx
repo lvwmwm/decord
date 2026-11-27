@@ -1,14 +1,14 @@
-// Module ID: 12571
-// Function ID: 12572
+// Module ID: 12579
+// Function ID: 12580
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 5220, 9, 8330, 12572, 2]
+// Dependencies: [19, 21, 5220, 9, 8331, 12580, 2]
 // Exports: TTIFirstContentfulPaint
 
-// Module 12571 (TTIFirstContentfulPaint)
+// Module 12579 (TTIFirstContentfulPaint)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
 import RootNavigationRef from "RootNavigationRef" /* 5220 */;
-import PostTTIScheduler from "PostTTIScheduler" /* 8330 */;
+import PostTTIScheduler from "PostTTIScheduler" /* 8331 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,5 +32,5 @@ export function TTIFirstContentfulPaint(checkFocusedScreen) {
     const obj3 = PostTTIScheduler;
     obj3.notifyAboutTTI();
   }, items);
-  return jsx(checkFocusedScreen(12572).TTIMeasurementView, { onMeasurement });
+  return jsx(checkFocusedScreen(12580).TTIMeasurementView, { onMeasurement });
 }

@@ -1,14 +1,14 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12128
+// Function ID: 12129
 // Name: ExperimentalBannerPlusIcon
-// Dependencies: [19, 21, 575, 5729, 12121, 2]
+// Dependencies: [19, 21, 575, 5729, 12129, 2]
 // Exports: ExperimentalBannerPlusIcon
 
-// Module 12120 (ExperimentalBannerPlusIcon)
+// Module 12128 (ExperimentalBannerPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 12121 */;
+import AssetRegistry from "AssetRegistry" /* 12129 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

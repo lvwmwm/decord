@@ -1,18 +1,18 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16590
+// Function ID: 16591
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 8373, 4889, 21, 575, 5043, 4876, 9561, 16584, 572, 16590, 9892, 504, 16597, 16603, 2]
+// Dependencies: [32, 19, 17, 8374, 4889, 21, 575, 5043, 4876, 9562, 16591, 572, 16597, 9893, 504, 16604, 16610, 2]
 
-// Module 16583 (QuestHomeBounties)
+// Module 16590 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16597 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16603 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16604 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16610 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 8373 */;
+import BountyStore from "BountyStore" /* 8374 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
   shopCarouselConfig = shopCarouselConfig.shopCarouselConfig;
   let questHomeBounties;
   let tmp = questHomeBounties;
-  let obj = questHomeBounties(9892);
+  let obj = questHomeBounties(9893);
   questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
   const tmp3 = closure_11();
   let first;
@@ -61,7 +61,7 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
   } else {
     items1 = [];
   }
-  const tmpResult = tmp(9561);
+  const tmpResult = tmp(9562);
   const tmp4 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
   closure_1 = tmp6;
@@ -113,8 +113,8 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
     if (!stateFromStores) {
       let tmp11 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp11) {
-        tmp11 = orbShopProducts.length >= tmp(16590).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-        orbShopProducts.length >= tmp(16590).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp11 = orbShopProducts.length >= tmp(16597).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        orbShopProducts.length >= tmp(16597).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp14Result = null;
       if (tmp11) {

@@ -1,10 +1,10 @@
-// Module ID: 8615
-// Function ID: 8616
+// Module ID: 8616
+// Function ID: 8617
 // Name: useInterestedEventUsers
 // Dependencies: [19, 5775, 4898, 504, 2]
 // Exports: default
 
-// Module 8615 (useInterestedEventUsers)
+// Module 8616 (useInterestedEventUsers)
 import react from "react" /* 19 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;

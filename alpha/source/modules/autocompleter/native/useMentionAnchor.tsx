@@ -1,11 +1,11 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13370
+// Function ID: 13371
 // Name: useMentionAnchor
-// Dependencies: [32, 19, 10789, 2]
+// Dependencies: [32, 19, 10790, 2]
 // Exports: default
 
-// Module 13362 (useMentionAnchor)
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10789 */;
+// Module 13370 (useMentionAnchor)
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10790 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 11290
-// Function ID: 11291
+// Module ID: 11291
+// Function ID: 11292
 // Name: UserNameplateRow
-// Dependencies: [32, 19, 21, 5043, 575, 6143, 5607, 6145, 9479, 6144, 6141, 2]
+// Dependencies: [32, 19, 21, 5043, 575, 6143, 5607, 6145, 9480, 6144, 6141, 2]
 // Exports: UserNameplateRow
 
-// Module 11290 (UserNameplateRow)
+// Module 11291 (UserNameplateRow)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5607 */;
 import TableRowDivider from "TableRowDivider" /* 6141 */;
@@ -20,7 +20,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp11;
-const NameplateDefault = tmp11(9479);
+const NameplateDefault = tmp11(9480);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 const obj = { card: obj2 };
 obj2 = { padding: 0, paddingRight: nativeDefault.space.PX_40, overflow: "hidden" };

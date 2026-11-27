@@ -1,14 +1,14 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 18056
+// Function ID: 18057
 // Name: useInterestGameSearch
-// Dependencies: [5, 32, 19, 7174, 8956, 7175, 8955, 10871, 8954, 2]
+// Dependencies: [5, 32, 19, 7174, 8957, 7175, 8956, 10872, 8955, 2]
 // Exports: default
 
-// Module 18049 (useInterestGameSearch)
+// Module 18056 (useInterestGameSearch)
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7175 */;
-import GameSearchSession from "GameSearchSession" /* 8955 */;
-import GameSearchFilterGroup from "GameSearchFilterGroup" /* 8956 */;
-import GameSearchSurfaces from "GameSearchSurfaces" /* 10871 */;
+import GameSearchSession from "GameSearchSession" /* 8956 */;
+import GameSearchFilterGroup from "GameSearchFilterGroup" /* 8957 */;
+import GameSearchSurfaces from "GameSearchSurfaces" /* 10872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -67,7 +67,7 @@ export default function useInterestGameSearch(name) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -97,7 +97,7 @@ export default function useInterestGameSearch(name) {
                 } else if (query.signal.aborted) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   results = GameAutocompleteStore.getResults(query, DEFAULT);
                   query = results;
@@ -127,7 +127,7 @@ export default function useInterestGameSearch(name) {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp39) {
             closure_3 = tmp39;
             if (0 === c4) {

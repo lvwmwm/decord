@@ -1,9 +1,9 @@
-// Module ID: 13637
-// Function ID: 13638
+// Module ID: 13644
+// Function ID: 13645
 // Name: PortalKeyboardInlineComponent
-// Dependencies: [19, 17, 5044, 5230, 2022, 7298, 1627, 5604, 5231, 5228, 5234, 11810, 2]
+// Dependencies: [19, 17, 5044, 5230, 2022, 7298, 1627, 5604, 5231, 5228, 5234, 11818, 2]
 
-// Module 13637 (PortalKeyboardInlineComponent)
+// Module 13644 (PortalKeyboardInlineComponent)
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;

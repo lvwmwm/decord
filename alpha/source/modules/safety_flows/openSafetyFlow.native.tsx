@@ -1,10 +1,10 @@
-// Module ID: 20349
-// Function ID: 20350
+// Module ID: 20407
+// Function ID: 20408
 // Name: openSafetyFlow
-// Dependencies: [5, 4886, 1071, 20350, 6130, 20351, 19835, 20352, 8062, 20353, 2120, 2]
+// Dependencies: [5, 4886, 1071, 20408, 6130, 20409, 19851, 20410, 8062, 20411, 2120, 2]
 // Exports: openSafetyFlow
 
-// Module 20349 (openSafetyFlow)
+// Module 20407 (openSafetyFlow)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4886 */;
@@ -88,7 +88,7 @@ let obj = function _openSafetyFlow() {
       } else {
         c5 = 0;
         c7 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       if (4 === c6) {
@@ -105,7 +105,7 @@ let obj = function _openSafetyFlow() {
           if (null == task) {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else {
             const obj20 = closure_131_0(closure_131_2[6]);
             if (!obj20.isAppStoreConsentReinstatementEnabledForSession()) {
@@ -148,7 +148,7 @@ let obj = function _openSafetyFlow() {
         if (null == value) {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       }
       let initialScreen = getInitialScreenForTask(task);

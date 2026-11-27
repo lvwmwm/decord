@@ -1,15 +1,15 @@
-// Module ID: 8243
-// Function ID: 8244
+// Module ID: 8244
+// Function ID: 8245
 // Name: InteractionStore
-// Dependencies: [32, 502, 4892, 1088, 6401, 6400, 8244, 504, 572, 2]
+// Dependencies: [32, 502, 4892, 1088, 6401, 6400, 8245, 504, 572, 2]
 
-// Module 8243 (InteractionStore)
+// Module 8244 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import InteractionTypes from "InteractionTypes" /* 6400 */;
 import interactions_InteractionTypes from "interactions/InteractionTypes" /* 6401 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

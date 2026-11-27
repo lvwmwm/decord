@@ -1,9 +1,9 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8574
+// Function ID: 8575
 // Name: GuildSettingsActionCreators
-// Dependencies: [5, 4948, 4976, 502, 4955, 4914, 8574, 1071, 3, 572, 1285, 7864, 8583, 7339, 7343, 6135, 1264, 5051, 1112, 1098, 7016, 2]
+// Dependencies: [5, 4948, 4976, 502, 4955, 4914, 8575, 1071, 3, 572, 1285, 7864, 8584, 7339, 7343, 6135, 1264, 5051, 1112, 1098, 7016, 2]
 
-// Module 8573 (GuildSettingsActionCreators)
+// Module 8574 (GuildSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
@@ -16,7 +16,7 @@ import LurkingStore from "LurkingStore" /* 4976 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8575 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -34,16 +34,17 @@ let _asyncToGenerator = _asyncToGenerator_mod;
 let tmp3 = new LoggerDefault("GuildSettingsActionCreators");
 let closure_15 = tmp3;
 let obj = {
-  init(guildId, section, location, subsection) {
+  init(guildId, section, location, subsection, sectionParams) {
     obj = DispatcherDefault;
-    const obj2 = { type: "GUILD_SETTINGS_INIT", guildId, section, subsection, location };
+    const obj2 = { type: "GUILD_SETTINGS_INIT", guildId, section, subsection, location, sectionParams };
     obj.dispatch(obj2);
   },
-  open(guildId, arg1, arg2, arg3) {
+  open(guildId, arg1, arg2, arg3, arg4) {
     let closure_3;
     let SAFETY = arg1;
     let closure_2 = arg2;
     _asyncToGenerator = arg3;
+    let closure_4 = arg4;
     return (async (arg0, value) => {
       let guild;
       if (c0 === 2) {
@@ -56,7 +57,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,20 +84,21 @@ let obj = {
               SAFETY = constants2.SAFETY;
               subsection = constants.SAFETY_DM_AND_SPAM_PROTECTION;
             }
-            closure_1_16.init(guildId, SAFETY, closure_2, subsection);
+            closure_1_16.init(guildId, SAFETY, closure_2, subsection, closure_4);
             obj = closure_1_16;
+            const tmp12 = closure_4;
             if (null != SAFETY) {
               obj.setSection(SAFETY, subsection);
             }
-            const obj5 = { type: "GUILD_SETTINGS_OPEN", guildId, section: SAFETY, subsection };
+            const obj5 = { type: "GUILD_SETTINGS_OPEN", guildId, section: SAFETY, subsection, sectionParams: tmp12 };
             const obj2 = SAFETY(closure_1_2[9]);
             obj2.dispatch(obj5);
             c0 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp24) {
+        } catch (tmp26) {
           c0 = 3;
-          throw tmp24;
+          throw tmp26;
         }
       }
     })();
@@ -391,7 +393,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -448,7 +450,7 @@ let obj = {
               obj.transitionTo(constants.GUILD_DISCOVERY);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c3 = 3;
@@ -476,7 +478,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -528,7 +530,7 @@ let obj = {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;
@@ -564,19 +566,19 @@ let obj = {
     obj3 = HTTPUtils;
     return post(request);
   },
-  disableIntegration(guildId, id) {
+  disableIntegration(arg0, arg1) {
     let obj2;
     const HTTP = HTTPUtils.HTTP;
     const del = HTTP.del;
-    obj = { url: authStore.GUILD_INTEGRATION(guildId, id), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
+    obj = { url: authStore.GUILD_INTEGRATION(arg0, arg1), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
     obj2 = HTTPUtils;
     return del(obj);
   },
-  updateIntegration(guildId, id, expire_behavior, expire_grace_period, enable_emoticons) {
+  updateIntegration(arg0, arg1, expire_behavior, expire_grace_period, enable_emoticons) {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore.GUILD_INTEGRATION(guildId, id), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore.GUILD_INTEGRATION(arg0, arg1), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { expire_behavior, expire_grace_period, enable_emoticons };
     obj3 = HTTPUtils;
@@ -605,7 +607,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -644,7 +646,7 @@ let obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c0 = 3;
@@ -668,7 +670,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -707,7 +709,7 @@ let obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c0 = 3;
@@ -730,7 +732,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -772,7 +774,7 @@ let obj = {
               return obj;
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           const tmp5 = closure_128_2;
           if (tmp5) {

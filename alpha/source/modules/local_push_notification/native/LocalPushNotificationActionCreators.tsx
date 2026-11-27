@@ -1,10 +1,10 @@
-// Module ID: 20393
-// Function ID: 20394
+// Module ID: 20451
+// Function ID: 20452
 // Name: LocalPushNotificationActionCreators
-// Dependencies: [7728, 1071, 8249, 572, 1242, 1256, 6991, 12298, 2120, 6126, 6784, 11487, 2]
+// Dependencies: [7728, 1071, 8250, 572, 1242, 1256, 6991, 12306, 2120, 6126, 6784, 11462, 2]
 // Exports: receiveLocalNotification
 
-// Module 20393 (LocalPushNotificationActionCreators)
+// Module 20451 (LocalPushNotificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -22,7 +22,7 @@ export function receiveLocalNotification(getData) {
   let constants2;
   let data;
   if (null != getData.getData) {
-    let obj2 = data(8249);
+    let obj2 = data(8250);
     obj2.trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;

@@ -1,10 +1,10 @@
-// Module ID: 19436
-// Function ID: 19437
+// Module ID: 19452
+// Function ID: 19453
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 4892, 4946, 1071, 4964, 5690, 10127, 10007, 1107, 2]
+// Dependencies: [5, 19, 4892, 4946, 1071, 4964, 5690, 10128, 10008, 1107, 2]
 // Exports: default
 
-// Module 19436 (useTransitionToConnectedActivityInVoice)
+// Module 19452 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1071 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -42,7 +42,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -86,7 +86,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                       }
                     }
                     c4 = 3;
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

@@ -1,20 +1,20 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9104
+// Function ID: 9105
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1387, 2178, 2179, 6359, 2119, 9104, 1071, 1389, 21, 5043, 9106, 1629, 6379, 6380, 7350, 5604, 1256, 504, 1501, 4909, 9107, 9109, 9111, 6363, 9231, 9136, 9158, 9135, 9314, 9315, 7347, 7351, 2174, 4856, 9317, 9360, 9364, 9367, 9695, 13919, 9263, 1379, 2]
+// Dependencies: [32, 19, 17, 1387, 2178, 2179, 6359, 2119, 9105, 1071, 1389, 21, 5043, 9107, 1629, 6379, 6380, 7350, 5604, 1256, 504, 1501, 4909, 9108, 9110, 9112, 6363, 9232, 9137, 9159, 9136, 9315, 9316, 7347, 7351, 2174, 4856, 9318, 9361, 9365, 9368, 9696, 13926, 9264, 1379, 2]
 // Exports: default
 
-// Module 9103 (UserSettingsPremium)
+// Module 9104 (UserSettingsPremium)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7347 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7351 */;
-import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 9106 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 9111 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 9314 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 9315 */;
+import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 9107 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 9112 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 9315 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 9316 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -23,7 +23,7 @@ import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import EntitlementStore from "EntitlementStore" /* 6359 */;
 import AppStateStore from "AppStateStore" /* 2119 */;
-import IAPStore from "IAPStore" /* 9104 */;
+import IAPStore from "IAPStore" /* 9105 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -43,12 +43,12 @@ let metroRequire;
 let tmp2;
 const useMountEffectDefault = tmp2(5604);
 const AnalyticsLocationDefault = tmp2(6380);
-const BlockedPaymentsCountryDisplayDefault = tmp2(9263);
-const PremiumSubscriptionDetailsDefault = tmp2(9317);
-const PremiumBillingInfoDefault = tmp2(9360);
-const PremiumAccountCreditDefault = tmp2(9364);
-const PremiumNitroHomeDefault = tmp2(9367);
-const PremiumMarketingPageDefault = tmp2(13919);
+const BlockedPaymentsCountryDisplayDefault = tmp2(9264);
+const PremiumSubscriptionDetailsDefault = tmp2(9318);
+const PremiumBillingInfoDefault = tmp2(9361);
+const PremiumAccountCreditDefault = tmp2(9365);
+const PremiumNitroHomeDefault = tmp2(9368);
+const PremiumMarketingPageDefault = tmp2(13926);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ AnalyticEvents: closure_14, AppStates: closure_15, UserSettingsSections: closure_16, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = PremiumConstants);
@@ -73,7 +73,7 @@ export default function UserSettingsPremium(applicationId) {
   let tmp30Result;
   let tmp30Result5;
   let tmp9;
-  const f95141 = () => {
+  const f95374 = () => {
     const items = [premiumTrialOffer.getPremiumTypeSubscription(), premiumTrialOffer.hasFetchedSubscriptions()];
     return items;
   };
@@ -134,8 +134,8 @@ export default function UserSettingsPremium(applicationId) {
   });
   let obj2 = applicationId(504);
   const items3 = [premiumTrialOffer];
-  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f95141);
-  _slicedToArray(obj2.useStateFromStoresArray(items3, f95141), 2);
+  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f95374);
+  _slicedToArray(obj2.useStateFromStoresArray(items3, f95374), 2);
   let obj3 = applicationId(1501);
   state = obj3.useNavigation();
   const items4 = [state2];
@@ -179,7 +179,7 @@ export default function UserSettingsPremium(applicationId) {
     }
     return flag;
   });
-  const obj11 = applicationId(9109);
+  const obj11 = applicationId(9110);
   const isPaymentsBlocked = obj11.useIsPaymentsBlocked();
   callback = analyticsLocations.useCallback(() => {
     const obj = BillingActionCreatorsDefault;
@@ -209,11 +209,11 @@ export default function UserSettingsPremium(applicationId) {
     }
     ref.current = tmp;
   }, items11);
-  const obj12 = applicationId(9136);
+  const obj12 = applicationId(9137);
   premiumTrialOffer = obj12.usePremiumTrialOffer();
-  const obj13 = applicationId(9158);
+  const obj13 = applicationId(9159);
   premiumDiscountOffer = obj13.usePremiumDiscountOffer();
-  const obj14 = applicationId(9135);
+  const obj14 = applicationId(9136);
   const premiumTrialOfferPremiumType = obj14.usePremiumTrialOfferPremiumType();
   const items12 = [premiumTrialOffer, premiumDiscountOffer];
   const effect2 = analyticsLocations.useEffect(() => {
@@ -282,9 +282,9 @@ export default function UserSettingsPremium(applicationId) {
     let TIER_2_LEADING = premiumFeatureCardOrder;
     if (null == premiumFeatureCardOrder) {
       if (premiumTrialOfferPremiumType === TIER_0.TIER_0) {
-        premiumFeatureCardOrder = tmp6(9695).PremiumFeatureCardOrder.TIER_0_LEADING;
+        premiumFeatureCardOrder = tmp6(9696).PremiumFeatureCardOrder.TIER_0_LEADING;
       } else if (premiumTrialOfferPremiumType === tmp33.TIER_2) {
-        premiumFeatureCardOrder = tmp6(9695).PremiumFeatureCardOrder.TIER_2_LEADING;
+        premiumFeatureCardOrder = tmp6(9696).PremiumFeatureCardOrder.TIER_2_LEADING;
       }
       TIER_2_LEADING = premiumFeatureCardOrder;
     }
@@ -318,7 +318,7 @@ export default function UserSettingsPremium(applicationId) {
       stateFromStores3 = tmp30(PremiumAccountCreditDefault, obj24);
     }
     if (TIER_2_LEADING == null) {
-      TIER_2_LEADING = tmp6(9695).PremiumFeatureCardOrder.TIER_2_LEADING;
+      TIER_2_LEADING = tmp6(9696).PremiumFeatureCardOrder.TIER_2_LEADING;
     }
     tmp30Result4 = tmp30(tmp2Result, obj21);
   }

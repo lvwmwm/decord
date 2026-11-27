@@ -1,10 +1,10 @@
-// Module ID: 18449
-// Function ID: 18450
+// Module ID: 18456
+// Function ID: 18457
 // Name: useConjurePreviewMode
-// Dependencies: [32, 19, 502, 6937, 504, 18450, 11457, 14650, 6971, 10085, 7678, 7677, 7691, 5687, 2]
+// Dependencies: [32, 19, 502, 6937, 504, 18457, 11467, 14657, 6971, 10086, 7678, 7677, 7691, 5687, 2]
 // Exports: resolvePreviewAppChannel, useConjurePreviewMode
 
-// Module 18449 (useConjurePreviewMode)
+// Module 18456 (useConjurePreviewMode)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7677 */;

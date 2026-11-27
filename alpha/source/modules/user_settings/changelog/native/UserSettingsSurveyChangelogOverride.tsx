@@ -1,9 +1,9 @@
-// Module ID: 17348
-// Function ID: 17349
+// Module ID: 17355
+// Function ID: 17356
 // Name: UserSettingsSurveyChangelogOverride
-// Dependencies: [32, 19, 17, 7848, 7856, 21, 5043, 575, 7546, 7507, 7548, 5743, 7538, 7274, 5641, 17349, 5257, 504, 6831, 6140, 6144, 5634, 13422, 6115, 2]
+// Dependencies: [32, 19, 17, 7848, 7856, 21, 5043, 575, 7546, 7507, 7548, 5743, 7538, 7274, 5641, 17356, 5257, 504, 6831, 6140, 6144, 5634, 13430, 6115, 2]
 
-// Module 17348 (UserSettingsSurveyChangelogOverride)
+// Module 17355 (UserSettingsSurveyChangelogOverride)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
@@ -15,8 +15,8 @@ import usePreviousDefault from "usePrevious" /* 6831 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7507 */;
 import ActionSheet2 from "ActionSheet" /* 7546 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 7548 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 13422 */;
-import SurveyActionCreatorsAll from "SurveyActionCreators" /* 17349 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 13430 */;
+import SurveyActionCreatorsAll from "SurveyActionCreators" /* 17356 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChangelogStore from "ChangelogStore" /* 7848 */;

@@ -1,14 +1,14 @@
-// Module ID: 18481
-// Function ID: 18482
+// Module ID: 18488
+// Function ID: 18489
 // Name: useConjureViewPlacement
-// Dependencies: [32, 19, 4892, 11475, 504, 18465, 1112, 4245, 7708, 2]
+// Dependencies: [32, 19, 4892, 11485, 504, 18472, 1112, 4245, 7708, 2]
 // Exports: default
 
-// Module 18481 (useConjureViewPlacement)
+// Module 18488 (useConjureViewPlacement)
 import intl5 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureViewsTypes from "ConjureViewsTypes" /* 7708 */;
-import conjureViewPlacement from "conjureViewPlacement" /* 18465 */;
+import conjureViewPlacement from "conjureViewPlacement" /* 18472 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -98,7 +98,7 @@ export default function useConjureViewPlacement(install_scope, views) {
   if (tmp12) {
     const obj4 = { personal: "user" === install_scope.install_scope, live: isConjureLiveResult, channelName, buildAppChannels: previewAppChannels };
     previewAppChannels = undefined;
-    let initialConjureViewPlacement = tmp7(18465).initialConjureViewPlacement;
+    let initialConjureViewPlacement = tmp7(18472).initialConjureViewPlacement;
     require("conjureViewPlacement");
     if (views != null) {
       previewAppChannels = views.previewAppChannels;
@@ -210,12 +210,12 @@ export default function useConjureViewPlacement(install_scope, views) {
           removeAppChannel(key) {
                   let closure_0 = key;
                   return closure_10((appChannels) => {
-                    const f140041 = () => null;
+                    const f140497 = () => null;
                     const obj = {
                       appChannels: appChannels.flatMap((key) => {
                         let tmp = key;
                         if (key.key === closure_0) {
-                          let items = f140043(key);
+                          let items = f140499(key);
                           if (items == null) {
                             items = [];
                           }
@@ -233,8 +233,8 @@ export default function useConjureViewPlacement(install_scope, views) {
                   let closure_0 = key;
                   let closure_1 = arg1;
                   return closure_10((appChannels) => {
-                    const f140042 = (arg0) => {
-                      const obj = { name: f140042 };
+                    const f140498 = (arg0) => {
+                      const obj = { name: f140498 };
                       const merged = Object.assign(arg0);
                       return obj;
                     };
@@ -242,7 +242,7 @@ export default function useConjureViewPlacement(install_scope, views) {
                       appChannels: appChannels.flatMap((key) => {
                         let tmp = key;
                         if (key.key === closure_0) {
-                          let items = f140043(key);
+                          let items = f140499(key);
                           if (items == null) {
                             items = [];
                           }
@@ -260,8 +260,8 @@ export default function useConjureViewPlacement(install_scope, views) {
                   let closure_0 = key;
                   let closure_1 = arg1;
                   return closure_10((appChannels) => {
-                    const f140043 = (arg0) => {
-                      const obj = { view: f140043 };
+                    const f140499 = (arg0) => {
+                      const obj = { view: f140499 };
                       const merged = Object.assign(arg0);
                       return obj;
                     };
@@ -269,7 +269,7 @@ export default function useConjureViewPlacement(install_scope, views) {
                       appChannels: appChannels.flatMap((key) => {
                         let tmp = key;
                         if (key.key === closure_0) {
-                          let items = f140043(key);
+                          let items = f140499(key);
                           if (items == null) {
                             items = [];
                           }

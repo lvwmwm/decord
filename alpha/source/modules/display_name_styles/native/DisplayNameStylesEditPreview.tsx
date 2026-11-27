@@ -1,10 +1,10 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16625
+// Function ID: 16626
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5044, 6376, 21, 5043, 575, 6375, 2110, 504, 9502, 9484, 1112, 3303, 11943, 16617, 6944, 11944, 4865, 1186, 9511, 9808, 9809, 5634, 2]
+// Dependencies: [19, 17, 5044, 6376, 21, 5043, 575, 6375, 2110, 504, 9503, 9485, 1112, 3303, 11951, 16624, 6944, 11952, 4865, 1186, 9512, 9809, 9810, 5634, 2]
 // Exports: default
 
-// Module 16618 (DisplayNameStylesEditPreview)
+// Module 16625 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,11 +12,11 @@ import native from "native" /* 1186 */;
 import DateUtils from "DateUtils" /* 4865 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import useAvatarDecoration from "useAvatarDecoration" /* 6944 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 9502 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 9511 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9808 */;
-import types from "types" /* 9809 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 11944 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 9503 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 9512 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9809 */;
+import types from "types" /* 9810 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 11952 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6376 */;

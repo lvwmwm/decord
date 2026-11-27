@@ -1,16 +1,16 @@
-// Module ID: 14186
-// Function ID: 14187
+// Module ID: 14193
+// Function ID: 14194
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2165, 1387, 21, 5043, 575, 7309, 14187, 14188, 7512, 504, 8754, 1112, 5730, 1186, 5634, 5641, 11663, 2]
+// Dependencies: [19, 17, 2165, 1387, 21, 5043, 575, 7309, 14194, 14195, 7512, 504, 8755, 1112, 5730, 1186, 5634, 5641, 11671, 2]
 // Exports: default
 
-// Module 14186 (GameProfileLinkAccount)
+// Module 14193 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7309 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
-import GameProfileSection from "GameProfileSection" /* 14187 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 14188 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8755 */;
+import GameProfileSection from "GameProfileSection" /* 14194 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 14195 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import UserStore from "UserStore" /* 1387 */;
@@ -105,7 +105,7 @@ let closure_11 = react.memo(function GameProfileLinkAccountSkeleton() {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(14188), obj13);
+    tmp5Result = tmp5(tmp2(14195), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };

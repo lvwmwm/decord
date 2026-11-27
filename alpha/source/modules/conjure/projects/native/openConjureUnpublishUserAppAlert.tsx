@@ -1,10 +1,10 @@
-// Module ID: 18517
-// Function ID: 18518
+// Module ID: 18522
+// Function ID: 18523
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2165, 21, 504, 11471, 1112, 4245, 5725, 6052, 5634, 6048, 2]
+// Dependencies: [5, 32, 19, 2165, 21, 504, 11481, 1112, 4245, 5725, 6052, 5634, 6048, 2]
 // Exports: default
 
-// Module 18517 (openConjureUnpublishUserAppAlert)
+// Module 18522 (openConjureUnpublishUserAppAlert)
 import useAlertStore from "useAlertStore" /* 6048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -50,7 +50,7 @@ function ConjureUnpublishUserAppAlert(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ function ConjureUnpublishUserAppAlert(project) {
             obj7 = { app: closure_129_2 };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else {
             const intl = tmp(c2[7]).intl;
             tmp = intl.string(tmp4(c2[8])["rE/0SD"]);

@@ -1,16 +1,16 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13385
+// Function ID: 13386
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 8181, 8182, 2141, 7174, 1387, 7074, 5043, 575, 12434, 12, 8719, 504, 7176, 12435, 12433, 10095, 2118, 13378, 2]
+// Dependencies: [32, 19, 8182, 8183, 2141, 7174, 1387, 7074, 5043, 575, 12442, 12, 8720, 504, 7176, 12443, 12441, 10096, 2118, 13386, 2]
 
-// Module 13377 (ChatInputAppCommandManager)
+// Module 13385 (ChatInputAppCommandManager)
 import nativeDefault from "native" /* 575 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12433 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 13378 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12441 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 13386 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8181 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8182 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8182 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8183 */;
 import GameStore from "GameStore" /* 2141 */;
 import GameAutocompleteStore from "GameAutocompleteStore" /* 7174 */;
 import UserStore from "UserStore" /* 1387 */;

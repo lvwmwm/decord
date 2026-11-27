@@ -1,9 +1,9 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12547
+// Function ID: 12548
 // Name: TouchableHitBox
 // Dependencies: [19, 17, 21, 5043, 575, 5104, 1186, 6152, 2]
 
-// Module 12539 (TouchableHitBox)
+// Module 12547 (TouchableHitBox)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

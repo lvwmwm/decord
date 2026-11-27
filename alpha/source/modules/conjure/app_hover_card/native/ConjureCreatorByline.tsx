@@ -1,14 +1,14 @@
-// Module ID: 11562
-// Function ID: 11563
+// Module ID: 11570
+// Function ID: 11571
 // Name: ConjureCreatorByline
-// Dependencies: [19, 21, 5043, 6115, 575, 1186, 5634, 11563, 2]
+// Dependencies: [19, 21, 5043, 6115, 575, 1186, 5634, 11571, 2]
 // Exports: default
 
-// Module 11562 (ConjureCreatorByline)
+// Module 11570 (ConjureCreatorByline)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
-import conjureCreatorByline from "conjureCreatorByline" /* 11563 */;
+import conjureCreatorByline from "conjureCreatorByline" /* 11571 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

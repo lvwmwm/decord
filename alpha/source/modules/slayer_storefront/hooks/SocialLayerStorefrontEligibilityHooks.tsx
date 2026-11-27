@@ -1,14 +1,14 @@
-// Module ID: 11136
-// Function ID: 11137
+// Module ID: 11137
+// Function ID: 11138
 // Name: SocialLayerStorefrontEligibilityHooks
-// Dependencies: [19, 11137, 2140, 6163, 4914, 6014, 7590, 504, 8757, 11138, 2]
+// Dependencies: [19, 11138, 2140, 6163, 4914, 6014, 7590, 504, 8758, 11139, 2]
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, useUsersPlayingStorefrontEnabledGamesApplicationIds
 
-// Module 11136 (SocialLayerStorefrontEligibilityHooks)
+// Module 11137 (SocialLayerStorefrontEligibilityHooks)
 import get_initialized from "get initialized" /* 504 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8757 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8758 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 11137 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 11138 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, gamesSeen;
 
-const f99420 = () => {
+const f99653 = () => {
   const items = [];
   const runningGames = RunningGameStore.getRunningGames();
   const iter = runningGames[Symbol.iterator]();
@@ -205,12 +205,12 @@ export function useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds() {
 export function useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds() {
   const items = [RunningGameStore, SocialLayerStorefrontStore];
   const obj = get_initialized;
-  return obj.useStateFromStoresArray(items, f99420, []);
+  return obj.useStateFromStoresArray(items, f99653, []);
 }
 export function useIsCurrentUserPlayingSocialLayerStorefrontGames() {
   let items = [RunningGameStore, SocialLayerStorefrontStore];
   const obj = get_initialized;
-  return obj.useStateFromStoresArray(items, f99420, []).length > 0;
+  return obj.useStateFromStoresArray(items, f99653, []).length > 0;
 }
 export function useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds() {
   let guildIds;

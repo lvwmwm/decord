@@ -1,19 +1,19 @@
-// Module ID: 17290
-// Function ID: 17291
+// Module ID: 17297
+// Function ID: 17298
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 8362, 21, 5043, 575, 5725, 1629, 504, 6874, 8363, 13834, 9894, 5634, 7251, 7253, 6140, 6144, 16695, 16693, 7290, 6878, 2]
+// Dependencies: [5, 32, 19, 17, 8363, 21, 5043, 575, 5725, 1629, 504, 6874, 8364, 13841, 9895, 5634, 7251, 7253, 6140, 6144, 16702, 16700, 7290, 6878, 2]
 // Exports: default
 
-// Module 17290 (DevToolsBountyQaScreen)
+// Module 17297 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import QuestActionCreators from "QuestActionCreators" /* 9894 */;
+import QuestActionCreators from "QuestActionCreators" /* 9895 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8362 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8363 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -63,7 +63,7 @@ export default function DevToolsBountyQaScreen() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -84,7 +84,7 @@ export default function DevToolsBountyQaScreen() {
                   closure_1_12("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -132,7 +132,7 @@ export default function DevToolsBountyQaScreen() {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           if (0 === c2) {

@@ -1,19 +1,19 @@
-// Module ID: 13440
-// Function ID: 13441
+// Module ID: 13448
+// Function ID: 13449
 // Name: ChatInputGuardGuildMemberVerification
-// Dependencies: [19, 5044, 12960, 1071, 21, 5043, 7009, 5079, 13441, 1112, 6013, 6997, 13442, 7247, 7031, 504, 13431, 5730, 5628, 13443, 2]
+// Dependencies: [19, 5044, 12968, 1071, 21, 5043, 7009, 5079, 13449, 1112, 6013, 6997, 13450, 7247, 7031, 504, 13439, 5730, 5628, 13451, 2]
 
-// Module 13440 (ChatInputGuardGuildMemberVerification)
+// Module 13448 (ChatInputGuardGuildMemberVerification)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6997 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7031 */;
-import ChatInputConstants from "ChatInputConstants" /* 12960 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13431 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13441 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13442 */;
+import ChatInputConstants from "ChatInputConstants" /* 12968 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13439 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13449 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13450 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import createStyles from "createStyles" /* 5043 */;

@@ -1,17 +1,17 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13463
+// Function ID: 13464
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 4910, 4955, 4949, 21, 5043, 575, 1112, 504, 8526, 1255, 5634, 6152, 12116, 1186, 13454, 7155, 8559, 8556, 10346, 2]
+// Dependencies: [19, 17, 4910, 4955, 4949, 21, 5043, 575, 1112, 504, 8527, 1255, 5634, 6152, 12124, 1186, 13462, 7155, 8560, 8557, 10347, 2]
 // Exports: default
 
-// Module 13455 (ChannelAccessInfo)
+// Module 13463 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import GuildRecord from "GuildRecord" /* 4910 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8526 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12116 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8527 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12124 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
@@ -64,7 +64,7 @@ export default function ChannelAccessInfo(guild) {
     id = guild.id;
   }
   const memberIds = getMemberIds(id);
-  const tmp2Result = guild(8526);
+  const tmp2Result = guild(8527);
   const existingMembers = tmp2Result.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
   const tmp8 = 0 === stateFromStoresArray.length && 1 === existingMembers.length && isGuildOwner(guild, existingMembers[0]);
   let first = null;
@@ -158,16 +158,16 @@ export default function ChannelAccessInfo(guild) {
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(13454);
+    channel(13462);
     items5 = [renderCounts(MEMBERS, length, 0, tmp2(7155).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;
-    channel(8559);
-    items5[1] = renderCounts(ROLES, length2, 0, guild(8556).ShieldUserIcon);
+    channel(8560);
+    items5[1] = renderCounts(ROLES, length2, 0, guild(8557).ShieldUserIcon);
   }
   const obj10 = { children: items2 };
   items6 = [tmp13(tmp14, obj3), ];
-  const obj11 = { source: channel(10346), size: guild(1186).Icon.Sizes.SMALL };
+  const obj11 = { source: channel(10347), size: guild(1186).Icon.Sizes.SMALL };
   const Icon = tmp2(1186).Icon;
   items6[1] = tmp13(Icon, obj11);
   items2[1] = closure_9(PressableOpacity, obj2);

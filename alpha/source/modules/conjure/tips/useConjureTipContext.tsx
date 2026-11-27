@@ -1,12 +1,12 @@
-// Module ID: 18665
-// Function ID: 18666
+// Module ID: 18680
+// Function ID: 18681
 // Name: useConjureTipContext
-// Dependencies: [1387, 7710, 11459, 504, 18666, 18667, 18664, 18668, 7719, 18645, 18670, 2]
+// Dependencies: [1387, 7710, 11469, 504, 18681, 18682, 18679, 18683, 7719, 18660, 18684, 2]
 // Exports: default
 
-// Module 18665 (useConjureTipContext)
-import conjureTipImpressions from "conjureTipImpressions" /* 18664 */;
-import conjureTipDismissals from "conjureTipDismissals" /* 18670 */;
+// Module 18680 (useConjureTipContext)
+import conjureTipImpressions from "conjureTipImpressions" /* 18679 */;
+import conjureTipDismissals from "conjureTipDismissals" /* 18684 */;
 import UserStore from "UserStore" /* 1387 */;
 import ConjureSettingsStore from "ConjureSettingsStore" /* 7710 */;
 import size from "module_2" /* 2 */;
@@ -88,8 +88,13 @@ export default function useConjureTipContext(projectId, arr, draftHasText, onAsk
   if (id1 == null) {
     id1 = id;
   }
+  let id2;
+  let tmpResult = tmp(tmp2[7]);
+  if (atResult != null) {
+    id2 = atResult.id;
+  }
+  const tmpResultResult = tmpResult(projectId, projectEvent1, id2);
   let num2;
-  const tmp17 = tmp(stateFromStores[7])(projectId, projectEvent1);
   if (projectEvent1 != null) {
     const settings_keys = projectEvent1.settings_keys;
     if (settings_keys != null) {
@@ -123,7 +128,11 @@ export default function useConjureTipContext(projectId, arr, draftHasText, onAsk
     hasRunningTurnResult = null != tmp4Result21.pendingPlanRenderId(arr);
   }
   if (!hasRunningTurnResult) {
-    hasRunningTurnResult = null != tmp17;
+    let open;
+    if (tmpResultResult != null) {
+      open = tmpResultResult.open;
+    }
+    hasRunningTurnResult = true === open;
   }
   if (!hasRunningTurnResult) {
     hasRunningTurnResult = stateFromStores1;

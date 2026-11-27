@@ -1,10 +1,10 @@
-// Module ID: 18494
-// Function ID: 18495
+// Module ID: 18501
+// Function ID: 18502
 // Name: ConjureViewPlacementSection
-// Dependencies: [19, 17, 21, 5043, 575, 5634, 1112, 4245, 5641, 11268, 7186, 9067, 14795, 7274, 7708, 7944, 5750, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5634, 1112, 4245, 5641, 11269, 7186, 9068, 14801, 7274, 7708, 7944, 5750, 2]
 // Exports: default
 
-// Module 18494 (ConjureViewPlacementSection)
+// Module 18501 (ConjureViewPlacementSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
@@ -31,7 +31,7 @@ let obj6;
 let obj7;
 let obj8;
 let tmp2;
-const ChevronLargeDownIcon = tmp2(14795);
+const ChevronLargeDownIcon = tmp2(14801);
 function ViewPicker(label) {
   let items1;
   label = label.label;
@@ -98,7 +98,7 @@ function ViewPicker(label) {
       return hasOwnProperty(Button, obj);
     }
   };
-  items1[1] = label(tmp6(9067).ContextMenu, obj3);
+  items1[1] = label(tmp6(9068).ContextMenu, obj3);
   return tmp3(tmp4, obj);
 }
 function AppChannel(row) {
@@ -255,7 +255,7 @@ export default function ConjureViewPlacementSection(placement) {
     }
     items3[3] = tmp4Result7;
     const obj13 = { style: tmp.addRow, children: items4 };
-    const obj14 = { variant: "secondary", size: "sm", text: intl8.string(disabled(4245)["3g7BVY"]), icon: closure_5(placement(11268).PlusSmallIcon, { size: "xs" }), disabled, onPress: placement.addAppChannel };
+    const obj14 = { variant: "secondary", size: "sm", text: intl8.string(disabled(4245)["3g7BVY"]), icon: closure_5(placement(11269).PlusSmallIcon, { size: "xs" }), disabled, onPress: placement.addAppChannel };
     const Button = tmp5(5641).Button;
     intl8 = tmp5(1112).intl;
     if (!disabled) {

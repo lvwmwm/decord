@@ -1,10 +1,10 @@
-// Module ID: 14944
-// Function ID: 14945
+// Module ID: 14951
+// Function ID: 14952
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 6923, 6813, 2132, 4975, 5851, 1071, 1082, 5855, 21, 5043, 6381, 504, 6803, 8707, 10534, 5868, 10391, 5996, 10397, 6140, 14945, 1112, 6004, 14946, 14948, 7556, 8657, 10504, 14949, 13515, 1256, 14951, 10639, 7278, 5634, 13618, 14317, 8088, 5257, 8684, 8680, 2]
+// Dependencies: [19, 17, 6923, 6813, 2132, 4975, 5851, 1071, 1082, 5855, 21, 5043, 6381, 504, 6803, 8708, 10535, 5868, 10392, 5996, 10398, 6140, 14952, 1112, 6004, 14953, 14955, 7556, 8658, 10505, 14956, 13523, 1256, 14958, 10640, 7278, 5634, 13625, 14324, 8088, 5257, 8685, 8681, 2]
 // Exports: default
 
-// Module 14944 (UserProfileVoiceSettings)
+// Module 14951 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
 import Constants2 from "Constants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -12,9 +12,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import Constants3 from "Constants" /* 5855 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5996 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6004 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8684 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13618 */;
-import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14948 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8685 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13625 */;
+import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14955 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 6923 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
@@ -381,9 +381,9 @@ function CurrentUserVoiceSettings(channel) {
             }
       };
       if (stateFromStores) {
-        MicrophoneIcon = tmp2(8657).MicrophoneSlashIcon;
+        MicrophoneIcon = tmp2(8658).MicrophoneSlashIcon;
       } else {
-        MicrophoneIcon = tmp2(10504).MicrophoneIcon;
+        MicrophoneIcon = tmp2(10505).MicrophoneIcon;
       }
       obj6 = { children: closure_13(UserProfileFormRow, obj5, "mute") };
       tmp9Result = tmp9(tmp6Result, obj4);

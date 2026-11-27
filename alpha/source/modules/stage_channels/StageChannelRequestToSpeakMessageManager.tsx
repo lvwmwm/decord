@@ -1,9 +1,9 @@
-// Module ID: 19871
-// Function ID: 19872
+// Module ID: 19887
+// Function ID: 19888
 // Name: StageChannelRequestToSpeakMessageManager
-// Dependencies: [502, 4892, 6391, 4975, 4946, 1387, 1071, 7475, 4900, 19872, 1087, 8244, 2]
+// Dependencies: [502, 4892, 6391, 4975, 4946, 1387, 1071, 7475, 4900, 19888, 1087, 8245, 2]
 
-// Module 19871 (StageChannelRequestToSpeakMessageManager)
+// Module 19887 (StageChannelRequestToSpeakMessageManager)
 import Constants from "Constants" /* 1071 */;
 import MessageTypes from "MessageTypes" /* 1087 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

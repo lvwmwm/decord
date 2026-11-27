@@ -1,15 +1,15 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16801
+// Function ID: 16802
 // Name: QuestDockUnenrolledBackground
-// Dependencies: [19, 6871, 16680, 21, 575, 16714, 16674, 16795, 16792, 8392, 16796, 2]
+// Dependencies: [19, 6871, 16687, 21, 575, 16721, 16681, 16802, 16799, 8393, 16803, 2]
 
-// Module 16794 (QuestDockUnenrolledBackground)
+// Module 16801 (QuestDockUnenrolledBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import QuestDockConstants from "QuestDockConstants" /* 16680 */;
-import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 16796 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import QuestDockConstants from "QuestDockConstants" /* 16687 */;
+import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 16803 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,15 +24,15 @@ const memoResult = react.memo(function QuestDockUnenrolledBackground() {
   let tmp9;
   let url;
   let videoAsset;
-  const obj = handleAcceptQuest(16714);
+  const obj = handleAcceptQuest(16721);
   const questDockQuest = obj.useQuestDockQuest();
-  const obj2 = handleAcceptQuest(16674);
+  const obj2 = handleAcceptQuest(16681);
   const questDockHeroAsset = obj2.useQuestDockHeroAsset(questDockQuest);
   ({ videoAsset, staticUrl } = questDockHeroAsset);
-  const QuestBarStartQuestOnClickExperiment = handleAcceptQuest(16795).QuestBarStartQuestOnClickExperiment;
+  const QuestBarStartQuestOnClickExperiment = handleAcceptQuest(16802).QuestBarStartQuestOnClickExperiment;
   const obj3 = { location: QuestsExperimentLocations.QUESTS_BAR_MOBILE };
   let enabled = QuestBarStartQuestOnClickExperiment.useConfig(obj3).enabled;
-  const obj4 = handleAcceptQuest(16792);
+  const obj4 = handleAcceptQuest(16799);
   const questDockAcceptQuest = obj4.useQuestDockAcceptQuest();
   handleAcceptQuest = questDockAcceptQuest.handleAcceptQuest;
   const items = [handleAcceptQuest];

@@ -1,7 +1,7 @@
 // Module ID: 8115
 // Function ID: 8116
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 4896, 4892, 6932, 4977, 4901, 8116, 12, 4903, 11, 8167, 504, 572, 2]
+// Dependencies: [32, 4896, 4892, 6932, 4977, 4901, 8116, 12, 4903, 11, 8168, 504, 572, 2]
 
 // Module 8115 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -12,7 +12,7 @@ import ChannelRecord from "ChannelRecord" /* 4896 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 4901 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4903 */;
 import Tracking from "Tracking" /* 8116 */;
-import ForumUtils from "ForumUtils" /* 8167 */;
+import ForumUtils from "ForumUtils" /* 8168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;

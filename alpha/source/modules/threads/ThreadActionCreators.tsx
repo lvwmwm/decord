@@ -1,7 +1,7 @@
 // Module ID: 8114
 // Function ID: 8115
 // Name: ThreadActionCreators
-// Dependencies: [5, 4896, 502, 4892, 4975, 8115, 4977, 8178, 1071, 4899, 1285, 572, 6046, 1112, 6013, 8179, 8180, 8185, 8187, 8188, 1255, 4903, 2]
+// Dependencies: [5, 4896, 502, 4892, 4975, 8115, 4977, 8179, 1071, 4899, 1285, 572, 6046, 1112, 6013, 8180, 8181, 8186, 8188, 8189, 1255, 4903, 2]
 
 // Module 8114 (ThreadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -13,13 +13,13 @@ import ChannelConstants from "ChannelConstants" /* 4899 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
 import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8115 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8179 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8180 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
-import ThreadSummaryStore from "ThreadSummaryStore" /* 8178 */;
+import ThreadSummaryStore from "ThreadSummaryStore" /* 8179 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp;
-const ApplicationCommandActionCreators = tmp(8180);
-const f92705 = (body) => {
+const ApplicationCommandActionCreators = tmp(8181);
+const f92933 = (body) => {
   const obj = DispatcherDefault;
   const obj2 = { type: "THREAD_UPDATE", channel: closure_4(body.body) };
   obj.dispatch(obj2);
@@ -56,7 +56,7 @@ function patchThread(id, body) {
   const patch = HTTP.patch;
   obj2 = require("HTTPUtils");
   const patchResult = patch(request);
-  return patchResult.then(f92705);
+  return patchResult.then(f92933);
 }
 function dispatchThreadMemberLocalUpdate(id, isJoining) {
   const obj = DispatcherDefault;
@@ -82,7 +82,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f92705);
+    return patchResult.then(f92933);
   },
   lockThread(channel) {
     let closure_0 = channel;
@@ -98,7 +98,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -219,7 +219,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -383,7 +383,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -427,7 +427,7 @@ let obj = {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           c0 = 3;
           throw tmp8;
@@ -445,7 +445,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f92705);
+    return patchResult.then(f92933);
   },
   joinThread(channel, arg1) {
     let closure_0 = channel;
@@ -634,7 +634,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -684,7 +684,7 @@ let obj = {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           if (0 === c2) {
@@ -797,7 +797,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;

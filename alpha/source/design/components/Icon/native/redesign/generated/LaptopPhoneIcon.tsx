@@ -1,14 +1,14 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16475
+// Function ID: 16476
 // Name: LaptopPhoneIcon
-// Dependencies: [19, 21, 575, 5729, 16469, 2]
+// Dependencies: [19, 21, 575, 5729, 16476, 2]
 // Exports: LaptopPhoneIcon
 
-// Module 16468 (LaptopPhoneIcon)
+// Module 16475 (LaptopPhoneIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 16469 */;
+import AssetRegistry from "AssetRegistry" /* 16476 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

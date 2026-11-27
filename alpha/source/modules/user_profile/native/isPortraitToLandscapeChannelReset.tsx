@@ -1,10 +1,10 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14858
+// Function ID: 14859
 // Name: isPortraitToLandscapeChannelReset
 // Dependencies: [2]
 // Exports: default
 
-// Module 14852 (isPortraitToLandscapeChannelReset)
+// Module 14858 (isPortraitToLandscapeChannelReset)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/native/isPortraitToLandscapeChannelReset.tsx");

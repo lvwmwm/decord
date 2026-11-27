@@ -1,30 +1,30 @@
-// Module ID: 13383
-// Function ID: 13384
+// Module ID: 13391
+// Function ID: 13392
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 502, 13381, 13382, 1071, 7872, 7879, 1256, 1242, 10281, 13384, 13389, 13390, 504, 2]
+// Dependencies: [32, 5, 19, 17, 502, 13389, 13390, 1071, 7872, 7879, 1256, 1242, 10282, 13392, 13397, 13398, 504, 2]
 // Exports: enableProvisionalPushNotification, requestAndroidNotificationPermission, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 13383 (NotificationPermissionUtil)
+// Module 13391 (NotificationPermissionUtil)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
 import react_nativeDefault from "react-native" /* 7879 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13382 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13384 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13390 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13390 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13392 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13381 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13389 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, closure_3, closure_4;
 
 let metroImportDefault;
 let metroRequire;
-const f104227 = () => state.authorizationStatus;
+const f104468 = () => state.authorizationStatus;
 let obj = function _requestAndroidNotificationPermission() {
   let Version;
   let token;
@@ -39,7 +39,7 @@ let obj = function _requestAndroidNotificationPermission() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -90,7 +90,7 @@ let obj = function _requestAndroidNotificationPermission() {
           if (_Number !== token2) {
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else {
             _Number = closure_1;
             if (closure_1 !== closure_129_12.AUTHORIZED) {
@@ -108,7 +108,7 @@ let obj = function _requestAndroidNotificationPermission() {
           return obj8;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         closure_2 = tmp25;
@@ -141,7 +141,7 @@ obj = function _requestPushNotificationPermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -207,7 +207,7 @@ obj = function _requestPushNotificationPermission() {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp35) {
           c6 = 3;
@@ -233,7 +233,7 @@ obj = function _enableProvisionalPushNotification() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -288,7 +288,7 @@ obj = function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -332,7 +332,7 @@ export function useShowReactivationPrompt() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -364,7 +364,7 @@ export function useShowReactivationPrompt() {
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -388,7 +388,7 @@ export function useCanSeePushNotificationNudge() {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f104227);
+  const stateFromStores = obj2.useStateFromStores(items, f104468);
   [tmp4, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {
@@ -423,7 +423,7 @@ export function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f104227);
+  const stateFromStores = obj2.useStateFromStores(items, f104468);
   [tmp7, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {

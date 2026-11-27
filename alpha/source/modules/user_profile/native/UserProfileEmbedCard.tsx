@@ -1,13 +1,13 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 11981
+// Function ID: 11982
 // Name: UserProfileEmbedCard
-// Dependencies: [4985, 1387, 6163, 4868, 6162, 6807, 8821, 2]
+// Dependencies: [4985, 1387, 6163, 4868, 6162, 6807, 8822, 2]
 // Exports: userProfileEmbedCardKey
 
-// Module 11973 (UserProfileEmbedCard)
+// Module 11981 (UserProfileEmbedCard)
 import useDisplayProfile from "useDisplayProfile" /* 6162 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8822 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;

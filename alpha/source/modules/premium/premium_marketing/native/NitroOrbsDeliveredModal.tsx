@@ -1,10 +1,10 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9274
+// Function ID: 9275
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1071, 1073, 21, 5043, 575, 6116, 1264, 6310, 6380, 8109, 9274, 7480, 7547, 5730, 9277, 5634, 1112, 5641, 2]
+// Dependencies: [32, 19, 17, 1071, 1073, 21, 5043, 575, 6116, 1264, 6310, 6380, 8109, 9275, 7480, 7547, 5730, 9278, 5634, 1112, 5641, 2]
 // Exports: default
 
-// Module 9273 (NitroOrbsDeliveredModal)
+// Module 9274 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
@@ -13,7 +13,7 @@ import useTrackImpressionDefault from "useTrackImpression" /* 6116 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6310 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9277 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9278 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -96,7 +96,7 @@ export default function NitroOrbsDeliveredModal(arg0) {
   }, items1);
   [tmp10, c1] = react.useState(false);
   let obj2 = { style: tmp.root, children: items2 };
-  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(9274).OrbsRewardBackground, obj4) };
+  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(9275).OrbsRewardBackground, obj4) };
   _slicedToArray(react.useState(false), 2);
   const callback2 = react.useCallback(() => _undefined(true), []);
   obj4 = { style: tmp.background, onReady: callback2 };

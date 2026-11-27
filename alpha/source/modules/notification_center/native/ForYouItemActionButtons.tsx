@@ -1,10 +1,10 @@
-// Module ID: 18270
-// Function ID: 18271
+// Module ID: 18277
+// Function ID: 18278
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 4892, 1387, 1071, 21, 5043, 1107, 1654, 5253, 6115, 5641, 1112, 5634, 563, 12206, 17771, 5758, 5846, 11358, 6949, 7847, 7850, 5725, 12215, 1256, 2]
+// Dependencies: [5, 19, 17, 4892, 1387, 1071, 21, 5043, 1107, 1654, 5253, 6115, 5641, 1112, 5634, 563, 12214, 17778, 5758, 5846, 11359, 6949, 7847, 7850, 5725, 12223, 1256, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 18270 (ForYouItemActionButtons)
+// Module 18277 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _mod1654 from "module_1654" /* 1654 */;
@@ -15,8 +15,8 @@ import handleSupportedURLDefault from "handleSupportedURL" /* 5846 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6949 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11358 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17771 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11359 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17778 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -550,7 +550,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -585,7 +585,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         navigation = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         navigation = 3;
         throw tmp17;

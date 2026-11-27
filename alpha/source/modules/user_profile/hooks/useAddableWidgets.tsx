@@ -1,15 +1,15 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15003
+// Function ID: 15004
 // Name: useAddableWidgets
-// Dependencies: [19, 11473, 1387, 6172, 14650, 4868, 563, 14566, 14357, 14997, 6380, 11472, 6174, 14998, 6170, 1255, 6175, 6171, 2]
+// Dependencies: [19, 11483, 1387, 6172, 14657, 4868, 563, 14573, 14364, 15004, 6380, 11482, 6174, 15005, 6170, 1255, 6175, 6171, 2]
 // Exports: default
 
-// Module 14996 (useAddableWidgets)
+// Module 15003 (useAddableWidgets)
 import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6172 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11472 */;
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 14650 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11482 */;
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 14657 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11473 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11483 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let importDefault, set;
 
 function hasAddableApplicationWidgetSurfaces(arg0) {
-  const tmp3 = null != arg0.surfaces[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_TOP] && null != arg0.surfaces[tmp(undefined, 14650).ApplicationWidgetConfigSurface.WIDGET_BOTTOM] && null != arg0.surfaces[tmp(undefined, 14650).ApplicationWidgetConfigSurface.ADD_WIDGET_PREVIEW];
+  const tmp3 = null != arg0.surfaces[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_TOP] && null != arg0.surfaces[tmp(undefined, 14657).ApplicationWidgetConfigSurface.WIDGET_BOTTOM] && null != arg0.surfaces[tmp(undefined, 14657).ApplicationWidgetConfigSurface.ADD_WIDGET_PREVIEW];
   return tmp3;
 }
 const WIDGET_SORT_ORDER = UserProfileWidgetConstants.WIDGET_SORT_ORDER;

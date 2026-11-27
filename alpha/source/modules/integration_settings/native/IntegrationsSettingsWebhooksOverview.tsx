@@ -1,10 +1,10 @@
-// Module ID: 19181
-// Function ID: 19182
+// Module ID: 19197
+// Function ID: 19198
 // Name: IntegrationsSettingsWebhooksOverview
-// Dependencies: [5, 19, 4892, 4973, 4914, 4975, 1387, 19182, 1071, 21, 5043, 575, 1501, 1413, 6144, 1186, 1112, 11, 5099, 504, 19183, 8090, 19184, 5104, 2188, 5634, 19186, 6140, 8088, 6115, 5617, 2]
+// Dependencies: [5, 19, 4892, 4973, 4914, 4975, 1387, 19198, 1071, 21, 5043, 575, 1501, 1413, 6144, 1186, 1112, 11, 5099, 504, 19199, 8090, 19200, 5104, 2188, 5634, 19202, 6140, 8088, 6115, 5617, 2]
 // Exports: default
 
-// Module 19181 (IntegrationsSettingsWebhooksOverview)
+// Module 19197 (IntegrationsSettingsWebhooksOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -14,7 +14,7 @@ import native from "native" /* 5104 */;
 import NavScrim from "NavScrim" /* 5617 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
 import _mod8088 from "module_8088" /* 8088 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 19183 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 19199 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -22,7 +22,7 @@ import GuildChannelStore_mod from "GuildChannelStore" /* 4973 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import UserStore from "UserStore" /* 1387 */;
-import WebhooksStore from "WebhooksStore" /* 19182 */;
+import WebhooksStore from "WebhooksStore" /* 19198 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -94,27 +94,29 @@ function WebhookItem(avatar) {
   }
   return tmp6(TableRow, obj2);
 }
-function ConnectedWebhookItem(arg0) {
-  let id;
-  let stateFromStores1;
-  ({ channelId: require, user: importDefault } = arg0);
-  const merged = Object.assign(arg0, Object.assign({ channelId: 0, user: 0 }));
-  const items = [UserStore];
-  const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    importDefault = undefined;
-    const getUser = UserStore.getUser;
-    if (importDefault != null) {
-      importDefault = importDefault.id;
-    }
-    return getUser(importDefault);
-  });
-  const items1 = [ChannelStore];
-  const obj3 = { user: stateFromStores, channel: stateFromStores1 };
-  const obj2 = get_initialized;
-  stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(require));
-  const merged1 = Object.assign(merged);
-  return closure_18(WebhookItem, obj3);
+class ConnectedWebhookItem {
+  constructor(arg0) {
+    let id;
+    let stateFromStores1;
+    ({ channelId: require, user: importDefault } = arg0);
+    const merged = Object.assign(arg0, Object.assign({ channelId: 0, user: 0 }));
+    const items = [UserStore];
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, () => {
+      importDefault = undefined;
+      const getUser = UserStore.getUser;
+      if (importDefault != null) {
+        importDefault = importDefault.id;
+      }
+      return getUser(importDefault);
+    });
+    const items1 = [ChannelStore];
+    const obj3 = { user: stateFromStores, channel: stateFromStores1 };
+    const obj2 = get_initialized;
+    stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(require));
+    const merged1 = Object.assign(merged);
+    return closure_18(WebhookItem, obj3);
+  }
 }
 function CreateWebhookButton(guild) {
   let Icon;
@@ -157,7 +159,7 @@ function CreateWebhookButton(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -203,7 +205,7 @@ function CreateWebhookButton(guild) {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         c4 = 3;
         throw tmp17;
@@ -274,7 +276,7 @@ class WebhooksOverview extends PureComponent {
     }
     children[1] = tmp4Result;
     if (0 === found.length) {
-      const obj2 = { Illustration: webhookType(19186).WebhookEmpty, title: stringResult };
+      const obj2 = { Illustration: webhookType(19202).WebhookEmpty, title: stringResult };
       const EmptyState = tmp5(1186).EmptyState;
       if (webhookType === tmp7.CHANNEL_FOLLOWER) {
         const intl2 = tmp5(1112).intl;
@@ -402,3 +404,4 @@ export default function ConnectedWebhooksOverview(channelId) {
   }
   return tmp9;
 };
+export { ConnectedWebhookItem };

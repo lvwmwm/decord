@@ -1,10 +1,10 @@
-// Module ID: 19718
-// Function ID: 19719
+// Module ID: 19734
+// Function ID: 19735
 // Name: FeedbackActionSheetV2
-// Dependencies: [32, 19, 17, 12168, 21, 5043, 575, 5257, 12, 6831, 5604, 6130, 12190, 2120, 1112, 5634, 12172, 7181, 6140, 6144, 5641, 1629, 5271, 7507, 7547, 5275, 2]
+// Dependencies: [32, 19, 17, 12176, 21, 5043, 575, 5257, 12, 6831, 5604, 6130, 12198, 2120, 1112, 5634, 12180, 7181, 6140, 6144, 5641, 1629, 5271, 7507, 7547, 5275, 2]
 // Exports: default
 
-// Module 19718 (FeedbackActionSheetV2)
+// Module 19734 (FeedbackActionSheetV2)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,7 +13,7 @@ import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import usePreviousDefault from "usePrevious" /* 6831 */;
-import Constants from "Constants" /* 12168 */;
+import Constants from "Constants" /* 12176 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,7 +30,7 @@ let obj3;
 let tmp3;
 const useSafeAreaInsetsDefault = tmp3(1629);
 const useMountEffectDefault = tmp3(5604);
-const RatingSelectorDefault = tmp3(12172);
+const RatingSelectorDefault = tmp3(12180);
 function closeActionSheet() {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
@@ -81,7 +81,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let tmp33Result;
   let tmp40Result;
   let tmp41;
-  const f118859 = (problemOptions) => {
+  const f119138 = (problemOptions) => {
     let concat;
     let freeformConfig;
     const obj = { problemOptions: concat(freeformConfig) };
@@ -125,14 +125,14 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let closure_5 = tmp5;
   const useState = ref.useState;
   let obj2 = _modDef12;
-  [first, closure_7] = useState(obj2.shuffle(optionsTree.map(f118859)));
+  [first, closure_7] = useState(obj2.shuffle(optionsTree.map(f119138)));
   const items = [optionsTree, tmp5];
   const effect = ref.useEffect(() => {
     let obj = _modDef12;
     const arr = optionsTree;
     if (!obj.isEqual(closure_5, optionsTree)) {
       const tmpResult = _modDef12;
-      closure_7(tmpResult.shuffle(arr.map(f118859)));
+      closure_7(tmpResult.shuffle(arr.map(f119138)));
     }
   }, items);
   [first1, closure_9] = ref.useState(false);
@@ -169,7 +169,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
       const obj2 = { rating: first2, category: value, reason: first5, dontShowAgain: first1 };
       value = undefined;
       ModalActionCreatorsDefault;
-      const tmp13 = asyncRequire(12190, dependencyMap.paths);
+      const tmp13 = asyncRequire(12198, dependencyMap.paths);
       if (first4 != null) {
         value = iter.value;
       }

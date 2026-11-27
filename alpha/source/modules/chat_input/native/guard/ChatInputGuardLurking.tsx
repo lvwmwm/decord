@@ -1,18 +1,18 @@
-// Module ID: 13439
-// Function ID: 13440
+// Module ID: 13447
+// Function ID: 13448
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4976, 4892, 12960, 1071, 21, 504, 1098, 6013, 11758, 10440, 1195, 8935, 6991, 6995, 13431, 1112, 2]
+// Dependencies: [19, 4976, 4892, 12968, 1071, 21, 504, 1098, 6013, 11766, 10441, 1195, 8936, 6991, 6995, 13439, 1112, 2]
 
-// Module 13439 (ChatInputGuardLurking)
+// Module 13447 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6995 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 8935 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 10440 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11758 */;
-import ChatInputConstants from "ChatInputConstants" /* 12960 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 8936 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 10441 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11766 */;
+import ChatInputConstants from "ChatInputConstants" /* 12968 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4976 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(13431);
+    guildId(13439);
     const intl9 = tmp2(1112).intl;
     const intl10 = tmp2(1112).intl;
     const intl11 = tmp2(1112).intl;
@@ -107,7 +107,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(13431);
+    const tmp17 = guildId(13439);
     if (null != channel.pendingGameProfileReturn) {
       let obj3 = { type: "button-action", message: intl6.string(tmp2(1112).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1112).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1112).t.RLch70), buttonPrimaryOnPress: callback2 };
       intl6 = tmp2(1112).intl;

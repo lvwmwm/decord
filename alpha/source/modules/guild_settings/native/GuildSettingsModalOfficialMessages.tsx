@@ -1,10 +1,10 @@
-// Module ID: 20276
-// Function ID: 20277
+// Module ID: 20334
+// Function ID: 20335
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 6142, 5044, 4914, 8574, 5048, 1082, 21, 5043, 575, 1112, 16880, 11750, 16882, 1501, 504, 8573, 7191, 7751, 5257, 18080, 2120, 8486, 8616, 1654, 1707, 6144, 16040, 1089, 5634, 8617, 4865, 7626, 671, 1186, 16895, 2]
+// Dependencies: [32, 19, 17, 6142, 5044, 4914, 8575, 5048, 1082, 21, 5043, 575, 1112, 16887, 11758, 16889, 1501, 504, 8574, 7191, 7751, 5257, 18087, 2120, 8487, 8617, 1654, 1707, 6144, 16047, 1089, 5634, 8618, 4865, 7626, 671, 1186, 16902, 2]
 // Exports: default
 
-// Module 20276 (GuildSettingsModalOfficialMessages)
+// Module 20334 (GuildSettingsModalOfficialMessages)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1082 */;
@@ -16,13 +16,13 @@ import Text_Text from "Text/Text" /* 5634 */;
 import TableRowConstants from "TableRowConstants" /* 6142 */;
 import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7626 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16895 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8575 */;
 import MessageConstants from "MessageConstants" /* 5048 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -234,7 +234,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(18080, dependencyMap.paths);
+    const tmp2 = asyncRequire(18087, dependencyMap.paths);
     intl = intl4.intl;
     openLazy(tmp2, "RoleColorPicker", obj);
   }, items5);

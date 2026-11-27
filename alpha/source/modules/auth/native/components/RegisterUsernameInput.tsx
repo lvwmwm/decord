@@ -1,20 +1,20 @@
-// Module ID: 17683
-// Function ID: 17684
+// Module ID: 17690
+// Function ID: 17691
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 17656, 21, 5043, 1654, 16208, 6115, 7278, 575, 5634, 1112, 15478, 7274, 1379, 2]
+// Dependencies: [109, 32, 19, 17663, 21, 5043, 1654, 16215, 6115, 7278, 575, 5634, 1112, 15485, 7274, 1379, 2]
 // Exports: RegisterUsernameInput
 
-// Module 17683 (RegisterUsernameInput)
+// Module 17690 (RegisterUsernameInput)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15478 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16208 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15485 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16215 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17656 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17663 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -160,7 +160,7 @@ export function RegisterUsernameInput(setUsername) {
     type = usernameStatus.type;
   }
   str2 = undefined;
-  if (type === tmp15(16208).NameValidationState.ERROR) {
+  if (type === tmp15(16215).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: items3 };

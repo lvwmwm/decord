@@ -1,10 +1,10 @@
-// Module ID: 8937
-// Function ID: 8938
+// Module ID: 8938
+// Function ID: 8939
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [5637, 4892, 8812, 6788, 1071, 1195, 1112, 1256, 8938, 5811, 5816, 5705, 6830, 6825, 8815, 2]
+// Dependencies: [5637, 4892, 8813, 6788, 1071, 1195, 1112, 1256, 8939, 5811, 5816, 5705, 6830, 6825, 8816, 2]
 // Exports: hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
-// Module 8937 (ExplicitMediaRedactionUtils)
+// Module 8938 (ExplicitMediaRedactionUtils)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
@@ -14,10 +14,10 @@ import MonitoringAgentDefault from "MonitoringAgent" /* 5811 */;
 import MetricEvents from "MetricEvents" /* 5816 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6825 */;
 import AgeGatedFeature from "AgeGatedFeature" /* 6830 */;
-import SelfModUtils from "SelfModUtils" /* 8938 */;
+import SelfModUtils from "SelfModUtils" /* 8939 */;
 import DevSettingsStore from "DevSettingsStore" /* 5637 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 8812 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 8813 */;
 import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6788 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ObscureMediaModels = tmp(8815);
+const ObscureMediaModels = tmp(8816);
 ({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: metroImportDefault, MESSAGE_SCAN_TIMEOUT: metroImportAll } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx");

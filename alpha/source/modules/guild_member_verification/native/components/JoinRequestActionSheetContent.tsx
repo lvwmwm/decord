@@ -1,9 +1,9 @@
-// Module ID: 18439
-// Function ID: 18440
+// Module ID: 18446
+// Function ID: 18447
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 4892, 5272, 7557, 21, 5043, 575, 9487, 14850, 9485, 9489, 6133, 18437, 9510, 9520, 9525, 14963, 15068, 504, 13633, 5078, 5641, 7137, 1112, 5079, 14674, 5634, 7284, 4865, 11, 7525, 6863, 7944, 7186, 10761, 1629, 18440, 2]
+// Dependencies: [19, 17, 4892, 5272, 7557, 21, 5043, 575, 9488, 14856, 9486, 9490, 6133, 18444, 9511, 9521, 9526, 14970, 15075, 504, 13640, 5078, 5641, 7137, 1112, 5079, 14681, 5634, 7284, 4865, 11, 7525, 6863, 7944, 7186, 10762, 1629, 18447, 2]
 
-// Module 18439 (JoinRequestActionSheetContent)
+// Module 18446 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
 import Constants from "Constants" /* 7557 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18437 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18444 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ function OpenInterviewButton(arg0) {
     const tmp2 = null != interviewChannelId && null != ChannelStore.getChannel(tmp);
     return tmp2;
   }, items1);
-  const obj2 = interviewChannelId(13633);
+  const obj2 = interviewChannelId(13640);
   const joinRequestButtonActions = obj2.useJoinRequestButtonActions(joinRequest, interviewChannelId);
   ({ handleOpenInterview, submitting } = joinRequestButtonActions);
   const obj3 = interviewChannelId(5078);
@@ -103,11 +103,11 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
   user = user.user;
   ({ displayProfile, joinRequest } = user);
   const tmp = joinRequest;
-  const tmp3 = joinRequest(9487)();
-  const tmp4 = joinRequest(14850)(ACTION_SHEET_MAX_WIDTH);
-  ({ primaryColor, secondaryColor, theme } = joinRequest(9485)({ user, displayProfile }));
-  joinRequest(9485)({ user, displayProfile });
-  let obj = user(9489);
+  const tmp3 = joinRequest(9488)();
+  const tmp4 = joinRequest(14856)(ACTION_SHEET_MAX_WIDTH);
+  ({ primaryColor, secondaryColor, theme } = joinRequest(9486)({ user, displayProfile }));
+  joinRequest(9486)({ user, displayProfile });
+  let obj = user(9490);
   const userProfileColors = obj.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const items = [joinRequest, user.id];
   ({ gradientFallbackBackground, containerBackground, avatarBackground, statusBackground } = userProfileColors);
@@ -116,11 +116,11 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
   if (null != user) {
     const obj2 = { children: items1 };
     const obj3 = { user, displayProfile, bannerHeight: tmp4 };
-    items1 = [closure_8(tmp(9510), obj3), ];
+    items1 = [closure_8(tmp(9511), obj3), ];
     const obj5 = { user, disableStatus: true, backgroundColor: avatarBackground, statusStyle: obj6, onPress: tmp8 };
     const obj4 = { children: items2 };
     obj6 = { backgroundColor: statusBackground };
-    items2 = [closure_8(tmp(9520), obj5), ];
+    items2 = [closure_8(tmp(9521), obj5), ];
     const obj7 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items3, children: closure_9(View, obj9) };
     items3 = [, , ];
     ({ profileContentWrapper: arr4[0], profileContent: arr4[1] } = tmp3);
@@ -129,10 +129,10 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
     obj9 = { style: tmp3.primaryInfo, children: items4 };
     items4 = [, ];
     const obj10 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
-    const tmpResult = tmp(9525);
-    items4[0] = closure_8(tmp6(14963).PrimaryInfo, obj10);
+    const tmpResult = tmp(9526);
+    items4[0] = closure_8(tmp6(14970).PrimaryInfo, obj10);
     const obj11 = { user };
-    items4[1] = closure_8(tmp(15068), obj11);
+    items4[1] = closure_8(tmp(15075), obj11);
     items2[1] = closure_8(tmpResult, obj7);
     items1[1] = closure_9(View, obj4);
     tmp9 = closure_9(closure_10, obj2);
@@ -175,7 +175,7 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
       const obj2 = { style: tmp.statusContainer, children: items1 };
       const obj3 = { style: tmp.statusRow, children: items };
       const obj4 = { size: "lg", color: nativeDefault.colors.STATUS_WARNING };
-      const HourglassIcon = tmp2(14674).HourglassIcon;
+      const HourglassIcon = tmp2(14681).HourglassIcon;
       items = [metroImportAll(HourglassIcon, obj4), ];
       const obj5 = { children: metroImportAll(Text8, obj6) };
       obj6 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl6.string(intl8.t["Vr+7eO"]) };
@@ -319,7 +319,7 @@ let closure_15 = react.memo(function JoinRequestActionSheetApplicationActions(jo
   const callback = react.useCallback(() => {
     openJoinRequestActionSheetDefault(joinRequest);
   }, items);
-  const obj = joinRequest(13633);
+  const obj = joinRequest(13640);
   const joinRequestButtonActions = obj.useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, callback);
   ({ submitting, approveRequest, rejectRequest, handleOpenInterview } = joinRequestButtonActions);
   const ButtonGroup = joinRequest(6863).ButtonGroup;
@@ -332,7 +332,7 @@ let closure_15 = react.memo(function JoinRequestActionSheetApplicationActions(jo
   const obj4 = { variant: "destructive", icon: closure_8(XLargeIcon, obj5), label: intl2.string(joinRequest(1112).t.hDtbsz), onPress: rejectRequest, disabled: submitting };
   const IconButton2 = joinRequest(7944).IconButton;
   obj5 = { color: nativeDefault.colors.WHITE, size: "lg" };
-  XLargeIcon = joinRequest(10761).XLargeIcon;
+  XLargeIcon = joinRequest(10762).XLargeIcon;
   intl2 = joinRequest(1112).intl;
   children[1] = closure_8(IconButton2, obj4);
   let tmp6Result = null == joinRequest.interviewChannelId;
@@ -523,7 +523,7 @@ const memoResult = react.memo(function JoinRequestActionSheetContent(displayProf
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
   const obj7 = { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId };
-  items1[4] = closure_8(tmp2(18440), obj7);
+  items1[4] = closure_8(tmp2(18447), obj7);
   return closure_9(View, obj);
 });
 size = size_mod;

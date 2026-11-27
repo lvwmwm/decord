@@ -1,18 +1,18 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16651
+// Function ID: 16652
 // Name: OrbsArcadeRewardPreview
-// Dependencies: [19, 17, 21, 5043, 9417, 575, 2107, 5730, 9418, 16630, 11236, 2]
+// Dependencies: [19, 17, 21, 5043, 9418, 575, 2107, 5730, 9419, 16637, 11237, 2]
 // Exports: default
 
-// Module 16644 (OrbsArcadeRewardPreview)
+// Module 16651 (OrbsArcadeRewardPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 2107 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9417 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9418 */;
-import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 11236 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16630 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9418 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9419 */;
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 11237 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16637 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

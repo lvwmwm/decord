@@ -1,18 +1,18 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14423
+// Function ID: 14424
 // Name: PollResultSystemMessage
-// Dependencies: [1390, 12000, 14372, 12230, 1112, 1413, 4989, 14417, 14424, 14373, 2]
+// Dependencies: [1390, 12008, 14379, 12238, 1112, 1413, 4989, 14424, 14431, 14380, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 14416 (PollResultSystemMessage)
+// Module 14423 (PollResultSystemMessage)
 import EmojiConstants from "EmojiConstants" /* 1390 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4989 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12000 */;
-import PollTextUtils from "PollTextUtils" /* 12230 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14372 */;
-import MarkupParsers from "MarkupParsers" /* 14417 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 14424 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12008 */;
+import PollTextUtils from "PollTextUtils" /* 12238 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14379 */;
+import MarkupParsers from "MarkupParsers" /* 14424 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 14431 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -35,7 +35,7 @@ export function createPollResultSystemMessage(message) {
     tmp5 = null;
     if (null != message.message.messageReference) {
       const obj = { content: formatToParts3Result };
-      const merged = Object.assign(tmp2(14373)(message));
+      const merged = Object.assign(tmp2(14380)(message));
       message = message.message;
       const roleStyle = message.roleStyle;
       const obj2 = useAuthorWithProcessedColor;

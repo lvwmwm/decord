@@ -1,19 +1,19 @@
-// Module ID: 17377
-// Function ID: 17378
+// Module ID: 17384
+// Function ID: 17385
 // Name: PhoenixSetting
-// Dependencies: [1071, 21, 17378, 6159, 9637, 17379, 11962, 1112, 4729, 14303, 17384, 2]
+// Dependencies: [1071, 21, 17385, 6159, 9638, 17386, 11970, 1112, 4729, 14310, 17391, 2]
 
-// Module 17377 (PhoenixSetting)
+// Module 17384 (PhoenixSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4729 from "module_4729" /* 4729 */;
 import Badge_Badge from "Badge/Badge" /* 6159 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9637 */;
-import FireIcon from "FireIcon" /* 14303 */;
-import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17378 */;
-import PhoenixEntrypoint from "PhoenixEntrypoint" /* 17379 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9638 */;
+import FireIcon from "FireIcon" /* 14310 */;
+import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17385 */;
+import PhoenixEntrypoint from "PhoenixEntrypoint" /* 17386 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

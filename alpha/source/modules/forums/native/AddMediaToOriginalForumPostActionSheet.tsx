@@ -1,17 +1,17 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12444
+// Function ID: 12445
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4892, 8117, 4914, 6391, 1071, 21, 5043, 575, 10776, 8132, 8147, 5257, 10065, 10062, 11, 8128, 10064, 8114, 1285, 12437, 8244, 8937, 6047, 1112, 504, 6379, 8116, 8136, 5271, 12438, 5634, 5642, 2]
+// Dependencies: [32, 5, 19, 17, 4892, 8117, 4914, 6391, 1071, 21, 5043, 575, 10777, 8133, 8148, 5257, 10066, 10063, 11, 8128, 10065, 8114, 1285, 12445, 8245, 8938, 6047, 1112, 504, 6379, 8116, 8137, 5271, 12446, 5634, 5642, 2]
 // Exports: default
 
-// Module 12436 (AddMediaToOriginalForumPostActionSheet)
+// Module 12444 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import Tracking from "Tracking" /* 8116 */;
 import DraftStore from "DraftStore" /* 8117 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8136 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8137 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -57,7 +57,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c7;
@@ -261,7 +261,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp72) {
           closure_6 = tmp72;

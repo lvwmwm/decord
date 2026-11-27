@@ -1,9 +1,9 @@
-// Module ID: 8310
-// Function ID: 8311
+// Module ID: 8311
+// Function ID: 8312
 // Name: Channels
 // Dependencies: [4896, 502, 4892, 4921, 2]
 
-// Module 8310 (Channels)
+// Module 8311 (Channels)
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

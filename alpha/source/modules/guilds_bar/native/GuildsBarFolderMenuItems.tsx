@@ -1,10 +1,10 @@
-// Module ID: 18076
-// Function ID: 18077
+// Module ID: 18083
+// Function ID: 18084
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 6164, 1071, 7436, 1112, 15369, 2120, 10454, 18077, 2]
+// Dependencies: [5, 6164, 1071, 7436, 1112, 15376, 2120, 10455, 18084, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 18076 (GuildsBarFolderMenuItems)
+// Module 18083 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SortedGuildStore from "SortedGuildStore" /* 6164 */;
@@ -36,7 +36,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp9) {
             c2 = 3;

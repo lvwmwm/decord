@@ -1,13 +1,13 @@
-// Module ID: 11946
-// Function ID: 11947
+// Module ID: 11954
+// Function ID: 11955
 // Name: UserProfileSettingsActionCreators
-// Dependencies: [4955, 1387, 6163, 5933, 8578, 572, 2]
+// Dependencies: [4955, 1387, 6163, 5933, 8579, 572, 2]
 // Exports: setPendingChanges
 
-// Module 11946 (UserProfileSettingsActionCreators)
+// Module 11954 (UserProfileSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import isEqualDefault from "isEqual" /* 5933 */;
-import GuildTagUtils from "GuildTagUtils" /* 8578 */;
+import GuildTagUtils from "GuildTagUtils" /* 8579 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import UserStore from "UserStore" /* 1387 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;

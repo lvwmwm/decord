@@ -1,10 +1,10 @@
-// Module ID: 16243
-// Function ID: 16244
+// Module ID: 16250
+// Function ID: 16251
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 502, 7912, 7886, 1071, 21, 6839, 12544, 8083, 7941, 1112, 504, 3595, 5634, 16244, 1400, 16245, 5043, 575, 16246, 12584, 12542, 16240, 5604, 12541, 1256, 5811, 5816, 5257, 16247, 2120, 16248, 16250, 2]
+// Dependencies: [19, 17, 502, 7912, 7886, 1071, 21, 6839, 12552, 8083, 7941, 1112, 504, 3595, 5634, 16251, 1400, 16252, 5043, 575, 16253, 12592, 12550, 16247, 5604, 12549, 1256, 5811, 5816, 5257, 16254, 2120, 16255, 16257, 2]
 // Exports: default
 
-// Module 16243 (SafetyHubPage)
+// Module 16250 (SafetyHubPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -19,10 +19,10 @@ import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /
 import SafetyHubConstants from "SafetyHubConstants" /* 7886 */;
 import InlineNotice6 from "InlineNotice" /* 7941 */;
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8083 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12541 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12544 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 16244 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 16245 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12549 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12552 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 16251 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 16252 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -265,7 +265,7 @@ export default function SafetyHubPage(visible) {
     if (tmp) {
       if (null != safetyHubFetchError) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(16247, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        obj2.openLazy(asyncRequire(16254, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     const obj = ActionSheetActionCreatorsDefault;

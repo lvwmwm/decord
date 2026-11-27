@@ -1,9 +1,9 @@
-// Module ID: 14758
-// Function ID: 14759
+// Module ID: 11460
+// Function ID: 11461
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 14758 (ConjureWebSocket)
+// Module 11460 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");

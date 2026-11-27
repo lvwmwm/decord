@@ -1,21 +1,21 @@
-// Module ID: 19522
-// Function ID: 19523
+// Module ID: 19538
+// Function ID: 19539
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 8719, 8745, 8754, 1112, 8721, 6144, 19523, 8647, 2]
+// Dependencies: [19, 21, 8720, 8746, 8755, 1112, 8722, 6144, 19539, 8648, 2]
 
-// Module 19522 (VoicePanelGamesSection)
+// Module 19538 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
-import FormComponents from "FormComponents" /* 8647 */;
-import useGame from "useGame" /* 8719 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8745 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19523 */;
+import FormComponents from "FormComponents" /* 8648 */;
+import useGame from "useGame" /* 8720 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8746 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8755 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19539 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const GameActivityIconDefault = tmp3(8721);
+const GameActivityIconDefault = tmp3(8722);
 function GameRow(gameId) {
   let intl2;
   let obj6;

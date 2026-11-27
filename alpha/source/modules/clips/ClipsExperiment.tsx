@@ -1,22 +1,22 @@
-// Module ID: 14357
-// Function ID: 14358
+// Module ID: 14364
+// Function ID: 14365
 // Name: ClipsExperiment
-// Dependencies: [5637, 8384, 2132, 1387, 1389, 5855, 504, 2174, 1379, 2]
+// Dependencies: [5637, 8385, 2132, 1387, 1389, 5855, 504, 2174, 1379, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isClipsPlatformRequirementIgnored, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useIsClipsPlatformSupported, useIsUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
 
-// Module 14357 (ClipsExperiment)
+// Module 14364 (ClipsExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1379 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import Constants from "Constants" /* 5855 */;
 import DevSettingsStore from "DevSettingsStore" /* 5637 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8384 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8385 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
-const f106130 = () => {
+const f106371 = () => {
   isDeveloper = isDeveloper.isDeveloper && DevSettingsStore.get("clips_ignore_platform_requirement");
   return isDeveloper;
 };
@@ -53,7 +53,7 @@ export function useIsClipsPlatformSupported() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f106130);
+    isDesktopResult = obj3.useStateFromStores(items, f106371);
   }
   return isDesktopResult;
 }
@@ -65,7 +65,7 @@ export function useIsClipsAvailable() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f106130);
+    isDesktopResult = obj3.useStateFromStores(items, f106371);
   }
   const items1 = [UserStore];
   const tmp4Result = get_initialized;

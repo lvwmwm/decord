@@ -1,10 +1,10 @@
-// Module ID: 18536
-// Function ID: 18537
+// Module ID: 18543
+// Function ID: 18544
 // Name: conjureLinkifyBareDomains
 // Dependencies: [2]
 // Exports: linkifyBareDomains
 
-// Module 18536 (conjureLinkifyBareDomains)
+// Module 18543 (conjureLinkifyBareDomains)
 import size from "module_2" /* 2 */;
 
 function linkifyToken(arg0) {
@@ -39,8 +39,8 @@ const re2 = /^[("']+/;
 const re3 = /[.,!?;:)"']+$/;
 const result = size.fileFinishedImporting("modules/conjure/shared/conjureLinkifyBareDomains.tsx");
 
-export function linkifyBareDomains(text) {
-  let parts = text.split(re1);
+export function linkifyBareDomains(shortenConjureLinksResult) {
+  let parts = shortenConjureLinksResult.split(re1);
   let mapped = parts.map((item, index) => {
     let joined = item;
     if (index % 2 !== 1) {

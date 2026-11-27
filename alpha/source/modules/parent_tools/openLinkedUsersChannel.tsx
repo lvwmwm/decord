@@ -1,10 +1,10 @@
-// Module ID: 9157
-// Function ID: 9158
+// Module ID: 9158
+// Function ID: 9159
 // Name: openLinkedUsersChannel
 // Dependencies: [5, 4892, 6126, 7847, 2]
 // Exports: default
 
-// Module 9157 (openLinkedUsersChannel)
+// Module 9158 (openLinkedUsersChannel)
 import transitionToChannel from "transitionToChannel" /* 6126 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -47,7 +47,7 @@ let obj = function _openLinkedUsersChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -100,7 +100,7 @@ let obj = function _openLinkedUsersChannel() {
             c5 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         if (0 === c5) {

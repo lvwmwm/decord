@@ -1,20 +1,20 @@
-// Module ID: 19238
-// Function ID: 19239
+// Module ID: 19254
+// Function ID: 19255
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4985, 1071, 11843, 21, 5043, 575, 13585, 504, 7850, 11358, 13618, 5099, 5257, 11844, 2120, 8191, 7847, 5641, 1112, 5634, 2]
+// Dependencies: [19, 17, 4985, 1071, 11851, 21, 5043, 575, 13593, 504, 7850, 11359, 13625, 5099, 5257, 11852, 2120, 8192, 7847, 5641, 1112, 5634, 2]
 // Exports: default
 
-// Module 19238 (RestrictedMessagePreviewActions)
+// Module 19254 (RestrictedMessagePreviewActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
-import ReportModals from "ReportModals" /* 8191 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11358 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11843 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13618 */;
+import ReportModals from "ReportModals" /* 8192 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11359 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11851 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13625 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import Constants from "Constants" /* 1071 */;
@@ -111,7 +111,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   const callback4 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { userId: user.id, channelId: channel.id };
-    obj.openLazy(asyncRequire(11844, dependencyMap.paths), closure_8, obj2);
+    obj.openLazy(asyncRequire(11852, dependencyMap.paths), closure_8, obj2);
   }, items6);
   const items8 = [message, channel.id];
   const callback5 = react.useCallback(() => {

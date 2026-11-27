@@ -1,10 +1,10 @@
-// Module ID: 11099
-// Function ID: 11100
+// Module ID: 11100
+// Function ID: 11101
 // Name: useMediaKeyboardItemsPerRow
 // Dependencies: [19, 5223, 2]
 // Exports: useMediaKeyboardItemsPerRow
 
-// Module 11099 (useMediaKeyboardItemsPerRow)
+// Module 11100 (useMediaKeyboardItemsPerRow)
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5223 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

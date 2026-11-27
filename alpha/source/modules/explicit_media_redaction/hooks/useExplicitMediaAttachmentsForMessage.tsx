@@ -1,12 +1,12 @@
-// Module ID: 12224
-// Function ID: 12225
+// Module ID: 12232
+// Function ID: 12233
 // Name: useExplicitMediaAttachmentsForMessage
-// Dependencies: [6391, 563, 10680, 8811, 8816, 2]
+// Dependencies: [6391, 563, 10681, 8812, 8817, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 12224 (useExplicitMediaAttachmentsForMessage)
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8811 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8816 */;
+// Module 12232 (useExplicitMediaAttachmentsForMessage)
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8812 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8817 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import size from "module_2" /* 2 */;
 

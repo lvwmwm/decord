@@ -1,10 +1,10 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 17332
+// Function ID: 17333
 // Name: PremiumPerksList
 // Dependencies: [19, 17, 21, 5043, 575, 5634, 2]
 // Exports: default
 
-// Module 17325 (PremiumPerksList)
+// Module 17332 (PremiumPerksList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;

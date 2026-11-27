@@ -1,10 +1,10 @@
-// Module ID: 18476
-// Function ID: 18477
+// Module ID: 18483
+// Function ID: 18484
 // Name: useConjureSharingMode
-// Dependencies: [5, 32, 19, 6934, 1112, 4245, 504, 18477, 18478, 7667, 6935, 2]
+// Dependencies: [5, 32, 19, 6934, 1112, 4245, 504, 18484, 18485, 7667, 6935, 2]
 // Exports: conjureSharingOptions, default
 
-// Module 18476 (useConjureSharingMode)
+// Module 18483 (useConjureSharingMode)
 import intl4 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6934 */;
@@ -65,7 +65,7 @@ export default function useConjureSharingMode(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

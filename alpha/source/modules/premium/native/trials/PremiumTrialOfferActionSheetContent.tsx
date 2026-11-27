@@ -1,9 +1,9 @@
-// Module ID: 17320
-// Function ID: 17321
+// Module ID: 17327
+// Function ID: 17328
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1389, 21, 5043, 12409, 1112, 14723, 7140, 8129, 2174, 17321, 5634, 17325, 5641, 9637, 575, 2]
+// Dependencies: [19, 17, 1389, 21, 5043, 12417, 1112, 14730, 7140, 8129, 2174, 17328, 5634, 17332, 5641, 9638, 575, 2]
 
-// Module 17320 (PremiumTrialOfferActionSheetContent)
+// Module 17327 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
@@ -12,10 +12,10 @@ import PremiumUtils from "PremiumUtils" /* 2174 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FolderIcon from "FolderIcon" /* 7140 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8129 */;
-import UserIcon from "UserIcon" /* 12409 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14723 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17321 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 17325 */;
+import UserIcon from "UserIcon" /* 12417 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14730 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17328 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17332 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -109,7 +109,7 @@ const memoResult = react.memo(function PremiumTrialOfferActionSheetContent(onCon
   Button = tmp3(5641).Button;
   intl9 = tmp3(1112).intl;
   obj12 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-  NitroWheelIcon = tmp3(9637).NitroWheelIcon;
+  NitroWheelIcon = tmp3(9638).NitroWheelIcon;
   items1[3] = hasOwnProperty(View, obj10);
   return tmp6(View, obj7);
 });

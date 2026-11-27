@@ -41,7 +41,7 @@ let obj = function _fetchGuildJoinRequests() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ let obj = function _fetchGuildJoinRequests() {
                 }
               }
               c7 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (2 === c6) {
             c5 = 0;
@@ -200,7 +200,7 @@ obj = function _removeGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ obj = function _ackUserGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -310,7 +310,7 @@ obj = function _ackUserGuildJoinRequest() {
             const obj7 = closure_131_1(closure_131_2[6]);
             obj7.dispatch(obj10);
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -365,7 +365,7 @@ obj = function _updateGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -441,7 +441,7 @@ obj = function _updateGuildJoinRequest() {
             const obj10 = { type: "GUILD_JOIN_REQUEST_UPDATE", guildId, status: tmp.body.application_status, request: tmp.body };
             obj.dispatch(obj10);
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c8 = 3;
@@ -470,7 +470,7 @@ obj = function _resetGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -543,7 +543,7 @@ obj = function _fetchRequestToJoinGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -582,7 +582,7 @@ obj = function _fetchRequestToJoinGuilds() {
           obj = closure_129_1(closure_129_2[6]);
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -628,7 +628,7 @@ obj = function _createOrEnterJoinRequestInterview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

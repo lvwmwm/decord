@@ -1,10 +1,10 @@
-// Module ID: 9545
-// Function ID: 9546
+// Module ID: 9546
+// Function ID: 9547
 // Name: useTopAndNewlyAddedEmojis
 // Dependencies: [6883, 1390, 563, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 9545 (useTopAndNewlyAddedEmojis)
+// Module 9546 (useTopAndNewlyAddedEmojis)
 import EmojiConstants from "EmojiConstants" /* 1390 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import size from "module_2" /* 2 */;

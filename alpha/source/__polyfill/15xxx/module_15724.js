@@ -1,30 +1,7 @@
 // Module ID: 15724
 // Function ID: 15725
-// Dependencies: [15635, 15725]
-// Exports: getSupportedUnits
+// Dependencies: []
 
 // Module 15724
-const require = globalThis.__r;
-let _require;
 
-
-export function getSupportedUnits(locale) {
-  _require = locale;
-  const units = require("module_15725").units;
-  return units.filter((item) => {
-    function isSupported(unit, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const obj = { style: "unit", unit };
-        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-        return memoizedNumberFormat.resolvedOptions().unit === unit;
-      } catch (err) {
-        return false;
-      }
-    }
-    return isSupported(item, locale);
-  });
-}
+export const collations = ["big5han", "compat", "dict", "direct", "ducet", "emoji", "eor", "gb2312", "phonebk", "phonetic", "pinyin", "reformed", "search", "searchjl", "standard", "stroke", "trad", "unihan", "zhuyin"];

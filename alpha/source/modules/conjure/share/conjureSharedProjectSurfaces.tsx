@@ -1,10 +1,10 @@
-// Module ID: 11996
-// Function ID: 11997
+// Module ID: 12004
+// Function ID: 12005
 // Name: conjureSharedProjectSurfaces
 // Dependencies: [6935, 4245, 1112, 2]
 // Exports: conjureSharedProjectSurfaceLabels, conjureSharedProjectTypeLabel, conjureSharedProjectTypes
 
-// Module 11996 (conjureSharedProjectSurfaces)
+// Module 12004 (conjureSharedProjectSurfaces)
 import intl2 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;

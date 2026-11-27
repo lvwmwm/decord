@@ -1,24 +1,24 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12921
+// Function ID: 12922
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 12639, 12641, 12670, 6422, 6764, 1654, 12634, 12642, 2]
+// Dependencies: [19, 17, 21, 575, 12647, 12649, 12678, 6422, 6764, 1654, 12642, 12650, 2]
 // Exports: default
 
-// Module 12913 (CheckpointRecapCard)
+// Module 12921 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6764 */;
-import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 12639 */;
-import useCheckpointCompositeRevealStyleDefault from "useCheckpointCompositeRevealStyle" /* 12641 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12670 */;
+import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 12647 */;
+import useCheckpointCompositeRevealStyleDefault from "useCheckpointCompositeRevealStyle" /* 12649 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12678 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const _modDef1654 = tmp(1654);
-const CheckpointCardFrameDefault = tmp(12634);
-const CheckpointShareCardYearDefault = tmp(12642);
+const CheckpointCardFrameDefault = tmp(12642);
+const CheckpointShareCardYearDefault = tmp(12650);
 let View = react_native.View;
 const jsx = Fragment.jsx;
 const rect = { size: 240, top: nativeDefault.space.PX_16, left: -20 };
@@ -62,7 +62,7 @@ export default function CheckpointRecapCard(character) {
     return checkpointCharacterAccessibilityLabel;
   }, items);
   View = _modDef1654.View;
-  ({ path: character(12642).YEAR_PATH, x: 200 - character(12642).YEAR_WIDTH, color: primaryBackgroundColor });
+  ({ path: character(12650).YEAR_PATH, x: 200 - character(12650).YEAR_WIDTH, color: primaryBackgroundColor });
   CheckpointCardFrameDefault;
   CheckpointShareCardYearDefault;
   const tmp13 = <View style={tmp4}>{null}</View>;

@@ -1,11 +1,11 @@
-// Module ID: 18453
-// Function ID: 18454
+// Module ID: 18460
+// Function ID: 18461
 // Name: useConjurePreviewAddBotPrompt
-// Dependencies: [5, 32, 19, 7705, 504, 11459, 14748, 2]
+// Dependencies: [5, 32, 19, 7705, 504, 11469, 14755, 2]
 // Exports: useConjurePreviewAddBotPrompt
 
-// Module 18453 (useConjurePreviewAddBotPrompt)
-import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14748 */;
+// Module 18460 (useConjurePreviewAddBotPrompt)
+import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14755 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -59,7 +59,7 @@ export function useConjurePreviewAddBotPrompt(projectId, guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ export function useConjurePreviewAddBotPrompt(projectId, guildId) {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp34) {
         closure_2 = tmp34;
         if (0 === c3) {

@@ -1,14 +1,14 @@
-// Module ID: 13013
-// Function ID: 13014
+// Module ID: 13021
+// Function ID: 13022
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 5043, 575, 13014, 5730, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 13022, 5730, 2]
 // Exports: default
 
-// Module 13013 (ApplicationsImage)
+// Module 13021 (ApplicationsImage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13014 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13022 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

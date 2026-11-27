@@ -1,21 +1,21 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 11774
+// Function ID: 11775
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 11767, 11768, 11769, 11770, 11771, 11772, 1112, 5043, 5252, 5050, 9224, 12, 6118, 5730, 5634, 2]
+// Dependencies: [19, 21, 11775, 11776, 11777, 11778, 11779, 11780, 1112, 5043, 5252, 5050, 9225, 12, 6118, 5730, 5634, 2]
 // Exports: default
 
-// Module 11766 (ChannelFollowSuccessAlert)
+// Module 11774 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import intl3 from "intl" /* 1112 */;
 import useThemeDefault from "useTheme" /* 5252 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import AlertDefault from "Alert" /* 6118 */;
-import AssetRegistry from "AssetRegistry" /* 11767 */;
-import AssetRegistry2 from "AssetRegistry" /* 11768 */;
-import AssetRegistry3 from "AssetRegistry" /* 11769 */;
-import AssetRegistry4 from "AssetRegistry" /* 11770 */;
-import AssetRegistry5 from "AssetRegistry" /* 11771 */;
-import AssetRegistry6 from "AssetRegistry" /* 11772 */;
+import AssetRegistry from "AssetRegistry" /* 11775 */;
+import AssetRegistry2 from "AssetRegistry" /* 11776 */;
+import AssetRegistry3 from "AssetRegistry" /* 11777 */;
+import AssetRegistry4 from "AssetRegistry" /* 11778 */;
+import AssetRegistry5 from "AssetRegistry" /* 11779 */;
+import AssetRegistry6 from "AssetRegistry" /* 11780 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -84,12 +84,12 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const tmp6 = obj.isThemeDark(tmp4) ? items1 : items;
   _require = tmp6;
   items = [tmp6];
-  const tmp5Result = require("module_9224");
+  const tmp5Result = require("module_9225");
   const stableMemo = tmp5Result.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(closure_0);
   }, items);
-  const tmp5Result2 = require("module_9224");
+  const tmp5Result2 = require("module_9225");
   const stableMemo1 = tmp5Result2.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(items2);

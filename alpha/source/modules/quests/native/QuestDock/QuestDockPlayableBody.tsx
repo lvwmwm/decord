@@ -1,15 +1,15 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 16816
+// Function ID: 16817
 // Name: QuestDockPlayableBody
-// Dependencies: [5, 19, 6871, 21, 16770, 16714, 16677, 16684, 9928, 6379, 9857, 9861, 6878, 8392, 6874, 16810, 12291, 9930, 16793, 9915, 16806, 1112, 7944, 14696, 2]
+// Dependencies: [5, 19, 6871, 21, 16777, 16721, 16684, 16691, 9929, 6379, 9858, 9862, 6878, 8393, 6874, 16817, 12299, 9931, 16800, 9916, 16813, 1112, 7944, 14703, 2]
 
-// Module 16809 (QuestDockPlayableBody)
+// Module 16816 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9930 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9931 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function QuestDockPlayableBody() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ const memoResult = react.memo(function QuestDockPlayableBody() {
             constants = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         tmp16 = constants;

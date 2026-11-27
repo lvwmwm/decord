@@ -1,15 +1,15 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17766
+// Function ID: 17767
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 6014, 6932, 4985, 4946, 6167, 1387, 21, 5043, 575, 504, 17760, 11383, 1379, 7847, 6126, 11406, 6152, 8587, 1112, 9479, 17761, 5704, 9421, 17762, 9523, 17763, 6015, 2]
+// Dependencies: [19, 17, 6014, 6932, 4985, 4946, 6167, 1387, 21, 5043, 575, 504, 17767, 11384, 1379, 7847, 6126, 11407, 6152, 8588, 1112, 9480, 17768, 5704, 9422, 17769, 9524, 17770, 6015, 2]
 
-// Module 17759 (MessagesItemChannelBase)
+// Module 17766 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import transitionToChannel from "transitionToChannel" /* 6126 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11406 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11407 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 6014 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function MessagesItemChannelBase(channel) {
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "Array", activities: "channel_id" };
+      obj3 = { status: "displayName", activities: "isArray" };
     }
     return obj3;
   });

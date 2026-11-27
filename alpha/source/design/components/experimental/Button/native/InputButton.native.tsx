@@ -1,10 +1,10 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 8494
+// Function ID: 8495
 // Name: InputButton
 // Dependencies: [109, 19, 17, 21, 5043, 575, 5647, 7294, 5642, 2]
 // Exports: InputButton
 
-// Module 8493 (InputButton)
+// Module 8494 (InputButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

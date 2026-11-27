@@ -1,10 +1,10 @@
-// Module ID: 9020
-// Function ID: 9021
+// Module ID: 9021
+// Function ID: 9022
 // Name: useChannelChatUnread
 // Dependencies: [6932, 504, 2]
 // Exports: useChannelChatUnread
 
-// Module 9020 (useChannelChatUnread)
+// Module 9021 (useChannelChatUnread)
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 11749
-// Function ID: 11750
+// Module ID: 11757
+// Function ID: 11758
 // Name: RestrictedHoursWarningNotification
-// Dependencies: [19, 17, 10627, 1071, 21, 5043, 575, 11750, 6130, 10628, 8109, 10675, 5634, 2]
+// Dependencies: [19, 17, 10628, 1071, 21, 5043, 575, 11758, 6130, 10629, 8109, 10676, 5634, 2]
 
-// Module 11749 (RestrictedHoursWarningNotification)
+// Module 11757 (RestrictedHoursWarningNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10627 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10628 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10628 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10629 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -30,7 +30,7 @@ const memoResult = react.memo(function RestrictedHoursWarningNotification(notifi
   notification = notification.notification;
   const type = notification.type;
   let obj2 = { size: "sm", color: type(575).colors.WHITE };
-  const ThemeDarkIcon = notification(11750).ThemeDarkIcon;
+  const ThemeDarkIcon = notification(11758).ThemeDarkIcon;
   const items = [notification.title];
   const items1 = [type];
   const tmp = <View style={closure_9().iconContainer}>{null}</View>;
@@ -46,7 +46,7 @@ const memoResult = react.memo(function RestrictedHoursWarningNotification(notifi
     const obj4 = { screen: metroImportDefault.FAMILY_CENTER };
     obj3.openUserSettings(obj4);
   }, items1);
-  const NotificationPressable = notification(10675).NotificationPressable;
+  const NotificationPressable = notification(10676).NotificationPressable;
   let obj4 = { variant: "heading-sm/medium", color: "text-subtle", lineClamp, children: notification.subtitle };
   return <NotificationPressable icon={tmp} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });

@@ -1,12 +1,12 @@
 // Module ID: 15522
 // Function ID: 15523
-// Dependencies: [15521]
+// Dependencies: [15511]
 
 // Module 15522
-import _mod15521 from "module_15521" /* 15521 */;
+import _mod15511 from "module_15511" /* 15511 */;
 
 
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod15521(arg0, arg1, closure_0));
+export default (arg0, arg1) => {
+  const tmp = new _mod15511(arg0, arg1);
+  return tmp.minor;
 };

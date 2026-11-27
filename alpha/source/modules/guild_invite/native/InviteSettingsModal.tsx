@@ -1,10 +1,10 @@
-// Module ID: 20280
-// Function ID: 20281
+// Module ID: 20338
+// Function ID: 20339
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 4892, 10429, 4914, 4975, 1071, 21, 5043, 575, 1501, 504, 38, 12, 20281, 10435, 6046, 1112, 5604, 7751, 8088, 20282, 10430, 1264, 7191, 7355, 2]
+// Dependencies: [32, 19, 4892, 10430, 4914, 4975, 1071, 21, 5043, 575, 1501, 504, 38, 12, 20339, 10436, 6046, 1112, 5604, 7751, 8088, 20340, 10431, 1264, 7191, 7355, 2]
 // Exports: default
 
-// Module 20280 (InviteSettingsModal)
+// Module 20338 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,12 +12,12 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 126
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
 import Navigator from "Navigator" /* 7355 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10435 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20281 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10436 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10429 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10430 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import Constants from "Constants" /* 1071 */;
@@ -163,8 +163,8 @@ function AdvancedInstantInviteScreen() {
     obj.updateSettings(obj2);
   }, []);
   const Form = tmp2(8088).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(10430).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(20282);
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(10431).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(20340);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 }

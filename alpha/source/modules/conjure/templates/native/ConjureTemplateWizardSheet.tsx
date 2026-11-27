@@ -1,10 +1,10 @@
-// Module ID: 18870
-// Function ID: 18871
+// Module ID: 18886
+// Function ID: 18887
 // Name: ConjureTemplateWizardSheet
-// Dependencies: [5, 32, 19, 17, 4914, 4975, 7659, 7693, 21, 5043, 575, 18871, 12515, 7155, 504, 18873, 7667, 7671, 18875, 5257, 5634, 7047, 7546, 7507, 1112, 4245, 7251, 7253, 7440, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 4975, 7659, 7693, 21, 5043, 575, 18887, 12523, 7155, 504, 18889, 7667, 7671, 18891, 5257, 5634, 7047, 7546, 7507, 1112, 4245, 7251, 7253, 7440, 5641, 2]
 // Exports: default
 
-// Module 18870 (ConjureTemplateWizardSheet)
+// Module 18886 (ConjureTemplateWizardSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
@@ -13,9 +13,9 @@ import GroupIcon from "GroupIcon" /* 7155 */;
 import TableRadioRow from "TableRadioRow" /* 7253 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import ConjureCreateErrors from "ConjureCreateErrors" /* 7671 */;
-import HammerIcon from "HammerIcon" /* 12515 */;
-import ChatShieldIcon from "ChatShieldIcon" /* 18871 */;
-import ConjureTemplateWizard from "ConjureTemplateWizard" /* 18873 */;
+import HammerIcon from "HammerIcon" /* 12523 */;
+import ChatShieldIcon from "ChatShieldIcon" /* 18887 */;
+import ConjureTemplateWizard from "ConjureTemplateWizard" /* 18889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -234,7 +234,7 @@ export default function ConjureTemplateWizardSheet(template) {
   }, items4);
   let tmp26 = null == tmp12;
   let id = template.id;
-  const tmp25 = guildId(18875);
+  const tmp25 = guildId(18891);
   if (tmp26) {
     tmp26 = null != stateFromStores1;
   }
@@ -258,13 +258,13 @@ export default function ConjureTemplateWizardSheet(template) {
       tmp9(tmp10, current);
     }
   }, items5);
-  const tmp2Result7 = tmp2(18873);
+  const tmp2Result7 = tmp2(18889);
   const conjureWizardIntroResult = tmp2Result7.conjureWizardIntro(tmp22);
-  const tmp2Result8 = tmp2(18873);
+  const tmp2Result8 = tmp2(18889);
   let result = tmp2Result8.conjureWizardServerCopy(tmp22);
-  const tmp2Result9 = tmp2(18873);
+  const tmp2Result9 = tmp2(18889);
   result1 = tmp2Result9.conjureWizardQuestions(tmp22);
-  const tmp2Result10 = tmp2(18873);
+  const tmp2Result10 = tmp2(18889);
   const result2 = tmp2Result10.conjureTemplateWizardSteps(result1, first1);
   const tmp32 = result2[Math.min(Math, tmp5, result2.length - 1)];
   length = result2.length;
@@ -313,7 +313,7 @@ export default function ConjureTemplateWizardSheet(template) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -386,7 +386,7 @@ export default function ConjureTemplateWizardSheet(template) {
           return obj;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp47) {
         closure_2 = tmp47;
         if (0 === c3) {
@@ -574,7 +574,7 @@ export default function ConjureTemplateWizardSheet(template) {
       intl5 = tmp2(1112).intl;
       tmp57 = null == first2 || null == first;
       if (!tmp57) {
-        const tmp2Result11 = tmp2(18873);
+        const tmp2Result11 = tmp2(18889);
         tmp57 = !tmp2Result11.isConjureWizardComplete(result1, first3);
       }
       obj24 = obj23;
@@ -596,7 +596,7 @@ export default function ConjureTemplateWizardSheet(template) {
       if (!tmp49) {
         let tmp56 = typeof tmp32 === "object";
         if (typeof tmp32 === "object") {
-          const tmp2Result12 = tmp2(18873);
+          const tmp2Result12 = tmp2(18889);
           tmp56 = !tmp2Result12.canLeaveConjureWizardQuestion(tmp33, str);
         }
         tmp49 = tmp56;

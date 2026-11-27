@@ -1,10 +1,10 @@
-// Module ID: 18580
-// Function ID: 18581
+// Module ID: 18591
+// Function ID: 18592
 // Name: ConjureVersionRestoreConfirm
 // Dependencies: [32, 19, 21, 6052, 1112, 4245, 6140, 7181, 6048, 2]
 // Exports: confirmRestoreVersion
 
-// Module 18580 (ConjureVersionRestoreConfirm)
+// Module 18591 (ConjureVersionRestoreConfirm)
 import intl7 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import useAlertStore from "useAlertStore" /* 6048 */;

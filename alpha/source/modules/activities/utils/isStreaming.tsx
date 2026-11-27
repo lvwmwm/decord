@@ -1,10 +1,10 @@
-// Module ID: 9523
-// Function ID: 9524
+// Module ID: 9524
+// Function ID: 9525
 // Name: isStreaming
 // Dependencies: [2145, 6015, 2]
 // Exports: default
 
-// Module 9523 (isStreaming)
+// Module 9524 (isStreaming)
 import Constants from "Constants" /* 2145 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;
 import size from "module_2" /* 2 */;

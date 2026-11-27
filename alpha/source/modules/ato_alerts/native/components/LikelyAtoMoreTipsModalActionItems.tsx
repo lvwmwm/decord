@@ -1,10 +1,10 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11849
+// Function ID: 11850
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1387, 21, 504, 5099, 6140, 6144, 1112, 11497, 2]
+// Dependencies: [19, 1387, 21, 504, 5099, 6140, 6144, 1112, 11505, 2]
 // Exports: default
 
-// Module 11841 (LikelyAtoMoreTipsModalActionItems)
+// Module 11849 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import react from "react" /* 19 */;

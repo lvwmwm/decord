@@ -1,9 +1,9 @@
-// Module ID: 8311
-// Function ID: 8312
+// Module ID: 8312
+// Function ID: 8313
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5849, 4896, 502, 4892, 4955, 4949, 4914, 4975, 4893, 3, 4921, 8312, 11, 4962, 4980, 1083, 4984, 2]
+// Dependencies: [32, 5, 5849, 4896, 502, 4892, 4955, 4949, 4914, 4975, 4893, 3, 4921, 8313, 11, 4962, 4980, 1083, 4984, 2]
 
-// Module 8311 (GuildBasicChannels)
+// Module 8312 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
@@ -521,7 +521,7 @@ class GuildBasicChannels {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c7;
@@ -576,7 +576,7 @@ class GuildBasicChannels {
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "HermesInternal", done: "+95" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           try {
@@ -620,7 +620,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_16.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "r" }, done: true };
+                              return { value: { v: "top" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;
@@ -630,7 +630,7 @@ class GuildBasicChannels {
                                 return { value, done: true };
                               } else {
                                 c6 = 3;
-                                return { value: "HermesInternal", done: "+95" };
+                                return { value: "HermesInternal", done: null };
                               }
                             } else if (3 === c5) {
                               if (arg0 === 1) {
@@ -688,7 +688,7 @@ class GuildBasicChannels {
                 }
               }
               c10 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp3) {
             c7 = 0;

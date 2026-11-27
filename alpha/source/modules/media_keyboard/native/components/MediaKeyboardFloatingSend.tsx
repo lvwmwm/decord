@@ -1,9 +1,9 @@
-// Module ID: 18629
-// Function ID: 18630
+// Module ID: 18640
+// Function ID: 18641
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 8124, 21, 5043, 575, 504, 1654, 1629, 5644, 5645, 671, 5598, 8496, 1112, 5741, 2]
+// Dependencies: [32, 19, 17, 8124, 21, 5043, 575, 504, 1654, 1629, 5644, 5645, 671, 5598, 8497, 1112, 5741, 2]
 
-// Module 18629 (MediaKeyboardFloatingSend)
+// Module 18640 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -183,7 +183,7 @@ const memoResult = react.memo(function MediaKeyboardFloatingSendInner(arg0) {
   const merged = Object.assign(memo);
   items12 = [closure_6(tmp2Result, obj6), ];
   const obj7 = { accessibilityLabel: intl.string(require("intl").t.TXNS7S), icon: closure_6(require("SendMessageIcon").SendMessageIcon, {}), onPress: onSend, positionBottom: bottom };
-  const FloatingActionButton = tmp6(8496).FloatingActionButton;
+  const FloatingActionButton = tmp6(8497).FloatingActionButton;
   intl = tmp6(1112).intl;
   items12[1] = closure_6(FloatingActionButton, obj7);
   return closure_7(View, obj5);

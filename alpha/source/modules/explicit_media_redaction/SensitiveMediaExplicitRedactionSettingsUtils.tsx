@@ -1,10 +1,10 @@
-// Module ID: 8206
-// Function ID: 8207
+// Module ID: 8207
+// Function ID: 8208
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1387, 4870, 1195, 5705, 5713, 6825, 4868, 8207, 2]
+// Dependencies: [1387, 4870, 1195, 5705, 5713, 6825, 4868, 8208, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 8206 (SensitiveMediaExplicitRedactionSettingsUtils)
+// Module 8207 (SensitiveMediaExplicitRedactionSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import UserSettings from "UserSettings" /* 4868 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 4870 */;
@@ -245,7 +245,7 @@ export function shouldRedactMessageMediaForForum() {
     }
     obj3 = { setting: prop2, isDm: true, isFriend: true };
     resolveExplicitContentSettingWithDefaults(obj3);
-    const tmp7Result = tmp7(8207);
+    const tmp7Result = tmp7(8208);
     return tmp7Result.getShouldObscureForSetting(tmp10Result);
   }
 }

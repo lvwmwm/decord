@@ -1,18 +1,18 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 9635
+// Function ID: 9636
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 5043, 575, 7942, 5730, 9635, 5634, 1112, 9636, 5641, 2]
+// Dependencies: [17, 21, 5043, 575, 7942, 5730, 9636, 5634, 1112, 9637, 5641, 2]
 // Exports: default
 
-// Module 9634 (NitroLimitUpsellBar)
+// Module 9635 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import WarningIcon from "WarningIcon" /* 7942 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9635 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9636 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9636 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9637 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

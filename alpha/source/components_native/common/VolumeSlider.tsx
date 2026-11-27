@@ -1,15 +1,15 @@
-// Module ID: 10397
-// Function ID: 10398
+// Module ID: 10398
+// Function ID: 10399
 // Name: VolumeSlider
-// Dependencies: [19, 17, 5855, 21, 10398, 6004, 10401, 7167, 1112, 2]
+// Dependencies: [19, 17, 5855, 21, 10399, 6004, 10402, 7167, 1112, 2]
 // Exports: default
 
-// Module 10397 (VolumeSlider)
+// Module 10398 (VolumeSlider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 5855 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6004 */;
-import Slider2 from "Slider" /* 10398 */;
+import Slider2 from "Slider" /* 10399 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

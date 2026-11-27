@@ -1,19 +1,19 @@
-// Module ID: 14804
-// Function ID: 14805
+// Module ID: 14810
+// Function ID: 14811
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 5044, 21, 5043, 575, 1112, 5730, 14805, 5628, 14806, 14807, 5634, 13554, 2]
+// Dependencies: [19, 17, 5044, 21, 5043, 575, 1112, 5730, 14811, 5628, 14812, 14813, 5634, 13562, 2]
 // Exports: default
 
-// Module 14804 (GuildBoostingMarketingTopPerksCards)
+// Module 14810 (GuildBoostingMarketingTopPerksCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import LottieAnimationViewDefault from "LottieAnimationView" /* 5628 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14805 */;
-import _mod14806 from "module_14806" /* 14806 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14807 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14811 */;
+import _mod14812 from "module_14812" /* 14812 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14813 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import Fragment from "Fragment" /* 21 */;
@@ -62,7 +62,7 @@ let items = [
       return intl.string(intl2.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod14806, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod14812, autoPlay: !AccessibilityStore.useReducedMotion, style };
       const tmp = LottieAnimationViewDefault;
       return hasOwnProperty(tmp, obj);
     }

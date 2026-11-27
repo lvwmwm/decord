@@ -1,10 +1,10 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 15897
+// Function ID: 15898
 // Name: confirmModal
 // Dependencies: [19, 21, 6048, 6052, 1112, 2]
 // Exports: openFrameConfirmModal
 
-// Module 15890 (confirmModal)
+// Module 15897 (confirmModal)
 import useAlertStore from "useAlertStore" /* 6048 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
 import react from "react" /* 19 */;

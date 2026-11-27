@@ -1,12 +1,12 @@
-// Module ID: 18994
-// Function ID: 18995
+// Module ID: 19010
+// Function ID: 19011
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 5043, 5634, 18946, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 5634, 18962, 2]
 
-// Module 18994 (GenericTextRow)
+// Module 19010 (GenericTextRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import SearchListRow2 from "SearchListRow" /* 18946 */;
+import SearchListRow2 from "SearchListRow" /* 18962 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -39,7 +39,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -67,7 +67,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c0 = 3;

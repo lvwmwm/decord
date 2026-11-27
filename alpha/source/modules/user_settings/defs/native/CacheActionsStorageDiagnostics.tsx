@@ -1,10 +1,10 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17203
+// Function ID: 17204
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 5725, 5747, 17194, 1112, 6115, 5634, 5641, 2]
+// Dependencies: [5, 32, 19, 21, 5725, 5747, 17201, 1112, 6115, 5634, 5641, 2]
 // Exports: default
 
-// Module 17196 (CacheActionsStorageDiagnostics)
+// Module 17203 (CacheActionsStorageDiagnostics)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -49,7 +49,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -124,7 +124,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             closure_129_0(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp41) {
           ref = tmp41;
           if (0 === c3) {

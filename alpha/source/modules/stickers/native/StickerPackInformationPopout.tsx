@@ -1,10 +1,10 @@
-// Module ID: 10845
-// Function ID: 10846
+// Module ID: 10846
+// Function ID: 10847
 // Name: StickerPackInformationPopout
 // Dependencies: [19, 17, 21, 5043, 575, 6779, 1112, 5634, 6152, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 10845 (StickerPackInformationPopout)
+// Module 10846 (StickerPackInformationPopout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;

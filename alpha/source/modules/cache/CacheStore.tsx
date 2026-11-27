@@ -1,19 +1,19 @@
-// Module ID: 8250
-// Function ID: 8251
+// Module ID: 8251
+// Function ID: 8252
 // Name: CacheStore
-// Dependencies: [32, 5, 5849, 502, 4946, 5076, 1071, 3, 510, 4943, 8251, 8262, 9, 10, 4942, 8263, 8264, 8265, 8266, 8267, 8307, 8328, 504, 572, 4941, 8313, 8319, 8317, 8311, 8329, 1379, 8331, 8332, 4938, 2]
+// Dependencies: [32, 5, 5849, 502, 4946, 5076, 1071, 3, 510, 4943, 8252, 8263, 9, 10, 4942, 8264, 8265, 8266, 8267, 8268, 8308, 8329, 504, 572, 4941, 8314, 8320, 8318, 8312, 8330, 1379, 8332, 8333, 4938, 2]
 
-// Module 8250 (CacheStore)
+// Module 8251 (CacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TryLoad from "TryLoad" /* 4941 */;
-import modules_MessagesDefault from "modules/Messages" /* 8251 */;
-import timeRequireDefault from "timeRequire" /* 8266 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 8319 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 8331 */;
+import modules_MessagesDefault from "modules/Messages" /* 8252 */;
+import timeRequireDefault from "timeRequire" /* 8267 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 8320 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 8332 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
@@ -62,7 +62,7 @@ let obj = function _loadChannelHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -360,7 +360,7 @@ obj = function _loadInitialGuilds() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -508,7 +508,7 @@ obj = function _loadInitialGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -615,7 +615,7 @@ obj = function _loadLateLazyCache() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -890,7 +890,7 @@ obj = function _loadLateLazyCache() {
             }
           });
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp21) {
         c7 = 3;
@@ -911,7 +911,7 @@ function resumeFluxAndSocket(arg0) {
     let dispatcher;
     let obj3;
     try {
-      f141597();
+      f142061();
       dispatcher = dispatcher.dispatcher;
       if (dispatcher.hasStuffToDispatchNow()) {
         let c2 = true;
@@ -1004,7 +1004,7 @@ class CacheStoreClass extends Store {
       }
       function dontLoadLateLazyCache() {
         let _true;
-        const f141597 = () => {
+        const f142061 = () => {
           obj = closure_1(c2[23]);
           return obj.dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
         };
@@ -1015,7 +1015,7 @@ class CacheStoreClass extends Store {
           let dispatcher;
           let obj3;
           try {
-            f141597();
+            f142061();
             dispatcher = dispatcher.dispatcher;
             if (dispatcher.hasStuffToDispatchNow()) {
               let c2 = true;
@@ -1071,7 +1071,7 @@ class CacheStoreClass extends Store {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -1221,7 +1221,7 @@ class CacheStoreClass extends Store {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp34) {
             closure_2 = tmp34;

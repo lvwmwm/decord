@@ -1,14 +1,14 @@
-// Module ID: 17951
-// Function ID: 17952
+// Module ID: 17958
+// Function ID: 17959
 // Name: WaveformSlashIcon
-// Dependencies: [19, 21, 575, 5729, 17952, 2]
+// Dependencies: [19, 21, 575, 5729, 17959, 2]
 // Exports: WaveformSlashIcon
 
-// Module 17951 (WaveformSlashIcon)
+// Module 17958 (WaveformSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 17952 */;
+import AssetRegistry from "AssetRegistry" /* 17959 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

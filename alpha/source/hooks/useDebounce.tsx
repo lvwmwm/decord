@@ -1,10 +1,10 @@
-// Module ID: 13885
-// Function ID: 13886
+// Module ID: 13892
+// Function ID: 13893
 // Name: useDebounce
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 13885 (useDebounce)
+// Module 13892 (useDebounce)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

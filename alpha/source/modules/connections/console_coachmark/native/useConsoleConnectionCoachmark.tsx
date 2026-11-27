@@ -1,14 +1,14 @@
-// Module ID: 19111
-// Function ID: 19112
+// Module ID: 19127
+// Function ID: 19128
 // Name: useConsoleConnectionCoachmark
-// Dependencies: [32, 19, 4889, 19112, 9561, 4876, 1112, 575, 5257, 19113, 2120, 19115, 2]
+// Dependencies: [32, 19, 4889, 19128, 9562, 4876, 1112, 575, 5257, 19129, 2120, 19131, 2]
 // Exports: useConsoleConnectionCoachmark
 
-// Module 19111 (useConsoleConnectionCoachmark)
+// Module 19127 (useConsoleConnectionCoachmark)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
-import _modDef19115 from "module_19115" /* 19115 */;
+import _modDef19131 from "module_19131" /* 19131 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

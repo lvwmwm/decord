@@ -1,15 +1,15 @@
-// Module ID: 14247
-// Function ID: 14248
+// Module ID: 14254
+// Function ID: 14255
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 5043, 575, 1501, 8754, 8953, 10871, 8956, 6130, 1112, 7751, 7247, 7191, 5634, 7251, 7253, 7274, 5641, 7440, 7355, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1501, 8755, 8954, 10872, 8957, 6130, 1112, 7751, 7247, 7191, 5634, 7251, 7253, 7274, 5641, 7440, 7355, 2]
 // Exports: default
 
-// Module 14247 (GameDetectionReportModal)
+// Module 14254 (GameDetectionReportModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
 import Navigator from "Navigator" /* 7355 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8755 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

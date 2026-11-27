@@ -1,10 +1,10 @@
-// Module ID: 14110
-// Function ID: 14111
+// Module ID: 14117
+// Function ID: 14118
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 5043, 575, 5252, 8838, 8223, 9080, 14111, 6419, 12, 14112, 1112, 13520, 9946, 7153, 9618, 5730, 1494, 9420, 5634, 14113, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5252, 8839, 8224, 9081, 14118, 6419, 12, 14119, 1112, 13528, 9947, 7153, 9619, 5730, 1494, 9421, 5634, 14120, 2]
 // Exports: ForwardPreview
 
-// Module 14110 (ForwardPreview)
+// Module 14117 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,13 +14,13 @@ import useThemeDefault from "useTheme" /* 5252 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6419 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8838 */;
-import ChatItemDefault from "ChatItem" /* 9080 */;
-import ClipView from "ClipView" /* 9420 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 9946 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 14111 */;
-import MosaicMediaType from "MosaicMediaType" /* 14112 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 14113 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8839 */;
+import ChatItemDefault from "ChatItem" /* 9081 */;
+import ClipView from "ClipView" /* 9421 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 9947 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 14118 */;
+import MosaicMediaType from "MosaicMediaType" /* 14119 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 14120 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -149,7 +149,7 @@ export function ForwardPreview(message) {
         const intl4 = tmp2(1112).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1112).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(13520).ImagesIcon;
+        AttachmentIcon = tmp2(13528).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -205,7 +205,7 @@ export function ForwardPreview(message) {
       const intl3 = tmp2(1112).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1112).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(9946).CirclePlayIcon;
+      AttachmentIcon = tmp2(9947).CirclePlayIcon;
     } else if (num > 0) {
       let ImagesIcon;
       const intl2 = tmp2(1112).intl;
@@ -214,7 +214,7 @@ export function ForwardPreview(message) {
       if (1 === num) {
         ImagesIcon = tmp2(7153).ImageIcon;
       } else {
-        ImagesIcon = tmp2(13520).ImagesIcon;
+        ImagesIcon = tmp2(13528).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;
@@ -222,7 +222,7 @@ export function ForwardPreview(message) {
       const intl = tmp2(1112).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1112).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(9618).AttachmentIcon;
+      AttachmentIcon = tmp2(9619).AttachmentIcon;
     }
   } else {
     tmp6 = null;

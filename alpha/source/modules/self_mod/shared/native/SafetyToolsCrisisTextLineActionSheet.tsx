@@ -1,17 +1,17 @@
-// Module ID: 11859
-// Function ID: 11860
+// Module ID: 11867
+// Function ID: 11868
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [19, 17, 11819, 21, 5043, 575, 11860, 1112, 5634, 5641, 5722, 11826, 2]
+// Dependencies: [19, 17, 11827, 21, 5043, 575, 11868, 1112, 5634, 5641, 5722, 11834, 2]
 // Exports: default
 
-// Module 11859 (SafetyToolsCrisisTextLineActionSheet)
+// Module 11867 (SafetyToolsCrisisTextLineActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import LinkingDefault from "Linking" /* 5722 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11826 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11860 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11834 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11868 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11819 */;
+import Constants from "Constants" /* 11827 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

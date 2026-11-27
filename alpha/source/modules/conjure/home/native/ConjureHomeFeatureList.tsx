@@ -1,9 +1,9 @@
-// Module ID: 18860
-// Function ID: 18861
+// Module ID: 18876
+// Function ID: 18877
 // Name: ConjureHomeFeatureList
-// Dependencies: [19, 17, 21, 5043, 575, 7525, 5598, 8799, 5634, 9788, 12270, 1112, 4245, 5607, 5752, 10078, 671, 18861, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 7525, 5598, 8800, 5634, 9789, 12278, 1112, 4245, 5607, 5752, 10079, 671, 18877, 2]
 
-// Module 18860 (ConjureHomeFeatureList)
+// Module 18876 (ConjureHomeFeatureList)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl3 from "intl" /* 1112 */;
@@ -11,8 +11,8 @@ import _modDef4245 from "module_4245" /* 4245 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import CircleCheckIcon2 from "CircleCheckIcon" /* 7525 */;
-import ShieldIcon2 from "ShieldIcon" /* 10078 */;
-import RobotIcon2 from "RobotIcon" /* 12270 */;
+import ShieldIcon2 from "ShieldIcon" /* 10079 */;
+import RobotIcon2 from "RobotIcon" /* 12278 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -196,20 +196,20 @@ let closure_14 = {
     items3 = [styles.pill, { left: nativeDefault.space.PX_6 }];
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
     ({ left: nativeDefault.space.PX_6 });
-    const TrophyIcon = styles(8799).TrophyIcon;
+    const TrophyIcon = styles(8800).TrophyIcon;
     items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5634).Text, { variant: "footnote/semibold", color: "text-overlay-light", children: 128 })];
     items1[4] = closure_6(closure_4, obj5);
     const obj8 = { style: items5, children: items6 };
     items5 = [styles.pill, { right: nativeDefault.space.PX_6 }];
     const obj10 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
     ({ right: nativeDefault.space.PX_6 });
-    const HeartIcon = styles(9788).HeartIcon;
+    const HeartIcon = styles(9789).HeartIcon;
     items6 = [closure_5(HeartIcon, obj10), , ];
     const obj11 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    const HeartIcon2 = styles(9788).HeartIcon;
+    const HeartIcon2 = styles(9789).HeartIcon;
     items6[1] = closure_5(HeartIcon2, obj11);
     const obj12 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const HeartIcon3 = styles(9788).HeartIcon;
+    const HeartIcon3 = styles(9789).HeartIcon;
     items6[2] = closure_5(HeartIcon3, obj12);
     items1[5] = closure_6(closure_4, obj8);
     return closure_6(tmp, obj);

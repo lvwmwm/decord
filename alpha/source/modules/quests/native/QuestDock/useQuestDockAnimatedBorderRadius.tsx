@@ -1,12 +1,12 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 16779
+// Function ID: 16780
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [19, 16684, 1654, 2]
+// Dependencies: [19, 16691, 1654, 2]
 // Exports: default
 
-// Module 16772 (useQuestDockAnimatedBorderRadius)
+// Module 16779 (useQuestDockAnimatedBorderRadius)
 import _mod1654 from "module_1654" /* 1654 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 16684 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 16691 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

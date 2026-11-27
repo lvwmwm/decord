@@ -1,16 +1,16 @@
-// Module ID: 12368
-// Function ID: 12369
+// Module ID: 12376
+// Function ID: 12377
 // Name: prefetchGameOrganizationAccountLinkState
-// Dependencies: [5, 2165, 6389, 11916, 11917, 6971, 7514, 7517, 2]
+// Dependencies: [5, 2165, 6389, 11924, 11925, 6971, 7514, 7517, 2]
 // Exports: default
 
-// Module 12368 (prefetchGameOrganizationAccountLinkState)
+// Module 12376 (prefetchGameOrganizationAccountLinkState)
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6389 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6971 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11925 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11916 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11924 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, invite;
@@ -29,7 +29,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -70,7 +70,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -98,7 +98,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
           }
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         if (0 === c4) {
           c6 = 3;

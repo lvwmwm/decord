@@ -1,21 +1,21 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16073
+// Function ID: 16074
 // Name: useProfileEditorExitHandling
-// Dependencies: [5, 32, 19, 9437, 14565, 1081, 9429, 6137, 7338, 14572, 5220, 1502, 1501, 9801, 2]
+// Dependencies: [5, 32, 19, 9438, 14572, 1081, 9430, 6137, 7338, 14579, 5220, 1502, 1501, 9802, 2]
 // Exports: default
 
-// Module 16066 (useProfileEditorExitHandling)
+// Module 16073 (useProfileEditorExitHandling)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import Constants from "Constants" /* 6137 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7338 */;
-import MainTabsConstants from "MainTabsConstants" /* 9429 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 9801 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 14572 */;
+import MainTabsConstants from "MainTabsConstants" /* 9430 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 9802 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 14579 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9437 */;
-import WidgetStore from "WidgetStore" /* 14565 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9438 */;
+import WidgetStore from "WidgetStore" /* 14572 */;
 import size from "module_2" /* 2 */;
 
 let state;

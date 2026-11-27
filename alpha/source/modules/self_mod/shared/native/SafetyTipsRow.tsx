@@ -1,10 +1,10 @@
-// Module ID: 11837
-// Function ID: 11838
+// Module ID: 11845
+// Function ID: 11846
 // Name: SafetyTipsRow
 // Dependencies: [19, 17, 21, 5043, 575, 6144, 5634, 2]
 // Exports: default
 
-// Module 11837 (SafetyTipsRow)
+// Module 11845 (SafetyTipsRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,11 +1,11 @@
-// Module ID: 19503
-// Function ID: 19504
+// Module ID: 19519
+// Function ID: 19520
 // Name: useActivityShelfItemData
-// Dependencies: [19, 13002, 2]
+// Dependencies: [19, 13010, 2]
 // Exports: useActivityShelfItemData
 
-// Module 19503 (useActivityShelfItemData)
-import useActivityShelfItemsDefault from "useActivityShelfItems" /* 13002 */;
+// Module 19519 (useActivityShelfItemData)
+import useActivityShelfItemsDefault from "useActivityShelfItems" /* 13010 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

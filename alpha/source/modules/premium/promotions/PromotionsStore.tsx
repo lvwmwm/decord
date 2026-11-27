@@ -1,22 +1,22 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 9163
+// Function ID: 9164
 // Name: PromotionsStore
-// Dependencies: [2189, 1231, 9163, 1387, 1388, 9164, 9211, 2161, 9212, 12, 504, 9165, 9166, 9222, 9223, 572, 2]
+// Dependencies: [2189, 1231, 9164, 1387, 1388, 9165, 9212, 2161, 9213, 12, 504, 9166, 9167, 9223, 9224, 572, 2]
 
-// Module 9162 (PromotionsStore)
+// Module 9163 (PromotionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9165 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9212 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9222 */;
-import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9223 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9166 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9213 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9223 */;
+import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9224 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9163 */;
+import PromotionRecord from "PromotionRecord" /* 9164 */;
 import UserStore from "UserStore" /* 1387 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1388 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9164 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9165 */;
 import FunctionUtils from "FunctionUtils" /* 2161 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let closure_22, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9166);
+const MarketingSurfaceType = tmp(9167);
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }

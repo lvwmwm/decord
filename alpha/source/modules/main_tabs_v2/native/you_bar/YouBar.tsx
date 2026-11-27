@@ -1,9 +1,9 @@
-// Module ID: 18150
-// Function ID: 18151
+// Module ID: 18157
+// Function ID: 18158
 // Name: YouBar
-// Dependencies: [5, 19, 17, 5067, 5076, 1387, 16683, 1071, 4889, 21, 5043, 575, 16674, 12962, 11804, 11812, 11984, 16682, 16687, 1654, 5644, 8921, 8926, 14264, 18151, 16218, 504, 11383, 18160, 5220, 5259, 1255, 12, 18161, 2120, 5219, 12148, 8600, 4876, 1112, 8109, 11807, 5303, 1707, 1186, 18175, 18176, 18177, 18182, 18184, 18186, 13408, 5104, 18187, 18188, 2]
+// Dependencies: [5, 19, 17, 5067, 5076, 1387, 16690, 1071, 4889, 21, 5043, 575, 16681, 12970, 11812, 11820, 11992, 16689, 16694, 1654, 5644, 8922, 8927, 14271, 18158, 16225, 504, 11384, 18167, 5220, 5259, 1255, 12, 18168, 2120, 5219, 12156, 8601, 4876, 1112, 8109, 11815, 5303, 1707, 1186, 18182, 18183, 18184, 18189, 18191, 18193, 13416, 5104, 18194, 18195, 2]
 
-// Module 18150 (YouBar)
+// Module 18157 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,17 +16,17 @@ import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import transitionToGuild from "transitionToGuild" /* 8600 */;
-import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 12148 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18187 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 18188 */;
+import transitionToGuild from "transitionToGuild" /* 8601 */;
+import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 12156 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18194 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 18195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5067 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
 import UserStore from "UserStore" /* 1387 */;
-import YouBarConstants from "YouBarConstants" /* 16683 */;
+import YouBarConstants from "YouBarConstants" /* 16690 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -278,7 +278,7 @@ let closure_26 = react.memo(function YouBar() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -314,7 +314,7 @@ let closure_26 = react.memo(function YouBar() {
           const result1 = tmp.showYouAccountActionSheet();
           const result2 = closure_129_2.set(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         c3 = 3;

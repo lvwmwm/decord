@@ -1,18 +1,18 @@
-// Module ID: 13698
-// Function ID: 13699
+// Module ID: 13705
+// Function ID: 13706
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1387, 13671, 21, 5043, 5597, 575, 1501, 5634, 1112, 7400, 7401, 13670, 563, 7394, 38, 7433, 7349, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 13678, 21, 5043, 5597, 575, 1501, 5634, 1112, 7400, 7401, 13677, 563, 7394, 38, 7433, 7349, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 13698 (AddPhoneScreens)
+// Module 13705 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7394 */;
 import AddPhoneDefault from "AddPhone" /* 7400 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7401 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13670 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13671 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13677 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13678 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -87,7 +87,7 @@ export function VerifyPhoneScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

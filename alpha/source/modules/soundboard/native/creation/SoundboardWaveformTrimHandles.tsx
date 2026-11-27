@@ -1,15 +1,15 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 20046
+// Function ID: 20047
 // Name: SoundboardWaveformTrimHandles
-// Dependencies: [32, 19, 17, 21, 20011, 5043, 575, 1654, 5303, 1112, 2]
+// Dependencies: [32, 19, 17, 21, 20036, 5043, 575, 1654, 5303, 1112, 2]
 // Exports: default
 
-// Module 20021 (SoundboardWaveformTrimHandles)
+// Module 20046 (SoundboardWaveformTrimHandles)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import SoundboardAudioNative from "SoundboardAudioNative" /* 20011 */;
+import SoundboardAudioNative from "SoundboardAudioNative" /* 20036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

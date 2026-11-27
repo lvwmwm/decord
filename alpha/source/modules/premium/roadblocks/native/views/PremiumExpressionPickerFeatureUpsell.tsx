@@ -1,10 +1,10 @@
-// Module ID: 9750
-// Function ID: 9751
+// Module ID: 9751
+// Function ID: 9752
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 5043, 575, 1629, 7298, 1091, 1654, 9751, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1629, 7298, 1091, 1654, 9752, 2]
 // Exports: default
 
-// Module 9750 (PremiumExpressionPickerFeatureUpsell)
+// Module 9751 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

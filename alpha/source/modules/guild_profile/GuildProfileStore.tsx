@@ -1,9 +1,9 @@
-// Module ID: 8542
-// Function ID: 8543
+// Module ID: 8543
+// Function ID: 8544
 // Name: GuildProfileStore
 // Dependencies: [1071, 559, 7012, 504, 572, 2]
 
-// Module 8542 (GuildProfileStore)
+// Module 8543 (GuildProfileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

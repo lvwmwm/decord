@@ -1,10 +1,10 @@
-// Module ID: 18252
-// Function ID: 18253
+// Module ID: 18259
+// Function ID: 18260
 // Name: Notifications
-// Dependencies: [19, 17, 9429, 4889, 21, 5043, 575, 5220, 7309, 18253, 7480, 6152, 1112, 16069, 5634, 18254, 11714, 18255, 17721, 6379, 6380, 8249, 7197, 5621, 18259, 18260, 13797, 12571, 5215, 1629, 17741, 10591, 5104, 2]
+// Dependencies: [19, 17, 9430, 4889, 21, 5043, 575, 5220, 7309, 18260, 7480, 6152, 1112, 16076, 5634, 18261, 11722, 18262, 17728, 6379, 6380, 8250, 7197, 5621, 18266, 18267, 13804, 12579, 5215, 1629, 17748, 10592, 5104, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 18252 (Notifications)
+// Module 18259 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
@@ -17,17 +17,17 @@ import useAnalyticsLocations from "useAnalyticsLocations" /* 6379 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7197 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7309 */;
-import MainTabsConstants from "MainTabsConstants" /* 9429 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10591 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12571 */;
-import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 13797 */;
-import useAppFrameDefault from "useAppFrame" /* 17721 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17741 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18253 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18254 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18255 */;
-import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18259 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 18260 */;
+import MainTabsConstants from "MainTabsConstants" /* 9430 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10592 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12579 */;
+import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 13804 */;
+import useAppFrameDefault from "useAppFrame" /* 17728 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17748 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18260 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18261 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18262 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18266 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 18267 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

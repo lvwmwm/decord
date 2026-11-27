@@ -1,10 +1,10 @@
-// Module ID: 18643
-// Function ID: 18644
+// Module ID: 18654
+// Function ID: 18655
 // Name: ConjureSecretRequestState
 // Dependencies: [32, 19, 1112, 4245, 7660, 2]
-// Exports: markMcpSecretRequestSaved, newestOpenSecretRequest, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
+// Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
 
-// Module 18643 (ConjureSecretRequestState)
+// Module 18654 (ConjureSecretRequestState)
 import intl3 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import conjureChatTurns from "conjureChatTurns" /* 7660 */;
@@ -142,27 +142,6 @@ export function secretRequestStatuses(memo, secrets) {
     } while (0 <= diff);
   }
   return map;
-}
-export function newestOpenSecretRequest(arg0, get) {
-  let tmp2;
-  let diff = arg0.length - 1;
-  if (0 <= diff) {
-    while (true) {
-      tmp2 = arg0[diff];
-      let secretRequest;
-      if (tmp2 != null) {
-        secretRequest = tmp2.secretRequest;
-      }
-      if (null != secretRequest) {
-        if ("open" === get.get(tmp2.render_id)) {
-          break;
-        }
-      }
-      diff = diff - 1;
-    }
-    return tmp2;
-  }
-  return null;
 }
 export function useSecretRequestStatusChanged(cardId, status) {
   let flag;

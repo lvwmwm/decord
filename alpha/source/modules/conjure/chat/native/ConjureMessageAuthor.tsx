@@ -1,20 +1,20 @@
-// Module ID: 18688
-// Function ID: 18689
+// Module ID: 18702
+// Function ID: 18703
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 5043, 575, 18676, 18689, 5634, 6152, 1112, 11553, 5099, 18690, 4245, 1186, 5730, 18693, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 18690, 18703, 5634, 6152, 1112, 11561, 5099, 18704, 4245, 1186, 5730, 18707, 2]
 // Exports: ConjureAvatar, ConjureHeader, ConjureUserAvatar, ConjureUserHeader
 
-// Module 18688 (ConjureMessageAuthor)
+// Module 18702 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18676 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 18689 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18690 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18693 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18690 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 18703 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18704 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18707 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -78,7 +78,7 @@ export function ConjureUserHeader(arg0) {
   let userId;
   let messageAuthorUser;
   ({ userId, at } = arg0);
-  let obj = messageAuthorUser(11553);
+  let obj = messageAuthorUser(11561);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const obj2 = messageAuthorUser(5099);
   const name = obj2.useName(messageAuthorUser);
@@ -112,7 +112,7 @@ export function ConjureUserAvatar(size) {
     NORMAL = messageAuthorUser(1186).AvatarSizes.NORMAL;
   }
   messageAuthorUser = undefined;
-  let obj = messageAuthorUser(11553);
+  let obj = messageAuthorUser(11561);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const items = [messageAuthorUser];
   const callback = react.useCallback(() => {

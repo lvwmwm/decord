@@ -1,17 +1,17 @@
-// Module ID: 19873
-// Function ID: 19874
+// Module ID: 19889
+// Function ID: 19890
 // Name: StageSpeakInviteNotificationManager
-// Dependencies: [6965, 502, 4892, 4914, 4985, 4946, 1387, 4897, 1071, 10277, 1112, 5659, 10603, 10628, 10626, 7475, 6803, 10271, 2]
+// Dependencies: [6965, 502, 4892, 4914, 4985, 4946, 1387, 4897, 1071, 10278, 1112, 5659, 10604, 10629, 10627, 7475, 6803, 10272, 2]
 
-// Module 19873 (StageSpeakInviteNotificationManager)
+// Module 19889 (StageSpeakInviteNotificationManager)
 import Constants from "Constants" /* 1071 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6803 */;
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10271 */;
-import PushNotificationDefault from "PushNotification" /* 10277 */;
-import NotificationTextUtils from "NotificationTextUtils" /* 10603 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10626 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10628 */;
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10272 */;
+import PushNotificationDefault from "PushNotification" /* 10278 */;
+import NotificationTextUtils from "NotificationTextUtils" /* 10604 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10627 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10629 */;
 import VoicePanelStore from "VoicePanelStore" /* 6965 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -88,7 +88,7 @@ class StageSpeakInviteNotificationManager extends AutomaticLifecycleManager {
                         guild: GuildStore.getGuild(channel.guild_id),
                         inAppNotificationId: tmp2Result8.generateInAppNotificationId()
                       };
-                      const enqueueNotification = tmp7(10628).enqueueNotification;
+                      const enqueueNotification = tmp7(10629).enqueueNotification;
                       InAppNotificationActionCreatorsDefault;
                       tmp2Result7 = InAppNotificationUtils;
                       tmp2Result8 = InAppNotificationUtils;

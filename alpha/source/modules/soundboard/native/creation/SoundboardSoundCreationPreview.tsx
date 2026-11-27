@@ -1,10 +1,10 @@
-// Module ID: 20019
-// Function ID: 20020
+// Module ID: 20044
+// Function ID: 20045
 // Name: SoundboardSoundCreationPreview
-// Dependencies: [32, 5, 19, 17, 5044, 6925, 6001, 21, 5043, 575, 5607, 1654, 8886, 7328, 10302, 1379, 20011, 504, 5253, 9513, 15987, 5724, 1112, 7047, 20020, 20021, 5634, 5641, 2]
+// Dependencies: [32, 5, 19, 17, 5044, 6925, 6001, 21, 5043, 575, 5607, 1654, 8887, 7328, 10303, 1379, 20036, 504, 5253, 9514, 15994, 5724, 1112, 7047, 20045, 20046, 5634, 5641, 2]
 // Exports: default
 
-// Module 20019 (SoundboardSoundCreationPreview)
+// Module 20044 (SoundboardSoundCreationPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
@@ -12,7 +12,7 @@ import timing_timing from "timing/timing" /* 5253 */;
 import useToken from "useToken" /* 5607 */;
 import Constants from "Constants" /* 6001 */;
 import SoundboardConstants from "SoundboardConstants" /* 6925 */;
-import TextTrackTypeDefault from "TextTrackType" /* 8886 */;
+import TextTrackTypeDefault from "TextTrackType" /* 8887 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -142,7 +142,7 @@ let closure_16 = PlatformUtils.isIOS() ? (function VideoPreviewPlayer(onLoad) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -197,7 +197,7 @@ let closure_16 = PlatformUtils.isIOS() ? (function VideoPreviewPlayer(onLoad) {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             closure_2 = tmp17;
@@ -291,7 +291,7 @@ export default function SoundboardSoundCreationPreview(source) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -340,7 +340,7 @@ export default function SoundboardSoundCreationPreview(source) {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp18) {
             if (0 === c2) {
@@ -459,7 +459,7 @@ export default function SoundboardSoundCreationPreview(source) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -559,7 +559,7 @@ export default function SoundboardSoundCreationPreview(source) {
                 closure_129_12(false);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
           c3 = 0;
@@ -568,7 +568,7 @@ export default function SoundboardSoundCreationPreview(source) {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp69) {
         onDurationChange = tmp69;
         if (0 === c3) {

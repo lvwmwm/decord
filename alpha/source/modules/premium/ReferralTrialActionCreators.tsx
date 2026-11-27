@@ -1,15 +1,15 @@
-// Module ID: 9142
-// Function ID: 9143
+// Module ID: 9143
+// Function ID: 9144
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 9143, 1406, 4946, 1071, 1285, 559, 1088, 572, 1242, 8244, 2]
+// Dependencies: [5, 9144, 1406, 4946, 1071, 1285, 559, 1088, 572, 1242, 8245, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 9142 (ReferralTrialActionCreators)
+// Module 9143 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9143 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9144 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import Constants from "Constants" /* 1071 */;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {

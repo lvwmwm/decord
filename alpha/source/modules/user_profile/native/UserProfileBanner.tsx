@@ -1,13 +1,13 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9511
+// Function ID: 9512
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1071, 21, 5043, 4868, 9511, 1413, 9518, 6152, 1112, 9519, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5043, 4868, 9512, 1413, 9519, 6152, 1112, 9520, 2]
 // Exports: default
 
-// Module 9510 (UserProfileBanner)
+// Module 9511 (UserProfileBanner)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
-import BannerDefault from "Banner" /* 9518 */;
+import BannerDefault from "Banner" /* 9519 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

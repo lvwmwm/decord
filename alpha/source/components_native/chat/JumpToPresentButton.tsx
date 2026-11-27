@@ -1,16 +1,16 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13231
+// Function ID: 13232
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 9090, 5849, 6391, 21, 5043, 575, 1379, 5607, 504, 10270, 1112, 13224, 13225, 13226, 2]
+// Dependencies: [19, 17, 9091, 5849, 6391, 21, 5043, 575, 1379, 5607, 504, 10271, 1112, 13232, 13233, 13234, 2]
 // Exports: default
 
-// Module 13223 (JumpToPresentButton)
+// Module 13231 (JumpToPresentButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5607 */;
 import react from "react" /* 19 */;
-import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9090 */;
+import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9091 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -75,9 +75,9 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp;
   });
-  const obj2 = channelId(10270);
+  const obj2 = channelId(10271);
   const isVoicePanelMounted = obj2.useIsVoicePanelMounted(channelId);
-  const obj3 = channelId(10270);
+  const obj3 = channelId(10271);
   const isVoicePanelOpen = obj3.useIsVoicePanelOpen(channelId);
   const items1 = [MessageStore];
   const obj4 = channelId(504);
@@ -101,11 +101,11 @@ export default function JumpToPresentButton(channelId) {
   }
   const items3 = [tmp.container, tmp10];
   if (tmp5) {
-    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(13225), onPress: onJumpToPresent };
-    const tmp16 = screenIndex(13224);
+    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(13233), onPress: onJumpToPresent };
+    const tmp16 = screenIndex(13232);
     tmp12Result = tmp12(tmp16, obj6);
   } else {
-    tmp12Result = tmp12(tmp3(13226).MemoedVoicePanelDismissChatButton, {});
+    tmp12Result = tmp12(tmp3(13234).MemoedVoicePanelDismissChatButton, {});
   }
   return <tmp13 style={items3}>{tmp12Result}</tmp13>;
 };

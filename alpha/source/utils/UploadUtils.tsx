@@ -169,7 +169,7 @@ export function getAttachmentPayload(id, index, name) {
     const obj2 = clipPayloadUtils;
     obj.clip_created_at = obj2.getClipCreatedAt(id.clip.createdAt);
     const obj3 = clipPayloadUtils;
-    obj.clip_participant_ids = obj3.getClipParticipantIds(id.clip.users);
+    obj.clip_participant_ids = obj3.getClipParticipantIds(id.clip);
     obj.clip_remote_id = id.clip.remoteClipId;
     const obj4 = clipPayloadUtils;
     obj.clip_events_timeline = obj4.getClipEventsTimeline(id.clip);

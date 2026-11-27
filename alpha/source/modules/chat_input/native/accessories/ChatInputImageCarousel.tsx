@@ -1,14 +1,14 @@
-// Module ID: 13187
-// Function ID: 13188
+// Module ID: 13195
+// Function ID: 13196
 // Name: ChatInputImageCarousel
-// Dependencies: [19, 8182, 8117, 8124, 9090, 21, 504, 11083, 2]
+// Dependencies: [19, 8183, 8117, 8124, 9091, 21, 504, 11084, 2]
 
-// Module 13187 (ChatInputImageCarousel)
+// Module 13195 (ChatInputImageCarousel)
 import Fragment from "Fragment" /* 21 */;
 import DraftStore from "DraftStore" /* 8117 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9090 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9091 */;
 import react from "react" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8182 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8183 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8124 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ const memoResult = react.memo(function ChatInputImageCarousel(canUpload) {
   let tmp4 = null;
   if (null != stateFromStores) {
     let tmp5 = jsx;
-    tmp4 = jsx(channelId(11083), { attachments: stateFromStores, channelId });
+    tmp4 = jsx(channelId(11084), { attachments: stateFromStores, channelId });
   }
   return tmp4;
 });

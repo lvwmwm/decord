@@ -1,10 +1,10 @@
-// Module ID: 12002
-// Function ID: 12003
+// Module ID: 12010
+// Function ID: 12011
 // Name: loadConjureSharedProject
-// Dependencies: [5, 2165, 6934, 11994, 1071, 7667, 572, 5787, 559, 6971, 7672, 2]
+// Dependencies: [5, 2165, 6934, 12002, 1071, 7667, 572, 5787, 559, 6971, 7672, 2]
 // Exports: default
 
-// Module 12002 (loadConjureSharedProject)
+// Module 12010 (loadConjureSharedProject)
 import Constants from "Constants" /* 1071 */;
 import conjureProjectLink from "conjureProjectLink" /* 5787 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6971 */;
@@ -12,7 +12,7 @@ import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11994 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 12002 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _load() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -144,7 +144,7 @@ let obj = function _load() {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           let hasItem;
           if (closure_132_8 != null) {
@@ -194,7 +194,7 @@ obj = function _resolveStatus() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;

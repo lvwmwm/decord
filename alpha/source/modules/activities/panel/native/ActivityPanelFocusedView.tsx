@@ -1,24 +1,24 @@
-// Module ID: 19406
-// Function ID: 19407
+// Module ID: 19422
+// Function ID: 19423
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 5044, 4892, 4891, 5669, 19252, 1071, 11782, 10191, 21, 5043, 575, 1629, 504, 1495, 19397, 18447, 1654, 5104, 1707, 5253, 5644, 6106, 4964, 19399, 19407, 10046, 10200, 2]
+// Dependencies: [19, 17, 5044, 4892, 4891, 5669, 19268, 1071, 11790, 10192, 21, 5043, 575, 1629, 504, 1495, 19413, 18454, 1654, 5104, 1707, 5253, 5644, 6106, 4964, 19415, 19423, 10047, 10201, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 19406 (ActivityPanelFocusedView)
+// Module 19422 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Constants2 from "Constants" /* 10191 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10200 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19399 */;
+import Constants2 from "Constants" /* 10192 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10201 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11790 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19415 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19252 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19268 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

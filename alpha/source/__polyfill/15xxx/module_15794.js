@@ -1,16 +1,14 @@
 // Module ID: 15794
 // Function ID: 15795
-// Dependencies: [15758, 15732]
+// Dependencies: [15742, 15743]
 
 // Module 15794
-import _mod15732 from "module_15732" /* 15732 */;
-import module_15758 from "module_15758" /* 15758 */;
+import _mod15742 from "module_15742" /* 15742 */;
+import _mod15743 from "module_15743" /* 15743 */;
 
-let _moduleResult = module_15758(_mod15732.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod15732.WeakMap));
-}
+const f66419 = () => 42 !== Object.defineProperty(() => {
 
-export default _moduleResult;
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod15742 && _mod15743(f66419);
+
+export default _mod15742 && _mod15743(f66419);

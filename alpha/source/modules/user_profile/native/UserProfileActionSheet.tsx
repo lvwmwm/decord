@@ -1,9 +1,9 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 14852
+// Function ID: 14853
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 4892, 4955, 1387, 6376, 7557, 1071, 5272, 21, 5043, 5275, 1654, 1629, 504, 6162, 6379, 6380, 8724, 4868, 6381, 10042, 9490, 14847, 14848, 14849, 9505, 9496, 9477, 9485, 14850, 1495, 5597, 9504, 5252, 5607, 575, 14845, 14851, 6134, 4944, 6309, 1256, 5220, 5222, 14852, 5257, 1501, 6133, 5271, 1186, 11596, 1112, 5104, 14853, 1379, 14854, 8109, 14855, 14858, 14963, 9470, 5606, 15081, 1195, 2]
+// Dependencies: [32, 19, 17, 4892, 4955, 1387, 6376, 7557, 1071, 5272, 21, 5043, 5275, 1654, 1629, 504, 6162, 6379, 6380, 8725, 4868, 6381, 10043, 9491, 14853, 14854, 14855, 9506, 9497, 9478, 9486, 14856, 1495, 5597, 9505, 5252, 5607, 575, 14851, 14857, 6134, 4944, 6309, 1256, 5220, 5222, 14858, 5257, 1501, 6133, 5271, 1186, 11604, 1112, 5104, 14859, 1379, 14860, 8109, 14861, 14864, 14970, 9471, 5606, 15088, 1195, 2]
 
-// Module 14846 (UserProfileActionSheet)
+// Module 14852 (UserProfileActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import isChangelogUserDefault from "isChangelogUser" /* 4944 */;
@@ -15,10 +15,10 @@ import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6309 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import Constants2 from "Constants" /* 7557 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9496 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 9504 */;
-import ProfileFrameDefault from "ProfileFrame" /* 9505 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 14851 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9497 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 9505 */;
+import ProfileFrameDefault from "ProfileFrame" /* 9506 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 14857 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

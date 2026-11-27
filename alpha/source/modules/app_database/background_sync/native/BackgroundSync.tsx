@@ -1,27 +1,27 @@
-// Module ID: 19667
-// Function ID: 19668
+// Module ID: 19683
+// Function ID: 19684
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 4896, 4892, 6932, 2119, 8253, 1071, 6927, 6883, 4914, 3, 1088, 510, 10778, 1379, 572, 1242, 1256, 4921, 1285, 4922, 11, 12, 8316, 8319, 8317, 17197, 8251, 1255, 8261, 2]
+// Dependencies: [32, 5, 4896, 4892, 6932, 2119, 8254, 1071, 6927, 6883, 4914, 3, 1088, 510, 10779, 1379, 572, 1242, 1256, 4921, 1285, 4922, 11, 12, 8317, 8320, 8318, 17204, 8252, 1255, 8262, 2]
 // Exports: backgroundSync
 
-// Module 19667 (background_sync/BackgroundSync)
+// Module 19683 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
-import modules_Messages from "modules/Messages" /* 8251 */;
-import GuildVersionsDefault from "GuildVersions" /* 8316 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 8317 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 8319 */;
+import modules_Messages from "modules/Messages" /* 8252 */;
+import GuildVersionsDefault from "GuildVersions" /* 8317 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 8318 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 8320 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import "ChannelStore";
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import AppStateStore from "AppStateStore" /* 2119 */;
-import FileSystemStore from "FileSystemStore" /* 8253 */;
+import FileSystemStore from "FileSystemStore" /* 8254 */;
 import Constants from "Constants" /* 1071 */;
 import StickersStore from "StickersStore" /* 6927 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -224,7 +224,7 @@ obj = function _backgroundSyncPrivateChannels() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -329,7 +329,7 @@ obj = function _backgroundSyncPrivateChannels() {
           closure_1.time_save_private_channel_messages = Date.now() - closure_2;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp44) {
         c6 = 3;
         throw tmp44;
@@ -357,7 +357,7 @@ obj = function _backgroundSyncGuildData() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -558,7 +558,7 @@ obj = function _backgroundSyncGuildData() {
             closure_0.time_save_guild_data = Date.now() - closure_1;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         c6 = 3;
@@ -589,7 +589,7 @@ obj = function _backgroundSyncGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -888,7 +888,7 @@ obj = function _backgroundSyncGuildChannels() {
           }
         }
         c22 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     }
   });
@@ -914,7 +914,7 @@ obj = function _processChannelChanges() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -977,7 +977,7 @@ obj = function _processChannelChanges() {
               }
             }
             c12 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let closure_5;

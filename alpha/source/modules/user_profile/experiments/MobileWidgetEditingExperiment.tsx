@@ -1,10 +1,10 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 14996
+// Function ID: 14997
 // Name: MobileWidgetEditingExperiment
 // Dependencies: [1451, 2]
 // Exports: useIsMobileWidgetEditingEnabled
 
-// Module 14989 (MobileWidgetEditingExperiment)
+// Module 14996 (MobileWidgetEditingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

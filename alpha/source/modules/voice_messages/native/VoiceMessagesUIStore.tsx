@@ -1,14 +1,14 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 12966
+// Function ID: 12967
 // Name: VoiceMessagesUIStore
-// Dependencies: [12959, 560, 1654, 1263, 5644, 5645, 2]
+// Dependencies: [12967, 560, 1654, 1263, 5644, 5645, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 12958 (VoiceMessagesUIStore)
+// Module 12966 (VoiceMessagesUIStore)
 import react_native from "react-native" /* 1263 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import spring_spring from "spring/spring" /* 5644 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12959 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12967 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14850
-// Function ID: 14851
+// Module ID: 14856
+// Function ID: 14857
 // Name: useUserProfileBannerHeight
 // Dependencies: [7557, 1495, 2]
 // Exports: default
 
-// Module 14850 (useUserProfileBannerHeight)
+// Module 14856 (useUserProfileBannerHeight)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import Constants from "Constants" /* 7557 */;
 import size from "module_2" /* 2 */;

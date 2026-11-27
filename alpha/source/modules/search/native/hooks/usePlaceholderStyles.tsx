@@ -1,16 +1,16 @@
-// Module ID: 18956
-// Function ID: 18957
+// Module ID: 18972
+// Function ID: 18973
 // Name: usePlaceholderStyles
-// Dependencies: [5044, 9019, 1495, 504, 1654, 5253, 1186, 2]
+// Dependencies: [5044, 9020, 1495, 504, 1654, 5253, 1186, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 18956 (usePlaceholderStyles)
+// Module 18972 (usePlaceholderStyles)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1186 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import timing_timing from "timing/timing" /* 5253 */;
-import SearchConstants from "SearchConstants" /* 9019 */;
+import SearchConstants from "SearchConstants" /* 9020 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 

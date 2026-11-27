@@ -1,10 +1,10 @@
-// Module ID: 13861
-// Function ID: 13862
+// Module ID: 13868
+// Function ID: 13869
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 5043, 575, 5634, 1112, 9773, 9870, 9856, 7161, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5634, 1112, 9774, 9871, 9857, 7161, 2]
 // Exports: default
 
-// Module 13861 (BadgeTierGrid)
+// Module 13868 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -146,7 +146,7 @@ export default function BadgeTierGrid(badge) {
     })
   };
   let tiers = badge.tiers;
-  let tmp9 = isViewingOtherUser(9773);
+  let tmp9 = isViewingOtherUser(9774);
   const tmp8 = closure_4;
   if (tiers == null) {
     tiers = [];

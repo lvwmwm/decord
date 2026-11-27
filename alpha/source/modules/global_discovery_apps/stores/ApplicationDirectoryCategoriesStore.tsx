@@ -1,9 +1,9 @@
-// Module ID: 13034
-// Function ID: 13035
+// Module ID: 13042
+// Function ID: 13043
 // Name: ApplicationDirectoryCategoriesStore
 // Dependencies: [504, 572, 2]
 
-// Module 13034 (ApplicationDirectoryCategoriesStore)
+// Module 13042 (ApplicationDirectoryCategoriesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,19 +1,19 @@
-// Module ID: 16786
-// Function ID: 16787
+// Module ID: 16793
+// Function ID: 16794
 // Name: QuestDockBackgroundBlurHeader
-// Dependencies: [32, 19, 17, 6871, 16680, 21, 5043, 575, 5644, 16681, 1359, 5607, 16772, 1654, 6152, 5634, 1112, 9462, 16787, 16752, 16789, 7745, 2]
+// Dependencies: [32, 19, 17, 6871, 16687, 21, 5043, 575, 5644, 16688, 1359, 5607, 16779, 1654, 6152, 5634, 1112, 9463, 16794, 16759, 16796, 7745, 2]
 
-// Module 16786 (QuestDockBackgroundBlurHeader)
+// Module 16793 (QuestDockBackgroundBlurHeader)
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
 import _modDef1654 from "module_1654" /* 1654 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16772 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16779 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockConstants from "QuestDockConstants" /* 16680 */;
+import QuestDockConstants from "QuestDockConstants" /* 16687 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -445,7 +445,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
     intl2 = tmp(1112).intl;
     items17 = [closure_12(Text2, obj4), ];
     const obj5 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, style: tmp72.actionDisclosuresIcon };
-    const CircleQuestionIcon = tmp(9462).CircleQuestionIcon;
+    const CircleQuestionIcon = tmp(9463).CircleQuestionIcon;
     items17[1] = closure_12(CircleQuestionIcon, obj5);
     tmp73Result = tmp73(PressableOpacity, obj2);
     tmp76 = tmp73;
@@ -467,7 +467,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
     let tmp76Result;
     if (null != blurHash) {
       const obj9 = { placeholder: blurHash, layoutAnimatedStyle: animatedStyle41, opacityAnimatedStyle: animatedStyle5, layoutAnimation: questDockHeaderLayoutAnimation };
-      tmp76Result = tmp76(tmp7(16787), obj9);
+      tmp76Result = tmp76(tmp7(16794), obj9);
     }
     const items20 = [tmp76Result, , ];
     let tmp76Result2 = children;
@@ -517,7 +517,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
     View4 = tmp7(1654).View;
     if (!flag2) {
       const obj18 = { children: items28 };
-      items28 = [tmp73Result, tmp76(tmp7(16789), {})];
+      items28 = [tmp73Result, tmp76(tmp7(16796), {})];
       tmp79Result = tmp79(closure_13, obj18);
     }
     items29 = [tmp79Result, ];
@@ -569,7 +569,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
     obj8.children = items20;
     return closure_14(View, obj8);
   }
-  tmp76Result = tmp76(tmp7(16752), { layoutAnimatedStyle: animatedStyle41, opacityAnimatedStyle: animatedStyle5, layoutAnimation: tmp80 });
+  tmp76Result = tmp76(tmp7(16759), { layoutAnimatedStyle: animatedStyle41, opacityAnimatedStyle: animatedStyle5, layoutAnimation: tmp80 });
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBackgroundBlurHeader.tsx");

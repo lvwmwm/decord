@@ -1,14 +1,14 @@
-// Module ID: 19960
-// Function ID: 19961
+// Module ID: 19976
+// Function ID: 19977
 // Name: GuildSettingsAuditLogStore
-// Dependencies: [19961, 4896, 4950, 4955, 4949, 4914, 1071, 1083, 12, 504, 572, 2]
+// Dependencies: [19977, 4896, 4950, 4955, 4949, 4914, 1071, 1083, 12, 504, 572, 2]
 
-// Module 19960 (GuildSettingsAuditLogStore)
+// Module 19976 (GuildSettingsAuditLogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 4950 */;
-import AuditLogRecord2 from "AuditLogRecord" /* 19961 */;
+import AuditLogRecord2 from "AuditLogRecord" /* 19977 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -26,7 +26,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f119519 = function(id) {
+const f119798 = function(id) {
   function shouldMergeEntries(items, action2, c1) {
     let isEqualResult = null != items && items.action === action2.action && items.targetId === action2.targetId && items.userId === action2.userId;
     if (isEqualResult) {
@@ -201,7 +201,7 @@ const f119519 = function(id) {
     items.unshift(tmp45);
   }
 };
-const f119521 = (userId) => userId.userId;
+const f119800 = (userId) => userId.userId;
 const AuditLogChange = AuditLogRecord2.AuditLogChange;
 let closure_4 = ChannelRecord.isGuildSelectableChannelType;
 const hasAnyPermission = GuildRoleRecord.hasAnyPermission;
@@ -358,7 +358,7 @@ let obj = {
     const items = [];
     let c1 = 0;
     const reversed = logs.reverse();
-    const item = reversed.forEach(f119519);
+    const item = reversed.forEach(f119798);
     ({ integrations: closure_18, webhooks: closure_20, guildScheduledEvents: closure_21, automodRules } = logs);
     if (automodRules == null) {
       automodRules = [];
@@ -395,7 +395,7 @@ let obj = {
       let items = [];
       let c1 = 0;
       const reversed = logs.reverse();
-      const item = reversed.forEach(f119519);
+      const item = reversed.forEach(f119798);
       let items1 = [];
       let num = 0;
       let tmp7 = items1;
@@ -445,7 +445,7 @@ let obj = {
           }
         });
       });
-      const iter = found.map(f119521);
+      const iter = found.map(f119800);
       closure_19 = iter.value();
     }
   },
@@ -483,7 +483,7 @@ let obj = {
           }
         });
       });
-      const iter = found.map(f119521);
+      const iter = found.map(f119800);
       closure_19 = iter.value();
     }
     return false;

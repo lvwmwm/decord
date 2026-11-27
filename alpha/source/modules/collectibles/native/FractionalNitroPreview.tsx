@@ -1,10 +1,10 @@
-// Module ID: 11291
-// Function ID: 11292
+// Module ID: 11292
+// Function ID: 11293
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1071, 1389, 21, 5043, 575, 1112, 8129, 2174, 5598, 5730, 11292, 11293, 7491, 5634, 2]
+// Dependencies: [19, 17, 1071, 1389, 21, 5043, 575, 1112, 8129, 2174, 5598, 5730, 11293, 11294, 7491, 5634, 2]
 // Exports: FractionalNitroPreview
 
-// Module 11291 (FractionalNitroPreview)
+// Module 11292 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,8 +13,8 @@ import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7491 */;
-import _modDef11292 from "module_11292" /* 11292 */;
-import NitroIconDefault from "NitroIcon" /* 11293 */;
+import _modDef11293 from "module_11293" /* 11293 */;
+import NitroIconDefault from "NitroIcon" /* 11294 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -75,7 +75,7 @@ export function FractionalNitroPreview() {
   const obj5 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   items1[0] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { source: obj7, style: tmp.headerImage };
-  obj7 = { uri: _modDef11292 };
+  obj7 = { uri: _modDef11293 };
   const tmp3 = FastImageDefault;
   items1[1] = closure_6(tmp3, obj6);
   const obj8 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };

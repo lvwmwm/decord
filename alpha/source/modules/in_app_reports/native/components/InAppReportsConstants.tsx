@@ -1,9 +1,9 @@
-// Module ID: 8197
-// Function ID: 8198
+// Module ID: 8198
+// Function ID: 8199
 // Name: InAppReportsConstants
 // Dependencies: [2]
 
-// Module 8197 (InAppReportsConstants)
+// Module 8198 (InAppReportsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsConstants.tsx");

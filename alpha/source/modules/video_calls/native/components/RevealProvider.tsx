@@ -1,18 +1,18 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 10017
+// Function ID: 10018
 // Name: RevealProvider
-// Dependencies: [19, 5258, 5852, 10008, 21, 504, 10010, 10017, 1379, 5252, 5050, 10018, 10020, 2]
+// Dependencies: [19, 5258, 5852, 10009, 21, 504, 10011, 10018, 1379, 5252, 5050, 10019, 10021, 2]
 // Exports: default
 
-// Module 10016 (RevealProvider)
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10010 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 10017 */;
-import StatusBarDefault from "StatusBar" /* 10018 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 10020 */;
+// Module 10017 (RevealProvider)
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10011 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 10018 */;
+import StatusBarDefault from "StatusBar" /* 10019 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 10021 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5258 */;
 import GameConsoleStore from "GameConsoleStore" /* 5852 */;
-import ChannelCallStore from "ChannelCallStore" /* 10008 */;
+import ChannelCallStore from "ChannelCallStore" /* 10009 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

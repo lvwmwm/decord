@@ -1,9 +1,9 @@
-// Module ID: 18654
-// Function ID: 18655
+// Module ID: 18669
+// Function ID: 18670
 // Name: ConjureViewability
 // Dependencies: [2]
 
-// Module 18654 (ConjureViewability)
+// Module 18669 (ConjureViewability)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureViewability.tsx");

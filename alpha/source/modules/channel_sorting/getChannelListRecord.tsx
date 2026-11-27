@@ -1,10 +1,10 @@
-// Module ID: 11542
-// Function ID: 11543
+// Module ID: 11550
+// Function ID: 11551
 // Name: getChannelListRecord
 // Dependencies: [4892, 4973, 1071, 4917, 2]
 // Exports: default
 
-// Module 11542 (getChannelListRecord)
+// Module 11550 (getChannelListRecord)
 import Constants from "Constants" /* 1071 */;
 import FavoritesUtils from "FavoritesUtils" /* 4917 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

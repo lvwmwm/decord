@@ -1,14 +1,14 @@
-// Module ID: 10600
-// Function ID: 10601
+// Module ID: 10601
+// Function ID: 10602
 // Name: RestrictedScheduleNotificationUtils
-// Dependencies: [12, 2847, 1112, 10601, 2]
+// Dependencies: [12, 2847, 1112, 10602, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 10600 (RestrictedScheduleNotificationUtils)
+// Module 10601 (RestrictedScheduleNotificationUtils)
 import _modDef12 from "module_12" /* 12 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef2847 from "module_2847" /* 2847 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10601 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10602 */;
 import size from "module_2" /* 2 */;
 
 let _require, c0, c3, closure_5, dependencyMap, importDefault, set;

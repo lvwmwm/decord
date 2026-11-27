@@ -1,10 +1,10 @@
-// Module ID: 11135
-// Function ID: 11136
+// Module ID: 11136
+// Function ID: 11137
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 7590, 6162, 11136, 504, 6171, 6174, 12, 2]
+// Dependencies: [19, 7590, 6162, 11137, 504, 6171, 6174, 12, 2]
 // Exports: default
 
-// Module 11135 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 11136 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import _mod12 from "module_12" /* 12 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6171 */;
 import react from "react" /* 19 */;

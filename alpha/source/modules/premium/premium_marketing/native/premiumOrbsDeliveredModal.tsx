@@ -1,14 +1,14 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9272
+// Function ID: 9273
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 6359, 9272, 21, 6047, 9273, 2173, 11, 9278, 2]
+// Dependencies: [19, 6359, 9273, 21, 6047, 9274, 2173, 11, 9279, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
-// Module 9271 (premiumOrbsDeliveredModal)
+// Module 9272 (premiumOrbsDeliveredModal)
 import Fragment from "Fragment" /* 21 */;
-import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 9272 */;
-import NitroOrbsDeliveredModalDefault from "NitroOrbsDeliveredModal" /* 9273 */;
-import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 9278 */;
+import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 9273 */;
+import NitroOrbsDeliveredModalDefault from "NitroOrbsDeliveredModal" /* 9274 */;
+import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 9279 */;
 import react from "react" /* 19 */;
 import EntitlementStore from "EntitlementStore" /* 6359 */;
 import size from "module_2" /* 2 */;

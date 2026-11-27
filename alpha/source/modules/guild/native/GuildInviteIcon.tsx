@@ -1,9 +1,9 @@
-// Module ID: 13659
-// Function ID: 13660
+// Module ID: 13666
+// Function ID: 13667
 // Name: GuildInviteIcon
 // Dependencies: [19, 17, 21, 5043, 575, 5104, 1112, 1413, 5730, 2153, 1186, 2]
 
-// Module 13659 (GuildInviteIcon)
+// Module 13666 (GuildInviteIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

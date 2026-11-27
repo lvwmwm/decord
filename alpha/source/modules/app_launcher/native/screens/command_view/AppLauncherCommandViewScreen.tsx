@@ -1,10 +1,10 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 13127
+// Function ID: 13128
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5044, 10047, 4949, 1500, 1071, 1625, 21, 1654, 5598, 5043, 575, 13120, 504, 5253, 5256, 1707, 5259, 5040, 5642, 1112, 5741, 12145, 6013, 5618, 13122, 5695, 6831, 13014, 1263, 12470, 13124, 2118, 10087, 12435, 10110, 1495, 11810, 7049, 11087, 12429, 11088, 8136, 2019, 8126, 13125, 10089, 5275, 5634, 13126, 13127, 13158, 1186, 38, 13088, 10095, 8183, 10052, 10083, 13159, 13160, 13075, 13076, 2]
+// Dependencies: [5, 32, 19, 17, 5044, 10048, 4949, 1500, 1071, 1625, 21, 1654, 5598, 5043, 575, 13128, 504, 5253, 5256, 1707, 5259, 5040, 5642, 1112, 5741, 12153, 6013, 5618, 13130, 5695, 6831, 13022, 1263, 12478, 13132, 2118, 10088, 12443, 10111, 1495, 11818, 7049, 11088, 12437, 11089, 8137, 2019, 8126, 13133, 10090, 5275, 5634, 13134, 13135, 13166, 1186, 38, 13096, 10096, 8184, 10053, 10084, 13167, 13168, 13083, 13084, 2]
 // Exports: default
 
-// Module 13119 (AppLauncherCommandViewScreen)
+// Module 13127 (AppLauncherCommandViewScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -14,28 +14,28 @@ import Text_Text from "Text/Text" /* 5634 */;
 import BaseTextButton2 from "BaseTextButton" /* 5642 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8136 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10087 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10089 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11087 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 11088 */;
-import AppLauncherContext from "AppLauncherContext" /* 12145 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12435 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13014 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13075 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13076 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 13120 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 13122 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 13124 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 13126 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13159 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13160 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8137 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10088 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10090 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11088 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 11089 */;
+import AppLauncherContext from "AppLauncherContext" /* 12153 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12443 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13022 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13083 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13084 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 13128 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 13130 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 13132 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 13134 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13167 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13168 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10047 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10048 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
 import Constants from "Constants" /* 1071 */;
@@ -731,7 +731,7 @@ function AppLauncherCommandViewInner(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -749,7 +749,7 @@ function AppLauncherCommandViewInner(command) {
             if (tmp14) {
               if (null == command) {
                 c2 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const obj4 = { applicationId: command.applicationId, channel: context.channel, commandIntegrationTypes: command.integration_types, appLauncherContext: obj6 };
                 obj6 = { entrypoint, location: analyticsLocation, sectionName };
@@ -770,11 +770,11 @@ function AppLauncherCommandViewInner(command) {
           return obj;
         } else if (!value.isAuthorized) {
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
         closure_128_49();
         c2 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c2 = 3;
         throw tmp10;

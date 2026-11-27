@@ -1,9 +1,9 @@
-// Module ID: 8326
-// Function ID: 8327
+// Module ID: 8327
+// Function ID: 8328
 // Name: FriendSuggestionActionCreators
 // Dependencies: [5, 1071, 1285, 572, 2]
 
-// Module 8326 (FriendSuggestionActionCreators)
+// Module 8327 (FriendSuggestionActionCreators)
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -25,7 +25,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -72,7 +72,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           let closure_2 = tmp19;

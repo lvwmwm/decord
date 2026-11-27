@@ -1,18 +1,18 @@
-// Module ID: 17678
-// Function ID: 17679
+// Module ID: 17685
+// Function ID: 17686
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 16211, 17656, 17657, 21, 5043, 575, 1112, 7308, 1501, 17653, 17674, 17655, 1091, 17673, 15478, 16212, 7751, 7321, 7330, 7274, 5641, 7048, 2]
+// Dependencies: [5, 32, 19, 17, 16218, 17663, 17664, 21, 5043, 575, 1112, 7308, 1501, 17660, 17681, 17662, 1091, 17680, 15485, 16219, 7751, 7321, 7330, 7274, 5641, 7048, 2]
 // Exports: default
 
-// Module 17678 (RegisterDisplayName)
+// Module 17685 (RegisterDisplayName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16211 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17656 */;
-import RegistrationConstants from "RegistrationConstants" /* 17657 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16218 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17663 */;
+import RegistrationConstants from "RegistrationConstants" /* 17664 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -123,7 +123,7 @@ export default function RegisterDisplayName() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -155,7 +155,7 @@ export default function RegisterDisplayName() {
               const obj4 = globalName(str[15]);
               const result = obj4.handleNextOrSubmitRegistration(globalName(str[16]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c3 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9114
+// Function ID: 9115
 // Name: premium/ProductIds
 // Dependencies: [1389, 1626, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 9113 (premium/ProductIds)
+// Module 9114 (premium/ProductIds)
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1626 */;
 import size from "module_2" /* 2 */;

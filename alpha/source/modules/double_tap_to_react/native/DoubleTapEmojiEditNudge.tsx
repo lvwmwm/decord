@@ -1,15 +1,15 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 12267
+// Function ID: 12268
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 5044, 1496, 1071, 1390, 21, 5043, 575, 4868, 9549, 1498, 504, 1413, 9537, 1256, 9556, 5634, 1112, 7488, 6152, 2]
+// Dependencies: [5, 19, 17, 5044, 1496, 1071, 1390, 21, 5043, 575, 4868, 9550, 1498, 504, 1413, 9538, 1256, 9557, 5634, 1112, 7488, 6152, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 12259 (DoubleTapEmojiEditNudge)
+// Module 12267 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9549 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9550 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -84,7 +84,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
             const obj = emoji(closure_2_2[17]);
             const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = 3;

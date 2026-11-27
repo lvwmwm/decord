@@ -1,14 +1,14 @@
-// Module ID: 11114
-// Function ID: 11115
+// Module ID: 11115
+// Function ID: 11116
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1387, 21, 9229, 5043, 575, 504, 11115, 1112, 7191, 11141, 11672, 11674, 11678, 2943, 11592, 11113, 6380, 6379, 5622, 1269, 6130, 2186, 11607, 11142, 11683, 7355, 2]
+// Dependencies: [32, 19, 1387, 21, 9230, 5043, 575, 504, 11116, 1112, 7191, 11142, 11680, 11682, 11686, 2943, 11600, 11114, 6380, 6379, 5622, 1269, 6130, 2186, 11615, 11143, 11691, 7355, 2]
 // Exports: default
 
-// Module 11114 (PremiumGiftModal)
+// Module 11115 (PremiumGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9229 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9230 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;

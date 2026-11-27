@@ -1,15 +1,15 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10399
+// Function ID: 10400
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 5043, 575, 5104, 8859, 5259, 5260, 5208, 10399, 10400, 1379, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5104, 8860, 5259, 5260, 5208, 10400, 10401, 1379, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 10398 (Slider)
+// Module 10399 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5260 */;
-import _modDef8859 from "module_8859" /* 8859 */;
+import _modDef8860 from "module_8860" /* 8860 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -182,15 +182,15 @@ export function Slider(maxValue) {
     testID,
     onResponderGrant: fn
   };
-  const tmp24 = _modDef8859;
+  const tmp24 = _modDef8860;
   if (value == null) {
     value = first1;
   }
   const tmp2Result = tmp2(5208);
   if (tmp2Result.isThemeDark(theme)) {
-    tmp2Result3 = tmp2(10399);
-  } else {
     tmp2Result3 = tmp2(10400);
+  } else {
+    tmp2Result3 = tmp2(10401);
   }
   tmp26 = undefined;
   if (null != formatValue) {

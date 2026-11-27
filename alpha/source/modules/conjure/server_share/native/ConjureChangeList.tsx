@@ -1,10 +1,10 @@
-// Module ID: 18514
-// Function ID: 18515
+// Module ID: 18519
+// Function ID: 18520
 // Name: ConjureChangeList
-// Dependencies: [19, 17, 21, 12270, 7172, 17208, 7925, 7756, 10078, 7155, 12409, 11485, 11445, 10454, 5043, 575, 6115, 5634, 1112, 4245, 2]
+// Dependencies: [19, 17, 21, 12278, 7172, 17215, 7925, 7756, 10079, 7155, 12417, 11495, 11446, 10455, 5043, 575, 6115, 5634, 1112, 4245, 2]
 // Exports: default
 
-// Module 18514 (ConjureChangeList)
+// Module 18519 (ConjureChangeList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4245 from "module_4245" /* 4245 */;
@@ -14,13 +14,13 @@ import GroupIcon from "GroupIcon" /* 7155 */;
 import AppsIcon from "AppsIcon" /* 7172 */;
 import GameControllerIcon from "GameControllerIcon" /* 7756 */;
 import IdCardIcon from "IdCardIcon" /* 7925 */;
-import ShieldIcon from "ShieldIcon" /* 10078 */;
-import SettingsIcon from "SettingsIcon" /* 10454 */;
-import ServerIcon from "ServerIcon" /* 11445 */;
-import MagicWandIcon from "MagicWandIcon" /* 11485 */;
-import RobotIcon from "RobotIcon" /* 12270 */;
-import UserIcon from "UserIcon" /* 12409 */;
-import BeakerIcon from "BeakerIcon" /* 17208 */;
+import ShieldIcon from "ShieldIcon" /* 10079 */;
+import SettingsIcon from "SettingsIcon" /* 10455 */;
+import ServerIcon from "ServerIcon" /* 11446 */;
+import MagicWandIcon from "MagicWandIcon" /* 11495 */;
+import RobotIcon from "RobotIcon" /* 12278 */;
+import UserIcon from "UserIcon" /* 12417 */;
+import BeakerIcon from "BeakerIcon" /* 17215 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

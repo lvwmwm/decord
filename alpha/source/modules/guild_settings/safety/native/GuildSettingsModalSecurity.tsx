@@ -1,18 +1,18 @@
-// Module ID: 20040
-// Function ID: 20041
+// Module ID: 20098
+// Function ID: 20099
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 4910, 4914, 1387, 8574, 1071, 21, 5043, 575, 504, 8573, 5634, 1112, 5641, 5730, 16270, 5617, 2]
+// Dependencies: [19, 17, 4910, 4914, 1387, 8575, 1071, 21, 5043, 575, 504, 8574, 5634, 1112, 5641, 5730, 16277, 5617, 2]
 // Exports: default
 
-// Module 20040 (GuildSettingsModalSecurity)
+// Module 20098 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 575 */;
 import GuildRecord from "GuildRecord" /* 4910 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import UserStore from "UserStore" /* 1387 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8575 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -127,7 +127,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   items4[2] = tmp18Result;
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
-  const obj11 = { source: stateFromStores(16270), style: tmp.image, resizeMode: "contain" };
+  const obj11 = { source: stateFromStores(16277), style: tmp.image, resizeMode: "contain" };
   const tmp23 = stateFromStores(5730);
   items6 = [closure_12(tmp23, obj11), ];
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };

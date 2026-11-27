@@ -1,10 +1,10 @@
-// Module ID: 18640
-// Function ID: 18641
+// Module ID: 18651
+// Function ID: 18652
 // Name: conjureClarificationLinks
-// Dependencies: [18543, 2]
+// Dependencies: [18554, 2]
 // Exports: linkedPair, sendAfterLinkingApps
 
-// Module 18640 (conjureClarificationLinks)
+// Module 18651 (conjureClarificationLinks)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/clarification/conjureClarificationLinks.tsx");

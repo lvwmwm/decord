@@ -1,15 +1,15 @@
-// Module ID: 19828
-// Function ID: 19829
+// Module ID: 19844
+// Function ID: 19845
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1071, 8213, 21, 5043, 575, 1629, 19829, 1256, 7047, 5634, 1112, 2847, 16388, 5641, 2]
+// Dependencies: [19, 17, 1071, 8214, 21, 5043, 575, 1629, 19845, 1256, 7047, 5634, 1112, 2847, 16395, 5641, 2]
 // Exports: default
 
-// Module 19828 (ConnectGuardianModal)
+// Module 19844 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8214 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -61,7 +61,7 @@ export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1629)().bottom;
-  let obj = onComplete(19829);
+  let obj = onComplete(19845);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -101,7 +101,7 @@ export default function ConnectGuardianModal(route) {
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
     ({ linkCode: obj9.linkCode, expiresAt: obj9.expiresAt, refresh: obj9.onRefresh } = connectGuardianGate);
-    items4[1] = closure_7(onComplete(16388).ConnectGuardianCard, obj10);
+    items4[1] = closure_7(onComplete(16395).ConnectGuardianCard, obj10);
     items3[1] = closure_8(View, obj7);
     const obj11 = { style: tmp.grow };
     items3[2] = closure_7(View, obj11);

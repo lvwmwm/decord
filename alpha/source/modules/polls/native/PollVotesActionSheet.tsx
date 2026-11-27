@@ -1,10 +1,10 @@
-// Module ID: 12229
-// Function ID: 12230
+// Module ID: 12237
+// Function ID: 12238
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5044, 6883, 4892, 6391, 1387, 21, 5043, 575, 504, 1413, 7488, 12230, 7067, 1112, 6152, 5634, 12231, 5303, 12234, 6379, 12241, 12242, 5625, 6807, 5099, 6144, 1186, 8631, 6133, 1654, 5253, 7482, 5252, 5730, 5050, 12251, 12252, 6380, 5257, 5271, 2]
+// Dependencies: [32, 5, 19, 17, 5044, 6883, 4892, 6391, 1387, 21, 5043, 575, 504, 1413, 7488, 12238, 7067, 1112, 6152, 5634, 12239, 5303, 12242, 6379, 12249, 12250, 5625, 6807, 5099, 6144, 1186, 8632, 6133, 1654, 5253, 7482, 5252, 5730, 5050, 12259, 12260, 6380, 5257, 5271, 2]
 // Exports: default
 
-// Module 12229 (PollVotesActionSheet)
+// Module 12237 (PollVotesActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
@@ -16,9 +16,9 @@ import FastImageDefault from "FastImage" /* 5730 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
 import EmojiDefault from "Emoji" /* 7488 */;
-import PollTextUtils from "PollTextUtils" /* 12230 */;
-import PollsUtils from "PollsUtils" /* 12231 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12234 */;
+import PollTextUtils from "PollTextUtils" /* 12238 */;
+import PollsUtils from "PollsUtils" /* 12239 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12242 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -195,7 +195,7 @@ function PollVotesHeader(message) {
           let obj = { value, done: true };
           return obj;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -309,11 +309,11 @@ function PollVotesHeader(message) {
               }
               ref2.current = true;
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp29) {
           c3 = 3;
           throw tmp29;
@@ -497,9 +497,9 @@ function NoResults() {
   const tmp5 = gesture;
   const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(12251);
+    tmp2Result = tmp2(12259);
   } else {
-    tmp2Result = tmp2(12252);
+    tmp2Result = tmp2(12260);
   }
   items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };

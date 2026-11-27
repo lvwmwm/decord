@@ -1,17 +1,17 @@
-// Module ID: 8880
-// Function ID: 8881
+// Module ID: 8881
+// Function ID: 8882
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 5043, 575, 8881, 5104, 8804, 7394, 5730, 1112, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 8882, 5104, 8805, 7394, 5730, 1112, 2]
 // Exports: createVideoControls
 
-// Module 8880 (common/Video)
+// Module 8881 (common/Video)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 5104 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7394 */;
-import openMediaModal2 from "openMediaModal" /* 8804 */;
+import openMediaModal2 from "openMediaModal" /* 8805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -79,7 +79,7 @@ class VideoComponent {
     }
     closure_1 = undefined;
     ({ httpEngine, useTextureView } = paused);
-    const _default = pauseWhileAppInactive(8881).default;
+    const _default = pauseWhileAppInactive(8882).default;
     [first, closure_1] = react.useState("active" === currentState.currentState);
     const items = [pauseWhileAppInactive];
     const effect = react.useEffect(() => {

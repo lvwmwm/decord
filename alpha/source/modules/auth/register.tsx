@@ -1,10 +1,10 @@
-// Module ID: 17668
-// Function ID: 17669
+// Module ID: 17675
+// Function ID: 17676
 // Name: register
-// Dependencies: [5, 17669, 502, 1071, 1096, 2169, 1256, 6135, 1264, 5793, 5809, 572, 17670, 17671, 17672, 2]
+// Dependencies: [5, 17676, 502, 1071, 1096, 2169, 1256, 6135, 1264, 5793, 5809, 572, 17677, 17678, 17679, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 17668 (register)
+// Module 17675 (register)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
@@ -12,10 +12,10 @@ import _modDef2169 from "module_2169" /* 2169 */;
 import APIErrorDefault from "APIError" /* 5793 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5809 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6135 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17670 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17672 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17677 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17679 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17669 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17676 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1071 */;
 import AgeGateConstants from "AgeGateConstants" /* 1096 */;
@@ -45,7 +45,7 @@ let obj = function _scorePassword() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ obj = function _registerPhone() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(17671)(birthday);
+    tmp9 = tmp4(17678)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

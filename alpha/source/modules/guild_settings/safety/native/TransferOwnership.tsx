@@ -1,10 +1,10 @@
-// Module ID: 12500
-// Function ID: 12501
+// Module ID: 12508
+// Function ID: 12509
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1387, 12499, 1071, 21, 5043, 575, 5607, 1501, 504, 38, 8573, 12497, 5724, 6807, 7052, 5634, 5730, 12501, 1186, 1112, 5099, 6140, 7181, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 12507, 1071, 21, 5043, 575, 5607, 1501, 504, 38, 8574, 12505, 5724, 6807, 7052, 5634, 5730, 12509, 1186, 1112, 5099, 6140, 7181, 5641, 2]
 // Exports: default
 
-// Module 12500 (TransferOwnership)
+// Module 12508 (TransferOwnership)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
@@ -15,7 +15,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1387 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12499 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12507 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ export default function TransferOwnership(guild) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ export default function TransferOwnership(guild) {
             closure_128_2.push(constants.CONFIRM_EMAIL_CODE);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp22) {
           c2 = 3;
           throw tmp22;
@@ -194,7 +194,7 @@ export default function TransferOwnership(guild) {
   let obj5 = { style: tmp5.background, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
   const obj6 = { style: { paddingTop: toUser(575).space.PX_16, paddingHorizontal: token }, children: null };
   const obj8 = { style: tmp5.header, children: null };
-  const obj9 = { source: toUser(12501), style: tmp5.arrow };
+  const obj9 = { source: toUser(12509), style: tmp5.arrow };
   ({ paddingTop: toUser(575).space.PX_16, paddingHorizontal: token });
   let tmp15 = toUser(5730);
   const items1 = [closure_12(tmp15, obj9), , , ];

@@ -1,10 +1,10 @@
-// Module ID: 17376
-// Function ID: 17377
+// Module ID: 17383
+// Function ID: 17384
 // Name: MountMeasure
 // Dependencies: [19, 17, 21, 5604, 2]
 // Exports: default
 
-// Module 17376 (MountMeasure)
+// Module 17383 (MountMeasure)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useMountEffect from "useMountEffect" /* 5604 */;

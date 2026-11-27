@@ -1,10 +1,10 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11260
+// Function ID: 11261
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5760, 5808, 5794, 7600, 11260, 1112, 7601, 2]
+// Dependencies: [5, 32, 19, 5760, 5808, 5794, 7600, 11261, 1112, 7601, 2]
 // Exports: useOrderSigning
 
-// Module 11259 (useOrderSigning)
+// Module 11260 (useOrderSigning)
 import PaymentConstants from "PaymentConstants" /* 5760 */;
 import BillingErrorDefault from "BillingError" /* 5794 */;
 import ClientBillingError2 from "ClientBillingError" /* 5808 */;
@@ -100,7 +100,7 @@ export function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

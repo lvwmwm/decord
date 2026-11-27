@@ -1,16 +1,16 @@
-// Module ID: 13530
-// Function ID: 13531
+// Module ID: 13538
+// Function ID: 13539
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 5043, 575, 13531, 13532, 13533, 6052, 7278, 1112, 2879, 6052, 5634, 2]
+// Dependencies: [17, 21, 5043, 575, 13539, 13540, 13541, 6052, 7278, 1112, 2879, 6052, 5634, 2]
 // Exports: default
 
-// Module 13530 (GuildPowerupsDeactivateAlert)
+// Module 13538 (GuildPowerupsDeactivateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2879 from "module_2879" /* 2879 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13531 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13532 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13539 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13540 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

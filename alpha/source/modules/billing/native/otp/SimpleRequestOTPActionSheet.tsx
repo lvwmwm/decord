@@ -1,10 +1,10 @@
-// Module ID: 17329
-// Function ID: 17330
+// Module ID: 17336
+// Function ID: 17337
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1387, 6360, 1071, 1389, 21, 3, 1629, 11142, 504, 11611, 6310, 2109, 9231, 11577, 5257, 6047, 6323, 6115, 5634, 6145, 5641, 11317, 1269, 9229, 5271, 11312, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 6360, 1071, 1389, 21, 3, 1629, 11143, 504, 11619, 6310, 2109, 9232, 11585, 5257, 6047, 6323, 6115, 5634, 6145, 5641, 11318, 1269, 9230, 5271, 11313, 2]
 // Exports: default
 
-// Module 17329 (SimpleRequestOTPActionSheet)
+// Module 17336 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,8 +12,8 @@ import PremiumConstants from "PremiumConstants" /* 1389 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2109 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6310 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9229 */;
-import NativePaymentContext from "NativePaymentContext" /* 11312 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 9230 */;
+import NativePaymentContext from "NativePaymentContext" /* 11313 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f112163 = () => {
+  const f112406 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -125,12 +125,12 @@ function GiftPurchaseSKUView(selectedSkuId) {
   [first, dependencyMap] = react.useState(false);
   const currentUser = memo1.getCurrentUser();
   _slicedToArray = react.useRef({});
-  let obj2 = selectedSkuId(11142);
+  let obj2 = selectedSkuId(11143);
   const giftStyle = obj2.useNativeGiftContext().giftStyle;
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(11611);
+  let obj4 = selectedSkuId(11619);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -191,7 +191,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -245,7 +245,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp30) {
             if (0 === c3) {
               c5 = 3;
@@ -280,10 +280,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(11577)(obj6);
+  closure_8 = tmp(11585)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f112163, items5), 2);
-  tmp3(obj.useMemo(f112163, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f112406, items5), 2);
+  tmp3(obj.useMemo(f112406, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }
@@ -328,7 +328,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   const Card2 = tmp7(6145).Card;
   const obj12 = { variant: "body-md/medium", color: "text-overlay-light", children: items8 };
   items8 = ["Select style: ", giftStyle];
-  items9 = [tmp18(tmp7(5634).Text, obj12), tmp21(tmp(11317), {})];
+  items9 = [tmp18(tmp7(5634).Text, obj12), tmp21(tmp(11318), {})];
   items7[2] = closure_11(Card2, obj11);
   return closure_11(Stack, obj8);
 }
@@ -362,7 +362,7 @@ function SimpleRequestOTPActionSheet(giftMessage) {
           children: closure_12(GiftPurchaseSKUView, obj3)
         };
         obj3 = { selectedSkuId, giftRecipientId, giftMessage };
-        const NativeGiftContextProvider = tmp(11142).NativeGiftContextProvider;
+        const NativeGiftContextProvider = tmp(11143).NativeGiftContextProvider;
         tmp6Result = closure_12(NativeGiftContextProvider, obj2);
         tmp8 = closure_12;
       }

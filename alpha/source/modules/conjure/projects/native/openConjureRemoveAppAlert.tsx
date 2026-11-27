@@ -1,13 +1,13 @@
-// Module ID: 18607
-// Function ID: 18608
+// Module ID: 18618
+// Function ID: 18619
 // Name: openConjureRemoveAppAlert
-// Dependencies: [32, 5, 19, 21, 5043, 12507, 1112, 4245, 5725, 6052, 12505, 6115, 5634, 12503, 12508, 7667, 6048, 2]
-// Exports: default, openConjureRemoveBotAlert
+// Dependencies: [32, 5, 19, 21, 5043, 12515, 1112, 4245, 5725, 6052, 12513, 6115, 5634, 12511, 12516, 7667, 6048, 2]
+// Exports: ConjureRemoveBotAlert, default
 
-// Module 18607 (openConjureRemoveAppAlert)
+// Module 18618 (openConjureRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 6048 */;
-import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 12507 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 12508 */;
+import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 12515 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 12516 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ function ConjureRemoveFromServerAlert(target) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ function ConjureRemoveFromServerAlert(target) {
               obj = tmp4(c2[8]);
               obj.open("CONJURE_APP_REMOVED", obj6);
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp20) {
@@ -104,7 +104,7 @@ function ConjureRemoveFromServerAlert(target) {
     return obj(...arguments);
   };
   const tmp = obj;
-  const tmp3 = obj(12507)(target);
+  const tmp3 = obj(12515)(target);
   ({ optionalItems, notes, error, submit: c0 } = tmp3);
   const body = tmp3.body;
   const tmp4 = closure_9();
@@ -118,7 +118,7 @@ function ConjureRemoveFromServerAlert(target) {
   Stack = require("Stack/Stack").Stack;
   if (optionalItems.length > 0) {
     let obj5 = { items: [], optionalItems };
-    tmp5Result = tmp5(tmp(12505), obj5);
+    tmp5Result = tmp5(tmp(12513), obj5);
   }
   items = [
     tmp5Result,
@@ -151,30 +151,6 @@ function ConjureRemoveFromServerAlert(target) {
   items1[1] = closure_6(AlertActionButton2, obj9);
   return closure_6(AlertModal, obj);
 }
-class ConjureRemoveBotAlert {
-  constructor(app) {
-    let applicationId;
-    let onPlainConfirm;
-    let tmp3Result;
-    app = app.app;
-    let conjureServerApp;
-    ({ applicationId, onPlainConfirm } = app);
-    let obj = conjureServerApp(12503);
-    conjureServerApp = obj.useConjureServerApp(app.guildId, applicationId);
-    if (conjureServerApp == null) {
-      conjureServerApp = app;
-    }
-    [][0] = conjureServerApp;
-    if (app.targetIsPreview) {
-      const obj2 = { app: conjureServerApp, onPlainConfirm };
-      tmp3Result = tmp3(ConjureRemoveTestBotAlert, obj2);
-    } else {
-      const obj3 = { target: tmp2 };
-      tmp3Result = tmp3(ConjureRemoveFromServerAlert, obj3);
-    }
-    return tmp3Result;
-  }
-}
 function ConjureRemoveTestBotAlert(arg0) {
   let _undefined;
   let app;
@@ -205,7 +181,7 @@ function ConjureRemoveTestBotAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -250,7 +226,7 @@ function ConjureRemoveTestBotAlert(arg0) {
           } else {
             c2 = 0;
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           if (0 === c2) {
@@ -333,7 +309,7 @@ function ConjureDeleteProjectInServerAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -383,7 +359,7 @@ function ConjureDeleteProjectInServerAlert(arg0) {
               throw error;
             } else {
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp20) {
@@ -466,11 +442,25 @@ export default function openConjureRemoveAppAlert(action) {
     openAlert("ConjureRemoveApp", metroRequire(ConjureDeleteProjectInServerAlert, obj));
   }
 };
-export { ConjureRemoveBotAlert };
-export function openConjureRemoveBotAlert(arg0) {
-  const openAlert = useAlertStore.openAlert;
-  const obj = {};
-  useAlertStore;
-  const merged = Object.assign(arg0);
-  openAlert("ConjureRemoveApp", metroRequire(ConjureRemoveBotAlert, obj));
+export function ConjureRemoveBotAlert(app) {
+  let applicationId;
+  let onPlainConfirm;
+  let tmp3Result;
+  app = app.app;
+  let conjureServerApp;
+  ({ applicationId, onPlainConfirm } = app);
+  let obj = conjureServerApp(12511);
+  conjureServerApp = obj.useConjureServerApp(app.guildId, applicationId);
+  if (conjureServerApp == null) {
+    conjureServerApp = app;
+  }
+  [][0] = conjureServerApp;
+  if (app.targetIsPreview) {
+    const obj2 = { app: conjureServerApp, onPlainConfirm };
+    tmp3Result = tmp3(ConjureRemoveTestBotAlert, obj2);
+  } else {
+    const obj3 = { target: tmp2 };
+    tmp3Result = tmp3(ConjureRemoveFromServerAlert, obj3);
+  }
+  return tmp3Result;
 }

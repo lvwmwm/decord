@@ -1,10 +1,10 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 11372
+// Function ID: 11373
 // Name: ActivityStatusText
 // Dependencies: [19, 21, 5043, 5634, 2]
 // Exports: default
 
-// Module 11371 (ActivityStatusText)
+// Module 11372 (ActivityStatusText)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import react from "react" /* 19 */;

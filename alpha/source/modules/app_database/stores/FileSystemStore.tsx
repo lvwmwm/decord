@@ -1,9 +1,9 @@
-// Module ID: 8253
-// Function ID: 8254
+// Module ID: 8254
+// Function ID: 8255
 // Name: FileSystemStore
 // Dependencies: [5, 3, 1088, 504, 572, 4921, 2]
 
-// Module 8253 (FileSystemStore)
+// Module 8254 (FileSystemStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -62,7 +62,7 @@ function refresh() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ function refresh() {
             }
           }
           isLowDisk = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp37) {
         isLowDisk = 3;

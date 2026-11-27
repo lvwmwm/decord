@@ -1,12 +1,12 @@
-// Module ID: 19662
-// Function ID: 19663
+// Module ID: 19678
+// Function ID: 19679
 // Name: AudioSessionModeManager
-// Dependencies: [17, 4891, 6853, 6813, 502, 4892, 2132, 4946, 5691, 2119, 1071, 1379, 19663, 7475, 2]
+// Dependencies: [17, 4891, 6853, 6813, 502, 4892, 2132, 4946, 5691, 2119, 1071, 1379, 19679, 7475, 2]
 
-// Module 19662 (AudioSessionModeManager)
+// Module 19678 (AudioSessionModeManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
-import VoicePermissionManager from "VoicePermissionManager" /* 19663 */;
+import VoicePermissionManager from "VoicePermissionManager" /* 19679 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 6853 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;

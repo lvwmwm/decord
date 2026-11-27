@@ -1,9 +1,9 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13052
+// Function ID: 13053
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1500, 1071, 21, 9047, 5043, 575, 6379, 6380, 1502, 6113, 5230, 1627, 7355, 6013, 13045, 13087, 13119, 13161, 12145, 2]
+// Dependencies: [109, 19, 1500, 1071, 21, 9048, 5043, 575, 6379, 6380, 1502, 6113, 5230, 1627, 7355, 6013, 13053, 13095, 13127, 13169, 12153, 2]
 
-// Module 13044 (AppLauncherNavigator)
+// Module 13052 (AppLauncherNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
@@ -11,7 +11,7 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9047 */;
+import NativeStackView from "NativeStackView" /* 9048 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17254
+// Function ID: 17255
 // Name: IntlTestingSettingsPage
-// Dependencies: [32, 5, 19, 17, 2190, 2189, 21, 5043, 575, 7251, 1112, 6018, 7253, 504, 2169, 6140, 6144, 1151, 6115, 5634, 17248, 17280, 2]
+// Dependencies: [32, 5, 19, 17, 2190, 2189, 21, 5043, 575, 7251, 1112, 6018, 7253, 504, 2169, 6140, 6144, 1151, 6115, 5634, 17255, 17287, 2]
 // Exports: default
 
-// Module 17247 (IntlTestingSettingsPage)
+// Module 17254 (IntlTestingSettingsPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -13,8 +13,8 @@ import _modDef2169 from "module_2169" /* 2169 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
 import TableRowGroup2 from "TableRowGroup" /* 6140 */;
 import TableRow6 from "TableRow" /* 6144 */;
-import _modDef17248 from "module_17248" /* 17248 */;
-import _modDef17280 from "module_17280" /* 17280 */;
+import _modDef17255 from "module_17255" /* 17255 */;
+import _modDef17287 from "module_17287" /* 17287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -57,7 +57,7 @@ function TestLocaleSelector() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -89,7 +89,7 @@ function TestLocaleSelector() {
           const obj = tmp(closure_2[11]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c4 = 3;
@@ -188,19 +188,19 @@ export default function IntlTestingSettingsPage() {
   obj2 = { spacing: 24, style: tmp.container, children: items };
   Stack = require("Stack/Stack").Stack;
   items = [closure_10(LocaleInfo, {}), closure_10(TestLocaleSelector, {}), , , , , , ];
-  const obj3 = { variant: "body-md/normal", children: intl.format(_modDef17248.HMvEC5, {}) };
+  const obj3 = { variant: "body-md/normal", children: intl.format(_modDef17255.HMvEC5, {}) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items[2] = closure_10(Text, obj3);
-  const obj4 = { variant: "body-md/normal", children: intl2.format(_modDef17280.swfLzV, {}) };
+  const obj4 = { variant: "body-md/normal", children: intl2.format(_modDef17287.swfLzV, {}) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[3] = closure_10(Text2, obj4);
-  const obj5 = { variant: "body-md/normal", children: intl3.format(_modDef17248.rmps8y, {}) };
+  const obj5 = { variant: "body-md/normal", children: intl3.format(_modDef17255.rmps8y, {}) };
   const Text3 = require("Text/Text").Text;
   intl3 = require("intl").intl;
   items[4] = closure_10(Text3, obj5);
-  const obj6 = { variant: "body-md/normal", children: intl4.format(_modDef17248.uczI4g, obj7) };
+  const obj6 = { variant: "body-md/normal", children: intl4.format(_modDef17255.uczI4g, obj7) };
   const Text4 = require("Text/Text").Text;
   intl4 = require("intl").intl;
   obj7 = {
@@ -209,11 +209,11 @@ export default function IntlTestingSettingsPage() {
     }
   };
   items[5] = closure_10(Text4, obj6);
-  const obj8 = { variant: "body-md/normal", children: intl5.format(_modDef17248.rdfRyh, {}) };
+  const obj8 = { variant: "body-md/normal", children: intl5.format(_modDef17255.rdfRyh, {}) };
   const Text5 = require("Text/Text").Text;
   intl5 = require("intl").intl;
   items[6] = closure_10(Text5, obj8);
-  const obj9 = { variant: "body-md/normal", children: intl6.format(_modDef17248.XOdbAy, obj10) };
+  const obj9 = { variant: "body-md/normal", children: intl6.format(_modDef17255.XOdbAy, obj10) };
   const Text6 = require("Text/Text").Text;
   intl6 = require("intl").intl;
   obj10 = {

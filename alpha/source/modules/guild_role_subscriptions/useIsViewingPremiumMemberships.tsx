@@ -1,10 +1,10 @@
-// Module ID: 13815
-// Function ID: 13816
+// Module ID: 13822
+// Function ID: 13823
 // Name: useIsViewingPremiumMemberships
 // Dependencies: [1071, 4899, 5087, 5094, 2]
 // Exports: default
 
-// Module 13815 (useIsViewingPremiumMemberships)
+// Module 13822 (useIsViewingPremiumMemberships)
 import Constants from "Constants" /* 1071 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;
 import MemoryRouter from "MemoryRouter" /* 5087 */;

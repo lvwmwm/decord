@@ -1,27 +1,27 @@
-// Module ID: 12901
-// Function ID: 12902
+// Module ID: 12909
+// Function ID: 12910
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [17, 12620, 6396, 21, 5043, 575, 12860, 504, 6768, 1112, 3495, 12850, 12854, 12902, 12903, 8608, 12852, 12880, 12882, 12881, 12883, 2]
+// Dependencies: [17, 12628, 6396, 21, 5043, 575, 12868, 504, 6768, 1112, 3495, 12858, 12862, 12910, 12911, 8609, 12860, 12888, 12890, 12889, 12891, 2]
 // Exports: default
 
-// Module 12901 (CheckpointGameTimeStatsScreen)
+// Module 12909 (CheckpointGameTimeStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3495 from "module_3495" /* 3495 */;
 import CheckpointConstants from "CheckpointConstants" /* 6396 */;
 import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6768 */;
-import CalendarIcon from "CalendarIcon" /* 8608 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12850 */;
-import CheckpointTextDefault from "CheckpointText" /* 12852 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12854 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 12860 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12881 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12882 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12883 */;
-import _modDef12902 from "module_12902" /* 12902 */;
-import _modDef12903 from "module_12903" /* 12903 */;
-import CheckpointStore from "CheckpointStore" /* 12620 */;
+import CalendarIcon from "CalendarIcon" /* 8609 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12858 */;
+import CheckpointTextDefault from "CheckpointText" /* 12860 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12862 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12868 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12889 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12890 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12891 */;
+import _modDef12910 from "module_12910" /* 12910 */;
+import _modDef12911 from "module_12911" /* 12911 */;
+import CheckpointStore from "CheckpointStore" /* 12628 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -124,7 +124,7 @@ export default function CheckpointGameTimeStatsScreen() {
   const obj4 = { centered: tmp4, children: metroImportDefault(View, obj5) };
   obj5 = { style: tmp4 ? tmp.wideContainer : tmp.container, children: items3 };
   const obj6 = { style: tmp4 ? tmp.wideImageContainer : tmp.imageContainer, children: metroRequire(tmp2Result6, obj7) };
-  obj7 = { animatedUri: _modDef12902, staticUri: _modDef12903, style: items2 };
+  obj7 = { animatedUri: _modDef12910, staticUri: _modDef12911, style: items2 };
   const tmp2Result5 = CheckpointScreenDefault;
   items2 = [tmp.image, tmp4 && tmp.wideImage];
   tmp2Result6 = CheckpointApngPlayerDefault;
@@ -140,7 +140,7 @@ export default function CheckpointGameTimeStatsScreen() {
   items5 = [metroImportDefault(View, obj9), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj12 = { value: stateFromStores1 };
-    tmp15Result = tmp15(tmp2(12880), obj12);
+    tmp15Result = tmp15(tmp2(12888), obj12);
   } else {
     const obj13 = { accessible: true, accessibilityLabel: tmp5Result2.formatCheckpointStatAccessibilityLabel("gameDays", roundResult), style: tmp.number, children: metroRequire(CheckpointCountUpStatNumberDefault, obj14) };
     obj14 = { end: roundResult };

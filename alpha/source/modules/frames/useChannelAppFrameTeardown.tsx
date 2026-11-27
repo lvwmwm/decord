@@ -1,10 +1,10 @@
-// Module ID: 18923
-// Function ID: 18924
+// Module ID: 18939
+// Function ID: 18940
 // Name: useChannelAppFrameTeardown
 // Dependencies: [19, 4892, 4975, 6936, 6937, 1071, 504, 7691, 2]
 // Exports: default
 
-// Module 18923 (useChannelAppFrameTeardown)
+// Module 18939 (useChannelAppFrameTeardown)
 import Constants from "Constants" /* 1071 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
 import leaveFrame from "leaveFrame" /* 7691 */;

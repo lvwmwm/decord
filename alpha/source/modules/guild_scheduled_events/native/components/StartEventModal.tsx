@@ -1,10 +1,10 @@
-// Module ID: 14325
-// Function ID: 14326
+// Module ID: 14332
+// Function ID: 14333
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 4892, 4914, 4898, 8474, 21, 5043, 575, 6130, 6152, 1112, 1186, 7444, 5634, 14324, 504, 8471, 14326, 7480, 7869, 14329, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 4892, 4914, 4898, 8475, 21, 5043, 575, 6130, 6152, 1112, 1186, 7444, 5634, 14331, 504, 8472, 14333, 7480, 7869, 14336, 5641, 2]
 // Exports: default
 
-// Module 14325 (StartEventModal)
+// Module 14332 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5634 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import Pressables from "Pressables" /* 6152 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7444 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8474 */;
-import GuildEventCardDefault from "GuildEventCard" /* 14324 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8475 */;
+import GuildEventCardDefault from "GuildEventCard" /* 14331 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -137,7 +137,7 @@ export default function StartEventModal(event) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ export default function StartEventModal(event) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;

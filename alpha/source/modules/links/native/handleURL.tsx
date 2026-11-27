@@ -161,7 +161,7 @@ let obj = function _handleURL() {
             }
             openInBrowser();
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else {
             tryHandleUniversalLink = closure_132_1(closure_132_2[15])(tryHandleUniversalLink);
             let obj6 = /^https?:/i;
@@ -215,7 +215,7 @@ let obj = function _handleURL() {
       } else if (2 === tmp4) {
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;

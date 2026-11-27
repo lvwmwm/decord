@@ -1,9 +1,9 @@
-// Module ID: 11895
-// Function ID: 11896
+// Module ID: 11903
+// Function ID: 11904
 // Name: GuildActionSheetMemberCount
 // Dependencies: [19, 17, 21, 5043, 575, 1359, 1112, 5634, 2]
 
-// Module 11895 (GuildActionSheetMemberCount)
+// Module 11903 (GuildActionSheetMemberCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;

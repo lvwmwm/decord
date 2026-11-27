@@ -1,24 +1,24 @@
-// Module ID: 16608
-// Function ID: 16609
+// Module ID: 16615
+// Function ID: 16616
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1192, 1387, 15830, 5068, 5272, 1240, 1082, 21, 1397, 1398, 8713, 5043, 575, 5073, 8714, 504, 6379, 6380, 13901, 5071, 8486, 1629, 2174, 5069, 16060, 6874, 16609, 5725, 1112, 5257, 16607, 4663, 5604, 10591, 5634, 16617, 5271, 7507, 16098, 5641, 16618, 6140, 7549, 16619, 2]
+// Dependencies: [5, 32, 19, 17, 1192, 1387, 15837, 5068, 5272, 1240, 1082, 21, 1397, 1398, 8714, 5043, 575, 5073, 8715, 504, 6379, 6380, 13908, 5071, 8487, 1629, 2174, 5069, 16067, 6874, 16616, 5725, 1112, 5257, 16614, 4663, 5604, 10592, 5634, 16624, 5271, 7507, 16105, 5641, 16625, 6140, 7549, 16626, 2]
 // Exports: default
 
-// Module 16608 (HexagonCampaignSheet)
+// Module 16615 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import DisplayNameFont from "DisplayNameFont" /* 1397 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1398 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8713 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8714 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import UserStore from "UserStore" /* 1387 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15830 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15837 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -184,7 +184,7 @@ export default function HexagonCampaignSheet() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ export default function HexagonCampaignSheet() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp59) {
           if (0 === analyticsLocations) {
             c4 = 3;
@@ -409,7 +409,7 @@ export default function HexagonCampaignSheet() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -465,7 +465,7 @@ export default function HexagonCampaignSheet() {
             open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c3 = 3;

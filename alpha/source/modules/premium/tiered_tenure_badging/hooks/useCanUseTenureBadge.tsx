@@ -1,12 +1,12 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9821
+// Function ID: 9822
 // Name: useCanUseTenureBadge
-// Dependencies: [1387, 504, 9821, 2]
+// Dependencies: [1387, 504, 9822, 2]
 // Exports: useCanUseTenureBadge
 
-// Module 9820 (useCanUseTenureBadge)
+// Module 9821 (useCanUseTenureBadge)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumPerkGates from "PremiumPerkGates" /* 9821 */;
+import PremiumPerkGates from "PremiumPerkGates" /* 9822 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 

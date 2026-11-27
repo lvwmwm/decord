@@ -1,10 +1,10 @@
-// Module ID: 16952
-// Function ID: 16953
+// Module ID: 16959
+// Function ID: 16960
 // Name: DisplayNameStylesSheetHeader
 // Dependencies: [19, 17, 21, 5043, 575, 5634, 2]
 // Exports: default
 
-// Module 16952 (DisplayNameStylesSheetHeader)
+// Module 16959 (DisplayNameStylesSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;

@@ -1,8 +1,8 @@
-// Module ID: 12801
-// Function ID: 12802
+// Module ID: 12809
+// Function ID: 12810
 // Dependencies: [2]
 
-// Module 12801
+// Module 12809
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_13_knight_rust.webp.js");

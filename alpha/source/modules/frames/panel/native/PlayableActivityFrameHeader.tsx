@@ -1,10 +1,10 @@
-// Module ID: 19427
-// Function ID: 19428
+// Module ID: 19443
+// Function ID: 19444
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5669, 6871, 21, 5043, 575, 19428, 19422, 19407, 7691, 5303, 16567, 5634, 1112, 4727, 7944, 7247, 6052, 2]
+// Dependencies: [19, 17, 5669, 6871, 21, 5043, 575, 19444, 19438, 19423, 7691, 5303, 16574, 5634, 1112, 4727, 7944, 7247, 6052, 2]
 // Exports: default
 
-// Module 19427 (PlayableActivityFrameHeader)
+// Module 19443 (PlayableActivityFrameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -58,7 +58,7 @@ export default function PlayableActivityFrameHeader(arg0) {
   let productName;
   let tmp9;
   let wrapperOffset;
-  const f134558 = () => {
+  const f134969 = () => {
     const obj = require("leaveFrame");
     return obj.leaveFrame(closure_1_0);
   };
@@ -67,7 +67,7 @@ export default function PlayableActivityFrameHeader(arg0) {
   let setMode;
   function onLeave() {
     setMode(ActivityPanelModes.DISCONNECTED);
-    const timerId = setTimeout(f134558, 400);
+    const timerId = setTimeout(f134969, 400);
   }
   let tmp = closure_9();
   const tmp4 = isClaimed(setMode[7])(playable.id);
@@ -133,7 +133,7 @@ export default function PlayableActivityFrameHeader(arg0) {
       } else {
         setMode(ActivityPanelModes.DISCONNECTED);
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(f134558, 400);
+        const timerId = setTimeout(f134969, 400);
       }
     }
   };

@@ -1,13 +1,13 @@
-// Module ID: 18673
-// Function ID: 18674
+// Module ID: 18687
+// Function ID: 18688
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 11459, 18674, 10078, 1112, 4245, 18678, 2]
+// Dependencies: [5, 19, 21, 11469, 18688, 10079, 1112, 4245, 18692, 2]
 
-// Module 18673 (ConjureBotPermissionsTip)
+// Module 18687 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4245 from "module_4245" /* 4245 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 18674 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 18678 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 18688 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 18692 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ function BotPermissionsHint(projectId) {
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(11459).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(11469).ConjurePublishActionContext);
   ConjureTipHintDefault;
   const intl = projectId(1112).intl;
   const format = intl.format;
@@ -40,7 +40,7 @@ function BotPermissionsHint(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -69,14 +69,14 @@ function BotPermissionsHint(projectId) {
           return obj;
         }
         projectId = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         projectId = 3;
         throw tmp9;
       }
     }
   });
-  return <tmp icon={projectId(10078).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
+  return <tmp icon={projectId(10079).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
 }
 const jsx = Fragment.jsx;
 let obj = {

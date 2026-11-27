@@ -1,10 +1,10 @@
-// Module ID: 13979
-// Function ID: 13980
+// Module ID: 13986
+// Function ID: 13987
 // Name: NitroCreditEducationActionSheet
 // Dependencies: [17, 1071, 21, 5043, 575, 5271, 7278, 5634, 1112, 2188, 2]
 // Exports: default
 
-// Module 13979 (NitroCreditEducationActionSheet)
+// Module 13986 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

@@ -1,19 +1,19 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19077
+// Function ID: 19078
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1387, 11409, 1071, 21, 5043, 1379, 19062, 1654, 5644, 7067, 10652, 6152, 5634, 1112, 5598, 504, 5099, 6801, 2]
+// Dependencies: [32, 19, 17, 1387, 11410, 1071, 21, 5043, 1379, 19078, 1654, 5644, 7067, 10653, 6152, 5634, 1112, 5598, 504, 5099, 6801, 2]
 
-// Module 19061 (ChannelDetailsTopic)
+// Module 19077 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1071 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import ChannelUtils from "ChannelUtils" /* 6801 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
-import MentionPillOffset from "MentionPillOffset" /* 10652 */;
+import MentionPillOffset from "MentionPillOffset" /* 10653 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1387 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11409 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11410 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
@@ -345,7 +345,7 @@ let obj = { hidden: { flex: 1, flexGrow: 1, position: "absolute", opacity: 0 }, 
 createStyles = createStyles.createStyles;
 let obj2 = null;
 if (!PlatformUtils.isAndroid()) {
-  obj2 = { lineHeight: "r" };
+  obj2 = { lineHeight: "top" };
 }
 obj3 = { paddingVertical: 5 };
 let merged = Object.assign(obj2);

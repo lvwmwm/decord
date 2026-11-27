@@ -1,26 +1,26 @@
-// Module ID: 13683
-// Function ID: 13684
+// Module ID: 13690
+// Function ID: 13691
 // Name: FindFriendsSpotIllustration
-// Dependencies: [19, 21, 13684, 13685, 13686, 7261, 5730, 2]
+// Dependencies: [19, 21, 13691, 13692, 13693, 7261, 5730, 2]
 // Exports: FindFriendsSpotIllustration
 
-// Module 13683 (FindFriendsSpotIllustration)
+// Module 13690 (FindFriendsSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef13684 from "module_13684" /* 13684 */;
-import _modDef13685 from "module_13685" /* 13685 */;
-import _modDef13686 from "module_13686" /* 13686 */;
+import _modDef13691 from "module_13691" /* 13691 */;
+import _modDef13692 from "module_13692" /* 13692 */;
+import _modDef13693 from "module_13693" /* 13693 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13684 };
+let obj2 = { uri: _modDef13691 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef13685 };
+let obj3 = { uri: _modDef13692 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef13686 };
-({ uri: _modDef13686 });
+obj[3] = { uri: _modDef13693 };
+({ uri: _modDef13693 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FindFriendsSpotIllustration.native.tsx");
 

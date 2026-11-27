@@ -1,13 +1,13 @@
-// Module ID: 10770
-// Function ID: 10771
+// Module ID: 10771
+// Function ID: 10772
 // Name: ForumTagHooks
-// Dependencies: [19, 4892, 4975, 1082, 504, 1255, 10771, 2]
+// Dependencies: [19, 4892, 4975, 1082, 504, 1255, 10772, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 10770 (ForumTagHooks)
+// Module 10771 (ForumTagHooks)
 import Constants from "Constants" /* 1082 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import ReportToModUtils from "ReportToModUtils" /* 10771 */;
+import ReportToModUtils from "ReportToModUtils" /* 10772 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import PermissionStore from "PermissionStore" /* 4975 */;

@@ -1,10 +1,10 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17477
+// Function ID: 17478
 // Name: UserSettingsDesignSystemAnimatedAssetPicker
 // Dependencies: [32, 19, 17, 21, 5043, 575, 7546, 7507, 7406, 5275, 5634, 7251, 5257, 7253, 2]
 // Exports: default
 
-// Module 17470 (UserSettingsDesignSystemAnimatedAssetPicker)
+// Module 17477 (UserSettingsDesignSystemAnimatedAssetPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;

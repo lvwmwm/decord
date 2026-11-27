@@ -1,16 +1,16 @@
-// Module ID: 9998
-// Function ID: 9999
+// Module ID: 9999
+// Function ID: 10000
 // Name: launchFrame
-// Dependencies: [32, 5, 6936, 6937, 5669, 7687, 7685, 9999, 572, 6939, 7688, 7679, 10001, 10006, 7691, 2]
+// Dependencies: [32, 5, 6936, 6937, 5669, 7687, 7685, 10000, 572, 6939, 7688, 7679, 10002, 10007, 7691, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 9998 (launchFrame)
+// Module 9999 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
 import getChannelIdForEmbeddedSurface from "getChannelIdForEmbeddedSurface" /* 6939 */;
 import createProxyTicket2 from "createProxyTicket" /* 7688 */;
 import leaveFrame from "leaveFrame" /* 7691 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9999 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10000 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import FramesStore from "FramesStore" /* 6936 */;
@@ -49,7 +49,7 @@ let obj = function _launchFrame() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -329,7 +329,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

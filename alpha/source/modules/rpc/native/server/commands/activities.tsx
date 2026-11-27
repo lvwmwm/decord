@@ -1,18 +1,18 @@
-// Module ID: 15937
-// Function ID: 15938
+// Module ID: 15944
+// Function ID: 15945
 // Name: commands/activities
-// Dependencies: [5, 5797, 1071, 7872, 15873, 5781, 15898, 7644, 10428, 7638, 6939, 7677, 8137, 7873, 10046, 5793, 2]
+// Dependencies: [5, 5797, 1071, 7872, 15880, 5781, 15905, 7644, 10429, 7638, 6939, 7677, 8138, 7873, 10047, 5793, 2]
 
-// Module 15937 (commands/activities)
+// Module 15944 (commands/activities)
 import OAuth2Scopes from "OAuth2Scopes" /* 5781 */;
 import RPCErrorDefault from "RPCError" /* 7644 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10428 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15898 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10429 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 5797 */;
 import Constants_mod2 from "Constants" /* 1071 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15873 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15880 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -49,7 +49,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(10428).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(10429).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }
@@ -84,7 +84,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

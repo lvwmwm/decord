@@ -1,10 +1,10 @@
-// Module ID: 13067
-// Function ID: 13068
+// Module ID: 13075
+// Function ID: 13076
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12470, 10087, 12435, 5695, 6156, 5641, 1112, 5741, 575, 2]
+// Dependencies: [5, 32, 19, 21, 12478, 10088, 12443, 5695, 6156, 5641, 1112, 5741, 575, 2]
 // Exports: default, useCommandRowSend
 
-// Module 13067 (CommandRowButton)
+// Module 13075 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -71,7 +71,7 @@ export function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ export function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         onExecuteCommand = tmp25;

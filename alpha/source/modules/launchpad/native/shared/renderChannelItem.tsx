@@ -1,10 +1,10 @@
-// Module ID: 18971
-// Function ID: 18972
+// Module ID: 18987
+// Function ID: 18988
 // Name: renderChannelItem
-// Dependencies: [19, 17, 4914, 4985, 1387, 6168, 21, 8587, 1112, 5043, 575, 18972, 504, 7052, 13157, 6950, 18973, 9616, 18975, 5659, 2]
+// Dependencies: [19, 17, 4914, 4985, 1387, 6168, 21, 8588, 1112, 5043, 575, 18988, 504, 7052, 13165, 6950, 18989, 9617, 18991, 5659, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 18971 (renderChannelItem)
+// Module 18987 (renderChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,10 +12,10 @@ import useChannelName from "useChannelName" /* 5659 */;
 import ReadStateConstants from "ReadStateConstants" /* 6168 */;
 import NotificationCenterUtils from "NotificationCenterUtils" /* 6950 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8587 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18972 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18973 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18975 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8588 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18988 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18989 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18991 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
@@ -39,7 +39,7 @@ function LaunchpadChannelIcon(channel) {
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   obj4 = { guild: stateFromStores, size: tmp2.icon.guildBadgeIconSize };
-  items1 = [closure_8(View, obj3), closure_8(channel(13157).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
+  items1 = [closure_8(View, obj3), closure_8(channel(13165).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
   return closure_10(closure_9, obj2);
 }
 const View = react_native.View;
@@ -116,7 +116,7 @@ export default function renderChannelItem(unread) {
   const tmp9 = authStore;
   if (channel.isGroupDM()) {
     const obj3 = { channel, size: tmp7.icon.avatarSize };
-    tmp11Result = tmp11(tmp5(9616), obj3);
+    tmp11Result = tmp11(tmp5(9617), obj3);
   } else {
     const obj4 = { channel };
     tmp11Result = tmp11(LaunchpadChannelIcon, obj4);

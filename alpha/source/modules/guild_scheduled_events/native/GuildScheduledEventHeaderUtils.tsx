@@ -1,15 +1,15 @@
-// Module ID: 8605
-// Function ID: 8606
+// Module ID: 8606
+// Function ID: 8607
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [5775, 4898, 8466, 575, 8606, 1112, 8107, 8607, 2]
+// Dependencies: [5775, 4898, 8467, 575, 8607, 1112, 8107, 8608, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 8605 (GuildScheduledEventHeaderUtils)
+// Module 8606 (GuildScheduledEventHeaderUtils)
 import nativeDefault from "native" /* 575 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
-import ScheduleUtils from "ScheduleUtils" /* 8466 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8606 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8607 */;
+import ScheduleUtils from "ScheduleUtils" /* 8467 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8607 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8608 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
 import size from "module_2" /* 2 */;
 
@@ -66,11 +66,11 @@ export function getGuildScheduledEventHeaderProps(eventTimeData) {
     stringResult1 = stringResult;
     tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(8607);
+    tmp8Result3 = tmp8(8608);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(8607);
+    tmp8Result3 = tmp8(8608);
     const intl3 = tmp(1112).intl;
     stringResult1 = intl3.string(tmp(1112).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;

@@ -1,10 +1,10 @@
-// Module ID: 13558
-// Function ID: 13559
+// Module ID: 13566
+// Function ID: 13567
 // Name: GuildPowerupsCard
 // Dependencies: [19, 17, 21, 5043, 671, 575, 6145, 2]
 // Exports: default
 
-// Module 13558 (GuildPowerupsCard)
+// Module 13566 (GuildPowerupsCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

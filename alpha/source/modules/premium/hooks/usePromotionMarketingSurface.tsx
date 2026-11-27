@@ -1,20 +1,20 @@
-// Module ID: 9399
-// Function ID: 9400
+// Module ID: 9400
+// Function ID: 9401
 // Name: usePromotionMarketingSurface
-// Dependencies: [19, 9139, 9162, 9400, 504, 9402, 2]
+// Dependencies: [19, 9140, 9163, 9401, 504, 9403, 2]
 // Exports: usePromotionMarketingComponentData, usePromotionMarketingSurface
 
-// Module 9399 (usePromotionMarketingSurface)
-import passesTrialOfferGateDefault from "passesTrialOfferGate" /* 9402 */;
+// Module 9400 (usePromotionMarketingSurface)
+import passesTrialOfferGateDefault from "passesTrialOfferGate" /* 9403 */;
 import react from "react" /* 19 */;
-import UserOfferStore from "UserOfferStore" /* 9139 */;
-import PromotionsStore from "PromotionsStore" /* 9162 */;
+import UserOfferStore from "UserOfferStore" /* 9140 */;
+import PromotionsStore from "PromotionsStore" /* 9163 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f95827 = () => {
+const f96060 = () => {
   const obj = PREMIUM_TAB(dependencyMap[3]);
   const result = obj.maybeFetchActivePromotions();
 };
@@ -24,13 +24,13 @@ let result = size.fileFinishedImporting("modules/premium/hooks/usePromotionMarke
 export const SET_COUNTDOWN_TIMER_THRESHOLD = 86400000;
 export function usePromotionMarketingSurface(PREMIUM_TAB) {
   _require = PREMIUM_TAB;
-  const f95832 = () => PromotionsStore.getMarketingComponentBySurface(f95832);
+  const f96065 = () => PromotionsStore.getMarketingComponentBySurface(f96065);
   let obj = react;
-  const effect = react.useEffect(f95827, []);
+  const effect = react.useEffect(f96060, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f95832();
+    const tmp = f96065();
     if (null == tmp) {
       return null;
     } else {
@@ -118,11 +118,11 @@ export function usePromotionMarketingComponentData(arg0) {
   let closure_0;
   let endDate;
   _require = arg0;
-  const effect = react.useEffect(f95827, []);
+  const effect = react.useEffect(f96060, []);
   const items = [PromotionsStore, UserOfferStore];
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items, () => {
-    const tmp = f95832();
+    const tmp = f96065();
     if (null == tmp) {
       return null;
     } else {

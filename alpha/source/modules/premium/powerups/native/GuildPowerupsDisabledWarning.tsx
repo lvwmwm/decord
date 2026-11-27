@@ -1,10 +1,10 @@
-// Module ID: 13535
-// Function ID: 13536
+// Module ID: 13543
+// Function ID: 13544
 // Name: GuildPowerupsDisabledWarning
 // Dependencies: [17, 21, 5043, 575, 7942, 5634, 2]
 // Exports: default
 
-// Module 13535 (GuildPowerupsDisabledWarning)
+// Module 13543 (GuildPowerupsDisabledWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;

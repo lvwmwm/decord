@@ -1,16 +1,16 @@
-// Module ID: 16152
-// Function ID: 16153
+// Module ID: 16159
+// Function ID: 16160
 // Name: UserProfileUpsellCardV2
-// Dependencies: [19, 17, 9126, 21, 5043, 575, 5598, 1091, 5634, 5641, 9637, 2]
+// Dependencies: [19, 17, 9127, 21, 5043, 575, 5598, 1091, 5634, 5641, 9638, 2]
 // Exports: default
 
-// Module 16152 (UserProfileUpsellCardV2)
+// Module 16159 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import ColorConstants from "ColorConstants" /* 9126 */;
+import ColorConstants from "ColorConstants" /* 9127 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -86,7 +86,7 @@ export default function UserProfileUpsellCardV2(textAlign) {
   const obj3 = { icon: hasOwnProperty(NitroWheelIcon, obj4), text: buttonText, onPress: onButtonPress, variant: buttonVariant, loading: flag2, disabled: flag, grow: true };
   const Button = tmp6(5641).Button;
   obj4 = { color: nativeDefault.colors.WHITE, size: "xs" };
-  NitroWheelIcon = tmp6(9637).NitroWheelIcon;
+  NitroWheelIcon = tmp6(9638).NitroWheelIcon;
   if (!flag) {
     flag = flag2;
   }

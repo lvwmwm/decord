@@ -1,10 +1,10 @@
-// Module ID: 18171
-// Function ID: 18172
+// Module ID: 18178
+// Function ID: 18179
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1088, 1112, 10617, 7546, 6140, 6144, 2]
+// Dependencies: [19, 21, 1088, 1112, 10618, 7546, 6140, 6144, 2]
 // Exports: default
 
-// Module 18171 (FocusModeOptionsActionSheet)
+// Module 18178 (FocusModeOptionsActionSheet)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl5 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
@@ -70,7 +70,7 @@ export default function FocusModeOptionsActionSheet(onSelect) {
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(10617);
+  let obj = onSelect(10618);
   const focusModeEnabled = obj.useFocusModeEnabled();
   const ActionSheet = onSelect(7546).ActionSheet;
   const obj2 = { title: intl.string(onSelect(1112).t["sNX1E+"]), hasIcons: false, children: items };

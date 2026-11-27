@@ -1,10 +1,10 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 18471
+// Function ID: 18472
 // Name: conjurePublishReview
-// Dependencies: [6935, 4245, 1112, 11475, 2]
+// Dependencies: [6935, 4245, 1112, 11485, 2]
 // Exports: conjureAddedSurfaces, conjurePublishIncludes, conjurePublishReviewReason, conjureReviewComponents
 
-// Module 18464 (conjurePublishReview)
+// Module 18471 (conjurePublishReview)
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
 import size from "module_2" /* 2 */;
@@ -90,7 +90,7 @@ export function conjurePublishReviewReason(project, publishStatus) {
     tmp = null;
     if (true !== publishStatus.safetyHold) {
       let str = "first_publish";
-      const obj = _Set1(11475);
+      const obj = _Set1(11485);
       if (obj.isConjureLive(publishStatus.publishState)) {
         let tmp7;
         let supported_surfaces = project.supported_surfaces;

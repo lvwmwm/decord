@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let c2, c3;
 
-const f90349 = async (arg0, value) => {
+const f90577 = async (arg0, value) => {
   let closure_0;
   let obj3;
   if (c3 === 2) {
@@ -24,7 +24,7 @@ const f90349 = async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "+95" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -68,7 +68,7 @@ const f90349 = async (arg0, value) => {
     }
   }
 };
-let obj = { bg: _asyncToGenerator(f90349), cs: _asyncToGenerator(f90349), da: _asyncToGenerator(f90349), de: _asyncToGenerator(f90349), el: _asyncToGenerator(f90349), "en-US": _asyncToGenerator(f90349), "es-ES": _asyncToGenerator(f90349), "es-419": _asyncToGenerator(f90349), fi: _asyncToGenerator(f90349), fr: _asyncToGenerator(f90349), hr: _asyncToGenerator(f90349), hu: _asyncToGenerator(f90349), it: _asyncToGenerator(f90349), ja: _asyncToGenerator(f90349), ko: _asyncToGenerator(f90349), lt: _asyncToGenerator(f90349), nl: _asyncToGenerator(f90349), no: _asyncToGenerator(f90349), pl: _asyncToGenerator(f90349), "pt-BR": _asyncToGenerator(f90349), ro: _asyncToGenerator(f90349), ru: _asyncToGenerator(f90349), "sv-SE": _asyncToGenerator(f90349), th: _asyncToGenerator(f90349), tr: _asyncToGenerator(f90349), uk: _asyncToGenerator(f90349), vi: _asyncToGenerator(f90349), "zh-CN": _asyncToGenerator(f90349), hi: _asyncToGenerator(f90349) };
+let obj = { bg: _asyncToGenerator(f90577), cs: _asyncToGenerator(f90577), da: _asyncToGenerator(f90577), de: _asyncToGenerator(f90577), el: _asyncToGenerator(f90577), "en-US": _asyncToGenerator(f90577), "es-ES": _asyncToGenerator(f90577), "es-419": _asyncToGenerator(f90577), fi: _asyncToGenerator(f90577), fr: _asyncToGenerator(f90577), hr: _asyncToGenerator(f90577), hu: _asyncToGenerator(f90577), it: _asyncToGenerator(f90577), ja: _asyncToGenerator(f90577), ko: _asyncToGenerator(f90577), lt: _asyncToGenerator(f90577), nl: _asyncToGenerator(f90577), no: _asyncToGenerator(f90577), pl: _asyncToGenerator(f90577), "pt-BR": _asyncToGenerator(f90577), ro: _asyncToGenerator(f90577), ru: _asyncToGenerator(f90577), "sv-SE": _asyncToGenerator(f90577), th: _asyncToGenerator(f90577), tr: _asyncToGenerator(f90577), uk: _asyncToGenerator(f90577), vi: _asyncToGenerator(f90577), "zh-CN": _asyncToGenerator(f90577), hi: _asyncToGenerator(f90577) };
 let AssetRegistry = AssetRegistry_mod;
 const result = size.fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.native.js");
 

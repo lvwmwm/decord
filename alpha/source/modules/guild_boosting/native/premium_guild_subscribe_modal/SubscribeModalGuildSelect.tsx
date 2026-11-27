@@ -1,7 +1,7 @@
 // Module ID: 6867
 // Function ID: 6868
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 4914, 6164, 6866, 1071, 21, 5043, 575, 6868, 1501, 504, 6869, 7480, 13285, 1112, 6864, 6152, 7052, 1186, 2]
+// Dependencies: [32, 19, 17, 4914, 6164, 6866, 1071, 21, 5043, 575, 6868, 1501, 504, 6869, 7480, 13293, 1112, 6864, 6152, 7052, 1186, 2]
 // Exports: default
 
 // Module 6867 (SubscribeModalGuildSelect)
@@ -12,7 +12,7 @@ import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6864 */;
 import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6866 */;
 import LegacyTokens from "LegacyTokens" /* 6868 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6869 */;
-import SearchBarNavDefault from "SearchBarNav" /* 13285 */;
+import SearchBarNavDefault from "SearchBarNav" /* 13293 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;

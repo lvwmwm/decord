@@ -1,10 +1,10 @@
-// Module ID: 10017
-// Function ID: 10018
+// Module ID: 10018
+// Function ID: 10019
 // Name: useIsActivityFocused
 // Dependencies: [6933, 4891, 6942, 504, 2]
 // Exports: default, isActivityFocused
 
-// Module 10017 (useIsActivityFocused)
+// Module 10018 (useIsActivityFocused)
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6942 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;

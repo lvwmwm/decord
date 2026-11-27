@@ -1,9 +1,9 @@
-// Module ID: 18440
-// Function ID: 18441
+// Module ID: 18447
+// Function ID: 18448
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 5043, 575, 5079, 7525, 7284, 18441, 5634, 1112, 18437, 4865, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5079, 7525, 7284, 18448, 5634, 1112, 18444, 4865, 2]
 
-// Module 18440 (JoinRequestOtherApplications)
+// Module 18447 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 575 */;
 import DateUtils from "DateUtils" /* 4865 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5079 */;

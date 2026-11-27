@@ -1,10 +1,10 @@
-// Module ID: 12403
-// Function ID: 12404
+// Module ID: 12411
+// Function ID: 12412
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 4892, 4946, 5272, 21, 5043, 575, 7507, 1112, 5641, 8560, 5105, 6144, 7182, 8633, 5618, 5052, 1629, 1495, 5597, 504, 5257, 5271, 7482, 2]
+// Dependencies: [19, 17, 4892, 4946, 5272, 21, 5043, 575, 7507, 1112, 5641, 8561, 5105, 6144, 7182, 8634, 5618, 5052, 1629, 1495, 5597, 504, 5257, 5271, 7482, 2]
 // Exports: default
 
-// Module 12403 (SelectComponentActionSheet)
+// Module 12411 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 5105 */;
@@ -128,7 +128,7 @@ function SelectionHeader(renderIcon) {
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(8560);
+      const tmp13 = selectedOptions(8561);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -235,7 +235,7 @@ function SelectionOptionItem(item) {
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(8633).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(8634).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

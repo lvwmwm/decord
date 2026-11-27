@@ -1,27 +1,27 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 13742
+// Function ID: 13743
 // Name: ChairIllocon
-// Dependencies: [19, 21, 13736, 13737, 13738, 7261, 5730, 2]
+// Dependencies: [19, 21, 13743, 13744, 13745, 7261, 5730, 2]
 // Exports: ChairIllocon
 
-// Module 13735 (ChairIllocon)
+// Module 13742 (ChairIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef13736 from "module_13736" /* 13736 */;
-import _modDef13737 from "module_13737" /* 13737 */;
-import _modDef13738 from "module_13738" /* 13738 */;
+import _modDef13743 from "module_13743" /* 13743 */;
+import _modDef13744 from "module_13744" /* 13744 */;
+import _modDef13745 from "module_13745" /* 13745 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13736 };
+let obj2 = { uri: _modDef13743 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13737 };
-({ uri: _modDef13737 });
-obj[3] = { uri: _modDef13738 };
-({ uri: _modDef13738 });
+obj[2] = { uri: _modDef13744 };
+({ uri: _modDef13744 });
+obj[3] = { uri: _modDef13745 };
+({ uri: _modDef13745 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ChairIllocon.native.tsx");
 

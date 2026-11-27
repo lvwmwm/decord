@@ -1,19 +1,19 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12312
+// Function ID: 12313
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 8246, 1071, 21, 5043, 5597, 504, 6990, 12305, 7480, 12306, 8136, 12316, 12303, 7191, 7355, 2]
+// Dependencies: [5, 32, 19, 8247, 1071, 21, 5043, 5597, 504, 6990, 12313, 7480, 12314, 8137, 12324, 12311, 7191, 7355, 2]
 // Exports: default
 
-// Module 12304 (AcceptGuildTemplateModal)
+// Module 12312 (AcceptGuildTemplateModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
-import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12316 */;
+import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12324 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 8246 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 8247 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function ConnectedAcceptGuildTemplate(code) {
   [name, dependencyMap] = useState(obj2.getGuildNameSuggestion());
   [first1, _slicedToArray] = react.useState(null);
   [first2, react] = react.useState(null);
-  stateFromStores(12305)(stateFromStores);
+  stateFromStores(12313)(stateFromStores);
   const SafeAreaPaddingView = code(7480).SafeAreaPaddingView;
   let obj4 = {
     code,
@@ -65,7 +65,7 @@ function ConnectedAcceptGuildTemplate(code) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ function ConnectedAcceptGuildTemplate(code) {
               closure_129_5(base64);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -121,7 +121,7 @@ function ConnectedAcceptGuildTemplate(code) {
       }
     }
   };
-  stateFromStores(12306);
+  stateFromStores(12314);
   return <SafeAreaPaddingView top style={tmp.container}>{null}</SafeAreaPaddingView>;
 }
 let _slicedToArray = _slicedToArray_mod;

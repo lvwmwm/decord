@@ -1,16 +1,16 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 12915
+// Function ID: 12916
 // Name: SidekickMessageInput
-// Dependencies: [5, 17, 6396, 21, 575, 5043, 1495, 5223, 12908, 12628, 5724, 1112, 1186, 12618, 11113, 6380, 11307, 5741, 2]
+// Dependencies: [5, 17, 6396, 21, 575, 5043, 1495, 5223, 12916, 12636, 5724, 1112, 1186, 12626, 11114, 6380, 11308, 5741, 2]
 // Exports: default, useSidekickMessageInputKeyboardOffset
 
-// Module 12907 (SidekickMessageInput)
+// Module 12915 (SidekickMessageInput)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5223 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 11113 */;
-import Tracking from "Tracking" /* 12618 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 11114 */;
+import Tracking from "Tracking" /* 12626 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 6396 */;
@@ -72,7 +72,7 @@ export default function SidekickMessageInput(user) {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       let obj2;
-      const f141953 = (arg0) => {
+      const f142420 = (arg0) => {
         obj = { isSending: false };
         const merged = Object.assign(arg0);
         return obj;
@@ -87,7 +87,7 @@ export default function SidekickMessageInput(user) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -120,7 +120,7 @@ export default function SidekickMessageInput(user) {
             }
           } else if (1 === c4) {
             c3 = 0;
-            closure_129_1(f141953);
+            closure_129_1(f142420);
             throw closure_2;
           } else {
             if (2 === c4) {
@@ -134,7 +134,7 @@ export default function SidekickMessageInput(user) {
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_129_1(f141953);
+              closure_129_1(f142420);
               c5 = 3;
               obj = { value, done: true };
               return obj;
@@ -147,10 +147,10 @@ export default function SidekickMessageInput(user) {
               c3 = 1;
             }
             c3 = 0;
-            closure_129_1(f141953);
+            closure_129_1(f142420);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp34) {
           closure_2 = tmp34;
           if (0 === c3) {

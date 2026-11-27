@@ -1,19 +1,19 @@
-// Module ID: 19846
-// Function ID: 19847
+// Module ID: 19862
+// Function ID: 19863
 // Name: MobileGiftIntentCardManager
-// Dependencies: [8322, 4892, 6391, 4946, 12019, 1389, 19847, 1092, 4868, 11152, 6116, 1264, 4887, 10446, 2]
+// Dependencies: [8323, 4892, 6391, 4946, 12027, 1389, 19863, 1092, 4868, 11153, 6116, 1264, 4887, 10447, 2]
 
-// Module 19846 (MobileGiftIntentCardManager)
+// Module 19862 (MobileGiftIntentCardManager)
 import ChannelTypes from "ChannelTypes" /* 1092 */;
 import Timers from "Timers" /* 4887 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 10446 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8322 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 10447 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8323 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 12019 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 12027 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
-import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 19847 */;
+import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 19863 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ class MobileGiftIntentCardManager extends GiftIntentReconcilingManager {
           if (MessageStore.isReady(id)) {
             const tmp6 = constants2;
             if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, found, constants.SEND_MESSAGE)) {
-              const tmpResult = tmp(11152);
+              const tmpResult = tmp(11153);
               const result = tmpResult.logMessageGiftIntentShown(found);
               const userAffinity = self.getUserAffinity(found);
               const obj = { name: tmp(1264).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION, type: tmp(1264).ImpressionTypes.VIEW, properties: obj2 };

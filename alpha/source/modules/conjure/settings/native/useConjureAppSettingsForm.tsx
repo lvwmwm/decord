@@ -1,21 +1,22 @@
-// Module ID: 18521
-// Function ID: 18522
+// Module ID: 18526
+// Function ID: 18527
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4973, 4914, 4985, 1387, 7710, 21, 5043, 575, 504, 18522, 14752, 18524, 1112, 4245, 14751, 18525, 6140, 18526, 7181, 7251, 7253, 18537, 7440, 7274, 5634, 5641, 7602, 6144, 6158, 5659, 5257, 11763, 18523, 18541, 2]
+// Dependencies: [5, 32, 19, 17, 4973, 4914, 4985, 1387, 7710, 21, 5043, 575, 504, 18527, 14759, 18529, 18530, 1112, 4245, 18531, 14758, 18532, 5726, 6140, 18533, 7181, 7251, 7253, 18545, 18549, 7440, 7274, 18550, 5634, 5641, 18551, 7602, 6144, 6158, 5659, 5257, 11771, 18528, 18552, 2]
 // Exports: default
 
-// Module 18521 (useConjureAppSettingsForm)
+// Module 18526 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl9 from "intl" /* 1112 */;
+import intl11 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11763 */;
-import conjureSettingValues from "conjureSettingValues" /* 14752 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18541 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11771 */;
+import conjureSettingValues from "conjureSettingValues" /* 14759 */;
+import conjureSetupForm from "conjureSetupForm" /* 18531 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18552 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4973 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
@@ -34,14 +35,18 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
+let obj6;
+let obj7;
+let obj8;
 let tmp;
-const useConjureSettingPickerOptions = tmp(18522);
+const useConjureSettingPickerOptions = tmp(18527);
 function ConjureChannelSettingRow(guildId) {
   let TableRowTrailingText;
   let disabled;
   let fallback;
   let hint;
   let obj5;
+  let shortLinks;
   let tmp5Result;
   let tmpResult3;
   guildId = guildId.guildId;
@@ -51,7 +56,7 @@ function ConjureChannelSettingRow(guildId) {
   let found;
   let tmp = guildId;
   let tmp2 = dependencyMap;
-  ({ disabled, fallback } = guildId);
+  ({ shortLinks, disabled, fallback } = guildId);
   let obj = guildId(504);
   const items = [GuildChannelStore];
   const items1 = [guildId];
@@ -107,17 +112,17 @@ function ConjureChannelSettingRow(guildId) {
               };
               obj3 = { title: def.label };
               tmp2 = ChannelPickerActionSheetDefault;
-              intl = intl9.intl;
+              intl = intl11.intl;
               showActionSheet(obj);
             }
       };
       tmp5Result = undefined;
       const TableRow = tmp(6144).TableRow;
       if (null != hint) {
-        let obj3 = { variant: "body-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "body-xs/medium") };
+        let obj3 = { variant: "body-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "body-xs/medium", shortLinks) };
         const Text = tmp(5634).Text;
         let str = "body-xs/medium";
-        tmpResult3 = tmp(18526);
+        tmpResult3 = tmp(18533);
         tmp5Result = tmp5(Text, obj3);
       }
       TableRowTrailingText = tmp(6158).TableRowTrailingText;
@@ -142,6 +147,7 @@ function ConjurePickerSettingRow(guildId) {
   let fallback;
   let hint;
   let obj6;
+  let shortLinks;
   let tmp10Result;
   let tmp4Result2;
   let value;
@@ -152,13 +158,13 @@ function ConjurePickerSettingRow(guildId) {
   let closure_5;
   let tmp = def;
   let tmp2 = dependencyMap;
-  ({ disabled, fallback } = guildId);
-  let tmp3 = def(18522)(guildId, def);
+  ({ shortLinks, disabled, fallback } = guildId);
+  let tmp3 = def(18527)(guildId, def);
   let tmp4 = guildId;
-  let obj = guildId(18522);
+  let obj = guildId(18527);
   const result = obj.conjureSettingPickedIds(value);
   let c3 = result;
-  let tmp5 = guildId(18523);
+  let tmp5 = guildId(18528);
   let tmp6 = null;
   const useConjureMemberRequests = tmp5.useConjureMemberRequests;
   if ("user" === def.type) {
@@ -168,7 +174,7 @@ function ConjurePickerSettingRow(guildId) {
   if (null != guildId) {
     if (null != tmp3) {
       let formatToPlainStringResult;
-      const tmp4Result = tmp4(18522);
+      const tmp4Result = tmp4(18527);
       const withSavedPicksResult = tmp4Result.withSavedPicks(tmp3, value, (id) => ({ id, label: id }));
       c4 = withSavedPicksResult;
       closure_5 = tmp12;
@@ -233,10 +239,10 @@ function ConjurePickerSettingRow(guildId) {
       tmp10Result = undefined;
       const TableRow = tmp4(6144).TableRow;
       if (null != hint) {
-        const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: tmp4Result2.conjureLinkedNodes(hint, "body-xs/medium") };
+        const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: tmp4Result2.conjureLinkedNodes(hint, "body-xs/medium", shortLinks) };
         const Text = tmp4(5634).Text;
         let str = "body-xs/medium";
-        tmp4Result2 = tmp4(18526);
+        tmp4Result2 = tmp4(18533);
         tmp10Result = tmp10(Text, obj4);
       }
       const obj5 = { hasIcons: false, children: closure_12(TableRow, obj3) };
@@ -246,33 +252,49 @@ function ConjurePickerSettingRow(guildId) {
   }
   return fallback;
 }
-let _asyncToGenerator = _asyncToGenerator_mod;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { linkedField: obj2, section: obj3, secretRow: obj4, secretRowInfo: obj5 };
+let obj = { linkedField: obj2, setupField: obj3, section: obj4, setupForm: obj5, sectionHeader: obj6, secretRow: obj7, secretRowInfo: obj8 };
 obj2 = { gap: nativeDefault.space.PX_4 };
 createStyles = createStyles.createStyles;
-obj3 = { gap: nativeDefault.space.PX_16 };
-obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8 };
-obj5 = { flex: 1, gap: nativeDefault.space.PX_4 };
+obj3 = { gap: nativeDefault.space.PX_8 };
+obj4 = { gap: nativeDefault.space.PX_16 };
+obj5 = { gap: nativeDefault.space.PX_24 };
+obj6 = { gap: nativeDefault.space.PX_4 };
+obj7 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8 };
+obj8 = { flex: 1, gap: nativeDefault.space.PX_4 };
 let closure_15 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/conjure/settings/native/useConjureAppSettingsForm.tsx");
 
 export default function useConjureAppSettingsForm(projectId) {
   let _undefined;
   let _undefined2;
+  let _undefined22;
   let _undefined3;
   let _undefined4;
-  let c10;
+  let _undefined42;
+  let c12;
   let c13;
-  let c14;
-  let c15;
   let c16;
   let c17;
-  let c9;
-  let closure_3;
+  let c18;
+  let c19;
+  let c20;
+  let c21;
+  let c22;
+  let c23;
+  let c24;
+  let closure_11;
+  let closure_4;
+  let closure_9;
+  let draftErrorOfResult;
+  let first1;
+  let first2;
   let intl;
+  let intl10;
   let intl2;
   let intl3;
   let intl4;
@@ -280,20 +302,27 @@ export default function useConjureAppSettingsForm(projectId) {
   let intl6;
   let intl7;
   let intl8;
-  let items5;
-  let items6;
-  let items7;
+  let intl9;
+  let items11;
+  let items12;
+  let items13;
+  let items14;
   let items8;
-  let mapped;
   let note;
   let notifyAgent;
-  let obj15;
-  let scopeKeys;
+  let obj21;
+  let onFocus;
+  let secretKeys;
   let serverId;
   let servers;
   let tmp13;
+  let tmp53;
+  let tmp64;
+  let values;
+  const f115660 = (filled) => filled.filled;
   projectId = projectId.projectId;
-  ({ scopeKeys, note, notifyAgent } = projectId);
+  ({ note, notifyAgent } = projectId);
+  const scopeKeys = projectId.scopeKeys;
   if (notifyAgent === undefined) {
     notifyAgent = false;
   }
@@ -302,23 +331,58 @@ export default function useConjureAppSettingsForm(projectId) {
   if (flag === undefined) {
     flag = false;
   }
-  let first;
-  c9 = undefined;
-  c10 = undefined;
-  let first2;
+  const onInputFocusChange = projectId.onInputFocusChange;
+  react = undefined;
+  values = undefined;
+  closure_9 = undefined;
+  first1 = undefined;
+  closure_11 = undefined;
+  c12 = undefined;
   c13 = undefined;
-  c14 = undefined;
-  c15 = undefined;
+  first2 = undefined;
+  closure_15 = undefined;
   c16 = undefined;
   c17 = undefined;
+  c18 = undefined;
+  c19 = undefined;
+  c20 = undefined;
+  c21 = undefined;
+  c22 = undefined;
+  c23 = undefined;
+  c24 = undefined;
   serverId = undefined;
-  let found1;
-  let closure_26;
-  let closure_27;
-  let closure_28;
+  let closure_34;
+  let closure_35;
   let memo2;
-  let someResult1;
-  let closure_31;
+  let result2;
+  let result3;
+  let c40;
+  let closure_41;
+  function draftErrorOf(found7) {
+    let result = null;
+    if (shortLinks) {
+      const conjureSettingDraftError = conjureSetupForm.conjureSettingDraftError;
+      conjureSetupForm;
+      const obj = conjureSettingValues;
+      result = conjureSettingDraftError(found7, first[obj.conjureSettingDraftKey(obj, found7, serverId)]);
+    }
+    if (null != result) {
+      let formatToPlainStringResult;
+      if ("min" === result.kind) {
+        const intl3 = intl11.intl;
+        const obj2 = { min: result.min };
+        formatToPlainStringResult = intl3.formatToPlainString(_modDef4245.kDApFd, obj2);
+      } else if ("max" === result.kind) {
+        const intl2 = intl11.intl;
+        const obj3 = { max: result.max };
+        formatToPlainStringResult = intl2.formatToPlainString(_modDef4245["5ft/Ii"], obj3);
+      } else {
+        const intl = intl11.intl;
+        formatToPlainStringResult = intl.string(_modDef4245["0A2STI"]);
+      }
+      return formatToPlainStringResult;
+    }
+  }
   function hintFor(def) {
     let hosts;
     let hint;
@@ -338,8 +402,8 @@ export default function useConjureAppSettingsForm(projectId) {
     }
     let stringResult;
     if (true === requires_rebuild) {
-      const intl = projectId(onSaved[16]).intl;
-      stringResult = intl.string(notifyAgent(onSaved[17])["4kCM6H"]);
+      const intl = projectId(onSaved[17]).intl;
+      stringResult = intl.string(notifyAgent(onSaved[18])["4kCM6H"]);
     }
     items[1] = stringResult;
     let type;
@@ -350,11 +414,11 @@ export default function useConjureAppSettingsForm(projectId) {
     if ("secret" === type) {
       if (null != def.hosts) {
         if (def.hosts.length > 0) {
-          const intl2 = projectId(onSaved[16]).intl;
+          const intl2 = projectId(onSaved[17]).intl;
           const formatToPlainString = intl2.formatToPlainString;
           const obj = { hosts: hosts.join(", ") };
           hosts = def.hosts;
-          const Ww9HFO = notifyAgent(onSaved[17]).Ww9HFO;
+          const Ww9HFO = notifyAgent(onSaved[18]).Ww9HFO;
           formatToPlainStringResult = formatToPlainString(Ww9HFO, obj);
         }
       }
@@ -373,13 +437,12 @@ export default function useConjureAppSettingsForm(projectId) {
     let disabled;
     let options;
     let options1;
-    let result3;
     let result4;
     let result5;
     let result6;
     let tmp2Result20;
-    let tmp35Result;
-    const tmp = hintFor(found);
+    let tmp37Result;
+    let tmp = hintFor(found);
     let tmp2 = projectId;
     let obj = projectId(onSaved[14]);
     const result = obj.conjureSettingDraftKey(found, serverId);
@@ -414,59 +477,74 @@ export default function useConjureAppSettingsForm(projectId) {
                     } else {
                       found = arr.filter((item) => item !== value.value);
                     }
-                    label = tmp2;
-                    c13(false);
-                    closure_6((arg0) => {
+                    c16(false);
+                    let obj = label(closure_1_2[14]);
+                    let closure_1 = obj.conjureSettingDraftKey(tmp2, serverId);
+                    c22((arg0) => {
+                      let tmp = null;
+                      if (arg0 !== closure_1) {
+                        tmp = arg0;
+                      }
+                      return tmp;
+                    });
+                    closure_9((arg0) => {
                       const obj = {};
                       const merged = Object.assign(arg0);
-                      obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-                      closure_0(closure_1_2[14]);
+                      obj[closure_1] = found;
                       return obj;
                     });
                   }
                 };
-                const TableCheckboxRow = projectId(onSaved[22]).TableCheckboxRow;
-                return closure_12(TableCheckboxRow, obj, label.value);
+                const TableCheckboxRow = projectId(onSaved[25]).TableCheckboxRow;
+                return c12(TableCheckboxRow, obj, label.value);
               })
         };
         conjureLinkedNodesResult = undefined;
-        const TableRowGroup2 = tmp2(tmp3[20]).TableRowGroup;
-        const tmp53 = closure_12;
+        const TableRowGroup2 = tmp2(tmp3[23]).TableRowGroup;
+        const tmp57 = c12;
         if (null != tmp) {
-          const tmp2Result16 = tmp2(onSaved[21]);
-          conjureLinkedNodesResult = tmp2Result16.conjureLinkedNodes(tmp, "body-sm/normal");
+          const tmp2Result16 = tmp2(onSaved[24]);
+          conjureLinkedNodesResult = tmp2Result16.conjureLinkedNodes(tmp, "body-sm/normal", shortLinks);
         }
         options1 = found.options;
         if (options1 == null) {
           options1 = [];
         }
-        return tmp53(TableRowGroup2, obj2, result);
+        return tmp57(TableRowGroup2, obj2, result);
       }
     }
     if ("select" === found.type) {
       const tmp2Result17 = tmp2(onSaved[14]);
-      let result2 = first[tmp2Result17.conjureSettingDraftKey(tmp2Result17, found, tmp4)];
+      result2 = first[tmp2Result17.conjureSettingDraftKey(tmp2Result17, found, tmp4)];
       if (result2 == null) {
         const tmp2Result18 = tmp2(onSaved[14]);
         result2 = tmp2Result18.conjureSettingStoredValue(stateFromStores, found, tmp4);
       }
-      let tmp47;
-      const TableRadioGroup = tmp2(tmp3[23]).TableRadioGroup;
-      const tmp46 = closure_12;
+      let tmp50;
+      const TableRadioGroup = tmp2(tmp3[26]).TableRadioGroup;
+      const tmp49 = c12;
       if (typeof result2 === "string") {
-        tmp47 = result2;
+        tmp50 = result2;
       }
       const obj3 = {
         hasIcons: false,
-        defaultValue: tmp47,
-        onChange(arg0) {
-            let closure_1 = arg0;
-            c13(false);
-            closure_6((arg0) => {
+        defaultValue: tmp50,
+        onChange(def2) {
+            found = def2;
+            c16(false);
+            const obj = found(onSaved[14]);
+            let closure_1 = obj.conjureSettingDraftKey(found, serverId);
+            c22((arg0) => {
+              let tmp = null;
+              if (arg0 !== closure_1) {
+                tmp = arg0;
+              }
+              return tmp;
+            });
+            closure_9((arg0) => {
               const obj = {};
               const merged = Object.assign(arg0);
-              obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-              closure_0(closure_1_2[14]);
+              obj[closure_1] = found;
               return obj;
             });
           },
@@ -475,47 +553,55 @@ export default function useConjureAppSettingsForm(projectId) {
         accessibilityLabel: null,
         children: options.map((label) => {
             const obj = { label: label.label, value: label.value };
-            return closure_1_12(found(onSaved[24]).TableRadioRow, obj, label.value);
+            return _undefined(found(onSaved[27]).TableRadioRow, obj, label.value);
           })
       };
       conjureLinkedNodesResult1 = undefined;
       if (null != tmp) {
-        const tmp2Result19 = tmp2(onSaved[21]);
-        conjureLinkedNodesResult1 = tmp2Result19.conjureLinkedNodes(tmp, "body-sm/normal");
+        const tmp2Result19 = tmp2(onSaved[24]);
+        conjureLinkedNodesResult1 = tmp2Result19.conjureLinkedNodes(tmp, "body-sm/normal", shortLinks);
       }
       ({ label: obj19.accessibilityLabel, options } = found);
       if (options == null) {
         options = [];
       }
-      return tmp46(TableRadioGroup, obj3, result);
+      return tmp49(TableRadioGroup, obj3, result);
     } else {
-      let tmp35Result2;
+      let tmp37Result2;
       if ("checkbox" === found.type) {
-        const TableRowGroup = tmp2(tmp3[20]).TableRowGroup;
+        const TableRowGroup = tmp2(tmp3[23]).TableRowGroup;
         const obj4 = {
           label: found.label,
-          subLabel: tmp35Result,
+          subLabel: tmp37Result,
           checked: true === result3,
           disabled: first2,
-          onPress(arg0) {
-                let closure_1 = arg0;
-                c13(false);
-                closure_6((arg0) => {
+          onPress(def2) {
+                found = def2;
+                c16(false);
+                const obj = found(onSaved[14]);
+                let closure_1 = obj.conjureSettingDraftKey(found, serverId);
+                c22((arg0) => {
+                  let tmp = null;
+                  if (arg0 !== closure_1) {
+                    tmp = arg0;
+                  }
+                  return tmp;
+                });
+                closure_9((arg0) => {
                   const obj = {};
                   const merged = Object.assign(arg0);
-                  obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-                  closure_0(closure_1_2[14]);
+                  obj[closure_1] = found;
                   return obj;
                 });
               }
         };
-        tmp35Result = undefined;
-        let TableCheckboxRow = tmp2(tmp3[22]).TableCheckboxRow;
+        tmp37Result = undefined;
+        let TableCheckboxRow = tmp2(tmp3[25]).TableCheckboxRow;
         if (null != tmp) {
-          const obj5 = { variant: "body-xs/medium", color: "text-subtle", children: tmp2Result20.conjureLinkedNodes(tmp, "body-xs/medium") };
-          const Text = tmp2(tmp3[28]).Text;
-          tmp2Result20 = tmp2(onSaved[21]);
-          tmp35Result = tmp35(Text, obj5);
+          const obj5 = { variant: "body-xs/medium", color: "text-subtle", children: tmp2Result20.conjureLinkedNodes(tmp, "body-xs/medium", tmp38) };
+          const Text = tmp2(tmp3[33]).Text;
+          tmp2Result20 = tmp2(onSaved[24]);
+          tmp37Result = tmp37(Text, obj5);
         }
         const tmp2Result21 = tmp2(onSaved[14]);
         result3 = first[tmp2Result21.conjureSettingDraftKey(tmp2Result21, found, tmp4)];
@@ -523,8 +609,8 @@ export default function useConjureAppSettingsForm(projectId) {
           const tmp2Result22 = tmp2(onSaved[14]);
           result3 = tmp2Result22.conjureSettingStoredValue(stateFromStores, found, tmp4);
         }
-        const obj6 = { hasIcons: false, children: closure_12(TableCheckboxRow, obj4) };
-        tmp35Result2 = tmp35(TableRowGroup, obj6, result);
+        const obj6 = { hasIcons: false, children: c12(TableCheckboxRow, obj4) };
+        tmp37Result2 = tmp37(TableRowGroup, obj6, result);
       } else if ("game" === found.type) {
         const obj7 = {
           def: found,
@@ -532,54 +618,71 @@ export default function useConjureAppSettingsForm(projectId) {
           value: result4,
           pickingEmpty: true === _undefined3[found.key],
           disabled: first2,
-          onChange(arg0) {
-                let closure_1 = arg0;
-                c13(false);
-                closure_6((arg0) => {
+          onChange(def2) {
+                found = def2;
+                c16(false);
+                const obj = found(onSaved[14]);
+                let closure_1 = obj.conjureSettingDraftKey(found, serverId);
+                c22((arg0) => {
+                  let tmp = null;
+                  if (arg0 !== closure_1) {
+                    tmp = arg0;
+                  }
+                  return tmp;
+                });
+                closure_9((arg0) => {
                   const obj = {};
                   const merged = Object.assign(arg0);
-                  obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-                  closure_0(closure_1_2[14]);
+                  obj[closure_1] = found;
                   return obj;
                 });
               },
           onPickingEmptyChange(arg0) {
-                return closure_18(found.key, arg0);
+                return closure_25(found.key, arg0);
               }
         };
-        const tmp28 = notifyAgent(onSaved[25]);
+        const tmp30 = notifyAgent(onSaved[28]);
         const tmp2Result23 = tmp2(onSaved[14]);
         result4 = first[tmp2Result23.conjureSettingDraftKey(tmp2Result23, found, tmp4)];
-        const tmp26 = closure_12;
+        const tmp28 = c12;
         if (result4 == null) {
           const tmp2Result24 = tmp2(onSaved[14]);
           result4 = tmp2Result24.conjureSettingStoredValue(stateFromStores, found, tmp4);
         }
-        tmp35Result2 = tmp26(tmp28, obj7, found.key);
+        tmp37Result2 = tmp28(tmp30, obj7, found.key);
       } else {
         if ("role" !== found.type) {
           if ("user" !== found.type) {
             if ("channel" === found.type) {
               let tmp10 = tmp4;
-              const tmp8 = closure_12;
-              const tmp9 = _undefined3;
+              const tmp8 = c12;
+              const tmp9 = c16;
               if (true !== found.per_server) {
-                tmp10 = closure_20;
+                tmp10 = closure_27;
               }
               const obj8 = {
                 guildId: tmp10,
                 def: found,
                 hint: tmp,
+                shortLinks,
                 value: result5,
                 disabled: first2,
-                onChange(arg0) {
-                            let closure_1 = arg0;
-                            c13(false);
-                            closure_6((arg0) => {
+                onChange(def2) {
+                            found = def2;
+                            c16(false);
+                            const obj = found(onSaved[14]);
+                            let closure_1 = obj.conjureSettingDraftKey(found, serverId);
+                            c22((arg0) => {
+                              let tmp = null;
+                              if (arg0 !== closure_1) {
+                                tmp = arg0;
+                              }
+                              return tmp;
+                            });
+                            closure_9((arg0) => {
                               const obj = {};
                               const merged = Object.assign(arg0);
-                              obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-                              closure_0(closure_1_2[14]);
+                              obj[closure_1] = found;
                               return obj;
                             });
                           },
@@ -591,32 +694,41 @@ export default function useConjureAppSettingsForm(projectId) {
                 const tmp2Result26 = tmp2(onSaved[14]);
                 result5 = tmp2Result26.conjureSettingStoredValue(stateFromStores, found, tmp4);
               }
-              tmp35Result2 = tmp8(tmp9, obj8, result);
+              tmp37Result2 = tmp8(tmp9, obj8, result);
             } else {
-              tmp35Result2 = renderTextSetting(found, tmp);
+              tmp37Result2 = renderTextSetting(found, tmp);
             }
           }
         }
-        let tmp19 = tmp4;
-        const tmp17 = closure_12;
-        const tmp18 = c17;
+        let tmp20 = tmp4;
+        const tmp18 = c12;
+        const tmp19 = c17;
         if (true !== found.per_server) {
-          tmp19 = closure_20;
+          tmp20 = closure_27;
         }
         const obj9 = {
-          guildId: tmp19,
+          guildId: tmp20,
           def: found,
           hint: tmp,
+          shortLinks,
           value: result6,
           disabled: first2,
-          onChange(arg0) {
-                let closure_1 = arg0;
-                c13(false);
-                closure_6((arg0) => {
+          onChange(def2) {
+                found = def2;
+                c16(false);
+                const obj = found(onSaved[14]);
+                let closure_1 = obj.conjureSettingDraftKey(found, serverId);
+                c22((arg0) => {
+                  let tmp = null;
+                  if (arg0 !== closure_1) {
+                    tmp = arg0;
+                  }
+                  return tmp;
+                });
+                closure_9((arg0) => {
                   const obj = {};
                   const merged = Object.assign(arg0);
-                  obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-                  closure_0(closure_1_2[14]);
+                  obj[closure_1] = found;
                   return obj;
                 });
               },
@@ -628,143 +740,267 @@ export default function useConjureAppSettingsForm(projectId) {
           const tmp2Result28 = tmp2(onSaved[14]);
           result6 = tmp2Result28.conjureSettingStoredValue(stateFromStores, found, tmp4);
         }
-        tmp35Result2 = tmp17(tmp18, obj9, result);
+        tmp37Result2 = tmp18(tmp19, obj9, result);
       }
-      return tmp35Result2;
+      return tmp37Result2;
     }
   }
-  function renderTextSetting(multiline, description) {
+  function renderTextSetting(required, description) {
     let items;
+    let items1;
+    let str10;
+    let str12;
     let str4;
     let str6;
     let stringResult;
     let stringResult1;
-    let tmp25Result;
-    let tmp7;
-    let closure_0 = multiline;
-    const obj = projectId(onSaved[14]);
-    const result = obj.conjureSettingDraftKey(multiline, serverId);
+    let stringResult2;
+    let tmp44;
+    let tmp46;
+    let tmp9;
+    let tmpResult2;
+    let obj = projectId(onSaved[14]);
+    const result = obj.conjureSettingDraftKey(required, serverId);
     const obj2 = projectId(onSaved[14]);
-    let result1 = first[obj2.conjureSettingDraftKey(obj2, multiline, serverId)];
+    let result1 = first[obj2.conjureSettingDraftKey(obj2, required, serverId)];
     const tmp3 = serverId;
     if (result1 == null) {
       const tmpResult = projectId(onSaved[14]);
-      result1 = tmpResult.conjureSettingStoredValue(stateFromStores, multiline, tmp3);
+      result1 = tmpResult.conjureSettingStoredValue(stateFromStores, required, tmp3);
     }
-    if (true === multiline.multiline) {
+    const tmp6 = closure_33;
+    if (tmp6) {
+      let tmp41Result;
       const obj3 = {
-        label: multiline.label,
-        description,
-        errorMessage: stringResult,
-        value: str6,
-        onChange(arg0) {
-            let closure_1 = arg0;
-            c13(false);
-            closure_6((arg0) => {
+        accessibilityLabel: tmpResult2.conjureFieldAccessibilityLabel(required.label, true !== required.required),
+        accessibilityHint: required.hint,
+        required: true === required.required,
+        description: stringResult,
+        onChange(def2) {
+            required = def2;
+            c16(false);
+            const obj = required(onSaved[14]);
+            let closure_1 = obj.conjureSettingDraftKey(required, serverId);
+            c22((arg0) => {
+              let tmp = null;
+              if (arg0 !== closure_1) {
+                tmp = arg0;
+              }
+              return tmp;
+            });
+            closure_9((arg0) => {
               const obj = {};
               const merged = Object.assign(arg0);
-              obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-              closure_0(closure_1_2[14]);
+              obj[closure_1] = found;
               return obj;
             });
           },
+        onFocus,
+        onBlur,
         disabled: first2
       };
       stringResult = undefined;
-      const TextArea = tmp(tmp2[26]).TextArea;
-      const tmp18 = closure_12;
-      if (c14) {
-        if (closure_27.includes(multiline.key)) {
-          const intl2 = tmp(tmp2[16]).intl;
-          stringResult = intl2.string(notifyAgent(tmp2[17])["PW1+MY"]);
+      tmpResult2 = projectId(onSaved[29]);
+      if (true === required.requires_rebuild) {
+        const intl3 = tmp(tmp2[17]).intl;
+        stringResult = intl3.string(notifyAgent(tmp2[18])["4kCM6H"]);
+      }
+      const obj4 = { style: closure_4.setupField, children: items };
+      const obj5 = { label: null, help: null, optional: true !== required.required };
+      ({ label: obj10.label, hint: obj10.help } = required);
+      items = [c12(notifyAgent(tmp2[29]), obj5), ];
+      const tmp38 = c13;
+      const tmp39 = onBlur;
+      if (true === required.multiline) {
+        const obj6 = { value: str12 };
+        const TextArea2 = tmp(tmp2[30]).TextArea;
+        const merged = Object.assign(obj3);
+        str12 = "";
+        if (typeof result1 === "string") {
+          str12 = result1;
         }
-      }
-      str6 = "";
-      if (typeof result1 === "string") {
-        str6 = result1;
-      }
-      tmp25Result = tmp18(TextArea, obj3, result);
-    } else {
-      const obj5 = {
-        label: multiline.label,
-        autoComplete: "off",
-        autoCapitalize: "none",
-        autoCorrect: false,
-        keyboardType: tmp7,
-        errorMessage: stringResult1,
-        value: str4,
-        onChange(arg0) {
-            let closure_1 = arg0;
-            c13(false);
-            closure_6((arg0) => {
-              const obj = {};
-              const merged = Object.assign(arg0);
-              obj[closure_0(closure_1_2[14]).conjureSettingDraftKey(closure_0, closure_2_21)] = found;
-              closure_0(closure_1_2[14]);
-              return obj;
-            });
-          },
-        disabled: first2
-      };
-      tmp7 = undefined;
-      const obj4 = { style: closure_3.linkedField, children: items };
-      const TextInput = tmp(tmp2[27]).TextInput;
-      const tmp25 = c13;
-      const tmp26 = closure_6;
-      if ("number" === multiline.type) {
-        let str2 = "numbers-and-punctuation";
-        if (null != multiline.min) {
-          str2 = "numbers-and-punctuation";
-          if (multiline.min >= 0) {
-            let str3;
-            if (null == multiline.step) {
-              str3 = "number-pad";
-            } else {
-              const _Number = Number;
-              str3 = "decimal-pad";
+        tmp41Result = tmp41(TextArea2, obj6);
+      } else {
+        const obj7 = { autoComplete: "off", autoCapitalize: "none", autoCorrect: false, keyboardType: tmp44, errorMessage: tmp46, value: str10 };
+        const TextInput2 = tmp(tmp2[31]).TextInput;
+        const merged1 = Object.assign(obj3);
+        tmp44 = undefined;
+        if ("number" === required.type) {
+          let str8 = "numbers-and-punctuation";
+          if (null != required.min) {
+            str8 = "numbers-and-punctuation";
+            if (required.min >= 0) {
+              let str9;
+              if (null == required.step) {
+                str9 = "number-pad";
+              } else {
+                const _Number2 = Number;
+                str9 = "decimal-pad";
+              }
+              str8 = str9;
             }
-            str2 = str3;
+          }
+          tmp44 = str8;
+        }
+        tmp46 = undefined;
+        if (c19) {
+          tmp46 = draftErrorOf(required);
+        }
+        const _Array2 = Array;
+        if (Array.isArray(result1)) {
+          str10 = result1.join(", ");
+        } else {
+          str10 = "";
+          if (null != result1) {
+            const _String2 = String;
+            str10 = String(result1);
           }
         }
-        tmp7 = str2;
+        tmp41Result = tmp41(TextInput2, obj7);
       }
-      stringResult1 = undefined;
-      if (c14) {
-        if (closure_27.includes(multiline.key)) {
-          const intl = tmp(tmp2[16]).intl;
-          stringResult1 = intl.string(notifyAgent(tmp2[17])["PW1+MY"]);
+      items[1] = tmp41Result;
+      return tmp38(tmp39, obj4, result);
+    } else {
+      let tmp53Result;
+      if (true === required.multiline) {
+        const obj8 = {
+          label: required.label,
+          description,
+          errorMessage: stringResult1,
+          value: str6,
+          onChange(def2) {
+                required = def2;
+                c16(false);
+                const obj = required(onSaved[14]);
+                let closure_1 = obj.conjureSettingDraftKey(required, serverId);
+                c22((arg0) => {
+                  let tmp = null;
+                  if (arg0 !== closure_1) {
+                    tmp = arg0;
+                  }
+                  return tmp;
+                });
+                closure_9((arg0) => {
+                  const obj = {};
+                  const merged = Object.assign(arg0);
+                  obj[closure_1] = found;
+                  return obj;
+                });
+              },
+          onFocus,
+          onBlur,
+          disabled: first2
+        };
+        stringResult1 = undefined;
+        const TextArea = tmp(tmp2[30]).TextArea;
+        const tmp22 = c12;
+        if (c17) {
+          if (closure_34.includes(required.key)) {
+            const intl2 = tmp(tmp2[17]).intl;
+            stringResult1 = intl2.string(notifyAgent(tmp2[18])["PW1+MY"]);
+          }
         }
-      }
-      const _Array = Array;
-      if (Array.isArray(result1)) {
-        str4 = result1.join(", ");
+        str6 = "";
+        if (typeof result1 === "string") {
+          str6 = result1;
+        }
+        tmp53Result = tmp22(TextArea, obj8, result);
       } else {
-        str4 = "";
-        if (null != result1) {
-          const _String = String;
-          str4 = String(result1);
+        const obj11 = {
+          label: required.label,
+          autoComplete: "off",
+          autoCapitalize: "none",
+          autoCorrect: false,
+          keyboardType: tmp9,
+          errorMessage: stringResult2,
+          value: str4,
+          onChange(def2) {
+                required = def2;
+                c16(false);
+                const obj = required(onSaved[14]);
+                let closure_1 = obj.conjureSettingDraftKey(required, serverId);
+                c22((arg0) => {
+                  let tmp = null;
+                  if (arg0 !== closure_1) {
+                    tmp = arg0;
+                  }
+                  return tmp;
+                });
+                closure_9((arg0) => {
+                  const obj = {};
+                  const merged = Object.assign(arg0);
+                  obj[closure_1] = found;
+                  return obj;
+                });
+              },
+          onFocus,
+          onBlur,
+          disabled: first2
+        };
+        tmp9 = undefined;
+        const obj9 = { style: closure_4.linkedField, children: items1 };
+        const TextInput = tmp(tmp2[31]).TextInput;
+        const tmp53 = c13;
+        const tmp54 = onBlur;
+        if ("number" === required.type) {
+          let str2 = "numbers-and-punctuation";
+          if (null != required.min) {
+            str2 = "numbers-and-punctuation";
+            if (required.min >= 0) {
+              let str3;
+              if (null == required.step) {
+                str3 = "number-pad";
+              } else {
+                const _Number = Number;
+                str3 = "decimal-pad";
+              }
+              str2 = str3;
+            }
+          }
+          tmp9 = str2;
         }
+        stringResult2 = undefined;
+        if (c17) {
+          if (closure_34.includes(required.key)) {
+            const intl = tmp(tmp2[17]).intl;
+            stringResult2 = intl.string(notifyAgent(tmp2[18])["PW1+MY"]);
+          }
+        }
+        const _Array = Array;
+        if (Array.isArray(result1)) {
+          str4 = result1.join(", ");
+        } else {
+          str4 = "";
+          if (null != result1) {
+            const _String = String;
+            str4 = String(result1);
+          }
+        }
+        items1 = [c12(TextInput, obj11), ];
+        let tmp56Result = null;
+        if (null != description) {
+          const obj12 = { text: description, variant: "body-xs/normal", color: "text-muted" };
+          tmp56Result = tmp56(notifyAgent(tmp2[24]), obj12);
+        }
+        items1[1] = tmp56Result;
+        tmp53Result = tmp53(tmp54, obj9, result);
       }
-      items = [closure_12(TextInput, obj5), ];
-      let tmp28Result = null;
-      if (null != description) {
-        const obj6 = { text: description, variant: "body-xs/normal", color: "text-muted" };
-        tmp28Result = tmp28(notifyAgent(tmp2[21]), obj6);
-      }
-      items[1] = tmp28Result;
-      tmp25Result = tmp25(tmp26, obj4, result);
+      return tmp53Result;
     }
-    return tmp25Result;
   }
   function renderSecret(value) {
+    let hint;
+    let hosts;
     let intl2;
     let intl3;
     let items;
     let items1;
     let items2;
-    let obj7;
+    let obj8;
+    let required;
     let str;
     let str2;
+    let str3;
     let stringResult;
     let closure_0 = value;
     const def = value.def;
@@ -775,126 +1011,200 @@ export default function useConjureAppSettingsForm(projectId) {
     if (label == null) {
       label = value.name;
     }
-    const tmp2 = hintFor(value.def);
-    if (value.set) {
-      let tmp4Result;
-      if (true !== _undefined[value.name]) {
-        const obj2 = { style: closure_3.secretRow, children: items1 };
-        const obj3 = { style: closure_3.secretRowInfo, children: items };
-        const obj4 = { variant: "body-sm/medium", color: "text-default", children: label };
-        items = [closure_12(projectId(onSaved[28]).Text, obj4), closure_12(projectId(onSaved[28]).Text, { variant: "body-sm/normal", color: "text-muted", children: "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022" }), ];
-        let tmp19Result = null;
-        if (null != tmp2) {
-          const obj5 = { text: tmp2, variant: "body-xs/normal", color: "text-muted" };
-          tmp19Result = tmp19(notifyAgent(tmp21[21]), obj5);
+    const tmp2 = closure_33;
+    if (tmp2) {
+      const def2 = value.def;
+      const obj2 = {
+        label,
+        help: hint,
+        hosts,
+        stored: value.set,
+        replacing: true === c12[value.name],
+        onReplace() {
+            let name;
+            return c13((arg0) => {
+              const obj = {};
+              const merged = Object.assign(arg0);
+              obj[name.name] = true;
+              return obj;
+            });
+          },
+        required: true === required,
+        value: str3,
+        onChange(arg0) {
+            const name = arg0;
+            _undefined2(false);
+            closure_1_11((arg0) => {
+              const obj = {};
+              const merged = Object.assign(arg0);
+              obj[name.name] = name;
+              return obj;
+            });
+          },
+        onFocus,
+        onBlur,
+        disabled: first2
+      };
+      hint = undefined;
+      const tmp49 = c12;
+      const tmp52 = notifyAgent(onSaved[32]);
+      if (def2 != null) {
+        hint = def2.hint;
+      }
+      const def3 = value.def;
+      hosts = undefined;
+      if (def3 != null) {
+        hosts = def3.hosts;
+      }
+      const def4 = value.def;
+      required = undefined;
+      if (def4 != null) {
+        required = def4.required;
+      }
+      str3 = first1[value.name];
+      if (str3 == null) {
+        str3 = "";
+      }
+      return tmp49(tmp52, obj2, value.name);
+    } else {
+      const tmp4 = hintFor(value.def);
+      if (value.set) {
+        let tmp6Result;
+        if (true !== c12[value.name]) {
+          const obj3 = { style: closure_4.secretRow, children: items1 };
+          const obj4 = { style: closure_4.secretRowInfo, children: items };
+          const obj5 = { variant: "body-sm/medium", color: "text-default", children: label };
+          items = [c12(projectId(onSaved[33]).Text, obj5), c12(projectId(onSaved[33]).Text, { variant: "body-sm/normal", color: "text-muted", children: "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022" }), ];
+          let tmp36 = null;
+          if (null != tmp4) {
+            const obj6 = { text: tmp4, variant: "body-xs/normal", color: "text-muted" };
+            tmp36 = c12(notifyAgent(onSaved[24]), obj6);
+          }
+          items[2] = tmp36;
+          items1 = [_undefined(onBlur, obj4), ];
+          const obj7 = {
+            variant: "secondary",
+            size: "sm",
+            text: intl2.string(notifyAgent(onSaved[18]).RsvBGf),
+            accessibilityLabel: intl3.formatToPlainString(notifyAgent(onSaved[18]).WjoM7z, obj8),
+            disabled: first2,
+            onPress() {
+                    let name;
+                    return c13((arg0) => {
+                      const obj = {};
+                      const merged = Object.assign(arg0);
+                      obj[name.name] = true;
+                      return obj;
+                    });
+                  }
+          };
+          const Button = tmp32(onSaved[34]).Button;
+          intl2 = tmp32(onSaved[17]).intl;
+          intl3 = tmp32(onSaved[17]).intl;
+          obj8 = { label };
+          items1[1] = c12(Button, obj7);
+          tmp6Result = tmp28(tmp29, obj3, value.name);
         }
-        items[2] = tmp19Result;
-        items1 = [_undefined(closure_6, obj3), ];
-        const obj6 = {
-          variant: "secondary",
-          size: "sm",
-          text: intl2.string(notifyAgent(onSaved[17]).RsvBGf),
-          accessibilityLabel: intl3.formatToPlainString(notifyAgent(onSaved[17]).WjoM7z, obj7),
-          disabled: first2,
-          onPress() {
-                let name;
-                return c10((arg0) => {
-                  const obj = {};
-                  const merged = Object.assign(arg0);
-                  obj[name.name] = true;
-                  return obj;
-                });
-              }
-        };
-        const Button = tmp20(tmp21[29]).Button;
-        intl2 = tmp20(tmp21[16]).intl;
-        intl3 = tmp20(tmp21[16]).intl;
-        obj7 = { label };
-        items1[1] = closure_12(Button, obj6);
-        tmp4Result = tmp16(tmp17, obj2, value.name);
+        return tmp6Result;
       }
-      return tmp4Result;
-    }
-    let obj = { style: closure_3.linkedField, children: items2 };
-    const obj8 = {
-      label,
-      placeholder: str,
-      secureTextEntry: true,
-      autoComplete: "off",
-      autoCapitalize: "none",
-      autoCorrect: false,
-      value: str2,
-      errorMessage: stringResult,
-      onChange(arg0) {
-        const name = arg0;
-        _undefined(false);
-        closure_1_8((arg0) => {
-          const obj = {};
-          const merged = Object.assign(arg0);
-          obj[name.name] = name;
-          return obj;
-        });
-      },
-      disabled: first2
-    };
-    str = undefined;
-    const TextInput = projectId(onSaved[27]).TextInput;
-    const tmp4 = _undefined;
-    const tmp5 = closure_6;
-    const tmp7 = projectId;
-    if (value.set) {
-      str = "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022";
-    }
-    str2 = first1[value.name];
-    if (str2 == null) {
-      str2 = "";
-    }
-    let name = value.name;
-    stringResult = undefined;
-    if (c14) {
-      if (closure_27.includes(name)) {
-        const intl = tmp7(tmp8[16]).intl;
-        stringResult = intl.string(notifyAgent(tmp8[17])["PW1+MY"]);
+      let obj = { style: closure_4.linkedField, children: items2 };
+      const obj9 = {
+        label,
+        placeholder: str,
+        secureTextEntry: true,
+        autoComplete: "off",
+        autoCapitalize: "none",
+        autoCorrect: false,
+        value: str2,
+        errorMessage: stringResult,
+        onChange(arg0) {
+            const name = arg0;
+            _undefined2(false);
+            closure_1_11((arg0) => {
+              const obj = {};
+              const merged = Object.assign(arg0);
+              obj[name.name] = name;
+              return obj;
+            });
+          },
+        onFocus,
+        onBlur,
+        disabled: first2
+      };
+      str = undefined;
+      const TextInput = projectId(onSaved[31]).TextInput;
+      const tmp10 = projectId;
+      const tmp6 = _undefined;
+      const tmp7 = onBlur;
+      const tmp9 = c12;
+      if (value.set) {
+        str = "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022";
       }
+      str2 = first1[value.name];
+      if (str2 == null) {
+        str2 = "";
+      }
+      let name = value.name;
+      stringResult = undefined;
+      if (c17) {
+        if (closure_34.includes(name)) {
+          const intl = tmp10(onSaved[17]).intl;
+          stringResult = intl.string(notifyAgent(onSaved[18])["PW1+MY"]);
+        }
+      }
+      items2 = [tmp9(TextInput, obj9), ];
+      let tmp23 = null;
+      if (null != tmp4) {
+        const obj10 = { text: tmp4, variant: "body-xs/normal", color: "text-muted" };
+        tmp23 = c12(notifyAgent(onSaved[24]), obj10);
+      }
+      items2[1] = tmp23;
+      tmp6Result = tmp6(tmp7, obj, value.name);
     }
-    items2 = [closure_12(TextInput, obj8), ];
-    let tmp6Result = null;
-    if (null != tmp2) {
-      const obj9 = { text: tmp2, variant: "body-xs/normal", color: "text-muted" };
-      tmp6Result = tmp6(notifyAgent(tmp8[21]), obj9);
-    }
-    items2[1] = tmp6Result;
-    tmp4Result = tmp4(tmp5, obj, value.name);
   }
-  let tmp = c15();
-  _asyncToGenerator = tmp;
+  let tmp = closure_15();
+  _slicedToArray = tmp;
+  let obj = react;
+  let items = [onInputFocusChange];
+  react = react.useCallback(() => {
+    let tmpResult;
+    if (onInputFocusChange != null) {
+      tmpResult = tmp(true);
+    }
+    return tmpResult;
+  }, items);
+  let items1 = [onInputFocusChange];
+  const onBlur = react.useCallback(() => {
+    let tmpResult;
+    if (onInputFocusChange != null) {
+      tmpResult = tmp(false);
+    }
+    return tmpResult;
+  }, items1);
   let tmp2 = projectId;
   let tmp3 = onSaved;
-  let obj = projectId(onSaved[12]);
-  let items = [first2];
-  const stateFromStores = obj.useStateFromStores(items, () => ConjureSettingsStore.getSettings(projectId));
-  let obj2 = first;
-  let tmp5 = stateFromStores(first.useState({}), 2);
-  first = tmp5[0];
-  let closure_6 = tmp5[1];
-  let tmp7 = stateFromStores(first.useState({}), 2);
-  const first1 = tmp7[0];
-  let closure_8 = tmp7[1];
-  let tmp9 = stateFromStores(first.useState({}), 2);
-  [c9, c10] = tmp9;
-  let tmp10 = stateFromStores(first.useState(false), 2);
-  first2 = tmp10[0];
-  let closure_12 = tmp10[1];
-  [tmp13, c13] = stateFromStores(first.useState(false), 2);
-  const tmp12 = stateFromStores(first.useState(false), 2);
-  [c14, c15] = stateFromStores(first.useState(false), 2);
-  const tmp14 = stateFromStores(first.useState(false), 2);
-  [c16, c17] = stateFromStores(first.useState({}), 2);
-  const tmp15 = stateFromStores(first.useState({}), 2);
-  let closure_18 = first.useCallback((arg0, arg1) => {
+  let obj2 = projectId(onSaved[12]);
+  let items2 = [closure_11];
+  const stateFromStores = obj2.useStateFromStores(items2, () => ConjureSettingsStore.getSettings(projectId));
+  [values, closure_9] = react.useState({});
+  [first1, closure_11] = react.useState({});
+  let tmp9 = _slicedToArray(react.useState({}), 2);
+  [c12, c13] = tmp9;
+  [first2, closure_15] = react.useState(false);
+  [tmp13, c16] = _slicedToArray(react.useState(false), 2);
+  const tmp12 = _slicedToArray(react.useState(false), 2);
+  [c17, c18] = _slicedToArray(react.useState(false), 2);
+  const tmp14 = _slicedToArray(react.useState(false), 2);
+  [c19, c20] = _slicedToArray(react.useState(false), 2);
+  const tmp15 = _slicedToArray(react.useState(false), 2);
+  [c21, c22] = _slicedToArray(react.useState(null), 2);
+  const tmp16 = _slicedToArray(react.useState(null), 2);
+  [c23, c24] = _slicedToArray(react.useState({}), 2);
+  const tmp17 = _slicedToArray(react.useState({}), 2);
+  let closure_25 = react.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
-    const tmp = _undefined4((arg0) => {
+    const tmp = _undefined42((arg0) => {
       let tmp3 = arg0;
       if (arg0[closure_0] !== closure_1) {
         const obj = {};
@@ -905,8 +1215,8 @@ export default function useConjureAppSettingsForm(projectId) {
       return tmp3;
     });
   }, []);
-  let items1 = [stateFromStores];
-  const memo = first.useMemo(() => {
+  const items3 = [stateFromStores];
+  const memo = react.useMemo(() => {
     let schema;
     if (stateFromStores != null) {
       schema = stateFromStores.schema;
@@ -915,15 +1225,15 @@ export default function useConjureAppSettingsForm(projectId) {
       schema = [];
     }
     return schema;
-  }, items1);
+  }, items3);
   let obj3 = projectId(onSaved[13]);
-  let closure_20 = obj3.useConjureSettingsGuildId(projectId, flag);
+  let closure_27 = obj3.useConjureSettingsGuildId(projectId, flag);
   let obj4 = projectId(onSaved[13]);
   const conjureSettingsServers = obj4.useConjureSettingsServers(projectId, flag);
   ({ servers, serverId } = conjureSettingsServers);
   const setServerId = conjureSettingsServers.setServerId;
-  let items2 = [memo, stateFromStores];
-  const memo1 = first.useMemo(() => {
+  const items4 = [memo, stateFromStores];
+  const memo1 = react.useMemo(() => {
     let secrets;
     if (stateFromStores != null) {
       secrets = stateFromStores.secrets;
@@ -937,31 +1247,34 @@ export default function useConjureAppSettingsForm(projectId) {
       const merged = Object.assign(item);
       return obj;
     });
-  }, items2);
+  }, items4);
   let found = memo.filter((type) => "secret" !== type.type);
   map = new Map(memo1.map((name) => {
     const items = [name.name, name];
     return items;
   }));
-  if (scopeKeys == null) {
-    scopeKeys = [];
-  }
-  found1 = scopeKeys.filter((item) => {
+  let obj5 = projectId(onSaved[15]);
+  let result = obj5.conjureSettingsRequestNamedKeys(scopeKeys);
+  const found1 = result.filter((item) => {
     let closure_0 = item;
     const someResult = found.some((key) => key.key === closure_0) || map.has(item);
     return someResult;
   });
-  let tmp18 = found1.length > 0;
-  closure_26 = tmp18;
+  let tmp20 = found1.length > 0;
+  const shortLinks = tmp20;
+  let result1 = null;
+  if (null != stateFromStores) {
+    let tmp2Result = tmp2(tmp3[15]);
+    result1 = tmp2Result.conjureSettingsRequestSections(found1, stateFromStores);
+  }
   let found2 = found;
-  let someResult = found1.some((item) => map.has(item));
-  if (tmp18) {
+  if (tmp20) {
     found2 = found.filter((key) => found1.includes(key.key));
   }
-  let tmp2Result = tmp2(tmp3[15]);
-  const conjureMissingRequiredSettings = tmp2Result.conjureMissingRequiredSettings;
+  const conjureMissingRequiredSettings = tmp2(tmp3[16]).conjureMissingRequiredSettings;
+  tmp2(tmp3[16]);
   const found3 = found2.filter((per_server) => true !== per_server.per_server || null != serverId);
-  closure_27 = conjureMissingRequiredSettings(found3.map((def) => {
+  closure_34 = conjureMissingRequiredSettings(found3.map((def) => {
     let result;
     const obj = { def, value: result };
     const obj2 = conjureSettingValues;
@@ -974,12 +1287,12 @@ export default function useConjureAppSettingsForm(projectId) {
     return obj;
   }));
   let found4 = memo1;
-  const conjureMissingRequiredSettings2 = tmp2(tmp3[15]).conjureMissingRequiredSettings;
-  tmp2(tmp3[15]);
-  if (tmp18) {
+  const conjureMissingRequiredSettings2 = tmp2(tmp3[16]).conjureMissingRequiredSettings;
+  tmp2(tmp3[16]);
+  if (tmp20) {
     found4 = memo1.filter((name) => found1.includes(name.name));
   }
-  closure_28 = conjureMissingRequiredSettings2(found4.flatMap((def) => {
+  closure_35 = conjureMissingRequiredSettings2(found4.flatMap((def) => {
     let items;
     if (null == def.def) {
       items = [];
@@ -989,8 +1302,8 @@ export default function useConjureAppSettingsForm(projectId) {
     }
     return items;
   }));
-  const items3 = [memo, first1, stateFromStores, first];
-  memo2 = obj2.useMemo(() => {
+  const items5 = [memo, first1, stateFromStores, values];
+  memo2 = obj.useMemo(() => {
     let str;
     let tmp6;
     const obj = {};
@@ -1011,15 +1324,62 @@ export default function useConjureAppSettingsForm(projectId) {
     const obj4 = conjureSettingValues;
     const merged1 = Object.assign(obj4.conjureSecretsSubmission(memo, obj));
     return obj2;
-  }, items3);
-  someResult1 = memo.some((type) => "game" === type.type && true === c16[type.key]);
-  let tmp24 = (null != memo2.values || null != memo2.server_values || null != memo2.secrets) && !someResult1;
-  closure_31 = tmp24;
-  const items4 = [tmp24, someResult1, notifyAgent, onSaved, projectId, first2, memo2];
-  const callback = obj2.useCallback(_asyncToGenerator(async (arg0, value) => {
+  }, items5);
+  let conjureSetupItemsResult = null;
+  if (tmp20) {
+    conjureSetupItemsResult = null;
+    if (null != stateFromStores) {
+      let obj6 = { values, secrets: first1, serverId };
+      const tmp2Result10 = tmp2(tmp3[19]);
+      conjureSetupItemsResult = tmp2Result10.conjureSetupItems(found1, stateFromStores, obj6);
+    }
+  }
+  let items6 = conjureSetupItemsResult;
+  const conjureSetupNeededText = tmp2(tmp3[19]).conjureSetupNeededText;
+  tmp2(tmp3[19]);
+  if (conjureSetupItemsResult == null) {
+    items6 = [];
+  }
+  const found5 = items6.filter((needed) => needed.needed);
+  result2 = conjureSetupNeededText(found5.map((label) => label.label));
+  let items15;
+  if (result1 != null) {
+    items15 = result1.valueKeys;
+  }
+  if (items15 == null) {
+    items15 = [];
+  }
+  const mapped = items15.map((item) => {
+    let closure_0 = item;
+    return found.find((key) => key.key === closure_0);
+  });
+  const found6 = mapped.find((item) => {
+    const tmp = null != item && null != draftErrorOf(item);
+    return tmp;
+  });
+  result3 = null;
+  if (null != found6) {
+    const tmp2Result12 = tmp2(tmp3[14]);
+    result3 = tmp2Result12.conjureSettingDraftKey(found6, serverId);
+  }
+  const found7 = found.find((item) => {
+    const obj = conjureSettingValues;
+    return obj.conjureSettingDraftKey(item, serverId) === c21;
+  });
+  if (null != found7) {
+    draftErrorOfResult = draftErrorOf(found7);
+  }
+  let someResult = memo.some((type) => "game" === type.type && true === c23[type.key]);
+  c40 = someResult;
+  const tmp33 = (null != memo2.values || null != memo2.server_values || null != memo2.secrets || null != result3) && !someResult;
+  closure_41 = tmp33;
+  const items7 = [tmp33, result3, someResult, notifyAgent, onSaved, projectId, first2, result2, memo2];
+  const callback = obj.useCallback(onInputFocusChange(function*(arg0, value) {
     let closure_0;
     let closure_2;
-    let obj2;
+    let intl;
+    let obj4;
+    let obj9;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -1027,15 +1387,16 @@ export default function useConjureAppSettingsForm(projectId) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
       try {
         let rebuildRequired;
+        let incomplete;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -1043,28 +1404,33 @@ export default function useConjureAppSettingsForm(projectId) {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            let closure_1 = tmp;
             projectId = tmp4;
             rebuildRequired = undefined;
-            const tmp56 = someResult1;
-            if (tmp56) {
+            incomplete = undefined;
+            const tmp75 = c40;
+            if (tmp75) {
+              c5 = 3;
+              return { value: false, done: true };
+            } else if (null != result3) {
+              _undefined3(true);
+              _undefined4(tmp31);
               c5 = 3;
               return { value: false, done: true };
             } else {
-              const tmp23 = closure_31;
-              if (tmp23) {
-                const tmp24 = first2;
-                if (!tmp24) {
-                  closure_12(true);
-                  _undefined(false);
+              const tmp76 = closure_41;
+              if (tmp76) {
+                const tmp32 = first2;
+                if (!tmp32) {
+                  closure_15(true);
+                  _undefined2(false);
                   c3 = 2;
                   c4 = 3;
                   c5 = 1;
-                  const obj5 = { value: obj2.submitProjectSettings(projectId, memo2), done: false };
-                  obj2 = projectId(onSaved[18]);
+                  const obj5 = { value: obj4.submitProjectSettings(projectId, memo2), done: false };
+                  obj4 = projectId(onSaved[20]);
                   return obj5;
                 }
               }
@@ -1074,12 +1440,12 @@ export default function useConjureAppSettingsForm(projectId) {
           }
         } else if (1 === c4) {
           c3 = 0;
-          closure_129_12(false);
+          closure_129_15(false);
           throw onSaved;
         } else if (2 === c4) {
-          closure_129_13(true);
+          closure_129_16(true);
           c3 = 0;
-          closure_129_12(false);
+          closure_129_15(false);
           c5 = 3;
           return { value: false, done: true };
         } else if (arg0 === 1) {
@@ -1087,184 +1453,241 @@ export default function useConjureAppSettingsForm(projectId) {
           throw value;
         } else if (arg0 === 2) {
           c3 = 0;
-          closure_129_12(false);
+          closure_129_15(false);
           c5 = 3;
-          const obj = { value, done: true };
-          return obj;
+          const obj6 = { value, done: true };
+          return obj6;
         } else {
           rebuildRequired = value.rebuildRequired;
-          const obj7 = { rebuildRequired, notifyAgent: closure_129_1 };
-          const obj6 = projectId(onSaved[19]);
-          const result = obj6.settleProjectSettingsSave(closure_129_0, obj7);
-          closure_129_6({});
-          closure_129_8({});
-          closure_129_10({});
-          closure_129_15(false);
-          if (closure_129_2 != null) {
+          incomplete = "" !== closure_129_37;
+          const obj7 = { rebuildRequired, notifyAgent: closure_129_1, incomplete };
+          const obj8 = projectId(onSaved[21]);
+          const result = obj8.settleProjectSettingsSave(closure_129_0, obj7);
+          closure_129_9({});
+          closure_129_11({});
+          closure_129_13({});
+          closure_129_18(false);
+          closure_129_20(false);
+          if (incomplete) {
+            const obj = { text: intl.formatToPlainString(incomplete(onSaved[18])["xfz7+k"], obj9), variant: "success" };
+            const showToast = projectId(onSaved[22]).showToast;
+            const tmp7 = projectId(onSaved[22]);
+            intl = projectId(onSaved[17]).intl;
+            obj9 = { items: closure_129_37 };
+            showToast(obj);
+          } else if (closure_129_2 != null) {
             closure_129_2();
           }
           c3 = 0;
-          closure_129_12(false);
+          closure_129_15(false);
           c5 = 3;
           return { value: true, done: true };
         }
-      } catch (tmp33) {
-        onSaved = tmp33;
+      } catch (tmp45) {
+        onSaved = tmp45;
         if (0 === c3) {
           c5 = 3;
-          throw tmp33;
-        } else if (1 === tmp35) {
+          throw tmp45;
+        } else if (1 === tmp47) {
           c4 = 1;
         } else {
           c4 = 2;
         }
       }
     }
-  }), items4);
-  const found5 = found2.filter((per_server) => true === per_server.per_server);
-  let tmp26 = null;
-  if (0 !== found5.length) {
-    let tmp49Result;
+  }), items7);
+  const found8 = found2.filter((per_server) => true === per_server.per_server);
+  let tmp35 = null;
+  if (0 !== found8.length) {
+    let tmp66Result;
     if (null == serverId) {
-      let obj5 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(notifyAgent(tmp3[17]).IT21e4) };
-      let Text = tmp2(tmp3[28]).Text;
-      intl4 = tmp2(tmp3[16]).intl;
-      tmp49Result = closure_12(Text, obj5);
+      let obj7 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(notifyAgent(tmp3[18]).IT21e4) };
+      let Text = tmp2(tmp3[33]).Text;
+      intl4 = tmp2(tmp3[17]).intl;
+      const tmp41 = notifyAgent;
+      tmp66Result = c12(Text, obj7);
     } else {
-      let tmp29 = null;
-      const tmp49 = c13;
-      const tmp50 = c14;
+      let tmp38 = null;
+      const tmp66 = c13;
+      const tmp67 = first2;
       if (servers.length > 1) {
-        let obj6 = {
+        let tmp36 = c12;
+        let obj8 = {
           hasIcons: false,
           value: serverId,
           onChange(arg0) {
                   return setServerId(arg0);
                 },
-          title: intl.string(notifyAgent(tmp3[17])["6FmRyw"]),
-          description: intl2.string(notifyAgent(tmp3[17])["NVQu+I"]),
-          accessibilityLabel: intl3.string(notifyAgent(tmp3[17])["6FmRyw"]),
+          title: intl.string(notifyAgent(tmp3[18])["6FmRyw"]),
+          description: intl2.string(notifyAgent(tmp3[18])["NVQu+I"]),
+          accessibilityLabel: intl3.string(notifyAgent(tmp3[18])["6FmRyw"]),
           children: servers.map((label) => {
                   const obj = { label: label.name, value: label.guildId };
-                  return closure_12(projectId(onSaved[24]).TableRadioRow, obj, label.guildId);
+                  return c12(projectId(onSaved[27]).TableRadioRow, obj, label.guildId);
                 })
         };
-        let TableRadioGroup = tmp2(tmp3[23]).TableRadioGroup;
-        intl = tmp2(tmp3[16]).intl;
-        let tmp28 = notifyAgent;
-        intl2 = tmp2(tmp3[16]).intl;
-        intl3 = tmp2(tmp3[16]).intl;
-        tmp29 = closure_12(TableRadioGroup, obj6);
+        let TableRadioGroup = tmp2(tmp3[26]).TableRadioGroup;
+        intl = tmp2(tmp3[17]).intl;
+        const tmp37 = notifyAgent;
+        intl2 = tmp2(tmp3[17]).intl;
+        intl3 = tmp2(tmp3[17]).intl;
+        tmp38 = c12(TableRadioGroup, obj8);
       }
-      let obj7 = { children: items5 };
-      items5 = [tmp29, found5.map(renderValueSetting)];
-      tmp49Result = tmp49(tmp50, obj7);
+      let obj9 = { children: items8 };
+      items8 = [tmp38, found8.map(renderValueSetting)];
+      tmp66Result = tmp66(tmp67, obj9);
     }
-    tmp26 = tmp49Result;
+    tmp35 = tmp66Result;
   }
-  let tmp33 = null;
+  let tmp42 = null;
   if (tmp13) {
-    let obj8 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl5.string(notifyAgent(tmp3[17])["A5TC+K"]) };
-    const Text2 = tmp2(tmp3[28]).Text;
-    intl5 = tmp2(tmp3[16]).intl;
-    const tmp35 = notifyAgent;
-    tmp33 = closure_12(Text2, obj8);
+    let obj10 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl5.string(notifyAgent(tmp3[18])["A5TC+K"]) };
+    const Text2 = tmp2(tmp3[33]).Text;
+    intl5 = tmp2(tmp3[17]).intl;
+    let tmp44 = notifyAgent;
+    tmp42 = c12(Text2, obj10);
   }
-  let obj9 = { style: tmp.section, children: items6 };
-  let tmp38 = null;
+  let valueKeys2;
+  if (result1 != null) {
+    valueKeys2 = result1.valueKeys;
+  }
+  if (valueKeys2 == null) {
+    valueKeys2 = [];
+  }
+  const found9 = valueKeys2.filter((item) => {
+    let closure_0 = item;
+    return !found.some((key) => key.key === closure_0 && true === key.per_server);
+  });
+  const tmp45 = c13;
+  let tmp46 = onBlur;
+  let obj11 = { style: tmp20 ? tmp.setupForm : tmp.section, children: null };
+  let tmp47 = null;
   if (null != note) {
     let str = "";
-    tmp38 = null;
+    tmp47 = null;
     if ("" !== note) {
-      const obj10 = { text: note, variant: "body-sm/normal", color: "text-default" };
-      tmp38 = closure_12(notifyAgent(tmp3[21]), obj10);
+      let tmp49 = notifyAgent;
+      let obj12 = { text: note, variant: "body-sm/normal", color: "text-default", shortLinks: tmp20 };
+      tmp47 = c12(notifyAgent(tmp3[24]), obj12);
     }
   }
-  items6 = [tmp38, , , , ];
-  let tmp41 = null;
+  const items9 = [tmp47, , , ];
+  let tmp50 = null;
   if (null != stateFromStores) {
-    tmp41 = null;
+    tmp50 = null;
     if (0 === found.length) {
-      tmp41 = null;
+      tmp50 = null;
       if (0 === memo1.length) {
-        const obj11 = { variant: "body-sm/normal", color: "text-muted", children: intl6.string(notifyAgent(tmp3[17]).lJJayk) };
-        const Text3 = tmp2(tmp3[28]).Text;
-        intl6 = tmp2(tmp3[16]).intl;
-        tmp41 = closure_12(Text3, obj11);
+        const obj13 = { variant: "body-sm/normal", color: "text-muted", children: intl6.string(notifyAgent(tmp3[18]).lJJayk) };
+        const Text3 = tmp2(tmp3[33]).Text;
+        intl6 = tmp2(tmp3[17]).intl;
+        let tmp52 = notifyAgent;
+        tmp50 = c12(Text3, obj13);
       }
     }
   }
-  items6[1] = tmp41;
-  if (tmp18) {
-    let tmp46 = null;
-    const tmp45 = c14;
-    if (someResult) {
-      let tmp47 = closure_12;
-      const obj12 = { variant: "body-xs/normal", color: "text-muted", children: intl7.string(notifyAgent(tmp3[17]).dsHRPK) };
-      const Text4 = tmp2(tmp3[28]).Text;
-      intl7 = tmp2(tmp3[16]).intl;
-      tmp46 = closure_12(Text4, obj12);
-    }
-    const obj13 = { children: items7 };
-    items7 = [tmp46, ];
-    const found6 = found1.filter((item) => {
-      let closure_0 = item;
-      return !found.some((key) => key.key === closure_0 && true === key.per_server);
-    });
-    items7[1] = found6.map(function renderScoped(item) {
-      let closure_0 = item;
-      const value = map.get(item);
-      if (null != value) {
-        return renderSecret(value);
-      } else {
-        found = found.find((key) => key.key === closure_0);
-        let tmp4 = null;
-        if (null != found) {
-          tmp4 = renderValueSetting(found);
-        }
-        return tmp4;
-      }
-    });
-    mapped = tmp36(tmp45, obj13);
-  } else {
-    const found7 = found.filter((per_server) => true !== per_server.per_server);
-    mapped = found7.map(renderValueSetting);
-  }
-  items6[2] = mapped;
-  items6[3] = tmp26;
-  items6[4] = tmp33;
-  const obj14 = {
-    fields: c13(closure_6, obj9),
-    secretFields: c13(closure_6, obj15),
-    loaded: null != stateFromStores,
-    valueCount: found.length,
-    secretCount: memo1.length,
-    isScoped: tmp18,
-    canSave: tmp24,
-    saving: first2,
-    submit: callback,
-    validate() {
-      let tmp2;
-      if (0 !== closure_27.length) {
-        let str;
-        _undefined2(true);
-        const tmp5 = closure_26;
-        if (tmp5) {
-          str = "fields";
+  items9[1] = tmp50;
+  if (tmp20) {
+    let obj24;
+    let result4;
+    if (null != result1) {
+      function renderScoped(item) {
+        let closure_0 = item;
+        const value = map.get(item);
+        if (null != value) {
+          return renderSecret(value);
         } else {
-          str = "secretFields";
+          found = found.find((key) => key.key === closure_0);
+          let tmp4 = null;
+          if (null != found) {
+            tmp4 = renderValueSetting(found);
+          }
+          return tmp4;
         }
-        tmp2 = str;
-      } else {
-        tmp2 = null;
       }
-      return tmp2;
+      let tmp54 = null;
+      if (result1.secretKeys.length > 0) {
+        const tmp56 = notifyAgent;
+        const obj14 = { title: intl7.string(notifyAgent(tmp3[18])["xEfQj/"]), children: secretKeys.map(renderScoped) };
+        let tmp57 = notifyAgent(tmp3[35]);
+        intl7 = tmp2(tmp3[17]).intl;
+        secretKeys = result1.secretKeys;
+        tmp54 = c12(tmp57, obj14);
+      }
+      const items10 = [tmp54, ];
+      let tmp45Result2 = null;
+      if (result1.valueKeys.length > 0) {
+        let tmp45Result = null;
+        const obj15 = { style: tmp.section, children: items12 };
+        if (result1.sectioned) {
+          const obj16 = { style: tmp.sectionHeader, children: items11 };
+          const obj17 = { variant: "heading-sm/semibold", children: intl8.string(notifyAgent(tmp3[18])["I+6HlE"]) };
+          const Heading = tmp2(tmp3[33]).Heading;
+          intl8 = tmp2(tmp3[17]).intl;
+          items11 = [c12(Heading, obj17), ];
+          const obj18 = { variant: "body-xs/normal", color: "text-muted", children: intl9.string(notifyAgent(tmp3[18]).ZyFI3A) };
+          const Text4 = tmp2(tmp3[33]).Text;
+          intl9 = tmp2(tmp3[17]).intl;
+          items11[1] = c12(Text4, obj18);
+          tmp45Result = tmp45(tmp46, obj16);
+        }
+        items12 = [tmp45Result, found9.map(renderScoped), tmp35];
+        tmp45Result2 = tmp45(tmp46, obj15);
+      }
+      const obj19 = { children: items10 };
+      items10[1] = tmp45Result2;
+      obj24 = obj19;
     }
-  };
-  obj15 = { style: tmp.section, children: items8 };
-  const obj16 = { variant: "body-xs/normal", color: "text-muted", children: intl8.string(notifyAgent(tmp3[17]).dsHRPK) };
-  const Text5 = tmp2(tmp3[28]).Text;
-  intl8 = tmp2(tmp3[16]).intl;
-  items8 = [closure_12(Text5, obj16), memo1.map(renderSecret), tmp33];
-  return obj14;
+    const obj20 = { fields: tmp45(tmp46, obj11), secretFields: tmp45(tmp46, obj21), loaded: null != stateFromStores, valueCount: found.length, secretCount: memo1.length, isScoped: tmp20, progress: tmp64, status: null, statusIsError: null, canSave: null, saving: null, submit: null, validate: null };
+    items9[2] = tmp45(tmp53, obj24);
+    items9[3] = tmp42;
+    obj11.children = items9;
+    obj21 = { style: tmp.section, children: items13 };
+    const obj22 = { variant: "body-xs/normal", color: "text-muted", children: intl10.string(notifyAgent(tmp3[18]).jgDBJZ) };
+    const Text5 = tmp2(tmp3[33]).Text;
+    intl10 = tmp2(tmp3[17]).intl;
+    items13 = [c12(Text5, obj22), memo1.map(renderSecret), tmp42];
+    tmp64 = null;
+    if (null != conjureSetupItemsResult) {
+      tmp64 = { filled: conjureSetupItemsResult.filter(f115660).length, total: conjureSetupItemsResult.length };
+      const obj23 = { filled: conjureSetupItemsResult.filter(f115660).length, total: conjureSetupItemsResult.length };
+    }
+    if (null != found7) {
+      if (null != draftErrorOfResult) {
+        const tmp2Result13 = tmp2(tmp3[19]);
+        result4 = tmp2Result13.conjureSetupFieldErrorText(found7.label, draftErrorOfResult);
+      }
+      obj20.status = result4;
+      obj20.statusIsError = null != draftErrorOfResult;
+      obj20.canSave = tmp33;
+      obj20.saving = first2;
+      obj20.submit = callback;
+      obj20.validate = function validate() {
+        let tmp2;
+        if (0 !== closure_34.length) {
+          let str;
+          _undefined22(true);
+          const tmp5 = shortLinks;
+          if (tmp5) {
+            str = "fields";
+          } else {
+            str = "secretFields";
+          }
+          tmp2 = str;
+        } else {
+          tmp2 = null;
+        }
+        return tmp2;
+      };
+      return obj20;
+    }
+    result4 = null;
+    if (null != conjureSetupItemsResult) {
+      const tmp2Result14 = tmp2(tmp3[19]);
+      result4 = tmp2Result14.conjureSetupStatusText(conjureSetupItemsResult);
+    }
+  }
+  obj24 = { children: items14 };
+  const found10 = found.filter((per_server) => true !== per_server.per_server);
+  items14 = [found10.map(renderValueSetting), tmp35];
 };

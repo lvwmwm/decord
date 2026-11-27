@@ -1,10 +1,10 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10013
+// Function ID: 10014
 // Name: VoiceChatHooks
 // Dependencies: [502, 5691, 504, 2]
 // Exports: useIsConnectedToVoiceChannel, useIsConnectedToVoiceChannelForId
 
-// Module 10012 (VoiceChatHooks)
+// Module 10013 (VoiceChatHooks)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VoiceStateStore from "VoiceStateStore" /* 5691 */;
 import size from "module_2" /* 2 */;

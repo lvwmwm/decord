@@ -1,10 +1,10 @@
-// Module ID: 12257
-// Function ID: 12258
+// Module ID: 12265
+// Function ID: 12266
 // Name: useEmojisForReactionRow
-// Dependencies: [19, 1390, 9541, 1495, 4993, 2]
+// Dependencies: [19, 1390, 9542, 1495, 4993, 2]
 // Exports: useEmojisForReactionRow
 
-// Module 12257 (useEmojisForReactionRow)
+// Module 12265 (useEmojisForReactionRow)
 import EmojiConstants from "EmojiConstants" /* 1390 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 11421
-// Function ID: 11422
+// Module ID: 11422
+// Function ID: 11423
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1071, 21, 5043, 8136, 7052, 1413, 5730, 11422, 6152, 1112, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 5043, 8137, 7052, 1413, 5730, 11423, 6152, 1112, 2]
 // Exports: default
 
-// Module 11421 (IconUploader)
+// Module 11422 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import AvatarUtils from "AvatarUtils" /* 1413 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import Pressables from "Pressables" /* 6152 */;
 import GuildIcon from "GuildIcon" /* 7052 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11422 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11423 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -71,7 +71,7 @@ export default function IconUploader(disabled) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ export default function IconUploader(disabled) {
             closure_129_2.current = false;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;

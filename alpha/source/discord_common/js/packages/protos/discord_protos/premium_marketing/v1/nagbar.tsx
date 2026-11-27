@@ -1,13 +1,13 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 9189
+// Function ID: 9190
 // Name: nagbar
-// Dependencies: [32, 1196, 9171, 9170, 9169, 1226, 2]
+// Dependencies: [32, 1196, 9172, 9171, 9170, 1226, 2]
 
-// Module 9188 (nagbar)
+// Module 9189 (nagbar)
 import _mod1196 from "module_1196" /* 1196 */;
 import wrappers from "wrappers" /* 1226 */;
-import localized_string from "localized_string" /* 9169 */;
-import help_article from "help_article" /* 9170 */;
+import localized_string from "localized_string" /* 9170 */;
+import help_article from "help_article" /* 9171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

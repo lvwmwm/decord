@@ -1,22 +1,22 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10854
+// Function ID: 10855
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 9104, 1071, 1389, 21, 10854, 1112, 575, 10855, 10856, 5043, 1186, 5634, 9111, 9697, 1495, 6379, 6118, 1256, 9101, 6152, 7752, 5730, 10857, 2]
+// Dependencies: [19, 17, 9105, 1071, 1389, 21, 10855, 1112, 575, 10856, 10857, 5043, 1186, 5634, 9112, 9698, 1495, 6379, 6118, 1256, 9102, 6152, 7752, 5730, 10858, 2]
 // Exports: default
 
-// Module 10853 (StickersPremiumUpsellAlert)
+// Module 10854 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9101 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10854 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10855 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10856 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9102 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10855 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10856 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10857 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 9104 */;
+import IAPStore from "IAPStore" /* 9105 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
@@ -119,7 +119,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const products = obj.loadProducts();
     }
   }, []);
-  const tmp5 = analyticsLocations(9697)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(9698)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
@@ -169,7 +169,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(10857), style: tmp.imageHeader };
+  const obj6 = { source: analyticsLocations(10858), style: tmp.imageHeader };
   const tmp3Result2 = analyticsLocations(5730);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };

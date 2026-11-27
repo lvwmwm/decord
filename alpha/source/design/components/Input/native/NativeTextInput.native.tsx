@@ -106,7 +106,7 @@ export const NativeTextInput = function TextInput(ref) {
   }
   const obj3 = { ref: tmp6Result4.mergeRefs(ref1, ref) };
   const tmp6Result3 = ref1(5208);
-  const merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "Array", defaultValue: "channel_id" }));
+  const merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "displayName", defaultValue: "isArray" }));
   tmp6Result4 = ref1(5208);
   const tmp15 = closure_10(closure_5, obj3);
   let tmp17Result = tmp15;

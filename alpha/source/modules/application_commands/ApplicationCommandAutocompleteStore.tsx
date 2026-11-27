@@ -1,15 +1,15 @@
-// Module ID: 8181
-// Function ID: 8182
+// Module ID: 8182
+// Function ID: 8183
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [8182, 1071, 1379, 2118, 6013, 504, 572, 2]
+// Dependencies: [8183, 1071, 1379, 2118, 6013, 504, 572, 2]
 
-// Module 8181 (ApplicationCommandAutocompleteStore)
+// Module 8182 (ApplicationCommandAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2118 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8182 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8183 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 

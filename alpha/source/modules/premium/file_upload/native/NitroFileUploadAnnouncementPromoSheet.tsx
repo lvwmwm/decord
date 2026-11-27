@@ -1,10 +1,10 @@
-// Module ID: 19298
-// Function ID: 19299
+// Module ID: 19314
+// Function ID: 19315
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 4889, 21, 5043, 575, 5604, 10747, 19299, 1112, 2949, 5641, 2]
+// Dependencies: [19, 17, 4889, 21, 5043, 575, 5604, 10748, 19315, 1112, 2949, 5641, 2]
 // Exports: default
 
-// Module 19298 (NitroFileUploadAnnouncementPromoSheet)
+// Module 19314 (NitroFileUploadAnnouncementPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

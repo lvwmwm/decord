@@ -1,14 +1,14 @@
-// Module ID: 9343
-// Function ID: 9344
+// Module ID: 9344
+// Function ID: 9345
 // Name: WhatYouLoseProfileTier1
-// Dependencies: [19, 21, 8566, 9344, 9345, 9346, 5050, 5730, 2]
+// Dependencies: [19, 21, 8567, 9345, 9346, 9347, 5050, 5730, 2]
 // Exports: WhatYouLoseProfileTier1, getWhatYouLoseProfileTier1Source, useWhatYouLoseProfileTier1Source
 
-// Module 9343 (WhatYouLoseProfileTier1)
+// Module 9344 (WhatYouLoseProfileTier1)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5050 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import _mod8566 from "module_8566" /* 8566 */;
+import _mod8567 from "module_8567" /* 8567 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
 
 export function getWhatYouLoseProfileTier1Source(theme) {
-  const obj = _mod8566;
+  const obj = _mod8567;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useWhatYouLoseProfileTier1Source() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8566;
+  const obj2 = _mod8567;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function WhatYouLoseProfileTier1(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8566;
+  const obj2 = _mod8567;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

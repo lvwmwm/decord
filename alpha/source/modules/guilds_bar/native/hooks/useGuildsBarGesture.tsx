@@ -1,10 +1,10 @@
-// Module ID: 18073
-// Function ID: 18074
+// Module ID: 18080
+// Function ID: 18081
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 4914, 6164, 18074, 18071, 1654, 551, 5259, 5050, 12, 1242, 1112, 7428, 17750, 5607, 575, 4958, 11536, 1263, 6991, 6018, 9069, 1379, 1629, 5273, 18075, 18076, 9069, 16684, 5303, 1707, 2]
+// Dependencies: [5, 19, 17, 4914, 6164, 18081, 18078, 1654, 551, 5259, 5050, 12, 1242, 1112, 7428, 17757, 5607, 575, 4958, 11544, 1263, 6991, 6018, 9070, 1379, 1629, 5273, 18082, 18083, 9070, 16691, 5303, 1707, 2]
 // Exports: default
 
-// Module 18073 (useGuildsBarGesture)
+// Module 18080 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1112 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -16,12 +16,12 @@ import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5273 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 6164 */;
 import FastList from "FastList" /* 7428 */;
-import ContextMenuState from "ContextMenuState" /* 9069 */;
+import ContextMenuState from "ContextMenuState" /* 9070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18074 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18071 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18081 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18078 */;
 import "module_1654";
 import module_1654_mod from "module_1654" /* 1654 */;
 import debounce from "debounce" /* 551 */;
@@ -594,7 +594,7 @@ export default function useGuildsBarGesture() {
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "HermesInternal", done: "+95" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           let c3;
@@ -631,7 +631,7 @@ export default function useGuildsBarGesture() {
                                 c3 = 0;
                               }
                               c0 = 3;
-                              return { value: "HermesInternal", done: "+95" };
+                              return { value: "HermesInternal", done: null };
                             }
                           } catch (tmp8) {
                             closure_2 = tmp8;
@@ -702,7 +702,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Array", overSpecs: "channel_id" });
+    setStateShallow({ dragSpecs: "displayName", overSpecs: "isArray" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };
@@ -904,7 +904,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9069).ContextMenuStore;
+        const ContextMenuStore = tmp66(9070).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();

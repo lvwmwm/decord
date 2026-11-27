@@ -1,15 +1,15 @@
-// Module ID: 18436
-// Function ID: 18437
+// Module ID: 18443
+// Function ID: 18444
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 7006, 21, 5043, 575, 5099, 5634, 18437, 1413, 6144, 1186, 1629, 18442, 5079, 18443, 504, 1112, 7482, 11596, 5617, 2]
+// Dependencies: [19, 17, 7006, 21, 5043, 575, 5099, 5634, 18444, 1413, 6144, 1186, 1629, 18449, 5079, 18450, 504, 1112, 7482, 11604, 5617, 2]
 
-// Module 18436 (GuildSettingsModalMemberApplications)
+// Module 18443 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5079 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18437 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18444 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7006 */;
@@ -98,10 +98,10 @@ const memoResult1 = react.memo(function GuildSettingsModalMemberApplications(gui
   let tmp = closure_10();
   dependencyMap = tmp;
   const bottom = applicationStatus(1629)().bottom;
-  let obj = guildId(18442);
+  let obj = guildId(18449);
   let obj2 = { guildId, applicationStatus, sortOrder: guildId(5079).GuildJoinRequestSortOrders.TIMESTAMP_DESC };
   const guildJoinRequests = obj.useSortedMemberApplications(obj2).guildJoinRequests;
-  const obj3 = guildId(18443);
+  const obj3 = guildId(18450);
   const fetchNextPage = obj3.usePaginatedMemberApplications({ guildId, guildJoinRequests }).fetchNextPage;
   const items = [onEndReached];
   const items1 = [guildId, applicationStatus];
@@ -168,7 +168,7 @@ const memoResult1 = react.memo(function GuildSettingsModalMemberApplications(gui
     const FlashList = tmp4(7482).FlashList;
     tmp13Result = tmp13(FlashList, obj8);
   } else {
-    const obj10 = { Illustration: guildId(11596).NoResults, body: stringResult };
+    const obj10 = { Illustration: guildId(11604).NoResults, body: stringResult };
     const EmptyState = tmp4(1186).EmptyState;
     tmp13Result = tmp13(EmptyState, obj10);
   }

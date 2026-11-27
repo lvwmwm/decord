@@ -1,10 +1,10 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9262
+// Function ID: 9263
 // Name: BillingStandaloneNativeUtils
-// Dependencies: [5760, 1071, 3, 5838, 9262, 1626, 1091, 5722, 2]
+// Dependencies: [5760, 1071, 3, 5838, 9263, 1626, 1091, 5722, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 9261 (BillingStandaloneNativeUtils)
+// Module 9262 (BillingStandaloneNativeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import LinkingDefault from "Linking" /* 5722 */;

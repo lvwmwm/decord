@@ -1,10 +1,10 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10634
+// Function ID: 10635
 // Name: InAppMessageSoundsStore
 // Dependencies: [510, 1258, 4958, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10633 (InAppMessageSoundsStore)
+// Module 10634 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
 import _slicedToArray from "_slicedToArray" /* 4958 */;
 import module_1258 from "module_1258" /* 1258 */;

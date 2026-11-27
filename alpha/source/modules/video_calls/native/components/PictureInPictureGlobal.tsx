@@ -1,10 +1,10 @@
-// Module ID: 19256
-// Function ID: 19257
+// Module ID: 19272
+// Function ID: 19273
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 4891, 6933, 9090, 502, 2132, 1071, 5693, 21, 5043, 1186, 575, 10026, 504, 6942, 10017, 8449, 10025, 10042, 10028, 8910, 10131, 10135, 10143, 10157, 10190, 10007, 10132, 10024, 6963, 1654, 5253, 5597, 19257, 1629, 2]
+// Dependencies: [32, 19, 17, 4891, 6933, 9091, 502, 2132, 1071, 5693, 21, 5043, 1186, 575, 10027, 504, 6942, 10018, 8450, 10026, 10043, 10029, 8911, 10132, 10136, 10144, 10158, 10191, 10008, 10133, 10025, 6963, 1654, 5253, 5597, 19273, 1629, 2]
 // Exports: default
 
-// Module 19256 (PictureInPictureGlobal)
+// Module 19272 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
@@ -14,11 +14,11 @@ import NavigatorConstants from "NavigatorConstants" /* 5597 */;
 import CallConstants from "CallConstants" /* 5693 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6942 */;
 import isChannelFocused from "isChannelFocused" /* 6963 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8449 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9090 */;
-import transitionToActivityDefault from "transitionToActivity" /* 10007 */;
-import PictureInPictureDefault from "PictureInPicture" /* 10024 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19257 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8450 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9091 */;
+import transitionToActivityDefault from "transitionToActivity" /* 10008 */;
+import PictureInPictureDefault from "PictureInPicture" /* 10025 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19273 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -233,11 +233,11 @@ let closure_18 = react.memo(function PIPContent(channel) {
 let closure_19 = react.memo(function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f117663 = () => constants.TOP_RIGHT;
+  const f117942 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f117663);
+  [tmp2, tmp3] = react.useState(f117942);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_18, { channel }) };
-  _slicedToArray(react.useState(f117663), 2);
+  _slicedToArray(react.useState(f117942), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 });

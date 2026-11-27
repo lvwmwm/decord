@@ -1,16 +1,16 @@
-// Module ID: 17552
-// Function ID: 17553
+// Module ID: 17559
+// Function ID: 17560
 // Name: updatePersistentCodesEnabled
-// Dependencies: [5, 502, 4892, 5691, 8681, 1071, 572, 8680, 5792, 6046, 1112, 8684, 6797, 2]
+// Dependencies: [5, 502, 4892, 5691, 8682, 1071, 572, 8681, 5792, 6046, 1112, 8685, 6797, 2]
 // Exports: updatePersistentCodesEnabled
 
-// Module 17552 (updatePersistentCodesEnabled)
+// Module 17559 (updatePersistentCodesEnabled)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8680 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8681 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8684 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8681 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8682 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8685 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -39,7 +39,7 @@ let obj = function _savePersistentCodesEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _savePersistentCodesEnabled() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp38) {
           closure_5 = tmp38;
           if (0 === c6) {
@@ -160,7 +160,7 @@ obj = function _updatePersistentCodesEnabled() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ obj = function _updatePersistentCodesEnabled() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -257,7 +257,7 @@ obj = function _updatePersistentCodesEnabled() {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp6) {
                     c0 = 3;
@@ -282,7 +282,7 @@ obj = function _updatePersistentCodesEnabled() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;

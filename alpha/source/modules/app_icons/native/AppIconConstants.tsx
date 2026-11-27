@@ -1,41 +1,41 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9659
+// Function ID: 9660
 // Name: AppIconConstants
-// Dependencies: [5068, 5069, 9659, 1112, 9660, 9661, 9662, 9663, 9664, 9665, 9666, 9667, 9668, 9669, 9670, 9671, 9672, 9673, 9674, 9675, 9676, 9677, 9678, 9679, 9680, 9681, 9682, 9683, 5073, 9684, 5071, 4663, 2]
+// Dependencies: [5068, 5069, 9660, 1112, 9661, 9662, 9663, 9664, 9665, 9666, 9667, 9668, 9669, 9670, 9671, 9672, 9673, 9674, 9675, 9676, 9677, 9678, 9679, 9680, 9681, 9682, 9683, 9684, 5073, 9685, 5071, 4663, 2]
 // Exports: getDefaultIcon, getIconById, getIcons, getOfficialAlternateIcons, isIconExpired
 
-// Module 9658 (AppIconConstants)
+// Module 9659 (AppIconConstants)
 import intl25 from "intl" /* 1112 */;
 import _modDef4663 from "module_4663" /* 4663 */;
 import AppIconTypes from "AppIconTypes" /* 5069 */;
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5071 */;
 import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5073 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9659 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9660 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9661 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9662 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9663 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9664 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9665 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9666 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 9667 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 9668 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 9669 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 9670 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 9671 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 9672 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 9673 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 9674 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 9675 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 9676 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 9677 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 9678 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 9679 */;
-import AssetRegistryDefault22 from "AssetRegistry" /* 9680 */;
-import AssetRegistryDefault23 from "AssetRegistry" /* 9681 */;
-import AssetRegistryDefault24 from "AssetRegistry" /* 9682 */;
-import AssetRegistryDefault25 from "AssetRegistry" /* 9683 */;
-import AssetRegistryDefault26 from "AssetRegistry" /* 9684 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9660 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9661 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9662 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9663 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9664 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9665 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9666 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9667 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 9668 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 9669 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 9670 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 9671 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 9672 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 9673 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 9674 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 9675 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 9676 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 9677 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 9678 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 9679 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 9680 */;
+import AssetRegistryDefault22 from "AssetRegistry" /* 9681 */;
+import AssetRegistryDefault23 from "AssetRegistry" /* 9682 */;
+import AssetRegistryDefault24 from "AssetRegistry" /* 9683 */;
+import AssetRegistryDefault25 from "AssetRegistry" /* 9684 */;
+import AssetRegistryDefault26 from "AssetRegistry" /* 9685 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let intl6;
 let intl7;
 let intl8;
 let intl9;
-const f96241 = (expiresAt) => {
+const f96474 = (expiresAt) => {
   let tmp = null != expiresAt.expiresAt;
   if (tmp) {
     const _Date = Date;
@@ -190,14 +190,14 @@ export function isIconExpired(expiresAt) {
   return tmp;
 }
 export function getOfficialAlternateIcons() {
-  return items.filter(f96241);
+  return items.filter(f96474);
 }
 export { getLimitedAlternateIcons };
 export function getIcons() {
   let intl;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f96241), ...getLimitedAlternateIcons()];
+  items = [obj, ...items.filter(f96474), ...getLimitedAlternateIcons()];
   return items;
 }
 export function getIconById(currentAppIcon) {
@@ -207,7 +207,7 @@ export function getIconById(currentAppIcon) {
   let tmp = require;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f96241), ...getLimitedAlternateIcons()];
+  items = [obj, ...items.filter(f96474), ...getLimitedAlternateIcons()];
   let found = items.find((id) => id.id === closure_0);
   if (null == found) {
     const obj2 = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl2.string(intl25.t.ANxkLy), isPremium: false };

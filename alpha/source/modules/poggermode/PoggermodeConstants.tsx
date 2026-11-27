@@ -1,9 +1,9 @@
-// Module ID: 8341
-// Function ID: 8342
+// Module ID: 8342
+// Function ID: 8343
 // Name: PoggermodeConstants
 // Dependencies: [2]
 
-// Module 8341 (PoggermodeConstants)
+// Module 8342 (PoggermodeConstants)
 import size from "module_2" /* 2 */;
 
 let items;

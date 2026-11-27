@@ -1,17 +1,17 @@
-// Module ID: 8301
-// Function ID: 8302
+// Module ID: 8302
+// Function ID: 8303
 // Name: ReferencedMessageStore
-// Dependencies: [32, 8302, 8305, 4892, 6391, 1071, 1455, 6393, 6787, 504, 572, 2]
+// Dependencies: [32, 8303, 8306, 4892, 6391, 1071, 1455, 6393, 6787, 504, 572, 2]
 
-// Module 8301 (ReferencedMessageStore)
+// Module 8302 (ReferencedMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LRUCacheDefault from "LRUCache" /* 1455 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6393 */;
 import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 6787 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8302 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8305 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8303 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8306 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import Constants from "Constants" /* 1071 */;

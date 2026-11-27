@@ -1,10 +1,10 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13912
+// Function ID: 13913
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [32, 19, 13906, 2176, 4889, 1082, 13907, 504, 4876, 9561, 5806, 572, 13908, 2120, 5257, 2]
+// Dependencies: [32, 19, 13913, 2176, 4889, 1082, 13914, 504, 4876, 9562, 5806, 572, 13915, 2120, 5257, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 13905 (useGiftCardMobileConsumptionHalfsheet)
+// Module 13912 (useGiftCardMobileConsumptionHalfsheet)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1082 */;
 import dismissible_content from "dismissible_content" /* 4876 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5806 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WalletBalanceStore from "WalletBalanceStore" /* 13906 */;
+import WalletBalanceStore from "WalletBalanceStore" /* 13913 */;
 import PaymentSourceStore from "PaymentSourceStore" /* 2176 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export function useGiftCardMobileConsumptionHalfsheet() {
   let ref;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  obj = enabled(13907);
+  obj = enabled(13914);
   enabled = obj.useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
   let obj2 = enabled(504);
   let items = [markAsDismissed];
@@ -104,7 +104,7 @@ export function useGiftCardMobileConsumptionHalfsheet() {
     }
     return items1;
   }, items6);
-  const tmpResult = tmp(9561);
+  const tmpResult = tmp(9562);
   let tmp10 = first(tmpResult.useSelectedDismissibleContent(memo, { bypassAutoDismiss: true }), 2);
   first = tmp10[0];
   react = tmp12;
@@ -147,7 +147,7 @@ export function useGiftCardMobileConsumptionHalfsheet() {
         let c0 = false;
         obj = DispatcherDefault;
         const subscription = obj.subscribe("SHOW_ACTION_SHEET", handleShow);
-        const promise = asyncRequire(13908, tmp2.paths);
+        const promise = asyncRequire(13915, tmp2.paths);
         promise.catch(() => {
           const tmp = c0 || Idle !== closure_2_10.Opening;
           if (!tmp) {

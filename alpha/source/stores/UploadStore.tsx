@@ -1,9 +1,9 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 11963
+// Function ID: 11964
 // Name: UploadStore
 // Dependencies: [6391, 504, 572, 2]
 
-// Module 11955 (UploadStore)
+// Module 11963 (UploadStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MessageStore from "MessageStore" /* 6391 */;

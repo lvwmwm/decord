@@ -1,7 +1,7 @@
 // Module ID: 6790
 // Function ID: 6791
 // Name: MessageQueue
-// Dependencies: [109, 5637, 502, 5981, 1071, 5048, 1088, 6791, 3, 6013, 6792, 6793, 1285, 6400, 38, 8125, 8128, 8147, 8132, 2]
+// Dependencies: [109, 5637, 502, 5981, 1071, 5048, 1088, 6791, 3, 6013, 6792, 6793, 1285, 6400, 38, 8125, 8128, 8148, 8133, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
 // Module 6790 (MessageQueue)

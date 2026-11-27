@@ -1,10 +1,10 @@
-// Module ID: 11706
-// Function ID: 11707
+// Module ID: 11714
+// Function ID: 11715
 // Name: useReactionPermissions
-// Dependencies: [32, 4976, 4955, 6799, 4975, 1071, 504, 4981, 8827, 7628, 11707, 2]
+// Dependencies: [32, 4976, 4955, 6799, 4975, 1071, 504, 4981, 8828, 7628, 11715, 2]
 // Exports: default
 
-// Module 11706 (useReactionPermissions)
+// Module 11714 (useReactionPermissions)
 import Constants from "Constants" /* 1071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LurkingStore from "LurkingStore" /* 4976 */;

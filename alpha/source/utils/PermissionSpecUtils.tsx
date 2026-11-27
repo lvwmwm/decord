@@ -1,9 +1,9 @@
-// Module ID: 18791
-// Function ID: 18792
+// Module ID: 18809
+// Function ID: 18810
 // Name: PermissionSpecUtils
-// Dependencies: [4896, 4914, 1071, 7842, 18792, 7608, 7086, 18793, 1112, 2188, 7628, 6811, 18794, 7627, 18795, 8573, 8116, 2]
+// Dependencies: [4896, 4914, 1071, 7842, 18810, 7608, 7086, 18811, 1112, 2188, 7628, 6811, 18812, 7627, 18813, 8574, 8116, 2]
 
-// Module 18791 (PermissionSpecUtils)
+// Module 18809 (PermissionSpecUtils)
 import intl34 from "intl" /* 1112 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
@@ -12,10 +12,10 @@ import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnable
 import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7627 */;
 import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7842 */;
 import Tracking from "Tracking" /* 8116 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
-import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 18792 */;
-import HangoutWindowExperiment from "HangoutWindowExperiment" /* 18793 */;
-import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 18795 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
+import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 18810 */;
+import HangoutWindowExperiment from "HangoutWindowExperiment" /* 18811 */;
+import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 18813 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -81,7 +81,7 @@ let obj = {
     const enabled = VoiceInThreadsExperiment.getCurrentConfig(obj2).enabled && set.has(stateFromStores.type);
     const tmp4Result = tmp4(6811);
     const isStageVideoEnabledResult = tmp4Result.isStageVideoEnabled(guild_id);
-    const tmp4Result2 = tmp4(18794);
+    const tmp4Result2 = tmp4(18812);
     let result = tmp4Result2.canCurrentUserManageMessageFilters(guild_id);
     const isMediaChannelResult = stateFromStores.isMediaChannel();
     importDefault = isMediaChannelResult;
@@ -219,7 +219,7 @@ let obj = {
       }
       const obj9 = { sectionDescription: formatResult1, inSoundmojiExperiment };
       items4[5] = generateChannelVoiceChatSection(tmp3, stringResult1, obj9);
-      const generateChannelAppsSection2 = tmp33(18795).generateChannelAppsSection;
+      const generateChannelAppsSection2 = tmp33(18813).generateChannelAppsSection;
       permissions_PermissionUtilsAll;
       const intl15 = tmp4(1112).intl;
       items4[6] = generateChannelAppsSection2(tmp3, intl15.string(tmp4(1112).t["rrh/W6"]), { showActivities: false });
@@ -248,7 +248,7 @@ let obj = {
           const intl33 = tmp4(1112).intl;
           items5[3] = generateChannelAppsSection5(tmp3, intl33.string(tmp4(1112).t["rrh/W6"]));
           if (enabled) {
-            const generateChannelVoiceSection = tmp64(18795).generateChannelVoiceSection;
+            const generateChannelVoiceSection = tmp64(18813).generateChannelVoiceSection;
             permissions_PermissionUtilsAll;
             const intl = tmp4(1112).intl;
             const items6 = [generateChannelVoiceSection(tmp3, intl.string(tmp4(1112).t["46Ra1b"]))];
@@ -366,9 +366,9 @@ let obj = {
     }
     return mapped;
   },
-  getGuildPermissionSpecMap(id) {
+  getGuildPermissionSpecMap(guild) {
     const obj = permissions_PermissionUtilsAll;
-    return obj.getGuildPermissionSpec(getPermissionOptions(id.id));
+    return obj.getGuildPermissionSpec(getPermissionOptions(guild.id));
   }
 };
 let result = size.fileFinishedImporting("utils/PermissionSpecUtils.tsx");

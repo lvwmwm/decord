@@ -1,12 +1,12 @@
-// Module ID: 17430
-// Function ID: 17431
+// Module ID: 17437
+// Function ID: 17438
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 5607, 5040, 8486, 8616, 6115, 13612, 13799, 13615, 5641, 7549, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 5607, 5040, 8487, 8617, 6115, 13619, 13806, 13622, 5641, 7549, 2]
 // Exports: default
 
-// Module 17430 (UserSettingsDesignSystemTabs)
+// Module 17437 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8486 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8487 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -92,7 +92,7 @@ export default function UserSettingsDesignSystemTabs() {
     }
     return items;
   }, items);
-  let obj = first(8616);
+  let obj = first(8617);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: num, defaultIndex: 1 });
   let obj2 = first(5607);
   const token = obj2.useToken(tmp(575).colors.BACKGROUND_BASE_LOW);
@@ -101,17 +101,17 @@ export default function UserSettingsDesignSystemTabs() {
   items1[1] = obj3.hexWithOpacity(token, 0);
   const obj4 = { style: tmp15.container, ref, onLayout, children: closure_7(Stack, obj7) };
   Stack = first(6115).Stack;
-  const items2 = [closure_8(first(13612).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  const items2 = [closure_8(first(13619).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp21Result = first2;
   const tmp22 = closure_6;
   if (tmp21Result) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp21Result = tmp21(tmp(13799), obj5);
+    tmp21Result = tmp21(tmp(13806), obj5);
   }
   obj7 = { spacing: 24, children: items3 };
   items2[1] = tmp21Result;
   const obj6 = { children: closure_8(closure_5, obj4) };
-  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(13615).SegmentedControlPages, { state: segmentedControlState }), , ];
+  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(13622).SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj8 = { spacing: 8, direction: "horizontal", children: items4 };
   const Stack2 = tmp18(6115).Stack;
   items4 = [, ];

@@ -1,21 +1,21 @@
-// Module ID: 18254
-// Function ID: 18255
+// Module ID: 18261
+// Function ID: 18262
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 11718, 21, 9420, 14275, 5043, 575, 5252, 5607, 5648, 11714, 5752, 11726, 504, 11713, 1112, 7944, 2]
+// Dependencies: [19, 17, 11726, 21, 9421, 14282, 5043, 575, 5252, 5607, 5648, 11722, 5752, 11734, 504, 11721, 1112, 7944, 2]
 // Exports: default
 
-// Module 18254 (ForLaterOpenActionButton)
+// Module 18261 (ForLaterOpenActionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useThemeDefault from "useTheme" /* 5252 */;
 import useToken from "useToken" /* 5607 */;
 import ButtonHooks from "ButtonHooks" /* 5648 */;
-import ClipView from "ClipView" /* 9420 */;
-import showForLaterModal from "showForLaterModal" /* 11713 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 11714 */;
-import getIconSize from "getIconSize" /* 14275 */;
+import ClipView from "ClipView" /* 9421 */;
+import showForLaterModal from "showForLaterModal" /* 11721 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 11722 */;
+import getIconSize from "getIconSize" /* 14282 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11718 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11726 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let metroRequire;
 let size;
 let size1;
 let tmp;
-const ClipViewDefault = tmp(9420);
+const ClipViewDefault = tmp(9421);
 function BadgedIcon(arg0) {
   let BookmarkIcon;
   let items;
@@ -47,7 +47,7 @@ function BadgedIcon(arg0) {
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
     BookmarkIcon = tmp4(5752).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(11726).BookmarkIcon;
+    BookmarkIcon = tmp4(11734).BookmarkIcon;
   }
   const obj3 = { style: items, children: tmp8Result };
   items = [tmp6.container, iconSizeStyles];
@@ -86,7 +86,7 @@ export default function ForLaterActionButton(type) {
   type = type.type;
   const onOpen = type.onOpen;
   const ref = type.ref;
-  const tmp3 = type === type(11714).SavedMessageSortTypes.REMINDER;
+  const tmp3 = type === type(11722).SavedMessageSortTypes.REMINDER;
   dependencyMap = tmp3;
   let obj = type(504);
   const items = [SavedMessagesStore];

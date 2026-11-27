@@ -1,22 +1,22 @@
-// Module ID: 14855
-// Function ID: 14856
+// Module ID: 14861
+// Function ID: 14862
 // Name: NonUserBotProfileContent
-// Dependencies: [19, 17, 7557, 5272, 21, 9487, 6381, 6807, 5099, 9503, 14850, 14856, 1629, 9485, 9489, 7538, 5724, 14857, 1654, 9520, 9807, 1112, 13866, 2]
+// Dependencies: [19, 17, 7557, 5272, 21, 9488, 6381, 6807, 5099, 9504, 14856, 14862, 1629, 9486, 9490, 7538, 5724, 14863, 1654, 9521, 9808, 1112, 13873, 2]
 
-// Module 14855 (NonUserBotProfileContent)
+// Module 14861 (NonUserBotProfileContent)
 import react_native from "react-native" /* 17 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import useProfileThemeDefault from "useProfileTheme" /* 9485 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9487 */;
-import useBadgesDefault from "useBadges" /* 9503 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 9807 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 13866 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 14850 */;
-import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 14856 */;
+import useProfileThemeDefault from "useProfileTheme" /* 9486 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9488 */;
+import useBadgesDefault from "useBadges" /* 9504 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 9808 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 13873 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 14856 */;
+import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 14862 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7557 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,19 +85,19 @@ const memoResult = react.memo(function NonUserBotProfileContent(scrollPosition) 
   const bottom = tmp(1629)().bottom;
   ({ theme, primaryColor, secondaryColor } = useProfileThemeDefault({ user, displayProfile }));
   useProfileThemeDefault({ user, displayProfile });
-  const tmp4Result = trackUserProfileAction(9489);
+  const tmp4Result = trackUserProfileAction(9490);
   const userProfileColors = tmp4Result.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const containerBackground = userProfileColors.containerBackground;
   if (null == user) {
     return null;
   } else {
     let obj2 = { user, displayProfile, bannerHeight: tmp10, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur };
-    const items = [closure_7(tmp(14857), obj2), ];
+    const items = [closure_7(tmp(14863), obj2), ];
     const obj3 = { style: contentAnimatedStyle, children: items1 };
     View = tmp(1654).View;
     const obj4 = { user, guildId, backgroundColor: tmp14, disableStatus: true };
     guildId = undefined;
-    const OpenableUserProfileAvatar = tmp4(9520).OpenableUserProfileAvatar;
+    const OpenableUserProfileAvatar = tmp4(9521).OpenableUserProfileAvatar;
     const tmp23 = closure_9;
     if (displayProfile != null) {
       guildId = displayProfile.guildId;

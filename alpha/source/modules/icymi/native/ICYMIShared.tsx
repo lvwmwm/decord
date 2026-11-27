@@ -1,10 +1,10 @@
-// Module ID: 18342
-// Function ID: 18343
+// Module ID: 18349
+// Function ID: 18350
 // Name: ICYMIShared
-// Dependencies: [19, 17, 8123, 4892, 4955, 4975, 1387, 1071, 21, 8917, 14303, 7153, 9946, 9778, 7467, 7604, 7394, 8244, 6784, 18303, 1379, 575, 1186, 9420, 7052, 5649, 6152, 5634, 6950, 18343, 7745, 504, 6807, 8923, 6133, 7160, 8922, 12464, 8608, 1112, 18304, 5252, 5607, 5040, 1654, 5253, 7847, 7137, 7558, 7067, 2]
+// Dependencies: [19, 17, 8123, 4892, 4955, 4975, 1387, 1071, 21, 8918, 14310, 7153, 9947, 9779, 7467, 7604, 7394, 8245, 6784, 18310, 1379, 575, 1186, 9421, 7052, 5649, 6152, 5634, 6950, 18350, 7745, 504, 6807, 8924, 6133, 7160, 8923, 12472, 8609, 1112, 18311, 5252, 5607, 5040, 1654, 5253, 7847, 7137, 7558, 7067, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 18342 (ICYMIShared)
+// Module 18349 (ICYMIShared)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
@@ -18,11 +18,11 @@ import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7467 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 7604 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
-import ICYMIUtils from "ICYMIUtils" /* 8922 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8923 */;
-import ClipView from "ClipView" /* 9420 */;
-import openDetailsActionSheet2 from "openDetailsActionSheet" /* 18343 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
+import ICYMIUtils from "ICYMIUtils" /* 8923 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import ClipView from "ClipView" /* 9421 */;
+import openDetailsActionSheet2 from "openDetailsActionSheet" /* 18350 */;
 import react from "react" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 8123 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -31,7 +31,7 @@ import PermissionStore from "PermissionStore" /* 4975 */;
 import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18303 */;
+import createICYMIStyles from "createICYMIStyles" /* 18310 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

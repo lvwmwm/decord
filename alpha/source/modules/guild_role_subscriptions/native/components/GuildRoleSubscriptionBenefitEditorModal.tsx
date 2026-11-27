@@ -1,10 +1,10 @@
-// Module ID: 20241
-// Function ID: 20242
+// Module ID: 20299
+// Function ID: 20300
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4985, 1387, 20240, 16816, 21, 5043, 575, 5641, 1112, 5750, 20220, 1629, 6140, 20242, 5659, 7274, 20244, 20245, 7440, 2]
+// Dependencies: [5, 32, 19, 17, 4985, 1387, 20298, 16823, 21, 5043, 575, 5641, 1112, 5750, 20278, 1629, 6140, 20300, 5659, 7274, 20302, 20303, 7440, 2]
 // Exports: default
 
-// Module 20241 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 20299 (GuildRoleSubscriptionBenefitEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
@@ -16,8 +16,8 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 20240 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16816 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 20298 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16823 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -104,7 +104,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -148,7 +148,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp19) {
           closure_2 = tmp19;
           if (0 === c3) {
@@ -174,7 +174,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -217,7 +217,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           closure_2 = tmp10;
@@ -235,7 +235,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   const tmp2 = closure_15();
   const tmp3 = value;
   const tmp4 = dependencyMap;
-  const tmp5 = value(20220)();
+  const tmp5 = value(20278)();
   const tmp6 = _slicedToArray(GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState(), 2);
   value = tmp6[0];
   dependencyMap = tmp7;
@@ -303,7 +303,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     stringResult2 = intl5.string(tmp21(1112).t.NNqncc);
   }
   if (merged.benefitType === obj.CHANNEL) {
-    let obj2 = { title: stringResult1, hasIcons: true, children: closure_13(tmp3(20242), obj3) };
+    let obj2 = { title: stringResult1, hasIcons: true, children: closure_13(tmp3(20300), obj3) };
     const TableRowGroup = tmp21(6140).TableRowGroup;
     obj3 = {
       channelId: first4,
@@ -334,14 +334,14 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     },
     listingId: merged.listingId
   };
-  items = [tmp28(tmp3(20244), obj5), ];
+  items = [tmp28(tmp3(20302), obj5), ];
   const obj6 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: items1, children: items2 };
   items1 = [tmp2.scrollContainer, tmp5.container, ];
   const obj7 = { paddingBottom: sum + tmp3(575).space.PX_16 };
   sum = bottom + tmp3(575).space.PX_32;
   items1[2] = obj7;
   items2 = [tmp27, , , ];
-  const obj8 = { title: intl8.string(tmp21(1112).t.sMOuuS), hasIcons: true, children: tmp28(tmp3(20245), obj9) };
+  const obj8 = { title: intl8.string(tmp21(1112).t.sMOuuS), hasIcons: true, children: tmp28(tmp3(20303), obj9) };
   const TableRowGroup2 = tmp21(6140).TableRowGroup;
   intl8 = tmp21(1112).intl;
   obj9 = {

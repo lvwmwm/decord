@@ -1,14 +1,14 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16501
+// Function ID: 16502
 // Name: SubscriptionIcon
-// Dependencies: [19, 21, 575, 5729, 16495, 2]
+// Dependencies: [19, 21, 575, 5729, 16502, 2]
 // Exports: SubscriptionIcon
 
-// Module 16494 (SubscriptionIcon)
+// Module 16501 (SubscriptionIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 16495 */;
+import AssetRegistry from "AssetRegistry" /* 16502 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

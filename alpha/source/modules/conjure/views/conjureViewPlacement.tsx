@@ -1,21 +1,21 @@
-// Module ID: 18465
-// Function ID: 18466
+// Module ID: 18472
+// Function ID: 18473
 // Name: conjureViewPlacement
-// Dependencies: [32, 7708, 18466, 2]
+// Dependencies: [32, 7708, 18473, 2]
 // Exports: addConjureViewAppChannel, checkConjureViewPlacement, conjureViewPlacementCreatedChannels, conjureViewPlacementNeeded, conjureViewPlacementWire, initialConjureViewPlacement
 
-// Module 18465 (conjureViewPlacement)
+// Module 18472 (conjureViewPlacement)
 import ConjureViewsTypes from "ConjureViewsTypes" /* 7708 */;
-import conjureAppChannelNameDefault from "conjureAppChannelName" /* 18466 */;
+import conjureAppChannelNameDefault from "conjureAppChannelName" /* 18473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let map, set, set2, set3;
 
-const f115212 = (view) => view.view;
+const f115455 = (view) => view.view;
 function placedViewIds(appChannels) {
   appChannels = appChannels.appChannels;
-  set = new Set(appChannels.map(f115212));
+  set = new Set(appChannels.map(f115455));
   if (null != appChannels.activity) {
     set.add(appChannels.activity);
   }
@@ -48,7 +48,7 @@ export function initialConjureViewPlacement(views, buildAppChannels) {
   let live;
   let personal;
   let substr;
-  const f115210 = (name) => {
+  const f115453 = (name) => {
     let id;
     let items1;
     const items = [, ];
@@ -81,7 +81,7 @@ export function initialConjureViewPlacement(views, buildAppChannels) {
     }
     return items1;
   };
-  const f140034 = (suggestedSurfaces) => {
+  const f140490 = (suggestedSurfaces) => {
     suggestedSurfaces = suggestedSurfaces.suggestedSurfaces;
     return suggestedSurfaces.includes(app_channel);
   };
@@ -109,7 +109,7 @@ export function initialConjureViewPlacement(views, buildAppChannels) {
         if (views.some((suggestedSurfaces) => suggestedSurfaces.suggestedSurfaces.length > 0)) {
           let str = "activity";
           activity = "activity";
-          const first1 = views.filter(f140034)[0];
+          const first1 = views.filter(f140490)[0];
           let id;
           if (first1 != null) {
             id = first1.id;
@@ -119,7 +119,7 @@ export function initialConjureViewPlacement(views, buildAppChannels) {
           }
           let obj = { activity: id, voiceChannel: id1, appChannels: flatMapResult.slice(0, set(7708).CONJURE_MAX_VIEW_APP_CHANNELS) };
           const voice_channel = "voice_channel";
-          const first2 = views.filter(f140034)[0];
+          const first2 = views.filter(f140490)[0];
           id1 = undefined;
           if (first2 != null) {
             id1 = first2.id;
@@ -128,13 +128,13 @@ export function initialConjureViewPlacement(views, buildAppChannels) {
             id1 = null;
           }
           const app_channel = "app_channel";
-          let found = views.filter(f140034);
+          let found = views.filter(f140490);
           const _Set = Set;
           const self = this;
           const self2 = this;
           set = new Set();
           tmp13 = obj;
-          flatMapResult = found.flatMap(f115210);
+          flatMapResult = found.flatMap(f115453);
         }
         if (tmp13 == null) {
           let tmp17;
@@ -149,7 +149,7 @@ export function initialConjureViewPlacement(views, buildAppChannels) {
             const self3 = this;
             const self4 = this;
             const set1 = new Set();
-            obj2.appChannels = items.flatMap(f115210);
+            obj2.appChannels = items.flatMap(f115453);
             tmp17 = obj2;
           }
           tmp13 = tmp17;
@@ -269,7 +269,7 @@ export function addConjureViewAppChannel(appChannels, arr) {
       appChannels = appChannels.appChannels;
       const self4 = this;
       const self3 = this;
-      set = new Set(appChannels.map(f115212));
+      set = new Set(appChannels.map(f115455));
       if (null != appChannels.activity) {
         set.add(appChannels.activity);
       }

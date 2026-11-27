@@ -1,10 +1,10 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12253
+// Function ID: 12254
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 5044, 6883, 7053, 5076, 1071, 21, 5043, 575, 9762, 4868, 504, 9541, 1413, 5257, 9761, 5725, 1112, 9765, 9767, 7538, 5724, 9091, 7546, 7488, 5634, 4501, 2188, 6140, 6144, 2]
+// Dependencies: [19, 17, 5044, 6883, 7053, 5076, 1071, 21, 5043, 575, 9763, 4868, 504, 9542, 1413, 5257, 9762, 5725, 1112, 9766, 9768, 7538, 5724, 9092, 7546, 7488, 5634, 4501, 2188, 6140, 6144, 2]
 // Exports: default
 
-// Module 12245 (ReactionEmojiOptionsActionSheet)
+// Module 12253 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,10 +13,10 @@ import ToastUtils from "ToastUtils" /* 5724 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7053 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 9091 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9761 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9765 */;
-import StarIcon from "StarIcon" /* 9767 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 9092 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9762 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9766 */;
+import StarIcon from "StarIcon" /* 9768 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import EmojiStore from "EmojiStore" /* 6883 */;

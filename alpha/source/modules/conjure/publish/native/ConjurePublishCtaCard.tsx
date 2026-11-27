@@ -1,15 +1,15 @@
-// Module ID: 18818
-// Function ID: 18819
+// Module ID: 18833
+// Function ID: 18834
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 18463, 6115, 5641, 11459, 18636, 18819, 5634, 2]
+// Dependencies: [19, 21, 18470, 6115, 5641, 11469, 18647, 18834, 5634, 2]
 // Exports: default
 
-// Module 18818 (ConjurePublishCtaCard)
+// Module 18833 (ConjurePublishCtaCard)
 import components_Button_Button from "components/Button/Button" /* 5641 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11459 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 18463 */;
-import conjurePublishCard from "conjurePublishCard" /* 18636 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11469 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 18470 */;
+import conjurePublishCard from "conjurePublishCard" /* 18647 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp;
-const ConjureTipInlineCalloutDefault = tmp(18819);
+const ConjureTipInlineCalloutDefault = tmp(18834);
 function PublishCta(publish) {
   let tmp2;
   publish = publish.publish;

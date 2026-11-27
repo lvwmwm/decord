@@ -1,10 +1,10 @@
-// Module ID: 12892
-// Function ID: 12893
+// Module ID: 12900
+// Function ID: 12901
 // Name: CheckpointTruncatedText
 // Dependencies: [32, 19, 17, 21, 5725, 5634, 2]
 // Exports: default
 
-// Module 12892 (CheckpointTruncatedText)
+// Module 12900 (CheckpointTruncatedText)
 import Text_Text from "Text/Text" /* 5634 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

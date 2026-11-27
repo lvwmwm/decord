@@ -1,25 +1,26 @@
 // Module ID: 8130
 // Function ID: 8131
 // Name: clipPayloadUtils
-// Dependencies: [32, 8131, 1071, 5855, 1256, 2]
+// Dependencies: [32, 8131, 1071, 5855, 8132, 1256, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds, getClipSyncTimestamp
 
 // Module 8130 (clipPayloadUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Constants2 from "Constants" /* 5855 */;
+import ClipsSpeakerVolume from "ClipsSpeakerVolume" /* 8132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ClipsConstants from "ClipsConstants" /* 8131 */;
 import size from "module_2" /* 2 */;
 
-let importDefault, map;
+let map;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-({ CLIPS_MAX_PARTICIPANTS: c3, CLIPS_MAX_TIMELINE_EVENTS: closure_4, ClipSignalTypes: hasOwnProperty, GameEventType: metroRequire, CLIP_RUNTIME: metroImportDefault } = ClipsConstants);
+({ CLIPS_MAX_PARTICIPANTS: closure_4, CLIPS_MAX_TIMELINE_EVENTS: hasOwnProperty, ClipSignalTypes: metroRequire, GameEventType: metroImportDefault, CLIP_RUNTIME: metroImportAll } = ClipsConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 const SpeakingFlags = Constants2.SpeakingFlags;
 const ServerClipGameEventType = { UNKNOWN: 0, [0]: "UNKNOWN", KILL: 1, [1]: "KILL", MULTIKILL: 2, [2]: "MULTIKILL", DEATH: 3, [3]: "DEATH" };
@@ -50,13 +51,36 @@ export function getClipSyncTimestamp(clip) {
     return date.toISOString();
   }
 }
-export function getClipParticipantIds(users) {
-  return users.slice(0, _false);
+export function getClipParticipantIds(clip) {
+  const users = clip.users;
+  const found = users.filter((item) => {
+    const editMetadata = clip.editMetadata;
+    let hasItem;
+    const tmp = clip;
+    if (editMetadata != null) {
+      const mutedSpeakerIds = editMetadata.mutedSpeakerIds;
+      if (mutedSpeakerIds != null) {
+        hasItem = mutedSpeakerIds.includes(item);
+      }
+    }
+    let tmp3 = true === hasItem;
+    if (!tmp3) {
+      const editMetadata2 = tmp.editMetadata;
+      let speakerVolumes;
+      const sanitizeSpeakerVolumes = ClipsSpeakerVolume.sanitizeSpeakerVolumes;
+      ClipsSpeakerVolume;
+      if (editMetadata2 != null) {
+        speakerVolumes = editMetadata2.speakerVolumes;
+      }
+      tmp3 = 0 === sanitizeSpeakerVolumes(speakerVolumes)[item];
+    }
+    return !tmp3;
+  });
+  return found.slice(0, closure_4);
 }
 export { ServerClipGameEventType };
 export const ServerClipEmotionType = obj2;
 export function getClipEventsTimeline(clip) {
-  importDefault = clip;
   const timeline = clip.timeline;
   let num;
   if (timeline != null) {
@@ -88,10 +112,37 @@ export function getClipEventsTimeline(clip) {
         if (editMetadata != null) {
           voiceAudio = editMetadata.voiceAudio;
         }
-        return false !== voiceAudio && signal.signal.type === hasOwnProperty.SPEAKING || signal.signal.type === hasOwnProperty.GAME_EVENT;
+        let tmp3 = false !== voiceAudio && signal.signal.type === metroRequire.SPEAKING;
+        if (tmp3) {
+          const userId = signal.signal.userId;
+          const editMetadata2 = tmp.editMetadata;
+          let hasItem;
+          if (editMetadata2 != null) {
+            const mutedSpeakerIds = editMetadata2.mutedSpeakerIds;
+            if (mutedSpeakerIds != null) {
+              hasItem = mutedSpeakerIds.includes(userId);
+            }
+          }
+          let tmp6 = true === hasItem;
+          if (!tmp6) {
+            const editMetadata3 = tmp.editMetadata;
+            let speakerVolumes;
+            const sanitizeSpeakerVolumes = ClipsSpeakerVolume.sanitizeSpeakerVolumes;
+            ClipsSpeakerVolume;
+            if (editMetadata3 != null) {
+              speakerVolumes = editMetadata3.speakerVolumes;
+            }
+            tmp6 = 0 === sanitizeSpeakerVolumes(speakerVolumes)[userId];
+          }
+          tmp3 = !tmp6;
+        }
+        if (!tmp3) {
+          tmp3 = signal.signal.type === metroRequire.GAME_EVENT;
+        }
+        return tmp3;
       });
       const sorted = found.sort((timestamp, timestamp2) => timestamp.timestamp - timestamp2.timestamp);
-      const editMetadata2 = clip.editMetadata;
+      let editMetadata2 = clip.editMetadata;
       let voiceAudio;
       if (editMetadata2 != null) {
         voiceAudio = editMetadata2.voiceAudio;
@@ -105,6 +156,7 @@ export function getClipEventsTimeline(clip) {
       } else {
         items = [];
       }
+      let tmp6 = globalThis;
       const _Map = Map;
       const self = this;
       const self2 = this;
@@ -181,7 +233,7 @@ export function getClipEventsTimeline(clip) {
               continue;
             }
             let sorted1 = items1.sort((timestamp_ms, timestamp_ms2) => timestamp_ms.timestamp_ms - timestamp_ms2.timestamp_ms);
-            let substr = items1.slice(0, closure_4);
+            let substr = items1.slice(0, closure_5);
             if (substr.length !== items1.length) {
               let obj12 = AnalyticsUtilsDefault;
               let obj10 = { clip_uuid: clip.id, clip_event_timeline_size: items1.length, clip_runtime };

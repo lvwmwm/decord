@@ -1,19 +1,19 @@
-// Module ID: 19009
-// Function ID: 19010
+// Module ID: 19025
+// Function ID: 19026
 // Name: SmartSearchFeedback
-// Dependencies: [32, 19, 17, 13290, 21, 5043, 575, 13331, 13314, 504, 7482, 5634, 1112, 4469, 14067, 9061, 9063, 2]
+// Dependencies: [32, 19, 17, 13298, 21, 5043, 575, 13339, 13322, 504, 7482, 5634, 1112, 4469, 14074, 9062, 9064, 2]
 // Exports: SmartSearchFeedback
 
-// Module 19009 (SmartSearchFeedback)
+// Module 19025 (SmartSearchFeedback)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4469 from "module_4469" /* 4469 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13314 */;
-import SmartSearchActionCreators from "SmartSearchActionCreators" /* 13331 */;
-import IconActionButtonDefault from "IconActionButton" /* 14067 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13322 */;
+import SmartSearchActionCreators from "SmartSearchActionCreators" /* 13339 */;
+import IconActionButtonDefault from "IconActionButton" /* 14074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13290 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13298 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -60,7 +60,7 @@ export function SmartSearchFeedback(smartSearchQuery) {
     if (tmp7Result) {
       const obj5 = { style: tmp.buttonContainer, children: items4 };
       const obj6 = {
-        IconComponent: smartSearchQuery(9061).ThumbsUpIcon,
+        IconComponent: smartSearchQuery(9062).ThumbsUpIcon,
         onPress() {
               const obj = SmartSearchActionCreators;
               const obj2 = { smartSearchQuery, hasPositiveFeedback: true, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
@@ -72,7 +72,7 @@ export function SmartSearchFeedback(smartSearchQuery) {
       intl2 = tmp2(1112).intl;
       items4 = [closure_6(tmp14, obj6), ];
       const obj7 = {
-        IconComponent: smartSearchQuery(9063).ThumbsDownIcon,
+        IconComponent: smartSearchQuery(9064).ThumbsDownIcon,
         noMargin: true,
         onPress() {
               const obj = SmartSearchActionCreators;

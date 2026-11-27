@@ -1,10 +1,10 @@
-// Module ID: 20386
-// Function ID: 20387
+// Module ID: 20444
+// Function ID: 20445
 // Name: externalFingerprint
 // Dependencies: [502, 5782, 572, 2]
 // Exports: default
 
-// Module 20386 (externalFingerprint)
+// Module 20444 (externalFingerprint)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _mod5782 from "module_5782" /* 5782 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

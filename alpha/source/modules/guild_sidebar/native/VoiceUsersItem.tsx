@@ -1,10 +1,10 @@
-// Module ID: 17855
-// Function ID: 17856
+// Module ID: 17862
+// Function ID: 17863
 // Name: VoiceUsersItem
 // Dependencies: [19, 17, 21, 5043, 2]
 // Exports: default
 
-// Module 17855 (VoiceUsersItem)
+// Module 17862 (VoiceUsersItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

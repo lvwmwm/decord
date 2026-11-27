@@ -1,9 +1,9 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15870
+// Function ID: 15871
 // Name: RPCServerManager
-// Dependencies: [32, 8374, 4892, 4955, 4914, 2132, 6014, 5851, 4985, 4946, 1387, 5691, 5797, 1071, 6937, 10191, 5855, 1379, 572, 1256, 15864, 504, 1255, 10222, 15869, 10223, 7637, 5845, 15870, 15872, 7642, 10221, 8389, 2]
+// Dependencies: [32, 8375, 4892, 4955, 4914, 2132, 6014, 5851, 4985, 4946, 1387, 5691, 5797, 1071, 6937, 10192, 5855, 1379, 572, 1256, 15871, 504, 1255, 10223, 15876, 10224, 7637, 5845, 15877, 15879, 7642, 10222, 8390, 2]
 
-// Module 15863 (RPCServerManager)
+// Module 15870 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -13,16 +13,16 @@ import frameDeepLinks from "frameDeepLinks" /* 5845 */;
 import Constants3 from "Constants" /* 5855 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
 import transformUserDefault from "transformUser" /* 7642 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8389 */;
-import Constants4 from "Constants" /* 10191 */;
-import RPCHelpers from "RPCHelpers" /* 10221 */;
-import transformMessage from "transformMessage" /* 10222 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 10223 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15864 */;
-import useThermalState from "useThermalState" /* 15870 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15872 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8390 */;
+import Constants4 from "Constants" /* 10192 */;
+import RPCHelpers from "RPCHelpers" /* 10222 */;
+import transformMessage from "transformMessage" /* 10223 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 10224 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15871 */;
+import useThermalState from "useThermalState" /* 15877 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 8374 */;
+import QuestStore from "QuestStore" /* 8375 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildStore from "GuildStore" /* 4914 */;

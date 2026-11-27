@@ -1,18 +1,18 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8585
+// Function ID: 8586
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 5775, 4898, 21, 5043, 2169, 1112, 8466, 5052, 1501, 5634, 5641, 2019, 8479, 8485, 8571, 8488, 2]
+// Dependencies: [32, 19, 5775, 4898, 21, 5043, 2169, 1112, 8467, 5052, 1501, 5634, 5641, 2019, 8480, 8486, 8572, 8489, 2]
 // Exports: default
 
-// Module 8584 (EditGuildEventDetails)
+// Module 8585 (EditGuildEventDetails)
 import intl9 from "intl" /* 1112 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2019 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
-import ScheduleUtils from "ScheduleUtils" /* 8466 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8479 */;
+import ScheduleUtils from "ScheduleUtils" /* 8467 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8480 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ export default function EditGuildEventDetails(guildEvent) {
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f93821 = () => {
+  const f94054 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef2169(scheduledStartTime), recurrenceRule);
   };
@@ -83,8 +83,8 @@ export default function EditGuildEventDetails(guildEvent) {
     }
     return addResult;
   }, items1);
-  [c6, c7] = recurrenceRule(memo.useState(f93821), 2);
-  const tmp4 = recurrenceRule(memo.useState(f93821), 2);
+  [c6, c7] = recurrenceRule(memo.useState(f94054), 2);
+  const tmp4 = recurrenceRule(memo.useState(f94054), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[6])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

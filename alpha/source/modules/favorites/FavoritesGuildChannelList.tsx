@@ -1,16 +1,16 @@
-// Module ID: 18061
-// Function ID: 18062
+// Module ID: 18068
+// Function ID: 18069
 // Name: FavoritesGuildChannelList
-// Dependencies: [32, 19, 4891, 5849, 5775, 6931, 4977, 4896, 7474, 4892, 8285, 4914, 4975, 6932, 4946, 6167, 4895, 4974, 4905, 8292, 1082, 8286, 1195, 10755, 12, 10754, 1255, 10742, 2]
+// Dependencies: [32, 19, 4891, 5849, 5775, 6931, 4977, 4896, 7474, 4892, 8286, 4914, 4975, 6932, 4946, 6167, 4895, 4974, 4905, 8293, 1082, 8287, 1195, 10756, 12, 10755, 1255, 10743, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 18061 (FavoritesGuildChannelList)
+// Module 18068 (FavoritesGuildChannelList)
 import Constants from "Constants" /* 1082 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4974 */;
-import ChannelListState from "ChannelListState" /* 8286 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 8292 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10755 */;
+import ChannelListState from "ChannelListState" /* 8287 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 8293 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10756 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
@@ -21,7 +21,7 @@ import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 7474 */;
 import ChannelStore_mod from "ChannelStore" /* 4892 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8285 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8286 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
@@ -92,7 +92,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let closure_12;
   let closure_3;
   let closure_4;
-  const f132947 = (arg0) => {
+  const f133353 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -129,7 +129,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
     let tmp2 = FavoriteStore;
     favoriteChannels = FavoriteStore.getFavoriteChannels();
   }
-  let obj2 = favoriteChannels(10754);
+  let obj2 = favoriteChannels(10755);
   set = new Set(obj2.getAutoAddedThreadsCategoryIds(favoriteChannels));
   const isGuildCollapsedResult = UserGuildSettingsStore.isGuildCollapsed(id);
   dependencyMap = isGuildCollapsedResult;
@@ -272,14 +272,14 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(_undefined[26]).isNotNullish);
-        const iter = found.sortBy(f132947);
+        const iter = found.sortBy(f133353);
         closure_7 = iter.value();
       }
       return closure_7;
     },
     set: undefined
   });
-  let obj5 = favoriteChannels(10742);
+  let obj5 = favoriteChannels(10743);
   const favoritesCategories = obj5.getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
@@ -416,7 +416,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(_undefined[26]).isNotNullish);
-              const iter = found.sortBy(f132947);
+              const iter = found.sortBy(f133353);
               closure_1 = iter.value();
             }
             return closure_1;
@@ -688,7 +688,7 @@ export function useFavoritesGuildChannelList(arg0) {
   let c0;
   let flag2 = false;
   const tmp5 = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
-  if (obj2.getSections().length <= flag(8286).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+  if (obj2.getSections().length <= flag(8287).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     c0 = false;
     obj2.forEachShownChannel(() => {
       c0 = true;

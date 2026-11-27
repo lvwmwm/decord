@@ -1,10 +1,10 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8538
+// Function ID: 8539
 // Name: TableRowApplicationIcon
 // Dependencies: [19, 21, 5043, 575, 5730, 1413, 2]
 // Exports: default
 
-// Module 8537 (TableRowApplicationIcon)
+// Module 8538 (TableRowApplicationIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;

@@ -1,10 +1,10 @@
-// Module ID: 15075
-// Function ID: 15076
+// Module ID: 15082
+// Function ID: 15083
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4985, 1071, 21, 5043, 575, 5641, 6379, 6381, 14967, 504, 5099, 15076, 5733, 1112, 13618, 7850, 12147, 5257, 6130, 7847, 15078, 7944, 7137, 9022, 14085, 2]
+// Dependencies: [19, 17, 4985, 1071, 21, 5043, 575, 5641, 6379, 6381, 14974, 504, 5099, 15083, 5733, 1112, 13625, 7850, 12155, 5257, 6130, 7847, 15085, 7944, 7137, 9023, 14092, 2]
 // Exports: default
 
-// Module 15075 (UserProfileContactButtons)
+// Module 15082 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,9 +13,9 @@ import components_Button_Button from "components/Button/Button" /* 5641 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 12147 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13618 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 14085 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 12155 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13625 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 14092 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ function FriendRequestButton(user) {
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14967);
+  const tmp3Result = user(14974);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [userDisplayName];
   const tmp3Result2 = user(504);
@@ -90,7 +90,7 @@ function FriendRequestButton(user) {
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(15076).UserClockIcon;
+          UserPlusIcon = tmp3(15083).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(5733).UserPlusIcon;
         }

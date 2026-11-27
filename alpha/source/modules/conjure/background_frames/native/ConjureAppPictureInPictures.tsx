@@ -1,14 +1,14 @@
-// Module ID: 19384
-// Function ID: 19385
+// Module ID: 19400
+// Function ID: 19401
 // Name: ConjureAppPictureInPictures
-// Dependencies: [19, 17, 6936, 6937, 21, 5043, 1495, 1629, 19385, 7298, 1654, 19388, 504, 15952, 19389, 19391, 19392, 2]
+// Dependencies: [19, 17, 6936, 6937, 21, 5043, 1495, 1629, 19401, 7298, 1654, 19404, 504, 15959, 19405, 19407, 19408, 2]
 // Exports: default
 
-// Module 19384 (ConjureAppPictureInPictures)
+// Module 19400 (ConjureAppPictureInPictures)
 import react_native from "react-native" /* 17 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 15952 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19388 */;
-import useFloatConjureAppsOffScreenDefault from "useFloatConjureAppsOffScreen" /* 19392 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 15959 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19404 */;
+import useFloatConjureAppsOffScreenDefault from "useFloatConjureAppsOffScreen" /* 19408 */;
 import react_mod from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6936 */;
 import FramesConstants from "FramesConstants" /* 6937 */;

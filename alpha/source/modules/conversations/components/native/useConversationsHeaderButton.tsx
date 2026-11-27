@@ -1,16 +1,16 @@
-// Module ID: 9037
-// Function ID: 9038
+// Module ID: 9038
+// Function ID: 9039
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 8302, 5667, 9038, 1092, 9039, 9040, 504, 9044, 9043, 9046, 1112, 2]
+// Dependencies: [5, 19, 8303, 5667, 9039, 1092, 9040, 9041, 504, 9045, 9044, 9047, 1112, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9037 (useConversationsHeaderButton)
+// Module 9038 (useConversationsHeaderButton)
 import intl2 from "intl" /* 1112 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9040 */;
-import PaperIcon from "PaperIcon" /* 9044 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9041 */;
+import PaperIcon from "PaperIcon" /* 9045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8302 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8303 */;
 import ConversationConstants from "ConversationConstants" /* 5667 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ export function useConversationsHeaderButton(channel) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -98,7 +98,7 @@ export function useConversationsHeaderButton(channel) {
           ref = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         if (0 === ref) {
           c3 = 3;

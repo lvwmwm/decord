@@ -1,10 +1,10 @@
-// Module ID: 18827
-// Function ID: 18828
+// Module ID: 18842
+// Function ID: 18843
 // Name: conjureThinkingTail
 // Dependencies: [2]
 // Exports: followsTail
 
-// Module 18827 (conjureThinkingTail)
+// Module 18842 (conjureThinkingTail)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/conjureThinkingTail.tsx");

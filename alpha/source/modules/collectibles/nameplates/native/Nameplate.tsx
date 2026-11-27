@@ -1,10 +1,10 @@
-// Module ID: 9479
-// Function ID: 9480
+// Module ID: 9480
+// Function ID: 9481
 // Name: Nameplate
-// Dependencies: [19, 5044, 21, 5043, 504, 5252, 1654, 5253, 2110, 9480, 5598, 5730, 2]
+// Dependencies: [19, 5044, 21, 5043, 504, 5252, 1654, 5253, 2110, 9481, 5598, 5730, 2]
 // Exports: default
 
-// Module 9479 (Nameplate)
+// Module 9480 (Nameplate)
 import _mod1654 from "module_1654" /* 1654 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import react from "react" /* 19 */;
@@ -105,7 +105,7 @@ function NameplateInner(isFocused) {
   const animatedStyle = tmpResult.useAnimatedStyle(NameplateTsx1);
   const tmpResult3 = tmp(2110);
   const backgroundGradientColors = tmpResult3.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult4 = tmp(9480);
+  const tmpResult4 = tmp(9481);
   const nameplateAssets = tmpResult4.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp15 = true === flag7;

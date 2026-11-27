@@ -1,9 +1,9 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 10732
+// Function ID: 10733
 // Name: BugReportManager
-// Dependencies: [5, 17, 1361, 1071, 7872, 1379, 10626, 10628, 1269, 7475, 7879, 10732, 2]
+// Dependencies: [5, 17, 1361, 1071, 7872, 1379, 10627, 10629, 1269, 7475, 7879, 10733, 2]
 
-// Module 10731 (BugReportManager)
+// Module 10732 (BugReportManager)
 import Constants from "Constants" /* 1071 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
 import react_nativeDefault from "react-native" /* 7879 */;
@@ -29,7 +29,7 @@ function showNotification(uri) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ function showNotification(uri) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -105,7 +105,7 @@ function showNotification(uri) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -161,7 +161,7 @@ function showNotification(uri) {
             obj8 = tmp(duration[8]);
             enqueueNotification(obj10);
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -216,7 +216,7 @@ class BugReportManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -263,7 +263,7 @@ class BugReportManager extends AutomaticLifecycleManager {
               addScreenshotEvent();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = 3;

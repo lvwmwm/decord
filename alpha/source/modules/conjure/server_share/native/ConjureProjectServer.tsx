@@ -1,14 +1,14 @@
-// Module ID: 18507
-// Function ID: 18508
+// Module ID: 18514
+// Function ID: 18515
 // Name: ConjureProjectServer
-// Dependencies: [19, 4914, 6934, 21, 504, 7575, 18508, 1112, 4245, 6140, 6144, 18513, 18515, 18517, 2]
+// Dependencies: [19, 4914, 6934, 21, 504, 7575, 18515, 1112, 4245, 6140, 6144, 18518, 18520, 18522, 2]
 // Exports: default
 
-// Module 18507 (ConjureProjectServer)
+// Module 18514 (ConjureProjectServer)
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6934 */;
-import showConjureProjectServerSheetDefault from "showConjureProjectServerSheet" /* 18513 */;
-import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 18515 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 18517 */;
+import showConjureProjectServerSheetDefault from "showConjureProjectServerSheet" /* 18518 */;
+import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 18520 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 18522 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
@@ -49,7 +49,7 @@ export default function ConjureProjectServer(projectId) {
     }
     return name;
   }, items3);
-  const obj4 = projectId(18508);
+  const obj4 = projectId(18515);
   const tmp6 = obj4.useConjureProjectServerCandidates(projectId).length > 0;
   if (null != stateFromStores) {
     if (isProjectOwner(stateFromStores)) {

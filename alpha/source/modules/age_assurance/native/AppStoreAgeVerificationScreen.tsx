@@ -76,7 +76,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -138,7 +138,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             } else if ("accepted" === unknown_str.result) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } else {
               const reason = unknown_str.reason;
               unknown_str = reason;
@@ -152,7 +152,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp32) {
         status = tmp32;

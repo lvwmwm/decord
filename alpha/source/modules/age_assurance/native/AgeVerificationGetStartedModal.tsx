@@ -1,10 +1,10 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12554
+// Function ID: 12555
 // Name: AgeVerificationGetStartedModal
-// Dependencies: [19, 21, 5043, 575, 6130, 7191, 12547, 12549, 12550, 8060, 1269, 6828, 7355, 1112, 2]
+// Dependencies: [19, 21, 5043, 575, 6130, 7191, 12555, 12557, 12558, 8060, 1269, 6828, 7355, 1112, 2]
 // Exports: default
 
-// Module 12546 (AgeVerificationGetStartedModal)
+// Module 12554 (AgeVerificationGetStartedModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6828 */;

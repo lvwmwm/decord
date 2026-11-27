@@ -1,10 +1,10 @@
-// Module ID: 8220
-// Function ID: 8221
+// Module ID: 8221
+// Function ID: 8222
 // Name: InAppReportsTextLineElement
 // Dependencies: [5, 32, 19, 17, 21, 5043, 575, 5622, 6119, 1379, 5000, 5722, 5634, 5641, 1112, 7538, 5724, 2]
 // Exports: default
 
-// Module 8220 (InAppReportsTextLineElement)
+// Module 8221 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 575 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
@@ -91,7 +91,7 @@ export default function TextLineElement(element) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ export default function TextLineElement(element) {
               obj.openURL(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c3 = 3;

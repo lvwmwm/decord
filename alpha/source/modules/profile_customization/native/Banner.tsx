@@ -1,10 +1,10 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9519
+// Function ID: 9520
 // Name: Banner
 // Dependencies: [19, 17, 1071, 21, 5043, 1089, 5730, 2]
 // Exports: default
 
-// Module 9518 (Banner)
+// Module 9519 (Banner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;

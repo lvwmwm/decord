@@ -1,9 +1,9 @@
-// Module ID: 9890
-// Function ID: 9891
+// Module ID: 9891
+// Function ID: 9892
 // Name: QuestHomeNavigationStore
 // Dependencies: [5232, 2]
 
-// Module 9890 (QuestHomeNavigationStore)
+// Module 9891 (QuestHomeNavigationStore)
 import ZustandStore from "ZustandStore" /* 5232 */;
 import size from "module_2" /* 2 */;
 

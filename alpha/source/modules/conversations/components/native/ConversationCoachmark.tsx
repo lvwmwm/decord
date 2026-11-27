@@ -1,10 +1,10 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14087
+// Function ID: 14088
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4889, 21, 4876, 5043, 575, 5634, 1112, 9561, 9568, 2]
+// Dependencies: [32, 19, 17, 4889, 21, 4876, 5043, 575, 5634, 1112, 9562, 9569, 2]
 // Exports: ConversationCoachmark
 
-// Module 14080 (ConversationCoachmark)
+// Module 14087 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -49,7 +49,7 @@ export function ConversationCoachmark(arg0) {
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(9561);
+  let obj = first(9562);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -73,7 +73,7 @@ export function ConversationCoachmark(arg0) {
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9568);
+  const obj2 = first(9569);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

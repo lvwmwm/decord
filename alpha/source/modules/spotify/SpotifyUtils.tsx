@@ -1,15 +1,15 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12283
+// Function ID: 12284
 // Name: SpotifyUtils
-// Dependencies: [5, 2140, 7634, 7631, 7632, 1071, 1088, 6178, 7633, 12276, 2]
+// Dependencies: [5, 2140, 7634, 7631, 7632, 1071, 1088, 6178, 7633, 12284, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 12275 (SpotifyUtils)
+// Module 12283 (SpotifyUtils)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import PlatformsDefault from "Platforms" /* 6178 */;
 import SpotifyActionCreators from "SpotifyActionCreators" /* 7633 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 12276 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 12284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2140 */;
 import SpotifyProtocolStore from "SpotifyProtocolStore" /* 7634 */;
@@ -52,7 +52,7 @@ let value = function _getSpotifyMetadataFromActivity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

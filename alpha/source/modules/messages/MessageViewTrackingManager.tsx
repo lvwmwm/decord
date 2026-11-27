@@ -1,9 +1,9 @@
-// Module ID: 11981
-// Function ID: 11982
+// Module ID: 11989
+// Function ID: 11990
 // Name: MessageViewTrackingManager
 // Dependencies: [1071, 1264, 6380, 1255, 7475, 1455, 1256, 2]
 
-// Module 11981 (MessageViewTrackingManager)
+// Module 11989 (MessageViewTrackingManager)
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

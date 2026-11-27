@@ -1,22 +1,22 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17634
+// Function ID: 17635
 // Name: SystemNotifPermissionLayout
-// Dependencies: [5, 32, 19, 13381, 17628, 1071, 7872, 13382, 21, 3207, 5043, 575, 13390, 17097, 504, 1379, 1256, 13383, 10281, 6115, 6145, 11497, 5634, 1112, 5641, 17631, 7879, 13384, 17632, 2]
+// Dependencies: [5, 32, 19, 13389, 17635, 1071, 7872, 13390, 21, 3207, 5043, 575, 13398, 17104, 504, 1379, 1256, 13391, 10282, 6115, 6145, 11505, 5634, 1112, 5641, 17638, 7879, 13392, 17639, 2]
 // Exports: default
 
-// Module 17627 (SystemNotifPermissionLayout)
+// Module 17634 (SystemNotifPermissionLayout)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef3207 from "module_3207" /* 3207 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13383 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13391 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13381 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17628 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13389 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17635 */;
 import Constants from "Constants" /* 1071 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13382 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13390 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let obj6;
 let size;
 let tmp;
 let unpackModuleId;
-const react_nativeDefault = tmp(10281);
+const react_nativeDefault = tmp(10282);
 function SystemNotifPermissionHeader() {
   let BellSlashIcon;
   let Button;
@@ -207,7 +207,7 @@ export default function SystemNotifPermissionLayout(node) {
             obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -260,11 +260,11 @@ export default function SystemNotifPermissionLayout(node) {
                 } else {
                   c2 = 0;
                   c4 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp24) {
             if (0 === c2) {

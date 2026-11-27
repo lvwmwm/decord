@@ -1,10 +1,10 @@
-// Module ID: 10681
-// Function ID: 10682
+// Module ID: 10682
+// Function ID: 10683
 // Name: Sticker
-// Dependencies: [19, 17, 1191, 21, 6780, 6779, 1112, 10682, 5730, 5050, 7489, 7490, 2]
+// Dependencies: [19, 17, 1191, 21, 6780, 6779, 1112, 10683, 5730, 5050, 7489, 7490, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 10681 (Sticker)
+// Module 10682 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import shared from "shared" /* 5050 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import StickersUtils from "StickersUtils" /* 6779 */;
 import StickersTypes from "StickersTypes" /* 6780 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 10682 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 10683 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import size from "module_2" /* 2 */;
@@ -70,7 +70,7 @@ export default function Sticker(opaque) {
     if (str2 == null) {
       str2 = "";
     }
-    NativeLottieRenderMode = tmp(10682).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(10683).NativeLottieRenderMode;
     tmp11Result = tmp8(tmp10, size1);
   } else {
     const obj4 = { enableAnimation: animated, resizeMode: "contain", style: size2, placeholder: tmp12Result, source: obj5, accessible: true, accessibilityLabel: formatToPlainStringResult };

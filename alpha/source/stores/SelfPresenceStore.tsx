@@ -1,7 +1,7 @@
 // Module ID: 7654
 // Function ID: 7655
 // Name: SelfPresenceStore
-// Dependencies: [4891, 7631, 1231, 4892, 2159, 6796, 2163, 7655, 6014, 5853, 1071, 6015, 6361, 4868, 14766, 11377, 1344, 12, 504, 572, 2]
+// Dependencies: [4891, 7631, 1231, 4892, 2159, 6796, 2163, 7655, 6014, 5853, 1071, 6015, 6361, 4868, 14772, 11378, 1344, 12, 504, 572, 2]
 
 // Module 7654 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import UserSettings from "UserSettings" /* 4868 */;
 import PresenceStore2 from "PresenceStore" /* 6014 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;
 import LibraryApplicationUtils from "LibraryApplicationUtils" /* 6361 */;
-import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 14766 */;
+import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 14772 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import SpotifyStore from "SpotifyStore" /* 7631 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -29,7 +29,7 @@ const PresenceStore = PresenceStore2;
 let IDLE;
 let closure_18;
 let tmp;
-const isListeningOnSpotifyDefault = tmp(11377);
+const isListeningOnSpotifyDefault = tmp(11378);
 function filterPlayingActivities(arg0) {
   if (0 === arg0.length) {
     return arg0;

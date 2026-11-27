@@ -1,10 +1,10 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12434
+// Function ID: 12435
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 4892, 8117, 1071, 21, 5043, 5798, 6144, 12427, 1112, 6395, 7525, 10713, 7944, 7247, 8824, 38, 504, 12429, 8147, 8132, 12430, 2118, 6046, 8136, 12431, 10062, 11088, 2019, 11087, 8134, 6115, 575, 6140, 2]
+// Dependencies: [5, 19, 17, 4892, 8117, 1071, 21, 5043, 5798, 6144, 12435, 1112, 6395, 7525, 10714, 7944, 7247, 8825, 38, 504, 12437, 8148, 8133, 12438, 2118, 6046, 8137, 12439, 10063, 11089, 2019, 11088, 8135, 6115, 575, 6140, 2]
 // Exports: default
 
-// Module 12426 (FileUploadActionComponent)
+// Module 12434 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
@@ -14,10 +14,10 @@ import InteractionComponentUtils from "InteractionComponentUtils" /* 6395 */;
 import XSmallIcon from "XSmallIcon" /* 7247 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 7525 */;
 import DraftStore from "DraftStore" /* 8117 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10062 */;
-import AttachmentPreview from "AttachmentPreview" /* 10713 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11087 */;
-import FileUpIcon from "FileUpIcon" /* 12427 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10063 */;
+import AttachmentPreview from "AttachmentPreview" /* 10714 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11088 */;
+import FileUpIcon from "FileUpIcon" /* 12435 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -184,7 +184,7 @@ export default function FileUploadActionComponent(maxValues) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -223,7 +223,7 @@ export default function FileUploadActionComponent(maxValues) {
               }
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp5) {
           c6 = 0;

@@ -1,10 +1,10 @@
-// Module ID: 9566
-// Function ID: 9567
+// Module ID: 9567
+// Function ID: 9568
 // Name: markScopedDismissibleContentAsDismissed
 // Dependencies: [5075, 4877, 2]
 // Exports: markScopedDismissibleContentAsDismissed
 
-// Module 9566 (markScopedDismissibleContentAsDismissed)
+// Module 9567 (markScopedDismissibleContentAsDismissed)
 import DismissibleContentUtils from "DismissibleContentUtils" /* 4877 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5075 */;
 import size from "module_2" /* 2 */;

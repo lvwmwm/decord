@@ -1,10 +1,10 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11819
+// Function ID: 11820
 // Name: useIsChannelFullyOpen
-// Dependencies: [32, 19, 11807, 1654, 1707, 2]
+// Dependencies: [32, 19, 11815, 1654, 1707, 2]
 // Exports: default
 
-// Module 11811 (useIsChannelFullyOpen)
+// Module 11819 (useIsChannelFullyOpen)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

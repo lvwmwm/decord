@@ -1,10 +1,10 @@
-// Module ID: 11572
-// Function ID: 11573
+// Module ID: 11580
+// Function ID: 11581
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1073, 9467, 21, 5043, 575, 9477, 5730, 11573, 9490, 11169, 9431, 9466, 2110, 9479, 2113, 1074, 11235, 11234, 9417, 1112, 5634, 6322, 11245, 11574, 9415, 2174, 11264, 2]
+// Dependencies: [19, 17, 1073, 9468, 21, 5043, 575, 9478, 5730, 11581, 9491, 11170, 9432, 9467, 2110, 9480, 2113, 1074, 11236, 11235, 9418, 1112, 5634, 6322, 11246, 11582, 9416, 2174, 11265, 2]
 // Exports: default
 
-// Module 11572 (CollectiblesShopCheckoutDetails)
+// Module 11580 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
@@ -15,20 +15,20 @@ import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6322 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9417 */;
-import useShopProductItems from "useShopProductItems" /* 9431 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9466 */;
-import useProfileEffectDefault from "useProfileEffect" /* 9477 */;
-import NameplateDefault from "Nameplate" /* 9479 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 9490 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 11169 */;
-import _modDef11234 from "module_11234" /* 11234 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 11235 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11245 */;
-import getProductName from "getProductName" /* 11264 */;
-import _modDef11573 from "module_11573" /* 11573 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9418 */;
+import useShopProductItems from "useShopProductItems" /* 9432 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9467 */;
+import useProfileEffectDefault from "useProfileEffect" /* 9478 */;
+import NameplateDefault from "Nameplate" /* 9480 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 9491 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 11170 */;
+import _modDef11235 from "module_11235" /* 11235 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 11236 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11246 */;
+import getProductName from "getProductName" /* 11265 */;
+import _modDef11581 from "module_11581" /* 11581 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9467 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9468 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ function ProfileEffectAssetPreview(item) {
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef11573 };
+    obj3 = { uri: _modDef11581 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };
@@ -164,11 +164,11 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
     size = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    const FractionalNitroCoinIllustration = tmp2(11235).FractionalNitroCoinIllustration;
+    const FractionalNitroCoinIllustration = tmp2(11236).FractionalNitroCoinIllustration;
     return metroImportDefault(FractionalNitroCoinIllustration, size);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj = { source: obj2, style: tmp.externalProductImage };
-    obj2 = { uri: _modDef11234 };
+    obj2 = { uri: _modDef11235 };
     const tmp18 = FastImageDefault;
     return metroImportDefault(tmp18, obj);
   } else {

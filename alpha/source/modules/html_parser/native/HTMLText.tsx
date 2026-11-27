@@ -1,14 +1,14 @@
-// Module ID: 9979
-// Function ID: 9980
+// Module ID: 9980
+// Function ID: 9981
 // Name: html_parser/HTMLText
-// Dependencies: [19, 21, 5043, 5634, 7812, 9980, 9981, 2]
+// Dependencies: [19, 21, 5043, 5634, 7812, 9981, 9982, 2]
 // Exports: HTMLText
 
-// Module 9979 (html_parser/HTMLText)
+// Module 9980 (html_parser/HTMLText)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7812 */;
-import groupHTMLTextRuns from "groupHTMLTextRuns" /* 9981 */;
+import groupHTMLTextRuns from "groupHTMLTextRuns" /* 9982 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -129,23 +129,23 @@ export function HTMLText(runs) {
   runs = runs.runs;
   let DEFAULT_TEXT_VARIANT = runs.textVariant;
   if (DEFAULT_TEXT_VARIANT === undefined) {
-    DEFAULT_TEXT_VARIANT = runs(9980).DEFAULT_TEXT_VARIANT;
+    DEFAULT_TEXT_VARIANT = runs(9981).DEFAULT_TEXT_VARIANT;
   }
   let DEFAULT_BOLD_TEXT_VARIANT = runs.boldTextVariant;
   if (DEFAULT_BOLD_TEXT_VARIANT === undefined) {
-    DEFAULT_BOLD_TEXT_VARIANT = runs(9980).DEFAULT_BOLD_TEXT_VARIANT;
+    DEFAULT_BOLD_TEXT_VARIANT = runs(9981).DEFAULT_BOLD_TEXT_VARIANT;
   }
   let DEFAULT_HEADING_VARIANTS = runs.headingVariants;
   if (DEFAULT_HEADING_VARIANTS === undefined) {
-    DEFAULT_HEADING_VARIANTS = runs(9980).DEFAULT_HEADING_VARIANTS;
+    DEFAULT_HEADING_VARIANTS = runs(9981).DEFAULT_HEADING_VARIANTS;
   }
   let native = runs.headingColor;
   if (native === undefined) {
-    native = runs(9980).DEFAULT_HEADING_COLORS.native;
+    native = runs(9981).DEFAULT_HEADING_COLORS.native;
   }
   let DEFAULT_LINK_COLOR = runs.linkColor;
   if (DEFAULT_LINK_COLOR === undefined) {
-    DEFAULT_LINK_COLOR = runs(9980).DEFAULT_LINK_COLOR;
+    DEFAULT_LINK_COLOR = runs(9981).DEFAULT_LINK_COLOR;
   }
   let flag = runs.linksAccessible;
   if (flag === undefined) {

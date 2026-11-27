@@ -1,14 +1,14 @@
-// Module ID: 18606
-// Function ID: 18607
+// Module ID: 18617
+// Function ID: 18618
 // Name: ConjureArchivePicker
-// Dependencies: [5, 7693, 10701, 18491, 1112, 4245, 18532, 2]
+// Dependencies: [5, 7693, 10702, 18498, 1112, 4245, 18539, 2]
 // Exports: describeConjureArchiveRejection, pickConjureArchive, sendConjureArchiveImport
 
-// Module 18606 (ConjureArchivePicker)
+// Module 18617 (ConjureArchivePicker)
 import _modDef4245 from "module_4245" /* 4245 */;
-import FilePickerUtils from "FilePickerUtils" /* 10701 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 18491 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18532 */;
+import FilePickerUtils from "FilePickerUtils" /* 10702 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 18498 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18539 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7693 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _pickConjureArchive() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _sendConjureArchiveImport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -182,7 +182,7 @@ obj = function _sendConjureArchiveImport() {
           const items = [closure_2];
           closure_132_5(closure_0, closure_1, items);
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c6 = 3;

@@ -1,22 +1,22 @@
-// Module ID: 19532
-// Function ID: 19533
+// Module ID: 19548
+// Function ID: 19549
 // Name: VoicePanelDockPIP
-// Dependencies: [32, 19, 6933, 1387, 11782, 19383, 11805, 5693, 5855, 21, 11791, 11781, 19445, 504, 9795, 19382, 1379, 10534, 5868, 19533, 6109, 1112, 3431, 6004, 19535, 5273, 19534, 8419, 5726, 13356, 6807, 19538, 19540, 19541, 19542, 5104, 1654, 5253, 1707, 2]
+// Dependencies: [32, 19, 6933, 1387, 11790, 19399, 11813, 5693, 5855, 21, 11799, 11789, 19461, 504, 9796, 19398, 1379, 10535, 5868, 19549, 6109, 1112, 3431, 6004, 19551, 5273, 19550, 8420, 5726, 13364, 6807, 19554, 19556, 19557, 19558, 5104, 1654, 5253, 1707, 2]
 
-// Module 19532 (VoicePanelDockPIP)
+// Module 19548 (VoicePanelDockPIP)
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import _mod1707 from "module_1707" /* 1707 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import CallConstants from "CallConstants" /* 5693 */;
 import Constants from "Constants" /* 5855 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11805 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11790 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11813 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
 import UserStore from "UserStore" /* 1387 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19383 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19399 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ function useVoicePanelDockPIPState(streamKey, arg1, tmp4Result, isWatching, stat
   [tmp3, c3] = tmp2;
   const items = [layoutManager, streamKey];
   const effect = react.useEffect(() => {
-    const f140456 = (safeAreaState) => {
+    const f140915 = (safeAreaState) => {
       let targetDimensions = closure_1_2.getTargetDimensions(closure_1_0);
       if (targetDimensions === closure_1_2.getDefaultTargetDimensions()) {
         targetDimensions = closure_2_16;
@@ -68,9 +68,9 @@ function useVoicePanelDockPIPState(streamKey, arg1, tmp4Result, isWatching, stat
       }
       return targetDimensions;
     };
-    _undefined(f140456);
+    _undefined(f140915);
     return layoutManager.subscribeFromItem(function updateTargetDimensions() {
-      _undefined(f140456);
+      _undefined(f140915);
     });
   }, items);
   let tmp6 = tmp4Result.mode !== containerHeight.IN_PANEL;
@@ -237,15 +237,15 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   let tmp = panelLayoutCommitted;
   let tmp2 = dependencyMap;
   const transitionState = transitionCleanUp.transitionState;
-  const context = react.useContext(panelLayoutCommitted(11781));
+  const context = react.useContext(panelLayoutCommitted(11789));
   const channelId = context.channelId;
   const tmp4 = transitionCleanUp;
   const dockContentSwap = context.dockContentSwap;
-  let obj2 = transitionCleanUp(11791);
+  let obj2 = transitionCleanUp(11799);
   const pIPState = obj2.usePIPState();
-  const tmp6 = panelLayoutCommitted(19538)(channelId);
-  let tmp7 = panelLayoutCommitted(19540)(channelId);
-  const tmp8 = panelLayoutCommitted(19541)(tmp6);
+  const tmp6 = panelLayoutCommitted(19554)(channelId);
+  let tmp7 = panelLayoutCommitted(19556)(channelId);
+  const tmp8 = panelLayoutCommitted(19557)(tmp6);
   const showStream = tmp8.showStream;
   let c9;
   let CONTROLS;
@@ -254,12 +254,12 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   let closure_13;
   let first1;
   const onStreamReady = tmp8.onStreamReady;
-  const context1 = react.useContext(panelLayoutCommitted(11781));
+  const context1 = react.useContext(panelLayoutCommitted(11789));
   const channelId2 = context1.channelId;
   const setMode = context1.setMode;
   const setFocused = context1.setFocused;
   const showControls = context1.showControls;
-  let obj3 = transitionCleanUp(11791);
+  let obj3 = transitionCleanUp(11799);
   const pIPState1 = obj3.usePIPState();
   const streamKey = tmp6.streamKey;
   ({ ownerId, isWatching, isConnecting, isAutoWatchChannel } = tmp6);
@@ -289,7 +289,7 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
       }
     }, items1);
   }
-  let tmp16 = sharedValue(obj.useState(tmp4(19535).VoicePanelDockPIPOverlayModes.HIDDEN), 2);
+  let tmp16 = sharedValue(obj.useState(tmp4(19551).VoicePanelDockPIPOverlayModes.HIDDEN), 2);
   [HIDDEN, tmp17] = tmp16;
   c9 = tmp17;
   let tmp18 = null;
@@ -299,15 +299,15 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   const tmp15Result = sharedValue(obj.useState(tmp18), 2);
   if (tmp15Result[0] !== tmp18) {
     const tmp20 = tmp15Result[1](tmp18);
-    tmp17(tmp4(19535).VoicePanelDockPIPOverlayModes.HIDDEN);
+    tmp17(tmp4(19551).VoicePanelDockPIPOverlayModes.HIDDEN);
   }
   if (!(null == streamKey && tmp7 || showStream)) {
-    HIDDEN = tmp4(19535).VoicePanelDockPIPOverlayModes.HIDDEN;
+    HIDDEN = tmp4(19551).VoicePanelDockPIPOverlayModes.HIDDEN;
   }
   CONTROLS = HIDDEN;
-  const tmp22 = null == streamKey && tmp7 && HIDDEN === tmp4(19535).VoicePanelDockPIPOverlayModes.VOLUME;
+  const tmp22 = null == streamKey && tmp7 && HIDDEN === tmp4(19551).VoicePanelDockPIPOverlayModes.VOLUME;
   if (tmp22) {
-    CONTROLS = tmp4(19535).VoicePanelDockPIPOverlayModes.CONTROLS;
+    CONTROLS = tmp4(19551).VoicePanelDockPIPOverlayModes.CONTROLS;
     HIDDEN = CONTROLS;
   }
   const tmp4Result11 = tmp4(5273);
@@ -433,7 +433,7 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   importDefault = tmp48;
   let tmp51;
   const tmp49 = isConnecting || isWatching;
-  const tmpResult6 = tmp(10534);
+  const tmpResult6 = tmp(10535);
   if (!(null == streamKey && tmp7)) {
     tmp51 = ownerId;
   }
@@ -441,8 +441,8 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   const effectiveVolume = tmpResult2Result.effectiveVolume;
   const handleVolumeChange = tmpResult2Result.handleVolumeChange;
   let tmp54;
-  const useVoicePanelDockWatchPromptActions = tmp4(19533).useVoicePanelDockWatchPromptActions;
-  tmp4(19533);
+  const useVoicePanelDockWatchPromptActions = tmp4(19549).useVoicePanelDockWatchPromptActions;
+  tmp4(19549);
   if (tmp48) {
     tmp54 = ownerId;
   }
@@ -562,7 +562,7 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   if (!(null == streamKey && tmp7)) {
     tmp58 = null != ownerId;
   }
-  let obj5 = { hasTile: tmp58, showContent: tmp11 || isWatching, mainTileAccessibilityProps: memo, mainTileRef: ref, dragEnabled: HIDDEN !== tmp4(19535).VoicePanelDockPIPOverlayModes.VOLUME, resizeEnabled: tmp12, onMainTileTap: callback2, onStreamReady, showPushToTalk: false, onGesturePressedChange: tmp29, controlsOverlay: tmp59(tmp60, obj7) };
+  let obj5 = { hasTile: tmp58, showContent: tmp11 || isWatching, mainTileAccessibilityProps: memo, mainTileRef: ref, dragEnabled: HIDDEN !== tmp4(19551).VoicePanelDockPIPOverlayModes.VOLUME, resizeEnabled: tmp12, onMainTileTap: callback2, onStreamReady, showPushToTalk: false, onGesturePressedChange: tmp29, controlsOverlay: tmp59(tmp60, obj7) };
   let tmp62Result = null;
   tmp59 = closure_15;
   tmp60 = closure_14;
@@ -573,7 +573,7 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
       if (null != ownerId) {
         let obj6 = { ownerId, streamKey, isConnecting, hideContent: isWatching, visible: !showStream };
         const tmp62 = closure_13;
-        const tmpResult7 = tmp(19533);
+        const tmpResult7 = tmp(19549);
         if (!isConnecting) {
           isConnecting = isWatching;
         }
@@ -583,18 +583,18 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   }
   const items11 = [tmp62Result, ];
   let str = "stream";
-  const tmpResult8 = tmp(19535);
+  const tmpResult8 = tmp(19551);
   if (null == streamKey && tmp7) {
     str = "video";
   }
   obj7 = { children: items11 };
   items11[1] = closure_13(tmpResult8, { kind: str, ownerId: stateFromStores, mode: HIDDEN, onToggleVolume: callback3, onInteractionStart: callback, onInteractionEnd: callback1, onStopWatching: callback4, onOpenCall: callback5 });
-  const tmp4Result14 = tmp4(11791);
+  const tmp4Result14 = tmp4(11799);
   const pIPState2 = tmp4Result14.usePIPState();
   let id = pIPState2.id;
   const mode = pIPState2.mode;
-  const channelId3 = obj.useContext(tmp(11781)).channelId;
-  let tmp67 = tmp(19445)();
+  const channelId3 = obj.useContext(tmp(11789)).channelId;
+  let tmp67 = tmp(19461)();
   const items12 = [tmp13];
   const items13 = [channelId3, id];
   const tmp4Result15 = tmp4(504);
@@ -623,7 +623,7 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
     }
     tmp70 = stateFromStores2;
   }
-  const tmp4Result16 = tmp4(19542);
+  const tmp4Result16 = tmp4(19558);
   panelLayoutCommitted = tmp4Result16.usePIPTileHandoff().panelLayoutCommitted;
   const tmp71 = transitionState === tmp4(5104).TransitionStates.YEETED;
   dependencyMap = tmp71;
@@ -775,9 +775,9 @@ let closure_23 = react.memo(function VoicePanelDockPIP(transitionCleanUp) {
   VoicePanelDockPIPTsx4.__initData = tmp103;
   const derivedValue = tmp4Result20.useDerivedValue(VoicePanelDockPIPTsx4);
   let obj8 = { value: tmp83Result, children: closure_13(VoicePanelPIPTiles, obj9) };
-  const Provider = tmp4(11791).VoicePanelPIPStateContext.Provider;
+  const Provider = tmp4(11799).VoicePanelPIPStateContext.Provider;
   let tmp107;
-  VoicePanelPIPTiles = tmp4(19542).VoicePanelPIPTiles;
+  VoicePanelPIPTiles = tmp4(19558).VoicePanelPIPTiles;
   if (tmp83Result.mode !== constants.IN_PANEL) {
     if (!first2) {
       tmp107 = obj5;
@@ -793,17 +793,17 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
   let obj5;
   let tmp12;
   const tmp = dependencyMap;
-  const channelId = react.useContext(channelId2(11781)).channelId;
-  let tmp2 = channelId2(19538)(channelId);
-  const tmp3 = channelId2(19540)(channelId);
+  const channelId = react.useContext(channelId2(11789)).channelId;
+  let tmp2 = channelId2(19554)(channelId);
+  const tmp3 = channelId2(19556)(channelId);
   let id;
   channelId2 = undefined;
-  const obj = id(11791);
+  const obj = id(11799);
   const pIPState = obj.usePIPState();
   id = pIPState.id;
   const mode = pIPState.mode;
-  channelId2 = react.useContext(channelId2(11781)).channelId;
-  let tmp6 = channelId2(19445)();
+  channelId2 = react.useContext(channelId2(11789)).channelId;
+  let tmp6 = channelId2(19461)();
   const items = [ChannelRTCStore];
   const items1 = [channelId2, id];
   const obj2 = id(504);
@@ -832,10 +832,10 @@ const memoResult = react.memo(function VoicePanelDockPIPProvider() {
     }
     tmp8 = stateFromStores;
   }
-  const tmp4Result = id(11791);
+  const tmp4Result = id(11799);
   const tmp10 = useVoicePanelDockPIPState(tmp2, tmp3, tmp4Result.usePIPState(), tmp2.isWatching, tmp8);
   const obj3 = { value: tmp10, children: closure_13(TransitionItem, obj5) };
-  const Provider = tmp4(11791).VoicePanelPIPStateContext.Provider;
+  const Provider = tmp4(11799).VoicePanelPIPStateContext.Provider;
   TransitionItem = tmp4(5104).TransitionItem;
   if (null != tmp10.mode) {
     tmp12 = { pipMode: tmp10.mode };

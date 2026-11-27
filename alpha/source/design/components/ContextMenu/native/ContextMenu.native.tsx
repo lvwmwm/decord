@@ -1,18 +1,18 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9068
+// Function ID: 9069
 // Name: ContextMenu
-// Dependencies: [19, 21, 1379, 1654, 6124, 9068, 5634, 1495, 9069, 5649, 6109, 9070, 5050, 1112, 9071, 1707, 5303, 5259, 5273, 2]
+// Dependencies: [19, 21, 1379, 1654, 6124, 9069, 5634, 1495, 9070, 5649, 6109, 9071, 5050, 1112, 9072, 1707, 5303, 5259, 5273, 2]
 // Exports: ContextMenu
 
-// Module 9067 (ContextMenu)
+// Module 9068 (ContextMenu)
 import intl2 from "intl" /* 1112 */;
 import _mod1707 from "module_1707" /* 1707 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5273 */;
 import react_native from "react-native" /* 6109 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9068 */;
-import ContextMenuState from "ContextMenuState" /* 9069 */;
-import UID from "UID" /* 9070 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9069 */;
+import ContextMenuState from "ContextMenuState" /* 9070 */;
+import UID from "UID" /* 9071 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
@@ -161,17 +161,17 @@ export function ContextMenu(triggerOnLongPress) {
         const result = 2 * ContextMenuConstants.CONTEXT_MENU_ITEM_PADDING;
         const sum = result + ContextMenuConstants.CONTEXT_MENU_ITEM_GAP;
         if (null != tmp) {
-          num = tmp11(9068).CONTEXT_MENU_ITEM_ICON_SIZE;
+          num = tmp11(9069).CONTEXT_MENU_ITEM_ICON_SIZE;
         } else {
           num = 0;
         }
         let num2 = 0;
         const sum1 = sum + num;
         if (null != tmp3) {
-          num2 = tmp11(9068).CONTEXT_MENU_ITEM_GAP + tmp11(9068).CONTEXT_MENU_ITEM_ICON_SIZE;
+          num2 = tmp11(9069).CONTEXT_MENU_ITEM_GAP + tmp11(9069).CONTEXT_MENU_ITEM_ICON_SIZE;
         }
         const sum2 = sum1 + num2;
-        const match = str.match(tmp11(9068).CONTEXT_MENU_ITEM_SUB_LABEL_FULL_WIDTH_CHARACTERS);
+        const match = str.match(tmp11(9069).CONTEXT_MENU_ITEM_SUB_LABEL_FULL_WIDTH_CHARACTERS);
         let num3;
         if (match != null) {
           num3 = match.length;

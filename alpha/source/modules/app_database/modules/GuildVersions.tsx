@@ -1,9 +1,9 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8317
+// Function ID: 8318
 // Name: GuildVersions
 // Dependencies: [32, 5, 4914, 3, 4921, 1255, 2]
 
-// Module 8316 (GuildVersions)
+// Module 8317 (GuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
@@ -78,7 +78,7 @@ class GuildVersions {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;

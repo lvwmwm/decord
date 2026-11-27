@@ -1,10 +1,10 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16414
+// Function ID: 16415
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1387, 8212, 8213, 1071, 21, 5043, 575, 1186, 38, 563, 11, 5634, 5099, 8218, 7052, 7056, 1112, 2847, 16408, 16411, 16412, 2]
+// Dependencies: [19, 17, 1387, 8213, 8214, 1071, 21, 5043, 575, 1186, 38, 563, 11, 5634, 5099, 8219, 7052, 7056, 1112, 2847, 16415, 16418, 16419, 2]
 // Exports: default
 
-// Module 16407 (FamilyCenterActivityRow)
+// Module 16414 (FamilyCenterActivityRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -15,14 +15,14 @@ import _modDef2847 from "module_2847" /* 2847 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import GuildIconDefault from "GuildIcon" /* 7052 */;
 import GuildBadgeDefault from "GuildBadge" /* 7056 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8218 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16408 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16411 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16412 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8214 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8219 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16415 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16418 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16419 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8213 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -77,8 +77,8 @@ const memoResult = react.memo(function(action) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    formatUserActivityTimestamp = action(8218).formatUserActivityTimestamp;
-    action(8218);
+    formatUserActivityTimestamp = action(8219).formatUserActivityTimestamp;
+    action(8219);
     date = new Date(extractTimestampResult);
     items2[1] = closure_8(Text2, obj7);
     items1[1] = closure_9(View, obj5);

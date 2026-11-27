@@ -1,10 +1,10 @@
-// Module ID: 10544
-// Function ID: 10545
+// Module ID: 10545
+// Function ID: 10546
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6933, 4892, 6976, 4914, 4897, 10295, 1071, 21, 575, 5043, 5040, 5597, 1256, 6013, 10018, 6130, 8449, 504, 10329, 10545, 1112, 6129, 1186, 6861, 6855, 4375, 8085, 5634, 10546, 1629, 5659, 5598, 8107, 10547, 7835, 8463, 10548, 10549, 10428, 10297, 10305, 10306, 10311, 10550, 10551, 2]
+// Dependencies: [19, 17, 6933, 4892, 6976, 4914, 4897, 10296, 1071, 21, 575, 5043, 5040, 5597, 1256, 6013, 10019, 6130, 8450, 504, 10330, 10546, 1112, 6129, 1186, 6861, 6855, 4375, 8085, 5634, 10547, 1629, 5659, 5598, 8107, 10548, 7835, 8464, 10549, 10550, 10429, 10298, 10306, 10307, 10312, 10551, 10552, 2]
 // Exports: closeStageModal
 
-// Module 10544 (StageActionHeader)
+// Module 10545 (StageActionHeader)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -23,16 +23,16 @@ import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks
 import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7835 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8085 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8107 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8449 */;
-import StatusBarDefault from "StatusBar" /* 10018 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 10311 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10329 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10428 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10545 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10546 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10547 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10550 */;
-import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 10551 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8450 */;
+import StatusBarDefault from "StatusBar" /* 10019 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 10312 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10330 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10429 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10546 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10547 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10548 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10551 */;
+import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 10552 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
@@ -40,7 +40,7 @@ import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6976 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import StageInstanceStore from "StageInstanceStore" /* 4897 */;
-import StageMusicStore from "StageMusicStore" /* 10295 */;
+import StageMusicStore from "StageMusicStore" /* 10296 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -290,7 +290,7 @@ class MusicMuteButton {
     items = [StageMusicStore];
     stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
     let tmp6Result = null;
-    const obj2 = stateFromStores(10297);
+    const obj2 = stateFromStores(10298);
     if (obj2.useShowStageMusicMuteButton(channelId)) {
       let stringResult;
       const tmp8 = ChannelCallNavigatorIconDefault;
@@ -307,7 +307,7 @@ class MusicMuteButton {
       const obj3 = {
         accessibilityLabel: stringResult,
         containerStyle: tmp.iconBackground,
-        source: tmp7(stateFromStores ? 10305 : 10306),
+        source: tmp7(stateFromStores ? 10306 : 10307),
         onPress() {
             const obj = StageMusicActionCreators;
             return obj.updateStageMusicMuted(!stateFromStores);

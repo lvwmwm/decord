@@ -1,10 +1,10 @@
-// Module ID: 15254
-// Function ID: 15255
+// Module ID: 15261
+// Function ID: 15262
 // Name: muteCustomJoinSound
 // Dependencies: [572, 2]
 // Exports: default
 
-// Module 15254 (muteCustomJoinSound)
+// Module 15261 (muteCustomJoinSound)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

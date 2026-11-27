@@ -1,14 +1,14 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 9008
+// Function ID: 9009
 // Name: PressableNavigatorButtonWrapper
-// Dependencies: [17, 9005, 21, 5043, 575, 2]
+// Dependencies: [17, 9006, 21, 5043, 575, 2]
 // Exports: default
 
-// Module 9007 (PressableNavigatorButtonWrapper)
+// Module 9008 (PressableNavigatorButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 9005 */;
+import react_native2 from "react-native" /* 9006 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 

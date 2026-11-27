@@ -1,24 +1,24 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16037
+// Function ID: 16038
 // Name: ProfileCustomizationSettingScreenV2
-// Dependencies: [109, 19, 17, 9437, 6376, 6163, 14565, 4955, 1387, 1081, 1071, 7557, 21, 575, 1654, 5043, 6379, 6380, 504, 2174, 16031, 6375, 1112, 16047, 9487, 16049, 9488, 9503, 5104, 9489, 9502, 16050, 9527, 9807, 16055, 11149, 1629, 5607, 16057, 16058, 16063, 6013, 6162, 9485, 8486, 14850, 16065, 9439, 6309, 16066, 16067, 14853, 10589, 16071, 2]
+// Dependencies: [109, 19, 17, 9438, 6376, 6163, 14572, 4955, 1387, 1081, 1071, 7557, 21, 575, 1654, 5043, 6379, 6380, 504, 2174, 16038, 6375, 1112, 16054, 9488, 16056, 9489, 9504, 5104, 9490, 9503, 16057, 9528, 9808, 16062, 11150, 1629, 5607, 16064, 16065, 16070, 6013, 6162, 9486, 8487, 14856, 16072, 9440, 6309, 16073, 16074, 14859, 10590, 16078, 2]
 // Exports: default
 
-// Module 16030 (ProfileCustomizationSettingScreenV2)
+// Module 16037 (ProfileCustomizationSettingScreenV2)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6309 */;
 import Constants2 from "Constants" /* 7557 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9439 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9440 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9437 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9438 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6376 */;
 import UserProfileStore from "UserProfileStore" /* 6163 */;
-import WidgetStore from "WidgetStore" /* 14565 */;
+import WidgetStore from "WidgetStore" /* 14572 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
@@ -83,7 +83,7 @@ function ProfilePreviewBanner(user) {
     banner = displayProfile.banner;
   }
   const obj2 = { user, guildId, analyticsLocations, showRemoveBanner: tmp4Result.showRemoveBanner(pendingBanner, banner) };
-  const tmpResult3 = tmp(16031);
+  const tmpResult3 = tmp(16038);
   tmp4Result = user(6375);
   const tmpResult1Result = tmpResult3(obj2);
   const intl = tmp4(1112).intl;
@@ -98,7 +98,7 @@ function ProfilePreviewBanner(user) {
   const AnalyticsLocationProvider = tmp4(6379).AnalyticsLocationProvider;
   let banner2;
   obj4 = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea: num, showEditButton: result, onPressEdit: tmpResult1Result, editButtonAccessibilityLabel: stringResult, editDisabled: disabled, isUserProfileEditingRefresh: true };
-  tmpResult4 = tmp(16047);
+  tmpResult4 = tmp(16054);
   if (displayProfile != null) {
     banner2 = displayProfile.banner;
   }
@@ -125,15 +125,15 @@ function ProfilePreviewFrame(user) {
   ({ displayProfile, pendingChanges, disabled } = user);
   const tmp = closure_22();
   let tmp2 = guildId;
-  const tmp4 = guildId(9487)();
-  const tmp5 = guildId(16049)();
-  const obj = user(9488);
+  const tmp4 = guildId(9488)();
+  const tmp5 = guildId(16056)();
+  const obj = user(9489);
   const customStatusActivity = obj.useCustomStatusActivity();
-  const tmp8 = guildId(9503)(displayProfile);
+  const tmp8 = guildId(9504)(displayProfile);
   const obj2 = user(5104);
   const themeContext = obj2.useThemeContext();
   ({ primaryColor, theme, secondaryColor } = themeContext);
-  const obj3 = user(9489);
+  const obj3 = user(9490);
   const userProfileColors = obj3.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const obj4 = { backgroundColor: userProfileColors.avatarBackground };
   let num = 0;
@@ -142,7 +142,7 @@ function ProfilePreviewFrame(user) {
     num = closure_17;
   }
   const obj5 = { userId: user.id, image: pendingChanges.pendingAvatar };
-  const tmp6Result = user(9502);
+  const tmp6Result = user(9503);
   const pendingAvatarSrc = tmp6Result.getPendingAvatarSrc(obj5);
   user(504);
   [][0] = GuildMemberStore;
@@ -180,16 +180,16 @@ function ProfilePreviewFrame(user) {
   ({ profileContentWrapper: arr3[0], profileContent: arr3[1] } = tmp4);
   items2[2] = { paddingTop: num };
   items2[3] = tmp.previewContent;
-  const obj9 = { style: items3, children: closure_18(tmp2(16050), { user, guildId, disabled, disableStatus: false, statusStyle: obj4, isUserProfileEditingRefresh: true }) };
+  const obj9 = { style: items3, children: closure_18(tmp2(16057), { user, guildId, disabled, disableStatus: false, statusStyle: obj4, isUserProfileEditingRefresh: true }) };
   items3 = [, , , ];
   ({ avatarBackground: arr4[0], avatarPosition: arr4[1] } = tmp4);
   items3[2] = tmp5.avatarContainer;
   items3[3] = obj4;
   items4 = [closure_18(closure_7, obj9), , ];
   const obj10 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp4.customStatusBubble, emojiOnlyStyle: tmp4.emojiOnlyCustomStatusBubble };
-  items4[1] = closure_18(tmp2(9527), obj10);
+  items4[1] = closure_18(tmp2(9528), obj10);
   const obj11 = { user, guildId, displayName: pendingGlobalName, pronouns: str2, badges: tmp8, badgeContainerBackground: containerBackground, displayNameAccessibilityRole: "header", pendingDisplayNameStyles: pendingChanges.pendingDisplayNameStyles, canOpenBadgeDirectory: null == guildId, showsBadgeUnreadDot: null != guildId };
-  items4[2] = closure_18(tmp2(9807), obj11);
+  items4[2] = closure_18(tmp2(9808), obj11);
   items1[1] = closure_19(closure_7, obj8);
   return closure_19(closure_7, obj6);
 }
@@ -237,10 +237,10 @@ function ProfileCustomizationSettingScreenV2(currentUser) {
   let handleHeaderLayout;
   let id1;
   let tmp = field;
-  let tmp3 = field(16055)();
-  field(11149)();
+  let tmp3 = field(16062)();
+  field(11150)();
   let tmp5 = closure_22();
-  const tmp6 = field(16049)();
+  const tmp6 = field(16056)();
   let obj = currentUser(5104);
   const theme = obj.useThemeContext().theme;
   const tmp8 = field(1629)();
@@ -248,15 +248,15 @@ function ProfileCustomizationSettingScreenV2(currentUser) {
   const token = obj2.useToken(field(575).colors.BACKGROUND_BASE_LOWEST);
   field = id1.useField("subsection");
   dependencyMap = tmp11;
-  ({ hasGuilds, handleSelectMainProfile, handleSelectGuild } = field(16057)());
-  field(16057)();
+  ({ hasGuilds, handleSelectMainProfile, handleSelectGuild } = field(16064)());
+  field(16064)();
   const tmp13 = field(6379);
   const tmp14 = field(6380);
   const analyticsLocations = tmp13(tmp11 ? tmp14.USER_SETTINGS_GUILD_PROFILE : tmp14.USER_SETTINGS_USER_PROFILE).analyticsLocations;
-  const tmp15 = tmp(16058)();
+  const tmp15 = tmp(16065)();
   const handleSubmit = tmp15.handleSubmit;
   const tmp16 = id(tmp15, handleSubmit);
-  const tmp17 = tmp(16063)();
+  const tmp17 = tmp(16070)();
   ({ guild, handleSubmit: handleSubmit2 } = tmp17);
   const tmp18 = tmp16.isSubmitting || id(tmp17, handleSubmit2).isSubmitting;
   const items = [UserProfileSettingsStore, WidgetStore];
@@ -307,22 +307,22 @@ function ProfileCustomizationSettingScreenV2(currentUser) {
   const stateFromStores = tmp7Result6.useStateFromStores(items3, () => UserProfileSettingsStore.getPendingChanges(id));
   const tmp26 = tmp(6162)(currentUser.id, id);
   const obj3 = { user: currentUser, displayProfile: tmp26, pendingThemeColors: stateFromStores.pendingThemeColors };
-  const tmp27 = tmp(9485)(obj3);
-  const tmp28 = tmp(8486)();
+  const tmp27 = tmp(9486)(obj3);
+  const tmp28 = tmp(8487)();
   const height = tmp28.height;
   let num = 0;
   ({ ref, onLayout, width } = tmp28);
   if (undefined !== height) {
     num = height;
   }
-  const tmp29 = tmp(14850)(width);
+  const tmp29 = tmp(14856)(width);
   const tmp7Result7 = currentUser(1654);
   const animatedRef = tmp7Result7.useAnimatedRef();
   const tmp7Result8 = currentUser(1654);
   const sharedValue = tmp7Result8.useSharedValue(0);
   const tmp7Result9 = currentUser(1654);
   sharedValue1 = tmp7Result9.useSharedValue(0);
-  const tmp33 = tmp(16065)(sharedValue, animatedRef);
+  const tmp33 = tmp(16072)(sharedValue, animatedRef);
   handleHeaderLayout = tmp33.handleHeaderLayout;
   const items4 = [handleHeaderLayout, sharedValue1];
   ({ headerStyle, scrollHandler } = tmp33);
@@ -372,11 +372,11 @@ function ProfileCustomizationSettingScreenV2(currentUser) {
     tmp5(currentUser.id, currentUser.getAvatarURL(id, 80), { guildId: id });
   }, items8);
   const obj5 = { location: "ProfileCustomizationSettingScreenV2", hasUnsavedChanges, onSave: callback, isSubmitting: tmp18, shouldBlockExit: tmp16.isWaitingForHexagonCampaignEnrollment };
-  ({ saveAndClose, guardUnsavedChanges } = tmp(16066)(obj5));
+  ({ saveAndClose, guardUnsavedChanges } = tmp(16073)(obj5));
   const obj6 = { onSave: saveAndClose, saveButtonDisabled: tmp45, isSubmitting: tmp18, showTitleAndBackButton: true, backgroundColor: token };
   tmp45 = !hasUnsavedChanges;
-  tmp(16066)(obj5);
-  const tmpResult = tmp(16067);
+  tmp(16073)(obj5);
+  const tmpResult = tmp(16074);
   if (hasUnsavedChanges) {
     tmp45 = hasInvalidWidgetChanges;
   }
@@ -387,7 +387,7 @@ function ProfileCustomizationSettingScreenV2(currentUser) {
   const AnalyticsLocationProvider = tmp7(6379).AnalyticsLocationProvider;
   obj9 = { theme: theme2, primaryColor, secondaryColor, children: items10 };
   ThemeContextProvider = tmp7(5104).ThemeContextProvider;
-  const obj10 = { style: items9, children: closure_18(tmp(14853), obj11) };
+  const obj10 = { style: items9, children: closure_18(tmp(14859), obj11) };
   items9 = [tmp5.previewBackground, animatedStyle];
   const View = tmp(1654).View;
   obj11 = { gradientHeight: num, bannerHeight: tmp29, style: { top: "auto", height: num } };
@@ -405,8 +405,8 @@ function ProfileCustomizationSettingScreenV2(currentUser) {
     const obj15 = { theme, children: closure_18(DisableCustomTheme, obj16) };
     const ThemeContextProvider2 = tmp7(5104).ThemeContextProvider;
     obj16 = { children: closure_18(handleHeaderLayout, obj17) };
-    obj17 = { style: tmp5.profileSelector, children: closure_18(tmp(16071), obj18) };
-    DisableCustomTheme = tmp7(10589).DisableCustomTheme;
+    obj17 = { style: tmp5.profileSelector, children: closure_18(tmp(16078), obj18) };
+    DisableCustomTheme = tmp7(10590).DisableCustomTheme;
     obj18 = { guild: tmp23, onBeforeOpen: guardUnsavedChanges, onSelectMainProfile: handleSelectMainProfile, onSelectGuild: handleSelectGuild };
     tmp47Result = tmp47(ThemeContextProvider2, obj15);
   }

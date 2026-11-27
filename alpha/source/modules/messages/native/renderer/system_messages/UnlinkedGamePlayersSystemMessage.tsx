@@ -1,14 +1,14 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14378
+// Function ID: 14379
 // Name: UnlinkedGamePlayersSystemMessage
-// Dependencies: [32, 1071, 12946, 12000, 14372, 1112, 14373, 2]
+// Dependencies: [32, 1071, 12954, 12008, 14379, 1112, 14380, 2]
 // Exports: createUnlinkedGamePlayersSystemMessage
 
-// Module 14371 (UnlinkedGamePlayersSystemMessage)
+// Module 14378 (UnlinkedGamePlayersSystemMessage)
 import Constants from "Constants" /* 1071 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12000 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14372 */;
-import createCommonMessageDefault from "createCommonMessage" /* 14373 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12008 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14379 */;
+import createCommonMessageDefault from "createCommonMessage" /* 14380 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export function createUnlinkedGamePlayersSystemMessage(roleStyle, unlinkedGamePl
   let tmp4;
   let tmp5;
   roleStyle = roleStyle.roleStyle;
-  let obj = roleStyle(12946);
+  let obj = roleStyle(12954);
   const firstMessagePerAuthor = obj.getFirstMessagePerAuthor(unlinkedGamePlayerPlaceholders);
   const mapped = firstMessagePerAuthor.map((message) => {
     const obj = useAuthorWithProcessedColor;
@@ -45,7 +45,7 @@ export function createUnlinkedGamePlayersSystemMessage(roleStyle, unlinkedGamePl
       onClick = tmp4.onClick;
     }
     formatToPartsResult = formatToParts(DbQxMP, obj3);
-  } else if (mapped.length <= roleStyle(12946).MAX_NAMED_PLAYERS) {
+  } else if (mapped.length <= roleStyle(12954).MAX_NAMED_PLAYERS) {
     const intl = tmp(1112).intl;
     const obj4 = { a: null, aOnClick: null, b: null, bOnClick: null };
     ({ name: obj2.a, onClick: obj2.aOnClick } = tmp4);
@@ -56,7 +56,7 @@ export function createUnlinkedGamePlayersSystemMessage(roleStyle, unlinkedGamePl
     const formatToParts2 = intl3.formatToParts;
     ({ name: obj5.a, onClick: obj5.aOnClick } = tmp4);
     ({ name: obj5.b, onClick: obj5.bOnClick } = tmp5);
-    const obj9 = { a: null, aOnClick: null, b: null, bOnClick: null, count: mapped.length - roleStyle(12946).MAX_NAMED_PLAYERS };
+    const obj9 = { a: null, aOnClick: null, b: null, bOnClick: null, count: mapped.length - roleStyle(12954).MAX_NAMED_PLAYERS };
     const Mb0AX6 = tmp(1112).t.Mb0AX6;
     formatToPartsResult = formatToParts2(Mb0AX6, obj9);
   }

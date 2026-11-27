@@ -1,15 +1,15 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14530
+// Function ID: 14531
 // Name: UserProfileEmbed
-// Dependencies: [5776, 12385, 1112, 11974, 11973, 2]
+// Dependencies: [5776, 12393, 1112, 11982, 11981, 2]
 // Exports: createUserProfileEmbed
 
-// Module 14523 (UserProfileEmbed)
+// Module 14530 (UserProfileEmbed)
 import intl9 from "intl" /* 1112 */;
 import Constants from "Constants" /* 5776 */;
-import UserProfileEmbedCard from "UserProfileEmbedCard" /* 11973 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 11974 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12385 */;
+import UserProfileEmbedCard from "UserProfileEmbedCard" /* 11981 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 11982 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12393 */;
 import size from "module_2" /* 2 */;
 
 const InviteTypes = Constants.InviteTypes;

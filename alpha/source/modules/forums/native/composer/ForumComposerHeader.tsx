@@ -1,10 +1,10 @@
-// Module ID: 10793
-// Function ID: 10794
+// Module ID: 10794
+// Function ID: 10795
 // Name: ForumComposerHeader
 // Dependencies: [19, 17, 21, 5043, 575, 5659, 6152, 1112, 7247, 7154, 5634, 7141, 2]
 // Exports: default
 
-// Module 10793 (ForumComposerHeader)
+// Module 10794 (ForumComposerHeader)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;

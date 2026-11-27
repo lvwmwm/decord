@@ -1,26 +1,26 @@
-// Module ID: 10289
-// Function ID: 10290
+// Module ID: 10290
+// Function ID: 10291
 // Name: MicrophoneSpotIllustration
-// Dependencies: [19, 21, 10290, 10291, 10292, 7261, 5730, 2]
+// Dependencies: [19, 21, 10291, 10292, 10293, 7261, 5730, 2]
 // Exports: MicrophoneSpotIllustration
 
-// Module 10289 (MicrophoneSpotIllustration)
+// Module 10290 (MicrophoneSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef10290 from "module_10290" /* 10290 */;
 import _modDef10291 from "module_10291" /* 10291 */;
 import _modDef10292 from "module_10292" /* 10292 */;
+import _modDef10293 from "module_10293" /* 10293 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef10290 };
+let obj2 = { uri: _modDef10291 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef10291 };
+let obj3 = { uri: _modDef10292 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef10292 };
-({ uri: _modDef10292 });
+obj[3] = { uri: _modDef10293 };
+({ uri: _modDef10293 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneSpotIllustration.native.tsx");
 

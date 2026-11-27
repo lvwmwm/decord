@@ -1,12 +1,12 @@
-// Module ID: 11560
-// Function ID: 11561
+// Module ID: 11568
+// Function ID: 11569
 // Name: useConjureProjectIcon
-// Dependencies: [19, 2165, 504, 11561, 1413, 2]
+// Dependencies: [19, 2165, 504, 11569, 1413, 2]
 // Exports: conjureProjectIconMetrics, default
 
-// Module 11560 (useConjureProjectIcon)
+// Module 11568 (useConjureProjectIcon)
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
-import prefetchConjureApplicationDefault from "prefetchConjureApplication" /* 11561 */;
+import prefetchConjureApplicationDefault from "prefetchConjureApplication" /* 11569 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;

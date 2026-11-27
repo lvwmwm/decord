@@ -1,10 +1,10 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10197
+// Function ID: 10198
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 2165, 4892, 4946, 1387, 4891, 2145, 5689, 4964, 10007, 10117, 10116, 5690, 10127, 10108, 10197, 10046, 2]
+// Dependencies: [5, 2165, 4892, 4946, 1387, 4891, 2145, 5689, 4964, 10008, 10118, 10117, 5690, 10128, 10109, 10198, 10047, 2]
 // Exports: default
 
-// Module 10196 (handleJoinEmbeddedActivity)
+// Module 10197 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

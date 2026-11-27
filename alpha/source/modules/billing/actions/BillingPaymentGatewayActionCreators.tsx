@@ -56,7 +56,7 @@ let obj = function _createCardToken() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -141,10 +141,10 @@ obj = function _confirmEPS() {
       let c8;
       let c9;
       let name;
-      let obj14;
+      let obj10;
+      let obj11;
+      let obj15;
       let obj16;
-      let obj17;
-      let obj8;
       if (line2 === 2) {
         line2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -154,7 +154,7 @@ obj = function _confirmEPS() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -185,24 +185,24 @@ obj = function _confirmEPS() {
               paymentMethod = undefined;
               error = undefined;
               if (null == closure_0) {
-                const obj12 = BillingSharedActionCreators;
-                throw obj12.failBillingConfirmation("payment_method_confirmation", "Stripe not loaded");
+                const obj14 = BillingSharedActionCreators;
+                throw obj14.failBillingConfirmation("payment_method_confirmation", "Stripe not loaded");
               } else if (null == tmp59) {
-                const obj11 = BillingSharedActionCreators;
-                throw obj11.failBillingConfirmation("payment_method_confirmation", "Bank required for EPS");
+                const obj13 = BillingSharedActionCreators;
+                throw obj13.failBillingConfirmation("payment_method_confirmation", "Bank required for EPS");
               } else {
                 ({ email: c4, name } = closure_2);
                 ({ line1: c6, line2: c7, city: c8, state: c9, postalCode: c10, country: c11 } = closure_2);
                 if (null == name) {
-                  const obj10 = BillingSharedActionCreators;
-                  throw obj10.failBillingConfirmation("payment_method_confirmation", "Name required for EPS");
+                  const obj12 = BillingSharedActionCreators;
+                  throw obj12.failBillingConfirmation("payment_method_confirmation", "Name required for EPS");
                 } else {
-                  const obj7 = DispatcherDefault;
-                  obj7.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
+                  const obj9 = DispatcherDefault;
+                  obj9.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
                   line1 = 1;
                   line2 = 1;
-                  const obj6 = { value: obj8.validatePaymentSourceBillingAddress(closure_2), done: false };
-                  obj8 = BillingSharedActionCreators;
+                  const obj6 = { value: obj10.validatePaymentSourceBillingAddress(closure_2), done: false };
+                  obj10 = BillingSharedActionCreators;
                   return obj6;
                 }
               }
@@ -216,14 +216,14 @@ obj = function _confirmEPS() {
               return { value, done: true };
             } else {
               billingAddressToken = value;
-              const obj13 = { type: "eps", eps: obj14, billing_details: obj16 };
-              obj16 = { address: obj17, name, email };
-              obj17 = { line1, line2, city, state, postal_code, country };
+              const obj8 = { type: "eps", eps: obj11, billing_details: obj15 };
+              obj15 = { address: obj16, name, email };
+              obj16 = { line1, line2, city, state, postal_code, country };
               line1 = 2;
               line2 = 1;
-              obj14 = { bank };
-              const obj18 = { value: closure_0.createPaymentMethod(obj13), done: false };
-              return obj18;
+              obj11 = { bank };
+              const obj17 = { value: closure_0.createPaymentMethod(obj8), done: false };
+              return obj17;
             }
           } else if (arg0 === 1) {
             line2 = 3;
@@ -236,22 +236,22 @@ obj = function _confirmEPS() {
             paymentMethod = closure_13.paymentMethod;
             error = closure_13.error;
             if (null != error) {
-              const obj3 = closure_133_0(closure_133_3[5]);
-              throw obj3.failBillingConfirmation("payment_method_confirmation", error);
+              const obj5 = closure_133_0(closure_133_3[5]);
+              throw obj5.failBillingConfirmation("payment_method_confirmation", error);
             } else if (null == paymentMethod) {
-              const obj2 = closure_133_0(closure_133_3[5]);
-              throw obj2.failBillingConfirmation("payment_method_confirmation", "paymentMethod not available with successful stripe call");
+              const obj4 = closure_133_0(closure_133_3[5]);
+              throw obj4.failBillingConfirmation("payment_method_confirmation", "paymentMethod not available with successful stripe call");
             } else {
               line2 = 3;
-              const obj15 = closure_133_0(closure_133_3[5]);
-              const obj20 = { billingAddressToken, analyticsLocation, bank };
-              obj = { value: obj15.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj20), done: true };
-              return obj;
+              obj = closure_133_0(closure_133_3[5]);
+              const obj19 = { billingAddressToken, analyticsLocation, bank };
+              const obj20 = { value: obj.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj19), done: true };
+              return obj20;
             }
           }
-        } catch (tmp24) {
+        } catch (tmp36) {
           line2 = 3;
-          throw tmp24;
+          throw tmp36;
         }
       }
     })();
@@ -273,10 +273,10 @@ obj = function _confirmPrzelewy() {
       let c7;
       let c8;
       let c9;
-      let obj13;
+      let obj10;
+      let obj11;
+      let obj14;
       let obj15;
-      let obj16;
-      let obj8;
       if (line2 === 2) {
         line2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -286,7 +286,7 @@ obj = function _confirmPrzelewy() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -318,21 +318,21 @@ obj = function _confirmPrzelewy() {
               paymentMethod = undefined;
               error = undefined;
               if (null == closure_0) {
-                const obj11 = BillingSharedActionCreators;
-                throw obj11.failBillingConfirmation("payment_method_confirmation", "Stripe not loaded");
+                const obj13 = BillingSharedActionCreators;
+                throw obj13.failBillingConfirmation("payment_method_confirmation", "Stripe not loaded");
               } else {
                 email = tmp59.email;
                 ({ name: c5, line1: c6, line2: c7, city: c8, state: c9, postalCode: c10, country: c11 } = closure_2);
                 if (null == email) {
-                  const obj10 = BillingSharedActionCreators;
-                  throw obj10.failBillingConfirmation("payment_method_confirmation", "Email required for Przelewy24");
+                  const obj12 = BillingSharedActionCreators;
+                  throw obj12.failBillingConfirmation("payment_method_confirmation", "Email required for Przelewy24");
                 } else {
-                  const obj7 = DispatcherDefault;
-                  obj7.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
+                  const obj9 = DispatcherDefault;
+                  obj9.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
                   line1 = 1;
                   line2 = 1;
-                  const obj6 = { value: obj8.validatePaymentSourceBillingAddress(closure_2), done: false };
-                  obj8 = BillingSharedActionCreators;
+                  const obj6 = { value: obj10.validatePaymentSourceBillingAddress(closure_2), done: false };
+                  obj10 = BillingSharedActionCreators;
                   return obj6;
                 }
               }
@@ -347,14 +347,14 @@ obj = function _confirmPrzelewy() {
             } else {
               billingAddressToken = value;
               p24Bank = p24Bank.p24Bank;
-              const obj12 = { type: "p24", p24: obj13, billing_details: obj15 };
-              obj15 = { address: obj16, name, email };
-              obj16 = { line1, line2, city, state, postal_code, country };
+              const obj8 = { type: "p24", p24: obj11, billing_details: obj14 };
+              obj14 = { address: obj15, name, email };
+              obj15 = { line1, line2, city, state, postal_code, country };
               line1 = 2;
               line2 = 1;
-              obj13 = { bank: p24Bank };
-              const obj17 = { value: closure_0.createPaymentMethod(obj12), done: false };
-              return obj17;
+              obj11 = { bank: p24Bank };
+              const obj16 = { value: closure_0.createPaymentMethod(obj8), done: false };
+              return obj16;
             }
           } else if (arg0 === 1) {
             line2 = 3;
@@ -367,22 +367,22 @@ obj = function _confirmPrzelewy() {
             paymentMethod = closure_14.paymentMethod;
             error = closure_14.error;
             if (null != error) {
-              const obj3 = closure_133_0(closure_133_3[5]);
-              throw obj3.failBillingConfirmation("payment_method_confirmation", error);
+              const obj5 = closure_133_0(closure_133_3[5]);
+              throw obj5.failBillingConfirmation("payment_method_confirmation", error);
             } else if (null == paymentMethod) {
-              const obj2 = closure_133_0(closure_133_3[5]);
-              throw obj2.failBillingConfirmation("payment_method_confirmation", "paymentMethod not available with successful stripe call");
+              const obj4 = closure_133_0(closure_133_3[5]);
+              throw obj4.failBillingConfirmation("payment_method_confirmation", "paymentMethod not available with successful stripe call");
             } else {
               line2 = 3;
-              const obj14 = closure_133_0(closure_133_3[5]);
-              const obj19 = { billingAddressToken, analyticsLocation, bank: p24Bank };
-              obj = { value: obj14.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj19), done: true };
-              return obj;
+              obj = closure_133_0(closure_133_3[5]);
+              const obj18 = { billingAddressToken, analyticsLocation, bank: p24Bank };
+              const obj19 = { value: obj.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj18), done: true };
+              return obj19;
             }
           }
-        } catch (tmp22) {
+        } catch (tmp34) {
           line2 = 3;
-          throw tmp22;
+          throw tmp34;
         }
       }
     })();
@@ -433,7 +433,7 @@ obj = function _submitElementsForPaymentElement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -523,7 +523,7 @@ obj = function _createStripePaymentMethodWithElements() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -640,7 +640,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -732,7 +732,7 @@ obj = function _confirmPaymentElementSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1098,7 +1098,7 @@ obj = function _confirmCardPaymentSource() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let token;
@@ -1261,7 +1261,7 @@ obj = function _createStripePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1384,7 +1384,7 @@ obj = function _createAdyenPrepaidPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1457,7 +1457,7 @@ obj = function _createAdyenVaultablePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1622,7 +1622,7 @@ obj = function _createStripePaymentSourceToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1815,7 +1815,7 @@ obj = function _paymentIntentSucceeded() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,9 +1,9 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11764
+// Function ID: 11765
 // Name: useChannelStylesShared
 // Dependencies: [5043, 575, 2]
 
-// Module 11756 (useChannelStylesShared)
+// Module 11764 (useChannelStylesShared)
 import nativeDefault from "native" /* 575 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

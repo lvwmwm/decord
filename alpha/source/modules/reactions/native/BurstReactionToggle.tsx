@@ -1,10 +1,10 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9558
+// Function ID: 9559
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 5044, 4889, 21, 1654, 504, 5607, 575, 5253, 5644, 5043, 9558, 1112, 9559, 2]
+// Dependencies: [19, 17, 5044, 4889, 21, 1654, 504, 5607, 575, 5253, 5644, 5043, 9559, 1112, 9560, 2]
 // Exports: default
 
-// Module 9557 (BurstReactionToggle)
+// Module 9558 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -64,7 +64,7 @@ export default function BurstReactionToggle(arg0) {
   }
   obj = react;
   const ref = react.useRef(null);
-  importDefault = tmp7(9558)(ref);
+  importDefault = tmp7(9559)(ref);
   let num;
   let sharedValue;
   let sharedValue1;

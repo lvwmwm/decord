@@ -1,9 +1,9 @@
-// Module ID: 18145
-// Function ID: 18146
+// Module ID: 18152
+// Function ID: 18153
 // Name: GuildsBarTypes
 // Dependencies: [2]
 
-// Module 18145 (GuildsBarTypes)
+// Module 18152 (GuildsBarTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/GuildsBarTypes.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 19794
-// Function ID: 19795
+// Module ID: 19810
+// Function ID: 19811
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 6376, 1071, 21, 5043, 575, 5597, 6822, 1629, 504, 16034, 19795, 9502, 9512, 8136, 11946, 6375, 5634, 1112, 19804, 1186, 5641, 19792, 1264, 7751, 7191, 7355, 2]
+// Dependencies: [5, 32, 19, 17, 6376, 1071, 21, 5043, 575, 5597, 6822, 1629, 504, 16041, 19811, 9503, 9513, 8137, 11954, 6375, 5634, 1112, 19820, 1186, 5641, 19808, 1264, 7751, 7191, 7355, 2]
 
-// Module 19794 (AddAvatarModal)
+// Module 19810 (AddAvatarModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,10 +12,10 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 126
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
 import Navigator from "Navigator" /* 7355 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 9502 */;
-import VideoBackground from "VideoBackground" /* 9512 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16034 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19792 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 9503 */;
+import VideoBackground from "VideoBackground" /* 9513 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16041 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -66,7 +66,7 @@ function AddAvatarScreen() {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ function AddAvatarScreen() {
                 closure_129_0(true);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
             pendingImage = undefined;
             if (null != base64) {
@@ -148,8 +148,8 @@ function AddAvatarScreen() {
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
-    let obj2 = { imageUri: tmp9(19795).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
-    let createPendingImage = tmp9(16034).createPendingImage;
+    let obj2 = { imageUri: tmp9(19811).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
+    let createPendingImage = tmp9(16041).createPendingImage;
     ProfilePendingImageUtils;
     tmp9Result3 = RecentAvatarUtils;
     pendingImage = createPendingImage(obj2);
@@ -158,7 +158,7 @@ function AddAvatarScreen() {
     pendingImage = stateFromStores;
   }
   let imageUri;
-  const memoizedImageSource = tmp9(9512).memoizedImageSource;
+  const memoizedImageSource = tmp9(9513).memoizedImageSource;
   VideoBackground;
   if (pendingImage != null) {
     imageUri = pendingImage.imageUri;
@@ -190,7 +190,7 @@ function AddAvatarScreen() {
       return obj(...arguments);
     }
   };
-  items3[1] = closure_9(selectedAvatar(19804), obj8);
+  items3[1] = closure_9(selectedAvatar(19820), obj8);
   let obj9 = { style: tmp.errorContainer, children: tmp18(LegacyText, obj10) };
   obj10 = { style: tmp.errorText, children: stringResult };
   LegacyText = tmp9(1186).LegacyText;
@@ -199,7 +199,7 @@ function AddAvatarScreen() {
     stringResult = intl3.string(intl5.t.XyLlVm);
   }
   items3[2] = closure_9(tmp17, obj9);
-  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(19795), { onAvatarSelect: tmp6, selectedAvatar }), ];
+  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(19811), { onAvatarSelect: tmp6, selectedAvatar }), ];
   const obj11 = { style: tmp.buttonContainer, children: closure_9(Button, obj12) };
   obj12 = {
     text: intl4.string(intl5.t.PDTjLN),

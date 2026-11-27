@@ -1,10 +1,10 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14026
+// Function ID: 14027
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 6383, 2179, 6359, 1071, 1389, 21, 5043, 575, 6140, 9106, 1501, 1629, 504, 14020, 12, 5790, 9109, 14022, 6138, 14023, 14024, 9376, 6363, 9111, 6388, 7347, 7351, 9695, 5730, 14025, 5634, 1112, 14026, 14032, 2911, 14036, 14048, 14051, 14053, 9263, 7353, 2943, 14054, 7047, 2]
+// Dependencies: [32, 19, 17, 6383, 2179, 6359, 1071, 1389, 21, 5043, 575, 6140, 9107, 1501, 1629, 504, 14027, 12, 5790, 9110, 14029, 6138, 14030, 14031, 9377, 6363, 9112, 6388, 7347, 7351, 9696, 5730, 14032, 5634, 1112, 14033, 14039, 2911, 14043, 14055, 14058, 14060, 9264, 7353, 2943, 14061, 7047, 2]
 // Exports: default
 
-// Module 14019 (UserSettingsPremiumGifting)
+// Module 14026 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 5790 */;
@@ -12,11 +12,11 @@ import TableRowGroup from "TableRowGroup" /* 6140 */;
 import EntitlementActionCreators from "EntitlementActionCreators" /* 6363 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7347 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7351 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 9111 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9695 */;
-import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 14020 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14026 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14036 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 9112 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9696 */;
+import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 14027 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14033 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14043 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

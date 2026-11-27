@@ -1,10 +1,10 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16720
+// Function ID: 16721
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1387, 21, 5043, 575, 9892, 8389, 16674, 504, 9908, 8387, 1112, 16712, 6874, 16714, 16677, 5273, 6109, 5634, 6152, 7745, 2]
+// Dependencies: [32, 19, 17, 1387, 21, 5043, 575, 9893, 8390, 16681, 504, 9909, 8388, 1112, 16719, 6874, 16721, 16684, 5273, 6109, 5634, 6152, 7745, 2]
 // Exports: default
 
-// Module 16713 (QuestBottomSheetHeader)
+// Module 16720 (QuestBottomSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 6109 */;
@@ -48,9 +48,9 @@ export default function QuestBottomSheetHeader(arg0) {
   let tmp = closure_9();
   let tmp2 = isScreenReaderEnabled;
   let tmp3 = dependencyMap;
-  let obj = isScreenReaderEnabled(16714);
+  let obj = isScreenReaderEnabled(16721);
   const questCreative = obj.useQuestCreative(quest);
-  let obj2 = isScreenReaderEnabled(16677);
+  let obj2 = isScreenReaderEnabled(16684);
   let closure_2;
   let gameTitle;
   let c4;
@@ -69,15 +69,15 @@ export default function QuestBottomSheetHeader(arg0) {
   }
   closure_2 = tmp7;
   gameTitle = quest.config.messages.gameTitle;
-  const tmp2Result = tmp2(9892);
+  const tmp2Result = tmp2(9893);
   const questTaskDetails = tmp2Result.useQuestTaskDetails(quest);
-  const tmp2Result9 = tmp2(8389);
+  const tmp2Result9 = tmp2(8390);
   const hasWatchVideoTasksResult = tmp2Result9.hasWatchVideoTasks(quest);
   c4 = hasWatchVideoTasksResult;
-  const tmp2Result10 = tmp2(8389);
+  const tmp2Result10 = tmp2(8390);
   const isInGameQuestResult = tmp2Result10.isInGameQuest(quest);
   c5 = isInGameQuestResult;
-  const tmp2Result11 = tmp2(9892);
+  const tmp2Result11 = tmp2(9893);
   first = _slicedToArray(tmp2Result11.useTaskPlatformScreen(quest, questTaskDetails), 1)[0];
   targetMinutes = questTaskDetails.targetMinutes;
   const items = [quest];
@@ -86,14 +86,14 @@ export default function QuestBottomSheetHeader(arg0) {
     const obj2 = { quest };
     return obj.hasStreamOnDesktopTask(obj2);
   }, items);
-  const tmp2Result12 = tmp2(16674);
+  const tmp2Result12 = tmp2(16681);
   hasWatchVideoOnMobileTasks = tmp2Result12.useHasWatchVideoOnMobileTasks(quest.config);
   const items1 = [UserStore];
   const tmp2Result13 = tmp2(504);
   const stateFromStores = tmp2Result13.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const tmp2Result14 = tmp2(9908);
+  const tmp2Result14 = tmp2(9909);
   defaultRewardNameWithArticle = tmp2Result14.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
-  const tmp2Result15 = tmp2(8387);
+  const tmp2Result15 = tmp2(8388);
   const isSponsoredPlayQuestResult = tmp2Result15.isSponsoredPlayQuest(quest);
   c11 = isSponsoredPlayQuestResult;
   const items2 = [null != completedAt, hasWatchVideoTasksResult, step, first, memo, gameTitle, defaultRewardNameWithArticle, targetMinutes, hasWatchVideoOnMobileTasks, isInGameQuestResult, isSponsoredPlayQuestResult, quest.config];

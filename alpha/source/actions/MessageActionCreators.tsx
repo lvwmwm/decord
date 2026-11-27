@@ -1,9 +1,9 @@
-// Module ID: 8244
-// Function ID: 8245
+// Module ID: 8245
+// Function ID: 8246
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 8245, 5849, 7006, 8246, 8247, 8340, 8342, 8301, 6927, 6813, 502, 4892, 8343, 4914, 5762, 6391, 4975, 6014, 6932, 8350, 1387, 1071, 8352, 7867, 5048, 17, 3, 5761, 8353, 5765, 8355, 8356, 6013, 8361, 6876, 8382, 1256, 5763, 5774, 8399, 5790, 8402, 1112, 2188, 8128, 572, 10096, 5836, 10070, 8937, 1285, 6393, 7579, 9, 8262, 6782, 11, 4921, 4941, 8251, 14358, 10778, 10439, 14359, 2174, 8346, 1405, 7626, 12231, 14360, 6790, 12279, 14364, 10066, 9613, 9641, 7007, 1088, 8230, 2118, 8114, 5050, 11152, 6046, 2]
+// Dependencies: [32, 5, 8246, 5849, 7006, 8247, 8248, 8341, 8343, 8302, 6927, 6813, 502, 4892, 8344, 4914, 5762, 6391, 4975, 6014, 6932, 8351, 1387, 1071, 8353, 7867, 5048, 17, 3, 5761, 8354, 5765, 8356, 8357, 6013, 8362, 6876, 8383, 1256, 5763, 5774, 8400, 5790, 8403, 1112, 2188, 8128, 572, 10097, 5836, 10071, 8938, 1285, 6393, 7579, 9, 8263, 6782, 11, 4921, 4941, 8252, 14365, 10779, 10440, 14366, 2174, 8347, 1405, 7626, 12239, 14367, 6790, 12287, 14371, 10067, 9614, 9642, 7007, 1088, 8231, 2118, 8114, 5050, 11153, 6046, 2]
 
-// Module 8244 (MessageActionCreators)
+// Module 8245 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -18,32 +18,32 @@ import merged5 from "merged5" /* 5836 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7867 */;
 import UploadUtils from "UploadUtils" /* 8128 */;
-import useClipMessageNoticeStore from "useClipMessageNoticeStore" /* 8245 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 8262 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8301 */;
-import SlowmodeStore from "SlowmodeStore" /* 8350 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 8352 */;
-import appMessageEmbedTracking from "appMessageEmbedTracking" /* 8356 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8399 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8937 */;
-import createNonce from "createNonce" /* 10070 */;
-import createMessage from "createMessage" /* 10096 */;
-import getInviteURLDefault from "getInviteURL" /* 10439 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11152 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14359 */;
+import useClipMessageNoticeStore from "useClipMessageNoticeStore" /* 8246 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 8263 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8302 */;
+import SlowmodeStore from "SlowmodeStore" /* 8351 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 8353 */;
+import appMessageEmbedTracking from "appMessageEmbedTracking" /* 8357 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8400 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8938 */;
+import createNonce from "createNonce" /* 10071 */;
+import createMessage from "createMessage" /* 10097 */;
+import getInviteURLDefault from "getInviteURL" /* 10440 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11153 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14366 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7006 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 8246 */;
-import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 8247 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 8340 */;
-import PendingReplyStore from "PendingReplyStore" /* 8342 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 8247 */;
+import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 8248 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 8341 */;
+import PendingReplyStore from "PendingReplyStore" /* 8343 */;
 import StickersStore from "StickersStore" /* 6927 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import EditMessageStore from "EditMessageStore" /* 8343 */;
+import EditMessageStore from "EditMessageStore" /* 8344 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import InviteStore from "InviteStore" /* 5762 */;
 import MessageStore from "MessageStore" /* 6391 */;
@@ -447,7 +447,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f93008 = () => {
+    const f93241 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -471,8 +471,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f93008));
-      withResult1.otherwise(f93008);
+      ({ message, messageName } = withResult1.otherwise(f93241));
+      withResult1.otherwise(f93241);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -576,7 +576,7 @@ let obj17 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -619,7 +619,7 @@ let obj17 = {
               return obj7;
             } else {
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp10) {
@@ -834,7 +834,7 @@ let obj17 = {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -919,7 +919,7 @@ let obj17 = {
             }
           }
           after = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp63) {
           after = 3;
           throw tmp63;
@@ -941,7 +941,7 @@ let obj17 = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1025,7 +1025,7 @@ let obj17 = {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp26) {
           c3 = 3;
           throw tmp26;
@@ -1428,7 +1428,7 @@ let obj17 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c7;
@@ -1795,7 +1795,7 @@ let obj17 = {
                 if (null == channel) {
                   c7 = 0;
                   c9 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   attachments2 = channel.attachments;
                   uploader = channel.uploader;
@@ -1803,7 +1803,7 @@ let obj17 = {
                   if (tmp205) {
                     c7 = 0;
                     c9 = 3;
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                   let tmp45 = attachments2;
                   if (null != attachments2) {
@@ -2431,7 +2431,7 @@ let obj17 = {
             let obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -2509,7 +2509,7 @@ let obj17 = {
                 obj5.focusMessage(obj6);
               });
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -2538,7 +2538,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2579,7 +2579,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2608,7 +2608,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2649,7 +2649,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2690,9 +2690,9 @@ let obj17 = {
         const obj = id(c3[47]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f141575);
+        dispatchResult.then(f142039);
       }
-      const f141575 = () => {
+      const f142039 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[44]).intl;
@@ -2708,7 +2708,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2753,11 +2753,11 @@ let obj17 = {
               const obj = id(c3[47]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f141575);
+              dispatchResult.then(f142039);
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c3 = 3;
           throw tmp9;

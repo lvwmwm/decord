@@ -1,12 +1,12 @@
-// Module ID: 12232
-// Function ID: 12233
+// Module ID: 12240
+// Function ID: 12241
 // Name: MessageReactionsStore
-// Dependencies: [4976, 1406, 4892, 1387, 504, 9091, 572, 2]
+// Dependencies: [4976, 1406, 4892, 1387, 504, 9092, 572, 2]
 
-// Module 12232 (MessageReactionsStore)
+// Module 12240 (MessageReactionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 9091 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 9092 */;
 import LurkingStore from "LurkingStore" /* 4976 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

@@ -1,10 +1,10 @@
-// Module ID: 14283
-// Function ID: 14284
+// Module ID: 14290
+// Function ID: 14291
 // Name: ConjureProjectsSheet
-// Dependencies: [32, 19, 21, 5043, 575, 14284, 1629, 14264, 5604, 7667, 7546, 7507, 1112, 4245, 7944, 11490, 5275, 7406, 6140, 6144, 14287, 11487, 14288, 2]
+// Dependencies: [32, 19, 21, 5043, 575, 14291, 1629, 14271, 5604, 7667, 7546, 7507, 1112, 4245, 7944, 11498, 5275, 7406, 6140, 6144, 14294, 11462, 14295, 2]
 // Exports: default
 
-// Module 14283 (ConjureProjectsSheet)
+// Module 14290 (ConjureProjectsSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
@@ -13,12 +13,12 @@ import useMountEffectDefault from "useMountEffect" /* 5604 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
 import ActionSheet2 from "ActionSheet" /* 7546 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11487 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11490 */;
-import useConjureEntryPointPlacementDefault from "useConjureEntryPointPlacement" /* 14264 */;
-import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 14284 */;
-import ConjureProjectIcon from "ConjureProjectIcon" /* 14287 */;
-import ConjureProjectGroupListDefault from "ConjureProjectGroupList" /* 14288 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11462 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11498 */;
+import useConjureEntryPointPlacementDefault from "useConjureEntryPointPlacement" /* 14271 */;
+import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 14291 */;
+import ConjureProjectIcon from "ConjureProjectIcon" /* 14294 */;
+import ConjureProjectGroupListDefault from "ConjureProjectGroupList" /* 14295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

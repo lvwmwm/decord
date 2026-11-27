@@ -1,16 +1,16 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12529
+// Function ID: 12530
 // Name: GuildAutomodActionActionCreators
-// Dependencies: [19, 12522, 21, 6130, 12526, 2120, 6047, 12529, 2]
+// Dependencies: [19, 12530, 21, 6130, 12534, 2120, 6047, 12537, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 12521 (GuildAutomodActionActionCreators)
+// Module 12529 (GuildAutomodActionActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 12522 */;
+import Constants from "Constants" /* 12530 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,7 +33,7 @@ export function openSubmitFeedback(messageId, content, decisionId, channel) {
     automodDecision: obj3
   };
   obj3 = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(asyncRequire(12526, dependencyMap.paths), obj2, React3);
+  obj.pushLazy(asyncRequire(12534, dependencyMap.paths), obj2, React3);
 }
 export function openRaidResolveModal() {
 
@@ -46,7 +46,7 @@ export function openAutomodProfileQuarantineAlert(guildId) {
   const obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(12529, dependencyMap.paths);
+      const promise = asyncRequire(12537, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {

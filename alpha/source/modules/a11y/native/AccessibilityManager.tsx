@@ -1,18 +1,18 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15844
+// Function ID: 15845
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 5044, 1071, 1194, 15838, 572, 1256, 15841, 11786, 15839, 5103, 5050, 2]
+// Dependencies: [5, 17, 5044, 1071, 1194, 15845, 572, 1256, 15848, 11794, 15846, 5103, 5050, 2]
 
-// Module 15837 (AccessibilityManager)
+// Module 15844 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import ThemeConstants from "ThemeConstants" /* 1194 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 5103 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11786 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 15838 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 15839 */;
-import react_native from "react-native" /* 15841 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11794 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 15845 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 15846 */;
+import react_native from "react-native" /* 15848 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native2 from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -71,7 +71,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = {
             closure_0 = value;
             const result = closure_129_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c3 = 3;

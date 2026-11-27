@@ -1,12 +1,12 @@
-// Module ID: 17660
-// Function ID: 17661
+// Module ID: 17667
+// Function ID: 17668
 // Name: useShouldShowChooseAccount
-// Dependencies: [13385, 504, 2]
+// Dependencies: [13393, 504, 2]
 // Exports: default
 
-// Module 17660 (useShouldShowChooseAccount)
+// Module 17667 (useShouldShowChooseAccount)
 import get_initialized from "get initialized" /* 504 */;
-import MultiAccountStore from "MultiAccountStore" /* 13385 */;
+import MultiAccountStore from "MultiAccountStore" /* 13393 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/multi_account/useShouldShowChooseAccount.tsx");

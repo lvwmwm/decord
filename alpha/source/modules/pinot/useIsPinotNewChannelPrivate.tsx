@@ -1,11 +1,11 @@
-// Module ID: 8553
-// Function ID: 8554
+// Module ID: 8554
+// Function ID: 8555
 // Name: useIsPinotNewChannelPrivate
-// Dependencies: [4892, 4949, 4914, 504, 8550, 2]
+// Dependencies: [4892, 4949, 4914, 504, 8551, 2]
 // Exports: useIsPinotNewChannelPrivate
 
-// Module 8553 (useIsPinotNewChannelPrivate)
-import PinotEligibility from "PinotEligibility" /* 8550 */;
+// Module 8554 (useIsPinotNewChannelPrivate)
+import PinotEligibility from "PinotEligibility" /* 8551 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
 import GuildStore from "GuildStore" /* 4914 */;

@@ -1,17 +1,17 @@
-// Module ID: 13397
-// Function ID: 13398
+// Module ID: 13405
+// Function ID: 13406
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5044, 1071, 21, 1186, 1654, 5644, 5104, 5253, 1707, 504, 6379, 6380, 13363, 13398, 13400, 9723, 9586, 2]
+// Dependencies: [32, 19, 5044, 1071, 21, 1186, 1654, 5644, 5104, 5253, 1707, 504, 6379, 6380, 13371, 13406, 13408, 9724, 9587, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 13397 (EmojiSuggestionBarUtils)
+// Module 13405 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import native2 from "native" /* 5104 */;
 import spring_spring from "spring/spring" /* 5644 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9586 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -210,13 +210,13 @@ export function useEmojiSuggestionBarState(merged, MAX_SUGGESTIONS_LARGE, minUnl
   const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
   let tmp5 = chatInputStateRef(6379);
   analyticsLocations = tmp5(chatInputStateRef(6380).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp6 = chatInputStateRef(13363)(tmp3, 16);
+  const tmp6 = chatInputStateRef(13371)(tmp3, 16);
   setData = tmp6.setData;
   setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
   let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount: MAX_SUGGESTIONS_LARGE, minUnlockedEmojis };
-  const tmp8 = chatInputStateRef(13398);
+  const tmp8 = chatInputStateRef(13406);
   if (focused) {
     focused = !suppressed;
   }

@@ -1,10 +1,10 @@
-// Module ID: 20286
-// Function ID: 20287
+// Module ID: 20344
+// Function ID: 20345
 // Name: VoicePanelManager
-// Dependencies: [4892, 5851, 6965, 10271, 7475, 2]
+// Dependencies: [4892, 5851, 6965, 10272, 7475, 2]
 
-// Module 20286 (VoicePanelManager)
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10271 */;
+// Module 20344 (VoicePanelManager)
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10272 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
 import VoicePanelStore from "VoicePanelStore" /* 6965 */;

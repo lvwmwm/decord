@@ -1,10 +1,10 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12133
+// Function ID: 12134
 // Name: getGameOrganizationInviteSendStateKey
 // Dependencies: [2]
 // Exports: default, toLinkedGameOrganization
 
-// Module 12125 (getGameOrganizationInviteSendStateKey)
+// Module 12133 (getGameOrganizationInviteSendStateKey)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/getGameOrganizationInviteSendStateKey.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 19363
-// Function ID: 19364
+// Module ID: 19379
+// Function ID: 19380
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 8213, 1071, 21, 575, 5043, 1629, 16373, 16372, 19364, 10267, 5607, 6321, 1256, 8214, 8109, 5634, 5598, 1112, 2847, 2]
+// Dependencies: [19, 17, 8214, 1071, 21, 575, 5043, 1629, 16380, 16379, 19380, 10268, 5607, 6321, 1256, 8215, 8109, 5634, 5598, 1112, 2847, 2]
 // Exports: default
 
-// Module 19363 (ParentalConsentWarningBanner)
+// Module 19379 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import _modDef6321 from "module_6321" /* 6321 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8214 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8214 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8215 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;

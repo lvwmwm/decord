@@ -1,10 +1,10 @@
-// Module ID: 14843
-// Function ID: 14844
+// Module ID: 14849
+// Function ID: 14850
 // Name: GuildAutomodMessageStoreUtils
 // Dependencies: [1093, 2]
 // Exports: isNotAutomodEmbed
 
-// Module 14843 (GuildAutomodMessageStoreUtils)
+// Module 14849 (GuildAutomodMessageStoreUtils)
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1093 */;
 import size from "module_2" /* 2 */;
 

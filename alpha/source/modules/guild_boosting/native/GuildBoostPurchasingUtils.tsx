@@ -1,10 +1,10 @@
-// Module ID: 13528
-// Function ID: 13529
+// Module ID: 13536
+// Function ID: 13537
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2179, 1071, 1389, 6047, 1112, 1256, 5806, 9362, 9151, 9113, 9352, 2174, 2]
+// Dependencies: [5, 2179, 1071, 1389, 6047, 1112, 1256, 5806, 9363, 9152, 9114, 9353, 2174, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 13528 (GuildBoostPurchasingUtils)
+// Module 13536 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

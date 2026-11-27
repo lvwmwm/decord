@@ -1,11 +1,11 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 12995
+// Function ID: 12996
 // Name: ChatInputNativeCommands
-// Dependencies: [12988, 10070, 2]
+// Dependencies: [12996, 10071, 2]
 
-// Module 12987 (ChatInputNativeCommands)
-import createNonce from "createNonce" /* 10070 */;
-import ChatInputNativeComponent from "ChatInputNativeComponent" /* 12988 */;
+// Module 12995 (ChatInputNativeCommands)
+import createNonce from "createNonce" /* 10071 */;
+import ChatInputNativeComponent from "ChatInputNativeComponent" /* 12996 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

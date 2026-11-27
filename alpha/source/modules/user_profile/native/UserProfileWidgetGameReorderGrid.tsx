@@ -1,10 +1,10 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14605
+// Function ID: 14606
 // Name: UserProfileWidgetGameReorderGrid
-// Dependencies: [32, 19, 17, 21, 5043, 14584, 1654, 5253, 5256, 1707, 5259, 5303, 1112, 5052, 7328, 11536, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 14591, 1654, 5253, 5256, 1707, 5259, 5303, 1112, 5052, 7328, 11544, 2]
 // Exports: default
 
-// Module 14598 (UserProfileWidgetGameReorderGrid)
+// Module 14605 (UserProfileWidgetGameReorderGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1112 */;
@@ -805,7 +805,7 @@ export default function UserProfileWidgetGameReorderGrid(gameIds) {
   const useFrameCallback = gameIds(1654).useFrameCallback;
   items1[5] = gameIds(1654).scrollTo;
   items1[6] = scrollRef;
-  items1[7] = columns(11536);
+  items1[7] = columns(11544);
   items1[8] = scrollOffset;
   let c0;
   let c1;

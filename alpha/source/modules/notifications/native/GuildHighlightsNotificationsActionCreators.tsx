@@ -1,14 +1,14 @@
-// Module ID: 12165
-// Function ID: 12166
+// Module ID: 12173
+// Function ID: 12174
 // Name: GuildHighlightsNotificationsActionCreators
-// Dependencies: [12166, 1071, 5257, 12167, 2120, 1112, 1256, 2]
+// Dependencies: [12174, 1071, 5257, 12175, 2120, 1112, 1256, 2]
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 12165 (GuildHighlightsNotificationsActionCreators)
+// Module 12173 (GuildHighlightsNotificationsActionCreators)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import Constants2 from "Constants" /* 12166 */;
+import Constants2 from "Constants" /* 12174 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ export function openGuildHighlightNotificationForPush(guild_id2, message, notifi
     }
   };
   const obj3 = { value: constants.TOO_MANY, label: intl.string(require("intl").t.pLeQp0) };
-  const tmp2 = require("asyncRequire")(12167, dependencyMap.paths);
+  const tmp2 = require("asyncRequire")(12175, dependencyMap.paths);
   intl = require("intl").intl;
   items = [obj3, , , , ];
   const obj4 = { value: constants.IRRELEVANT_CHANNEL, label: intl2.string(require("intl").t.Lu4n25) };

@@ -1,10 +1,10 @@
-// Module ID: 14863
-// Function ID: 14864
+// Module ID: 14869
+// Function ID: 14870
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 5043, 575, 1186, 1112, 14864, 14865, 14861, 5634, 5618, 9806, 14866, 7507, 5271, 7406, 10430, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1186, 1112, 14870, 14871, 14867, 5634, 5618, 9807, 14872, 7507, 5271, 7406, 10431, 2]
 // Exports: default
 
-// Module 14863 (GuildInviteActionSheet)
+// Module 14869 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -13,10 +13,10 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import SearchBar2 from "SearchBar" /* 7406 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10430 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14864 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14865 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 14866 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10431 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14870 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14871 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 14872 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,7 +55,7 @@ function GuildList(recipientId) {
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(14861);
+  let obj = recipientId(14867);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {
@@ -100,7 +100,7 @@ function GuildList(recipientId) {
         },
       ListEmptyComponent: EmptyGuildList
     };
-    const UserProfileStackedActionSheetSectionList = tmp(9806).UserProfileStackedActionSheetSectionList;
+    const UserProfileStackedActionSheetSectionList = tmp(9807).UserProfileStackedActionSheetSectionList;
     const tmp6 = closure_6;
     if (tmp5) {
       num = 24;

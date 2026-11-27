@@ -1,10 +1,10 @@
-// Module ID: 8639
-// Function ID: 8640
+// Module ID: 8640
+// Function ID: 8641
 // Name: useChannelVideoLimit
 // Dependencies: [4914, 5854, 1071, 504, 2]
 // Exports: default, getChannelVideoLimit
 
-// Module 8639 (useChannelVideoLimit)
+// Module 8640 (useChannelVideoLimit)
 import Constants from "Constants" /* 1071 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5854 */;

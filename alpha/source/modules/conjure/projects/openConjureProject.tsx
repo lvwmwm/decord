@@ -1,10 +1,10 @@
-// Module ID: 14289
-// Function ID: 14290
+// Module ID: 14296
+// Function ID: 14297
 // Name: openConjureProject
 // Dependencies: [1071, 4899, 1098, 2]
 // Exports: openConjureProject
 
-// Module 14289 (openConjureProject)
+// Module 14296 (openConjureProject)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;

@@ -1,17 +1,17 @@
-// Module ID: 19283
-// Function ID: 19284
+// Module ID: 19299
+// Function ID: 19300
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1387, 1071, 4889, 21, 5057, 5050, 5252, 504, 2174, 9152, 1112, 3303, 5075, 4876, 16159, 8109, 7394, 5271, 7480, 5606, 19284, 5730, 19288, 5634, 5641, 5043, 575, 2]
+// Dependencies: [19, 17, 1387, 1071, 4889, 21, 5057, 5050, 5252, 504, 2174, 9153, 1112, 3303, 5075, 4876, 16166, 8109, 7394, 5271, 7480, 5606, 19300, 5730, 19304, 5634, 5641, 5043, 575, 2]
 // Exports: default
 
-// Module 19283 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 19299 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import dismissible_content from "dismissible_content" /* 4876 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5075 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 16159 */;
+import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 16166 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
@@ -70,7 +70,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let obj4 = ref(2174);
   let result = obj4.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const obj5 = markAsDismissed(9152);
+  const obj5 = markAsDismissed(9153);
   enabled2 = obj5.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   const intl = markAsDismissed(1112).intl;
   const string = intl.string;
@@ -134,12 +134,12 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   };
   items4[0] = closure_9(tmp2(5606).ActionSheetHeaderBar, obj8);
   const obj9 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp14(tmp2(19284).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp14(tmp2(19300).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp14Result = !enabled;
-  enabled && closure_9(tmp2(19284).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && closure_9(tmp2(19300).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp14Result) {
     const obj10 = { source: obj11, style: tmp6.image, resizeMode: "contain" };
-    obj11 = { uri: ref(19288) };
+    obj11 = { uri: ref(19304) };
     const tmp4Result = ref(5730);
     tmp14Result = tmp14(tmp4Result, obj10);
   }

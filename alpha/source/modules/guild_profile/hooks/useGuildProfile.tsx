@@ -1,13 +1,13 @@
-// Module ID: 8543
-// Function ID: 8544
+// Module ID: 8544
+// Function ID: 8545
 // Name: useGuildProfile
-// Dependencies: [5, 19, 8542, 504, 8544, 2]
+// Dependencies: [5, 19, 8543, 504, 8545, 2]
 // Exports: useGuildProfile
 
-// Module 8543 (useGuildProfile)
+// Module 8544 (useGuildProfile)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 8542 */;
+import GuildProfileStore from "GuildProfileStore" /* 8543 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ export function useGuildProfile(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

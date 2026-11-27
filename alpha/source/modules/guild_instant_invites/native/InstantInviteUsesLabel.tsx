@@ -1,10 +1,10 @@
-// Module ID: 11442
-// Function ID: 11443
+// Module ID: 11443
+// Function ID: 11444
 // Name: InstantInviteUsesLabel
 // Dependencies: [19, 21, 5634, 2]
 // Exports: default
 
-// Module 11442 (InstantInviteUsesLabel)
+// Module 11443 (InstantInviteUsesLabel)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import react from "react" /* 19 */;

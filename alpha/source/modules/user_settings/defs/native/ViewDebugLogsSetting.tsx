@@ -1,9 +1,9 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17191
+// Function ID: 17192
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5257, 7548, 6130, 11417, 7546, 7507, 1112, 17185, 17187, 5752, 17190, 1379, 11499, 17191, 11962, 15084, 4868, 2]
+// Dependencies: [19, 17, 21, 5257, 7548, 6130, 11418, 7546, 7507, 1112, 17192, 17194, 5752, 17197, 1379, 11507, 17198, 11970, 15091, 4868, 2]
 
-// Module 17184 (ViewDebugLogsSetting)
+// Module 17191 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import intl5 from "intl" /* 1112 */;
@@ -15,15 +15,15 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
 import ActionSheet2 from "ActionSheet" /* 7546 */;
 import ActionSheetRow from "ActionSheetRow" /* 7548 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11417 */;
-import ChannelNotificationIcon from "ChannelNotificationIcon" /* 11499 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15084 */;
-import WrenchIcon from "WrenchIcon" /* 17185 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 17187 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 17190 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 17191 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11418 */;
+import ChannelNotificationIcon from "ChannelNotificationIcon" /* 11507 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15091 */;
+import WrenchIcon from "WrenchIcon" /* 17192 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 17194 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 17197 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 17198 */;
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

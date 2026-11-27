@@ -1,10 +1,10 @@
-// Module ID: 13596
-// Function ID: 13597
+// Module ID: 13603
+// Function ID: 13604
 // Name: MuteAppDmActionSheet
-// Dependencies: [19, 17, 21, 5043, 575, 5271, 8597, 5634, 1112, 5641, 7476, 7471, 5257, 5725, 11497, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5271, 8598, 5634, 1112, 5641, 7476, 7471, 5257, 5725, 11505, 2]
 // Exports: default
 
-// Module 13596 (MuteAppDmActionSheet)
+// Module 13603 (MuteAppDmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7471 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7476 */;
-import BellSlashIcon from "BellSlashIcon" /* 11497 */;
+import BellSlashIcon from "BellSlashIcon" /* 11505 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -44,7 +44,7 @@ export default function MuteAppDMActionSheet(channel) {
   let obj = { startExpanded: true, children: closure_5(View, obj2) };
   obj2 = { style: tmp.content, children: items };
   let obj3 = { style: tmp.iconContainer, children: closure_4(View, obj4) };
-  obj4 = { style: tmp.iconBackground, "aria-hidden": true, children: closure_4(channel(8597).BellIcon, { size: "md", color: "interactive-text-default" }) };
+  obj4 = { style: tmp.iconBackground, "aria-hidden": true, children: closure_4(channel(8598).BellIcon, { size: "md", color: "interactive-text-default" }) };
   const BottomSheet = channel(5271).BottomSheet;
   items = [closure_4(View, obj3), , , , ];
   const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(channel(1112).t.uAmAiL) };

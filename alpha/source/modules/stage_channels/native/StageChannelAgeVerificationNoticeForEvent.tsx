@@ -1,10 +1,10 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8573
+// Function ID: 8574
 // Name: StageChannelAgeVerificationNoticeForEvent
 // Dependencies: [19, 17, 1071, 21, 5043, 575, 6825, 1112, 5634, 5718, 2188, 7870, 6828, 5747, 7942, 7941, 6854, 2]
 // Exports: default
 
-// Module 8572 (StageChannelAgeVerificationNoticeForEvent)
+// Module 8573 (StageChannelAgeVerificationNoticeForEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

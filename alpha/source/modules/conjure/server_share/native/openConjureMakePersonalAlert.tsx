@@ -1,10 +1,10 @@
-// Module ID: 18515
-// Function ID: 18516
+// Module ID: 18520
+// Function ID: 18521
 // Name: openConjureMakePersonalAlert
-// Dependencies: [5, 19, 21, 18516, 5257, 5725, 6052, 1112, 4245, 6115, 18514, 5634, 6048, 2]
+// Dependencies: [5, 19, 21, 18521, 5257, 5725, 6052, 1112, 4245, 6115, 18519, 5634, 6048, 2]
 // Exports: default
 
-// Module 18515 (openConjureMakePersonalAlert)
+// Module 18520 (openConjureMakePersonalAlert)
 import useAlertStore from "useAlertStore" /* 6048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ function ConjureMakePersonalAlert(project) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ function ConjureMakePersonalAlert(project) {
               const obj2 = tmp4(c2[5]);
               obj2.open("CONJURE_MADE_PERSONAL", obj7);
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp16) {
@@ -98,7 +98,7 @@ function ConjureMakePersonalAlert(project) {
     return obj(...arguments);
   };
   const tmp = obj;
-  const tmp3 = obj(18516)(project.project);
+  const tmp3 = obj(18521)(project.project);
   _require = tmp3;
   ({ keptChannels, error } = tmp3);
   const tmp4 = closure_4;
@@ -107,7 +107,7 @@ function ConjureMakePersonalAlert(project) {
   const AlertModal = require("AlertModal").AlertModal;
   intl = require("intl").intl;
   Stack = require("Stack/Stack").Stack;
-  items = [closure_4(obj(18514), { rows }), , ];
+  items = [closure_4(obj(18519), { rows }), , ];
   let tmp4Result = null;
   if (null != keptChannels) {
     let obj2 = { variant: "body-sm/normal", color: "text-muted", children: keptChannels };

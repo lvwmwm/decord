@@ -1,17 +1,17 @@
-// Module ID: 19034
-// Function ID: 19035
+// Module ID: 19050
+// Function ID: 19051
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 4892, 1071, 1111, 21, 5043, 575, 7628, 5618, 11684, 6126, 19035, 563, 1502, 2]
+// Dependencies: [19, 17, 4892, 1071, 1111, 21, 5043, 575, 7628, 5618, 11692, 6126, 19051, 563, 1502, 2]
 
-// Module 19034 (ThreadsScreen)
+// Module 19050 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5618 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11684 */;
-import ThreadListDefault from "ThreadList" /* 19035 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 11692 */;
+import ThreadListDefault from "ThreadList" /* 19051 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import createStyles from "createStyles" /* 5043 */;

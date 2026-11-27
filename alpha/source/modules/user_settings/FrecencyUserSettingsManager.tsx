@@ -1,9 +1,9 @@
-// Module ID: 19731
-// Function ID: 19732
+// Module ID: 19747
+// Function ID: 19748
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 10049, 10048, 6883, 6923, 6926, 6985, 1231, 1081, 1364, 1088, 7475, 4873, 1232, 1233, 12, 2]
+// Dependencies: [5, 10050, 10049, 6883, 6923, 6926, 6985, 1231, 1081, 1364, 1088, 7475, 4873, 1232, 1233, 12, 2]
 
-// Module 19731 (FrecencyUserSettingsManager)
+// Module 19747 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
@@ -12,8 +12,8 @@ import ApplicationConstants from "ApplicationConstants" /* 1364 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4873 */;
 import FrecencyStore2 from "FrecencyStore" /* 6985 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 10049 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10048 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 10050 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10049 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import SoundboardStore from "SoundboardStore" /* 6923 */;
 import StickersPersistedStore from "StickersPersistedStore" /* 6926 */;
@@ -75,7 +75,7 @@ let actions = function _saveProtos() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -107,12 +107,12 @@ let actions = function _saveProtos() {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp4) {
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

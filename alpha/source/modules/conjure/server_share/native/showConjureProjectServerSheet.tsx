@@ -1,10 +1,10 @@
-// Module ID: 18513
-// Function ID: 18514
+// Module ID: 18518
+// Function ID: 18519
 // Name: showConjureProjectServerSheet
-// Dependencies: [5, 19, 17, 21, 5043, 575, 18508, 5257, 5725, 7546, 7507, 1112, 4245, 7251, 7253, 18514, 5634, 5641, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 575, 18515, 5257, 5725, 7546, 7507, 1112, 4245, 7251, 7253, 18519, 5634, 5641, 2]
 // Exports: default
 
-// Module 18513 (showConjureProjectServerSheet)
+// Module 18518 (showConjureProjectServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
@@ -49,7 +49,7 @@ function ConjureProjectServerSheet(projectId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ function ConjureProjectServerSheet(projectId) {
               obj2.open(closure_1_7, obj7);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c3 = 3;

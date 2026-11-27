@@ -1,10 +1,10 @@
-// Module ID: 11262
-// Function ID: 11263
+// Module ID: 11263
+// Function ID: 11264
 // Name: StripeNextAction
-// Dependencies: [5, 11261, 5808, 2]
+// Dependencies: [5, 11262, 5808, 2]
 // Exports: reopenStripeNextAction
 
-// Module 11262 (StripeNextAction)
+// Module 11263 (StripeNextAction)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ obj = function _reopenStripeNextAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -153,7 +153,7 @@ obj = function _reopenStripeNextAction() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         closure_4 = tmp25;

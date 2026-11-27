@@ -1,10 +1,10 @@
-// Module ID: 14506
-// Function ID: 14507
+// Module ID: 14513
+// Function ID: 14514
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 5775, 4910, 4892, 4914, 4985, 1387, 12935, 4898, 5776, 7067, 12385, 8821, 8593, 8469, 8466, 8605, 1112, 8598, 10458, 8227, 575, 14507, 8480, 5659, 8586, 8604, 14508, 8478, 4906, 8481, 8482, 2]
+// Dependencies: [5, 32, 17, 5775, 4910, 4892, 4914, 4985, 1387, 12943, 4898, 5776, 7067, 12393, 8822, 8594, 8470, 8467, 8606, 1112, 8599, 10459, 8228, 575, 14514, 8481, 5659, 8587, 8605, 14515, 8479, 4906, 8482, 8483, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 14506 (GuildScheduledEventEmbed)
+// Module 14513 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
@@ -12,19 +12,19 @@ import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
 import GuildRecord from "GuildRecord" /* 4910 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import Constants from "Constants" /* 5776 */;
-import react_native2 from "react-native" /* 8227 */;
-import ScheduleUtils from "ScheduleUtils" /* 8466 */;
-import useEventSchedule from "useEventSchedule" /* 8469 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8478 */;
-import EntityUtils from "EntityUtils" /* 8480 */;
-import GuildEventUtils from "GuildEventUtils" /* 8586 */;
-import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8593 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8604 */;
-import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 8605 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12385 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 12935 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14508 */;
+import react_native2 from "react-native" /* 8228 */;
+import ScheduleUtils from "ScheduleUtils" /* 8467 */;
+import useEventSchedule from "useEventSchedule" /* 8470 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8479 */;
+import EntityUtils from "EntityUtils" /* 8481 */;
+import GuildEventUtils from "GuildEventUtils" /* 8587 */;
+import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8594 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8605 */;
+import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 8606 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8822 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12393 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 12943 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14515 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5775 */;
@@ -113,9 +113,9 @@ function createGuildScheduledEventEmbed(type) {
   const intl = tmp7(1112).intl;
   const stringResult = intl.string(intl5.t.DlcqlU);
   const tmp7Result12 = renderer_EmbedUtils;
-  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8598));
+  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8599));
   const tmp7Result13 = renderer_EmbedUtils;
-  const assetUriForEmbed2 = tmp7Result13.getAssetUriForEmbed(tmp(10458));
+  const assetUriForEmbed2 = tmp7Result13.getAssetUriForEmbed(tmp(10459));
   if (null != guild) {
     if (tmp9) {
       let stringResult1;
@@ -135,7 +135,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14507));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14514));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;
@@ -314,7 +314,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
   let obj = GuildScheduledEventStore;
   const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(tmp3);
   if (nextRecurrenceIdInEvent == null) {
-    let obj2 = first(8466);
+    let obj2 = first(8467);
     nextRecurrenceIdInEvent = obj2.getNextRecurrenceIdInEvent(guildScheduledEvent);
   }
   if (null != guildScheduledEvent) {
@@ -341,7 +341,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
       return tmp13(obj3);
     }
   }
-  let obj4 = first(8481);
+  let obj4 = first(8482);
   const guardGuildEventFetchResult = obj4.guardGuildEventFetch(first, tmp3, _asyncToGenerator(async function(arg0, value) {
     if (c3 === 2) {
       c3 = 3;
@@ -353,7 +353,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

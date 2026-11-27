@@ -1,10 +1,10 @@
-// Module ID: 10116
-// Function ID: 10117
+// Module ID: 10117
+// Function ID: 10118
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 4892, 4891, 1071, 10117, 10106, 572, 5792, 4964, 10120, 10000, 10121, 6973, 10123, 2]
+// Dependencies: [5, 4892, 4891, 1071, 10118, 10107, 572, 5792, 4964, 10121, 10001, 10122, 6973, 10124, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10116 (confirmActivityLaunchChecks)
+// Module 10117 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -35,7 +35,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
             aPIError = new closure_132_0(closure_132_2[7]).APIError(closure_4);
             dispatch(obj6);
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -143,7 +143,7 @@ obj = function _confirmActivityChange() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ obj = function _confirmActivityAgeGate() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -413,7 +413,7 @@ obj = function _confirmExternalAppLaunch() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

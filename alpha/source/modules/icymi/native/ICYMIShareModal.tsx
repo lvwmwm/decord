@@ -1,10 +1,10 @@
-// Module ID: 18353
-// Function ID: 18354
+// Module ID: 18360
+// Function ID: 18361
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4892, 1071, 8944, 5048, 21, 5043, 575, 8595, 1112, 18354, 5725, 5618, 14108, 14120, 5641, 6130, 8945, 1255, 8344, 8244, 1629, 1495, 1379, 9003, 11524, 2]
+// Dependencies: [32, 5, 19, 17, 4892, 1071, 8945, 5048, 21, 5043, 575, 8596, 1112, 18361, 5725, 5618, 14115, 14127, 5641, 6130, 8946, 1255, 8345, 8245, 1629, 1495, 1379, 9004, 11532, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 18353 (ICYMIShareModal)
+// Module 18360 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,9 +13,9 @@ import PlatformUtils from "PlatformUtils" /* 1379 */;
 import MessageConstants from "MessageConstants" /* 5048 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5618 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
-import ShareEventUtils from "ShareEventUtils" /* 8595 */;
-import UserRowConstants from "UserRowConstants" /* 8944 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 14108 */;
+import ShareEventUtils from "ShareEventUtils" /* 8596 */;
+import UserRowConstants from "UserRowConstants" /* 8945 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 14115 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const ShareChatInputDefault = tmp5(14120);
+const ShareChatInputDefault = tmp5(14127);
 function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;
@@ -119,7 +119,7 @@ class ICYMIShareModal {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -167,7 +167,7 @@ class ICYMIShareModal {
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -213,7 +213,7 @@ class ICYMIShareModal {
                           return obj;
                         }
                         c1 = 3;
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       } catch (tmp16) {
                         c1 = 3;
                         throw tmp16;
@@ -228,7 +228,7 @@ class ICYMIShareModal {
                 const arr3 = tmp2(closure_2[19]);
                 arr3.pop();
                 c4 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp6) {
               c4 = 3;
@@ -334,7 +334,7 @@ export function GameShareModal(content) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -392,7 +392,7 @@ export function GameShareModal(content) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp32) {
         closure_3 = tmp32;

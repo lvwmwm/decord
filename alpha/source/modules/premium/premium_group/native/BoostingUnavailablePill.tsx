@@ -1,10 +1,10 @@
-// Module ID: 13976
-// Function ID: 13977
+// Module ID: 13983
+// Function ID: 13984
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 2187, 21, 5043, 575, 5257, 13977, 2120, 1112, 3691, 5634, 2]
+// Dependencies: [17, 2187, 21, 5043, 575, 5257, 13984, 2120, 1112, 3691, 5634, 2]
 // Exports: default
 
-// Module 13976 (BoostingUnavailablePill)
+// Module 13983 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -27,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13977, dependencyMap.paths);
+  const tmp2 = asyncRequire(13984, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };

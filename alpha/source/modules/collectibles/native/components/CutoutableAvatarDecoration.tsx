@@ -1,10 +1,10 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9420
+// Function ID: 9421
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 5044, 21, 563, 1413, 9420, 5730, 2]
+// Dependencies: [19, 5044, 21, 563, 1413, 9421, 5730, 2]
 // Exports: default
 
-// Module 9419 (CutoutableAvatarDecoration)
+// Module 9420 (CutoutableAvatarDecoration)
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtils from "AvatarUtils" /* 1413 */;
 import react from "react" /* 19 */;

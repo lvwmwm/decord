@@ -1,14 +1,14 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14430
+// Function ID: 14431
 // Name: ChangelogInlineImage
-// Dependencies: [32, 19, 17, 21, 5043, 575, 1495, 4868, 14422, 5730, 1112, 9519, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1495, 4868, 14429, 5730, 1112, 9520, 2]
 // Exports: default
 
-// Module 14423 (ChangelogInlineImage)
+// Module 14430 (ChangelogInlineImage)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import UserSettings from "UserSettings" /* 4868 */;
-import ChangelogImageUtils from "ChangelogImageUtils" /* 14422 */;
+import ChangelogImageUtils from "ChangelogImageUtils" /* 14429 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -25,7 +25,7 @@ let obj3;
 let rect;
 let tmp2;
 const FastImageDefault = tmp2(5730);
-const GifTagDefault = tmp2(9519);
+const GifTagDefault = tmp2(9520);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

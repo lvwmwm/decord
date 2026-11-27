@@ -1,10 +1,10 @@
-// Module ID: 12922
-// Function ID: 12923
+// Module ID: 12930
+// Function ID: 12931
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 6396, 21, 5043, 575, 6397, 7946, 6765, 5634, 1112, 9637, 2]
+// Dependencies: [32, 19, 17, 6396, 21, 5043, 575, 6397, 7946, 6765, 5634, 1112, 9638, 2]
 // Exports: default
 
-// Module 12922 (RarityBadge)
+// Module 12930 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6397 */;
@@ -104,7 +104,7 @@ export default function RarityBadge(rarity) {
   const tmp13 = metroImportAll;
   if (tmp13Result) {
     const obj6 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const NitroWheelIcon = tmp3(9637).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9638).NitroWheelIcon;
     tmp13Result = tmp13(NitroWheelIcon, obj6);
   }
   items2[1] = tmp13Result;

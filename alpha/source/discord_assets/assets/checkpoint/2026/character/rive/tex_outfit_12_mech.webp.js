@@ -1,8 +1,8 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12800
+// Function ID: 12801
 // Dependencies: [2]
 
-// Module 12792
+// Module 12800
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_12_mech.webp.js");

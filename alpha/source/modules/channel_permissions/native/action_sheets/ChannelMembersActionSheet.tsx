@@ -1,10 +1,10 @@
-// Module ID: 12117
-// Function ID: 12118
+// Module ID: 12125
+// Function ID: 12126
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 4892, 4955, 4949, 4914, 4975, 1071, 21, 5043, 575, 1629, 504, 1501, 5659, 12118, 8526, 1112, 5271, 7507, 6152, 5257, 8112, 12119, 10454, 8090, 12116, 10549, 7941, 5275, 8555, 5634, 2]
+// Dependencies: [19, 17, 4892, 4955, 4949, 4914, 4975, 1071, 21, 5043, 575, 1629, 504, 1501, 5659, 12126, 8527, 1112, 5271, 7507, 6152, 5257, 8112, 12127, 10455, 8090, 12124, 10550, 7941, 5275, 8556, 5634, 2]
 // Exports: default
 
-// Module 12117 (ChannelMembersActionSheet)
+// Module 12125 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,13 +15,13 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import Text_Text from "Text/Text" /* 5634 */;
 import useChannelNameDefault from "useChannelName" /* 5659 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8112 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8526 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8555 */;
-import SettingsIcon from "SettingsIcon" /* 10454 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10549 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12116 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12118 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 12119 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8527 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8556 */;
+import SettingsIcon from "SettingsIcon" /* 10455 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10550 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12124 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12126 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 12127 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;

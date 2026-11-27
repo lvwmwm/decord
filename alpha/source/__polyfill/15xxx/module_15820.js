@@ -1,581 +1,675 @@
 // Module ID: 15820
 // Function ID: 15821
-// Dependencies: [41, 42, 15821]
+// Dependencies: [41, 42, 32, 15814, 15821, 15822]
 
 // Module 15820
+import _mod15814 from "module_15814" /* 15814 */;
 import _mod15821 from "module_15821" /* 15821 */;
+import any from "any" /* 15822 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self) {
-  let _undefined;
-  const substr = [...arguments].slice();
-  value = __INTERNAL_SLOT_MAP__.get(self);
-  let c0 = value;
-  if (c0) {
-    const _Object = Object;
-    return substr.reduce((acc, item) => {
-      acc[item] = c0[item];
-      return acc;
-    }, Object.create(null));
-  } else {
-    const _TypeError = TypeError;
-    const _HermesInternal = HermesInternal;
-    self = this;
-    const self2 = this;
-    const typeError = new TypeError("" + self + " InternalSlot has not been initialized");
-    throw typeError;
+const require = globalThis.__r;
+let _require;
+
+let obj = {
+  next: {
+    value: function next() {
+      let index;
+      let kind;
+      let tmp7;
+      let tmp8;
+      const tmp3 = this[_mod15814.iterInternalSymbol];
+      ({ kind, index } = tmp3);
+      const arr = Array.from(tmp3.target[_mod15814.implSymbol]);
+      if (index >= arr.length) {
+        return { value: "HermesInternal", done: null };
+      } else {
+        let tmp4;
+        tmp3.index = index + 1;
+        [tmp7, tmp8] = arr[index].map(_mod15814.tryWrapperForImpl);
+        _slicedToArray(arr[index].map(_mod15814.tryWrapperForImpl), 2);
+        if ("key" === kind) {
+          tmp4 = tmp7;
+        } else if ("value" === kind) {
+          tmp4 = tmp8;
+        } else if ("key+value" === kind) {
+          const items = [tmp7, tmp8];
+          tmp4 = items;
+        }
+        return { value: tmp4, done: false };
+      }
+    },
+    writable: true,
+    enumerable: true,
+    configurable: true
   }
-}
-function GetOption(obj, arg1, arg2, join, arg4) {
-  if (typeof obj !== "object") {
-    const _TypeError2 = TypeError;
-    const self3 = this;
-    const self4 = this;
-    const typeError = new TypeError("Options must be an object");
-    throw typeError;
-  } else {
-    let require = tmp15;
-    if (undefined !== obj[arg1]) {
-      let tmp2 = tmp15;
-      if ("boolean" === "string") {
-        const _Boolean = Boolean;
-        const BooleanResult = Boolean(obj[arg1]);
-        require = BooleanResult;
-        tmp2 = BooleanResult;
+};
+obj[Symbol.toStringTag] = { value: "URLSearchParams Iterator", configurable: true };
+let closure_6 = Object.create(_mod15814.IteratorPrototype, obj);
+let obj2 = {
+  _mixedIntoPredicates: [],
+  is(arg0) {
+    const tmp = arg0;
+    if (tmp) {
+      const obj = _mod15814;
+      if (obj.hasOwn(arg0, _mod15814.implSymbol)) {
+        if (arg0[_mod15814.implSymbol] instanceof _mod15821.implementation) {
+          return true;
+        }
       }
-      let tmp5 = tmp2;
-      if (typeof tmp2 === "symbol") {
-        const _TypeError = TypeError;
-        throw TypeError("Cannot convert a Symbol value to a string");
-      } else {
-        const _String = String;
-        const StringResult = String(tmp2);
-        require = StringResult;
-        tmp5 = StringResult;
+      const _mixedIntoPredicates = module.exports._mixedIntoPredicates;
+      for (const item10025 of _mixedIntoPredicates) {
+        if (item10025(arg0)) {
+          obj2.return();
+          let flag = true;
+          return true;
+        }
       }
-      if (join.filter((item) => item == require).length) {
-        return tmp5;
-      } else {
-        const _RangeError = RangeError;
-        const _HermesInternal = HermesInternal;
-        const self = this;
-        const self2 = this;
-        const rangeError = new RangeError("" + tmp5 + " is not within " + join.join(", "));
-        throw rangeError;
-      }
-    } else {
-      return arg4;
     }
-  }
-}
-function memoize(arg0, cache) {
-  const obj = { cache: cache.cache || closure_10, serializer: cache.serializer || serializerDefault };
-  return cache.strategy ? cache.strategy : strategyDefault(arg0, obj);
-}
-function monadic(call, get, fn, num) {
-  let tmp2 = num;
-  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
-  if (!tmp) {
-    tmp2 = fn(num);
-  }
-  value = get.get(tmp2);
-  if (undefined === value) {
-    const callResult = call.call(this, num);
-    const result = get.set(tmp2, callResult);
-    value = callResult;
-  }
-  return value;
-}
-function variadic(apply, get, fn) {
-  const callResult = slice.call(arguments, 3);
-  const tmp2 = fn(callResult);
-  value = get.get(tmp2);
-  if (undefined === value) {
-    const self = this;
-    const applyResult = apply.apply(this, callResult);
-    const result = get.set(tmp2, applyResult);
-    value = applyResult;
-  }
-  return value;
-}
-function strategyDefault(c165, cache) {
-  cache = cache.cache;
-  const obj = 1 === c165.length ? monadic : variadic;
-  return obj.bind(this, c165, cache.create(), cache.serializer);
-}
-function isLiteralPart(type) {
-  return "literal" === type.type;
-}
-function invariant(arg0, arg1) {
-  let _Error;
-  {
-    _Error = Error;
-  }
-  const tmp2 = arg0;
-  if (!tmp2) {
-    const self = this;
-    const self2 = this;
-    const _Error1 = new _Error(arg1);
-    throw _Error1;
-  }
-}
-function validateInstance(arg0, format) {
-  if (!(arg0 instanceof obj)) {
-    const _TypeError = TypeError;
-    const _String = String;
-    const _HermesInternal = HermesInternal;
-    const self = this;
-    const self2 = this;
-    const typeError = new TypeError("Method Intl.ListFormat.prototype." + "format" + " called on incompatible receiver " + String(arg0));
-    throw typeError;
-  }
-}
-function stringListFromIterable(obj) {
-  if (typeof obj !== "object") {
-    return [];
-  } else {
-    const items = [];
-    const _Symbol = Symbol;
-    const iter = obj[Symbol.iterator]();
-    const iter2 = iter.next();
-    let iter3 = iter2;
-    if (!iter2.done) {
-      while (typeof iter3.value === "string") {
-        let arr = items.push(iter3.value);
-        let iter4 = iter.next();
-        iter3 = iter4;
+    return false;
+  },
+  isImpl(arg0) {
+    const tmp = arg0;
+    if (tmp) {
+      const tmp2 = require;
+      if (arg0 instanceof _mod15821.implementation) {
+        return true;
+      } else {
+        const _mixedIntoPredicates = module.exports._mixedIntoPredicates;
+        const tmp2Result = tmp2(15814);
+        for (const item10018 of _mixedIntoPredicates) {
+          if (item10018(tmp2Result.wrapperForImpl(arg0))) {
+            obj2.return();
+            let flag = true;
+            return true;
+          }
+        }
       }
+    }
+    return false;
+  },
+  convert(arg0) {
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    let str = obj.context;
+    if (str === undefined) {
+      str = "The provided value";
+    }
+    const _exports = module.exports;
+    if (_exports.is(arg0)) {
+      obj2 = _mod15814;
+      return obj2.implForWrapper(arg0);
+    } else {
       const _TypeError = TypeError;
       const _HermesInternal = HermesInternal;
       const self = this;
       const self2 = this;
-      const typeError = new TypeError("Iterable yielded " + iter3.value + " which is not a string");
+      const typeError = new TypeError("" + str + " is not of type 'URLSearchParams'.");
       throw typeError;
     }
-    return items;
-  }
-}
-function createPartsFromList(__INTERNAL_SLOT_MAP__, self, arg2) {
-  if (0 === arg2.length) {
-    return [];
-  } else if (2 === arg2.length) {
-    const obj2 = { 0: null, 1: null };
-    const obj3 = { type: "element", value: arg2[0] };
-    obj2[0] = obj3;
-    const obj4 = { type: "element", value: arg2[1] };
-    obj2[1] = obj4;
-    return deconstructPattern(getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self, "templatePair").templatePair, obj2);
-  } else {
-    const obj5 = { type: "element", value: arg2[arg2.length - 1] };
-    let diff = length - 2;
-    let tmpResult = obj5;
-    let tmp6 = obj5;
-    if (0 <= diff) {
-      do {
-        let str = "templateStart";
-        let tmp = deconstructPattern;
-        if (0 !== diff) {
-          let str2 = "templateEnd";
-          if (diff < length - 2) {
-            str2 = "templateMiddle";
-          }
-          str = str2;
-        }
-        let obj = { 0: null, 1: null };
-        let obj6 = { type: "element", value: arg2[diff] };
-        obj[0] = obj6;
-        obj[1] = tmpResult;
-        tmpResult = tmp(getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self, str)[str], obj);
-        diff = diff - 1;
-        tmp6 = tmpResult;
-      } while (0 <= diff);
-    }
-    return tmp6;
-  }
-}
-function deconstructPattern(templatePair, arg1) {
-  function PartitionPattern(arr) {
-    const items = [];
-    let index = arr.indexOf("{");
-    let num = 0;
-    if (index < arr.length) {
-      let num4 = 0;
-      num = 0;
-      if (index > -1) {
-        const index1 = arr.indexOf("}", index);
-        const _HermesInternal = HermesInternal;
-        const tmp4 = index1 > index;
-        const combined = "Invalid pattern " + arr;
+  },
+  createDefaultIterator(self, key) {
+    let obj4;
+    obj2 = Object.create(closure_6);
+    const obj = { value: obj4, configurable: true };
+    obj4 = { target: self, kind: key, index: 0 };
+    Object.defineProperty(obj2, _mod15814.iterInternalSymbol, obj);
+    return obj2;
+  },
+  create(arg0, arg1, arg2) {
+    if (undefined === arg0[_mod15814.ctorRegistrySymbol]) {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error = new Error("Internal error: invalid global object");
+      throw error;
+    } else {
+      const _URLSearchParams = arg0[_mod15814.ctorRegistrySymbol].URLSearchParams;
+      if (undefined === _URLSearchParams) {
         const _Error = Error;
-        while (tmp4) {
-          if (index > num4) {
-            let obj = { type: "literal", value: arr.substring(num4, index) };
-            let push = items.push;
-            arr = push(obj);
-          }
-          let obj2 = { type: arr.substring(index + 1, index1), value: "Array" };
-          let push2 = items.push;
-          let push2Result = push2(obj2);
-          let sum = index1 + 1;
-          let index2 = arr.indexOf("{", sum);
-          num = sum;
-          if (index2 < arr.length) {
-            num4 = sum;
-            num = sum;
-            index = index2;
-          }
-        }
         const self = this;
         const self2 = this;
-        const _Error1 = new _Error(combined);
-        throw _Error1;
-      }
-    }
-    if (num < arr.length) {
-      const push3 = items.push;
-      const obj3 = { type: "literal", value: arr.substring(num, arr.length) };
-      push3(obj3);
-    }
-    return items;
-  }
-  let items = [];
-  const tmp2 = PartitionPattern(templatePair);
-  const iter = tmp2[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let type = nextResult.type;
-    let tmp4 = isLiteralPart;
-    let iter2 = nextResult;
-    if (isLiteralPart(nextResult)) {
-      let obj = { type: "literal", value: iter2.value };
-      let arr = items.push(obj);
-    } else {
-      let _HermesInternal = HermesInternal;
-      let tmp7 = type in arg1;
-      let tmp8 = invariant(tmp7, "" + type + " is missing from placables");
-      let tmp9 = arg1[type];
-      let tmp10 = tmp9;
-      let _Array = Array;
-      let push = items.push;
-      if (Array.isArray(tmp9)) {
-        let items1 = [];
-        let num = 0;
-        let arraySpreadResult = HermesBuiltin.arraySpread(items1, tmp11, 0);
-        let applyResult = HermesBuiltin.apply(push, items1, items);
+        const error1 = new Error("Internal error: constructor URLSearchParams is not installed on the passed global object");
+        throw error1;
       } else {
-        let arr2 = push(tmp10);
+        const _Object = Object;
+        return obj2.setup(Object.create(_URLSearchParams.prototype), arg0, arg1, arg2);
       }
     }
-    continue;
-  }
-  return items;
-}
-function serializerDefault() {
-  return JSON.stringify(arguments);
-}
-let closure_9 = (() => {
-  class ObjectWithoutPrototypeCache {
-    constructor() {
-      _classCallCheck(this, ObjectWithoutPrototypeCache);
-      this.cache = Object.create(null);
+  },
+  createImpl(arg0, arg1, arg2) {
+    obj2 = obj2.create(arg0, arg1, arg2);
+    const obj = _mod15814;
+    return obj.implForWrapper(obj2);
+  },
+  _internalSetup(arg0) {
+
+  },
+  setup(wrapper, arg1) {
+    let implementation;
+    let items = arg2;
+    if (arg2 === undefined) {
+      items = [];
     }
-  }
-  const entry = {
-    key: "get",
-    value: function get(arg0) {
-      return this.cache[arg0];
+    let obj = arg3;
+    if (arg3 === undefined) {
+      obj = {};
     }
-  };
-  const items = [
-    entry,
-    {
-      key: "set",
-      value: function set(arg0, arg1) {
-        this.cache[arg0] = arg1;
+    obj.wrapper = wrapper;
+    obj2._internalSetup(wrapper);
+    obj2 = { value: implementation, configurable: true };
+    const implSymbol = _mod15814.implSymbol;
+    implementation = new _mod15821.implementation(arg1, items, obj);
+    defineProperty(wrapper, implSymbol, obj2);
+    wrapper[_mod15814.implSymbol][_mod15814.wrapperSymbol] = wrapper;
+    if (_mod15821.init) {
+      const tmp2Result = _mod15821;
+      tmp2Result.init(wrapper[_mod15814.implSymbol], obj);
+    }
+    return wrapper;
+  },
+  install(arg0) {
+    let closure_0;
+    _require = arg0;
+    class URLSearchParams {
+      constructor() {
+        _classCallCheck(this, URLSearchParams);
+        const first = arguments[0];
+        let str = "";
+        if (undefined !== first) {
+          const obj7 = _mod15814;
+          if (obj7.isObject(first)) {
+            const _Symbol = Symbol;
+            if (undefined !== first[Symbol.iterator]) {
+              const tmp50Result = _mod15814;
+              if (tmp50Result.isObject(first)) {
+                const items = [];
+                str = items;
+                for (const item10081 of first) {
+                  let obj5 = _mod15814;
+                  if (obj5.isObject(item10081)) {
+                    let items1 = [];
+                    for (const item10103 of item10081) {
+                      let obj6 = any;
+                      let arr = items1.push(obj6.USVString(item10103, { context: "Failed to construct 'URLSearchParams': parameter 1 sequence's element's element" }));
+                      continue;
+                    }
+                    let arr2 = items.push(items1);
+                    continue;
+                  } else {
+                    let _TypeError3 = TypeError;
+                    let self5 = this;
+                    let str4 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.";
+                    let self6 = this;
+                    let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.");
+                    throw typeError;
+                  }
+                }
+              } else {
+                const _TypeError2 = TypeError;
+                const self3 = this;
+                const self4 = this;
+                const typeError1 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence is not an iterable object.");
+                throw typeError1;
+              }
+            } else {
+              const tmp50Result3 = _mod15814;
+              if (tmp50Result3.isObject(first)) {
+                const _Object = Object;
+                const obj = Object.create(null);
+                const _Reflect = Reflect;
+                str = obj;
+                const ownKeysResult = Reflect.ownKeys(first);
+                for (const item10039 of ownKeysResult) {
+                  let tmp13 = item10039;
+                  let _Object2 = Object;
+                  let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(first, item10039);
+                  if (ownPropertyDescriptor) {
+                    if (tmp15.enumerable) {
+                      obj2 = any;
+                      let USVStringResult = obj2.USVString(tmp13, { context: "Failed to construct 'URLSearchParams': parameter 1 record's key" });
+                      let tmp23 = first[tmp13];
+                      let obj3 = any;
+                      obj[USVStringResult] = obj3.USVString(tmp23, { context: "Failed to construct 'URLSearchParams': parameter 1 record's value" });
+                    }
+                  }
+                  continue;
+                }
+              } else {
+                const _TypeError = TypeError;
+                const self = this;
+                const self2 = this;
+                const typeError2 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 record is not an object.");
+                throw typeError2;
+              }
+            }
+          } else {
+            const tmp50Result4 = any;
+            str = tmp50Result4.USVString(first, { context: "Failed to construct 'URLSearchParams': parameter 1" });
+          }
+        }
+        const items2 = [];
+        items2.push(str);
+        return obj2.setup(Object.create(this.constructor.prototype), closure_0, items2);
       }
     }
-  ];
-  return _createClass(ObjectWithoutPrototypeCache, items);
-})();
-let closure_10 = {
-  create() {
-    const tmp = new closure_9();
-    return tmp;
-  }
-};
-function strategyVariadic(c165, cache) {
-  cache = cache.cache;
-  return variadic.bind(this, c165, cache.create(), cache.serializer);
-}
-memoize(() => Intl.NumberFormat(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-memoize(() => Intl.PluralRules(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-memoize(() => Intl.Locale(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-memoize(() => Intl.ListFormat(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-let value = (() => {
-  class ListFormat {
-    constructor(currentLocale, arg1) {
-      const self = this;
-      _classCallCheck(this, ListFormat);
-      let constructor;
-      if (this) {
-        if (self instanceof ListFormat) {
-          constructor = self.constructor;
-        }
-      }
-      if (constructor) {
-        const __INTERNAL_SLOT_MAP__ = tmp.__INTERNAL_SLOT_MAP__;
-        if (!__INTERNAL_SLOT_MAP__.get(self)) {
-          const _Object = Object;
-          const result = __INTERNAL_SLOT_MAP__.set(self, Object.create(null));
-        }
-        let obj4 = arg1;
-        __INTERNAL_SLOT_MAP__.get(self).initializedListFormat = true;
-        const _Intl = Intl;
-        const canonicalLocales = Intl.getCanonicalLocales(currentLocale);
-        const _Object2 = Object;
-        const obj3 = Object.create(null);
-        if (undefined === arg1) {
-          const _Object3 = Object;
-          obj4 = Object.create(null);
-        } else if (typeof obj4 !== "object") {
-          const _TypeError2 = TypeError;
-          const self6 = this;
-          const self7 = this;
-          const typeError = new TypeError("Options must be an object");
-          throw typeError;
-        }
-        obj3.localeMatcher = GetOption(obj4, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        const localeData = tmp.localeData;
-        const obj = _mod15821;
-        const ResolveLocaleResult = obj.ResolveLocale(ListFormat.availableLocales, canonicalLocales, obj3, ListFormat.relevantExtensionKeys, localeData, ListFormat.getDefaultLocale);
-        const __INTERNAL_SLOT_MAP__2 = tmp.__INTERNAL_SLOT_MAP__;
-        const locale = ResolveLocaleResult.locale;
-        if (!__INTERNAL_SLOT_MAP__2.get(self)) {
-          const _Object4 = Object;
-          const result1 = __INTERNAL_SLOT_MAP__2.set(self, Object.create(null));
-        }
-        __INTERNAL_SLOT_MAP__2.get(self).locale = locale;
-        const __INTERNAL_SLOT_MAP__3 = tmp.__INTERNAL_SLOT_MAP__;
-        const tmp16Result = GetOption(obj4, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
-        if (!__INTERNAL_SLOT_MAP__3.get(self)) {
-          const _Object5 = Object;
-          const result2 = __INTERNAL_SLOT_MAP__3.set(self, Object.create(null));
-        }
-        __INTERNAL_SLOT_MAP__3.get(self).type = tmp16Result;
-        const __INTERNAL_SLOT_MAP__4 = tmp.__INTERNAL_SLOT_MAP__;
-        const tmp16Result2 = GetOption(obj4, "style", "string", ["long", "short", "narrow"], "long");
-        if (!__INTERNAL_SLOT_MAP__4.get(self)) {
-          const _Object6 = Object;
-          const result3 = __INTERNAL_SLOT_MAP__4.set(self, Object.create(null));
-        }
-        __INTERNAL_SLOT_MAP__4.get(self).style = tmp16Result2;
-        const dataLocale = ResolveLocaleResult.dataLocale;
-        const _HermesInternal = HermesInternal;
-        const tmp34 = !localeData[dataLocale];
-        const combined = "Missing locale data for " + dataLocale;
-        if (!tmp34) {
-          const __INTERNAL_SLOT_MAP__5 = tmp.__INTERNAL_SLOT_MAP__;
-          const pair = tmp40.pair;
-          if (!__INTERNAL_SLOT_MAP__5.get(self)) {
-            const _Object7 = Object;
-            const result4 = __INTERNAL_SLOT_MAP__5.set(self, Object.create(null));
+    const entry = {
+      key: "append",
+      value: function append(arg0, arg1) {
+        const self = this;
+        if (self) {
+          const _exports = module.exports;
+          if (_exports.is(self)) {
+            if (arguments.length < 2) {
+              const _TypeError = TypeError;
+              const self2 = this;
+              const self3 = this;
+              const typeError = new TypeError("Failed to execute 'append' on 'URLSearchParams': 2 arguments required, but only " + arguments.length + " present.");
+              throw typeError;
+            } else {
+              const items = [];
+              const first = arguments[0];
+              const obj = closure_0(dependencyMap[5]);
+              items.push(obj.USVString(first, { context: "Failed to execute 'append' on 'URLSearchParams': parameter 1" }));
+              const tmp11 = arguments[1];
+              obj2 = closure_0(dependencyMap[5]);
+              items.push(obj2.USVString(tmp11, { context: "Failed to execute 'append' on 'URLSearchParams': parameter 2" }));
+              const tmp13 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+              const append = tmp13.append;
+              const items1 = [];
+              HermesBuiltin.arraySpread(items1, items, 0);
+              return HermesBuiltin.apply(append, items1, tmp13);
+            }
           }
-          __INTERNAL_SLOT_MAP__5.get(self).templatePair = pair;
-          const __INTERNAL_SLOT_MAP__6 = tmp.__INTERNAL_SLOT_MAP__;
-          const start = tmp40.start;
-          if (!__INTERNAL_SLOT_MAP__6.get(self)) {
-            const _Object8 = Object;
-            const result5 = __INTERNAL_SLOT_MAP__6.set(self, Object.create(null));
-          }
-          __INTERNAL_SLOT_MAP__6.get(self).templateStart = start;
-          const __INTERNAL_SLOT_MAP__7 = tmp.__INTERNAL_SLOT_MAP__;
-          const middle = tmp40.middle;
-          if (!__INTERNAL_SLOT_MAP__7.get(self)) {
-            const _Object9 = Object;
-            const result6 = __INTERNAL_SLOT_MAP__7.set(self, Object.create(null));
-          }
-          __INTERNAL_SLOT_MAP__7.get(self).templateMiddle = middle;
-          const __INTERNAL_SLOT_MAP__8 = tmp.__INTERNAL_SLOT_MAP__;
-          const end = tmp40.end;
-          if (!__INTERNAL_SLOT_MAP__8.get(self)) {
-            const _Object10 = Object;
-            const result7 = __INTERNAL_SLOT_MAP__8.set(self, Object.create(null));
-          }
-          __INTERNAL_SLOT_MAP__8.get(self).templateEnd = end;
-        } else {
-          const self4 = this;
-          const self5 = this;
-          const tmp362 = new tmp36(combined);
-          throw tmp362;
         }
-      } else {
-        const _TypeError = TypeError;
-        const self2 = this;
-        const self3 = this;
-        const typeError1 = new TypeError("Intl.ListFormat must be called with 'new'");
+        const typeError1 = new TypeError("Illegal invocation");
         throw typeError1;
       }
-    }
-  }
-  const entry = {
-    key: "format",
-    value: function format(arg0) {
-      validateInstance(this, "format");
-      let str = "";
-      const iter = createPartsFromList(ListFormat.__INTERNAL_SLOT_MAP__, this, stringListFromIterable(arg0));
-      if (Array.isArray(iter)) {
-        for (const item10023 of iter) {
-          str = `${item10023.value}`;
-          continue;
-        }
-        return str;
-      } else {
-        return iter.value;
-      }
-    }
-  };
-  let items = [
-    entry,
-    {
-      key: "formatToParts",
-      value: function formatToParts(arg0) {
-        validateInstance(this, "format");
-        const tmp2 = createPartsFromList(ListFormat.__INTERNAL_SLOT_MAP__, this, stringListFromIterable(arg0));
-        if (Array.isArray(tmp2)) {
-          const items = [];
-          for (const item10022 of tmp2) {
-            let obj = {};
-            let push = items.push;
-            let merged = Object.assign(item10022);
-            let arr = push(obj);
-            continue;
-          }
-          return items;
-        } else {
-          const items1 = [tmp2];
-          return items1;
-        }
-      }
-    },
-    {
-      key: "resolvedOptions",
-      value: function resolvedOptions() {
-        let obj;
-        let self = this;
-        if (this instanceof obj) {
-          obj = { locale: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "locale").locale, type: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "type").type, style: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "style").style };
-          return obj;
-        } else {
-          let _TypeError = TypeError;
-          const _String = String;
-          let _HermesInternal = HermesInternal;
-          let self2 = this;
-          const self3 = this;
-          let typeError = new TypeError("Method Intl.ListFormat.prototype." + "resolvedOptions" + " called on incompatible receiver " + String(self));
-          throw typeError;
-        }
-      }
-    }
-  ];
-  const entry1 = {
-    key: "supportedLocalesOf",
-    value: function supportedLocalesOf(items, arg1) {
-      const availableLocales = ListFormat.availableLocales;
-      const canonicalLocales = Intl.getCanonicalLocales(items);
-      if (undefined !== arg1) {
-        if (null == arg1) {
-          const _TypeError = TypeError;
+    };
+    let items = [
+      entry,
+      {
+        key: "delete",
+        value: function _delete(arg0) {
           const self = this;
-          const self2 = this;
-          const typeError = new TypeError("undefined/null cannot be converted to object");
-          throw typeError;
-        } else {
-          const _Object = Object;
-          tmp2(Object(arg1), "localeMatcher", "string", ["lookup", "best fit"], "best fit");
-        }
-      }
-      const obj = _mod15821;
-      return obj.LookupSupportedLocales(Array.from(availableLocales), canonicalLocales);
-    }
-  };
-  let items1 = [
-    entry1,
-    {
-      key: "__addLocaleData",
-      value: function __addLocaleData() {
-        let data;
-        let locale;
-        const items = [...arguments];
-        const iter = items[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          ({ data, locale } = nextResult);
-          let _Intl = Intl;
-          let self = this;
-          let self2 = this;
-          let locale1 = new Intl.Locale(locale);
-          let str = locale1.minimize();
-          let str1 = str.toString();
-          ListFormat.localeData[str1] = data;
-          ListFormat.localeData[locale] = data;
-          let availableLocales = ListFormat.availableLocales;
-          let tmp5 = str1;
-          let tmp6 = ListFormat;
-          let addResult = availableLocales.add(str1);
-          let availableLocales2 = ListFormat.availableLocales;
-          let addResult1 = availableLocales2.add(locale);
-          if (!ListFormat.__defaultLocale) {
-            tmp6.__defaultLocale = tmp5;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'delete' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'delete' on 'URLSearchParams': parameter 1" }));
+                const tmp8 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const _delete = tmp8.delete;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(_delete, items1, tmp8);
+              }
+            }
           }
-          continue;
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "get",
+        value: function get(arg0) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'get' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'get' on 'URLSearchParams': parameter 1" }));
+                const tmp8 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const get = tmp8.get;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(get, items1, tmp8);
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "getAll",
+        value: function getAll(arg0) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'getAll' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'getAll' on 'URLSearchParams': parameter 1" }));
+                const tryWrapperForImpl = closure_0(dependencyMap[3]).tryWrapperForImpl;
+                const tmp12 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const getAll = tmp12.getAll;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return tryWrapperForImpl(HermesBuiltin.apply(getAll, items1, tmp12));
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "has",
+        value: function has(arg0) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'has' on 'URLSearchParams': 1 argument required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'has' on 'URLSearchParams': parameter 1" }));
+                const tmp8 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const has = tmp8.has;
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(has, items1, tmp8);
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "set",
+        value: function set(arg0, arg1) {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 2) {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError = new TypeError("Failed to execute 'set' on 'URLSearchParams': 2 arguments required, but only " + arguments.length + " present.");
+                throw typeError;
+              } else {
+                const items = [];
+                const first = arguments[0];
+                const obj = closure_0(dependencyMap[5]);
+                items.push(obj.USVString(first, { context: "Failed to execute 'set' on 'URLSearchParams': parameter 1" }));
+                const tmp11 = arguments[1];
+                obj2 = closure_0(dependencyMap[5]);
+                items.push(obj2.USVString(tmp11, { context: "Failed to execute 'set' on 'URLSearchParams': parameter 2" }));
+                const tmp13 = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+                const items1 = [];
+                HermesBuiltin.arraySpread(items1, items, 0);
+                return HermesBuiltin.apply(tmp13.set, items1, tmp13);
+              }
+            }
+          }
+          const typeError1 = new TypeError("Illegal invocation");
+          throw typeError1;
+        }
+      },
+      {
+        key: "sort",
+        value: function sort() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              const obj = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+              return obj.sort();
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "toString",
+        value: function toString() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              const str = self[closure_0(undefined, dependencyMap[3]).implSymbol];
+              return str.toString();
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "keys",
+        value: function keys() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            const tmp = module;
+            if (_exports.is(self)) {
+              const _exports2 = tmp.exports;
+              return _exports2.createDefaultIterator(self, "key");
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "values",
+        value: function values() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            const tmp = module;
+            if (_exports.is(self)) {
+              const _exports2 = tmp.exports;
+              return _exports2.createDefaultIterator(self, "value");
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "entries",
+        value: function entries() {
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            const tmp = module;
+            if (_exports.is(self)) {
+              const _exports2 = tmp.exports;
+              return _exports2.createDefaultIterator(self, "key+value");
+            }
+          }
+          const typeError = new TypeError("Illegal invocation");
+          throw typeError;
+        }
+      },
+      {
+        key: "forEach",
+        value: function forEach(call) {
+          let arr3;
+          let tmp7;
+          let tmp8;
+          const self = this;
+          if (self) {
+            const _exports = module.exports;
+            if (_exports.is(self)) {
+              if (arguments.length < 1) {
+                const _TypeError2 = TypeError;
+                const self4 = this;
+                const self5 = this;
+                const typeError = new TypeError("Failed to execute 'forEach' on 'iterable': 1 argument required, but only 0 present.");
+                throw typeError;
+              } else if (typeof call !== "function") {
+                const _TypeError = TypeError;
+                const self2 = this;
+                const self3 = this;
+                const typeError1 = new TypeError("Failed to execute 'forEach' on 'iterable': The callback provided as parameter 1 is not a function.");
+                throw typeError1;
+              } else {
+                const tmp18 = arguments[1];
+                const _Array2 = Array;
+                const arr2 = Array.from(self[closure_0(undefined, dependencyMap[3]).implSymbol]);
+                let num2 = 0;
+                let tmp10 = arr2;
+                if (0 < arr2.length) {
+                  do {
+                    let arr = tmp10[num2];
+                    let tmp3 = closure_0;
+                    let tmp4 = dependencyMap;
+                    let tmp6 = _slicedToArray(arr.map(closure_0(dependencyMap[3]).tryWrapperForImpl), 2);
+                    [tmp7, tmp8] = tmp6;
+                    let callResult = call.call(tmp18, tmp8, tmp7, self);
+                    let _Array = Array;
+                    arr3 = Array.from(self[tmp3(undefined, tmp4[3]).implSymbol]);
+                    num2 = num2 + 1;
+                    tmp10 = arr3;
+                  } while (num2 < arr3.length);
+                }
+              }
+            }
+          }
+          const typeError2 = new TypeError("Illegal invocation");
+          throw typeError2;
         }
       }
-    },
-    {
-      key: "getDefaultLocale",
-      value: function getDefaultLocale() {
-        return ListFormat.__defaultLocale;
+    ];
+    let tmp = _createClass(URLSearchParams, items);
+    let obj = { append: { enumerable: true }, delete: { enumerable: true }, get: { enumerable: true }, getAll: { enumerable: true }, has: { enumerable: true }, set: { enumerable: true }, sort: { enumerable: true }, toString: { enumerable: true }, keys: { enumerable: true }, values: { enumerable: true }, entries: { enumerable: true }, forEach: { enumerable: true } };
+    obj[Symbol.toStringTag] = { value: "URLSearchParams", configurable: true };
+    obj[Symbol.iterator] = { value: tmp.prototype.entries, configurable: true, writable: true };
+    Object.defineProperties(tmp.prototype, obj);
+    let tmp3 = _require;
+    let tmp4 = dependencyMap;
+    if (undefined === arg0[require("module_15814").ctorRegistrySymbol]) {
+      let _Object = Object;
+      let tmp5 = null;
+      const ctorRegistrySymbol = tmp3(15814).ctorRegistrySymbol;
+      class URLSearchParams {
+        constructor() {
+          _classCallCheck(this, URLSearchParams);
+          const first = arguments[0];
+          let str = "";
+          if (undefined !== first) {
+            const obj7 = _mod15814;
+            if (obj7.isObject(first)) {
+              const _Symbol = Symbol;
+              if (undefined !== first[Symbol.iterator]) {
+                const tmp50Result = _mod15814;
+                if (tmp50Result.isObject(first)) {
+                  const items = [];
+                  str = items;
+                  for (const item10081 of first) {
+                    let obj5 = _mod15814;
+                    if (obj5.isObject(item10081)) {
+                      let items1 = [];
+                      for (const item10103 of item10081) {
+                        let obj6 = any;
+                        let arr = items1.push(obj6.USVString(item10103, { context: "Failed to construct 'URLSearchParams': parameter 1 sequence's element's element" }));
+                        continue;
+                      }
+                      let arr2 = items.push(items1);
+                      continue;
+                    } else {
+                      let _TypeError3 = TypeError;
+                      let self5 = this;
+                      let str4 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.";
+                      let self6 = this;
+                      let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element is not an iterable object.");
+                      throw typeError;
+                    }
+                  }
+                } else {
+                  const _TypeError2 = TypeError;
+                  const self3 = this;
+                  const self4 = this;
+                  const typeError1 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence is not an iterable object.");
+                  throw typeError1;
+                }
+              } else {
+                const tmp50Result3 = _mod15814;
+                if (tmp50Result3.isObject(first)) {
+                  const _Object = Object;
+                  const obj = Object.create(null);
+                  const _Reflect = Reflect;
+                  str = obj;
+                  const ownKeysResult = Reflect.ownKeys(first);
+                  for (const item10039 of ownKeysResult) {
+                    let tmp13 = item10039;
+                    let _Object2 = Object;
+                    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(first, item10039);
+                    if (ownPropertyDescriptor) {
+                      if (tmp15.enumerable) {
+                        obj2 = any;
+                        let USVStringResult = obj2.USVString(tmp13, { context: "Failed to construct 'URLSearchParams': parameter 1 record's key" });
+                        let tmp23 = first[tmp13];
+                        let obj3 = any;
+                        obj[USVStringResult] = obj3.USVString(tmp23, { context: "Failed to construct 'URLSearchParams': parameter 1 record's value" });
+                      }
+                    }
+                    continue;
+                  }
+                } else {
+                  const _TypeError = TypeError;
+                  const self = this;
+                  const self2 = this;
+                  const typeError2 = new TypeError("Failed to construct 'URLSearchParams': parameter 1 record is not an object.");
+                  throw typeError2;
+                }
+              }
+            } else {
+              const tmp50Result4 = any;
+              str = tmp50Result4.USVString(first, { context: "Failed to construct 'URLSearchParams': parameter 1" });
+            }
+          }
+          const items2 = [];
+          items2.push(str);
+          return obj2.setup(Object.create(this.constructor.prototype), closure_0, items2);
+        }
       }
     }
-  ];
-  return _createClass(ListFormat, items, items1);
-})();
-value.localeData = {};
-value.availableLocales = new Set();
-value.__defaultLocale = "";
-value.relevantExtensionKeys = [];
-value.polyfilled = true;
-new Set();
-const weakMap = new WeakMap();
-value.__INTERNAL_SLOT_MAP__ = weakMap;
-value.__ = undefined;
-try {
-  let _Symbol = Symbol;
-  if (typeof Symbol !== "undefined") {
-    let _Object4 = Object;
-    const _Symbol2 = Symbol;
-    Object.defineProperty(value.prototype, Symbol.toStringTag, { value: "Intl.ListFormat", writable: false, enumerable: false, configurable: true });
+    arg0[tmp3(undefined, 15814).ctorRegistrySymbol].URLSearchParams = tmp;
+    Object.defineProperty(arg0, "URLSearchParams", { configurable: true, writable: true, value: tmp });
   }
-  let _Object = Object;
-  let str = "length";
-  Object.defineProperty(value.prototype.constructor, "length", { value: 0, writable: false, enumerable: false, configurable: true });
-  let _Object2 = Object;
-  Object.defineProperty(value.supportedLocalesOf, "length", { value: 1, writable: false, enumerable: false, configurable: true });
-  let _Object3 = Object;
-  let _Intl = Intl;
-  let obj2 = { value, writable: true, enumerable: false, configurable: true };
-  let str2 = "ListFormat";
-  Object.defineProperty(Intl, "ListFormat", obj2);
-  const _globalThis = globalThis;
-  if (__FORMATJS_LISTFORMAT_DATA__) {
-    let tmp10 = __FORMATJS_LISTFORMAT_DATA__;
-    const tmp11 = __FORMATJS_LISTFORMAT_DATA__;
-    for (const item10081 of __FORMATJS_LISTFORMAT_DATA__) {
-      let __addLocaleDataResult = value.__addLocaleData(item10081);
-      continue;
-    }
-    delete globalThis["__FORMATJS_LISTFORMAT_DATA__"];
-  }
-} catch (err) {
-}
+};
+
+export default obj2;

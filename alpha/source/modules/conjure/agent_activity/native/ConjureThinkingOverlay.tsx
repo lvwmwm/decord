@@ -1,14 +1,14 @@
-// Module ID: 18826
-// Function ID: 18827
+// Module ID: 18841
+// Function ID: 18842
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 7659, 21, 5043, 575, 18827, 18588, 504, 18590, 6145, 9778, 5634, 1112, 4245, 2]
+// Dependencies: [19, 17, 7659, 21, 5043, 575, 18842, 18599, 504, 18601, 6145, 9779, 5634, 1112, 4245, 2]
 // Exports: default
 
-// Module 18826 (ConjureThinkingOverlay)
+// Module 18841 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 575 */;
 import _modDef4245 from "module_4245" /* 4245 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 18588 */;
-import conjureThinkingTail from "conjureThinkingTail" /* 18827 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 18599 */;
+import conjureThinkingTail from "conjureThinkingTail" /* 18842 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureChatStore from "ConjureChatStore" /* 7659 */;
@@ -104,8 +104,8 @@ export default function ConjureThinkingOverlay(projectId) {
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(18590).useConjureRevealedText;
-  projectId(18590);
+  const useConjureRevealedText = projectId(18601).useConjureRevealedText;
+  projectId(18601);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -120,7 +120,7 @@ export default function ConjureThinkingOverlay(projectId) {
   const obj5 = { style: tmp.header, children: items2 };
   Card = tmp2(6145).Card;
   const obj6 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const LightbulbIcon = tmp2(9778).LightbulbIcon;
+  const LightbulbIcon = tmp2(9779).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
   const obj7 = { variant: "body-sm/semibold", color: "text-strong", children: intl.string(_modDef4245.XXYIeI) };
   const Text = tmp2(5634).Text;

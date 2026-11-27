@@ -1,10 +1,10 @@
-// Module ID: 8447
-// Function ID: 8448
+// Module ID: 8448
+// Function ID: 8449
 // Name: GuildRoomsExperiment
 // Dependencies: [4955, 6044, 504, 2]
 // Exports: getGuildRoomsConfig, useGuildRoomsExperiment
 
-// Module 8447 (GuildRoomsExperiment)
+// Module 8448 (GuildRoomsExperiment)
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import createExperiment from "module_6044" /* 6044 */;
 import size from "module_2" /* 2 */;

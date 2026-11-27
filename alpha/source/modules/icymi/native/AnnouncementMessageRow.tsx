@@ -1,18 +1,18 @@
-// Module ID: 18340
-// Function ID: 18341
+// Module ID: 18347
+// Function ID: 18348
 // Name: AnnouncementMessageRow
-// Dependencies: [19, 17, 4892, 4914, 4985, 6167, 1387, 18341, 21, 18303, 575, 504, 6991, 8923, 11406, 12203, 18342, 18334, 18344, 1112, 11, 6152, 8587, 18346, 18350, 2]
+// Dependencies: [19, 17, 4892, 4914, 4985, 6167, 1387, 18348, 21, 18310, 575, 504, 6991, 8924, 11407, 12211, 18349, 18341, 18351, 1112, 11, 6152, 8588, 18353, 18357, 2]
 // Exports: default
 
-// Module 18340 (AnnouncementMessageRow)
+// Module 18347 (AnnouncementMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8923 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11406 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 12203 */;
-import DesignConstants from "DesignConstants" /* 18341 */;
-import ICYMIShared from "ICYMIShared" /* 18342 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11407 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 12211 */;
+import DesignConstants from "DesignConstants" /* 18348 */;
+import ICYMIShared from "ICYMIShared" /* 18349 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -20,7 +20,7 @@ import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
 import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18303 */;
+import createICYMIStyles from "createICYMIStyles" /* 18310 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -104,7 +104,7 @@ let closure_14 = react.memo(function ChannelRow(message) {
     if (null != message) {
       const _Date = Date;
       const obj4 = { id: message.id, timestamp: Date.now() };
-      const ackGravityItems = tmp(8923).ackGravityItems;
+      const ackGravityItems = tmp(8924).ackGravityItems;
       ICYMIActionCreatorsDefault;
       const items = [obj4];
       ackGravityItems(items);

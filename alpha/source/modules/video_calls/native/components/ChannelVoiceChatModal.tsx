@@ -1,17 +1,17 @@
-// Module ID: 11503
-// Function ID: 11504
+// Module ID: 11511
+// Function ID: 11512
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 5215, 5104, 10590, 5659, 6129, 11417, 7163, 5245, 2]
+// Dependencies: [19, 21, 5215, 5104, 10591, 5659, 6129, 11418, 7163, 5245, 2]
 // Exports: default
 
-// Module 11503 (ChannelVoiceChatModal)
+// Module 11511 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5104 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5215 */;
 import reactDefault from "react" /* 5245 */;
 import useChannelNameDefault from "useChannelName" /* 5659 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6129 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11417 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11418 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 8382
-// Function ID: 8383
+// Module ID: 8383
+// Function ID: 8384
 // Name: AnalyticsActions
-// Dependencies: [5, 8383, 1361, 8374, 1071, 6795, 8385, 8361, 8387, 8389, 8392, 6878, 6013, 1256, 8393, 8248, 1379, 1269, 8398, 6874, 2]
+// Dependencies: [5, 8384, 1361, 8375, 1071, 6795, 8386, 8362, 8388, 8390, 8393, 6878, 6013, 1256, 8394, 8249, 1379, 1269, 8399, 6874, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAdSessionProperties, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAdContentRenderingFailure, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestContentRenderingFailure, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 8382 (AnalyticsActions)
+// Module 8383 (AnalyticsActions)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
-import QuestDataUtils from "QuestDataUtils" /* 8361 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 8385 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 8387 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8389 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
+import QuestDataUtils from "QuestDataUtils" /* 8362 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 8386 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 8388 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8390 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8383 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8384 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1361 */;
-import QuestStore from "QuestStore" /* 8374 */;
+import QuestStore from "QuestStore" /* 8375 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -213,7 +213,7 @@ let obj = function _getCommonClickEventProperties() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

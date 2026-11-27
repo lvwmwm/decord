@@ -1,13 +1,13 @@
-// Module ID: 17853
-// Function ID: 17854
+// Module ID: 17860
+// Function ID: 17861
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1387, 8579, 21, 1379, 5043, 575, 504, 8578, 8722, 5634, 2]
+// Dependencies: [19, 17, 1387, 8580, 21, 1379, 5043, 575, 504, 8579, 8723, 5634, 2]
 // Exports: default
 
-// Module 17853 (VoiceGuildTag)
+// Module 17860 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildTagConstants from "GuildTagConstants" /* 8579 */;
+import GuildTagConstants from "GuildTagConstants" /* 8580 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -52,8 +52,8 @@ export default function VoiceGuildTagChiplet(userId) {
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   let primaryGuild;
-  const getUserPrimaryGuild = userId(8578).getUserPrimaryGuild;
-  userId(8578);
+  const getUserPrimaryGuild = userId(8579).getUserPrimaryGuild;
+  userId(8579);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -63,11 +63,11 @@ export default function VoiceGuildTagChiplet(userId) {
     if (null != tag) {
       const obj2 = { style: tmp.gapContainer, children: closure_6(View, obj3) };
       obj3 = { style: tmp.tagContainer, children: items2 };
-      const tmp2Result = userId(8578);
+      const tmp2Result = userId(8579);
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(8722).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(8723).GuildTagBadge, obj4), ];
       const obj6 = { variant: "body-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
       items2[1] = closure_5(userId(5634).Text, obj6);
       return closure_5(View, obj2);

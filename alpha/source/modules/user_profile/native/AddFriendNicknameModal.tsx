@@ -1,10 +1,10 @@
-// Module ID: 14876
-// Function ID: 14877
+// Module ID: 14883
+// Function ID: 14884
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4985, 1387, 21, 5043, 575, 11420, 504, 1112, 6130, 7850, 7048, 6118, 5634, 7281, 5099, 2]
+// Dependencies: [5, 32, 19, 17, 4985, 1387, 21, 5043, 575, 11421, 504, 1112, 6130, 7850, 7048, 6118, 5634, 7281, 5099, 2]
 // Exports: default
 
-// Module 14876 (AddFriendNicknameModal)
+// Module 14883 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -70,7 +70,7 @@ export default function AddFriendNicknameModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -151,7 +151,7 @@ export default function AddFriendNicknameModal(arg0) {
             closure_130_3(false);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp42) {
           closure_3 = tmp42;
           if (0 === c4) {
@@ -171,7 +171,7 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp3 = showUserProfile;
   const tmp4 = dependencyMap;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  _slicedToArray = showUserProfile(11420)();
+  _slicedToArray = showUserProfile(11421)();
   let obj2 = get_initialized;
   const items = [obj];
   const stateFromStores = obj2.useStateFromStores(items, () => RelationshipStore.getNickname(require));

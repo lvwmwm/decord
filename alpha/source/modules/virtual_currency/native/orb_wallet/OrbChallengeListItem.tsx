@@ -1,16 +1,16 @@
-// Module ID: 16511
-// Function ID: 16512
+// Module ID: 16518
+// Function ID: 16519
 // Name: OrbChallengeListItem
-// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 15231, 1112, 2387, 13836, 9915, 5641, 7558, 5634, 9465, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 15238, 1112, 2387, 13843, 9916, 5641, 7558, 5634, 9466, 2]
 // Exports: OrbChallengeListItem
 
-// Module 16511 (OrbChallengeListItem)
+// Module 16518 (OrbChallengeListItem)
 import nativeDefault from "native" /* 575 */;
 import _modDef2387 from "module_2387" /* 2387 */;
-import OrbsIcon2 from "OrbsIcon" /* 9465 */;
-import _modDef9915 from "module_9915" /* 9915 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13836 */;
-import OrbChallengeTypes from "OrbChallengeTypes" /* 15231 */;
+import OrbsIcon2 from "OrbsIcon" /* 9466 */;
+import _modDef9916 from "module_9916" /* 9916 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13843 */;
+import OrbChallengeTypes from "OrbChallengeTypes" /* 15238 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -42,7 +42,7 @@ function OrbChallengeAsset(achievementStatus) {
   if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.COMPLETED) {
     let tmp8;
     if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.CLAIMED) {
-      size = { assetUrl: _modDef9915, isAnimatedAsset, height: 40, width: 40 };
+      size = { assetUrl: _modDef9916, isAnimatedAsset, height: 40, width: 40 };
       const tmp6 = QuestDockRewardTileDefault;
       tmp8 = metroImportAll(tmp6, size);
     }
@@ -50,7 +50,7 @@ function OrbChallengeAsset(achievementStatus) {
   }
   const obj = { style: tmp.completedRing, accessible: true, accessibilityLabel: intl.string(_modDef2387.k6h2J3), children: metroImportAll(tmp9, size1) };
   intl = tmp2(1112).intl;
-  size1 = { assetUrl: _modDef9915, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
+  size1 = { assetUrl: _modDef9916, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
   tmp9 = QuestDockRewardTileDefault;
   tmp8 = metroImportAll(metroImportDefault, obj);
 }
@@ -106,7 +106,7 @@ export function OrbChallengeListItem(achievementIdentifier) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -149,7 +149,7 @@ export function OrbChallengeListItem(achievementIdentifier) {
           closure_128_5(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp20) {
         closure_2 = tmp20;
         if (0 === c3) {

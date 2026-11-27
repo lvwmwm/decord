@@ -1,12 +1,12 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9208
+// Function ID: 9209
 // Name: announcement_modal_perk_card
-// Dependencies: [32, 1196, 9173, 9169, 2]
+// Dependencies: [32, 1196, 9174, 9170, 2]
 
-// Module 9207 (announcement_modal_perk_card)
+// Module 9208 (announcement_modal_perk_card)
 import _mod1196 from "module_1196" /* 1196 */;
-import localized_string from "localized_string" /* 9169 */;
-import theme_aware_asset from "theme_aware_asset" /* 9173 */;
+import localized_string from "localized_string" /* 9170 */;
+import theme_aware_asset from "theme_aware_asset" /* 9174 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

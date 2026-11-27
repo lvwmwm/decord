@@ -1,14 +1,14 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 16910
+// Function ID: 16911
 // Name: SettingsAppearanceChannelRowItem
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 1186, 9616, 5634, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 1186, 9617, 5634, 2]
 // Exports: default
 
-// Module 16903 (SettingsAppearanceChannelRowItem)
+// Module 16910 (SettingsAppearanceChannelRowItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import GroupDMAvatar from "GroupDMAvatar" /* 9616 */;
+import GroupDMAvatar from "GroupDMAvatar" /* 9617 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

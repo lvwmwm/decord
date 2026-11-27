@@ -1,7 +1,7 @@
 // Module ID: 7606
 // Function ID: 7607
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 7451, 4892, 4949, 4914, 1071, 4899, 7602, 7607, 7616, 7588, 7619, 7621, 7580, 7622, 7624, 7625, 7626, 7585, 1255, 10755, 7847, 5665, 2]
+// Dependencies: [5, 7451, 4892, 4949, 4914, 1071, 4899, 7602, 7607, 7616, 7588, 7619, 7621, 7580, 7622, 7624, 7625, 7626, 7585, 1255, 10756, 7847, 5665, 2]
 // Exports: default
 
 // Module 7606 (isAccessibleChannelOrThreadPath)
@@ -47,7 +47,7 @@ let obj = function _isAccessibleChannelOrThreadPath() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,16 +1,16 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8496
+// Function ID: 8497
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [19, 21, 5647, 5043, 1654, 5644, 5645, 5642, 8496, 575, 2]
+// Dependencies: [19, 21, 5647, 5043, 1654, 5644, 5645, 5642, 8497, 575, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 8495 (CollapsibleFloatingActionButton)
+// Module 8496 (CollapsibleFloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import springPresets from "springPresets" /* 5645 */;
-import FloatingActionButton from "FloatingActionButton" /* 8496 */;
+import FloatingActionButton from "FloatingActionButton" /* 8497 */;
 import react from "react" /* 19 */;
 import ButtonConstants from "ButtonConstants" /* 5647 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -98,11 +98,11 @@ export function CollapsibleFloatingActionButton(arg0) {
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(8496).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(8497).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: positionBottom };
   if (positionBottom == null) {
-    positionBottom = tmp3(8496).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(8497).DEFAULT_POSITION_OFFSET;
   }
   items[1] = rect;
   if (null != state) {

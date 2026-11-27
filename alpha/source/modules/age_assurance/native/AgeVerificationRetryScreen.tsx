@@ -1,10 +1,10 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12557
+// Function ID: 12558
 // Name: AgeVerificationRetryScreen
 // Dependencies: [5, 19, 17, 1071, 21, 5043, 575, 7935, 6828, 1112, 1379, 7891, 5634, 6140, 6144, 7870, 2188, 2]
 // Exports: default
 
-// Module 12549 (AgeVerificationRetryScreen)
+// Module 12557 (AgeVerificationRetryScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
@@ -90,7 +90,7 @@ export default function GetStartedScreen(modalSessionId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ export default function GetStartedScreen(modalSessionId) {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = 3;

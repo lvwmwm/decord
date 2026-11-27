@@ -1,23 +1,23 @@
-// Module ID: 18365
-// Function ID: 18366
+// Module ID: 18372
+// Function ID: 18373
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 5775, 4892, 4914, 21, 18303, 575, 8469, 1112, 8466, 5659, 8480, 8586, 8923, 8613, 8600, 8603, 18344, 11, 5634, 8591, 7155, 1186, 504, 2]
+// Dependencies: [19, 17, 5775, 4892, 4914, 21, 18310, 575, 8470, 1112, 8467, 5659, 8481, 8587, 8924, 8614, 8601, 8604, 18351, 11, 5634, 8592, 7155, 1186, 504, 2]
 // Exports: default
 
-// Module 18365 (ICYMIGuildEventRow)
+// Module 18372 (ICYMIGuildEventRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import ScheduleUtils from "ScheduleUtils" /* 8466 */;
-import transitionToGuild from "transitionToGuild" /* 8600 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8613 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8923 */;
+import ScheduleUtils from "ScheduleUtils" /* 8467 */;
+import transitionToGuild from "transitionToGuild" /* 8601 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8614 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5775 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18303 */;
+import createICYMIStyles from "createICYMIStyles" /* 18310 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -52,7 +52,7 @@ function ICYMIGuildEventRow(event) {
   ({ channel, guild } = event);
   react = undefined;
   const tmp = closure_13();
-  const tmp4 = guild(8469)(event, null);
+  const tmp4 = guild(8470)(event, null);
   const tmp5 = closure_7(event);
   dependencyMap = tmp5;
   let toISOStringResult;
@@ -76,13 +76,13 @@ function ICYMIGuildEventRow(event) {
     return eventTimeData;
   }, items).startDateTimeString;
   const tmp7 = guild(5659)(channel);
-  let obj = event(8480);
+  let obj = event(8481);
   const locationFromEvent = obj.getLocationFromEvent(event);
-  let obj2 = event(8586);
+  let obj2 = event(8587);
   const eventLocationIconSource = obj2.getEventLocationIconSource(event, channel, true);
-  let obj3 = event(8586);
+  let obj3 = event(8587);
   const eventLocationIconComponent = obj3.getEventLocationIconComponent(event, channel, true);
-  let obj4 = event(8466);
+  let obj4 = event(8467);
   const items1 = [event];
   const nextRecurrenceIdInEvent = obj4.getNextRecurrenceIdInEvent(event);
   const items2 = [guild.id, event.id];
@@ -107,7 +107,7 @@ function ICYMIGuildEventRow(event) {
   }, items2);
   let title = null != event.description && event.description.length > 0;
   let guild_id;
-  const tmp2Result = guild(8603);
+  const tmp2Result = guild(8604);
   if (event != null) {
     guild_id = event.guild_id;
   }
@@ -117,7 +117,7 @@ function ICYMIGuildEventRow(event) {
   }
   let obj5 = { actionLabel: intl.string(event(1112).t["6pFsLQ"]), id: event.id, interactionType: "guild_event", channelId: id1, guildId: guild.id, timestamp: tmp2Result4.extractTimestamp(event.id), onHeaderPress: callback1, onHeaderLongPress: callback1, children: closure_12(tmp23, obj6) };
   const tmp2ResultResult = tmp2Result(guild_id, id, nextRecurrenceIdInEvent);
-  const tmp2Result3 = guild(18344);
+  const tmp2Result3 = guild(18351);
   intl = tmp8(1112).intl;
   id1 = undefined;
   if (channel != null) {
@@ -144,7 +144,7 @@ function ICYMIGuildEventRow(event) {
     const obj9 = { variant: "body-md/normal", color: "text-subtle", lineClamp: 5, children: tmp8Result.guildEventDetailsParser(event.description, true, obj10) };
     const Text3 = tmp8(5634).Text;
     obj10 = { guildId: guild.id };
-    tmp8Result = event(8591);
+    tmp8Result = event(8592);
     tmp19Result = tmp19(Text3, obj9);
   }
   items3[2] = tmp19Result;
@@ -178,7 +178,7 @@ function ICYMIGuildEventRow(event) {
   if (tmp7 == null) {
     let result = null;
     if (null != locationFromEvent) {
-      const tmp8Result2 = event(8591);
+      const tmp8Result2 = event(8592);
       result = tmp8Result2.guildEventLocationParser(locationFromEvent, true);
     }
     tmp27 = result;

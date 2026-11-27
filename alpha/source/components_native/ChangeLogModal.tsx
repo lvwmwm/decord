@@ -1,10 +1,10 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17172
+// Function ID: 17173
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1071, 4945, 21, 5043, 575, 5104, 1256, 8804, 17166, 5730, 8880, 1112, 6152, 12539, 10842, 1186, 14418, 1495, 14419, 1502, 7191, 2169, 13422, 5634, 6130, 7355, 2]
+// Dependencies: [19, 17, 1071, 4945, 21, 5043, 575, 5104, 1256, 8805, 17173, 5730, 8881, 1112, 6152, 12547, 10843, 1186, 14425, 1495, 14426, 1502, 7191, 2169, 13430, 5634, 6130, 7355, 2]
 // Exports: default
 
-// Module 17165 (ChangeLogModal)
+// Module 17172 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,12 +14,12 @@ import native from "native" /* 5104 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 7191 */;
 import Navigator from "Navigator" /* 7355 */;
-import openMediaModal2 from "openMediaModal" /* 8804 */;
-import common_VideoDefault from "common/Video" /* 8880 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10842 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 12539 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 14418 */;
-import _modDef17166 from "module_17166" /* 17166 */;
+import openMediaModal2 from "openMediaModal" /* 8805 */;
+import common_VideoDefault from "common/Video" /* 8881 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10843 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12547 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 14425 */;
+import _modDef17173 from "module_17173" /* 17173 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -306,7 +306,7 @@ class ChangeLog extends PureComponent2 {
               },
           useLocalHTML: true
         };
-        items = [closure_7(_modDef17166, obj4), ];
+        items = [closure_7(_modDef17173, obj4), ];
         let tmp6Result = null;
         const tmp4 = closure_8;
         const tmp5 = View;

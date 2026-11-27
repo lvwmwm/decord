@@ -1,22 +1,22 @@
-// Module ID: 17484
-// Function ID: 17485
+// Module ID: 17491
+// Function ID: 17492
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 5637, 1191, 1387, 6311, 5700, 6348, 1073, 1071, 21, 5043, 6380, 13903, 17485, 11272, 11273, 504, 5622, 1269, 11149, 17486, 17488, 17489, 11603, 1379, 11245, 9269, 9415, 11115, 5050, 6379, 1501, 17491, 2186, 17493, 1256, 6364, 6309, 17494, 17495, 17497, 17533, 1242, 11214, 11312, 11265, 17536, 17537, 17506, 17538, 17540, 5812, 1626, 2]
+// Dependencies: [32, 19, 17, 5637, 1191, 1387, 6311, 5700, 6348, 1073, 1071, 21, 5043, 6380, 13910, 17492, 11273, 11274, 504, 5622, 1269, 11150, 17493, 17495, 17496, 11611, 1379, 11246, 9270, 9416, 11116, 5050, 6379, 1501, 17498, 2186, 17500, 1256, 6364, 6309, 17501, 17502, 17504, 17540, 1242, 11215, 11313, 11266, 17543, 17544, 17513, 17545, 17547, 5812, 1626, 2]
 
-// Module 17484 (CollectiblesShopV2)
+// Module 17491 (CollectiblesShopV2)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6309 */;
 import FeedBlockRecord2 from "FeedBlockRecord" /* 6348 */;
 import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 6364 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9269 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11245 */;
-import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 11265 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 11603 */;
-import takeWhileDefault from "takeWhile" /* 17491 */;
-import ShopCategory from "ShopCategory" /* 17495 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17497 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9270 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11246 */;
+import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 11266 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 11611 */;
+import takeWhileDefault from "takeWhile" /* 17498 */;
+import ShopCategory from "ShopCategory" /* 17502 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -301,7 +301,7 @@ function CollectiblesShopInternal(analyticsSource) {
       if (true !== isFetchingCategories) {
         const obj = PlatformUtils;
         if (false !== obj.isAndroid()) {
-          const getGoogleSkuIds = tmp4(11245).getGoogleSkuIds;
+          const getGoogleSkuIds = tmp4(11246).getGoogleSkuIds;
           const items = [];
           collectibles_CollectiblesUtils;
           HermesBuiltin.arraySpread(items, categories.values(), 0);

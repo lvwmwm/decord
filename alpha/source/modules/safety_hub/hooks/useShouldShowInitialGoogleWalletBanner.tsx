@@ -1,10 +1,10 @@
-// Module ID: 16245
-// Function ID: 16246
+// Module ID: 16252
+// Function ID: 16253
 // Name: useShouldShowInitialGoogleWalletBanner
 // Dependencies: [5, 32, 19, 7912, 7886, 504, 1379, 7885, 7917, 1400, 7920, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 16245 (useShouldShowInitialGoogleWalletBanner)
+// Module 16252 (useShouldShowInitialGoogleWalletBanner)
 import SafetyHubConstants from "SafetyHubConstants" /* 7886 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -62,7 +62,7 @@ export function useShouldShowInitialGoogleWalletBanner() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -140,7 +140,7 @@ export function useShouldShowInitialGoogleWalletBanner() {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp24) {
             if (0 === c2) {

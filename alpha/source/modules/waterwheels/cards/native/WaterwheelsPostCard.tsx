@@ -1,10 +1,10 @@
-// Module ID: 18016
-// Function ID: 18017
+// Module ID: 18023
+// Function ID: 18024
 // Name: WaterwheelsPostCard
-// Dependencies: [19, 17, 21, 5043, 575, 5104, 8932, 6178, 5730, 1413, 5065, 5739, 1112, 18017, 5634, 5641, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5104, 8933, 6178, 5730, 1413, 5065, 5739, 1112, 18024, 5634, 5641, 2]
 // Exports: default
 
-// Module 18016 (WaterwheelsPostCard)
+// Module 18023 (WaterwheelsPostCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1413 */;
@@ -13,8 +13,8 @@ import native from "native" /* 5104 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import PlatformsDefault from "Platforms" /* 6178 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8932 */;
-import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 18017 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8933 */;
+import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 18024 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

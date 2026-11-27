@@ -1,14 +1,14 @@
-// Module ID: 19863
-// Function ID: 19864
+// Module ID: 19879
+// Function ID: 19880
 // Name: SelectedChannelManager
-// Dependencies: [2132, 4946, 5076, 1071, 7475, 8600, 6797, 1098, 572, 2]
+// Dependencies: [2132, 4946, 5076, 1071, 7475, 8601, 6797, 1098, 572, 2]
 
-// Module 19863 (SelectedChannelManager)
+// Module 19879 (SelectedChannelManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1098 */;
 import SelectedChannelStore2 from "SelectedChannelStore" /* 4946 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6797 */;
-import transitionToGuild from "transitionToGuild" /* 8600 */;
+import transitionToGuild from "transitionToGuild" /* 8601 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
 import Constants from "Constants" /* 1071 */;

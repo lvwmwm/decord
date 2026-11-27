@@ -1,10 +1,10 @@
-// Module ID: 8402
-// Function ID: 8403
+// Module ID: 8403
+// Function ID: 8404
 // Name: ClipAnalyticsUtils
-// Dependencies: [6029, 6813, 5851, 8403, 2139, 8131, 1071, 6816, 6038, 5933, 1256, 2]
+// Dependencies: [6029, 6813, 5851, 8404, 2139, 8131, 1071, 6816, 6038, 5933, 1256, 2]
 // Exports: getClipBaseProperties, getClipContextProperties, getClipSaveFailureAnalytics, getClipSavedAnalytics, getClipType, getPreSaveClipAnalytics, trackClipEdited
 
-// Module 8402 (ClipAnalyticsUtils)
+// Module 8403 (ClipAnalyticsUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import isEqualDefault from "isEqual" /* 5933 */;
@@ -13,7 +13,7 @@ import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6029 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8403 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8404 */;
 import ClipsStore from "ClipsStore" /* 2139 */;
 import ClipsConstants from "ClipsConstants" /* 8131 */;
 import size from "module_2" /* 2 */;

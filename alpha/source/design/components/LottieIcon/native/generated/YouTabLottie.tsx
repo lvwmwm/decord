@@ -1,13 +1,13 @@
-// Module ID: 15428
-// Function ID: 15429
+// Module ID: 15435
+// Function ID: 15436
 // Name: YouTabLottie
-// Dependencies: [19, 21, 9448, 15429, 2]
+// Dependencies: [19, 21, 9449, 15436, 2]
 // Exports: YouTabLottie
 
-// Module 15428 (YouTabLottie)
+// Module 15435 (YouTabLottie)
 import Fragment from "Fragment" /* 21 */;
-import LottieIcon2 from "LottieIcon" /* 9448 */;
-import AssetRegistry from "AssetRegistry" /* 15429 */;
+import LottieIcon2 from "LottieIcon" /* 9449 */;
+import AssetRegistry from "AssetRegistry" /* 15436 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 19964
-// Function ID: 19965
+// Module ID: 19980
+// Function ID: 19981
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1387, 19960, 1071, 21, 5043, 575, 1112, 5099, 19962, 5105, 11436, 7254, 1629, 1501, 6988, 19965, 1186, 10546, 19966, 7253, 7406, 11596, 7482, 5617, 2]
+// Dependencies: [32, 19, 17, 1387, 19976, 1071, 21, 5043, 575, 1112, 5099, 19978, 5105, 11437, 7254, 1629, 1501, 6988, 19981, 1186, 10547, 19982, 7253, 7406, 11604, 7482, 5617, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 19964 (GuildSettingsModalAuditLogFilter)
+// Module 19980 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,13 +12,13 @@ import intl6 from "intl" /* 1112 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
 import react_native2 from "react-native" /* 5105 */;
 import FormRadio from "FormRadio" /* 7254 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11436 */;
-import AuditLogUtils from "AuditLogUtils" /* 19962 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 19965 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11437 */;
+import AuditLogUtils from "AuditLogUtils" /* 19978 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19981 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19960 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19976 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

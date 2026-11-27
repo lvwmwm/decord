@@ -1,10 +1,10 @@
-// Module ID: 11518
-// Function ID: 11519
+// Module ID: 11526
+// Function ID: 11527
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 4955, 4895, 4917, 504, 10742, 2]
+// Dependencies: [502, 4955, 4895, 4917, 504, 10743, 2]
 // Exports: default
 
-// Module 11518 (useFavoritesGuildChannelActions)
+// Module 11526 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import FavoriteStore from "FavoriteStore" /* 4895 */;

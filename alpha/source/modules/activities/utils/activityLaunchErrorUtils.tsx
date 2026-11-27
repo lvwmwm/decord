@@ -1,10 +1,10 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 10002
+// Function ID: 10003
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 10002, 5686, 1071, 21, 1112, 7684, 4868, 10003, 6399, 8828, 6839, 2188, 10004, 2]
+// Dependencies: [5, 19, 10003, 5686, 1071, 21, 1112, 7684, 4868, 10004, 6399, 8829, 6839, 2188, 10005, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10001 (activityLaunchErrorUtils)
+// Module 10002 (activityLaunchErrorUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl12 from "intl" /* 1112 */;
@@ -12,11 +12,11 @@ import UserSettings from "UserSettings" /* 4868 */;
 import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5686 */;
 import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6399 */;
 import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 7684 */;
-import InteractionUtils from "InteractionUtils" /* 8828 */;
-import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10003 */;
+import InteractionUtils from "InteractionUtils" /* 8829 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10004 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 10002 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 10003 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;
@@ -43,7 +43,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

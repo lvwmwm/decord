@@ -1,10 +1,10 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 8602
+// Function ID: 8603
 // Name: useSelectStage
 // Dependencies: [5, 32, 19, 4892, 4946, 504, 7834, 2]
 // Exports: default
 
-// Module 8601 (useSelectStage)
+// Module 8602 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ export default function useSelectStage() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -101,7 +101,7 @@ export default function useSelectStage() {
             c5 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         let closure_4 = tmp18;

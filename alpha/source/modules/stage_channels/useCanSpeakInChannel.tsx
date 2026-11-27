@@ -1,10 +1,10 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10042
+// Function ID: 10043
 // Name: useCanSpeakInChannel
 // Dependencies: [502, 504, 6803, 2]
 // Exports: default
 
-// Module 10041 (useCanSpeakInChannel)
+// Module 10042 (useCanSpeakInChannel)
 import get_initialized from "get initialized" /* 504 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6803 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

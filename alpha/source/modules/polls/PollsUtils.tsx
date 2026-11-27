@@ -1,10 +1,10 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12239
+// Function ID: 12240
 // Name: PollsUtils
-// Dependencies: [4892, 12232, 6391, 4975, 4985, 12233, 1071, 1269, 504, 7579, 1088, 2154, 6770, 1112, 5625, 12, 6807, 2]
+// Dependencies: [4892, 12240, 6391, 4975, 4985, 12241, 1071, 1269, 504, 7579, 1088, 2154, 6770, 1112, 5625, 12, 6807, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 12231 (PollsUtils)
+// Module 12239 (PollsUtils)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl7 from "intl" /* 1112 */;
 import v1 from "v1" /* 1269 */;
@@ -13,11 +13,11 @@ import useMessageAuthor from "useMessageAuthor" /* 6770 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7579 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 12232 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 12240 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
-import PollsConstants from "PollsConstants" /* 12233 */;
+import PollsConstants from "PollsConstants" /* 12241 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let c10;
 let c9;
 let metroImportAll;
 let unpackModuleId;
-const f101991 = (rawName) => "poll_question_text" === rawName.rawName;
+const f102232 = (rawName) => "poll_question_text" === rawName.rawName;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   let blockedOrIgnored;
   let channel;
@@ -122,7 +122,7 @@ const result = size.fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export function generateEmptyPollAnswer() {
   let obj2;
-  const obj = { text: "Array", image: "channel_id", localCreationAnswerId: obj2.v4() };
+  const obj = { text: "Array", image: "Path", localCreationAnswerId: obj2.v4() };
   obj2 = v1;
   return obj;
 }
@@ -277,7 +277,7 @@ export function getPollResultsReplyPreview(message) {
   if (first != null) {
     const fields = first.fields;
     if (fields != null) {
-      const found = fields.find(f101991);
+      const found = fields.find(f102232);
       if (found != null) {
         str = found.rawValue;
       }
@@ -304,7 +304,7 @@ export function getPollResultsReplyPreviewMobile(message5) {
     if (first != null) {
       const fields = first.fields;
       if (fields != null) {
-        const found = fields.find(f101991);
+        const found = fields.find(f102232);
         if (found != null) {
           str = found.rawValue;
         }

@@ -1,22 +1,22 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 10096
+// Function ID: 10097
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 4914, 10047, 7073, 1071, 8183, 10053, 504, 10055, 1255, 2118, 10052, 10083, 5695, 2]
+// Dependencies: [32, 19, 4914, 10048, 7073, 1071, 8184, 10054, 504, 10056, 1255, 2118, 10053, 10084, 5695, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 10095 (ApplicationCommandQueryApi)
+// Module 10096 (ApplicationCommandQueryApi)
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2118 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10053 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 10055 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 10083 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8184 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10054 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 10056 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10084 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10047 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10048 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "radii", command: "id", section: "clearTimeout" };
+    return { application: "Array", command: "channel_id", section: "i" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -130,7 +130,7 @@ export function getCachedCommand(type, commandId, applicationId) {
         }
       }
     }
-    return { application: "radii", command: "id", section: "clearTimeout" };
+    return { application: "Array", command: "channel_id", section: "i" };
   }
 }
 export function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -448,7 +448,7 @@ export function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "Array", application: "channel_id" };
+    return { command: "displayName", application: "isArray" };
   }, items);
 }
 export function useCommandsForApplication(arg0, arg1, arg2) {

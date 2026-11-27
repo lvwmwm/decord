@@ -1,9 +1,9 @@
-// Module ID: 13351
-// Function ID: 13352
+// Module ID: 13359
+// Function ID: 13360
 // Name: Autocomplete
-// Dependencies: [19, 17, 4914, 4985, 1387, 1071, 10790, 21, 5043, 575, 8088, 504, 5099, 1186, 8631, 6144, 6158, 1112, 8836, 7096, 5659, 5634, 5730, 13352, 10830, 6152, 10681, 12, 7091, 13353, 2152, 2153, 8058, 13354, 2]
+// Dependencies: [19, 17, 4914, 4985, 1387, 1071, 10791, 21, 5043, 575, 8088, 504, 5099, 1186, 8632, 6144, 6158, 1112, 8837, 7096, 5659, 5634, 5730, 13360, 10831, 6152, 10682, 12, 7091, 13361, 2152, 2153, 8058, 13362, 2]
 
-// Module 13351 (Autocomplete)
+// Module 13359 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,12 +18,12 @@ import Pressables from "Pressables" /* 6152 */;
 import TimestampUtils from "TimestampUtils" /* 7091 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7096 */;
 import _mod8088 from "module_8088" /* 8088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8836 */;
-import StickerDefault from "Sticker" /* 10681 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10790 */;
-import StickersHooks from "StickersHooks" /* 10830 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13352 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13353 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8837 */;
+import StickerDefault from "Sticker" /* 10682 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10791 */;
+import StickersHooks from "StickersHooks" /* 10831 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13360 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13361 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
@@ -94,7 +94,7 @@ const obj10 = {
       }
       return nickname;
     });
-    const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(8631), obj5) };
+    const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(8632), obj5) };
     const FormRow = user(8088).FormRow;
     tmp6 = AutocompleteLabel;
     if (nick == null) {
@@ -314,7 +314,7 @@ const obj10 = {
     tmp9Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp9Result = tmp9(tmp2(13354), obj8);
+      tmp9Result = tmp9(tmp2(13362), obj8);
     }
     return tmp9(FormRow, obj6);
   },

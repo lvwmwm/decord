@@ -1,10 +1,10 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 17879
+// Function ID: 17880
 // Name: GuildSettingsModalChannels
-// Dependencies: [19, 17, 4892, 4914, 4975, 4985, 1387, 17870, 1071, 21, 5043, 6822, 575, 4917, 5104, 1112, 5050, 1089, 8088, 1186, 17873, 504, 7096, 5659, 6152, 1629, 5641, 7543, 8529, 11268, 7751, 4980, 11545, 17874, 5617, 8112, 17875, 17871, 12315, 16910, 10741, 12118, 6991, 6046, 1501, 38, 5649, 2]
+// Dependencies: [19, 17, 4892, 4914, 4975, 4985, 1387, 17877, 1071, 21, 5043, 6822, 575, 4917, 5104, 1112, 5050, 1089, 8088, 1186, 17880, 504, 7096, 5659, 6152, 1629, 5641, 7543, 8530, 11269, 7751, 4980, 11553, 17881, 5617, 8112, 17882, 17878, 12323, 16917, 10742, 12126, 6991, 6046, 1501, 38, 5649, 2]
 // Exports: default
 
-// Module 17872 (GuildSettingsModalChannels)
+// Module 17879 (GuildSettingsModalChannels)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
@@ -23,12 +23,12 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7543 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
 import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 8112 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10741 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 11545 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12315 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16910 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17871 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17875 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10742 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 11553 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12323 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16917 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17878 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17882 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -36,7 +36,7 @@ import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 17870 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 17877 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -151,7 +151,7 @@ function ChannelItem(isFavoritesGuild) {
   if (stateFromStores) {
     tmp7Result2 = null;
     if (sortingEnabled) {
-      const obj10 = { source: tmp13(17873), style: actionIconStyle };
+      const obj10 = { source: tmp13(17880), style: actionIconStyle };
       const Icon2 = tmp(8088).FormRow.Icon;
       tmp7Result2 = tmp7(Icon2, obj10);
     }
@@ -213,7 +213,7 @@ function CreateButton(guild) {
           items[1] = obj4;
           const result = showSimpleActionSheet(obj);
         },
-      icon: closure_16(tmp(11268).PlusSmallIcon, { color: "white" })
+      icon: closure_16(tmp(11269).PlusSmallIcon, { color: "white" })
     };
     Button = tmp(5641).Button;
     intl = tmp(1112).intl;
@@ -317,7 +317,7 @@ class Category extends PureComponent {
     } else {
       tmp3Result = null;
       if (null != sortHandlers) {
-        const obj6 = { source: tmp11(17873), style: actionIconStyle };
+        const obj6 = { source: tmp11(17880), style: actionIconStyle };
         const Icon = tmp5(1186).Icon;
         tmp3Result = tmp3(Icon, obj6);
       }

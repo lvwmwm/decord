@@ -1,18 +1,18 @@
-// Module ID: 18518
-// Function ID: 18519
+// Module ID: 18523
+// Function ID: 18524
 // Name: host_approval/ConjureHostApproval
-// Dependencies: [19, 17, 21, 5043, 575, 18519, 18520, 5634, 1112, 4245, 6115, 5641, 7719, 6140, 6144, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 18524, 18525, 5634, 1112, 4245, 6115, 5641, 7719, 6140, 6144, 2]
 // Exports: ConjureAllowedHostsSetting, ConjureHostApprovalCards
 
-// Module 18518 (host_approval/ConjureHostApproval)
+// Module 18523 (host_approval/ConjureHostApproval)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import ConjureHostApproval from "ConjureHostApproval" /* 7719 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18519 */;
-import ConjureAwaitingUser from "ConjureAwaitingUser" /* 18520 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18524 */;
+import ConjureAwaitingUser from "ConjureAwaitingUser" /* 18525 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

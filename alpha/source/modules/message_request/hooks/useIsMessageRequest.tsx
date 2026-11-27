@@ -1,10 +1,10 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11830
+// Function ID: 11831
 // Name: useIsMessageRequest
 // Dependencies: [6946, 6947, 504, 2]
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 11822 (useIsMessageRequest)
+// Module 11830 (useIsMessageRequest)
 import MessageRequestStore from "MessageRequestStore" /* 6946 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6947 */;
 import size from "module_2" /* 2 */;

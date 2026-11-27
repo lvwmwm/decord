@@ -1,15 +1,15 @@
-// Module ID: 8736
-// Function ID: 8737
+// Module ID: 8737
+// Function ID: 8738
 // Name: ExperimentalWebBadgeIcon
-// Dependencies: [19, 17, 21, 575, 5729, 8737, 8738, 2]
+// Dependencies: [19, 17, 21, 575, 5729, 8738, 8739, 2]
 // Exports: ExperimentalWebBadgeIcon
 
-// Module 8736 (ExperimentalWebBadgeIcon)
+// Module 8737 (ExperimentalWebBadgeIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage3 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 8737 */;
-import AssetRegistry2 from "AssetRegistry" /* 8738 */;
+import AssetRegistry from "AssetRegistry" /* 8738 */;
+import AssetRegistry2 from "AssetRegistry" /* 8739 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

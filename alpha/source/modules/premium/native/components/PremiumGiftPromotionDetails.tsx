@@ -1,17 +1,17 @@
-// Module ID: 11164
-// Function ID: 11165
+// Module ID: 11165
+// Function ID: 11166
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [19, 17, 5044, 21, 575, 5043, 5634, 504, 5730, 2113, 11165, 2]
+// Dependencies: [19, 17, 5044, 21, 575, 5043, 5634, 504, 5730, 2113, 11166, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
-// Module 11164 (PremiumGiftPromotionDetails)
+// Module 11165 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import SKUPreview from "SKUPreview" /* 11165 */;
+import SKUPreview from "SKUPreview" /* 11166 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import Fragment from "Fragment" /* 21 */;

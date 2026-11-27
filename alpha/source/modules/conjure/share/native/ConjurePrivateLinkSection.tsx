@@ -1,10 +1,10 @@
-// Module ID: 18563
-// Function ID: 18564
+// Module ID: 18574
+// Function ID: 18575
 // Name: ConjurePrivateLinkSection
-// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 18564, 18565, 18566, 7667, 5725, 1112, 4245, 14077, 5257, 18567, 2120, 6048, 6052, 7538, 5724, 8690, 6140, 6144, 6155, 5752, 18568, 5739, 12871, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 18575, 18576, 18577, 7667, 5725, 1112, 4245, 14084, 5257, 18578, 2120, 6048, 6052, 7538, 5724, 8691, 6140, 6144, 6155, 5752, 18579, 5739, 12879, 5634, 2]
 // Exports: default
 
-// Module 18563 (ConjurePrivateLinkSection)
+// Module 18574 (ConjurePrivateLinkSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
@@ -15,8 +15,8 @@ import ToastUtils from "ToastUtils" /* 5724 */;
 import useAlertStore from "useAlertStore" /* 6048 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import showShareActionSheet from "showShareActionSheet" /* 8690 */;
-import conjureShareLinkMaxAges from "conjureShareLinkMaxAges" /* 18564 */;
+import showShareActionSheet from "showShareActionSheet" /* 8691 */;
+import conjureShareLinkMaxAges from "conjureShareLinkMaxAges" /* 18575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -89,7 +89,7 @@ export default function ConjurePrivateLinkSection(project) {
   let tmp2 = project;
   const tmp3 = dependencyMap;
   const tmp = closure_10();
-  [value, dependencyMap] = react.useState(project(18564).CONJURE_SHARE_LINK_DEFAULT_MAX_AGE);
+  [value, dependencyMap] = react.useState(project(18575).CONJURE_SHARE_LINK_DEFAULT_MAX_AGE);
   [first1, _slicedToArray] = react.useState(null);
   let tmp8 = _slicedToArray(react.useState(false), 2);
   [tmp9, c5] = tmp8;
@@ -111,7 +111,7 @@ export default function ConjurePrivateLinkSection(project) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -155,7 +155,7 @@ export default function ConjurePrivateLinkSection(project) {
           }
           closure_129_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         if (0 === c2) {
@@ -184,7 +184,7 @@ export default function ConjurePrivateLinkSection(project) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -234,7 +234,7 @@ export default function ConjurePrivateLinkSection(project) {
           }
           closure_128_5(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         if (0 === c2) {
@@ -266,7 +266,7 @@ export default function ConjurePrivateLinkSection(project) {
         return closure_1_2(arg0);
       }
     };
-    const tmp2 = asyncRequire(18567, dependencyMap.paths);
+    const tmp2 = asyncRequire(18578, dependencyMap.paths);
     intl = intl9.intl;
     prop = conjureShareLinkMaxAges.CONJURE_SHARE_LINK_MAX_AGES;
     openLazy(tmp2, "ConjurePrivateLinkMaxAge", obj, "stack");
@@ -323,11 +323,11 @@ export default function ConjurePrivateLinkSection(project) {
   intl3 = project(1112).intl;
   obj4 = { text: obj5.conjureShareLinkMaxAgeLabel(value) };
   TrailingText = project(6144).TableRow.TrailingText;
-  obj5 = project(18564);
+  obj5 = project(18575);
   items6 = [tmp21(TableRow, obj2), , , ];
   let obj6 = { icon: tmp21(TableRowIcon2, obj7), label: intl4.string(tmp20(4245).wELODD), disabled: tmp9 || flag, onPress: callback };
   const TableRow2 = tmp2(6144).TableRow;
-  obj7 = { IconComponent: tmp2(18568).LinkPlusIcon };
+  obj7 = { IconComponent: tmp2(18579).LinkPlusIcon };
   TableRowIcon2 = tmp2(6155).TableRowIcon;
   intl4 = tmp2(1112).intl;
   items6[1] = callback1(TableRow2, obj6);
@@ -342,7 +342,7 @@ export default function ConjurePrivateLinkSection(project) {
     items7 = [tmp21(TableRow3, obj9), ];
     const obj11 = { icon: callback1(TableRowIcon4, obj12), label: intl6.string(tmp2(1112).t.RDE0Sc), onPress: callback5 };
     const TableRow4 = tmp2(6144).TableRow;
-    obj12 = { IconComponent: tmp2(12871).ShareIcon };
+    obj12 = { IconComponent: tmp2(12879).ShareIcon };
     TableRowIcon4 = tmp2(6155).TableRowIcon;
     intl6 = tmp2(1112).intl;
     items7[1] = callback1(TableRow4, obj11);
@@ -353,7 +353,7 @@ export default function ConjurePrivateLinkSection(project) {
   if (isOwner) {
     const obj13 = { icon: callback1(TableRowIcon5, obj14), variant: "danger", label: intl7.string(value(4245).oq0hBy), disabled: tmp9, onPress: callback3 };
     const TableRow5 = tmp2(6144).TableRow;
-    obj14 = { IconComponent: tmp2(14077).RefreshIcon, variant: "danger" };
+    obj14 = { IconComponent: tmp2(14084).RefreshIcon, variant: "danger" };
     TableRowIcon5 = tmp2(6155).TableRowIcon;
     intl7 = tmp2(1112).intl;
     tmp21Result = tmp21(TableRow5, obj13);

@@ -1,10 +1,10 @@
-// Module ID: 18027
-// Function ID: 18028
+// Module ID: 18034
+// Function ID: 18035
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 2141, 4914, 1071, 21, 575, 5043, 4906, 504, 18028, 5649, 8932, 5730, 5634, 8735, 7558, 1112, 2655, 5641, 18017, 11445, 5598, 8798, 18029, 6159, 14303, 17747, 7756, 18016, 18015, 2]
+// Dependencies: [32, 19, 17, 2141, 4914, 1071, 21, 575, 5043, 4906, 504, 18035, 5649, 8933, 5730, 5634, 8736, 7558, 1112, 2655, 5641, 18024, 11446, 5598, 8799, 18036, 6159, 14310, 17754, 7756, 18023, 18022, 2]
 // Exports: default
 
-// Module 18027 (WaterwheelsDiscoverCard)
+// Module 18034 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
@@ -13,12 +13,12 @@ import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import GameControllerIcon2 from "GameControllerIcon" /* 7756 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8932 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17747 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18015 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 18016 */;
-import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 18017 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 18028 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8933 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17754 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18022 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 18023 */;
+import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 18024 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 18035 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -107,7 +107,7 @@ function ServerIdentity(server) {
     const obj = selectDiscoverServerAction;
     return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
   }, items1);
-  const OPEN_GUILD = server(8932).WaterwheelsActionType.OPEN_GUILD;
+  const OPEN_GUILD = server(8933).WaterwheelsActionType.OPEN_GUILD;
   set = new Set();
   if (server.verified) {
     set.add(GuildFeatures.VERIFIED);
@@ -163,7 +163,7 @@ function ServerIdentity(server) {
   let tmp14Result5 = null;
   if (null != result) {
     const obj12 = { guild: result, style: tmp4.badge };
-    tmp14Result5 = tmp14(onAction(8735), obj12);
+    tmp14Result5 = tmp14(onAction(8736), obj12);
   }
   items5[1] = tmp14Result5;
   let tmp14Result6 = null;
@@ -261,7 +261,7 @@ class ServerActionButton {
       const obj = selectDiscoverServerAction;
       return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
     }, items1);
-    const tmp4 = stateFromStores === guildId(8932).WaterwheelsActionType.OPEN_GUILD;
+    const tmp4 = stateFromStores === guildId(8933).WaterwheelsActionType.OPEN_GUILD;
     const intl = guildId(1112).intl;
     const string = intl.string;
     const t = guildId(1112).t;
@@ -364,7 +364,7 @@ function ServerRowCard(server) {
     const obj7 = { icon: unpackModuleId(ServerIcon, obj8), text: intl3.string(_modDef2655["2iP+h2"]) };
     obj8 = { size: "sm", color: nativeDefault.colors.ICON_MUTED, accessible: false };
     const tmp17 = WaterwheelsSectionLabelDefault;
-    ServerIcon = tmp9(11445).ServerIcon;
+    ServerIcon = tmp9(11446).ServerIcon;
     intl3 = tmp9(1112).intl;
     tmp14 = unpackModuleId(tmp17, obj7);
   }
@@ -422,7 +422,7 @@ function ServerRowCard(server) {
   let tmp23Result = null;
   if (null != result) {
     const obj21 = { guild: result, style: tmp.badge };
-    tmp23Result = tmp23(tmp19(8735), obj21);
+    tmp23Result = tmp23(tmp19(8736), obj21);
   }
   items8[1] = tmp23Result;
   items9 = [authStore2(metroImportDefault, obj19), ];
@@ -625,7 +625,7 @@ function GamePoster(game) {
     children: items3
   };
   intl2 = tmp2(1112).intl;
-  const obj4 = { style: tmp.posterClip, children: closure_11(game(18029).GameCoverFromURLs, obj5) };
+  const obj4 = { style: tmp.posterClip, children: closure_11(game(18036).GameCoverFromURLs, obj5) };
   obj5 = { gameId: game.gameId, name: game.name, coverUrl: game.coverUrl, iconGame: stateFromStores, width: 114, aspectRatio: 0.6909090909090909 };
   items3 = [closure_11(closure_7, obj4), , ];
   const obj6 = { pointerEvents: "none", style: tmp.posterBorder };
@@ -636,7 +636,7 @@ function GamePoster(game) {
   const tmp8 = closure_5;
   if (null != game.l30Rank) {
     const obj7 = { style: tmp.posterRank, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(Badge, obj8) };
-    obj8 = { type: obj9, variant: "inverted", icon: game(14303).FireIcon };
+    obj8 = { type: obj9, variant: "inverted", icon: game(14310).FireIcon };
     obj9 = { text: intl3.formatToPlainString(game(1112).t.UA6RoE, obj10) };
     Badge = tmp2(6159).Badge;
     intl3 = tmp2(1112).intl;

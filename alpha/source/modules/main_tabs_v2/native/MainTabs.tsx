@@ -1,17 +1,17 @@
-// Module ID: 17720
-// Function ID: 17721
+// Module ID: 17727
+// Function ID: 17728
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5043, 575, 5215, 9015, 17721, 5607, 5104, 10591, 17722, 19066, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5215, 9016, 17728, 5607, 5104, 10592, 17729, 19082, 2]
 
-// Module 17720 (MainTabs)
+// Module 17727 (MainTabs)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5104 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5215 */;
 import useToken from "useToken" /* 5607 */;
-import useActiveTheme from "useActiveTheme" /* 9015 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10591 */;
-import useAppFrameDefault from "useAppFrame" /* 17721 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17722 */;
+import useActiveTheme from "useActiveTheme" /* 9016 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10592 */;
+import useAppFrameDefault from "useAppFrame" /* 17728 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17729 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,7 +60,7 @@ const memoResult = react.memo(function MainTabs() {
   if (left > 0) {
     tmp10 = null;
     if (null == styles.container) {
-      tmp10 = hasOwnProperty(tmp(10591), { absolute: true, mix: true });
+      tmp10 = hasOwnProperty(tmp(10592), { absolute: true, mix: true });
     }
   } else {
     tmp10 = null;
@@ -85,7 +85,7 @@ const memoResult = react.memo(function MainTabs() {
   items6 = [metroRequire(ThemeContextProvider, obj4), ];
   let tmp12Result2 = null;
   if (null != styles.container) {
-    tmp12Result2 = tmp12(tmp(19066), {});
+    tmp12Result2 = tmp12(tmp(19082), {});
   }
   items6[1] = tmp12Result2;
   return metroRequire(React3, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 18499
-// Function ID: 18500
+// Module ID: 18506
+// Function ID: 18507
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 4949, 1071, 21, 5043, 575, 504, 6935, 5257, 1112, 4245, 7546, 5634, 7507, 8507, 7406, 6140, 7181, 18500, 18473, 18488, 18490, 6144, 18505, 2120, 18505, 18506, 15457, 18507, 18518, 2]
+// Dependencies: [5, 32, 19, 17, 4949, 1071, 21, 5043, 575, 504, 6935, 5257, 1112, 4245, 7546, 5634, 7507, 8508, 7406, 6140, 7181, 18507, 18480, 18495, 18497, 6144, 18512, 2120, 18512, 18513, 15464, 18514, 18523, 2]
 // Exports: default
 
-// Module 18499 (useConjureProjectSettingsForm)
+// Module 18506 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import asyncRequire from "asyncRequire" /* 2120 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18505 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18512 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -384,7 +384,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -410,7 +410,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
         } else if (1 === tmp4) {
           sharingOptions = 0;
           c4 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -440,11 +440,11 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
             showActionSheet(obj);
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp20) {
         if (0 === sharingOptions) {
           c4 = 3;
@@ -483,7 +483,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
               const obj = { options: sharingOptions, value, onChange };
-              const tmp2 = asyncRequire(18505, dependencyMap.paths);
+              const tmp2 = asyncRequire(18512, dependencyMap.paths);
               return openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
             }
       };

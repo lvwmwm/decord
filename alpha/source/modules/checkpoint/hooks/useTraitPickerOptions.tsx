@@ -1,17 +1,17 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 12933
+// Function ID: 12934
 // Name: useTraitPickerOptions
-// Dependencies: [19, 1387, 12620, 6444, 6397, 504, 2109, 6765, 6766, 6442, 1112, 2]
+// Dependencies: [19, 1387, 12628, 6444, 6397, 504, 2109, 6765, 6766, 6442, 1112, 2]
 // Exports: getTraitOptionStatus, useTraitPickerOptions
 
-// Module 12925 (useTraitPickerOptions)
+// Module 12933 (useTraitPickerOptions)
 import intl2 from "intl" /* 1112 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6397 */;
 import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6444 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6765 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
-import CheckpointStore from "CheckpointStore" /* 12620 */;
+import CheckpointStore from "CheckpointStore" /* 12628 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5, earnedCount, totalCount;

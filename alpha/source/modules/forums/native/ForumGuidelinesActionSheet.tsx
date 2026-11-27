@@ -1,10 +1,10 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 10795
+// Function ID: 10796
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 8168, 21, 5043, 575, 9027, 1629, 10795, 1379, 10796, 5257, 7480, 5642, 1112, 5082, 5666, 8112, 5271, 5275, 6152, 5634, 9624, 7067, 10794, 2120, 2]
+// Dependencies: [32, 19, 17, 8169, 21, 5043, 575, 9028, 1629, 10796, 1379, 10797, 5257, 7480, 5642, 1112, 5082, 5666, 8112, 5271, 5275, 6152, 5634, 9625, 7067, 10795, 2120, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10794 (ForumGuidelinesActionSheet)
+// Module 10795 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
@@ -12,8 +12,8 @@ import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import LinkUtils from "LinkUtils" /* 5666 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8112 */;
-import ForumConstants from "ForumConstants" /* 8168 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10796 */;
+import ForumConstants from "ForumConstants" /* 8169 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -212,7 +212,7 @@ export function openForumGuidelinesActionSheet(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10794, dependencyMap.paths);
+  const tmp2 = asyncRequire(10795, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
 }

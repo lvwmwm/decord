@@ -1,16 +1,16 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16754
+// Function ID: 16755
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [19, 17, 8376, 21, 5043, 575, 1629, 9903, 9894, 7546, 7507, 1112, 5275, 6115, 5634, 2]
+// Dependencies: [19, 17, 8377, 21, 5043, 575, 1629, 9904, 9895, 7546, 7507, 1112, 5275, 6115, 5634, 2]
 // Exports: default
 
-// Module 16747 (VideoQuestTranscriptActionSheet)
+// Module 16754 (VideoQuestTranscriptActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import AssetUtils from "AssetUtils" /* 9903 */;
+import AssetUtils from "AssetUtils" /* 9904 */;
 import react from "react" /* 19 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 8376 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 8377 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const QuestActionCreators = tmp(9894);
+const QuestActionCreators = tmp(9895);
 const ActivityIndicator = react_native.ActivityIndicator;
 ({ FetchStatus: hasOwnProperty, useVideoQuestUIStore: metroRequire } = VideoQuestUIStore);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -42,7 +42,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   let obj3;
   let obj4;
   let tmp8;
-  const f111202 = (children, index) => {
+  const f111445 = (children, index) => {
     const obj = { variant: "heading-sm/medium", color: "text-muted", children };
     return closure_1_7(quest(dependencyMap[14]).Text, obj, index);
   };
@@ -117,7 +117,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     const obj5 = { style: tmp.loadingSpinner, size: "large" };
     tmp7Result = tmp7(ActivityIndicator, obj5);
   }
-  items2 = [tmp7Result, memo.length > 0 && memo.map(f111202)];
-  memo.length > 0 && memo.map(f111202);
+  items2 = [tmp7Result, memo.length > 0 && memo.map(f111445)];
+  memo.length > 0 && memo.map(f111445);
   return closure_7(ActionSheet, obj);
 };

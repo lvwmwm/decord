@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11435
+// Function ID: 11436
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 4896, 4985, 1387, 21, 5043, 575, 7096, 7146, 6115, 5634, 5659, 5752, 1112, 11423, 2]
+// Dependencies: [19, 17, 4896, 4985, 1387, 21, 5043, 575, 7096, 7146, 6115, 5634, 5659, 5752, 1112, 11424, 2]
 // Exports: default
 
-// Module 11434 (InstantInviteCode)
+// Module 11435 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import ChannelRecord from "ChannelRecord" /* 4896 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import ClockIcon from "ClockIcon" /* 5752 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7096 */;
-import CountDownDefault from "CountDown" /* 11423 */;
+import CountDownDefault from "CountDown" /* 11424 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;

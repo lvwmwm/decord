@@ -271,7 +271,7 @@ obj = {
     });
   },
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: function handleSubscriptionUpdate(subscription) {
-    const f83826 = (id) => id.id === result.id;
+    const f84054 = (id) => id.id === result.id;
     subscription = subscription.subscription;
     if (subscription.user_id === AuthenticationStore.getId()) {
       const fromServer = SubscriptionRecord.createFromServer(subscription);
@@ -293,7 +293,7 @@ obj = {
       const tmp12 = null != items3 && result.type === hasOwnProperty.GUILD;
       if (tmp12) {
         let tmp20;
-        const findIndexResult = items3.findIndex(f83826);
+        const findIndexResult = items3.findIndex(f84054);
         if (-1 === findIndexResult) {
           const items = [result];
           HermesBuiltin.arraySpread(items, items3, 1);
@@ -315,7 +315,7 @@ obj = {
       const tmp25 = null != _null && result.type === hasOwnProperty.APPLICATION;
       if (tmp25) {
         let tmp33;
-        const findIndexResult1 = _null.findIndex(f83826);
+        const findIndexResult1 = _null.findIndex(f84054);
         if (-1 === findIndexResult1) {
           const items2 = [result];
           HermesBuiltin.arraySpread(items2, _null, 1);

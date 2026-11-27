@@ -1,10 +1,10 @@
-// Module ID: 15276
-// Function ID: 15277
+// Module ID: 15283
+// Function ID: 15284
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1071, 8213, 21, 1379, 15277, 575, 7394, 1629, 1380, 5837, 6130, 15267, 2120, 8109, 12588, 5722, 6047, 1112, 12539, 7444, 1186, 2]
+// Dependencies: [32, 19, 17, 1071, 8214, 21, 1379, 15284, 575, 7394, 1629, 1380, 5837, 6130, 15274, 2120, 8109, 12596, 5722, 6047, 1112, 12547, 7444, 1186, 2]
 // Exports: default
 
-// Module 15276 (QRScannerModal)
+// Module 15283 (QRScannerModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
@@ -16,10 +16,10 @@ import QRLoginUtils from "QRLoginUtils" /* 5837 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 12539 */;
-import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 12588 */;
-import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 15277 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8214 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12547 */;
+import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 12596 */;
+import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 15284 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -124,7 +124,7 @@ export default function QRScannerModal(showHelp) {
                 tmp22Result.pop();
                 const obj2 = { remoteAuthFingerprint: result };
                 const tmp22Result4 = ModalActionCreatorsDefault;
-                tmp22Result4.pushLazy(asyncRequire(15267, dependencyMap.paths), obj2);
+                tmp22Result4.pushLazy(asyncRequire(15274, dependencyMap.paths), obj2);
               } else {
                 let match;
                 if (url.pathname != null) {

@@ -1,10 +1,10 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 11818
+// Function ID: 11819
 // Name: useKeyboardActionSheetHeight
 // Dependencies: [5597, 1629, 1495, 5619, 2]
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11810 (useKeyboardActionSheetHeight)
+// Module 11818 (useKeyboardActionSheetHeight)
 import useWindowDimensions from "useWindowDimensions" /* 1495 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1629 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;

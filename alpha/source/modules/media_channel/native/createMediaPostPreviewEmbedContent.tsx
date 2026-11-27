@@ -1,10 +1,10 @@
-// Module ID: 14546
-// Function ID: 14547
+// Module ID: 14553
+// Function ID: 14554
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5637, 4892, 4914, 5076, 1387, 11921, 6804, 5666, 1112, 12000, 14372, 575, 6403, 6806, 14547, 8937, 6825, 6805, 2]
+// Dependencies: [17, 5637, 4892, 4914, 5076, 1387, 11929, 6804, 5666, 1112, 12008, 14379, 575, 6403, 6806, 14554, 8938, 6825, 6805, 2]
 // Exports: default
 
-// Module 14546 (createMediaPostPreviewEmbedContent)
+// Module 14553 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import LinkUtils from "LinkUtils" /* 5666 */;
@@ -13,10 +13,10 @@ import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6804 */;
 import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 6805 */;
 import MediaFormatParamUtils from "MediaFormatParamUtils" /* 6806 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6825 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8937 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11921 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12000 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14372 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8938 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11929 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12008 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14379 */;
 import react_native from "react-native" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 5637 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -110,7 +110,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 mediaPostEmbedCommonData.coverImage = tmpResult12.withMediaFormat(mediaPostEmbedCommonData.coverImage, "webp");
               }
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
-                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(14547)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
+                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(14554)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
                 const merged = Object.assign(mediaPostEmbedCommonData);
                 return obj5;
               } else {

@@ -1,10 +1,10 @@
-// Module ID: 14258
-// Function ID: 14259
+// Module ID: 14265
+// Function ID: 14266
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 5043, 575, 5607, 1654, 5253, 1413, 8489, 5730, 5634, 8798, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5607, 1654, 5253, 1413, 8490, 5730, 5634, 8799, 2]
 // Exports: default
 
-// Module 14258 (GameProfileNavigationHeader)
+// Module 14265 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1413 */;
 import timing_timing from "timing/timing" /* 5253 */;
@@ -159,7 +159,7 @@ export default function GameProfileNavigationHeader(game) {
   if (null != name) {
     const obj3 = { style: tmp.headerContainer, children: items6 };
     const obj4 = { android_fallbackColor: token };
-    items6 = [closure_6(tmp2(8489).BackgroundBlurFill, obj4), ];
+    items6 = [closure_6(tmp2(8490).BackgroundBlurFill, obj4), ];
     let tmp22Result = null != memo;
     const obj5 = { style: tmp.headerRow, children: items7 };
     if (tmp22Result) {
@@ -179,14 +179,14 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp20Result) {
       const obj10 = { style: tmp.rankPillContainer, children: items9 };
       let str = "no-hide-descendants";
-      const obj11 = { style: tmp.rankPillContainer, accessibilityElementsHidden: null == headerRight, importantForAccessibility: str2, children: closure_6(application(8798), obj12) };
+      const obj11 = { style: tmp.rankPillContainer, accessibilityElementsHidden: null == headerRight, importantForAccessibility: str2, children: closure_6(application(8799), obj12) };
       str2 = "no-hide-descendants";
       if (null != headerRight) {
         str2 = "auto";
       }
       obj12 = { rank: game.l30Rank, compact: true };
       items9 = [closure_6(closure_4, obj11), ];
-      const obj13 = { style: items10, accessibilityElementsHidden: null != headerRight, importantForAccessibility: str3, children: closure_6(application(8798), obj14) };
+      const obj13 = { style: items10, accessibilityElementsHidden: null != headerRight, importantForAccessibility: str3, children: closure_6(application(8799), obj14) };
       items10 = [StyleSheet.absoluteFill, animatedStyle1];
       str3 = "auto";
       const View = tmp4(1654).View;

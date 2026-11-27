@@ -1,10 +1,10 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19228
+// Function ID: 19229
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1071, 21, 5043, 575, 7309, 5000, 19213, 17721, 6130, 6116, 1264, 8249, 16021, 1379, 18623, 2]
+// Dependencies: [109, 19, 17, 1071, 21, 5043, 575, 7309, 5000, 19229, 17728, 6130, 6116, 1264, 8250, 16028, 1379, 18634, 2]
 // Exports: default
 
-// Module 19212 (modal/ModalScreen)
+// Module 19228 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7309 */;
@@ -24,7 +24,7 @@ let metroRequire;
 let tmp;
 const useTrackImpressionDefault = tmp(6116);
 const ModalActionCreatorsDefault = tmp(6130);
-const useAppFrameDefault = tmp(17721);
+const useAppFrameDefault = tmp(17728);
 let closure_3 = ["impressionName", "impressionProperties"];
 ({ View: metroRequire, StyleSheet: metroImportDefault } = react_native);
 const NOOP = Constants.NOOP;
@@ -62,7 +62,7 @@ export default function Modal(route) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const obj2 = modal(19213);
+    const obj2 = modal(19229);
     isIpadOSResult = obj2.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const obj3 = { enabled: !isIpadOSResult };
@@ -130,7 +130,7 @@ export default function Modal(route) {
   items1 = [tmp7.content, styles.content];
   const obj8 = { style: items2, collapsable: null == styles.container, children: null };
   items2 = [tmp7.content, styles.body];
-  SafeAreaProvider = tmp12(16021).SafeAreaProvider;
+  SafeAreaProvider = tmp12(16028).SafeAreaProvider;
   const createElement = obj5.createElement;
   const modal2 = modal.modal;
   const merged = Object.assign(tmp9);
@@ -143,7 +143,7 @@ export default function Modal(route) {
   items3[1] = tmp18Result;
   items4 = [closure_10(closure_6, obj7), ];
   const tmp12Result = modal(1379);
-  items4[1] = tmp12Result.isIOS() && closure_9(modal(18623).PortalKeyboardRenderer, { portal: false });
-  tmp12Result.isIOS() && closure_9(modal(18623).PortalKeyboardRenderer, { portal: false });
+  items4[1] = tmp12Result.isIOS() && closure_9(modal(18634).PortalKeyboardRenderer, { portal: false });
+  tmp12Result.isIOS() && closure_9(modal(18634).PortalKeyboardRenderer, { portal: false });
   return closure_9(closure_6, obj6);
 };

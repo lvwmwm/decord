@@ -1,15 +1,15 @@
-// Module ID: 13054
-// Function ID: 13055
+// Module ID: 13062
+// Function ID: 13063
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1406, 1071, 21, 5043, 12145, 13046, 10251, 5730, 6162, 9510, 1413, 6369, 2]
+// Dependencies: [19, 17, 1406, 1071, 21, 5043, 12153, 13054, 10252, 5730, 6162, 9511, 1413, 6369, 2]
 
-// Module 13054 (RecommendationsBanner)
+// Module 13062 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import useDisplayProfileDefault from "useDisplayProfile" /* 6162 */;
 import useAvatarColorDefault from "useAvatarColor" /* 6369 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10251 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10252 */;
 import react from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import Constants from "Constants" /* 1071 */;
@@ -23,7 +23,7 @@ let metroRequire;
 let tmp;
 let tmp3;
 const FastImageDefault = tmp3(5730);
-const UserProfileBannerDefault = tmp(9510);
+const UserProfileBannerDefault = tmp(9511);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
@@ -37,9 +37,9 @@ let closure_10 = react.memo(function RecommendationBannerEmbedded(applicationId)
   importDefault = undefined;
   applicationId = applicationId.applicationId;
   const tmp = dependencyMap;
-  let obj = heroMediaDimensions(12145);
+  let obj = heroMediaDimensions(12153);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(13046);
+  let obj2 = heroMediaDimensions(13054);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);

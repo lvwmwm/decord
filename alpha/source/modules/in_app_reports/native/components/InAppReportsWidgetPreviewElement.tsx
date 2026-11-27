@@ -1,15 +1,15 @@
-// Module ID: 14556
-// Function ID: 14557
+// Module ID: 14563
+// Function ID: 14564
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5043, 575, 9487, 6171, 14557, 5634, 1112, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 9488, 6171, 14564, 5634, 1112, 2]
 // Exports: default
 
-// Module 14556 (InAppReportsWidgetPreviewElement)
+// Module 14563 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6171 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9487 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9488 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -40,7 +40,7 @@ export default function WidgetPreview(widget) {
     if (widget.games.length > 0) {
       const obj2 = { userId, widget, disableInteraction: true, cardStyle: items };
       items = [tmp3.card, tmp.card];
-      tmp5 = React3(tmp4(14557).WidgetSection, obj2);
+      tmp5 = React3(tmp4(14564).WidgetSection, obj2);
     }
   }
   let tmp7 = null;

@@ -1,10 +1,10 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14221
+// Function ID: 14222
 // Name: ChannelLinkUrls
 // Dependencies: [32, 5666, 2]
 // Exports: parseChannelLinkUrl
 
-// Module 14214 (ChannelLinkUrls)
+// Module 14221 (ChannelLinkUrls)
 import LinkUtils from "LinkUtils" /* 5666 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

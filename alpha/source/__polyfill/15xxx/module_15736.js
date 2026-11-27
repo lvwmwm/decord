@@ -1,13 +1,10 @@
 // Module ID: 15736
 // Function ID: 15737
-// Dependencies: []
+// Dependencies: [15737, 15805]
 
 // Module 15736
+import _mod15805 from "module_15805" /* 15805 */;
+import module_15737 from "module_15737" /* 15737 */;
 
-export default (fn) => {
-  try {
-    return fn();
-  } catch (err) {
-    return true;
-  }
-};
+
+export default _mod15805.Object.assign;

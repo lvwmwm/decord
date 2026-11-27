@@ -1,10 +1,10 @@
-// Module ID: 18523
-// Function ID: 18524
+// Module ID: 18528
+// Function ID: 18529
 // Name: conjureGuildPickerSources
 // Dependencies: [19, 4955, 4949, 1387, 504, 1255, 5099, 6990, 6991, 2]
 // Exports: conjureMemberUsername, useConjureGuildMemberUsers, useConjureGuildRoles, useConjureMemberRequests
 
-// Module 18523 (conjureGuildPickerSources)
+// Module 18528 (conjureGuildPickerSources)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import UserUtils from "UserUtils" /* 5099 */;
 import GuildUtilsDefault from "GuildUtils" /* 6990 */;

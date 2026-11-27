@@ -1,14 +1,14 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 10058
+// Function ID: 10059
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [4985, 1387, 7073, 2118, 5695, 1112, 5659, 10058, 7847, 8244, 2]
+// Dependencies: [4985, 1387, 7073, 2118, 5695, 1112, 5659, 10059, 7847, 8245, 2]
 
-// Module 10057 (application_commands/ApplicationCommandBuiltIns)
+// Module 10058 (application_commands/ApplicationCommandBuiltIns)
 import Server from "Server" /* 2118 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
@@ -69,8 +69,8 @@ let obj = {
             }
           }
       };
-      const openLeaveGroupDMConfirmationAlert = channel(10058).openLeaveGroupDMConfirmationAlert;
-      channel(10058);
+      const openLeaveGroupDMConfirmationAlert = channel(10059).openLeaveGroupDMConfirmationAlert;
+      channel(10059);
       intl3 = tmp5(1112).intl;
       intl4 = tmp5(1112).intl;
       const result = openLeaveGroupDMConfirmationAlert(obj6);

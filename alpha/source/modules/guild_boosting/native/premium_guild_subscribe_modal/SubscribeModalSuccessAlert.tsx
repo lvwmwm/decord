@@ -1,10 +1,10 @@
-// Module ID: 14826
-// Function ID: 14827
+// Module ID: 14832
+// Function ID: 14833
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 4914, 9126, 21, 5043, 575, 14827, 14828, 504, 5252, 6118, 1112, 6047, 6864, 5598, 1091, 5730, 5050, 14829, 14830, 5634, 2]
+// Dependencies: [32, 19, 17, 4914, 9127, 21, 5043, 575, 14833, 14834, 504, 5252, 6118, 1112, 6047, 6864, 5598, 1091, 5730, 5050, 14835, 14836, 5634, 2]
 // Exports: default
 
-// Module 14826 (SubscribeModalSuccessAlert)
+// Module 14832 (SubscribeModalSuccessAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,9 +15,9 @@ import useThemeDefault from "useTheme" /* 5252 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import AlertDefault from "Alert" /* 6118 */;
-import ColorConstants from "ColorConstants" /* 9126 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 14827 */;
-import _mod14828 from "module_14828" /* 14828 */;
+import ColorConstants from "ColorConstants" /* 9127 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 14833 */;
+import _mod14834 from "module_14834" /* 14834 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -38,7 +38,7 @@ class PremiumPaymentGuildAnimation {
     let nextScene;
     let onSceneComplete;
     ({ nextScene, onSceneComplete, loop } = arg0);
-    const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod14828 };
+    const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod14834 };
     const tmp2 = SequencedLottieAnimationViewDefault;
     return metroImportAll(tmp2, obj);
   }
@@ -127,9 +127,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   tmp17 = FastImageDefault;
   const tmp2Result = shared;
   if (tmp2Result.isThemeLight(tmp11)) {
-    tmp10Result = tmp10(14829);
+    tmp10Result = tmp10(14835);
   } else {
-    tmp10Result = tmp10(14830);
+    tmp10Result = tmp10(14836);
   }
   const items2 = [closure_8(tmp16, obj4), ];
   const obj7 = { style: tmp.successInfo, children: items3 };

@@ -1,20 +1,20 @@
-// Module ID: 18926
-// Function ID: 18927
+// Module ID: 18942
+// Function ID: 18943
 // Name: ChannelDetails
-// Dependencies: [19, 17, 13300, 4892, 9017, 11409, 21, 575, 5043, 504, 13246, 18927, 6379, 6380, 1501, 13406, 5273, 7309, 1629, 1379, 5000, 8249, 13317, 13286, 1654, 5253, 5256, 5644, 13326, 5228, 5303, 18928, 18938, 19056, 19058, 19059, 19060, 19061, 6077, 2]
+// Dependencies: [19, 17, 13308, 4892, 9018, 11410, 21, 575, 5043, 504, 13254, 18943, 6379, 6380, 1501, 13414, 5273, 7309, 1629, 1379, 5000, 8250, 13325, 13294, 1654, 5253, 5256, 5644, 13334, 5228, 5303, 18944, 18954, 19072, 19074, 19075, 19076, 19077, 6077, 2]
 
-// Module 18926 (ChannelDetails)
+// Module 18942 (ChannelDetails)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13286 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13317 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13326 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13294 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13325 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 13334 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 13300 */;
+import SearchQueryStore from "SearchQueryStore" /* 13308 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9017 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11409 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9018 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11410 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

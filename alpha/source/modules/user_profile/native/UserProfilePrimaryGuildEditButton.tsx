@@ -1,15 +1,15 @@
-// Module ID: 16125
-// Function ID: 16126
+// Module ID: 16132
+// Function ID: 16133
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 4914, 8579, 21, 5043, 575, 504, 16126, 14310, 8578, 11946, 1112, 1379, 5634, 16089, 5257, 16127, 2120, 7052, 8722, 2]
+// Dependencies: [19, 4914, 8580, 21, 5043, 575, 504, 16133, 14317, 8579, 11954, 1112, 1379, 5634, 16096, 5257, 16134, 2120, 7052, 8723, 2]
 // Exports: default
 
-// Module 16125 (UserProfilePrimaryGuildEditButton)
+// Module 16132 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import GuildTagConstants from "GuildTagConstants" /* 8579 */;
+import GuildTagConstants from "GuildTagConstants" /* 8580 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(16127, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(16134, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

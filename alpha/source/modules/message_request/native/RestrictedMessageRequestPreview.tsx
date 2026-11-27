@@ -1,12 +1,12 @@
-// Module ID: 19236
-// Function ID: 19237
+// Module ID: 19252
+// Function ID: 19253
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 4892, 6391, 1387, 21, 5043, 575, 1629, 504, 13598, 19237, 19239, 13630, 13423, 2]
+// Dependencies: [32, 19, 17, 4892, 6391, 1387, 21, 5043, 575, 1629, 504, 13605, 19253, 19255, 13637, 13431, 2]
 // Exports: default
 
-// Module 19236 (RestrictedMessageRequestPreview)
+// Module 19252 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 575 */;
-import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13598 */;
+import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13605 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -153,17 +153,17 @@ export default function RestrictedMessageRequestPreview(channelId) {
       }
       items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items9 = [closure_10(tmp2(19237), obj6), , ];
+      items9 = [closure_10(tmp2(19253), obj6), , ];
       const obj7 = { channelId };
-      items9[1] = closure_10(ref(19239), obj7);
+      items9[1] = closure_10(ref(19255), obj7);
       let tmp19Result = null;
       if (isEmpty) {
         const obj8 = { style: tmp.emptyChat };
-        tmp19Result = tmp19(tmp2(13630), obj8);
+        tmp19Result = tmp19(tmp2(13637), obj8);
       }
       items9[2] = tmp19Result;
       items10 = [closure_11(tmp16, obj5), ];
-      const obj9 = { style: items11, children: closure_10(ref(13423), obj11) };
+      const obj9 = { style: items11, children: closure_10(ref(13431), obj11) };
       items11 = [tmp.footer, ];
       items11[1] = { paddingBottom: ref(575).space.PX_8 + bottom };
       const obj10 = { paddingBottom: ref(575).space.PX_8 + bottom };

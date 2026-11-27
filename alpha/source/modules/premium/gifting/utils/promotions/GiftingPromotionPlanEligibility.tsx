@@ -1,10 +1,10 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11151
+// Function ID: 11152
 // Name: GiftingPromotionPlanEligibility
 // Dependencies: [1389, 2]
 // Exports: isPlanEligibleForGiftingPromotion
 
-// Module 11150 (GiftingPromotionPlanEligibility)
+// Module 11151 (GiftingPromotionPlanEligibility)
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
 

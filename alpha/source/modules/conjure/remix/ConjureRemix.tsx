@@ -1,15 +1,15 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11453
+// Function ID: 11454
 // Name: ConjureRemix
-// Dependencies: [5, 4914, 7693, 6935, 7602, 572, 1112, 4245, 7674, 11453, 10070, 7667, 2]
-// Exports: createConjureRemix, isConjureRemixCreating, isValidCopyName
+// Dependencies: [5, 4914, 7693, 6935, 7602, 572, 1112, 4245, 7674, 11454, 10071, 7667, 2]
+// Exports: conjureCopyChangesType, createConjureRemix, isConjureRemixCreating, isValidCopyName
 
-// Module 11452 (ConjureRemix)
+// Module 11453 (ConjureRemix)
 import _modDef4245 from "module_4245" /* 4245 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import ConjureWorkerTickets from "ConjureWorkerTickets" /* 7674 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 11453 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 11454 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore_mod from "GuildStore" /* 4914 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7693 */;
@@ -26,7 +26,7 @@ function startRemix(id, guildId, arg2, arg3) {
   let name;
   let obj4;
   let shareTicket;
-  const f127954 = () => "rejected";
+  const f128358 = () => "rejected";
   ({ name, copy } = arg2);
   ({ preloadPreview: importDefault, shareTicket, onReserved: dependencyMap } = arg3);
   GuildStore = undefined;
@@ -43,7 +43,7 @@ function startRemix(id, guildId, arg2, arg3) {
     if (metroRequire == null) {
       const obj = conjureRemixConnection;
       const acceptRemixResult = obj.acceptRemix(c4, comma, copy);
-      metroRequire = acceptRemixResult.catch(f127954);
+      metroRequire = acceptRemixResult.catch(f128358);
     }
     return metroRequire;
   }
@@ -60,7 +60,7 @@ function startRemix(id, guildId, arg2, arg3) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -186,23 +186,20 @@ function startRemix(id, guildId, arg2, arg3) {
   c9 = false;
   let tmp6 = null;
   if (null != guildId) {
-    tmp6 = null;
-    if ("guild" === id.install_scope) {
-      let tmp7 = GuildStore;
-      const guild = GuildStore.getGuild(guildId);
-      let tmp9 = null;
-      if (null != guild) {
-        tmp9 = null;
-        const tmpResult = tmp(7602);
-        if (tmpResult.canStartConjureProject(guild, "ConjureRemix")) {
-          tmp9 = guildId;
-        }
+    let tmp7 = GuildStore;
+    const guild = GuildStore.getGuild(guildId);
+    let tmp9 = null;
+    if (null != guild) {
+      tmp9 = null;
+      const tmpResult = tmp(7602);
+      if (tmpResult.canStartConjureProject(guild, "ConjureRemix")) {
+        tmp9 = guildId;
       }
-      tmp6 = tmp9;
     }
+    tmp6 = tmp9;
   }
   closure_11 = tmp6;
-  const tmpResult3 = tmp(10070);
+  const tmpResult3 = tmp(10071);
   nonce = tmpResult3.createNonce();
   let result = map.set(nonce, (id, ws_ticket) => {
     map.delete(nonce);
@@ -214,7 +211,7 @@ function startRemix(id, guildId, arg2, arg3) {
     if (metroRequire == null) {
       const tmp3Result = conjureRemixConnection;
       const acceptRemixResult = tmp3Result.acceptRemix(c4, id, copy);
-      metroRequire = acceptRemixResult.catch(f127954);
+      metroRequire = acceptRemixResult.catch(f128358);
     }
     if (dependencyMap != null) {
       tmp9(id, guildId);
@@ -251,7 +248,7 @@ function startRemix(id, guildId, arg2, arg3) {
     if (metroRequire == null) {
       const obj2 = conjureRemixConnection;
       const acceptRemixResult = obj2.acceptRemix(c4, id, copy);
-      metroRequire = acceptRemixResult.catch(f127954);
+      metroRequire = acceptRemixResult.catch(f128358);
     }
     return id;
   }, () => {
@@ -304,6 +301,9 @@ let result = size.fileFinishedImporting("modules/conjure/remix/ConjureRemix.tsx"
 export function isValidCopyName(str) {
   return str.trim().length >= ConjureProjectTypes.MIN_PROJECT_NAME_LENGTH;
 }
+export function conjureCopyChangesType(install_scope, id) {
+  return "guild" === install_scope.install_scope !== (null != id);
+}
 export function isConjureRemixCreating(projectId) {
   return set.has(projectId);
 }
@@ -328,7 +328,7 @@ export function createConjureRemix(project, arg1, shareTicket) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c6;

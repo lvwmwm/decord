@@ -1,13 +1,13 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12504
+// Function ID: 12505
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1387, 4957, 1071, 21, 5043, 8827, 5604, 1256, 12495, 5725, 1112, 6118, 5634, 6807, 11423, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 4957, 1071, 21, 5043, 8828, 5604, 1256, 12503, 5725, 1112, 6118, 5634, 6807, 11424, 2]
 // Exports: default
 
-// Module 12496 (GuildEnableCommunicationAlert)
+// Module 12504 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import CountDownDefault from "CountDown" /* 11423 */;
+import CountDownDefault from "CountDown" /* 11424 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -69,7 +69,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             intl = tmp3(c2[14]).intl;
             open("GUILD_ENABLE_COMMUNICATION_SUCCESS", obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -116,7 +116,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp2 = closure_12();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  let closure_3 = obj(userId(8827)(userId, guildId), 1)[0];
+  let closure_3 = obj(userId(8828)(userId, guildId), 1)[0];
   userId(5604)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };

@@ -1,15 +1,15 @@
-// Module ID: 8563
-// Function ID: 8564
+// Module ID: 8564
+// Function ID: 8565
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 5043, 575, 1112, 8564, 6152, 5634, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1112, 8565, 6152, 5634, 2]
 // Exports: TagListInputTagComponent
 
-// Module 8563 (TagListInputTag)
+// Module 8564 (TagListInputTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Pressables from "Pressables" /* 6152 */;
-import reactDefault from "react" /* 8564 */;
+import reactDefault from "react" /* 8565 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -40,7 +40,7 @@ export function TagListInputTagComponent(end) {
   let start;
   let str;
   let tag;
-  const f93765 = () => closure_1_0("remove");
+  const f93998 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -53,10 +53,10 @@ export function TagListInputTagComponent(end) {
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = reactDefault(f93765, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = reactDefault(f93998, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  reactDefault(f93765, formatToPlainStringResult);
+  reactDefault(f93998, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {

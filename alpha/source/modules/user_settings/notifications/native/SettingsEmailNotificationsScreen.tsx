@@ -1,17 +1,17 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17116
+// Function ID: 17117
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 15229, 9555, 21, 5043, 575, 15853, 17110, 504, 17111, 11962, 1112, 3207, 7395, 6115, 7941, 16190, 2]
+// Dependencies: [19, 15236, 9556, 21, 5043, 575, 15860, 17117, 504, 17118, 11970, 1112, 3207, 7395, 6115, 7941, 16197, 2]
 
-// Module 17109 (SettingsEmailNotificationsScreen)
+// Module 17116 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3207 from "module_3207" /* 3207 */;
-import SettingsConstants from "SettingsConstants" /* 9555 */;
-import SettingBuilders from "SettingBuilders" /* 11962 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17111 */;
+import SettingsConstants from "SettingsConstants" /* 9556 */;
+import SettingBuilders from "SettingBuilders" /* 11970 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17118 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15229 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15236 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 

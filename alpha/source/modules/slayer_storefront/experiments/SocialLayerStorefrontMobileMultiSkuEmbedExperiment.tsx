@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 11999
+// Function ID: 12000
 // Name: SocialLayerStorefrontMobileMultiSkuEmbedExperiment
 // Dependencies: [1451, 2]
 // Exports: getIsEligibleForSocialLayerStorefrontMobileMultiSkuEmbed
 
-// Module 11991 (SocialLayerStorefrontMobileMultiSkuEmbedExperiment)
+// Module 11999 (SocialLayerStorefrontMobileMultiSkuEmbedExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

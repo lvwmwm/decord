@@ -1,96 +1,87 @@
 // Module ID: 9963
 // Function ID: 9964
-// Dependencies: [9964, 9959, 9961]
-// Exports: getInnerHTML, getOuterHTML
+// Dependencies: [9964, 9971, 9972, 9973, 9974, 9975, 9976, 9960]
 
 // Module 9963
-import DomHandler from "DomHandler" /* 9959 */;
-import render2 from "render" /* 9964 */;
+import _mod9964 from "module_9964" /* 9964 */;
+import _mod9971 from "module_9971" /* 9971 */;
+import _mod9972 from "module_9972" /* 9972 */;
+import _mod9973 from "module_9973" /* 9973 */;
+import testElement from "testElement" /* 9974 */;
+import DocumentPosition from "DocumentPosition" /* 9975 */;
+import _mod9976 from "module_9976" /* 9976 */;
 
 const require = globalThis.__r;
-let _require;
+let hasOwnProperty;
 
-function getOuterHTML(arg0, arg1) {
-  return render.default(arg0, arg1);
-}
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
-  }
-  return tmp2;
-});
-function getText(name) {
-  let str;
-  if (Array.isArray(name)) {
-    const mapped = name.map(getText);
-    str = mapped.join("");
-  } else if (DomHandler.isTag(name)) {
-    let str2 = "\n";
-    if ("br" !== name.name) {
-      str2 = getText(name.children);
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    str = str2;
-  } else if (DomHandler.isCDATA(name)) {
-    str = getText(name.children);
-  } else {
-    str = "";
-    if (DomHandler.isText(name)) {
-      str = name.data;
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-  }
-  return str;
-}
-function textContent(elementsByTagName) {
-  if (Array.isArray(elementsByTagName)) {
-    const mapped = elementsByTagName.map(textContent);
-    return mapped.join("");
-  } else {
-    if (DomHandler.hasChildren(elementsByTagName)) {
-      if (!DomHandler.isComment(elementsByTagName)) {
-        return textContent(elementsByTagName.children);
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
       }
+      tmp3 = !tmp4;
     }
-    let str = "";
-    if (DomHandler.isText(elementsByTagName)) {
-      str = elementsByTagName.data;
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
     }
-    return str;
-  }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
 }
-function innerText(children) {
-  if (Array.isArray(children)) {
-    const mapped = children.map(innerText);
-    return mapped.join("");
-  } else {
-    if (DomHandler.hasChildren(children)) {
-      return innerText(children.children);
+let closure_2 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
     }
-    let str = "";
-    if (DomHandler.isText(children)) {
-      str = children.data;
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_2(arg1, obj, key10007);
+      continue;
     }
-    return str;
+    continue;
   }
-}
-const render = fn(render2);
+});
+tmp3(_mod9964, exports);
+tmp3(_mod9971, exports);
+tmp3(_mod9972, exports);
+tmp3(_mod9973, exports);
+tmp3(testElement, exports);
+tmp3(DocumentPosition, exports);
+tmp3(_mod9976, exports);
 
-export { getOuterHTML };
-export function getInnerHTML(children, arg1) {
-  let closure_0;
-  _require = arg1;
-  let str = "";
-  if (require("DomHandler").hasChildren(children)) {
-    children = children.children;
-    const mapped = children.map((item) => render.default(item, closure_0));
-    str = mapped.join("");
-  }
-  return str;
-}
-export { getText };
-export { textContent };
-export { innerText };
+export const isTag = require("DomHandler").isTag;
+export const isCDATA = require("DomHandler").isCDATA;
+export const isText = require("DomHandler").isText;
+export const isComment = require("DomHandler").isComment;
+export const isDocument = require("DomHandler").isDocument;
+export const hasChildren = require("DomHandler").hasChildren;

@@ -1,9 +1,9 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13493
+// Function ID: 13494
 // Name: ServerThemeApexShadowExperiment
 // Dependencies: [1451, 2]
 
-// Module 13485 (ServerThemeApexShadowExperiment)
+// Module 13493 (ServerThemeApexShadowExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

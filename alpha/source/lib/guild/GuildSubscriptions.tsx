@@ -1,16 +1,16 @@
-// Module ID: 14767
-// Function ID: 14768
+// Module ID: 14773
+// Function ID: 14774
 // Name: GuildSubscriptions
-// Dependencies: [1071, 4917, 14768, 12086, 14769, 4887, 12, 2]
+// Dependencies: [1071, 4917, 14774, 12094, 14775, 4887, 12, 2]
 
-// Module 14767 (GuildSubscriptions)
+// Module 14773 (GuildSubscriptions)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
 import Timers from "Timers" /* 4887 */;
 import FavoritesUtils from "FavoritesUtils" /* 4917 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12086 */;
-import GuildMemberSubscriptionsDefault from "GuildMemberSubscriptions" /* 14768 */;
-import GuildThreadSubscriptionsDefault from "GuildThreadSubscriptions" /* 14769 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12094 */;
+import GuildMemberSubscriptionsDefault from "GuildMemberSubscriptions" /* 14774 */;
+import GuildThreadSubscriptionsDefault from "GuildThreadSubscriptions" /* 14775 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelSubscriptionsDefault = GuildChannelSubscriptions;
@@ -19,25 +19,25 @@ const ME = Constants.ME;
 const result = size.fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
 class GuildSubscriptions {
   constructor(_onChange) {
-    const f107069 = (guildId1, members) => {
+    const f107309 = (guildId1, members) => {
       obj = { members };
       return obj._enqueue(guildId1, obj);
     };
-    const f107070 = (guildId1, channels) => {
+    const f107310 = (guildId1, channels) => {
       obj = { channels };
       return obj._enqueue(guildId1, obj);
     };
-    const f107071 = (guildId1, thread_member_lists) => {
+    const f107311 = (guildId1, thread_member_lists) => {
       obj = { thread_member_lists };
       return obj._enqueue(guildId1, obj);
     };
     let obj = Object.create(new.target.prototype);
-    obj._members = new GuildMemberSubscriptionsDefault(f107069);
-    new GuildMemberSubscriptionsDefault(f107069);
-    obj._channels = new GuildChannelSubscriptionsDefault(f107070);
-    new GuildChannelSubscriptionsDefault(f107070);
-    obj._threadMemberLists = new GuildThreadSubscriptionsDefault(f107071);
-    new GuildThreadSubscriptionsDefault(f107071);
+    obj._members = new GuildMemberSubscriptionsDefault(f107309);
+    new GuildMemberSubscriptionsDefault(f107309);
+    obj._channels = new GuildChannelSubscriptionsDefault(f107310);
+    new GuildChannelSubscriptionsDefault(f107310);
+    obj._threadMemberLists = new GuildThreadSubscriptionsDefault(f107311);
+    new GuildThreadSubscriptionsDefault(f107311);
     obj._typing = new Set();
     new Set();
     obj._threads = new Set();

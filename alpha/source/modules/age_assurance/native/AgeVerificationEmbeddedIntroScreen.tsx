@@ -1,17 +1,17 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12558
+// Function ID: 12559
 // Name: AgeVerificationEmbeddedIntroScreen
-// Dependencies: [19, 1071, 21, 5043, 575, 7885, 12546, 12551, 7888, 7890, 6115, 7891, 5634, 6825, 12553, 1112, 3499, 7870, 2188, 2]
+// Dependencies: [19, 1071, 21, 5043, 575, 7885, 12554, 12559, 7888, 7890, 6115, 7891, 5634, 6825, 12561, 1112, 3499, 7870, 2188, 2]
 // Exports: default
 
-// Module 12550 (AgeVerificationEmbeddedIntroScreen)
+// Module 12558 (AgeVerificationEmbeddedIntroScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import _modDef3499 from "module_3499" /* 3499 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7870 */;
-import AgeVerificationGetStartedModal from "AgeVerificationGetStartedModal" /* 12546 */;
-import useAgeVerificationMethodsDefault from "useAgeVerificationMethods" /* 12551 */;
+import AgeVerificationGetStartedModal from "AgeVerificationGetStartedModal" /* 12554 */;
+import useAgeVerificationMethodsDefault from "useAgeVerificationMethods" /* 12559 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -72,7 +72,7 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   obj10 = navigation(6825);
   items2[1] = closure_5(Text2, obj9);
   items1[1] = closure_6(Stack3, obj6);
-  items3 = [closure_6(Stack2, obj5), closure_5(navigation(12553).AgeVerificationMethodsContainer, { ageVerificationMethods, modalSessionId })];
+  items3 = [closure_6(Stack2, obj5), closure_5(navigation(12561).AgeVerificationMethodsContainer, { ageVerificationMethods, modalSessionId })];
   items4 = [closure_6(Stack, obj4), ];
   const obj11 = { variant: "body-xs/medium", color: "text-muted", style: tmp.helpLink, children: intl.format(_modDef3499.lG69e1, obj12) };
   const Text3 = navigation(5634).Text;

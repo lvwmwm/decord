@@ -1,14 +1,14 @@
-// Module ID: 8614
-// Function ID: 8615
+// Module ID: 8615
+// Function ID: 8616
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 4914, 5775, 4898, 21, 5043, 575, 1112, 6379, 6380, 504, 8603, 8615, 8476, 8604, 1629, 8616, 8592, 8617, 5271, 5275, 8620, 8626, 2]
+// Dependencies: [32, 19, 17, 4914, 5775, 4898, 21, 5043, 575, 1112, 6379, 6380, 504, 8604, 8616, 8477, 8605, 1629, 8617, 8593, 8618, 5271, 5275, 8621, 8627, 2]
 // Exports: default
 
-// Module 8614 (GuildScheduledEventDetailsActionSheet)
+// Module 8615 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8604 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8605 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -55,7 +55,7 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f93896 = () => {
+  const f94129 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -140,9 +140,9 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f93896), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f94129), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[15])(f93896), 2);
+  tmp5(tmp2(tmp3[15])(f94129), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

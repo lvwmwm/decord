@@ -1,10 +1,10 @@
-// Module ID: 19261
-// Function ID: 19262
+// Module ID: 19277
+// Function ID: 19278
 // Name: components/ActionSheetPresenter
-// Dependencies: [2, 15423]
+// Dependencies: [2, 15430]
 
-// Module 19261 (components/ActionSheetPresenter)
-import ActionSheetPresenter from "ActionSheetPresenter" /* 15423 */;
+// Module 19277 (components/ActionSheetPresenter)
+import ActionSheetPresenter from "ActionSheetPresenter" /* 15430 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/ActionSheetPresenter.tsx");

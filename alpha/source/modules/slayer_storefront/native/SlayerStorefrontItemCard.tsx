@@ -1,10 +1,10 @@
-// Module ID: 11172
-// Function ID: 11173
+// Module ID: 11173
+// Function ID: 11174
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 5043, 575, 7588, 11173, 6321, 5730, 5598, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 7588, 11174, 6321, 5730, 5598, 2]
 // Exports: default
 
-// Module 11172 (SlayerStorefrontItemCard)
+// Module 11173 (SlayerStorefrontItemCard)
 import nativeDefault from "native" /* 575 */;
 import _modDef6321 from "module_6321" /* 6321 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7588 */;

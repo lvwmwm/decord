@@ -1,18 +1,18 @@
-// Module ID: 9639
-// Function ID: 9640
+// Module ID: 9640
+// Function ID: 9641
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 4892, 21, 5043, 575, 1629, 9640, 504, 8344, 9609, 9608, 6130, 1112, 7198, 9004, 1379, 7191, 6152, 5634, 7440, 2]
+// Dependencies: [5, 32, 19, 17, 4892, 21, 5043, 575, 1629, 9641, 504, 8345, 9610, 9609, 6130, 1112, 7198, 9005, 1379, 7191, 6152, 5634, 7440, 2]
 // Exports: default
 
-// Module 9639 (ScheduledMessageEditContentModal)
+// Module 9640 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import Pressables from "Pressables" /* 6152 */;
-import MessageParserDefault from "MessageParser" /* 8344 */;
-import HeaderShared from "HeaderShared" /* 9004 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9609 */;
+import MessageParserDefault from "MessageParser" /* 8345 */;
+import HeaderShared from "HeaderShared" /* 9005 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9610 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -84,7 +84,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -120,7 +120,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         stateFromStores = 3;

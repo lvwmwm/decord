@@ -21,7 +21,7 @@ let c11, c12, c7, closure_10, closure_4, error;
 
 let SPENDING_LIMIT_REACHED;
 let SPENDING_LIMIT_WILL_EXCEED;
-const f91472 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
+const f91700 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
 function isOrderShape(obj) {
   return null != obj && typeof obj === "object" && "id" in obj && "status" in obj;
 }
@@ -46,7 +46,7 @@ function getOrderSigningConstraintsError(status) {
                 const unsatisfied_constraints = body2.unsatisfied_constraints;
                 let someResult;
                 if (unsatisfied_constraints != null) {
-                  someResult = unsatisfied_constraints.some(f91472);
+                  someResult = unsatisfied_constraints.some(f91700);
                 }
                 let orderSigningError = null;
                 if (someResult) {
@@ -115,7 +115,7 @@ let obj = function _signOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -251,7 +251,7 @@ obj = function _getOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -329,7 +329,7 @@ obj = function _fetchOrderEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -407,7 +407,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c9;
@@ -460,7 +460,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -513,7 +513,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     } else {
                       length = value;
                       c3 = 3;
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp13) {
                     c3 = 3;
@@ -642,7 +642,7 @@ class OrderSigningFailedWithConstraintsError extends BillingError {
     unsatisfied_constraints = unsatisfied_constraints.unsatisfied_constraints;
     let someResult;
     if (unsatisfied_constraints != null) {
-      someResult = unsatisfied_constraints.some(f91472);
+      someResult = unsatisfied_constraints.some(f91700);
     }
     let orderSigningError = null;
     if (someResult) {

@@ -1,10 +1,10 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16954
+// Function ID: 16955
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 32, 19, 1387, 1071, 5068, 1395, 16059, 5071, 7338, 16060, 6874, 9434, 11946, 1256, 1397, 1398, 2]
+// Dependencies: [5, 32, 19, 1387, 1071, 5068, 1395, 16066, 5071, 7338, 16067, 6874, 9435, 11954, 1256, 1397, 1398, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 16947 (useDisplayNameStylesHandleApply)
+// Module 16954 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -61,7 +61,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -99,7 +99,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -225,7 +225,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
                           closure_1_8();
                         }
                         c5 = 3;
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       } catch (tmp74) {
                         closure_2 = tmp74;
                         if (0 === c3) {
@@ -323,7 +323,7 @@ export function useDisplayNameStylesHandleApply(hasChanges) {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp34) {
             if (0 === selectedFontId) {
               c4 = 3;

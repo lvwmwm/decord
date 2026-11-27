@@ -1,17 +1,17 @@
-// Module ID: 13545
-// Function ID: 13546
+// Module ID: 13553
+// Function ID: 13554
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 5043, 575, 5634, 13546, 13547, 1112, 2879, 13550, 2]
+// Dependencies: [17, 21, 5043, 575, 5634, 13554, 13555, 1112, 2879, 13558, 2]
 // Exports: default
 
-// Module 13545 (GuildPowerupsNotificationContainer)
+// Module 13553 (GuildPowerupsNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef2879 from "module_2879" /* 2879 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 13546 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 13547 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 13554 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 13555 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     if (shouldShow2) {
       const obj7 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp5);
-      shouldShow2 = tmp9(tmp2(13550), obj7);
+      shouldShow2 = tmp9(tmp2(13558), obj7);
     }
     items[2] = shouldShow2;
     tmp7Result = tmp7(tmp8, obj);

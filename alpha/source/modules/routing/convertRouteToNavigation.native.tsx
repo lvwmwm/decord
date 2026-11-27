@@ -1,10 +1,10 @@
-// Module ID: 13830
-// Function ID: 13831
+// Module ID: 13837
+// Function ID: 13838
 // Name: convertRouteToNavigation
-// Dependencies: [1071, 4899, 9021, 5222, 5219, 5220, 5081, 5094, 6969, 11487, 2]
+// Dependencies: [1071, 4899, 9022, 5222, 5219, 5220, 5081, 5094, 6969, 11462, 2]
 // Exports: convertRouteToNavigation
 
-// Module 13830 (convertRouteToNavigation)
+// Module 13837 (convertRouteToNavigation)
 import Constants from "Constants" /* 1071 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;
 import matchPathCompat from "matchPathCompat" /* 5081 */;
@@ -12,8 +12,8 @@ import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
 import RootNavigationRef from "RootNavigationRef" /* 5220 */;
 import useChatLayout from "useChatLayout" /* 5222 */;
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6969 */;
-import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9021 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11487 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9022 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11462 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

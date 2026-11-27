@@ -1,10 +1,10 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 11803
+// Function ID: 11804
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 5849, 4892, 11796, 1071, 1088, 572, 1285, 5792, 12, 11798, 563, 2]
+// Dependencies: [5, 19, 5849, 4892, 11804, 1071, 1088, 572, 1285, 5792, 12, 11806, 563, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 11795 (SummaryActionCreators)
+// Module 11803 (SummaryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
@@ -13,12 +13,12 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
-import SummaryStore from "SummaryStore" /* 11796 */;
+import SummaryStore from "SummaryStore" /* 11804 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f100790 = () => connected.isConnected();
+const f101031 = () => connected.isConnected();
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -37,7 +37,7 @@ let obj = function _fetchSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _fetchSummary() {
             dispatch(obj8);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp34) {
           body = tmp34;
           if (0 === c5) {
@@ -136,7 +136,7 @@ obj = function _fetchSummaries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ obj = function _fetchSummaries() {
             dispatch(obj9);
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp42) {
           closure_5 = tmp42;
           if (0 === c6) {
@@ -298,7 +298,7 @@ obj = function _fetchChannelAffinities() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -378,7 +378,7 @@ obj = function _fetchChannelAffinities() {
           const _Date = Date;
           dispatch(obj8);
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -503,7 +503,7 @@ function useChannelSummaries(channelIds) {
   let memo;
   obj = channelIds(memo[12]);
   const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f100790);
+  const stateFromStores = obj.useStateFromStores(items, f101031);
   const items1 = [channelIds];
   memo = react.useMemo(() => channelIds.join(","), items1);
   const items2 = [memo, stateFromStores];
@@ -524,7 +524,7 @@ function useChannelSummaries(channelIds) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -559,7 +559,7 @@ function useChannelSummaries(channelIds) {
                   return obj5;
                 } else {
                   c4 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -616,7 +616,7 @@ obj = function _deleteSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -660,7 +660,7 @@ obj = function _deleteSummary() {
             obj.dispatch(obj7);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -717,7 +717,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
   let memo;
   const items1 = [GatewayConnectionStore];
   obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f100790);
+  const stateFromStores = obj.useStateFromStores(items1, f101031);
   const items2 = [items];
   memo = react.useMemo(() => channelIds.join(","), items2);
   const items3 = [memo, stateFromStores];
@@ -738,7 +738,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -773,7 +773,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
                   return obj5;
                 } else {
                   c4 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;

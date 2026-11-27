@@ -1,11 +1,11 @@
-// Module ID: 9412
-// Function ID: 9413
+// Module ID: 9413
+// Function ID: 9414
 // Name: useCollectiblesShopStyles
-// Dependencies: [6321, 575, 9413, 2]
+// Dependencies: [6321, 575, 9414, 2]
 
-// Module 9412 (useCollectiblesShopStyles)
+// Module 9413 (useCollectiblesShopStyles)
 import nativeDefault from "native" /* 575 */;
-import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 9413 */;
+import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 9414 */;
 import module_6321_mod from "module_6321" /* 6321 */;
 import size from "module_2" /* 2 */;
 

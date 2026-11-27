@@ -1,10 +1,10 @@
-// Module ID: 18451
-// Function ID: 18452
+// Module ID: 18458
+// Function ID: 18459
 // Name: conjureTraceRequests
 // Dependencies: [19, 2]
 // Exports: hasConjureTraceRequest, requestConjureTrace, takeConjureTraceRequest, useConjureTraceRequests
 
-// Module 18451 (conjureTraceRequests)
+// Module 18458 (conjureTraceRequests)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

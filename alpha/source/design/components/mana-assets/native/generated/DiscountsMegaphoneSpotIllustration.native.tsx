@@ -1,26 +1,26 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11302
+// Function ID: 11303
 // Name: DiscountsMegaphoneSpotIllustration
-// Dependencies: [19, 21, 11302, 11303, 11304, 7261, 5730, 2]
+// Dependencies: [19, 21, 11303, 11304, 11305, 7261, 5730, 2]
 // Exports: DiscountsMegaphoneSpotIllustration
 
-// Module 11301 (DiscountsMegaphoneSpotIllustration)
+// Module 11302 (DiscountsMegaphoneSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7261 */;
-import _modDef11302 from "module_11302" /* 11302 */;
 import _modDef11303 from "module_11303" /* 11303 */;
 import _modDef11304 from "module_11304" /* 11304 */;
+import _modDef11305 from "module_11305" /* 11305 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef11302 };
+let obj2 = { uri: _modDef11303 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef11303 };
+let obj3 = { uri: _modDef11304 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef11304 };
-({ uri: _modDef11304 });
+obj[3] = { uri: _modDef11305 };
+({ uri: _modDef11305 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/DiscountsMegaphoneSpotIllustration.native.tsx");
 

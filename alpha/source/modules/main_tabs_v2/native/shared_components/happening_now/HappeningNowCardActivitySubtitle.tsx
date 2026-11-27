@@ -1,24 +1,24 @@
-// Module ID: 17809
-// Function ID: 17810
+// Module ID: 17816
+// Function ID: 17817
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 4892, 21, 5043, 504, 5659, 16908, 8587, 6015, 1112, 9523, 11377, 2]
+// Dependencies: [19, 17, 4892, 21, 5043, 504, 5659, 16915, 8588, 6015, 1112, 9524, 11378, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 17809 (HappeningNowCardActivitySubtitle)
+// Module 17816 (HappeningNowCardActivitySubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import useChannelNameDefault from "useChannelName" /* 5659 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;
-import isStreamingDefault from "isStreaming" /* 9523 */;
-import HappeningNowCard from "HappeningNowCard" /* 16908 */;
+import isStreamingDefault from "isStreaming" /* 9524 */;
+import HappeningNowCard from "HappeningNowCard" /* 16915 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const getChannelA11yLabelDefault = tmp4(8587);
+const getChannelA11yLabelDefault = tmp4(8588);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ cardDetails: { marginTop: 2, flexDirection: "row", alignItems: "center" } });
@@ -31,7 +31,7 @@ export function HappeningNowVoiceCardSubtitle(voiceState) {
   const obj = voiceState(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(voiceState.channelId));
   useChannelNameDefault(stateFromStores);
-  const HappeningNowCardSubtitle = voiceState(16908).HappeningNowCardSubtitle;
+  const HappeningNowCardSubtitle = voiceState(16915).HappeningNowCardSubtitle;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
     getChannelA11yLabelDefault(obj3);
@@ -82,7 +82,7 @@ export function HappeningNowActivityCardSubtitle(activity) {
         }
         name2 = activity.name;
       } else {
-        if (tmp5(11377)(activity)) {
+        if (tmp5(11378)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;

@@ -1,12 +1,12 @@
-// Module ID: 8850
-// Function ID: 8851
+// Module ID: 8851
+// Function ID: 8852
 // Name: MediaModalPortal
-// Dependencies: [19, 17, 21, 5043, 1379, 8851, 7329, 8852, 2]
+// Dependencies: [19, 17, 21, 5043, 1379, 8852, 7329, 8853, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8850 (MediaModalPortal)
+// Module 8851 (MediaModalPortal)
 import Fragment from "Fragment" /* 21 */;
-import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8851 */;
+import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8852 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5043 */;

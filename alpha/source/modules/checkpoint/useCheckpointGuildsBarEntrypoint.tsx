@@ -1,15 +1,15 @@
-// Module ID: 12629
-// Function ID: 12630
+// Module ID: 12637
+// Function ID: 12638
 // Name: useCheckpointGuildsBarEntrypoint
-// Dependencies: [32, 4889, 5075, 4876, 6769, 9561, 2]
+// Dependencies: [32, 4889, 5075, 4876, 6769, 9562, 2]
 // Exports: dismissCheckpointIntro, useCheckpointGuildsBarEntrypoint
 
-// Module 12629 (useCheckpointGuildsBarEntrypoint)
+// Module 12637 (useCheckpointGuildsBarEntrypoint)
 import dismissible_content from "dismissible_content" /* 4876 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5075 */;
 import CheckpointExperiments from "CheckpointExperiments" /* 6769 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9561 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9562 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

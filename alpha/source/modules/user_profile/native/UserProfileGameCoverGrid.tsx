@@ -1,13 +1,13 @@
-// Module ID: 14603
-// Function ID: 14604
+// Module ID: 14610
+// Function ID: 14611
 // Name: UserProfileGameCoverGrid
-// Dependencies: [19, 17, 21, 5043, 14558, 14602, 2]
+// Dependencies: [19, 17, 21, 5043, 14565, 14609, 2]
 // Exports: default
 
-// Module 14603 (UserProfileGameCoverGrid)
+// Module 14610 (UserProfileGameCoverGrid)
 import react_native from "react-native" /* 17 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14558 */;
-import UserProfileWidgetExpandableItems from "UserProfileWidgetExpandableItems" /* 14602 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14565 */;
+import UserProfileWidgetExpandableItems from "UserProfileWidgetExpandableItems" /* 14609 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

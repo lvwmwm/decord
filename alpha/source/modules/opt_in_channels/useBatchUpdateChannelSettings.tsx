@@ -1,10 +1,10 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12045
+// Function ID: 12046
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 7474, 6167, 1071, 572, 504, 7470, 12038, 12035, 2]
+// Dependencies: [19, 7474, 6167, 1071, 572, 504, 7470, 12046, 12043, 2]
 // Exports: default
 
-// Module 12037 (useBatchUpdateChannelSettings)
+// Module 12045 (useBatchUpdateChannelSettings)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7470 */;

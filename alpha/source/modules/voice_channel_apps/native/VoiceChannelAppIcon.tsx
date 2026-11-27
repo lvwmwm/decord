@@ -1,14 +1,14 @@
-// Module ID: 19155
-// Function ID: 19156
+// Module ID: 19171
+// Function ID: 19172
 // Name: VoiceChannelAppIcon
-// Dependencies: [19, 17, 21, 5043, 575, 8537, 11557, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 8538, 11565, 2]
 // Exports: default
 
-// Module 19155 (VoiceChannelAppIcon)
+// Module 19171 (VoiceChannelAppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8537 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8538 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;

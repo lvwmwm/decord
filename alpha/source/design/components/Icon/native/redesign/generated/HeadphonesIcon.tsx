@@ -1,14 +1,14 @@
-// Module ID: 13517
-// Function ID: 13518
+// Module ID: 13525
+// Function ID: 13526
 // Name: HeadphonesIcon
-// Dependencies: [19, 21, 575, 5729, 13518, 2]
+// Dependencies: [19, 21, 575, 5729, 13526, 2]
 // Exports: HeadphonesIcon
 
-// Module 13517 (HeadphonesIcon)
+// Module 13525 (HeadphonesIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 13518 */;
+import AssetRegistry from "AssetRegistry" /* 13526 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

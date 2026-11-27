@@ -1,8 +1,8 @@
-// Module ID: 12758
-// Function ID: 12759
+// Module ID: 12766
+// Function ID: 12767
 // Dependencies: [2]
 
-// Module 12758
+// Module 12766
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_05_athlete_blocked.webp.js");

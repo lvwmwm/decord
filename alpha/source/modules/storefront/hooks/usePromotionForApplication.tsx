@@ -1,11 +1,11 @@
-// Module ID: 11248
-// Function ID: 11249
+// Module ID: 11249
+// Function ID: 11250
 // Name: usePromotionForApplication
-// Dependencies: [11126, 504, 2]
+// Dependencies: [11127, 504, 2]
 // Exports: default
 
-// Module 11248 (usePromotionForApplication)
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 11126 */;
+// Module 11249 (usePromotionForApplication)
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 11127 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

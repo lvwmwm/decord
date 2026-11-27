@@ -1,9 +1,9 @@
-// Module ID: 8560
-// Function ID: 8561
+// Module ID: 8561
+// Function ID: 8562
 // Name: TagListInput
-// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 1654, 5644, 5645, 7231, 5598, 7283, 5649, 7295, 7297, 5211, 7299, 5622, 5275, 8561, 8562, 1112, 8563, 5052, 7294, 7407, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 1654, 5644, 5645, 7231, 5598, 7283, 5649, 7295, 7297, 5211, 7299, 5622, 5275, 8562, 8563, 1112, 8564, 5052, 7294, 7407, 2]
 
-// Module 8560 (TagListInput)
+// Module 8561 (TagListInput)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
@@ -317,9 +317,9 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
     BottomSheetScrollView = onChangeText;
   }
   if (inActionSheet) {
-    BottomSheetTextInput = tmp2(8561).BottomSheetTextInput;
+    BottomSheetTextInput = tmp2(8562).BottomSheetTextInput;
   } else {
-    BottomSheetTextInput = tmp18(8562);
+    BottomSheetTextInput = tmp18(8563);
   }
   const result1 = 33 * bound;
   [tmp30, c17] = tmp9(obj2.useState(0), 2);

@@ -1,17 +1,17 @@
-// Module ID: 19310
-// Function ID: 19311
+// Module ID: 19326
+// Function ID: 19327
 // Name: AccountLinkingCampaignActionCreators
-// Dependencies: [5, 1387, 19305, 7513, 15205, 1285, 572, 2]
+// Dependencies: [5, 1387, 19321, 7513, 15212, 1285, 572, 2]
 // Exports: dismissAccountLinkingCampaign, fetchAccountLinkingCampaignDetectableApps, fetchAccountLinkingCampaigns
 
-// Module 19310 (AccountLinkingCampaignActionCreators)
+// Module 19326 (AccountLinkingCampaignActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import ApplicationAccountLinkingConstants from "ApplicationAccountLinkingConstants" /* 7513 */;
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15205 */;
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1387 */;
-import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19305 */;
+import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19321 */;
 import size from "module_2" /* 2 */;
 
 let c7, c8, closure_4;
@@ -76,7 +76,7 @@ let obj = function _fetchAccountLinkingCampaignDetectableApps() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -168,7 +168,7 @@ obj = function _fetchAccountLinkingCampaigns() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let tmp33;

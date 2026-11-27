@@ -1,12 +1,12 @@
-// Module ID: 11231
-// Function ID: 11232
+// Module ID: 11232
+// Function ID: 11233
 // Name: useProductPurchaseState
-// Dependencies: [6329, 11232, 2113, 504, 2]
+// Dependencies: [6329, 11233, 2113, 504, 2]
 // Exports: useProductPurchaseState
 
-// Module 11231 (useProductPurchaseState)
+// Module 11232 (useProductPurchaseState)
 import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
-import compactDefault from "compact" /* 11232 */;
+import compactDefault from "compact" /* 11233 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6329 */;
 import size from "module_2" /* 2 */;
 

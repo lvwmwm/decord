@@ -1,10 +1,10 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9557
+// Function ID: 9558
 // Name: DoubleTapEmojiUpdatedToast
 // Dependencies: [5044, 1390, 1413, 5273, 5052, 1112, 5725, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 9556 (DoubleTapEmojiUpdatedToast)
+// Module 9557 (DoubleTapEmojiUpdatedToast)
 import intl3 from "intl" /* 1112 */;
 import EmojiConstants from "EmojiConstants" /* 1390 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;

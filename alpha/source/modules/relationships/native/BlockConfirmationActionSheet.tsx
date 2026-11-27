@@ -1,9 +1,9 @@
-// Module ID: 11844
-// Function ID: 11845
+// Module ID: 11852
+// Function ID: 11853
 // Name: BlockConfirmationActionSheet
-// Dependencies: [5, 32, 19, 17, 4892, 4985, 1387, 7851, 11843, 1071, 7840, 21, 5043, 575, 6139, 1112, 5749, 6140, 6144, 1186, 1629, 6379, 6380, 11420, 504, 6134, 5271, 1256, 5275, 9077, 5634, 6807, 7289, 5257, 11845, 2120, 1264, 5641, 7850, 5273, 7846, 7845, 2188, 5722, 2]
+// Dependencies: [5, 32, 19, 17, 4892, 4985, 1387, 7851, 11851, 1071, 7840, 21, 5043, 575, 6139, 1112, 5749, 6140, 6144, 1186, 1629, 6379, 6380, 11421, 504, 6134, 5271, 1256, 5275, 9078, 5634, 6807, 7289, 5257, 11853, 2120, 1264, 5641, 7850, 5273, 7846, 7845, 2188, 5722, 2]
 
-// Module 11844 (BlockConfirmationActionSheet)
+// Module 11852 (BlockConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
@@ -27,7 +27,7 @@ import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import UserStore from "UserStore" /* 1387 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11843 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11851 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -183,7 +183,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
   const analyticsLocations = tmp4(items).analyticsLocations;
   const tmp5 = _slicedToArray(react.useState(false), 2);
   [tmp6, c5] = tmp5;
-  let closure_6 = channelId(11420)();
+  let closure_6 = channelId(11421)();
   let obj = userId(504);
   const items1 = [UserStore];
   const items2 = [userId];
@@ -241,7 +241,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
     const Avatar = tmp7(1186).Avatar;
     items8 = [tmp13(Avatar, obj9), ];
     const obj10 = { style: tmp.avatarIconContainer, children: closure_18(Icon, obj11) };
-    obj11 = { size: userId(1186).Icon.Sizes.MEDIUM, source: tmp2(9077) };
+    obj11 = { size: userId(1186).Icon.Sizes.MEDIUM, source: tmp2(9078) };
     Icon = tmp7(1186).Icon;
     items8[1] = closure_18(closure_6, obj10);
     items9 = [closure_19(closure_6, obj8), , ];
@@ -277,7 +277,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
               obj.track(constants3.USER_REMEDIATION_ACTION, obj2);
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
-              const tmp3 = asyncRequire(11845, dependencyMap.paths);
+              const tmp3 = asyncRequire(11853, dependencyMap.paths);
               const obj3 = { userId, channelId, onBlock: dependencyMap, onSuccess: _slicedToArray, onIgnore: _asyncToGenerator, impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION };
               openLazy(tmp3, authStore2, obj3, "replaceTopSheet");
             },
@@ -320,7 +320,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -361,7 +361,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
                 const obj3 = c1(c2[33]);
                 obj3.hideActionSheet(closure_1_11);
                 c2 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp23) {
                 c2 = 3;
                 throw tmp23;

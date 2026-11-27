@@ -1,17 +1,17 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11278
+// Function ID: 11279
 // Name: useCollectiblesPromotionForProduct
-// Dependencies: [1071, 11248, 11250, 11278, 2]
+// Dependencies: [1071, 11249, 11251, 11279, 2]
 // Exports: useCollectiblesPromotionForProduct
 
-// Module 11277 (useCollectiblesPromotionForProduct)
+// Module 11278 (useCollectiblesPromotionForProduct)
 import Constants from "Constants" /* 1071 */;
-import usePromotionForApplicationDefault from "usePromotionForApplication" /* 11248 */;
-import CollectiblesPricingPromotionUtils from "CollectiblesPricingPromotionUtils" /* 11250 */;
+import usePromotionForApplicationDefault from "usePromotionForApplication" /* 11249 */;
+import CollectiblesPricingPromotionUtils from "CollectiblesPricingPromotionUtils" /* 11251 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const CollectiblesPromotionUtils = tmp3(11278);
+const CollectiblesPromotionUtils = tmp3(11279);
 let closure_3 = Constants.COLLECTIBLES_APPLICATION_ID;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useCollectiblesPromotionForProduct.tsx");
 

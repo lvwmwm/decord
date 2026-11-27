@@ -1,17 +1,17 @@
-// Module ID: 19996
-// Function ID: 19997
+// Module ID: 20021
+// Function ID: 20022
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 4914, 4975, 1387, 1071, 4871, 21, 1112, 10363, 19997, 9365, 13986, 5043, 575, 1629, 504, 8471, 19999, 7395, 5634, 5798, 5641, 20000, 8088, 20006, 6144, 10681, 1186, 6807, 6156, 20007, 2]
+// Dependencies: [19, 17, 4914, 4975, 1387, 1071, 4871, 21, 1112, 10364, 20022, 9366, 13993, 5043, 575, 1629, 504, 8472, 20024, 7395, 5634, 5798, 5641, 20025, 8088, 20031, 6144, 10682, 1186, 6807, 6156, 20032, 2]
 
-// Module 19996 (GuildSettingsModalStickers)
+// Module 20021 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import StickersConstants from "StickersConstants" /* 4871 */;
-import BoostGemIcon from "BoostGemIcon" /* 9365 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13986 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19997 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20000 */;
-import showGuildSettingsModalStickerInfoActionSheet from "showGuildSettingsModalStickerInfoActionSheet" /* 20007 */;
+import BoostGemIcon from "BoostGemIcon" /* 9366 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 13993 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 20022 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20025 */;
+import showGuildSettingsModalStickerInfoActionSheet from "showGuildSettingsModalStickerInfoActionSheet" /* 20032 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -19,7 +19,7 @@ import PermissionStore from "PermissionStore" /* 4975 */;
 import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildBoostingUtils_mod from "GuildBoostingUtils" /* 10363 */;
+import GuildBoostingUtils_mod from "GuildBoostingUtils" /* 10364 */;
 import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 

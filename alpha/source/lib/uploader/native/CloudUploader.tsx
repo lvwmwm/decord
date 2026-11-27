@@ -1,16 +1,16 @@
-// Module ID: 10776
-// Function ID: 10777
+// Module ID: 10777
+// Function ID: 10778
 // Name: CloudUploader
-// Dependencies: [5, 1071, 5048, 3, 10777, 10778, 1112, 10780, 10781, 8157, 10782, 10097, 8125, 8127, 1443, 12, 2]
+// Dependencies: [5, 1071, 5048, 3, 10778, 10779, 1112, 10781, 10782, 8158, 10783, 10098, 8125, 8127, 1443, 12, 2]
 
-// Module 10776 (CloudUploader)
+// Module 10777 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import MessageConstants from "MessageConstants" /* 5048 */;
 import UploadPlatform from "UploadPlatform" /* 8127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
-import UploaderBase from "UploaderBase" /* 10777 */;
+import UploaderBase from "UploaderBase" /* 10778 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c4, closure_0, constants, logger, preCompressionSize, set, uri;
@@ -53,7 +53,7 @@ class CloudUploader extends UploaderBase {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -93,7 +93,7 @@ class CloudUploader extends UploaderBase {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -134,7 +134,7 @@ class CloudUploader extends UploaderBase {
                         obj.endBackgroundTask(_aborted);
                       }
                       c2 = 3;
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp12) {
                     c2 = 3;
@@ -284,7 +284,7 @@ class CloudUploader extends UploaderBase {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -391,12 +391,12 @@ class CloudUploader extends UploaderBase {
               } else {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp57) {
           closure_2 = tmp57;
           if (0 === c3) {

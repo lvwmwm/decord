@@ -1,14 +1,14 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11530
+// Function ID: 11531
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 4892, 4975, 4895, 1071, 504, 8947, 4917, 1255, 2]
+// Dependencies: [19, 4892, 4975, 4895, 1071, 504, 8948, 4917, 1255, 2]
 // Exports: default
 
-// Module 11522 (useFavoritesGuildChannelFilter)
+// Module 11530 (useFavoritesGuildChannelFilter)
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import FavoritesUtils from "FavoritesUtils" /* 4917 */;
-import _mod8947 from "module_8947" /* 8947 */;
+import _mod8948 from "module_8948" /* 8948 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
@@ -29,7 +29,7 @@ export default function useFavoritesGuildChannelFilter() {
   const items1 = [stateFromStores];
   return react.useCallback((type, arg1) => {
     type = type.type;
-    if (_mod8947.AutocompleterResultTypes.USER === type) {
+    if (_mod8948.AutocompleterResultTypes.USER === type) {
       const dMChannelFromUserId = ChannelStore.getDMChannelFromUserId(type.record.id);
       let tmp15 = !(!arg1 && null == dMChannelFromUserId);
       const tmp13 = !arg1 && null == dMChannelFromUserId;
@@ -38,11 +38,11 @@ export default function useFavoritesGuildChannelFilter() {
         const tmp17 = null == dMChannelFromUserId || null == stateFromStores[dMChannelFromUserId.id];
       }
       return tmp15;
-    } else if (_mod8947.AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (_mod8948.AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (_mod8947.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (_mod8947.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (_mod8948.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (_mod8948.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           const tmpResult = GlobalUtils;
           return tmpResult.assertNever(type);
         }

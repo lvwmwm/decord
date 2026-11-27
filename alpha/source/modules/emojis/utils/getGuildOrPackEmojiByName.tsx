@@ -1,10 +1,10 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8348
+// Function ID: 8349
 // Name: getGuildOrPackEmojiByName
 // Dependencies: [4992, 2]
 // Exports: default
 
-// Module 8347 (getGuildOrPackEmojiByName)
+// Module 8348 (getGuildOrPackEmojiByName)
 import EmojiTypes from "EmojiTypes" /* 4992 */;
 import size from "module_2" /* 2 */;
 

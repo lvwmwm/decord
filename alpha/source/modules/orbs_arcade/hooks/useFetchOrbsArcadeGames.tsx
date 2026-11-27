@@ -1,11 +1,11 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16640
+// Function ID: 16641
 // Name: useFetchOrbsArcadeGames
-// Dependencies: [19, 16634, 16635, 2]
+// Dependencies: [19, 16641, 16642, 2]
 // Exports: default
 
-// Module 16633 (useFetchOrbsArcadeGames)
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16635 */;
+// Module 16640 (useFetchOrbsArcadeGames)
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16642 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/orbs_arcade/hooks/useFetchOrb
 
 export default function useFetchOrbsArcadeGames(location) {
   let enabled;
-  const OrbsArcadeExperiment = enabled(16634).OrbsArcadeExperiment;
+  const OrbsArcadeExperiment = enabled(16641).OrbsArcadeExperiment;
   let obj = { location };
   enabled = OrbsArcadeExperiment.useConfig(obj).enabled;
   const items = [enabled];

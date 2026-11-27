@@ -1,17 +1,18 @@
 // Module ID: 15765
 // Function ID: 15766
-// Dependencies: [15740]
+// Dependencies: []
 
 // Module 15765
-import _mod15740 from "module_15740" /* 15740 */;
-
-let fn;
-if (_mod15740) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
 }
-
-export default fn;
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
+  }
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

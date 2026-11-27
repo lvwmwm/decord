@@ -1,10 +1,10 @@
-// Module ID: 12861
-// Function ID: 12862
+// Module ID: 12869
+// Function ID: 12870
 // Name: CheckpointNavigationControls
-// Dependencies: [5, 17, 12620, 6396, 12631, 1071, 21, 560, 5043, 575, 5607, 12860, 12862, 12863, 12864, 1112, 7798, 12852, 3495, 5722, 2188, 12866, 12867, 10685, 11428, 6442, 12628, 5724, 12869, 12870, 504, 6422, 12871, 12664, 6765, 6767, 1629, 12669, 2]
+// Dependencies: [5, 17, 12628, 6396, 12639, 1071, 21, 560, 5043, 575, 5607, 12868, 12870, 12871, 12872, 1112, 7798, 12860, 3495, 5722, 2188, 12874, 12875, 10686, 11429, 6442, 12636, 5724, 12877, 12878, 504, 6422, 12879, 12672, 6765, 6767, 1629, 12677, 2]
 // Exports: default, useCheckpointHomeControlsHeight
 
-// Module 12861 (CheckpointNavigationControls)
+// Module 12869 (CheckpointNavigationControls)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,23 +13,23 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import _modDef3495 from "module_3495" /* 3495 */;
 import useToken from "useToken" /* 5607 */;
 import CheckpointCardColors from "CheckpointCardColors" /* 6422 */;
-import RetryIcon from "RetryIcon" /* 10685 */;
-import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 11428 */;
-import CheckpointFadeLayerDefault from "CheckpointFadeLayer" /* 12669 */;
-import CheckpointTextDefault from "CheckpointText" /* 12852 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12860 */;
-import useCheckpointPressSoundDefault from "useCheckpointPressSound" /* 12862 */;
-import _modDef12863 from "module_12863" /* 12863 */;
-import CheckpointButton2 from "CheckpointButton" /* 12864 */;
-import _modDef12866 from "module_12866" /* 12866 */;
-import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 12867 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 12870 */;
-import ShareIcon from "ShareIcon" /* 12871 */;
+import RetryIcon from "RetryIcon" /* 10686 */;
+import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 11429 */;
+import CheckpointFadeLayerDefault from "CheckpointFadeLayer" /* 12677 */;
+import CheckpointTextDefault from "CheckpointText" /* 12860 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12868 */;
+import useCheckpointPressSoundDefault from "useCheckpointPressSound" /* 12870 */;
+import _modDef12871 from "module_12871" /* 12871 */;
+import CheckpointButton2 from "CheckpointButton" /* 12872 */;
+import _modDef12874 from "module_12874" /* 12874 */;
+import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 12875 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 12878 */;
+import ShareIcon from "ShareIcon" /* 12879 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 12620 */;
+import CheckpointStore from "CheckpointStore" /* 12628 */;
 import CheckpointConstants from "CheckpointConstants" /* 6396 */;
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12631 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12639 */;
 import Fragment from "Fragment" /* 21 */;
 import module_560 from "module_560" /* 560 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -76,7 +76,7 @@ function HomeControls(onStart) {
   const tmp = closure_16();
   _require = tmp;
   const tmp4 = useIsCheckpointWideDefault();
-  let obj = { source: _modDef12863, onPress: onStart };
+  let obj = { source: _modDef12871, onPress: onStart };
   const tmp5 = useCheckpointPressSoundDefault;
   const items = [tmp.homeControls, ];
   let wideHomeControls = tmp4;
@@ -152,12 +152,12 @@ function BackButton(disabled) {
   if (flag) {
     color = obj.useToken("text-subtle");
   }
-  const obj2 = { source: _modDef12866, onPress, disabled: flag };
+  const obj2 = { source: _modDef12874, onPress, disabled: flag };
   const tmp4 = useCheckpointPressSoundDefault;
   ({ onPressIn, onPressWithSound } = tmp4(obj2));
   const obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(intl4.t["13/7kX"]), disabled: flag, hitSlop, style, children: unpackModuleId(ArrowSmallLeftIcon.ArrowSmallLeftIcon, obj4) };
   tmp4(obj2);
-  const CheckpointButton = tmp2(12864).CheckpointButton;
+  const CheckpointButton = tmp2(12872).CheckpointButton;
   intl = tmp2(1112).intl;
   obj4 = { size: "custom", color, style: tmp.icon };
   return unpackModuleId(CheckpointButton, obj3);
@@ -171,7 +171,7 @@ function ReplayButton(arg0) {
   let onPressWithSound;
   let style;
   ({ onPress, color, style } = arg0);
-  const obj = { source: _modDef12863, onPress };
+  const obj = { source: _modDef12871, onPress };
   const tmp = closure_16();
   const tmp2 = useCheckpointPressSoundDefault;
   ({ onPressIn, onPressWithSound } = tmp2(obj));
@@ -197,12 +197,12 @@ function NextButton(disabled) {
   if (disabled) {
     token = obj.useToken("text-subtle");
   }
-  const obj2 = { source: _modDef12863, onPress, disabled };
+  const obj2 = { source: _modDef12871, onPress, disabled };
   const tmp5 = useCheckpointPressSoundDefault;
   ({ onPressIn, onPressWithSound } = tmp5(obj2));
   const obj3 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(intl4.t.PDTjLN), accessibilityHint, disabled, style: tmp.iconButton, children: unpackModuleId(ArrowSmallRightIcon.ArrowSmallRightIcon, obj4) };
   tmp5(obj2);
-  const CheckpointShadowButton = tmp3(12864).CheckpointShadowButton;
+  const CheckpointShadowButton = tmp3(12872).CheckpointShadowButton;
   intl = tmp3(1112).intl;
   obj4 = { size: "custom", color: token, style: tmp.icon };
   return unpackModuleId(CheckpointShadowButton, obj3);
@@ -216,7 +216,7 @@ function DoneButton(onPress) {
   let onPressWithSound;
   onPress = onPress.onPress;
   const tmp = closure_16();
-  const obj = { source: _modDef12863, onPress };
+  const obj = { source: _modDef12871, onPress };
   const tmp2 = useCheckpointPressSoundDefault;
   ({ onPressIn, onPressWithSound } = tmp2(obj));
   const obj2 = { onPressIn, onPress: onPressWithSound, accessibilityLabel: intl.string(intl4.t.i4jeWR), style: tmp.labelButton, children: items1 };
@@ -258,7 +258,7 @@ function FinalizeCharacterSaveButton(blockedTrait) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -297,7 +297,7 @@ function FinalizeCharacterSaveButton(blockedTrait) {
               presentError(intl.string(tmp3(c2[15]).t.fEptJP));
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c2 = 3;
@@ -419,7 +419,7 @@ function RouteControls(arg0) {
   let checkpointRouteBlockedTrait;
   ({ isLastRoute, onSave, onReplay, onShare } = arg0);
   const tmp = closure_16();
-  const tmp4 = checkpointRouteBlockedTrait(12664)();
+  const tmp4 = checkpointRouteBlockedTrait(12672)();
   const obj = onNext(6765);
   checkpointRouteBlockedTrait = obj.getCheckpointRouteBlockedTrait(activeRoute, tmp4);
   if (null != checkpointRouteBlockedTrait) {

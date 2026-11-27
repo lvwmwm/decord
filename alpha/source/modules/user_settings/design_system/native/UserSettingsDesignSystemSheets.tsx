@@ -1,10 +1,10 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17468
+// Function ID: 17469
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1071, 21, 5043, 7546, 7507, 8507, 7547, 6115, 7274, 7548, 5257, 5641, 1112, 10747, 17462, 6145, 5634, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5043, 7546, 7507, 8508, 7547, 6115, 7274, 7548, 5257, 5641, 1112, 10748, 17469, 6145, 5634, 2]
 // Exports: default
 
-// Module 17461 (UserSettingsDesignSystemSheets)
+// Module 17468 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
@@ -17,8 +17,8 @@ import TextInput_TextInput from "TextInput/TextInput" /* 7274 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
 import ActionSheet2 from "ActionSheet" /* 7546 */;
 import ActionSheetRow from "ActionSheetRow" /* 7548 */;
-import PromoSheet2 from "PromoSheet" /* 10747 */;
-import _modDef17462 from "module_17462" /* 17462 */;
+import PromoSheet2 from "PromoSheet" /* 10748 */;
+import _modDef17469 from "module_17469" /* 17469 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -66,7 +66,7 @@ function DemoActionSheet() {
   tmp16Result = first;
   if (tmp16Result) {
     const obj2 = { onPress: NOOP, label: tmp14 };
-    tmp16Result = tmp16(tmp17(8507).ActionSheetHeaderPressableText, obj2);
+    tmp16Result = tmp16(tmp17(8508).ActionSheetHeaderPressableText, obj2);
   }
   tmp16Result2 = tmp2;
   if (tmp16Result2) {
@@ -129,7 +129,7 @@ function DemoPromoSheet() {
   intl = intl2.intl;
   const obj2 = { graphic: obj3, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp };
   obj3 = { type: "image", src: obj4, aspectRatio: "16/9" };
-  obj4 = { uri: _modDef17462 };
+  obj4 = { uri: _modDef17469 };
   tmp = metroImportDefault(Button, obj);
   const PromoSheet = PromoSheet2.PromoSheet;
   return metroImportDefault(PromoSheet, obj2);

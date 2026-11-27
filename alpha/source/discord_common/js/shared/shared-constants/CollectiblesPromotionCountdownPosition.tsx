@@ -1,9 +1,9 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11134
+// Function ID: 11135
 // Name: CollectiblesPromotionCountdownPosition
 // Dependencies: [2]
 
-// Module 11133 (CollectiblesPromotionCountdownPosition)
+// Module 11134 (CollectiblesPromotionCountdownPosition)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesPromotionCountdownPosition.tsx");

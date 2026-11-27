@@ -1,10 +1,10 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8920
+// Function ID: 8921
 // Name: isItemUnreadInChannel
 // Dependencies: [6932, 11, 2]
 // Exports: isItemUnreadInChannel
 
-// Module 8919 (isItemUnreadInChannel)
+// Module 8920 (isItemUnreadInChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ReadStateStore from "ReadStateStore" /* 6932 */;
 import size from "module_2" /* 2 */;

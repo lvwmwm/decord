@@ -1,10 +1,10 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11907
+// Function ID: 11908
 // Name: useIsForumChannelSearchActive
-// Dependencies: [8120, 11900, 504, 2]
+// Dependencies: [8120, 11908, 504, 2]
 // Exports: useIsForumChannelSearchActive
 
-// Module 11899 (useIsForumChannelSearchActive)
+// Module 11907 (useIsForumChannelSearchActive)
 import ForumSearchStore from "ForumSearchStore" /* 8120 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 11369
-// Function ID: 11370
+// Module ID: 11370
+// Function ID: 11371
 // Name: TvIcon
-// Dependencies: [19, 21, 575, 5729, 11370, 2]
+// Dependencies: [19, 21, 575, 5729, 11371, 2]
 // Exports: TvIcon
 
-// Module 11369 (TvIcon)
+// Module 11370 (TvIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 11370 */;
+import AssetRegistry from "AssetRegistry" /* 11371 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 17950
-// Function ID: 17951
+// Module ID: 17957
+// Function ID: 17958
 // Name: getChannelAppLaunchTarget
 // Dependencies: [4892, 4975, 6937, 1071, 6833, 6849, 5684, 2]
 // Exports: default
 
-// Module 17950 (getChannelAppLaunchTarget)
+// Module 17957 (getChannelAppLaunchTarget)
 import getURLForApplicationDefault from "getURLForApplication" /* 5684 */;
 import AgeGateUtils from "AgeGateUtils" /* 6833 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

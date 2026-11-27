@@ -1,10 +1,10 @@
-// Module ID: 8180
-// Function ID: 8181
+// Module ID: 8181
+// Function ID: 8182
 // Name: ApplicationCommandActionCreators
-// Dependencies: [502, 8181, 1071, 38, 5695, 572, 1285, 8183, 11, 6400, 2]
+// Dependencies: [502, 8182, 1071, 38, 5695, 572, 1285, 8184, 11, 6400, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 8180 (ApplicationCommandActionCreators)
+// Module 8181 (ApplicationCommandActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,9 +12,9 @@ import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
 import InteractionTypes from "InteractionTypes" /* 6400 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8184 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8181 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8182 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -75,10 +75,10 @@ export function updateChannelState(arg0) {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", channelId, command, section, preferredCommandId, location: _location, changedOptionStates });
 }
-export function updateApplicationGuildCommandPermissions(arg0, arg1, arg2, permissions) {
+export function updateApplicationGuildCommandPermissions(c0, c4, c1, permissions) {
   let obj;
   const HTTP = HTTPUtils.HTTP;
-  const request = { body: obj, url: Endpoints.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(arg0, arg1, arg2), rejectWithError: false };
+  const request = { body: obj, url: Endpoints.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(c0, c4, c1), rejectWithError: false };
   obj = { permissions };
   return HTTP.put(request);
 }

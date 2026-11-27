@@ -1,10 +1,10 @@
-// Module ID: 15893
-// Function ID: 15894
+// Module ID: 15900
+// Function ID: 15901
 // Name: resolveGameForProfile
-// Dependencies: [5, 2165, 2141, 1071, 6971, 8719, 2]
+// Dependencies: [5, 2165, 2141, 1071, 6971, 8720, 2]
 // Exports: default
 
-// Module 15893 (resolveGameForProfile)
+// Module 15900 (resolveGameForProfile)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
@@ -28,7 +28,7 @@ let obj = function _resolveGameForProfile() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

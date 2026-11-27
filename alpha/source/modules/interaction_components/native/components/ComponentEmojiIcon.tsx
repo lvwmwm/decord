@@ -1,10 +1,10 @@
-// Module ID: 12404
-// Function ID: 12405
+// Module ID: 12412
+// Function ID: 12413
 // Name: ComponentEmojiIcon
 // Dependencies: [19, 21, 5043, 575, 7488, 2]
 // Exports: default
 
-// Module 12404 (ComponentEmojiIcon)
+// Module 12412 (ComponentEmojiIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import EmojiDefault from "Emoji" /* 7488 */;

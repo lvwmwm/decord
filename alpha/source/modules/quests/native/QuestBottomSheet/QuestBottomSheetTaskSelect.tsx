@@ -1,10 +1,10 @@
-// Module ID: 16753
-// Function ID: 16754
+// Module ID: 16760
+// Function ID: 16761
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 6871, 21, 6140, 6144, 13356, 1112, 7756, 2]
+// Dependencies: [19, 6871, 21, 6140, 6144, 13364, 1112, 7756, 2]
 // Exports: default
 
-// Module 16753 (QuestBottomSheetTaskSelect)
+// Module 16760 (QuestBottomSheetTaskSelect)
 import QuestConstants from "QuestConstants" /* 6871 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   const TableRowGroup = onTaskSelect(6140).TableRowGroup;
   const obj2 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(13356).ScreenIcon, {}),
+    icon: closure_3(onTaskSelect(13364).ScreenIcon, {}),
     label: intl.string(onTaskSelect(1112).t["QXc01+"]),
     onPress() {
       let tmpResult;

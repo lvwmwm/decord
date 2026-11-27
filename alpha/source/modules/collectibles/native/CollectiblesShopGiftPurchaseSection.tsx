@@ -1,10 +1,10 @@
-// Module ID: 11575
-// Function ID: 11576
+// Module ID: 11583
+// Function ID: 11584
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 6383, 9118, 1071, 1389, 21, 5043, 575, 5618, 504, 6138, 6379, 11576, 1256, 11577, 572, 6130, 6047, 11579, 2120, 1379, 11175, 11156, 5634, 1112, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 6383, 9119, 1071, 1389, 21, 5043, 575, 5618, 504, 6138, 6379, 11584, 1256, 11585, 572, 6130, 6047, 11587, 2120, 1379, 11176, 11157, 5634, 1112, 5641, 2]
 // Exports: default
 
-// Module 11575 (CollectiblesShopGiftPurchaseSection)
+// Module 11583 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 9118 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9119 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -216,7 +216,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
               closure_128_9();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

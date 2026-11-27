@@ -1,7 +1,22 @@
 // Module ID: 8909
 // Function ID: 8910
-// Dependencies: []
+// Dependencies: [8900, 8893, 5084]
 
 // Module 8909
+import normalizeColor from "normalizeColor" /* 8893 */;
+import _mod8900 from "module_8900" /* 8900 */;
+import "module_5084";
+import module_5084_mod from "module_5084" /* 5084 */;
 
-export default { SRT: "application/x-subrip", TTML: "application/ttml+xml", VTT: "text/vtt" };
+let arrayOf;
+let module_5084;
+let size;
+const obj = { color: normalizeColor, fontFamily: module_5084.string, fontSize: module_5084.number, fontStyle: module_5084.oneOf(["normal", "italic"]), fontWeight: module_5084.oneOf(["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]), fontVariant: arrayOf(module_5084.oneOf(["small-caps", "oldstyle-nums", "lining-nums", "tabular-nums", "proportional-nums"])), textShadowOffset: module_5084.shape(size), textShadowRadius: module_5084.number, textShadowColor: normalizeColor, letterSpacing: module_5084.number, lineHeight: module_5084.number, textAlign: module_5084.oneOf(["auto", "left", "right", "center", "justify"]), textAlignVertical: module_5084.oneOf(["auto", "top", "bottom", "center"]), includeFontPadding: module_5084.bool, textDecorationLine: module_5084.oneOf(["none", "underline", "line-through", "underline line-through"]), textDecorationStyle: module_5084.oneOf(["solid", "double", "dotted", "dashed"]), textDecorationColor: normalizeColor, textTransform: module_5084.oneOf(["none", "capitalize", "uppercase", "lowercase"]), writingDirection: module_5084.oneOf(["auto", "ltr", "rtl"]) };
+const module_8900 = Object.assign(_mod8900);
+module_5084 = module_5084_mod;
+arrayOf = module_5084.arrayOf;
+module_5084 = module_5084_mod;
+size = { width: module_5084.number, height: module_5084.number };
+module_5084 = module_5084_mod;
+
+export default obj;

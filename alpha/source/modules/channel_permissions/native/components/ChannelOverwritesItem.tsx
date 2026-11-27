@@ -1,10 +1,10 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8556
+// Function ID: 8557
 // Name: ChannelOverwritesItem
-// Dependencies: [19, 17, 1387, 7842, 21, 5043, 6052, 1112, 7847, 5724, 6152, 7284, 6144, 8556, 8526, 5634, 1186, 8558, 8559, 5105, 7182, 2]
+// Dependencies: [19, 17, 1387, 7842, 21, 5043, 6052, 1112, 7847, 5724, 6152, 7284, 6144, 8557, 8527, 5634, 1186, 8559, 8560, 5105, 7182, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 8555 (ChannelOverwritesItem)
+// Module 8556 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -14,10 +14,10 @@ import AlertModal from "AlertModal" /* 6052 */;
 import TableRow2 from "TableRow" /* 6144 */;
 import FormCheckbox from "FormCheckbox" /* 7182 */;
 import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7842 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8526 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8556 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8558 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8559 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8527 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8557 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8559 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8560 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;

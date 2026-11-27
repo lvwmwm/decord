@@ -1,9 +1,9 @@
-// Module ID: 8966
-// Function ID: 8967
+// Module ID: 8967
+// Function ID: 8968
 // Name: MessageManager
-// Dependencies: [32, 6933, 5849, 4896, 6952, 4892, 4914, 6932, 4946, 5076, 1071, 4899, 1088, 3, 8967, 6782, 8997, 6784, 6983, 8244, 8998, 510, 5081, 1098, 6954, 6046, 1112, 572, 7475, 2]
+// Dependencies: [32, 6933, 5849, 4896, 6952, 4892, 4914, 6932, 4946, 5076, 1071, 4899, 1088, 3, 8968, 6782, 8998, 6784, 6983, 8245, 8999, 510, 5081, 1098, 6954, 6046, 1112, 572, 7475, 2]
 
-// Module 8966 (MessageManager)
+// Module 8967 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -17,10 +17,10 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
 import ChannelMessagesDefault from "ChannelMessages" /* 6782 */;
 import flow_Client from "flow/Client" /* 6784 */;
 import SidebarActionTypes from "SidebarActionTypes" /* 6954 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
-import getNitroMessagePrefetchKey from "getNitroMessagePrefetchKey" /* 8967 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 8997 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 8998 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8245 */;
+import getNitroMessagePrefetchKey from "getNitroMessagePrefetchKey" /* 8968 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 8998 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 8999 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;

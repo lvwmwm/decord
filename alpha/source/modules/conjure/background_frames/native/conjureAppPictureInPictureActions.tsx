@@ -1,17 +1,17 @@
-// Module ID: 19390
-// Function ID: 19391
+// Module ID: 19406
+// Function ID: 19407
 // Name: conjureAppPictureInPictureActions
-// Dependencies: [6936, 6934, 6937, 7677, 15947, 13595, 1112, 4245, 14103, 11506, 10313, 11507, 7544, 10234, 2]
+// Dependencies: [6936, 6934, 6937, 7677, 15954, 11461, 1112, 4245, 14110, 11514, 10314, 11515, 7544, 10235, 2]
 // Exports: openConjureAppPictureInPictureFrame, showConjureAppPictureInPictureActions
 
-// Module 19390 (conjureAppPictureInPictureActions)
+// Module 19406 (conjureAppPictureInPictureActions)
 import _modDef4245 from "module_4245" /* 4245 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7544 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7677 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 10234 */;
-import closeFrameDefault from "closeFrame" /* 11507 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13595 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 10235 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 11461 */;
+import closeFrameDefault from "closeFrame" /* 11515 */;
 import FramesStore from "FramesStore" /* 6936 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
@@ -21,8 +21,8 @@ let _require;
 
 let tmp;
 let tmp3;
-const getConjureAppSoundButtonDefault = tmp3(11506);
-const conjureBackgroundFrames = tmp(15947);
+const getConjureAppSoundButtonDefault = tmp3(11514);
+const conjureBackgroundFrames = tmp(15954);
 function getConjureAppPictureInPictureActions(id, appName, arg2) {
   let intl;
   let intl2;
@@ -56,7 +56,7 @@ function getConjureAppPictureInPictureActions(id, appName, arg2) {
   const push = items.push;
   const obj3 = {
     label: intl2.string(tmp(1112).t.VkMnR2),
-    IconComponent: tmp(10313).DoorExitIcon,
+    IconComponent: tmp(10314).DoorExitIcon,
     isDestructive: true,
     onPress() {
       return closeFrameDefault(id.id);

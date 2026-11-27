@@ -1,10 +1,10 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11253
+// Function ID: 11254
 // Name: CollectiblesStorefrontPricingIntegrationExperiment
 // Dependencies: [1451, 2]
 // Exports: getCollectiblesStorefrontPricingFetchOnShopButtonPrefetch, useCollectiblesStorefrontPricingIntegrationEnabled
 
-// Module 11252 (CollectiblesStorefrontPricingIntegrationExperiment)
+// Module 11253 (CollectiblesStorefrontPricingIntegrationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

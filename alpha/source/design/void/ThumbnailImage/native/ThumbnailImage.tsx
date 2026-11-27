@@ -1,13 +1,13 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15594
+// Function ID: 15595
 // Name: ThumbnailImage
-// Dependencies: [19, 17, 21, 1379, 15588, 2]
+// Dependencies: [19, 17, 21, 1379, 15595, 2]
 // Exports: default
 
-// Module 15587 (ThumbnailImage)
+// Module 15594 (ThumbnailImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 15588 */;
+import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 15595 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;

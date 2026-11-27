@@ -1,12 +1,12 @@
-// Module ID: 13484
-// Function ID: 13485
+// Module ID: 13492
+// Function ID: 13493
 // Name: ServerThemeExperiment
-// Dependencies: [1071, 6044, 13485, 2]
+// Dependencies: [1071, 6044, 13493, 2]
 // Exports: getServerThemeEnabled, getServerThemeRollbackEnabled, resolveServerThemeConfig, useServerThemeEnabled, useServerThemeRollbackEnabled
 
-// Module 13484 (ServerThemeExperiment)
+// Module 13492 (ServerThemeExperiment)
 import Constants from "Constants" /* 1071 */;
-import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 13485 */;
+import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 13493 */;
 import createExperiment from "module_6044" /* 6044 */;
 import size from "module_2" /* 2 */;
 

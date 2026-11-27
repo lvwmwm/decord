@@ -1,22 +1,22 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8326
+// Function ID: 8327
 // Name: FriendSuggestionStore
-// Dependencies: [1406, 1387, 12, 8326, 8327, 504, 572, 2]
+// Dependencies: [1406, 1387, 12, 8327, 8328, 504, 572, 2]
 // Exports: transformFriendSuggestions
 
-// Module 8325 (FriendSuggestionStore)
+// Module 8326 (FriendSuggestionStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8326 */;
-import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 8327 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8327 */;
+import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 8328 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 
-const f93335 = function(contact_names) {
+const f93568 = function(contact_names) {
   let name;
   let tmp7;
   if (null != contact_names.contact_names) {
@@ -37,7 +37,7 @@ const f93335 = function(contact_names) {
     return obj;
   }
 };
-const f93336 = (key) => key.key;
+const f93569 = (key) => key.key;
 const React3 = {};
 let friendSuggestionCount = 0;
 let c6 = false;
@@ -121,8 +121,8 @@ let obj = {
     suggestions = suggestions.suggestions;
     let obj = _modDef12;
     const chainResult = obj.chain(suggestions);
-    const mapped = chainResult.map(f93335);
-    const iter = mapped.keyBy(f93336);
+    const mapped = chainResult.map(f93568);
+    const iter = mapped.keyBy(f93569);
     closure_4 = iter.value();
     const obj3 = _modDef12;
     friendSuggestionCount = obj3.keys(closure_4).length;
@@ -139,7 +139,7 @@ export default friendSuggestionStore;
 export function transformFriendSuggestions(arg0) {
   const obj = _modDef12;
   const chainResult = obj.chain(arg0);
-  const mapped = chainResult.map(f93335);
-  const iter = mapped.keyBy(f93336);
+  const mapped = chainResult.map(f93568);
+  const iter = mapped.keyBy(f93569);
   return iter.value();
 }

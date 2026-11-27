@@ -1,20 +1,20 @@
-// Module ID: 10416
-// Function ID: 10417
+// Module ID: 10417
+// Function ID: 10418
 // Name: UserSettingsVoiceProcessing
-// Dependencies: [19, 17, 2132, 21, 5043, 575, 504, 10417, 10418, 5996, 7251, 1112, 7253, 5634, 10421, 10388, 7549, 2]
+// Dependencies: [19, 17, 2132, 21, 5043, 575, 504, 10418, 10419, 5996, 7251, 1112, 7253, 5634, 10422, 10389, 7549, 2]
 // Exports: default
 
-// Module 10416 (UserSettingsVoiceProcessing)
+// Module 10417 (UserSettingsVoiceProcessing)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1112 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5996 */;
 import TableSwitchRow4 from "TableSwitchRow" /* 7549 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 10388 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10417 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10418 */;
-import KrispLogoDefault from "KrispLogo" /* 10421 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 10389 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10418 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10419 */;
+import KrispLogoDefault from "KrispLogo" /* 10422 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import Fragment from "Fragment" /* 21 */;
@@ -101,7 +101,7 @@ class VoiceProcessingOptions {
       tmp9Result = tmp9(tmp10, obj4);
     } else {
       const obj13 = { hasIcons: false, children: hasOwnProperty(TableSwitchRow, obj14) };
-      const UserSettingsTableRowGroup = tmp2(10388).UserSettingsTableRowGroup;
+      const UserSettingsTableRowGroup = tmp2(10389).UserSettingsTableRowGroup;
       obj14 = {
         label: intl.string(intl8.t.t8Qhib),
         subLabel: intl2.string(intl8.t.najZCV),

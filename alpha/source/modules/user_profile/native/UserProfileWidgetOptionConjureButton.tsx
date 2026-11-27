@@ -1,15 +1,15 @@
-// Module ID: 15014
-// Function ID: 15015
+// Module ID: 15021
+// Function ID: 15022
 // Name: UserProfileWidgetOptionConjureButton
-// Dependencies: [19, 17, 21, 5043, 575, 5257, 15015, 11485, 5634, 1112, 4245, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5257, 15022, 11495, 5634, 1112, 4245, 2]
 // Exports: default
 
-// Module 15014 (UserProfileWidgetOptionConjureButton)
+// Module 15021 (UserProfileWidgetOptionConjureButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import MagicWandIcon2 from "MagicWandIcon" /* 11485 */;
+import MagicWandIcon2 from "MagicWandIcon" /* 11495 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

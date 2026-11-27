@@ -1,10 +1,10 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12555
+// Function ID: 12556
 // Name: AgeVerificationIntroScreen
-// Dependencies: [5, 19, 17, 1071, 21, 5043, 575, 1629, 7935, 7891, 5634, 6825, 6140, 12548, 11837, 1112, 7870, 2188, 6828, 5641, 12476, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 5043, 575, 1629, 7935, 7891, 5634, 6825, 6140, 12556, 11845, 1112, 7870, 2188, 6828, 5641, 12484, 2]
 // Exports: default
 
-// Module 12547 (AgeVerificationIntroScreen)
+// Module 12555 (AgeVerificationIntroScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
@@ -105,7 +105,7 @@ export default function GetStartedScreen(modalSessionId) {
     })
   };
   const TableRowGroup = modalSessionId(6140).TableRowGroup;
-  const obj11 = modalSessionId(12548);
+  const obj11 = modalSessionId(12556);
   ageVerificationGetStartedSteps = obj11.getAgeVerificationGetStartedSteps(modalSessionId);
   items1[1] = closure_7(TableRowGroup, obj10);
   const obj12 = { style: tmp.ageGroupLearnMoreContainer, children: closure_7(Text3, obj13) };
@@ -144,7 +144,7 @@ export default function GetStartedScreen(modalSessionId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -175,7 +175,7 @@ export default function GetStartedScreen(modalSessionId) {
             return obj;
           } else {
             modalSessionId = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           modalSessionId = 3;
@@ -190,7 +190,7 @@ export default function GetStartedScreen(modalSessionId) {
   Button = modalSessionId(5641).Button;
   intl2 = modalSessionId(1112).intl;
   obj18 = { color: initiateAgeVerification(575).colors.WHITE };
-  LinkExternalSmallIcon = modalSessionId(12476).LinkExternalSmallIcon;
+  LinkExternalSmallIcon = modalSessionId(12484).LinkExternalSmallIcon;
   items2[1] = closure_7(closure_5, obj15);
   return closure_8(closure_9, obj2);
 };

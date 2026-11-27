@@ -1,10 +1,10 @@
-// Module ID: 18466
-// Function ID: 18467
+// Module ID: 18473
+// Function ID: 18474
 // Name: conjureAppChannelName
 // Dependencies: [2]
 // Exports: default
 
-// Module 18466 (conjureAppChannelName)
+// Module 18473 (conjureAppChannelName)
 import size from "module_2" /* 2 */;
 
 const re0 = /(?:[\0-\x1F\x7F-\x9F\xAD\u034F\u061C\u115F\u1160\u17B4\u180B-\u180E\u200B\u200C\u200E\u200F\u202A-\u202F\u2060-\u206F\u2800\u3164\uFA70-\uFAD9\uFEFF\uFFA0\uFFF0-\uFFFF]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|[\uDB40-\uDB7F][\uDC00-\uDFFF])/g;

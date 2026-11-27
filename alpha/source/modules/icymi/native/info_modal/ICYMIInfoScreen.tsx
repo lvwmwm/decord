@@ -1,10 +1,10 @@
-// Module ID: 18319
-// Function ID: 18320
+// Module ID: 18326
+// Function ID: 18327
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1082, 21, 5043, 575, 5597, 1629, 5252, 1501, 15835, 18320, 6130, 9004, 9012, 1112, 5730, 18322, 18323, 18324, 18325, 5634, 11445, 14907, 7525, 5257, 18326, 2120, 5641, 2]
+// Dependencies: [32, 5, 19, 17, 1082, 21, 5043, 575, 5597, 1629, 5252, 1501, 15842, 18327, 6130, 9005, 9013, 1112, 5730, 18329, 18330, 18331, 18332, 5634, 11446, 14914, 7525, 5257, 18333, 2120, 5641, 2]
 // Exports: default
 
-// Module 18319 (ICYMIInfoScreen)
+// Module 18326 (ICYMIInfoScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
@@ -104,7 +104,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -148,7 +148,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
           }, 100);
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         c2 = 3;
         throw tmp17;
@@ -167,7 +167,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   let obj2 = { style: items2, children: closure_9(HeaderIconButton, obj3) };
   items2 = [{ marginTop: top }, tmp.closeIcon];
   obj3 = {
-    source: navigation(9012),
+    source: navigation(9013),
     onPress() {
       const arr = navigation(closure_2[14]);
       return arr.pop();
@@ -175,13 +175,13 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
     accessibilityLabel: intl.string(extendedOnboarding(1112).t.cpT0Cq),
     color: tmp.closeIconColor.backgroundColor
   };
-  HeaderIconButton = extendedOnboarding(9004).HeaderIconButton;
+  HeaderIconButton = extendedOnboarding(9005).HeaderIconButton;
   intl = extendedOnboarding(1112).intl;
   const items3 = [closure_9(closure_6, obj2), , ];
   let obj4 = { style: items4, children: items5 };
   items4 = [tmp.container, { marginBottom: bottom }];
   let obj5 = { source: obj6, style: tmp.bgImage };
-  obj6 = { uri: navigation(18322) };
+  obj6 = { uri: navigation(18329) };
   const tmp17 = navigation(5730);
   items5 = [closure_9(tmp17, obj5), ];
   const obj7 = { style: items6, children: items8 };
@@ -192,14 +192,14 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const tmp16 = closure_7;
   const tmp18 = navigation(5730);
   if (tmp5 === ThemeTypes.LIGHT) {
-    tmp2Result = tmp2(18323);
+    tmp2Result = tmp2(18330);
   } else {
-    tmp2Result = tmp2(18324);
+    tmp2Result = tmp2(18331);
   }
   items7 = [, , , ];
   const obj10 = { source: { uri: tmp2Result }, style: tmp.headerImg };
   items7[0] = closure_9(tmp18, obj10);
-  const obj11 = { source: navigation(18325), style: tmp.flashIcon };
+  const obj11 = { source: navigation(18332), style: tmp.flashIcon };
   const tmp2Result2 = navigation(5730);
   items7[1] = closure_9(tmp2Result2, obj11);
   const obj12 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(extendedOnboarding(1112).t["jnXV/V"]) };
@@ -215,7 +215,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items9 = [, ];
   const obj14 = { children: items13 };
   const obj15 = { style: tmp.body, children: items10 };
-  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(11445).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(11446).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
   items9[0] = closure_9(closure_6, obj17);
   const obj18 = { variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl4.string(extendedOnboarding(1112).t.knxfqR) };
   const Text3 = tmp6(5634).Text;
@@ -226,7 +226,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[1] = closure_9(closure_6, obj19);
   const obj20 = { style: tmp.infoRow, children: items11 };
   items11 = [, ];
-  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14907).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14914).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   items11[0] = closure_9(closure_6, obj21);
   const obj22 = { variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl5.string(extendedOnboarding(1112).t.BnUXZi) };
   const Text4 = tmp6(5634).Text;

@@ -1,12 +1,12 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 9014
+// Function ID: 9015
 // Name: ClientThemesOverrides
-// Dependencies: [19, 5043, 5213, 9014, 2]
+// Dependencies: [19, 5043, 5213, 9015, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 9013 (ClientThemesOverrides)
+// Module 9014 (ClientThemesOverrides)
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5213 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9014 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9015 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

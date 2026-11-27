@@ -1,21 +1,21 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11426
+// Function ID: 11427
 // Name: InstantInvite
-// Dependencies: [19, 17, 4896, 1387, 1071, 21, 5043, 575, 504, 7515, 11426, 11427, 6047, 1112, 11428, 1098, 11430, 6145, 6115, 7519, 5634, 9067, 7944, 11434, 11435, 11437, 11440, 11442, 2]
+// Dependencies: [19, 17, 4896, 1387, 1071, 21, 5043, 575, 504, 7515, 11427, 11428, 6047, 1112, 11429, 1098, 11431, 6145, 6115, 7519, 5634, 9068, 7944, 11435, 11436, 11438, 11441, 11443, 2]
 // Exports: LinkedChannelInvite
 
-// Module 11425 (InstantInvite)
+// Module 11426 (InstantInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
-import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 11428 */;
-import InstantInviteIconsDefault from "InstantInviteIcons" /* 11430 */;
-import InstantInviteCreatorDefault from "InstantInviteCreator" /* 11435 */;
-import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 11440 */;
-import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 11442 */;
+import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 11429 */;
+import InstantInviteIconsDefault from "InstantInviteIcons" /* 11431 */;
+import InstantInviteCreatorDefault from "InstantInviteCreator" /* 11436 */;
+import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 11441 */;
+import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 11443 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function InstantInvite(invite) {
   }
   const items = [invite];
   const memo = react.useMemo(() => closure_5(invite.channel), items);
-  let obj = invite(11437);
+  let obj = invite(11438);
   const items1 = [invite.roles];
   const inviteActions = obj.useInviteActions({ invite, onInviteRevoked });
   const memo1 = react.useMemo(() => {
@@ -78,10 +78,10 @@ const memoResult = react.memo(function InstantInvite(invite) {
       return closure_1_8(IconButton, obj);
     }
   };
-  items2[1] = closure_8(invite(9067).ContextMenu, obj4);
+  items2[1] = closure_8(invite(9068).ContextMenu, obj4);
   const items3 = [closure_9(Stack, obj2), , , ];
   const obj5 = { channel: memo, expiresAt: invite.getExpiresAt() };
-  const InstantInviteDetails = tmp4(11434).InstantInviteDetails;
+  const InstantInviteDetails = tmp4(11435).InstantInviteDetails;
   items3[1] = closure_8(InstantInviteDetails, obj5);
   if (tmp9Result) {
     const obj6 = { roleIds: memo1, guildId: id };
@@ -132,11 +132,11 @@ export function LinkedChannelInvite(channel) {
     application_id = linkedLobby.application_id;
   }
   const getOrFetchApplication = useGetOrFetchApplication(application_id);
-  const tmp2Result = channel(11426);
+  const tmp2Result = channel(11427);
   canUnlinkLobbyChannel = tmp2Result.useCanUnlinkLobbyChannel(channel);
   let str;
   const id = channel.id;
-  const tmp10 = canUnlinkLobbyChannel(11427);
+  const tmp10 = canUnlinkLobbyChannel(11428);
   if (getOrFetchApplication != null) {
     str = getOrFetchApplication.name;
   }
@@ -211,10 +211,10 @@ export function LinkedChannelInvite(channel) {
       return closure_1_8(IconButton, obj);
     }
   };
-  items4[1] = closure_8(channel(9067).ContextMenu, obj7);
-  items5 = [closure_9(Stack, obj6), closure_8(tmp2(11434).InstantInviteDetails, { channel }), ];
+  items4[1] = closure_8(channel(9068).ContextMenu, obj7);
+  items5 = [closure_9(Stack, obj6), closure_8(tmp2(11435).InstantInviteDetails, { channel }), ];
   const obj8 = { direction: "horizontal", align: "flex-end", children: closure_8(View, obj9) };
-  obj9 = { style: tmp.creatorWrapper, children: closure_8(canUnlinkLobbyChannel(11435), obj10) };
+  obj9 = { style: tmp.creatorWrapper, children: closure_8(canUnlinkLobbyChannel(11436), obj10) };
   const Stack2 = tmp2(6115).Stack;
   obj10 = { user: stateFromStores, guildId: channel.guild_id };
   items5[2] = closure_8(Stack2, obj8);

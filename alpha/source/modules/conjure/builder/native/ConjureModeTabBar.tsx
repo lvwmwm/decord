@@ -1,13 +1,13 @@
-// Module ID: 18612
-// Function ID: 18613
+// Module ID: 18623
+// Function ID: 18624
 // Name: ConjureModeTabBar
-// Dependencies: [19, 17, 21, 5043, 575, 5607, 1654, 5644, 1379, 8619, 1112, 5634, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5607, 1654, 5644, 1379, 8620, 1112, 5634, 2]
 // Exports: default
 
-// Module 18612 (ConjureModeTabBar)
+// Module 18623 (ConjureModeTabBar)
 import nativeDefault from "native" /* 575 */;
 import _modDef1654 from "module_1654" /* 1654 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8619 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8620 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

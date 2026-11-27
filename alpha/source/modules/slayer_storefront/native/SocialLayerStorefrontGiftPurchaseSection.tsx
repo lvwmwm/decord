@@ -1,10 +1,10 @@
-// Module ID: 11660
-// Function ID: 11661
+// Module ID: 11668
+// Function ID: 11669
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 9118, 1387, 1071, 1389, 21, 5043, 575, 5618, 7515, 504, 1256, 11576, 11652, 1379, 572, 11645, 1112, 11656, 5634, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 9119, 1387, 1071, 1389, 21, 5043, 575, 5618, 7515, 504, 1256, 11584, 11660, 1379, 572, 11653, 1112, 11664, 5634, 5641, 2]
 // Exports: default
 
-// Module 11660 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 11668 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,8 +12,8 @@ import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 9118 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11645 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9119 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11653 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -187,7 +187,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
               closure_128_10();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

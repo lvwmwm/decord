@@ -1,10 +1,10 @@
-// Module ID: 13857
-// Function ID: 13858
+// Module ID: 13864
+// Function ID: 13865
 // Name: BadgeSocialComparison
-// Dependencies: [19, 17, 1387, 6383, 21, 5043, 575, 6138, 13858, 1112, 2153, 9856, 5634, 5730, 13859, 1654, 504, 9870, 2]
+// Dependencies: [19, 17, 1387, 6383, 21, 5043, 575, 6138, 13865, 1112, 2153, 9857, 5634, 5730, 13866, 1654, 504, 9871, 2]
 // Exports: default
 
-// Module 13857 (BadgeSocialComparison)
+// Module 13864 (BadgeSocialComparison)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1654 from "module_1654" /* 1654 */;
@@ -12,8 +12,8 @@ import StringUtils from "StringUtils" /* 2153 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import BadgeId from "BadgeId" /* 6138 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 9856 */;
-import BadgeUtils from "BadgeUtils" /* 9870 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 9857 */;
+import BadgeUtils from "BadgeUtils" /* 9871 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1387 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
@@ -33,9 +33,9 @@ function getActivityStatCount(badge) {
   const tmp3 = badge_id === BadgeId.BadgeId.GAME_VARIETY || badge_id === BadgeId.BadgeId.STREAMING || badge_id === BadgeId.BadgeId.GAME_TIME;
   if (tmp3) {
     if (badge.badge_id === BadgeId.BadgeId.GAME_VARIETY) {
-      let HOURS = tmp(13858).BadgeUnit.GAMES;
+      let HOURS = tmp(13865).BadgeUnit.GAMES;
     } else {
-      HOURS = tmp(13858).BadgeUnit.HOURS;
+      HOURS = tmp(13865).BadgeUnit.HOURS;
     }
     const stats = badge.stats;
     let value;
@@ -81,7 +81,7 @@ function EligibleBadgeSocialComparison(arg0) {
   ({ contentOpacity, viewerTier, displayedTier } = arg0);
   const tmp = closure_8();
   let tmp3 = dependencyMap;
-  let obj = displayedUserId(13859);
+  let obj = displayedUserId(13866);
   const badgeSocialComparisonMobileEnabled = obj.useBadgeSocialComparisonMobileEnabled({ location: "BadgeSocialComparisonMobile" });
   const items = [closure_11, contentOpacity];
   let c0;

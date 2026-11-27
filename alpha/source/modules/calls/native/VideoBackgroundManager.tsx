@@ -1,9 +1,9 @@
-// Module ID: 9514
-// Function ID: 9515
+// Module ID: 9515
+// Function ID: 9516
 // Name: VideoBackgroundManager
 // Dependencies: [4946, 7475, 2]
 
-// Module 9514 (VideoBackgroundManager)
+// Module 9515 (VideoBackgroundManager)
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;

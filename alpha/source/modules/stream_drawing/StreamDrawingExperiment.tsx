@@ -1,12 +1,12 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15152
+// Function ID: 15153
 // Name: StreamDrawingExperiment
-// Dependencies: [4892, 4914, 1071, 1451, 504, 15144, 2]
+// Dependencies: [4892, 4914, 1071, 1451, 504, 15151, 2]
 // Exports: getIsStreamDrawingEnabled, useIsStreamDrawingEnabled
 
-// Module 15145 (StreamDrawingExperiment)
+// Module 15152 (StreamDrawingExperiment)
 import Constants from "Constants" /* 1071 */;
-import StreamDrawingChannel from "StreamDrawingChannel" /* 15144 */;
+import StreamDrawingChannel from "StreamDrawingChannel" /* 15151 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1451 */;

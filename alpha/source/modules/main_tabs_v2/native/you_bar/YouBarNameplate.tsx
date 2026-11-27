@@ -1,18 +1,18 @@
-// Module ID: 18176
-// Function ID: 18177
+// Module ID: 18183
+// Function ID: 18184
 // Name: YouBarNameplate
-// Dependencies: [19, 5044, 16683, 21, 5607, 575, 16772, 504, 1654, 5644, 9479, 2]
+// Dependencies: [19, 5044, 16690, 21, 5607, 575, 16779, 504, 1654, 5644, 9480, 2]
 
-// Module 18176 (YouBarNameplate)
+// Module 18183 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import useToken from "useToken" /* 5607 */;
 import spring_spring from "spring/spring" /* 5644 */;
-import NameplateDefault from "Nameplate" /* 9479 */;
-import YouBarConstants from "YouBarConstants" /* 16683 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16772 */;
+import NameplateDefault from "Nameplate" /* 9480 */;
+import YouBarConstants from "YouBarConstants" /* 16690 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16779 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;

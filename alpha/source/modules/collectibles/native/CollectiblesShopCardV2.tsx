@@ -1,16 +1,16 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11212
+// Function ID: 11213
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1191, 6311, 1073, 21, 5043, 575, 11212, 6322, 11213, 9415, 11218, 11219, 1112, 5725, 6379, 11221, 11223, 504, 5050, 6152, 6323, 5634, 11224, 11225, 11227, 9637, 9465, 11228, 11233, 11244, 11214, 5257, 11270, 2174, 11231, 11298, 11637, 11639, 1269, 2]
+// Dependencies: [19, 17, 1191, 6311, 1073, 21, 5043, 575, 11213, 6322, 11214, 9416, 11219, 11220, 1112, 5725, 6379, 11222, 11224, 504, 5050, 6152, 6323, 5634, 11225, 11226, 11228, 9638, 9466, 11229, 11234, 11245, 11215, 5257, 11271, 2174, 11232, 11299, 11645, 11647, 1269, 2]
 
-// Module 11211 (CollectiblesShopCardV2)
+// Module 11212 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import v1 from "v1" /* 1269 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 11214 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 11270 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 11215 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 11271 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1191 */;

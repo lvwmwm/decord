@@ -1,14 +1,14 @@
-// Module ID: 20294
-// Function ID: 20295
+// Module ID: 20352
+// Function ID: 20353
 // Name: NativeNotificationsManager
-// Dependencies: [5, 6976, 1071, 3, 7475, 1379, 10277, 10280, 9494, 1256, 2]
+// Dependencies: [5, 6976, 1071, 3, 7475, 1379, 10278, 10281, 9495, 1256, 2]
 
-// Module 20294 (NativeNotificationsManager)
+// Module 20352 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
-import PushNotificationDefault from "PushNotification" /* 10277 */;
-import react_nativeDefault from "react-native" /* 10280 */;
+import PushNotificationDefault from "PushNotification" /* 10278 */;
+import react_nativeDefault from "react-native" /* 10281 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6976 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
@@ -48,7 +48,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp72;
@@ -103,7 +103,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -230,7 +230,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   if (null == PUSH_NOTIFICATION_RECEIVED) {
                     c6 = 0;
                     c8 = 3;
-                    return { value: "HermesInternal", done: "+95" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     const _Map = Map;
                     const self = this;
@@ -349,7 +349,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
               return obj13;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp72) {
           if (0 === c6) {

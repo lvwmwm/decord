@@ -1,12 +1,12 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 11979
+// Function ID: 11980
 // Name: useUserProfileEmbedUsers
-// Dependencies: [19, 1231, 4892, 4955, 4985, 1387, 6163, 11972, 504, 1451, 11974, 2]
+// Dependencies: [19, 1231, 4892, 4955, 4985, 1387, 6163, 11980, 504, 1451, 11982, 2]
 // Exports: default
 
-// Module 11971 (useUserProfileEmbedUsers)
-import UserProfileEmbedUsers from "UserProfileEmbedUsers" /* 11972 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 11974 */;
+// Module 11979 (useUserProfileEmbedUsers)
+import UserProfileEmbedUsers from "UserProfileEmbedUsers" /* 11980 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 11982 */;
 import react_mod from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

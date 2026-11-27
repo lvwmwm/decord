@@ -1,16 +1,16 @@
-// Module ID: 18822
-// Function ID: 18823
+// Module ID: 18837
+// Function ID: 18838
 // Name: ConjurePublishScheduleProposalCard
-// Dependencies: [19, 21, 18823, 18519, 6115, 5634, 1112, 4245, 5641, 2]
+// Dependencies: [19, 21, 18838, 18524, 6115, 5634, 1112, 4245, 5641, 2]
 // Exports: default
 
-// Module 18822 (ConjurePublishScheduleProposalCard)
+// Module 18837 (ConjurePublishScheduleProposalCard)
 import intl5 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18519 */;
-import useConjurePublishScheduleProposalDefault from "useConjurePublishScheduleProposal" /* 18823 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18524 */;
+import useConjurePublishScheduleProposalDefault from "useConjurePublishScheduleProposal" /* 18838 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

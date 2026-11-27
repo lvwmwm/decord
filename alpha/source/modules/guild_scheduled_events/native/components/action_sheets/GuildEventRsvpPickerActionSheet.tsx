@@ -1,15 +1,15 @@
-// Module ID: 14334
-// Function ID: 14335
+// Module ID: 14341
+// Function ID: 14342
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [32, 19, 17, 4898, 21, 5043, 575, 8483, 1112, 5271, 7507, 7480, 7251, 7253, 5641, 8473, 5257, 2]
+// Dependencies: [32, 19, 17, 4898, 21, 5043, 575, 8484, 1112, 5271, 7507, 7480, 7251, 7253, 5641, 8474, 5257, 2]
 // Exports: default
 
-// Module 14334 (GuildEventRsvpPickerActionSheet)
+// Module 14341 (GuildEventRsvpPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8483 */;
+import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8484 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -21,7 +21,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const GuildScheduledEventModalActionCreators = tmp(8473);
+const GuildScheduledEventModalActionCreators = tmp(8474);
 const View = react_native.View;
 const constants = GuildScheduledEventsConstants.GuildScheduledEventUserResponses;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -50,8 +50,8 @@ export default function GuildEventRsvpPickerActionSheet(event) {
   let closure_5;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  [defaultValue, tmp6] = defaultValue.useState(event(8483).ResponseOptions.SERIES);
-  let obj = event(8483);
+  [defaultValue, tmp6] = defaultValue.useState(event(8484).ResponseOptions.SERIES);
+  let obj = event(8484);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (existingRsvp != null) {
@@ -80,7 +80,7 @@ export default function GuildEventRsvpPickerActionSheet(event) {
     })
   };
   const TableRadioGroup = tmp2(7251).TableRadioGroup;
-  const tmp2Result = event(8483);
+  const tmp2Result = event(8484);
   responseOptions = tmp2Result.getResponseOptions();
   items = [closure_7(TableRadioGroup, obj4), ];
   const obj5 = { style: tmp.buttonWrapper, children: closure_7(Button, obj6) };

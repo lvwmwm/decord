@@ -1,26 +1,26 @@
-// Module ID: 16674
-// Function ID: 16675
+// Module ID: 16681
+// Function ID: 16682
 // Name: QuestHooks
-// Dependencies: [5, 19, 5258, 2165, 8373, 8374, 16675, 6871, 5817, 1082, 16677, 16706, 6874, 6963, 5219, 504, 6878, 16688, 7309, 8361, 9892, 9893, 9903, 8389, 6379, 10085, 8387, 10195, 6971, 12291, 2]
+// Dependencies: [5, 19, 5258, 2165, 8374, 8375, 16682, 6871, 5817, 1082, 16684, 16713, 6874, 6963, 5219, 504, 6878, 16695, 7309, 8362, 9893, 9894, 9904, 8390, 6379, 10086, 8388, 10196, 6971, 12299, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 16674 (QuestHooks)
+// Module 16681 (QuestHooks)
 import Constants from "Constants" /* 1082 */;
 import CaptchaConstants from "CaptchaConstants" /* 5817 */;
 import QuestTypes from "QuestTypes" /* 6874 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6971 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8389 */;
-import AssetUtils from "AssetUtils" /* 9903 */;
-import QuestDockHooks from "QuestDockHooks" /* 16677 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 16706 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8390 */;
+import AssetUtils from "AssetUtils" /* 9904 */;
+import QuestDockHooks from "QuestDockHooks" /* 16684 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 16713 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5258 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
-import BountyStore from "BountyStore" /* 8373 */;
-import QuestStore from "QuestStore" /* 8374 */;
-import PlayableStore from "PlayableStore" /* 16675 */;
+import BountyStore from "BountyStore" /* 8374 */;
+import QuestStore from "QuestStore" /* 8375 */;
+import PlayableStore from "PlayableStore" /* 16682 */;
 import QuestConstants from "QuestConstants" /* 6871 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   let isDismissedResult = null != userStatus1;
   if (isDismissedResult) {
-    const tmpResult = tmp(8361);
+    const tmpResult = tmp(8362);
     isDismissedResult = tmpResult.isDismissed(questDockQuest.userStatus, tmp(6874).QuestContent.QUEST_BAR_MOBILE);
   }
   let claimedAt;
@@ -57,11 +57,11 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
       claimedAt = userStatus.claimedAt;
     }
   }
-  const tmpResult7 = tmp(9892);
+  const tmpResult7 = tmp(9893);
   const isQuestExpired = tmpResult7.useIsQuestExpired(questDockQuest);
-  const tmpResult8 = tmp(9893);
+  const tmpResult8 = tmp(9894);
   let isEligibleForQuests = tmpResult8.getIsEligibleForQuests();
-  const tmpResult9 = tmp(16688);
+  const tmpResult9 = tmp(16695);
   questDockAdCreativeId = tmpResult9.getQuestDockAdCreativeId(mobileQuestDock);
   const items1 = [tmp5];
   const items2 = [questDockAdCreativeId];
@@ -209,7 +209,7 @@ export function useQuestDockHeroAsset(quest) {
       videoAsset = tmpResult.resolveAsset(tmp3.id, tmp3.config.assets.questBarHeroVideo);
     }
     if (questAsset.isAnimated) {
-      staticUrl = str.replace(tmp(9903).EXTENSION_RE, ".png");
+      staticUrl = str.replace(tmp(9904).EXTENSION_RE, ".png");
     } else {
       staticUrl = str;
     }
@@ -298,7 +298,7 @@ export function useMobileActivityQuest(quest) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ export function useMobileActivityQuest(quest) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp11) {
           c0 = 3;
           throw tmp11;

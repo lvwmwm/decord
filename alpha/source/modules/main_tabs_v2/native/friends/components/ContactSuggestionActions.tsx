@@ -1,14 +1,14 @@
-// Module ID: 18290
-// Function ID: 18291
+// Module ID: 18297
+// Function ID: 18298
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 1654, 5043, 575, 17771, 1707, 5253, 5644, 1186, 18291, 5641, 1112, 2]
+// Dependencies: [19, 17, 21, 1654, 5043, 575, 17778, 1707, 5253, 5644, 1186, 18298, 5641, 1112, 2]
 // Exports: ContactSuggestionActions
 
-// Module 18290 (ContactSuggestionActions)
+// Module 18297 (ContactSuggestionActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1654 from "module_1654" /* 1654 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17771 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17778 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;

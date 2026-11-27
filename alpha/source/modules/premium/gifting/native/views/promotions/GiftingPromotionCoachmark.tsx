@@ -1,10 +1,10 @@
-// Module ID: 19277
-// Function ID: 19278
+// Module ID: 19293
+// Function ID: 19294
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 5044, 9162, 1071, 4889, 21, 5043, 575, 504, 11162, 11151, 11163, 6831, 5257, 6379, 6380, 11113, 5271, 5730, 11174, 5634, 5641, 11307, 1112, 2]
+// Dependencies: [19, 17, 5044, 9163, 1071, 4889, 21, 5043, 575, 504, 11163, 11152, 11164, 6831, 5257, 6379, 6380, 11114, 5271, 5730, 11175, 5634, 5641, 11308, 1112, 2]
 // Exports: default
 
-// Module 19277 (GiftingPromotionCoachmark)
+// Module 19293 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
@@ -12,10 +12,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
 import usePreviousDefault from "usePrevious" /* 6831 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 11113 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 11114 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
-import PromotionsStore from "PromotionsStore" /* 9162 */;
+import PromotionsStore from "PromotionsStore" /* 9163 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -74,20 +74,20 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   const items = [analyticsLocations];
   const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
   let asset;
-  const useThemeAndReducedMotionAwareAssetUrl = markAsDismissed(11162).useThemeAndReducedMotionAwareAssetUrl;
-  markAsDismissed(11162);
+  const useThemeAndReducedMotionAwareAssetUrl = markAsDismissed(11163).useThemeAndReducedMotionAwareAssetUrl;
+  markAsDismissed(11163);
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = useThemeAndReducedMotionAwareAssetUrl(asset);
-  const GiftPromotionReminderExperiment = tmp2(11151).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp2(11152).GiftPromotionReminderExperiment;
   let enabled = GiftPromotionReminderExperiment.useConfig({ location: "GiftingPromotionCoachmarkActionSheet" }).enabled;
   const items1 = [PromotionsStore];
   const tmp2Result = tmp2(504);
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
   let endDate;
-  const useTickingFormattedLimitedOfferTimeLeft = tmp2(11163).useTickingFormattedLimitedOfferTimeLeft;
-  tmp2(11163);
+  const useTickingFormattedLimitedOfferTimeLeft = tmp2(11164).useTickingFormattedLimitedOfferTimeLeft;
+  tmp2(11164);
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
@@ -141,7 +141,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
     }
     if (enabled) {
       const obj6 = { text: tickingFormattedLimitedOfferTimeLeft, style: tmp.countdownBadge };
-      enabled = tmp21(tmp13(11174), obj6);
+      enabled = tmp21(tmp13(11175), obj6);
     }
     items4[1] = enabled;
     const obj7 = { style: tmp.textContainer, children: items5 };
@@ -153,7 +153,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
     const obj10 = { grow: true, icon: closure_11(GiftIcon, obj11), text: intl.string(tmp2(1112).t.Ve9Ge6), onPress: tmp19 };
     const Button = tmp2(5641).Button;
     obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-    GiftIcon = tmp2(11307).GiftIcon;
+    GiftIcon = tmp2(11308).GiftIcon;
     intl = tmp2(1112).intl;
     items4[3] = closure_11(Button, obj10);
     tmp21Result2 = tmp21(BottomSheet, obj2);

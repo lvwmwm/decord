@@ -1,22 +1,22 @@
-// Module ID: 16967
-// Function ID: 16968
+// Module ID: 16974
+// Function ID: 16975
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 16956, 1071, 21, 5043, 575, 8724, 9812, 16957, 1112, 1089, 5259, 5257, 16038, 1256, 5271, 16952, 3303, 5641, 16961, 2]
+// Dependencies: [32, 19, 17, 16963, 1071, 21, 5043, 575, 8725, 9813, 16964, 1112, 1089, 5259, 5257, 16045, 1256, 5271, 16959, 3303, 5641, 16968, 2]
 // Exports: default
 
-// Module 16967 (DisplayNameStylesColorPickerSheet)
+// Module 16974 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef3303 from "module_3303" /* 3303 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
-import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 9812 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16038 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16952 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16956 */;
-import useColorPresetsWithA11yLabelsDefault from "useColorPresetsWithA11yLabels" /* 16957 */;
-import DisplayNameStylesCustomColorButtonDefault from "DisplayNameStylesCustomColorButton" /* 16961 */;
+import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 9813 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16045 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16959 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16963 */;
+import useColorPresetsWithA11yLabelsDefault from "useColorPresetsWithA11yLabels" /* 16964 */;
+import DisplayNameStylesCustomColorButtonDefault from "DisplayNameStylesCustomColorButton" /* 16968 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -79,7 +79,7 @@ export default function DisplayNameStylesColorPickerSheet(arg0) {
   const tmp = closure_10();
   importDefault = tmp;
   let tmp3 = dependencyMap;
-  let obj = onSelectColor(8724);
+  let obj = onSelectColor(8725);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
   const tmp5 = useDisplayNameStylesEffectDefaultColorsDefault()[selectedEffectId];
   dependencyMap = tmp5;

@@ -1,19 +1,19 @@
-// Module ID: 17342
-// Function ID: 17343
+// Module ID: 17349
+// Function ID: 17350
 // Name: DevToolsCampaignsScreen
-// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 17343, 9212, 7546, 7274, 7047, 5634, 6115, 5641, 5257, 6140, 6144, 17345, 17346, 17347, 2120, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 17350, 9213, 7546, 7274, 7047, 5634, 6115, 5641, 5257, 6140, 6144, 17352, 17353, 17354, 2120, 2]
 // Exports: default
 
-// Module 17342 (DevToolsCampaignsScreen)
+// Module 17349 (DevToolsCampaignsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import TableRowGroup3 from "TableRowGroup" /* 6140 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7274 */;
 import ActionSheet2 from "ActionSheet" /* 7546 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9212 */;
-import useCampaignDevTools from "useCampaignDevTools" /* 17343 */;
-import MobileBottomSheetCopy from "MobileBottomSheetCopy" /* 17346 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9213 */;
+import useCampaignDevTools from "useCampaignDevTools" /* 17350 */;
+import MobileBottomSheetCopy from "MobileBottomSheetCopy" /* 17353 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -44,7 +44,7 @@ function CampaignPicker() {
   let require;
   let selectedId;
   let tmp5;
-  const tmp2 = loading(17343)();
+  const tmp2 = loading(17350)();
   ({ select: require, error, loading } = tmp2);
   ({ campaignsLoading, componentsLoading } = tmp2);
   ({ campaigns, selectedId, reload } = tmp2);
@@ -113,7 +113,7 @@ function CampaignPicker() {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -145,7 +145,7 @@ function CampaignPicker() {
                     obj.hideActionSheet();
                   }
                   c2 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp10) {
                 c2 = 3;

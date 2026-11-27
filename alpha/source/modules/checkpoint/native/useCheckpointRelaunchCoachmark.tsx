@@ -1,12 +1,12 @@
-// Module ID: 18152
-// Function ID: 18153
+// Module ID: 18159
+// Function ID: 18160
 // Name: useCheckpointRelaunchCoachmark
-// Dependencies: [5, 19, 4889, 1112, 3495, 4876, 12625, 18153, 2]
+// Dependencies: [5, 19, 4889, 1112, 3495, 4876, 12633, 18160, 2]
 // Exports: useCheckpointRelaunchCoachmarkProps
 
-// Module 18152 (useCheckpointRelaunchCoachmark)
+// Module 18159 (useCheckpointRelaunchCoachmark)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
-import useIsCheckpointRelaunchCoachmarkEligible from "useIsCheckpointRelaunchCoachmarkEligible" /* 18153 */;
+import useIsCheckpointRelaunchCoachmarkEligible from "useIsCheckpointRelaunchCoachmarkEligible" /* 18160 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ export function useCheckpointRelaunchCoachmarkProps(visibleContent) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ export function useCheckpointRelaunchCoachmarkProps(visibleContent) {
               c1(constants.TAKE_ACTION);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = 3;

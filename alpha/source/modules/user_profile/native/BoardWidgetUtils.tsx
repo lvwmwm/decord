@@ -1,12 +1,12 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 14685
+// Function ID: 14686
 // Name: BoardWidgetUtils
-// Dependencies: [6174, 6171, 14570, 2]
+// Dependencies: [6174, 6171, 14577, 2]
 // Exports: reorderBoardWidgets
 
-// Module 14678 (BoardWidgetUtils)
+// Module 14685 (BoardWidgetUtils)
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6174 */;
-import WidgetUtils from "WidgetUtils" /* 14570 */;
+import WidgetUtils from "WidgetUtils" /* 14577 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

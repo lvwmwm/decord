@@ -1,10 +1,10 @@
-// Module ID: 9717
-// Function ID: 9718
+// Module ID: 9718
+// Function ID: 9719
 // Name: PremiumFeatureList
 // Dependencies: [19, 17, 1071, 21, 5043, 6822, 575, 8088, 2]
 // Exports: default
 
-// Module 9717 (PremiumFeatureList)
+// Module 9718 (PremiumFeatureList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

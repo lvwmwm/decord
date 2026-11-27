@@ -1,10 +1,10 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12313
+// Function ID: 12314
 // Name: useTrackCreateGuildViewed
 // Dependencies: [19, 7867, 1071, 1256, 2]
 // Exports: default
 
-// Module 12305 (useTrackCreateGuildViewed)
+// Module 12313 (useTrackCreateGuildViewed)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7867 */;

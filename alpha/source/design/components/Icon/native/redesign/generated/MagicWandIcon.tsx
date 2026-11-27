@@ -1,14 +1,14 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11495
+// Function ID: 11496
 // Name: MagicWandIcon
-// Dependencies: [19, 21, 575, 5729, 11486, 2]
+// Dependencies: [19, 21, 575, 5729, 11496, 2]
 // Exports: MagicWandIcon
 
-// Module 11485 (MagicWandIcon)
+// Module 11495 (MagicWandIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 11486 */;
+import AssetRegistry from "AssetRegistry" /* 11496 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

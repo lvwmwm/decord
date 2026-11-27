@@ -1,10 +1,10 @@
-// Module ID: 11648
-// Function ID: 11649
+// Module ID: 11656
+// Function ID: 11657
 // Name: carouselMediaItems
 // Dependencies: [5803, 7588, 2]
 // Exports: convertCarouselItemsToMediaItems, getThumbnailSrc
 
-// Module 11648 (carouselMediaItems)
+// Module 11656 (carouselMediaItems)
 import StoreUtils from "StoreUtils" /* 5803 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 14068
-// Function ID: 14069
+// Module ID: 14075
+// Function ID: 14076
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 6937, 5687, 14064, 7603, 14069, 14070, 14071, 11507, 14072, 6133, 14075, 1112, 14077, 10313, 4245, 10078, 5747, 9790, 2]
+// Dependencies: [19, 6937, 5687, 14071, 7603, 14076, 14077, 14078, 11515, 14079, 6133, 14082, 1112, 14084, 10314, 4245, 10079, 5747, 9791, 2]
 // Exports: default
 
-// Module 14068 (useAppChannelOverflowMenuItems)
+// Module 14075 (useAppChannelOverflowMenuItems)
 import intl6 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5747 */;
 import FramesConstants from "FramesConstants" /* 6937 */;
-import FlagIcon from "FlagIcon" /* 9790 */;
-import ShieldIcon from "ShieldIcon" /* 10078 */;
-import DoorExitIcon from "DoorExitIcon" /* 10313 */;
-import closeFrameDefault from "closeFrame" /* 11507 */;
-import restartFrames from "restartFrames" /* 14071 */;
-import RefreshIcon from "RefreshIcon" /* 14077 */;
+import FlagIcon from "FlagIcon" /* 9791 */;
+import ShieldIcon from "ShieldIcon" /* 10079 */;
+import DoorExitIcon from "DoorExitIcon" /* 10314 */;
+import closeFrameDefault from "closeFrame" /* 11515 */;
+import restartFrames from "restartFrames" /* 14078 */;
+import RefreshIcon from "RefreshIcon" /* 14084 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function useAppChannelAppActions(channel) {
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
     return obj;
   }, items);
-  const tmp5 = application_id(14064)(application_id, memo);
+  const tmp5 = application_id(14071)(application_id, memo);
   dependencyMap = tmp5;
   const obj2 = require("useAppChannelApplication");
   const appChannelApplication = obj2.useAppChannelApplication(channel);
@@ -46,9 +46,9 @@ function useAppChannelAppActions(channel) {
   if (appChannelApplication != null) {
     bot = appChannelApplication.bot;
   }
-  const tmp8 = application_id(14069)(application_id);
+  const tmp8 = application_id(14076)(application_id);
   let closure_4 = tmp8;
-  const tmp9 = application_id(14070)(application_id).length > 0;
+  const tmp9 = application_id(14077)(application_id).length > 0;
   let closure_5 = tmp9;
   const items1 = [application_id, bot, channel, tmp8, tmp5, tmp9];
   return obj.useMemo(() => {
@@ -131,34 +131,34 @@ export default function useAppChannelOverflowMenuItems(channel) {
     } else {
       const items = [];
       if (null != reload) {
-        const push4 = items.push;
-        const obj2 = { label: intl4.string(intl6.t.kHie4V), IconComponent: RefreshIcon.RefreshIcon, action: tmp26 };
-        intl4 = intl6.intl;
-        push4(obj2);
-      }
-      if (null != close) {
         const push = items.push;
-        const obj = { label: intl.string(intl6.t.VkMnR2), IconComponent: DoorExitIcon.DoorExitIcon, action: tmp2 };
+        const obj = { label: intl.string(intl6.t.kHie4V), IconComponent: RefreshIcon.RefreshIcon, action: tmp40 };
         intl = intl6.intl;
         push(obj);
       }
+      if (null != close) {
+        const push2 = items.push;
+        const obj2 = { label: intl2.string(intl6.t.VkMnR2), IconComponent: DoorExitIcon.DoorExitIcon, action: tmp9 };
+        intl2 = intl6.intl;
+        push2(obj2);
+      }
       const items1 = [];
       if (null != devicePermissions) {
-        const push2 = items1.push;
-        const obj3 = { label: intl2.string(_modDef4245.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp10 };
-        intl2 = intl6.intl;
-        push2(obj3);
+        const push3 = items1.push;
+        const obj3 = { label: intl3.string(_modDef4245.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp17 };
+        intl3 = intl6.intl;
+        push3(obj3);
       }
       if (null != appInfo) {
-        const push5 = items1.push;
-        const obj4 = { label: intl5.string(intl6.t.Sh2z9g), IconComponent: CircleInformationIcon.CircleInformationIcon, action: tmp18 };
-        intl5 = intl6.intl;
-        push5(obj4);
+        const push4 = items1.push;
+        const obj4 = { label: intl4.string(intl6.t.Sh2z9g), IconComponent: CircleInformationIcon.CircleInformationIcon, action: tmp25 };
+        intl4 = intl6.intl;
+        push4(obj4);
       }
-      const push3 = items1.push;
-      const obj5 = { label: intl3.string(intl6.t.NgA5vp), IconComponent: FlagIcon.FlagIcon, variant: "destructive", action: tmp };
-      intl3 = intl6.intl;
-      push3(obj5);
+      const push5 = items1.push;
+      const obj5 = { label: intl5.string(intl6.t.NgA5vp), IconComponent: FlagIcon.FlagIcon, variant: "destructive", action: tmp };
+      intl5 = intl6.intl;
+      push5(obj5);
       const items2 = [items, items1];
       return items2.filter((item) => item.length > 0);
     }

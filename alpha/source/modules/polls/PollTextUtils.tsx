@@ -1,10 +1,10 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12238
+// Function ID: 12239
 // Name: PollTextUtils
 // Dependencies: [7067, 7179, 2]
 // Exports: getPollPlainText
 
-// Module 12230 (PollTextUtils)
+// Module 12238 (PollTextUtils)
 import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
 import markup_MarkupParser from "markup/MarkupParser" /* 7179 */;
 import size from "module_2" /* 2 */;

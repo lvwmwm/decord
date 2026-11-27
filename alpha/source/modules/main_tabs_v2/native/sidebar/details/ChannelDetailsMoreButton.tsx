@@ -1,14 +1,14 @@
-// Module ID: 19057
-// Function ID: 19058
+// Module ID: 19073
+// Function ID: 19074
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 11406, 9007, 9004, 1112, 8625, 2]
+// Dependencies: [19, 21, 11407, 9008, 9005, 1112, 8626, 2]
 // Exports: default
 
-// Module 19057 (ChannelDetailsMoreButton)
+// Module 19073 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8625 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9007 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11406 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8626 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9008 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11407 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export default function MoreButton(channel) {
     if (channel.isDM()) {
       let obj2 = { accessibilityLabel: intl.string(channel(1112).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
       PressableNavigatorButtonWrapperDefault;
-      const HeaderIconButton = channel(9004).HeaderIconButton;
+      const HeaderIconButton = channel(9005).HeaderIconButton;
       intl = channel(1112).intl;
       tmp2 = <tmp6>{null}</tmp6>;
     } else {

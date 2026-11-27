@@ -1,10 +1,10 @@
-// Module ID: 20034
-// Function ID: 20035
+// Module ID: 20059
+// Function ID: 20060
 // Name: GuildSettingsModalIntegrationSettings
-// Dependencies: [19, 17, 4949, 8574, 21, 20035, 1112, 5043, 575, 7253, 6152, 6144, 20036, 6140, 7549, 5104, 5634, 6178, 5730, 1413, 5050, 8088, 6115, 2169, 7251, 20037, 5617, 8573, 504, 5252, 19979, 2]
+// Dependencies: [19, 17, 4949, 8575, 21, 20060, 1112, 5043, 575, 7253, 6152, 6144, 20061, 6140, 7549, 5104, 5634, 6178, 5730, 1413, 5050, 8088, 6115, 2169, 7251, 20062, 5617, 8574, 504, 5252, 19995, 2]
 // Exports: default
 
-// Module 20034 (GuildSettingsModalIntegrationSettings)
+// Module 20059 (GuildSettingsModalIntegrationSettings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
@@ -15,11 +15,11 @@ import TableRow4 from "TableRow" /* 6144 */;
 import Pressables from "Pressables" /* 6152 */;
 import TableRadioRow3 from "TableRadioRow" /* 7253 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7549 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20036 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8574 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20061 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 4949 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8575 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -85,26 +85,26 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     require = applyArgumentsResult;
-    applyArgumentsResult.handleExpireBehaviorChange = function handleExpireBehaviorChange(expire_behavior) {
+    applyArgumentsResult.handleExpireBehaviorChange = function handleExpireBehaviorChange(arg0) {
       let guildId;
       let integration;
       ({ guildId, integration } = require.props);
       const obj = GuildSettingsActionCreatorsDefault;
-      obj.updateIntegration(guildId, integration.id, expire_behavior, integration.expire_grace_period, integration.enable_emoticons);
+      obj.updateIntegration(guildId, integration.id, arg0, integration.expire_grace_period, integration.enable_emoticons);
     };
-    applyArgumentsResult.handleExpireGracePeriodChange = function handleExpireGracePeriodChange(expire_grace_period) {
+    applyArgumentsResult.handleExpireGracePeriodChange = function handleExpireGracePeriodChange(arg0) {
       let guildId;
       let integration;
       ({ guildId, integration } = require.props);
       const obj = GuildSettingsActionCreatorsDefault;
-      obj.updateIntegration(guildId, integration.id, integration.expire_behavior, expire_grace_period, integration.enable_emoticons);
+      obj.updateIntegration(guildId, integration.id, integration.expire_behavior, arg0, integration.enable_emoticons);
     };
-    applyArgumentsResult.handleToggleEmotes = function handleToggleEmotes(enable_emoticons) {
+    applyArgumentsResult.handleToggleEmotes = function handleToggleEmotes(arg0) {
       let guildId;
       let integration;
       ({ guildId, integration } = require.props);
       const obj = GuildSettingsActionCreatorsDefault;
-      obj.updateIntegration(guildId, integration.id, integration.expire_behavior, integration.expire_grace_period, enable_emoticons);
+      obj.updateIntegration(guildId, integration.id, integration.expire_behavior, integration.expire_grace_period, arg0);
     };
     applyArgumentsResult.handleSync = function handleSync() {
       let guildId;
@@ -195,7 +195,7 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
       tmp15Result2 = tmp15(5050);
       tmp19Result = closure_6(tmp16Result, obj5);
     }
-    const values = Object.values(tmp12(20035).IntegrationExpireGracePeriodTypes);
+    const values = Object.values(tmp12(20060).IntegrationExpireGracePeriodTypes);
     const found = values.filter(function isInteger(item) {
       return Number.isInteger(item);
     });
@@ -247,11 +247,11 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
     items1[1] = closure_7(TableRowGroup2, obj9);
     const obj15 = { title: stringResult, value: integration.expire_behavior, onChange: self.handleExpireBehaviorChange, hasIcons: false, children: items3 };
     const TableRadioGroup = tmp15(7251).TableRadioGroup;
-    const obj16 = { value: tmp15(20037).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: intl6.string(tmp15(1112).t["6kpw4i"]) };
+    const obj16 = { value: tmp15(20062).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: intl6.string(tmp15(1112).t["6kpw4i"]) };
     const TableRadioRow = tmp15(7253).TableRadioRow;
     intl6 = tmp15(1112).intl;
     items3 = [closure_6(TableRadioRow, obj16), ];
-    const obj17 = { value: tmp15(20037).IntegrationExpireBehaviorTypes.KICK, label: intl7.string(tmp15(1112).t.fQUQIJ) };
+    const obj17 = { value: tmp15(20062).IntegrationExpireBehaviorTypes.KICK, label: intl7.string(tmp15(1112).t.fQUQIJ) };
     const TableRadioRow2 = tmp15(7253).TableRadioRow;
     intl7 = tmp15(1112).intl;
     items3[1] = closure_6(TableRadioRow2, obj17);

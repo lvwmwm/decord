@@ -1,10 +1,10 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14740
+// Function ID: 14741
 // Name: Header
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 1413, 1186, 5634, 8632, 1405, 1112, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 1413, 1186, 5634, 8633, 1405, 1112, 2]
 // Exports: default
 
-// Module 14733 (Header)
+// Module 14740 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1186 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import BotTagDefault from "BotTag" /* 8632 */;
+import BotTagDefault from "BotTag" /* 8633 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

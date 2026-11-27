@@ -1,14 +1,14 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8344
+// Function ID: 8345
 // Name: EditMessageStore
-// Dependencies: [6391, 4868, 8344, 8349, 504, 572, 2]
+// Dependencies: [6391, 4868, 8345, 8350, 504, 572, 2]
 
-// Module 8343 (EditMessageStore)
+// Module 8344 (EditMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettings from "UserSettings" /* 4868 */;
-import MessageParserDefault from "MessageParser" /* 8344 */;
-import SlateUtils from "SlateUtils" /* 8349 */;
+import MessageParserDefault from "MessageParser" /* 8345 */;
+import SlateUtils from "SlateUtils" /* 8350 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import size from "module_2" /* 2 */;
 

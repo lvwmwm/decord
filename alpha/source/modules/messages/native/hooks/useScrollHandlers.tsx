@@ -1,19 +1,19 @@
-// Module ID: 12015
-// Function ID: 12016
+// Module ID: 12023
+// Function ID: 12024
 // Name: useScrollHandlers
-// Dependencies: [19, 9090, 3, 5273, 11532, 1263, 12008, 8338, 12010, 6874, 2]
+// Dependencies: [19, 9091, 3, 5273, 11540, 1263, 12016, 8339, 12018, 6874, 2]
 // Exports: default
 
-// Module 12015 (useScrollHandlers)
+// Module 12023 (useScrollHandlers)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1263 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5273 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8338 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11532 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 12008 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 12010 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8339 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11540 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 12016 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 12018 */;
 import react from "react" /* 19 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9090 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9091 */;
 import size from "module_2" /* 2 */;
 
 let hasMoreAfter, importDefault;

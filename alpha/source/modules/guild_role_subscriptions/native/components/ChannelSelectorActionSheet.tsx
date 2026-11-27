@@ -1,10 +1,10 @@
-// Module ID: 20243
-// Function ID: 20244
+// Module ID: 20301
+// Function ID: 20302
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 4892, 7468, 4914, 4975, 4985, 1387, 1071, 21, 5043, 575, 5659, 16853, 5257, 7253, 6144, 1629, 504, 1112, 5271, 7507, 7406, 7482, 13792, 6130, 8521, 2120, 8524, 8529, 5634, 2]
+// Dependencies: [32, 19, 17, 4892, 7468, 4914, 4975, 4985, 1387, 1071, 21, 5043, 575, 5659, 16860, 5257, 7253, 6144, 1629, 504, 1112, 5271, 7507, 7406, 7482, 13799, 6130, 8522, 2120, 8525, 8530, 5634, 2]
 // Exports: default
 
-// Module 20243 (ChannelSelectorActionSheet)
+// Module 20301 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,8 +13,8 @@ import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8524 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8529 */;
+import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8525 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8530 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -41,7 +41,7 @@ function ChannelRow(channel) {
   const onChannelSelected = channel.onChannelSelected;
   ({ selected, guild, start, end } = channel);
   let str = onChannelSelected(5659)(channel);
-  let obj = channel(16853);
+  let obj = channel(16860);
   const items = [onChannelSelected, channel];
   const channelIconComponentOrDefault = obj.getChannelIconComponentOrDefault(channel, guild);
   const callback = react.useCallback(() => {
@@ -199,12 +199,12 @@ export default function ChannelSelectorActionSheet(guildId) {
             }
           };
           ModalActionCreatorsDefault;
-          const tmp3 = asyncRequire(8521, dependencyMap.paths);
+          const tmp3 = asyncRequire(8522, dependencyMap.paths);
           pushLazy(tmp3, obj2, CreateChannelModalActionCreatorsDefault.CREATE_CHANNEL_MODAL_KEY);
         }
     };
     TableRow = tmp7(6144).TableRow;
-    obj9 = { IconComponent: tmp7(13792).PlusMediumIcon };
+    obj9 = { IconComponent: tmp7(13799).PlusMediumIcon };
     Icon = tmp7(6144).TableRow.Icon;
     intl3 = tmp7(1112).intl;
     tmp10Result = tmp10(tmp11, obj7);

@@ -1,14 +1,14 @@
 // Module ID: 7630
 // Function ID: 7631
 // Name: GuildSubscriptionsStore
-// Dependencies: [32, 5660, 4976, 7631, 502, 7653, 6952, 4892, 6166, 4955, 4914, 5851, 4985, 4946, 5076, 1071, 14767, 572, 12, 4917, 504, 2]
+// Dependencies: [32, 5660, 4976, 7631, 502, 7653, 6952, 4892, 6166, 4955, 4914, 5851, 4985, 4946, 5076, 1071, 14773, 572, 12, 4917, 504, 2]
 
 // Module 7630 (GuildSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FavoritesUtils from "FavoritesUtils" /* 4917 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7653 */;
-import GuildSubscriptionsDefault from "GuildSubscriptions" /* 14767 */;
+import GuildSubscriptionsDefault from "GuildSubscriptions" /* 14773 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 5660 */;
 import LurkingStore from "LurkingStore" /* 4976 */;

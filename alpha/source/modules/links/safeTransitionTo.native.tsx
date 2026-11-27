@@ -1,7 +1,7 @@
 // Module ID: 7604
 // Function ID: 7605
 // Name: safeTransitionTo
-// Dependencies: [5, 4914, 1071, 5666, 7605, 1098, 7606, 6047, 1112, 10771, 3013, 13750, 5845, 2]
+// Dependencies: [5, 4914, 1071, 5666, 7605, 1098, 7606, 6047, 1112, 10772, 3013, 13757, 5845, 2]
 // Exports: default
 
 // Module 7604 (safeTransitionTo)
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ let obj = function _safeTransitionTo() {
             obj2.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
         if (null != c2) {
           if (null != c2.guildId) {
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "r" };
+          closure_2 = { guildId: "top" };
         }
         c5 = 2;
         c6 = 1;

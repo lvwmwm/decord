@@ -1,9 +1,9 @@
-// Module ID: 12390
-// Function ID: 12391
+// Module ID: 12398
+// Function ID: 12399
 // Name: DevToolsExperimentsScreen
-// Dependencies: [32, 19, 17, 5660, 502, 4914, 5661, 21, 5043, 575, 11976, 11977, 5618, 7405, 12391, 12, 1186, 11596, 7406, 7411, 5770, 5768, 5257, 6144, 5634, 1254, 12388, 6140, 5767, 7538, 5725, 5271, 7507, 2]
+// Dependencies: [32, 19, 17, 5660, 502, 4914, 5661, 21, 5043, 575, 11984, 11985, 5618, 7405, 12399, 12, 1186, 11604, 7406, 7411, 5770, 5768, 5257, 6144, 5634, 1254, 12396, 6140, 5767, 7538, 5725, 5271, 7507, 2]
 
-// Module 12390 (DevToolsExperimentsScreen)
+// Module 12398 (DevToolsExperimentsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import ExperimentManager from "ExperimentManager" /* 5768 */;
 import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 5770 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7507 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 12388 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 12396 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ExperimentStore from "ExperimentStore" /* 5660 */;

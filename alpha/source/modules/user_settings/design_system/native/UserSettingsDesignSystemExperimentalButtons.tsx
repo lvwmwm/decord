@@ -1,10 +1,10 @@
-// Module ID: 17420
-// Function ID: 17421
+// Module ID: 17427
+// Function ID: 17428
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1071, 21, 5607, 575, 8489, 6115, 6140, 6157, 7408, 5744, 5641, 5634, 5104, 5598, 8090, 10455, 2]
+// Dependencies: [19, 17, 1071, 21, 5607, 575, 8490, 6115, 6140, 6157, 7408, 5744, 5641, 5634, 5104, 5598, 8090, 10456, 2]
 // Exports: default
 
-// Module 17420 (UserSettingsDesignSystemExperimentalButtons)
+// Module 17427 (UserSettingsDesignSystemExperimentalButtons)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 5104 */;
@@ -18,8 +18,8 @@ import TableRowGroup7 from "TableRowGroup" /* 6140 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 6157 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 7408 */;
 import RowButton2 from "RowButton" /* 8090 */;
-import native2 from "native" /* 8489 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10455 */;
+import native2 from "native" /* 8490 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10456 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

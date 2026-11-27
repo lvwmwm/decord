@@ -1,16 +1,16 @@
-// Module ID: 14094
-// Function ID: 14095
+// Module ID: 14101
+// Function ID: 14102
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 12101, 4889, 21, 12099, 12102, 9561, 4876, 1112, 10548, 12098, 9568, 2]
+// Dependencies: [32, 19, 17, 12109, 4889, 21, 12107, 12110, 9562, 4876, 1112, 10549, 12106, 9569, 2]
 // Exports: default
 
-// Module 14094 (GroupDMNitroCapCoachmark)
+// Module 14101 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1112 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10548 */;
-import GroupDMConstants from "GroupDMConstants" /* 12101 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10549 */;
+import GroupDMConstants from "GroupDMConstants" /* 12109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -35,11 +35,11 @@ export default function GroupDMNitroCapCoachmark(channelId) {
   let obj = react;
   const children = channelId.children;
   const ref = react.useRef(null);
-  let obj2 = channelId(12099);
+  let obj2 = channelId(12107);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
-  const obj3 = _location(12102);
+  const obj3 = _location(12110);
   const enabled = obj3.useConfig({ location: _location }).enabled;
-  channelId(9561);
+  channelId(9562);
   if (enabled) {
     if ("entitled" === groupDMNitroAudience) {
       const items = [tmp2(4876).DismissibleContent.NITRO_GDM_CAP_COACHMARK];
@@ -77,7 +77,7 @@ export default function GroupDMNitroCapCoachmark(channelId) {
       intl3 = intl4.intl;
       return obj;
     }, items1);
-    const tmp2Result = channelId(9568);
+    const tmp2Result = channelId(9569);
     const coachmark = tmp2Result.useCoachmark(ref, memo);
     return <View ref={ref} collapsable={false}>{children}</View>;
   }

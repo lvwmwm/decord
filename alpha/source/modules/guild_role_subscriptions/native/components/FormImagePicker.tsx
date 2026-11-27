@@ -1,15 +1,15 @@
-// Module ID: 20221
-// Function ID: 20222
+// Module ID: 20279
+// Function ID: 20280
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 5043, 575, 8136, 1448, 12539, 1112, 5730, 18492, 9624, 5634, 5641, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 575, 8137, 1448, 12547, 1112, 5730, 18499, 9625, 5634, 5641, 2]
 // Exports: default
 
-// Module 20221 (FormImagePicker)
+// Module 20279 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1448 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8136 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 12539 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8137 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12547 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_6;
-      tmp12Result = closure_6(tmp9(18492).ImagePlusIcon, {});
+      tmp12Result = closure_6(tmp9(18499).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -179,7 +179,7 @@ class ImagePickerIcon {
         standalone = tmp.standaloneIcon;
       }
       items4[1] = standalone;
-      const obj4 = { style: items4, children: tmp10(image(9624).PencilIcon, { color: "#292b30", size: "sm" }) };
+      const obj4 = { style: items4, children: tmp10(image(9625).PencilIcon, { color: "#292b30", size: "sm" }) };
       tmp10Result = tmp10(tmp15, obj4);
     }
     items3[1] = tmp10Result;

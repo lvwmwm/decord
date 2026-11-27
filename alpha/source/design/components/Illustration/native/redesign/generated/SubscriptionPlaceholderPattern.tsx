@@ -1,14 +1,14 @@
-// Module ID: 13964
-// Function ID: 13965
+// Module ID: 13971
+// Function ID: 13972
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 21, 8566, 13965, 13966, 13967, 5050, 5730, 2]
+// Dependencies: [19, 21, 8567, 13972, 13973, 13974, 5050, 5730, 2]
 // Exports: SubscriptionPlaceholderPattern, getSubscriptionPlaceholderPatternSource, useSubscriptionPlaceholderPatternSource
 
-// Module 13964 (SubscriptionPlaceholderPattern)
+// Module 13971 (SubscriptionPlaceholderPattern)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5050 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import _mod8566 from "module_8566" /* 8566 */;
+import _mod8567 from "module_8567" /* 8567 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
 
 export function getSubscriptionPlaceholderPatternSource(theme) {
-  const obj = _mod8566;
+  const obj = _mod8567;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useSubscriptionPlaceholderPatternSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8566;
+  const obj2 = _mod8567;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function SubscriptionPlaceholderPattern(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8566;
+  const obj2 = _mod8567;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

@@ -1,10 +1,10 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10770
+// Function ID: 10771
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 5044, 1191, 8117, 4955, 4975, 4946, 8350, 8124, 1387, 1071, 4899, 4889, 1227, 1111, 1082, 21, 5043, 575, 6379, 504, 5050, 5230, 9640, 5659, 9027, 8344, 10770, 5099, 5618, 1654, 8179, 6126, 8244, 12, 9031, 8112, 10775, 10783, 6047, 1112, 10784, 10786, 1379, 10787, 10788, 10791, 4876, 10792, 2120, 10793, 10794, 8088, 1186, 8533, 1627, 1499, 7304, 6133, 10797, 5634, 10798, 10867, 11075, 11076, 11077, 11079, 11083, 7751, 11697, 7153, 11087, 8116, 5257, 11699, 9704, 5641, 7137, 2]
+// Dependencies: [5, 32, 19, 17, 5044, 1191, 8117, 4955, 4975, 4946, 8351, 8124, 1387, 1071, 4899, 4889, 1227, 1111, 1082, 21, 5043, 575, 6379, 504, 5050, 5230, 9641, 5659, 9028, 8345, 10771, 5099, 5618, 1654, 8180, 6126, 8245, 12, 9032, 8112, 10776, 10784, 6047, 1112, 10785, 10787, 1379, 10788, 10789, 10792, 4876, 10793, 2120, 10794, 10795, 8088, 1186, 8534, 1627, 1499, 7304, 6133, 10798, 5634, 10799, 10868, 11076, 11077, 11078, 11080, 11084, 7751, 11705, 7153, 11088, 8116, 5257, 11707, 9705, 5641, 7137, 2]
 // Exports: default
 
-// Module 10769 (ForumComposer)
+// Module 10770 (ForumComposer)
 import nativeDefault from "native" /* 575 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import intl6 from "intl" /* 1112 */;
@@ -23,15 +23,15 @@ import transitionToChannel from "transitionToChannel" /* 6126 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
 import Tracking from "Tracking" /* 8116 */;
 import DraftStore2 from "DraftStore" /* 8117 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8179 */;
-import MessageParser from "MessageParser" /* 8344 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 8350 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 8533 */;
-import useFocusHandlers from "useFocusHandlers" /* 10786 */;
-import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10794 */;
-import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10798 */;
-import TagIcon from "TagIcon" /* 11077 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11087 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8180 */;
+import MessageParser from "MessageParser" /* 8345 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 8351 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 8534 */;
+import useFocusHandlers from "useFocusHandlers" /* 10787 */;
+import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10795 */;
+import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10799 */;
+import TagIcon from "TagIcon" /* 11078 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -76,8 +76,8 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const DismissibleActionSheet = tmp(11076);
-const ImageCarouselDefault = tmp5(11083);
+const DismissibleActionSheet = tmp(11077);
+const ImageCarouselDefault = tmp5(11084);
 function Tags(tags) {
   let items;
   tags = tags.tags;
@@ -200,7 +200,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     const tmp16 = closure_29;
     if (tmp8) {
-      ImageIcon = tmp2(11697).KeyboardIcon;
+      ImageIcon = tmp2(11705).KeyboardIcon;
     } else {
       ImageIcon = tmp2(7153).ImageIcon;
     }
@@ -211,7 +211,7 @@ function ActionBar(channel) {
     const obj7 = {
       accessibilityLabel: intl2.string(tmp2(1112).t["112vVE"]),
       style: items6,
-      IconComponent: tmp2(11077).TagIcon,
+      IconComponent: tmp2(11078).TagIcon,
       onPress: function handlePressTagsButton() {
           let intl;
           metroRequire.dismiss();
@@ -234,7 +234,7 @@ function ActionBar(channel) {
               }
             }
           };
-          const tmp3 = asyncRequire(11699, dependencyMap.paths);
+          const tmp3 = asyncRequire(11707, dependencyMap.paths);
           intl = intl6.intl;
           openLazy(tmp3, "ForumPostTagsActionSheet", obj);
         },
@@ -247,9 +247,9 @@ function ActionBar(channel) {
     tmp10 = closure_29(HeaderActionButton2, obj7);
   }
   items5[1] = tmp10;
-  let tmp18 = lastInput === tmp2(10786).PostComposerInputs.CONTENT;
+  let tmp18 = lastInput === tmp2(10787).PostComposerInputs.CONTENT;
   if (tmp18) {
-    const obj8 = { accessibilityLabel: intl3.string(tmp2(1112).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9704).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
+    const obj8 = { accessibilityLabel: intl3.string(tmp2(1112).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9705).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
     const HeaderActionButton3 = tmp2(7751).HeaderActionButton;
     intl3 = tmp2(1112).intl;
     tmp18 = closure_29(HeaderActionButton3, obj8);
@@ -635,7 +635,7 @@ export default function ForumComposer(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -670,7 +670,7 @@ export default function ForumComposer(parentChannel) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           if (1 === tmp4) {
@@ -1121,7 +1121,7 @@ export default function ForumComposer(parentChannel) {
               }
               if (tmp7Result !== name2) {
                 const obj = { name: tmp7Result };
-                const tmp5Result = tmp5(8179);
+                const tmp5Result = tmp5(8180);
                 tmp5Result.changeThreadSettings(parentChannel.id, obj);
                 closure_15(tmp7Result);
               }

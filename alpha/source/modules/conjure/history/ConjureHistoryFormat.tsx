@@ -1,10 +1,10 @@
-// Module ID: 18576
-// Function ID: 18577
+// Module ID: 18587
+// Function ID: 18588
 // Name: ConjureHistoryFormat
 // Dependencies: [6408, 4865, 1112, 4245, 2]
 // Exports: backupRow, formatAuthoredAt, formatHistoryDateTime, formatHistoryTime, groupHistoryByDay, historyDatabaseTitle, historyEnvironmentLabel, historyPreviewSha, historyRewindCopy, matchingPreviewBackup, parseTimestampMs, versionTitle, visibleBackups
 
-// Module 18576 (ConjureHistoryFormat)
+// Module 18587 (ConjureHistoryFormat)
 import intl8 from "intl" /* 1112 */;
 import _modDef4245 from "module_4245" /* 4245 */;
 import DateUtils from "DateUtils" /* 4865 */;

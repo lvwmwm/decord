@@ -1,13 +1,13 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 12104
+// Function ID: 12105
 // Name: getInvitableGameOrganizationsFullState
-// Dependencies: [32, 12097, 1112, 2651, 2]
+// Dependencies: [32, 12105, 1112, 2651, 2]
 // Exports: default, getGameOrganizationFullSubLabel, getInvitableGameOrganizationsFullSubLabel
 
-// Module 12096 (getInvitableGameOrganizationsFullState)
+// Module 12104 (getInvitableGameOrganizationsFullState)
 import intl3 from "intl" /* 1112 */;
 import _modDef2651 from "module_2651" /* 2651 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12097 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12105 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

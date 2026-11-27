@@ -1,15 +1,15 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8276
+// Function ID: 8277
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1071, 1112, 6178, 8276, 5252, 5050, 1285, 2]
+// Dependencies: [5, 1071, 1112, 6178, 8277, 5252, 5050, 1285, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 8275 (MemberSafetySupplementalUtils)
+// Module 8276 (MemberSafetySupplementalUtils)
 import Constants from "Constants" /* 1071 */;
 import intl11 from "intl" /* 1112 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import PlatformsDefault from "Platforms" /* 6178 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 8276 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 8277 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _fetchMemberSupplemental() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;

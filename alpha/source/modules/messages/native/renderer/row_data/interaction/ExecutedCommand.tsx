@@ -1,22 +1,22 @@
-// Module ID: 14485
-// Function ID: 14486
+// Module ID: 14492
+// Function ID: 14493
 // Name: ExecutedCommand
-// Dependencies: [17, 1406, 4892, 1387, 1071, 1416, 1413, 6770, 12161, 575, 8183, 6400, 9079, 12001, 10108, 1112, 10087, 2]
+// Dependencies: [17, 1406, 4892, 1387, 1071, 1416, 1413, 6770, 12169, 575, 8184, 6400, 9080, 12009, 10109, 1112, 10088, 2]
 // Exports: createExecutedCommand
 
-// Module 14485 (ExecutedCommand)
+// Module 14492 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import InteractionTypes from "InteractionTypes" /* 6400 */;
 import useMessageAuthor from "useMessageAuthor" /* 6770 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9079 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10087 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 10108 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 12001 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 12161 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8184 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9080 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10088 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 10109 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 12009 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 12169 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import UserStore from "UserStore" /* 1387 */;

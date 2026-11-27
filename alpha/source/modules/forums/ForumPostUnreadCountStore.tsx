@@ -1,9 +1,9 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9030
+// Function ID: 9031
 // Name: ForumPostUnreadCountStore
 // Dependencies: [6951, 4892, 6932, 504, 38, 572, 2]
 
-// Module 9029 (ForumPostUnreadCountStore)
+// Module 9030 (ForumPostUnreadCountStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

@@ -1,15 +1,15 @@
-// Module ID: 9352
-// Function ID: 9353
+// Module ID: 9353
+// Function ID: 9354
 // Name: launchPremiumPlanSelect
-// Dependencies: [1071, 9151, 6130, 9102, 2120, 9102, 7351, 2]
+// Dependencies: [1071, 9152, 6130, 9103, 2120, 9103, 7351, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 9352 (launchPremiumPlanSelect)
+// Module 9353 (launchPremiumPlanSelect)
 import Constants from "Constants" /* 1071 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7351 */;
-import PremiumModal from "PremiumModal" /* 9102 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 9151 */;
+import PremiumModal from "PremiumModal" /* 9103 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 9152 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ export function launchPremiumPlanSelect(isBoostPurchaseFlow) {
     const pushLazy = flag2(6130).pushLazy;
     const obj3 = { initialRoute: PREMIUM_PLAN_SELECT, analyticsLocation, analyticsLocations, predicate: wrappedPredicate, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onBack: tmp, onPaymentSuccess, onPaymentDismiss };
     flag2(6130);
-    const tmp8 = asyncRequire(9102, dependencyMap.paths);
+    const tmp8 = asyncRequire(9103, dependencyMap.paths);
     pushLazy(tmp8, obj3, PremiumModal.PREMIUM_KEY);
   }
   const obj2 = UserSettingsUtils;

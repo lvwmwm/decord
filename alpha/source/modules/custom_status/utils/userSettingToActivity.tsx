@@ -1,10 +1,10 @@
-// Module ID: 9488
-// Function ID: 9489
+// Module ID: 9489
+// Function ID: 9490
 // Name: userSettingToActivity
 // Dependencies: [19, 6883, 4994, 4989, 6015, 4868, 504, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 9488 (userSettingToActivity)
+// Module 9489 (userSettingToActivity)
 import react from "react" /* 19 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4989 */;
 import ActivityTypes from "ActivityTypes" /* 6015 */;

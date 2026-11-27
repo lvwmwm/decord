@@ -1,10 +1,10 @@
-// Module ID: 13137
-// Function ID: 13138
+// Module ID: 13145
+// Function ID: 13146
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8181, 4914, 1071, 7073, 21, 12, 10090, 5043, 575, 563, 5257, 13132, 13133, 1112, 38, 6144, 5836, 5634, 1186, 13134, 2]
+// Dependencies: [32, 19, 17, 8182, 4914, 1071, 7073, 21, 12, 10091, 5043, 575, 563, 5257, 13140, 13141, 1112, 38, 6144, 5836, 5634, 1186, 13142, 2]
 // Exports: default
 
-// Module 13137 (AppLauncherAutocompleteActionSheet)
+// Module 13145 (AppLauncherAutocompleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,11 +16,11 @@ import Text_Text from "Text/Text" /* 5634 */;
 import merged5 from "merged5" /* 5836 */;
 import TableRow from "TableRow" /* 6144 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
-import executeCommandDefault from "executeCommand" /* 10090 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13134 */;
+import executeCommandDefault from "executeCommand" /* 10091 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13142 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8181 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8182 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;

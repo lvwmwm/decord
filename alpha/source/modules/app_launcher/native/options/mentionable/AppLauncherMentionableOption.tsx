@@ -1,10 +1,10 @@
-// Module ID: 13144
-// Function ID: 13145
+// Module ID: 13152
+// Function ID: 13153
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 5044, 4949, 1387, 1082, 21, 5043, 575, 504, 13145, 11410, 13146, 1186, 13147, 13148, 13142, 5257, 13146, 2120, 2]
+// Dependencies: [32, 19, 5044, 4949, 1387, 1082, 21, 5043, 575, 504, 13153, 11411, 13154, 1186, 13155, 13156, 13150, 5257, 13154, 2120, 2]
 // Exports: default
 
-// Module 13144 (AppLauncherMentionableOption)
+// Module 13152 (AppLauncherMentionableOption)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,10 +12,10 @@ import Constants from "Constants" /* 1082 */;
 import native from "native" /* 1186 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13145 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13146 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 13147 */;
-import UsernameTextDefault from "UsernameText" /* 13148 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13153 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13154 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 13155 */;
+import UsernameTextDefault from "UsernameText" /* 13156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -45,7 +45,7 @@ function MentionableIcon(mentionable) {
     } else if (AppLauncherMentionableListActionSheet.MentionableItemTypes.ROLE === type) {
       return jsx(AppLauncherRoleListActionSheet.RoleIcon, { role: mentionable.result });
     } else {
-      const GLOBAL = tmp2(13146).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(13154).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
@@ -142,7 +142,7 @@ export default function AppLauncherMentionableOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(13146, dependencyMap.paths);
+      const tmp4 = asyncRequire(13154, dependencyMap.paths);
       openLazy(tmp4, AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, obj);
     },
     autoFocus

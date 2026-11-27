@@ -1,14 +1,14 @@
-// Module ID: 19358
-// Function ID: 19359
+// Module ID: 19374
+// Function ID: 19375
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5043, 575, 18972, 5634, 1186, 18967, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 18988, 5634, 1186, 18983, 2]
 
-// Module 19358 (VoiceOrStageSummaryRow)
+// Module 19374 (VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18972 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18988 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -19,7 +19,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const AssetRegistryDefault = tmp(18967);
+const AssetRegistryDefault = tmp(18983);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((height) => {

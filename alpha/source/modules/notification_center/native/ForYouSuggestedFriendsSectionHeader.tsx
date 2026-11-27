@@ -1,10 +1,10 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18292
+// Function ID: 18293
 // Name: ForYouSuggestedFriendsSectionHeader
 // Dependencies: [19, 17, 21, 5043, 575, 5634, 1112, 2]
 // Exports: default
 
-// Module 18285 (ForYouSuggestedFriendsSectionHeader)
+// Module 18292 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

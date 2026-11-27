@@ -1,9 +1,9 @@
-// Module ID: 10498
-// Function ID: 10499
+// Module ID: 10499
+// Function ID: 10500
 // Name: InviteButton
 // Dependencies: [19, 17, 5776, 21, 5043, 1112, 5641, 2]
 
-// Module 10498 (InviteButton)
+// Module 10499 (InviteButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl6 from "intl" /* 1112 */;

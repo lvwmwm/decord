@@ -1,9 +1,9 @@
-// Module ID: 8350
-// Function ID: 8351
+// Module ID: 8351
+// Function ID: 8352
 // Name: SlowmodeStore
-// Dependencies: [4892, 4975, 8351, 4887, 572, 1088, 504, 2]
+// Dependencies: [4892, 4975, 8352, 4887, 572, 1088, 504, 2]
 
-// Module 8350 (SlowmodeStore)
+// Module 8351 (SlowmodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;

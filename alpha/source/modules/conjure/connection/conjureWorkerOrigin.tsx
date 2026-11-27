@@ -1,10 +1,10 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15008
+// Function ID: 15009
 // Name: conjureWorkerOrigin
 // Dependencies: [7675, 2]
 // Exports: getConjureWorkerOrigin
 
-// Module 15001 (conjureWorkerOrigin)
+// Module 15008 (conjureWorkerOrigin)
 import conjureLocalDev from "conjureLocalDev" /* 7675 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10565
+// Function ID: 10566
 // Name: useIsGuestOrLurker
 // Dependencies: [4955, 4914, 1071, 504, 2]
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 10564 (useIsGuestOrLurker)
+// Module 10565 (useIsGuestOrLurker)
 import Constants from "Constants" /* 1071 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildStore from "GuildStore" /* 4914 */;

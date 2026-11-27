@@ -1,12 +1,12 @@
-// Module ID: 8298
-// Function ID: 8299
+// Module ID: 8299
+// Function ID: 8300
 // Name: GameServerConstants
-// Dependencies: [1404, 8299, 2]
+// Dependencies: [1404, 8300, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 8298 (GameServerConstants)
+// Module 8299 (GameServerConstants)
 import UserStoreConstants from "UserStoreConstants" /* 1404 */;
-import GameServerProviderType from "GameServerProviderType" /* 8299 */;
+import GameServerProviderType from "GameServerProviderType" /* 8300 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

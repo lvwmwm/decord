@@ -1,10 +1,10 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8821
+// Function ID: 8822
 // Name: RedundantLinkUtils
 // Dependencies: [6778, 6777, 5761, 2]
 // Exports: hasOnlySimpleEmbed, isRedundantLink, isSingleLinkContent, readContentLinks
 
-// Module 8820 (RedundantLinkUtils)
+// Module 8821 (RedundantLinkUtils)
 import findCodedLinks from "findCodedLinks" /* 5761 */;
 import EmbedUtils from "EmbedUtils" /* 6777 */;
 import EmbedConstants from "EmbedConstants" /* 6778 */;

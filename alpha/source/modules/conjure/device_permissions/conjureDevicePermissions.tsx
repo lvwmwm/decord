@@ -1,10 +1,10 @@
-// Module ID: 11464
-// Function ID: 11465
+// Module ID: 11474
+// Function ID: 11475
 // Name: conjureDevicePermissions
 // Dependencies: [1379, 1112, 4245, 2]
 // Exports: getConjureDevicePermissionLabel, getConjureDevicePermissionPromptTitle, isConjureDevicePermissionName, isConjureDevicePermissionSupported
 
-// Module 11464 (conjureDevicePermissions)
+// Module 11474 (conjureDevicePermissions)
 import intl2 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1379 */;
 import _modDef4245 from "module_4245" /* 4245 */;

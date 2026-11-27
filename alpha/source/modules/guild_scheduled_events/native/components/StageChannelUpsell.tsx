@@ -1,10 +1,10 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8519
+// Function ID: 8520
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 4896, 8519, 8474, 1071, 21, 5043, 575, 6152, 1186, 7752, 5730, 8520, 5634, 1112, 5641, 6130, 8521, 2120, 5257, 2]
+// Dependencies: [32, 19, 17, 4896, 8520, 8475, 1071, 21, 5043, 575, 6152, 1186, 7752, 5730, 8521, 5634, 1112, 5641, 6130, 8522, 2120, 5257, 2]
 // Exports: default
 
-// Module 8518 (StageChannelUpsell)
+// Module 8519 (StageChannelUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -19,9 +19,9 @@ import FastImageDefault from "FastImage" /* 5730 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import Pressables from "Pressables" /* 6152 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7752 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8474 */;
-import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8519 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8520 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8475 */;
+import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8520 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8521 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -117,7 +117,7 @@ export default function StageChannelUpsell(arg0) {
               obj.popWithKey(closure_1_11);
             }
           };
-          obj2.pushLazy(asyncRequire(8521, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
+          obj2.pushLazy(asyncRequire(8522, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
           closure_2();
           const obj4 = ActionSheetActionCreatorsDefault;
           obj4.hideActionSheet();

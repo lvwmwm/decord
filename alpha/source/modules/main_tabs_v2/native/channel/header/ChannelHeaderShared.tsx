@@ -1,10 +1,10 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 11901
+// Function ID: 11902
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4985, 1387, 21, 5043, 575, 6152, 1379, 9808, 5634, 1186, 11894, 9616, 5607, 7096, 11895, 1112, 5659, 5730, 1413, 11557, 8632, 2]
+// Dependencies: [32, 19, 17, 4985, 1387, 21, 5043, 575, 6152, 1379, 9809, 5634, 1186, 11902, 9617, 5607, 7096, 11903, 1112, 5659, 5730, 1413, 11565, 8633, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 11893 (ChannelHeaderShared)
+// Module 11901 (ChannelHeaderShared)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -16,12 +16,12 @@ import useChannelName from "useChannelName" /* 5659 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import Pressables from "Pressables" /* 6152 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7096 */;
-import BotTagDefault from "BotTag" /* 8632 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 9616 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9808 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11557 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11894 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11895 */;
+import BotTagDefault from "BotTag" /* 8633 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 9617 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9809 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11565 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11902 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

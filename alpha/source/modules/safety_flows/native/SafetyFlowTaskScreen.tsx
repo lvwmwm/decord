@@ -1,15 +1,15 @@
-// Module ID: 20359
-// Function ID: 20360
+// Module ID: 20417
+// Function ID: 20418
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 5043, 7888, 7890, 6115, 5634, 11615, 20357, 11539, 2]
+// Dependencies: [19, 21, 5043, 7888, 7890, 6115, 5634, 11623, 20415, 11547, 2]
 // Exports: default
 
-// Module 20359 (SafetyFlowTaskScreen)
+// Module 20417 (SafetyFlowTaskScreen)
 import Text_Text from "Text/Text" /* 5634 */;
 import Stack_Stack from "Stack/Stack" /* 6115 */;
 import ModalScreen2 from "ModalScreen" /* 7888 */;
 import ModalContent2 from "ModalContent" /* 7890 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20357 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20415 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -65,7 +65,7 @@ export default function SafetyFlowTaskScreen(title) {
   items1 = [React3(Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   const children1 = [React3(ModalContent, obj3), ];
   if (undefined === footer) {
-    const ModalFooter = tmp4(11615).ModalFooter;
+    const ModalFooter = tmp4(11623).ModalFooter;
     if (withLogout) {
       withLogout = tmp7(LogOutDisclaimerDefault, {});
     }
@@ -73,7 +73,7 @@ export default function SafetyFlowTaskScreen(title) {
     let tmp7Result2 = null != action;
     if (tmp7Result2) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp7Result2 = tmp7(tmp4(11539).ModalActionButton, obj4);
+      tmp7Result2 = tmp7(tmp4(11547).ModalActionButton, obj4);
     }
     const obj5 = { children: items3 };
     items3[1] = tmp7Result2;

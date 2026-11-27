@@ -1,10 +1,10 @@
-// Module ID: 19210
-// Function ID: 19211
+// Module ID: 19226
+// Function ID: 19227
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 5043, 575, 6144, 12, 1112, 13184, 5730, 2118, 5741, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 6144, 12, 1112, 13192, 5730, 2118, 5741, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 19210 (ContextMenuCommandItem)
+// Module 19226 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -12,7 +12,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import TableRow2 from "TableRow" /* 6144 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13184 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13192 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export default function ContextMenuCommandItem(item) {
     const obj = { applicationName: name, commandName: tmp.displayName };
     return formatToPlainString(Pk4Mz3, obj);
   }, items);
-  let obj = item(13184);
+  let obj = item(13192);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   let tmp8Result = null != applicationCommandsIconSource;
   const TableRow = item(6144).TableRow;

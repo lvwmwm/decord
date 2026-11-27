@@ -1,7 +1,7 @@
 // Module ID: 8121
 // Function ID: 8122
 // Name: TrackingUtils
-// Dependencies: [6951, 4977, 8122, 8123, 4892, 8117, 4975, 8124, 8119, 1071, 4899, 1111, 8164, 4901, 8165, 11, 8166, 2]
+// Dependencies: [6951, 4977, 8122, 8123, 4892, 8117, 4975, 8124, 8119, 1071, 4899, 1111, 8165, 4901, 8166, 11, 8167, 2]
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumChannelSessionId, getForumPostAttachmentMimetypes, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads
 
 // Module 8121 (TrackingUtils)
@@ -11,9 +11,9 @@ import ThreadConstants from "ThreadConstants" /* 1111 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 4901 */;
 import DraftStore2 from "DraftStore" /* 8117 */;
-import ForumSessionAnalyticsManagerDefault from "ForumSessionAnalyticsManager" /* 8164 */;
-import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8165 */;
-import ForumPostAnalyticsManagerDefault from "ForumPostAnalyticsManager" /* 8166 */;
+import ForumSessionAnalyticsManagerDefault from "ForumSessionAnalyticsManager" /* 8165 */;
+import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8166 */;
+import ForumPostAnalyticsManagerDefault from "ForumPostAnalyticsManager" /* 8167 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6951 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
 import ThreadMembersStore from "ThreadMembersStore" /* 8122 */;
@@ -27,7 +27,7 @@ import size from "module_2" /* 2 */;
 const DraftStore = DraftStore2;
 let set;
 
-const f92742 = (content_type) => {
+const f92970 = (content_type) => {
   let str = content_type.content_type;
   if (str == null) {
     str = "unknown";
@@ -163,7 +163,7 @@ export function getForumPostAttachmentMimetypes(arg0) {
     items = [];
   } else {
     const attachments = firstMessage.attachments;
-    items = attachments.map(f92742);
+    items = attachments.map(f92970);
   }
   return items;
 }
@@ -284,7 +284,7 @@ export function collectForumPostAnalyticsMetadata(channelId) {
             items1 = [];
           } else {
             const attachments = firstMessage2.attachments;
-            items1 = attachments.map(f92742);
+            items1 = attachments.map(f92970);
           }
           tmp = obj2;
         }

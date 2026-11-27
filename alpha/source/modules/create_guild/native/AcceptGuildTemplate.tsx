@@ -1,10 +1,10 @@
-// Module ID: 12306
-// Function ID: 12307
+// Module ID: 12314
+// Function ID: 12315
 // Name: AcceptGuildTemplate
-// Dependencies: [19, 17, 4896, 4950, 1071, 7867, 21, 5043, 575, 6822, 7047, 1186, 12307, 1112, 38, 1629, 4951, 5634, 12309, 7274, 5641, 8094, 12, 8502, 12314, 12315, 11441, 1089, 2]
+// Dependencies: [19, 17, 4896, 4950, 1071, 7867, 21, 5043, 575, 6822, 7047, 1186, 12315, 1112, 38, 1629, 4951, 5634, 12317, 7274, 5641, 8094, 12, 8503, 12322, 12323, 11442, 1089, 2]
 // Exports: default
 
-// Module 12306 (AcceptGuildTemplate)
+// Module 12314 (AcceptGuildTemplate)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,9 +16,9 @@ import GuildRoleRecord from "GuildRoleRecord" /* 4950 */;
 import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4951 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7047 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7867 */;
-import RolePillDefault from "RolePill" /* 11441 */;
-import InvalidLink from "InvalidLink" /* 12307 */;
-import GuildIconUploaderDefault from "GuildIconUploader" /* 12309 */;
+import RolePillDefault from "RolePill" /* 11442 */;
+import InvalidLink from "InvalidLink" /* 12315 */;
+import GuildIconUploaderDefault from "GuildIconUploader" /* 12317 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
@@ -190,11 +190,11 @@ function Channels(channels) {
     const type = children.type;
     const obj2 = { style: items, color: nativeDefault.unsafe_rawColors.PRIMARY_400, size: native.Icon.Sizes.CUSTOM, source: tmp10Result };
     if (isGuildVocalChannelType(type)) {
-      tmp10Result = tmp10(8502);
+      tmp10Result = tmp10(8503);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(12314);
+      tmp10Result = tmp10(12322);
     } else {
-      tmp10Result = tmp10(12315);
+      tmp10Result = tmp10(12323);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];

@@ -1,9 +1,9 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12327
+// Function ID: 12328
 // Name: BundleUpdater
 // Dependencies: [5, 17, 1071, 3, 1379, 81, 2120, 5836, 1256, 5811, 2]
 
-// Module 12319 (BundleUpdater)
+// Module 12327 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -68,7 +68,7 @@ class BundleUpdater {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ class BundleUpdater {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp15) {
           c3 = 3;
           throw tmp15;

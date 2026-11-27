@@ -1,10 +1,10 @@
-// Module ID: 8169
-// Function ID: 8170
+// Module ID: 8170
+// Function ID: 8171
 // Name: ThreadAnalyticsUtils
 // Dependencies: [8122, 8123, 4896, 4975, 1071, 1098, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 8169 (ThreadAnalyticsUtils)
+// Module 8170 (ThreadAnalyticsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;

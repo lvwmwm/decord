@@ -1,15 +1,15 @@
-// Module ID: 18701
-// Function ID: 18702
+// Module ID: 18716
+// Function ID: 18717
 // Name: ConjureProjectEventLine
-// Dependencies: [19, 21, 18694, 18690, 18702, 18668, 18704, 5634, 18706, 2]
+// Dependencies: [19, 21, 18708, 18704, 18717, 18683, 18719, 5634, 18721, 2]
 // Exports: default
 
-// Module 18701 (ConjureProjectEventLine)
+// Module 18716 (ConjureProjectEventLine)
 import Text_Text from "Text/Text" /* 5634 */;
-import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 18668 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18690 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 18694 */;
-import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 18702 */;
+import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 18683 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18704 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 18708 */;
+import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 18717 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -33,30 +33,32 @@ function renderMention(arg0, arg1, arg2) {
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureProjectEventLine.tsx");
 
-export default function ConjureProjectEventLine(arg0) {
+export default function ConjureProjectEventLine(onInputFocusChange) {
+  let askId;
   let event;
   let projectId;
-  let tmp5Result;
-  ({ projectId, event } = arg0);
+  let tmp8Result;
+  ({ projectId, askId, event } = onInputFocusChange);
+  onInputFocusChange = onInputFocusChange.onInputFocusChange;
   const tmp3 = useConjureProjectEventLineDefault(projectId, event, renderMention);
-  const tmp4 = useConjureRemixSettingsRequestDefault(projectId, event);
+  const tmp4 = useConjureRemixSettingsRequestDefault(projectId, event, askId);
   if ("voice_channel_pin" === event.type) {
     const obj2 = { projectId };
-    tmp5Result = _false(tmp(18704), obj2);
+    tmp8Result = _false(tmp(18719), obj2);
   } else {
-    const obj = { variant: "body-md/normal", color: "text-default", children: tmp3 };
-    const items = [_false(Text_Text.Text, obj), ];
-    let tmp7Result = null;
-    const tmp5 = hasOwnProperty;
-    const tmp6 = React3;
-    const tmp7 = _false;
+    const obj3 = { variant: "body-md/normal", color: "text-default", children: tmp3 };
+    const items = [_false(Text_Text.Text, obj3), ];
+    let tmp10Result = null;
+    const tmp10 = _false;
+    const tmp8 = hasOwnProperty;
+    const tmp9 = React3;
     if (null != tmp4) {
-      const obj3 = { projectId, request: tmp4, notifyAgent: false };
-      tmp7Result = tmp7(tmp(18706), obj3);
+      const obj = { projectId, kind: "settings", request: tmp4.request, askId, onInputFocusChange };
+      tmp10Result = tmp10(tmp(18721), obj);
     }
     const obj4 = { children: items };
-    items[1] = tmp7Result;
-    tmp5Result = tmp5(tmp6, obj4);
+    items[1] = tmp10Result;
+    tmp8Result = tmp8(tmp9, obj4);
   }
-  return tmp5Result;
+  return tmp8Result;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10591
-// Function ID: 10592
+// Module ID: 10592
+// Function ID: 10593
 // Name: ThemedGradient
 // Dependencies: [19, 17, 5067, 21, 5043, 5050, 5041, 5213, 5040, 1495, 5598, 5252, 575, 5216, 671, 1242, 563, 5218, 5251, 1241, 2]
 // Exports: CustomThemedGradient, default, validateColors
 
-// Module 10591 (ThemedGradient)
+// Module 10592 (ThemedGradient)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;

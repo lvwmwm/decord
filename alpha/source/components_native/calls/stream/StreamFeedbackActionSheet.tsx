@@ -1,21 +1,21 @@
-// Module ID: 19717
-// Function ID: 19718
+// Module ID: 19733
+// Function ID: 19734
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 502, 1071, 12168, 21, 8399, 504, 1112, 3143, 12171, 19718, 1256, 19600, 19719, 5257, 19720, 2120, 5724, 2]
+// Dependencies: [19, 502, 1071, 12176, 21, 8400, 504, 1112, 3143, 12179, 19734, 1256, 19616, 19735, 5257, 19736, 2120, 5724, 2]
 // Exports: default
 
-// Module 19717 (StreamFeedbackActionSheet)
+// Module 19733 (StreamFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
-import FeedbackUtils from "FeedbackUtils" /* 12171 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 19600 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19719 */;
+import FeedbackUtils from "FeedbackUtils" /* 12179 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 19616 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19735 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 12168 */;
+import Constants from "Constants" /* 12176 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -44,7 +44,7 @@ export default function StreamFeedbackActionSheet(stream) {
   dependencyMap = undefined;
   const tmp = stream;
   const tmp2 = dependencyMap;
-  let obj = stream(8399);
+  let obj = stream(8400);
   dependencyMap = obj.useGetStreamApplication(stream);
   let obj2 = stream(504);
   const items = [AuthenticationStore];
@@ -67,7 +67,7 @@ export default function StreamFeedbackActionSheet(stream) {
     tmp10 = tmp8;
   }
   intl5 = tmp(1112).intl;
-  tmpResult = tmp(12171);
+  tmpResult = tmp(12179);
   obj4 = { value: constants2.FREEFORM, label: intl6.string(tmp(1112).t.emlT91) };
   intl6 = tmp(1112).intl;
   let obj5 = {
@@ -140,7 +140,7 @@ export default function StreamFeedbackActionSheet(stream) {
             const obj7 = { mediaSessionId: null, rtcConnectionId: null };
             ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp9);
             const tmp22Result = tmp22(5257);
-            tmp22Result.openLazy(asyncRequire(19720, dependencyMap.paths), "UploadLogs", obj7);
+            tmp22Result.openLazy(asyncRequire(19736, dependencyMap.paths), "UploadLogs", obj7);
           }
         }
         const obj4 = ToastUtils;
@@ -148,7 +148,7 @@ export default function StreamFeedbackActionSheet(stream) {
       }
     }
   };
-  const tmp10Result = tmp10(19718);
+  const tmp10Result = tmp10(19734);
   const tmp11 = jsx;
   if (stateFromStores) {
     stringResult2 = stringResult1;

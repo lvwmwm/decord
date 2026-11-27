@@ -1,14 +1,14 @@
-// Module ID: 8324
-// Function ID: 8325
+// Module ID: 8325
+// Function ID: 8326
 // Name: UserSearchUtils
-// Dependencies: [8325, 4955, 4985, 1071, 2153, 5099, 2]
+// Dependencies: [8326, 4955, 4985, 1071, 2153, 5099, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 8324 (UserSearchUtils)
+// Module 8325 (UserSearchUtils)
 import Constants from "Constants" /* 1071 */;
 import StringUtils from "StringUtils" /* 2153 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 8325 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 8326 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import RelationshipStore from "RelationshipStore" /* 4985 */;
 import size from "module_2" /* 2 */;

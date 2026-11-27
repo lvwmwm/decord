@@ -1,14 +1,14 @@
-// Module ID: 18334
-// Function ID: 18335
+// Module ID: 18341
+// Function ID: 18342
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 6391, 8913, 18335, 8922, 8917, 504, 2]
+// Dependencies: [5, 6391, 8914, 18342, 8923, 8918, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 18334 (ICYMIStoreUtils)
-import ICYMIItemTypes from "ICYMIItemTypes" /* 18335 */;
+// Module 18341 (ICYMIStoreUtils)
+import ICYMIItemTypes from "ICYMIItemTypes" /* 18342 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MessageStore from "MessageStore" /* 6391 */;
-import ICYMIStore from "ICYMIStore" /* 8913 */;
+import ICYMIStore from "ICYMIStore" /* 8914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -62,7 +62,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         c0 = 3;

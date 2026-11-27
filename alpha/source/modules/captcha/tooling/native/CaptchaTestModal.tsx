@@ -1,15 +1,15 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17322
+// Function ID: 17323
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 17316, 17317, 5725, 5634, 1186, 7480, 5641, 6130, 7191, 7355, 1112, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5043, 575, 17323, 17324, 5725, 5634, 1186, 7480, 5641, 6130, 7191, 7355, 1112, 2]
 // Exports: default
 
-// Module 17315 (CaptchaTestModal)
+// Module 17322 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 17316 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17317 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 17323 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17324 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -51,7 +51,7 @@ function CaptchaTestScreen(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -104,7 +104,7 @@ function CaptchaTestScreen(arg0) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp22) {
             closure_3 = tmp22;
             if (0 === c4) {

@@ -1,14 +1,14 @@
-// Module ID: 14494
-// Function ID: 14495
+// Module ID: 14501
+// Function ID: 14502
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 14495, 1071, 14497, 1285, 572, 2]
+// Dependencies: [5, 14502, 1071, 14504, 1285, 572, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 14494 (CustomActivityLinkUtils)
+// Module 14501 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1071 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14497 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14495 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14502 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "r" }, done: true };
+            return { value: { customId: "top" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "r" };
+              obj = { customId: "top" };
             } else {
               obj = { customId: custom_id.custom_id };
             }

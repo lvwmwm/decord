@@ -1,16 +1,16 @@
-// Module ID: 18200
-// Function ID: 18201
+// Module ID: 18207
+// Function ID: 18208
 // Name: useVoicePanelScreenshareToggle
-// Dependencies: [19, 1071, 21, 10354, 14083, 6048, 14086, 1112, 1256, 2]
+// Dependencies: [19, 1071, 21, 10355, 14090, 6048, 14093, 1112, 1256, 2]
 // Exports: default
 
-// Module 18200 (useVoicePanelScreenshareToggle)
+// Module 18207 (useVoicePanelScreenshareToggle)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import useAlertStore from "useAlertStore" /* 6048 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14086 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14093 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

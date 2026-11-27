@@ -1,10 +1,10 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10328
+// Function ID: 10329
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 6379, 6152, 6133, 10328, 1186, 5634, 10329, 1112, 10330, 6803, 7752, 6861, 7839, 7428, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 6379, 6152, 6133, 10329, 1186, 5634, 10330, 1112, 10331, 6803, 7752, 6861, 7839, 7428, 2]
 // Exports: default
 
-// Module 10327 (RequestToSpeakParticipantList)
+// Module 10328 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

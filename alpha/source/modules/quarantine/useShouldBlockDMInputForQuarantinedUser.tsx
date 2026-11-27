@@ -1,10 +1,10 @@
-// Module ID: 13417
-// Function ID: 13418
+// Module ID: 13425
+// Function ID: 13426
 // Name: useShouldBlockDMInputForQuarantinedUser
-// Dependencies: [6391, 1071, 13222, 504, 2]
+// Dependencies: [6391, 1071, 13230, 504, 2]
 // Exports: default
 
-// Module 13417 (useShouldBlockDMInputForQuarantinedUser)
+// Module 13425 (useShouldBlockDMInputForQuarantinedUser)
 import Constants from "Constants" /* 1071 */;
 import MessageStore from "MessageStore" /* 6391 */;
 import size from "module_2" /* 2 */;

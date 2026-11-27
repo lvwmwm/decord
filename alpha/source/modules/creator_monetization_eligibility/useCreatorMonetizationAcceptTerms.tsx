@@ -1,10 +1,10 @@
-// Module ID: 20149
-// Function ID: 20150
+// Module ID: 20207
+// Function ID: 20208
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 4910, 4914, 1387, 504, 7618, 20150, 5793, 2]
+// Dependencies: [5, 32, 19, 4910, 4914, 1387, 504, 7618, 20208, 5793, 2]
 // Exports: default
 
-// Module 20149 (useCreatorMonetizationAcceptTerms)
+// Module 20207 (useCreatorMonetizationAcceptTerms)
 import GuildRecord from "GuildRecord" /* 4910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -60,7 +60,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -135,7 +135,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp41) {
           if (0 === c3) {
             c5 = 3;

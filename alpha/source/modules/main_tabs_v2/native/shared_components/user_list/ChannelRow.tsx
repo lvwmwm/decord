@@ -1,9 +1,9 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11406
+// Function ID: 11407
 // Name: ChannelRow
-// Dependencies: [19, 17, 4892, 4914, 6932, 4985, 1387, 8944, 6168, 21, 5043, 575, 504, 5659, 11406, 11565, 7154, 7146, 5634, 4865, 2169, 8587, 5209, 7181, 6144, 2]
+// Dependencies: [19, 17, 4892, 4914, 6932, 4985, 1387, 8945, 6168, 21, 5043, 575, 504, 5659, 11407, 11573, 7154, 7146, 5634, 4865, 2169, 8588, 5209, 7181, 6144, 2]
 
-// Module 11405 (ChannelRow)
+// Module 11406 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DateUtils from "DateUtils" /* 4865 */;
@@ -11,10 +11,10 @@ import getNodeText from "getNodeText" /* 5209 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import ReadStateConstants from "ReadStateConstants" /* 6168 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8587 */;
-import UserRowConstants from "UserRowConstants" /* 8944 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11406 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11565 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8588 */;
+import UserRowConstants from "UserRowConstants" /* 8945 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11407 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11573 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;

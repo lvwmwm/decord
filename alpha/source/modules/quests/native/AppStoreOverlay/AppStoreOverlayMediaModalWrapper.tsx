@@ -1,15 +1,15 @@
-// Module ID: 9945
-// Function ID: 9946
+// Module ID: 9946
+// Function ID: 9947
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [19, 5258, 1071, 21, 9944, 6130, 8869, 8870, 2]
+// Dependencies: [19, 5258, 1071, 21, 9945, 6130, 8870, 8871, 2]
 // Exports: default
 
-// Module 9945 (AppStoreOverlayMediaModalWrapper)
+// Module 9946 (AppStoreOverlayMediaModalWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
-import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8869 */;
-import MediaModalDefault from "MediaModal" /* 8870 */;
+import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8870 */;
+import MediaModalDefault from "MediaModal" /* 8871 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5258 */;
 import size from "module_2" /* 2 */;

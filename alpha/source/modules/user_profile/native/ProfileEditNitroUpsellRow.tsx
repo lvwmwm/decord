@@ -1,15 +1,15 @@
-// Module ID: 16037
-// Function ID: 16038
+// Module ID: 16044
+// Function ID: 16045
 // Name: ProfileEditNitroUpsellRow
-// Dependencies: [19, 1071, 1389, 21, 6379, 9586, 1256, 9594, 9597, 6144, 16036, 2]
+// Dependencies: [19, 1071, 1389, 21, 6379, 9587, 1256, 9595, 9598, 6144, 16043, 2]
 // Exports: default
 
-// Module 16037 (ProfileEditNitroUpsellRow)
+// Module 16044 (ProfileEditNitroUpsellRow)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9594 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9597 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9595 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9598 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

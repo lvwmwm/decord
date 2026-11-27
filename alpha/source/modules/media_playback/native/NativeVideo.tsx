@@ -1,10 +1,10 @@
-// Module ID: 8884
-// Function ID: 8885
+// Module ID: 8885
+// Function ID: 8886
 // Name: NativeVideo
-// Dependencies: [109, 32, 19, 17, 21, 5043, 81, 8885, 5730, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5043, 81, 8886, 5730, 2]
 // Exports: default
 
-// Module 8884 (NativeVideo)
+// Module 8885 (NativeVideo)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -48,7 +48,7 @@ export default function NativeVideo(ref) {
   let tmp21;
   let tmp6;
   let type;
-  const f94373 = (item) => {
+  const f94606 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -95,7 +95,7 @@ export default function NativeVideo(ref) {
   }
   const tmp4Result = str(obj.useState(() => {
     let entries;
-    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f94373) };
+    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f94606) };
     c10 = c10 + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -109,7 +109,7 @@ export default function NativeVideo(ref) {
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f94373) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f94606) };
     const _String = String;
     sum = closure_10 + 1;
     closure_10 = sum;
@@ -358,7 +358,7 @@ export default function NativeVideo(ref) {
   const tmp24 = closure_9;
   const tmp25 = c7;
   const tmp27 = ref1;
-  const tmp29 = ref1(8885);
+  const tmp29 = ref1(8886);
   if (selectedTextTrack != null) {
     type = selectedTextTrack.type;
   }

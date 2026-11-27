@@ -1,15 +1,15 @@
-// Module ID: 11531
-// Function ID: 11532
+// Module ID: 11539
+// Function ID: 11540
 // Name: TypingStore
-// Dependencies: [502, 4892, 8350, 1071, 1088, 7579, 1285, 572, 504, 2]
+// Dependencies: [502, 4892, 8351, 1071, 1088, 7579, 1285, 572, 504, 2]
 
-// Module 11531 (TypingStore)
+// Module 11539 (TypingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
-import SlowmodeStore from "SlowmodeStore" /* 8350 */;
+import SlowmodeStore from "SlowmodeStore" /* 8351 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,22 @@
-// Module ID: 10258
-// Function ID: 10259
+// Module ID: 10259
+// Function ID: 10260
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1082, 21, 10259, 1654, 5644, 575, 10260, 10347, 10262, 10012, 10011, 8966, 10156, 6129, 10348, 10530, 5104, 10016, 10538, 10539, 10265, 10544, 10554, 10556, 10587, 10588, 5043, 10589, 10294, 2]
+// Dependencies: [32, 19, 17, 1082, 21, 10260, 1654, 5644, 575, 10261, 10348, 10263, 10013, 10012, 8967, 10157, 6129, 10349, 10531, 5104, 10017, 10539, 10540, 10266, 10545, 10555, 10557, 10588, 10589, 5043, 10590, 10295, 2]
 // Exports: default
 
-// Module 10258 (StageChannelCallNavigator)
+// Module 10259 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import spring_spring from "spring/spring" /* 5644 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6129 */;
-import MessageManagerDefault from "MessageManager" /* 8966 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10156 */;
-import ModeratorOverlayState from "ModeratorOverlayState" /* 10259 */;
-import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 10260 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 10294 */;
-import JoinStageViewDefault from "JoinStageView" /* 10347 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 10589 */;
+import MessageManagerDefault from "MessageManager" /* 8967 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10157 */;
+import ModeratorOverlayState from "ModeratorOverlayState" /* 10260 */;
+import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 10261 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 10295 */;
+import JoinStageViewDefault from "JoinStageView" /* 10348 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 10590 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

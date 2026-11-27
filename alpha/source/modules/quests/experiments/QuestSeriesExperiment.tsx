@@ -1,9 +1,9 @@
-// Module ID: 9922
-// Function ID: 9923
+// Module ID: 9923
+// Function ID: 9924
 // Name: QuestSeriesExperiment
 // Dependencies: [1451, 2]
 
-// Module 9922 (QuestSeriesExperiment)
+// Module 9923 (QuestSeriesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

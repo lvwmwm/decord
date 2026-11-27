@@ -1,19 +1,19 @@
-// Module ID: 16406
-// Function ID: 16407
+// Module ID: 16413
+// Function ID: 16414
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 8213, 21, 5043, 575, 8216, 8218, 16401, 5634, 5724, 1112, 2847, 12591, 16407, 6152, 2]
+// Dependencies: [32, 19, 17, 8214, 21, 5043, 575, 8217, 8219, 16408, 5634, 5724, 1112, 2847, 12599, 16414, 6152, 2]
 // Exports: default
 
-// Module 16406 (FamilyCenterActivitySection)
+// Module 16413 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8216 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8218 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16401 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8217 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8219 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16408 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8214 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -101,9 +101,9 @@ export default function FamilyCenterActivitySection(displayType) {
   let tmp20Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(16401);
+  let obj = displayType(16408);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(16401);
+  const obj2 = displayType(16408);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
   const callback = react.useCallback(() => {
     const presentFailedToast = displayType(closure_2[11]).presentFailedToast;
@@ -111,7 +111,7 @@ export default function FamilyCenterActivitySection(displayType) {
     const intl = displayType(closure_2[12]).intl;
     presentFailedToast(intl.string(loadMore(closure_2[13]).Wu8BK2));
   }, []);
-  const obj3 = displayType(12591);
+  const obj3 = displayType(12599);
   const familyCenterActions = obj3.useFamilyCenterActions({ onError: callback });
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;

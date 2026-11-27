@@ -1,10 +1,10 @@
-// Module ID: 8831
-// Function ID: 8832
+// Module ID: 8832
+// Function ID: 8833
 // Name: validateComponent
 // Dependencies: [2118, 6395, 1112, 38, 2]
 // Exports: default
 
-// Module 8831 (validateComponent)
+// Module 8832 (validateComponent)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2118 */;
 import InteractionComponentUtils from "InteractionComponentUtils" /* 6395 */;

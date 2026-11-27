@@ -1,9 +1,9 @@
-// Module ID: 19219
-// Function ID: 19220
+// Module ID: 19235
+// Function ID: 19236
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4985, 1071, 21, 5043, 6822, 575, 13589, 504, 1256, 1112, 8818, 6779, 1186, 2]
+// Dependencies: [19, 17, 4985, 1071, 21, 5043, 6822, 575, 13597, 504, 1256, 1112, 8819, 6779, 1186, 2]
 
-// Module 19219 (MessageRequestPreview)
+// Module 19235 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -41,7 +41,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(13589);
+  let obj = channel(13597);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -91,7 +91,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8818)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8819)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;

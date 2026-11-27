@@ -1,15 +1,15 @@
-// Module ID: 15045
-// Function ID: 15046
+// Module ID: 15052
+// Function ID: 15053
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [21, 5257, 15046, 2120, 6769, 6144, 1112, 3495, 14118, 12625, 2]
+// Dependencies: [21, 5257, 15053, 2120, 6769, 6144, 1112, 3495, 14125, 12633, 2]
 // Exports: default
 
-// Module 15045 (CheckpointProfileEntrypoint)
+// Module 15052 (CheckpointProfileEntrypoint)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import CheckpointExperiments from "CheckpointExperiments" /* 6769 */;
-import openCheckpoint from "openCheckpoint" /* 12625 */;
+import openCheckpoint from "openCheckpoint" /* 12633 */;
 import size from "module_2" /* 2 */;
 
 function CheckpointProfileEntrypointRow(source) {
@@ -35,7 +35,7 @@ function CheckpointProfileEntrypointRow(source) {
   const TableRow = source(6144).TableRow;
   intl = source(1112).intl;
   intl2 = source(1112).intl;
-  ({ IconComponent: source(14118).ExperimentalCheckpointIcon });
+  ({ IconComponent: source(14125).ExperimentalCheckpointIcon });
   const Icon = source(6144).TableRow.Icon;
   fn = undefined;
   const tmp2 = jsx;
@@ -43,7 +43,7 @@ function CheckpointProfileEntrypointRow(source) {
     fn = () => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { mode: checkpointQAMode };
-      obj.openLazy(asyncRequire(15046, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
+      obj.openLazy(asyncRequire(15053, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
     };
   }
   return tmp2(TableRow, obj2);

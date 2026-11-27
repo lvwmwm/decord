@@ -1,14 +1,14 @@
-// Module ID: 11495
-// Function ID: 11496
+// Module ID: 11503
+// Function ID: 11504
 // Name: MessageRequestActionCreators
-// Dependencies: [5, 1071, 1285, 11496, 572, 6839, 2]
+// Dependencies: [5, 1071, 1285, 11504, 572, 6839, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 11495 (MessageRequestActionCreators)
+// Module 11503 (MessageRequestActionCreators)
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6839 */;
-import MessageRequestTypes from "MessageRequestTypes" /* 11496 */;
+import MessageRequestTypes from "MessageRequestTypes" /* 11504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let body = function _acceptMessageRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ let body = function _acceptMessageRequest() {
             const obj = closure_130_1(closure_130_2[4]);
             obj.dispatch(obj7);
             c4 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = 3;

@@ -1,19 +1,19 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9506
+// Function ID: 9507
 // Name: ProfileFrame
-// Dependencies: [19, 17, 9492, 9506, 21, 1654, 5043, 9507, 5730, 5253, 9504, 9509, 2]
+// Dependencies: [19, 17, 9493, 9507, 21, 1654, 5043, 9508, 5730, 5253, 9505, 9510, 2]
 // Exports: default
 
-// Module 9505 (ProfileFrame)
+// Module 9506 (ProfileFrame)
 import Fragment from "Fragment" /* 21 */;
 import _mod1654 from "module_1654" /* 1654 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 9492 */;
-import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 9509 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 9493 */;
+import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 9510 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 9506 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 9507 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -142,7 +142,7 @@ function LiveProfileFrame(frame) {
   c9 = undefined;
   c10 = undefined;
   const tmp = c10();
-  let obj = frame(9507);
+  let obj = frame(9508);
   const settled = obj.usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
   const items = [frame.layers, frameOrder, profileThemeType, filterLayer];
   const memo = profileThemeType.useMemo(() => {
@@ -177,11 +177,11 @@ function LiveProfileFrame(frame) {
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
       if (settled) {
-        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(9504)(frame, containerWidth));
+        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(9505)(frame, containerWidth));
         const items2 = [tmp.container, ];
         const obj4 = { opacity: sharedValue };
         items2[1] = obj4;
-        containerWidth(9504)(frame, containerWidth);
+        containerWidth(9505)(frame, containerWidth);
         const View = containerWidth(1654).View;
         return <View style={items2}>{memo.map((layer) => <ProfileFrameLayer key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={c8} overflowBottom={c9} overflowHorizontal={c10} containerWidth={containerWidth} containerHeight={dependencyMap} />)}</View>;
       }

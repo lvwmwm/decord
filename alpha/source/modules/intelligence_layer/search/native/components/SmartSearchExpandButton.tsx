@@ -1,9 +1,9 @@
-// Module ID: 19012
-// Function ID: 19013
+// Module ID: 19028
+// Function ID: 19029
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 575, 5043, 19011, 9816, 14055, 5259, 1112, 4469, 2]
+// Dependencies: [19, 17, 21, 575, 5043, 19027, 9817, 14062, 5259, 1112, 4469, 2]
 
-// Module 19012 (SmartSearchExpandButton)
+// Module 19028 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 575 */;
 import _modDef4469 from "module_4469" /* 4469 */;
 import HapticUtils from "HapticUtils" /* 5259 */;
@@ -42,12 +42,12 @@ const memoResult = react.memo(function SmartSearchExpandButton(arg0) {
   let tmp7;
   let tmp8;
   ({ isCollapsed, onPress } = arg0);
-  let obj = onPress(19011);
+  let obj = onPress(19027);
   const tmp3 = closure_10(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(9816).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(9817).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14055).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14062).ChevronSmallUpIcon;
   }
   const items = [onPress];
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp7(tmp8, obj3) };

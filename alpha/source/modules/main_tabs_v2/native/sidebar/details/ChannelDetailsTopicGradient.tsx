@@ -1,10 +1,10 @@
-// Module ID: 19062
-// Function ID: 19063
+// Module ID: 19078
+// Function ID: 19079
 // Name: ChannelDetailsTopicGradient
 // Dependencies: [19, 5607, 575, 671, 2]
 // Exports: useChannelTopicGradientBackground
 
-// Module 19062 (ChannelDetailsTopicGradient)
+// Module 19078 (ChannelDetailsTopicGradient)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import react from "react" /* 19 */;

@@ -1,21 +1,21 @@
-// Module ID: 9009
-// Function ID: 9010
+// Module ID: 9010
+// Function ID: 9011
 // Name: MaskedBadge
-// Dependencies: [19, 21, 5043, 575, 1186, 9010, 2]
+// Dependencies: [19, 21, 5043, 575, 1186, 9011, 2]
 // Exports: default
 
-// Module 9009 (MaskedBadge)
+// Module 9010 (MaskedBadge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9010 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9011 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 const jsx = Fragment.jsx;
-const obj = { maskStyle: { position: "relative", right: "channel_id" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
+const obj = { maskStyle: { position: "relative", right: "HermesInternal" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
 obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx");

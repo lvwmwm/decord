@@ -1,14 +1,14 @@
-// Module ID: 10199
-// Function ID: 10200
+// Module ID: 10200
+// Function ID: 10201
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2143, 4892, 4914, 4975, 1387, 5691, 4891, 10194, 10126, 6046, 1112, 6971, 6833, 10037, 10196, 2]
+// Dependencies: [5, 2143, 4892, 4914, 4975, 1387, 5691, 4891, 10195, 10127, 6046, 1112, 6971, 6833, 10038, 10197, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10199 (handlePressJoinActivity)
+// Module 10200 (handlePressJoinActivity)
 import intl11 from "intl" /* 1112 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 10126 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10194 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 10127 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
@@ -182,7 +182,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -211,7 +211,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp12) {
               c0 = 3;
               throw tmp12;

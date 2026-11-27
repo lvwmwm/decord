@@ -1,10 +1,10 @@
-// Module ID: 10135
-// Function ID: 10136
+// Module ID: 10136
+// Function ID: 10137
 // Name: StreamTile
-// Dependencies: [19, 17, 6813, 502, 1071, 5855, 21, 5043, 575, 5040, 5634, 1186, 504, 10136, 10138, 1112, 6807, 10143, 10153, 10145, 10133, 5303, 6152, 10155, 2]
+// Dependencies: [19, 17, 6813, 502, 1071, 5855, 21, 5043, 575, 5040, 5634, 1186, 504, 10137, 10139, 1112, 6807, 10144, 10154, 10146, 10134, 5303, 6152, 10156, 2]
 // Exports: default
 
-// Module 10135 (StreamTile)
+// Module 10136 (StreamTile)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
@@ -12,12 +12,12 @@ import Text_Text from "Text/Text" /* 5634 */;
 import Constants2 from "Constants" /* 5855 */;
 import Pressables from "Pressables" /* 6152 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10133 */;
-import useVideoStreamErrorDefault from "useVideoStreamError" /* 10136 */;
-import VideoEmptyStateDefault from "VideoEmptyState" /* 10138 */;
-import VideoRenderer from "VideoRenderer" /* 10143 */;
-import StreamQualityLiveIndicatorDefault from "StreamQualityLiveIndicator" /* 10153 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10155 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10134 */;
+import useVideoStreamErrorDefault from "useVideoStreamError" /* 10137 */;
+import VideoEmptyStateDefault from "VideoEmptyState" /* 10139 */;
+import VideoRenderer from "VideoRenderer" /* 10144 */;
+import StreamQualityLiveIndicatorDefault from "StreamQualityLiveIndicator" /* 10154 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10156 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
@@ -106,11 +106,11 @@ let closure_15 = react.memo(function StreamContent(participant) {
   if (null != stateFromStores) {
     const state = stateFromStores.state;
     if (ApplicationStreamStates.FAILED === state) {
-      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10138).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10139).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
       const tmp4Result = VideoEmptyStateDefault;
       return closure_10(tmp4Result, obj2);
     } else if (ApplicationStreamStates.ENDED === state) {
-      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10138).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10139).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
       const tmp4Result5 = VideoEmptyStateDefault;
       return closure_10(tmp4Result5, obj3);
     } else {
@@ -133,7 +133,7 @@ let closure_15 = react.memo(function StreamContent(participant) {
         }
       }
       if (null != tmp5) {
-        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10138).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp5 };
+        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10139).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp5 };
         const tmp4Result7 = VideoEmptyStateDefault;
         return closure_10(tmp4Result7, obj7);
       } else {
@@ -156,9 +156,9 @@ let closure_15 = react.memo(function StreamContent(participant) {
         const tmp25 = closure_10;
         const tmp4Result8 = VideoRendererDefault;
         if (ownerId === id) {
-          REMOTE_STREAM = tmp(10145).VideoSpinnerContext.SELF_STREAM;
+          REMOTE_STREAM = tmp(10146).VideoSpinnerContext.SELF_STREAM;
         } else {
-          REMOTE_STREAM = tmp(10145).VideoSpinnerContext.REMOTE_STREAM;
+          REMOTE_STREAM = tmp(10146).VideoSpinnerContext.REMOTE_STREAM;
         }
         const obj9 = { children: items1 };
         items1 = [tmp25(tmp4Result8, obj8), tmp9];

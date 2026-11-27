@@ -1,10 +1,10 @@
-// Module ID: 20002
-// Function ID: 20003
+// Module ID: 20027
+// Function ID: 20028
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 6883, 6927, 1071, 1390, 4871, 21, 5043, 575, 5618, 9799, 5622, 4989, 8136, 20003, 10831, 6779, 5634, 1112, 5798, 2188, 5641, 6115, 6152, 10681, 20004, 9537, 7488, 1413, 9704, 7274, 7440, 2]
+// Dependencies: [5, 32, 19, 17, 6883, 6927, 1071, 1390, 4871, 21, 5043, 575, 5618, 9800, 5622, 4989, 8137, 20028, 10832, 6779, 5634, 1112, 5798, 2188, 5641, 6115, 6152, 10682, 20029, 9538, 7488, 1413, 9705, 7274, 7440, 2]
 // Exports: default
 
-// Module 20002 (GuildSettingsStickerCreate)
+// Module 20027 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
@@ -13,9 +13,9 @@ import UnicodeEmojisDefault from "UnicodeEmojis" /* 4989 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5618 */;
 import reactDefault from "react" /* 5622 */;
 import EmojiDefault from "Emoji" /* 7488 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9537 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 9799 */;
-import StickerDefault from "Sticker" /* 10681 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9538 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 9800 */;
+import StickerDefault from "Sticker" /* 10682 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -153,7 +153,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -208,7 +208,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
               if ("Cancelled" === errorStr) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } else {
                 if (null != base64) {
                   if ("image/png" === mimeType) {
@@ -225,7 +225,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           closure_2 = tmp26;
@@ -257,7 +257,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "+95" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     let c4;
@@ -331,7 +331,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
                           c4 = 0;
                         }
                         c5 = 3;
-                        return { value: "HermesInternal", done: "+95" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp23) {
                       closure_3 = tmp23;
@@ -382,7 +382,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
                         let closure_4 = first1;
                         if (null == first1) {
                           c0 = 3;
-                          return { value: "HermesInternal", done: "+95" };
+                          return { value: "HermesInternal", done: null };
                         } else {
                           c1 = 2;
                           c0 = 1;
@@ -428,7 +428,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c0 = 3;
           throw tmp7;
@@ -594,7 +594,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     obj19 = { uri: first1 };
     tmp35Result = tmp35(first, obj18);
   } else {
-    tmp35Result = tmp35(tmp34(20004).StickerPlusIcon, { size: "lg" });
+    tmp35Result = tmp35(tmp34(20029).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1112).t["3BQmiC"]) };
@@ -623,7 +623,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     }
     tmp35Result2 = tmp35(tmp15Result5, obj22);
   } else {
-    tmp35Result2 = tmp35(tmp34(9704).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp35Result2 = tmp35(tmp34(9705).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   items5 = [tmp35Result2, ];
   const Text6 = tmp34(5634).Text;

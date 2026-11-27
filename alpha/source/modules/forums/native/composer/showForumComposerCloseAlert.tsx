@@ -1,10 +1,10 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10769
+// Function ID: 10770
 // Name: showForumComposerCloseAlert
 // Dependencies: [2019, 5257, 6048, 6052, 1112, 2]
 // Exports: default
 
-// Module 10768 (showForumComposerCloseAlert)
+// Module 10769 (showForumComposerCloseAlert)
 import intl5 from "intl" /* 1112 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2019 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;

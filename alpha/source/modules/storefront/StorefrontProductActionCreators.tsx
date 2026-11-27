@@ -1,16 +1,16 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11612
+// Function ID: 11613
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2189, 11601, 6333, 1071, 11605, 572, 5803, 5793, 11602, 2]
+// Dependencies: [5, 2189, 11609, 6333, 1071, 11613, 572, 5803, 5793, 11610, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus, shouldFetchProductBySku
 
-// Module 11604 (StorefrontProductActionCreators)
+// Module 11612 (StorefrontProductActionCreators)
 import Constants from "Constants" /* 1071 */;
-import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 11602 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 11605 */;
+import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 11610 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 11613 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 11601 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 11609 */;
 import StorefrontProductRecord from "StorefrontProductRecord" /* 6333 */;
 import size from "module_2" /* 2 */;
 

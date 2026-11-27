@@ -1,10 +1,10 @@
-// Module ID: 20010
-// Function ID: 20011
+// Module ID: 20035
+// Function ID: 20036
 // Name: SoundboardCreationUtils
-// Dependencies: [32, 5, 1112, 6047, 10701, 1379, 10702, 20011, 1148, 9494, 10406, 7544, 5257, 20012, 2120, 20014, 2]
+// Dependencies: [32, 5, 1112, 6047, 10702, 1379, 10703, 20036, 1148, 9495, 10407, 7544, 5257, 20037, 2120, 20039, 2]
 // Exports: createSoundboardSound, showAddSoundboardSoundOptions
 
-// Module 20010 (SoundboardCreationUtils)
+// Module 20035 (SoundboardCreationUtils)
 import intl5 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
@@ -53,7 +53,7 @@ let obj = function _pickSoundboardSoundFile() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -457,7 +457,7 @@ export function showAddSoundboardSoundOptions(guildId) {
     onPress() {
       obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId, analyticsSource: "guild_settings_record" };
-      return obj.openLazy(asyncRequire(20012, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
+      return obj.openLazy(asyncRequire(20037, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
     }
   };
   intl2 = require("intl").intl;
@@ -480,7 +480,7 @@ export function showAddSoundboardSoundOptions(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -515,7 +515,7 @@ export function showAddSoundboardSoundOptions(guildId) {
             tmp4(c2[15])(obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

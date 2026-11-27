@@ -1,8 +1,8 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12698
+// Function ID: 12699
 // Dependencies: [2]
 
-// Module 12690
+// Module 12698
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_base_03_chrome.webp.js");

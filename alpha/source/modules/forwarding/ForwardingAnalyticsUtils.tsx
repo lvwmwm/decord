@@ -1,10 +1,10 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8941
+// Function ID: 8942
 // Name: ForwardingAnalyticsUtils
 // Dependencies: [19, 4892, 1071, 1256, 6013, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
 
-// Module 8940 (ForwardingAnalyticsUtils)
+// Module 8941 (ForwardingAnalyticsUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

@@ -1,10 +1,10 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 13129
+// Function ID: 13130
 // Name: CommandDetailsOverflowMenu
-// Dependencies: [19, 21, 4868, 1112, 7538, 5724, 11081, 9067, 7944, 7746, 2]
+// Dependencies: [19, 21, 4868, 1112, 7538, 5724, 11082, 9068, 7944, 7746, 2]
 // Exports: default
 
-// Module 13121 (CommandDetailsOverflowMenu)
+// Module 13129 (CommandDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
@@ -29,11 +29,11 @@ export default function CommandDetailsOverflowMenu(commandId) {
               const obj2 = ToastUtils;
               obj2.presentIdCopied();
             },
-        IconComponent: commandId(11081).IdIcon
+        IconComponent: commandId(11082).IdIcon
       };
       intl = tmp(1112).intl;
       const items = [obj];
-      return jsx(commandId(9067).ContextMenu, {
+      return jsx(commandId(9068).ContextMenu, {
         items,
         children(ref) {
               ref = ref.ref;

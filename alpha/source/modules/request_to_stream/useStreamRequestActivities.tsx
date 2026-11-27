@@ -1,12 +1,12 @@
-// Module ID: 14922
-// Function ID: 14923
+// Module ID: 14929
+// Function ID: 14930
 // Name: useStreamRequestActivities
-// Dependencies: [19, 502, 6014, 7654, 7768, 8717, 504, 2]
+// Dependencies: [19, 502, 6014, 7654, 7768, 8718, 504, 2]
 // Exports: default, getStreamRequestActivities
 
-// Module 14922 (useStreamRequestActivities)
+// Module 14929 (useStreamRequestActivities)
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7768 */;
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8717 */;
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8718 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 6014 */;

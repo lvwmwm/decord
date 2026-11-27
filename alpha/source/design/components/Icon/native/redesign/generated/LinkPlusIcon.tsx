@@ -1,14 +1,14 @@
-// Module ID: 18568
-// Function ID: 18569
+// Module ID: 18579
+// Function ID: 18580
 // Name: LinkPlusIcon
-// Dependencies: [19, 21, 575, 5729, 18569, 2]
+// Dependencies: [19, 21, 575, 5729, 18580, 2]
 // Exports: LinkPlusIcon
 
-// Module 18568 (LinkPlusIcon)
+// Module 18579 (LinkPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 18569 */;
+import AssetRegistry from "AssetRegistry" /* 18580 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

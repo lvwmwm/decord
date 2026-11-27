@@ -1,18 +1,18 @@
-// Module ID: 17384
-// Function ID: 17385
+// Module ID: 17391
+// Function ID: 17392
 // Name: PhoenixSettingsScreen
-// Dependencies: [5, 32, 19, 17, 1387, 1071, 1389, 21, 5043, 575, 9101, 6380, 9695, 1112, 4729, 1379, 5641, 14303, 9638, 1629, 17378, 504, 2109, 17380, 17385, 6115, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 1071, 1389, 21, 5043, 575, 9102, 6380, 9696, 1112, 4729, 1379, 5641, 14310, 9639, 1629, 17385, 504, 2109, 17387, 17392, 6115, 5634, 2]
 // Exports: default
 
-// Module 17384 (PhoenixSettingsScreen)
+// Module 17391 (PhoenixSettingsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1389 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9101 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9695 */;
-import switchToPhoenix from "switchToPhoenix" /* 17385 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9102 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9696 */;
+import switchToPhoenix from "switchToPhoenix" /* 17392 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -81,7 +81,7 @@ export default function PhoenixSettingsScreen() {
     ({ paddingBottom: bottom + nativeDefault.space.PX_16 });
     return items;
   }, items);
-  let obj2 = bottom(17378);
+  let obj2 = bottom(17385);
   const requiresNitro = obj2.useConfig({ location: "PhoenixSettingsScreen" }, { autoTrackExposure: false }).requiresNitro;
   let obj3 = require("get initialized");
   const items1 = [UserStore];
@@ -107,7 +107,7 @@ export default function PhoenixSettingsScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ export default function PhoenixSettingsScreen() {
           c4 = 0;
           c2(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         closure_3 = tmp19;
@@ -192,7 +192,7 @@ export default function PhoenixSettingsScreen() {
     } else {
       obj7 = { variant: "primary", icon: tmp20(FireIcon, obj8), text: intl5.string(tmp2(4729).vVxb4Y), loading: tmp9, onPress: callback1 };
       obj8 = { size: "sm", color: bottom(575).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-      FireIcon = tmp5(14303).FireIcon;
+      FireIcon = tmp5(14310).FireIcon;
       intl5 = tmp5(1112).intl;
     }
     obj5.action = closure_10(Button2, obj7);
@@ -203,7 +203,7 @@ export default function PhoenixSettingsScreen() {
     const intl2 = tmp5(1112).intl;
     obj5.body = intl2.string(bottom(4729)["4AA4MK"]);
     tmp15 = closure_10;
-    const obj9 = { variant: "expressive", icon: bottom(9638), text: intl3.string(bottom(4729).SdwcaZ), onPress: openNitroUpgrade };
+    const obj9 = { variant: "expressive", icon: bottom(9639), text: intl3.string(bottom(4729).SdwcaZ), onPress: openNitroUpgrade };
     const Button = tmp5(5641).Button;
     intl3 = tmp5(1112).intl;
     obj5.action = closure_10(Button, obj9);

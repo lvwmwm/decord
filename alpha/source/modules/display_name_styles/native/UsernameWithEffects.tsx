@@ -1,9 +1,9 @@
-// Module ID: 9808
-// Function ID: 9809
+// Module ID: 9809
+// Function ID: 9810
 // Name: UsernameWithEffects
-// Dependencies: [19, 17, 1396, 21, 1398, 5043, 575, 1359, 9809, 6771, 6772, 8713, 5607, 9810, 1395, 5634, 5209, 9813, 1255, 2]
+// Dependencies: [19, 17, 1396, 21, 1398, 5043, 575, 1359, 9810, 6771, 6772, 8714, 5607, 9811, 1395, 5634, 5209, 9814, 1255, 2]
 
-// Module 9808 (UsernameWithEffects)
+// Module 9809 (UsernameWithEffects)
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
@@ -120,7 +120,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   let STATIC = userName.effectDisplayType;
   ({ userId, guildId } = userName);
   if (STATIC === undefined) {
-    STATIC = userName(9809).EffectDisplayType.STATIC;
+    STATIC = userName(9810).EffectDisplayType.STATIC;
   }
   ({ defaultColor, containerStyle, ignoreDisabledStylesSetting, pendingDisplayNameStyles } = userName);
   if (ignoreDisabledStylesSetting === undefined) {
@@ -131,7 +131,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   const tmp7 = num2(6771)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
   let obj = userName(6772);
   const displayNameStylesEnabled = obj.useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
-  const obj2 = userName(8713);
+  const obj2 = userName(8714);
   const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: tmp7, ignoreDisabledStylesSetting });
   let tmp11;
   if (null != displayNameStylesFont) {
@@ -155,7 +155,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   const token = tmp8Result.useToken(tmp5(575).colors.BACKGROUND_BASE_LOW);
   const tmp8Result6 = userName(5607);
   const token1 = tmp8Result6.useToken(tmp5(575).colors.WHITE);
-  const tmp8Result7 = userName(9810);
+  const tmp8Result7 = userName(9811);
   const displayNameStylesAccessibleColors = tmp8Result7.useDisplayNameStylesAccessibleColors({ displayNameStyles: tmp7, backgroundColor: token });
   let first;
   if (displayNameStylesAccessibleColors.length > 0) {
@@ -230,7 +230,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
   const tmp27Result = tmp27(str, num2);
   if (displayNameStylesEnabled) {
     if (null != tmp7) {
-      if (STATIC !== userName(9809).EffectDisplayType.PLAIN) {
+      if (STATIC !== userName(9810).EffectDisplayType.PLAIN) {
         if (null != colorVariants) {
           let layoutImpact;
           const items1 = [merged.style, tmp12];
@@ -239,7 +239,7 @@ const memoResult = react.memo(function UsernameWithEffects(userName) {
             layoutImpact = tmp27Result.layoutImpact;
           }
           if (effectId === userName(1398).DisplayNameEffect.GUMMY) {
-            const tmp5Result = num2(9813);
+            const tmp5Result = num2(9814);
             const tmp8Result10 = userName(5209);
             let str3 = tmp8Result10.getNodeText(userName);
             const tmp65 = closure_9;

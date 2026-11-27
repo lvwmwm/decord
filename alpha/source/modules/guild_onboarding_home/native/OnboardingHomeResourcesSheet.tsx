@@ -1,16 +1,16 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18425
+// Function ID: 18426
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 18416, 21, 5607, 575, 18417, 13232, 5257, 7546, 7548, 1413, 5730, 2]
+// Dependencies: [19, 18423, 21, 5607, 575, 18424, 13240, 5257, 7546, 7548, 1413, 5730, 2]
 // Exports: default
 
-// Module 18418 (OnboardingHomeResourcesSheet)
+// Module 18425 (OnboardingHomeResourcesSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13232 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18416 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 18417 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13240 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18423 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 18424 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

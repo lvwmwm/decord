@@ -1,9 +1,9 @@
-// Module ID: 8950
-// Function ID: 8951
+// Module ID: 8951
+// Function ID: 8952
 // Name: UserSearchManager
-// Dependencies: [4896, 1406, 4892, 4955, 4985, 1387, 1071, 5099, 1405, 1269, 7475, 8951, 1255, 1242, 12, 11, 2]
+// Dependencies: [4896, 1406, 4892, 4955, 4985, 1387, 1071, 5099, 1405, 1269, 7475, 8952, 1255, 1242, 12, 11, 2]
 
-// Module 8950 (UserSearchManager)
+// Module 8951 (UserSearchManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,7 +12,7 @@ import GlobalUtils from "GlobalUtils" /* 1255 */;
 import FlagUtilsAll from "FlagUtils" /* 1405 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
-import _mod8951 from "module_8951" /* 8951 */;
+import _mod8952 from "module_8952" /* 8952 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
@@ -451,7 +451,7 @@ class UserSearchManager extends AutomaticLifecycleManager {
     applyArgumentsResult._handleConnectionOpenSupplemental = function _handleConnectionOpenSupplemental(guilds) {
       guilds = guilds.guilds;
       const timerId = setTimeout(() => {
-        const f138035 = (activity_instances) => {
+        const f138490 = (activity_instances) => {
           let closure_0 = activity_instances;
           const items = [];
           activity_instances = activity_instances.activity_instances;
@@ -510,8 +510,8 @@ class UserSearchManager extends AutomaticLifecycleManager {
           return items;
         });
         const obj2 = _modDef12;
-        let items = [...obj2.flatMap(guilds, f138035)];
-        obj2.flatMap(guilds, f138035);
+        let items = [...obj2.flatMap(guilds, f138490)];
+        obj2.flatMap(guilds, f138490);
         require.updateUsers(items, "connection_open_supplemental");
       }, 3000);
     };
@@ -914,7 +914,7 @@ class UserSearchManager extends AutomaticLifecycleManager {
       _worker.terminate();
       self._worker = null;
     }
-    self._worker = _mod8951;
+    self._worker = _mod8952;
   }
   updateUsers(arr, action) {
     const _worker = this._worker;

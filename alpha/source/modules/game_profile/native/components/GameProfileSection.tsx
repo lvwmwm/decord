@@ -1,16 +1,16 @@
-// Module ID: 14187
-// Function ID: 14188
+// Module ID: 14194
+// Function ID: 14195
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 5043, 575, 14188, 5634, 5641, 1112, 7558, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 14195, 5634, 5641, 1112, 7558, 2]
 // Exports: GameProfileSectionSkeleton, default
 
-// Module 14187 (GameProfileSection)
+// Module 14194 (GameProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7558 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 14188 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 14195 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

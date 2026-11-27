@@ -1,17 +1,17 @@
-// Module ID: 14306
-// Function ID: 14307
+// Module ID: 14313
+// Function ID: 14314
 // Name: GuildProfileGamesActionSheet
-// Dependencies: [19, 17, 21, 8745, 8754, 6144, 14301, 5043, 14305, 8724, 1112, 5257, 8723, 2120, 5271, 5275, 6140, 2]
+// Dependencies: [19, 17, 21, 8746, 8755, 6144, 14308, 5043, 14312, 8725, 1112, 5257, 8724, 2120, 5271, 5275, 6140, 2]
 // Exports: default
 
-// Module 14306 (GuildProfileGamesActionSheet)
+// Module 14313 (GuildProfileGamesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import TableRow2 from "TableRow" /* 6144 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8745 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8746 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8755 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -43,9 +43,9 @@ export default function GuildProfileGamesActionSheet(profile) {
   const id = profile.id;
   const gameActivity = profile.gameActivity;
   const tmp = closure_7();
-  let obj = id(14305);
+  let obj = id(14312);
   const allGuildProfileGames = obj.useAllGuildProfileGames(profile);
-  const obj2 = id(8724);
+  const obj2 = id(8725);
   const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;
   const name = profile.name;
   const intl = id(1112).intl;
@@ -56,7 +56,7 @@ export default function GuildProfileGamesActionSheet(profile) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { guildId: id };
-    const tmp2 = asyncRequire(8723, dependencyMap.paths);
+    const tmp2 = asyncRequire(8724, dependencyMap.paths);
     openLazy(tmp2, "GuildProfileActionSheet:" + id, obj);
   }, items);
   const BottomSheet = id(5271).BottomSheet;

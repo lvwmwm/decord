@@ -1,19 +1,16 @@
 // Module ID: 15517
 // Function ID: 15518
-// Dependencies: [15503]
+// Dependencies: [15510]
 
 // Module 15517
-import _mod15503 from "module_15503" /* 15503 */;
+import _mod15510 from "module_15510" /* 15510 */;
 
 
 export default (arg0, arg1) => {
-  const tmp = _mod15503(arg0, arg1);
-  let prerelease = null;
+  const tmp = _mod15510(arg0, arg1);
+  let version = null;
   if (tmp) {
-    prerelease = null;
-    if (tmp.prerelease.length) {
-      prerelease = tmp.prerelease;
-    }
+    version = tmp.version;
   }
-  return prerelease;
+  return version;
 };

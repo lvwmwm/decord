@@ -1,13 +1,13 @@
-// Module ID: 19344
-// Function ID: 19345
+// Module ID: 19360
+// Function ID: 19361
 // Name: CutoutImage
-// Dependencies: [32, 19, 21, 1269, 7946, 5730, 14933, 2]
+// Dependencies: [32, 19, 21, 1269, 7946, 5730, 14940, 2]
 
-// Module 19344 (CutoutImage)
+// Module 19360 (CutoutImage)
 import v1 from "v1" /* 1269 */;
 import FastImageDefault from "FastImage" /* 5730 */;
 import inlineStylesDefault from "inlineStyles" /* 7946 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 14933 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 14940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

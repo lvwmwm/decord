@@ -1,10 +1,10 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13668
+// Function ID: 13669
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 4914, 13651, 21, 5043, 5597, 575, 504, 5618, 7477, 5792, 7052, 5634, 1112, 7273, 1186, 5641, 13652, 13660, 7191, 7355, 5622, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 13658, 21, 5043, 5597, 575, 504, 5618, 7477, 5792, 7052, 5634, 1112, 7273, 1186, 5641, 13659, 13667, 7191, 7355, 5622, 2]
 // Exports: default
 
-// Module 13661 (GuildDirectoryNicknameUpsellModal)
+// Module 13668 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
@@ -15,7 +15,7 @@ import reactDefault from "react" /* 5622 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import GuildIcon from "GuildIcon" /* 7052 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
-import Constants from "Constants" /* 13651 */;
+import Constants from "Constants" /* 13658 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -74,7 +74,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -122,7 +122,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_2 = tmp25;

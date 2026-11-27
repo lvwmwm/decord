@@ -1,10 +1,10 @@
-// Module ID: 8554
-// Function ID: 8555
+// Module ID: 8555
+// Function ID: 8556
 // Name: AddMembersActionSheet
-// Dependencies: [5, 109, 32, 19, 17, 4955, 4949, 4914, 1387, 7842, 1082, 21, 5043, 575, 4980, 5618, 5668, 504, 8526, 5052, 1112, 1186, 5634, 8555, 5275, 7482, 8560, 6990, 7941, 8565, 5659, 6801, 8527, 5724, 5257, 5271, 7507, 5641, 2]
+// Dependencies: [5, 109, 32, 19, 17, 4955, 4949, 4914, 1387, 7842, 1082, 21, 5043, 575, 4980, 5618, 5668, 504, 8527, 5052, 1112, 1186, 5634, 8556, 5275, 7482, 8561, 6990, 7941, 8566, 5659, 6801, 8528, 5724, 5257, 5271, 7507, 5641, 2]
 // Exports: default
 
-// Module 8554 (AddMembersActionSheet)
+// Module 8555 (AddMembersActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl9 from "intl" /* 1112 */;
@@ -41,7 +41,7 @@ let obj4;
 let obj5;
 let size;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(8526);
+const ChannelPermissionsUtilsAll = tmp10(8527);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -249,7 +249,7 @@ class AddMembersBody {
       }
     };
     const tmp31 = emptyStateInActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
-    tmp8Result = tmp8(8560);
+    tmp8Result = tmp8(8561);
     intl5 = tmp12(1112).intl;
     intl6 = tmp12(1112).intl;
     const items10 = [closure_17(c8, obj9), , ];
@@ -270,7 +270,7 @@ class AddMembersBody {
         if (0 === membersRows.length) {
           const obj13 = { children: closure_17(EmptyState, obj14) };
           const merged1 = Object.assign(merged);
-          obj14 = { Illustration: tmp12(8565).NoResultsAlt, style: items11, bodyStyle: tmp4.emptyStateText, body: intl8.format(tmp12(1112).t.ErpIY3, obj15) };
+          obj14 = { Illustration: tmp12(8566).NoResultsAlt, style: items11, bodyStyle: tmp4.emptyStateText, body: intl8.format(tmp12(1112).t.ErpIY3, obj15) };
           EmptyState = tmp12(1186).EmptyState;
           items11 = [tmp4.emptyState, ];
           if (emptyStateInActionSheet) {
@@ -417,7 +417,7 @@ export default function AddMembersActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -484,7 +484,7 @@ export default function AddMembersActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           let closure_2 = tmp16;

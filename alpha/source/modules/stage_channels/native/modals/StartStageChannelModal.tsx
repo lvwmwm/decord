@@ -1,10 +1,10 @@
-// Module ID: 14329
-// Function ID: 14330
+// Module ID: 14336
+// Function ID: 14337
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 4897, 6800, 1071, 4898, 21, 5043, 575, 6130, 6152, 1112, 1186, 7444, 8627, 7052, 504, 7562, 8088, 5634, 12539, 14330, 14331, 5604, 1256, 2019, 7839, 7566, 5792, 13182, 14332, 7869, 5641, 7480, 7048, 2]
+// Dependencies: [5, 32, 19, 17, 4897, 6800, 1071, 4898, 21, 5043, 575, 6130, 6152, 1112, 1186, 7444, 8628, 7052, 504, 7562, 8088, 5634, 12547, 14337, 14338, 5604, 1256, 2019, 7839, 7566, 5792, 13190, 14339, 7869, 5641, 7480, 7048, 2]
 // Exports: default
 
-// Module 14329 (StartStageChannelModal)
+// Module 14336 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -19,7 +19,7 @@ import GuildIcon from "GuildIcon" /* 7052 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7444 */;
 import HotspotStore2 from "HotspotStore" /* 7562 */;
 import _mod8088 from "module_8088" /* 8088 */;
-import StageSparkleDefault from "StageSparkle" /* 8627 */;
+import StageSparkleDefault from "StageSparkle" /* 8628 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -201,7 +201,7 @@ export default function StartStageChannelModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -291,7 +291,7 @@ export default function StartStageChannelModal(arg0) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp61) {
           if (0 === c3) {
             c5 = 3;

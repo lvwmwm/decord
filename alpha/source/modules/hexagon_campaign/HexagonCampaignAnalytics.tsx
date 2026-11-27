@@ -1,16 +1,16 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 16067
+// Function ID: 16068
 // Name: HexagonCampaignAnalytics
-// Dependencies: [5, 19, 5068, 1071, 8382, 6878, 8392, 8248, 1256, 2]
+// Dependencies: [5, 19, 5068, 1071, 8383, 6878, 8393, 8249, 1256, 2]
 // Exports: trackHexagonCampaignContentClicked, trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
 
-// Module 16060 (HexagonCampaignAnalytics)
+// Module 16067 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AdCreativeType from "AdCreativeType" /* 6878 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 8248 */;
-import AnalyticsActions from "AnalyticsActions" /* 8382 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8249 */;
+import AnalyticsActions from "AnalyticsActions" /* 8383 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8393 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
@@ -38,7 +38,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _trackHexagonCampaignContentClicked() {
               obj5.sourceQuestContent = sourceQuestContent;
               trackAdContentEvent(obj5);
               c7 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp12) {

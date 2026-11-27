@@ -1,17 +1,17 @@
-// Module ID: 17121
-// Function ID: 17122
+// Module ID: 17128
+// Function ID: 17129
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10595, 21, 5043, 575, 504, 11, 8088, 6115, 6140, 7549, 1112, 4873, 2]
+// Dependencies: [19, 10596, 21, 5043, 575, 504, 11, 8088, 6115, 6140, 7549, 1112, 4873, 2]
 // Exports: default
 
-// Module 17121 (UserSettingsCommunityNotifications)
+// Module 17128 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import TableRowGroup2 from "TableRowGroup" /* 6140 */;
 import TableSwitchRow3 from "TableSwitchRow" /* 7549 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10595 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10596 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

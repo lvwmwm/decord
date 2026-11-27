@@ -1,16 +1,16 @@
-// Module ID: 10754
-// Function ID: 10755
+// Module ID: 10755
+// Function ID: 10756
 // Name: FavoritesCleanup
-// Dependencies: [5, 4896, 4892, 4914, 4975, 6932, 4895, 4905, 1082, 1195, 10755, 1088, 6984, 2]
+// Dependencies: [5, 4896, 4892, 4914, 4975, 6932, 4895, 4905, 1082, 1195, 10756, 1088, 6984, 2]
 // Exports: getAutoAddedThreadsCategoryIds, getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10754 (FavoritesCleanup)
+// Module 10755 (FavoritesCleanup)
 import Constants from "Constants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6984 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10755 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10756 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
@@ -61,7 +61,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c1 = 3;

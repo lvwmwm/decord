@@ -1,22 +1,22 @@
-// Module ID: 8750
-// Function ID: 8751
+// Module ID: 8751
+// Function ID: 8752
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8751, 21, 5043, 575, 5641, 1112, 8724, 8752, 5722, 8754, 8719, 7176, 1654, 8749, 8762, 5253, 1707, 8763, 8768, 8785, 5257, 8787, 5271, 5275, 8788, 8786, 8790, 14248, 14258, 14259, 5606, 2]
+// Dependencies: [32, 19, 17, 8752, 21, 5043, 575, 5641, 1112, 8725, 8753, 5722, 8755, 8720, 7176, 1654, 8750, 8763, 5253, 1707, 8764, 8769, 8786, 5257, 8788, 5271, 5275, 8789, 8787, 8791, 14255, 14265, 14266, 5606, 2]
 // Exports: default
 
-// Module 8750 (GameProfileScreen)
+// Module 8751 (GameProfileScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
 import components_Button_Button from "components/Button/Button" /* 5641 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8749 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8768 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8787 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8750 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8755 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8769 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8788 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 8751 */;
+import GameProfileStore from "GameProfileStore" /* 8752 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

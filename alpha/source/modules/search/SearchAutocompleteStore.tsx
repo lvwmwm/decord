@@ -1,9 +1,9 @@
-// Module ID: 19052
-// Function ID: 19053
+// Module ID: 19068
+// Function ID: 19069
 // Name: SearchAutocompleteStore
-// Dependencies: [4892, 4955, 4914, 4946, 5100, 1387, 13296, 1071, 6986, 13293, 8950, 5099, 5933, 6990, 6869, 13297, 13294, 504, 572, 2]
+// Dependencies: [4892, 4955, 4914, 4946, 5100, 1387, 13304, 1071, 6986, 13301, 8951, 5099, 5933, 6990, 6869, 13305, 13302, 504, 572, 2]
 
-// Module 19052 (SearchAutocompleteStore)
+// Module 19068 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserUtilsDefault from "UserUtils" /* 5099 */;
@@ -11,17 +11,17 @@ import isEqualDefault from "isEqual" /* 5933 */;
 import AutocompleteUtils from "AutocompleteUtils" /* 6869 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6986 */;
 import GuildUtilsDefault from "GuildUtils" /* 6990 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 8950 */;
-import SearchUtils from "SearchUtils" /* 13293 */;
-import SearchTokens from "SearchTokens" /* 13294 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13297 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8951 */;
+import SearchUtils from "SearchUtils" /* 13301 */;
+import SearchTokens from "SearchTokens" /* 13302 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13305 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import StreamerModeStore from "StreamerModeStore" /* 5100 */;
 import UserStore from "UserStore" /* 1387 */;
-import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13296 */;
+import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13304 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16076
+// Function ID: 16077
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6976, 21, 5043, 575, 504, 16070, 1186, 9420, 1359, 7195, 7247, 10761, 2]
+// Dependencies: [19, 17, 6976, 21, 5043, 575, 504, 16077, 1186, 9421, 1359, 7195, 7247, 10762, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 16069 (BackIconWithBadge)
+// Module 16076 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7195 */;
 import XSmallIcon from "XSmallIcon" /* 7247 */;
-import ClipView from "ClipView" /* 9420 */;
-import XLargeIcon from "XLargeIcon" /* 10761 */;
+import ClipView from "ClipView" /* 9421 */;
+import XLargeIcon from "XLargeIcon" /* 10762 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6976 */;
 import Fragment from "Fragment" /* 21 */;

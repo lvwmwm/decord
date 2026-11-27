@@ -1,10 +1,10 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 9133
+// Function ID: 9134
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 5043, 575, 5252, 9133, 9135, 1112, 5634, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5252, 9134, 9136, 1112, 5634, 2]
 // Exports: PremiumPill
 
-// Module 9132 (PremiumPill)
+// Module 9133 (PremiumPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

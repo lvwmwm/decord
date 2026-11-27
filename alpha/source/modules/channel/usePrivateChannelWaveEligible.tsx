@@ -1,10 +1,10 @@
-// Module ID: 17766
-// Function ID: 17767
+// Module ID: 17773
+// Function ID: 17774
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [6391, 4985, 4899, 1071, 504, 11, 4865, 2169, 11820, 2]
+// Dependencies: [6391, 4985, 4899, 1071, 504, 11, 4865, 2169, 11828, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 17766 (usePrivateChannelWaveEligible)
+// Module 17773 (usePrivateChannelWaveEligible)
 import Constants from "Constants" /* 1071 */;
 import ChannelConstants from "ChannelConstants" /* 4899 */;
 import MessageStore from "MessageStore" /* 6391 */;

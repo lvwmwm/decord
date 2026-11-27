@@ -1,9 +1,9 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12050
+// Function ID: 12051
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 6389, 2189, 1406, 502, 4892, 7462, 4955, 4975, 6371, 1071, 21, 5043, 575, 5252, 6178, 1413, 5050, 1186, 7096, 5659, 5634, 1112, 6370, 12043, 7512, 8632, 12044, 12045, 12, 5607, 12046, 38, 5725, 5747, 12049, 5604, 8088, 7532, 504, 6372, 6991, 1256, 6013, 5257, 8109, 12050, 7747, 572, 6130, 7730, 2120, 5658, 12054, 5271, 12055, 7552, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 6389, 2189, 1406, 502, 4892, 7462, 4955, 4975, 6371, 1071, 21, 5043, 575, 5252, 6178, 1413, 5050, 1186, 7096, 5659, 5634, 1112, 6370, 12051, 7512, 8633, 12052, 12053, 12, 5607, 12054, 38, 5725, 5747, 12057, 5604, 8088, 7532, 504, 6372, 6991, 1256, 6013, 5257, 8109, 12058, 7747, 572, 6130, 7730, 2120, 5658, 12062, 5271, 12063, 7552, 5641, 2]
 
-// Module 12042 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 12050 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -29,7 +29,7 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7096 */;
 import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7532 */;
 import openUserSettings from "openUserSettings" /* 8109 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 12054 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 12062 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -939,7 +939,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f101554 = () => {
+    const f101795 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -981,7 +981,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -1011,7 +1011,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
               return obj;
             } else {
               c0 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             c0 = 3;
@@ -1046,8 +1046,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f101554);
-    _slicedToArray(react.useState(f101554), 2);
+    [tmp27, c16] = react.useState(f101795);
+    _slicedToArray(react.useState(f101795), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[17])();

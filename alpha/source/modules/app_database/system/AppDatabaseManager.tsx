@@ -1,13 +1,13 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8309
+// Function ID: 8310
 // Name: AppDatabaseManager
-// Dependencies: [32, 502, 3, 4938, 4922, 572, 8309, 2]
+// Dependencies: [32, 502, 3, 4938, 4922, 572, 8310, 2]
 
-// Module 8308 (AppDatabaseManager)
+// Module 8309 (AppDatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 4938 */;
-import actions2 from "actions" /* 8309 */;
+import actions2 from "actions" /* 8310 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

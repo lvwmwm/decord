@@ -1,14 +1,14 @@
-// Module ID: 12641
-// Function ID: 12642
+// Module ID: 12649
+// Function ID: 12650
 // Name: useCheckpointCompositeRevealStyle
-// Dependencies: [19, 12631, 1654, 5253, 2]
+// Dependencies: [19, 12639, 1654, 5253, 2]
 // Exports: default
 
-// Module 12641 (useCheckpointCompositeRevealStyle)
+// Module 12649 (useCheckpointCompositeRevealStyle)
 import _mod1654 from "module_1654" /* 1654 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import react_mod from "react" /* 19 */;
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12631 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12639 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

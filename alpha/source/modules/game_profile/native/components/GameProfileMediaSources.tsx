@@ -1,10 +1,10 @@
-// Module ID: 8803
-// Function ID: 8804
+// Module ID: 8804
+// Function ID: 8805
 // Name: GameProfileMediaSources
 // Dependencies: [1448, 5803, 2157, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 8803 (GameProfileMediaSources)
+// Module 8804 (GameProfileMediaSources)
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1448 */;
 import ImageProxyUtils from "ImageProxyUtils" /* 2157 */;
 import StoreUtils from "StoreUtils" /* 5803 */;

@@ -1,14 +1,14 @@
-// Module ID: 8769
-// Function ID: 8770
+// Module ID: 8770
+// Function ID: 8771
 // Name: SteamNeutralIcon
-// Dependencies: [19, 21, 575, 5729, 8770, 2]
+// Dependencies: [19, 21, 575, 5729, 8771, 2]
 // Exports: SteamNeutralIcon
 
-// Module 8769 (SteamNeutralIcon)
+// Module 8770 (SteamNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5729 */;
-import AssetRegistry from "AssetRegistry" /* 8770 */;
+import AssetRegistry from "AssetRegistry" /* 8771 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8723
-// Function ID: 8724
+// Module ID: 8724
+// Function ID: 8725
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 1071, 21, 5043, 575, 5252, 5607, 8724, 671, 8725, 14315, 14309, 5271, 5598, 5275, 5606, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 5252, 5607, 8725, 671, 8726, 14322, 14316, 5271, 5598, 5275, 5606, 2]
 // Exports: default
 
-// Module 8723 (GuildProfileActionSheet)
+// Module 8724 (GuildProfileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -14,8 +14,8 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
 import BottomSheetModal from "BottomSheetModal" /* 5275 */;
 import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5606 */;
-import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 8725 */;
-import GuildProfileCTADefault from "GuildProfileCTA" /* 14315 */;
+import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 8726 */;
+import GuildProfileCTADefault from "GuildProfileCTA" /* 14322 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const GuildProfileCreateTagUpsellDefault = tmp4(14309);
+const GuildProfileCreateTagUpsellDefault = tmp4(14316);
 let react = react_mod;
 const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;
@@ -51,7 +51,7 @@ export default function GuildProfileActionSheet(guildId) {
   let tmp = useThemeDefault();
   let obj = guildId(5607);
   const backgroundColor = obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_HOVER, tmp);
-  let obj2 = guildId(8724);
+  let obj2 = guildId(8725);
   const bottomSheetRef = obj2.useBottomSheetRef();
   ({ bottomSheetRef: c5, bottomSheetClose } = bottomSheetRef);
   let obj3 = guildId(5607);

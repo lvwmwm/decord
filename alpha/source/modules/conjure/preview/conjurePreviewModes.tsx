@@ -1,10 +1,10 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11467
+// Function ID: 11468
 // Name: conjurePreviewModes
-// Dependencies: [7678, 6935, 11458, 2]
+// Dependencies: [7678, 6935, 11468, 2]
 // Exports: previewBotInstallBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 11457 (conjurePreviewModes)
+// Module 11467 (conjurePreviewModes)
 import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 7678 */;
 import size from "module_2" /* 2 */;
 

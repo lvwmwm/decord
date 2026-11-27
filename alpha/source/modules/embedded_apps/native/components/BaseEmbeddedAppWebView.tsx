@@ -1,10 +1,10 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10230
+// Function ID: 10231
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [32, 5, 19, 5686, 1071, 21, 5043, 3, 10230, 10231, 7896, 10232, 10234, 1378, 10217, 10235, 10236, 1380, 10237, 10238, 1256, 563, 6046, 1112, 10244, 10208, 6831, 2]
+// Dependencies: [32, 5, 19, 5686, 1071, 21, 5043, 3, 10231, 10232, 7896, 10233, 10235, 1378, 10218, 10236, 10237, 1380, 10238, 10239, 1256, 563, 6046, 1112, 10245, 10209, 6831, 2]
 // Exports: BaseEmbeddedAppWebView
 
-// Module 10229 (BaseEmbeddedAppWebView)
+// Module 10230 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import URLUtilsDefault from "URLUtils" /* 1380 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
 import WebView2 from "WebView" /* 7896 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10230 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10231 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -352,7 +352,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               let c7;
@@ -460,7 +460,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                   c7 = 0;
                 }
                 c9 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp31) {
                 closure_6 = tmp31;
                 if (0 === c7) {

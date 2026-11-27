@@ -1,10 +1,10 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10823
+// Function ID: 10824
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 5043, 575, 10812, 10808, 1495, 5257, 5725, 1112, 10823, 7538, 5724, 5641, 5271, 5730, 6863, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 10813, 10809, 1495, 5257, 5725, 1112, 10824, 7538, 5724, 5641, 5271, 5730, 6863, 2]
 // Exports: default
 
-// Module 10822 (GIFPickerItemActionSheet)
+// Module 10823 (GIFPickerItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,8 +12,8 @@ import components_Button_Button from "components/Button/Button" /* 5641 */;
 import ToastUtils from "ToastUtils" /* 5724 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10808 */;
-import GifIcon from "GifIcon" /* 10823 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10809 */;
+import GifIcon from "GifIcon" /* 10824 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

@@ -1,20 +1,20 @@
-// Module ID: 19838
-// Function ID: 19839
+// Module ID: 19854
+// Function ID: 19855
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 8212, 21, 5043, 575, 1112, 2847, 5724, 6130, 12591, 563, 16387, 7888, 7890, 6115, 5634, 16388, 7047, 7191, 11618, 2]
+// Dependencies: [19, 17, 8213, 21, 5043, 575, 1112, 2847, 5724, 6130, 12599, 563, 16394, 7888, 7890, 6115, 5634, 16395, 7047, 7191, 11626, 2]
 // Exports: default
 
-// Module 19838 (ConnectGuardianShareModal)
+// Module 19854 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef2847 from "module_2847" /* 2847 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import NavigatorHeader from "NavigatorHeader" /* 7191 */;
-import Modal2 from "Modal" /* 11618 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16387 */;
+import Modal2 from "Modal" /* 11626 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16394 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8213 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ function ConnectGuardianShareScreen() {
     const arr = ModalActionCreatorsDefault;
     arr.pop();
   }, []);
-  const obj2 = getLinkCode(12591);
+  const obj2 = getLinkCode(12599);
   getLinkCode = obj2.useFamilyCenterActions({ onError: callback }).getLinkCode;
   const items = [FamilyCenterStore];
   const obj3 = getLinkCode(563);
@@ -78,7 +78,7 @@ function ConnectGuardianShareScreen() {
     let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      tmp11Result = tmp11(tmp2(16388).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(16395).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;

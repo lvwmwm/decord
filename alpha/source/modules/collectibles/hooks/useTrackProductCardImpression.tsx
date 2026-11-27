@@ -1,10 +1,10 @@
-// Module ID: 17507
-// Function ID: 17508
+// Module ID: 17514
+// Function ID: 17515
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 6311, 1071, 11214, 504, 9415, 2174, 6323, 1256, 2]
+// Dependencies: [19, 6311, 1071, 11215, 504, 9416, 2174, 6323, 1256, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 17507 (useTrackProductCardImpression)
+// Module 17514 (useTrackProductCardImpression)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;

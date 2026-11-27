@@ -1,24 +1,24 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 8923
+// Function ID: 8924
 // Name: ICYMIUtils
-// Dependencies: [5, 5775, 4896, 4892, 4914, 8918, 1071, 8917, 8923, 8927, 6393, 8928, 8590, 8929, 1112, 2]
+// Dependencies: [5, 5775, 4896, 4892, 4914, 8919, 1071, 8918, 8924, 8928, 6393, 8929, 8591, 8930, 1112, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
-// Module 8922 (ICYMIUtils)
+// Module 8923 (ICYMIUtils)
 import intl11 from "intl" /* 1112 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6393 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8590 */;
-import ICYMITypes from "ICYMITypes" /* 8917 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8923 */;
-import generateHydrationId from "generateHydrationId" /* 8927 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8928 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8929 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8591 */;
+import ICYMITypes from "ICYMITypes" /* 8918 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import generateHydrationId from "generateHydrationId" /* 8928 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8929 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8930 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import GuildStore from "GuildStore" /* 4914 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8918 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8919 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj = function _hydrateItems() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ let obj = function _hydrateItems() {
           return obj;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         c4 = 3;
         throw tmp19;
@@ -391,11 +391,11 @@ export function determineContentType(channel, message) {
       let IMAGE;
       obj = ForumPostMediaUtils;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        IMAGE = tmp6(8917).ContentType.IMAGE;
+        IMAGE = tmp6(8918).ContentType.IMAGE;
       } else {
         const tmp6Result = ForumPostMediaUtils;
         const result = tmp6Result.isValidVideoAttachment(message.attachments[0]);
-        const ContentType = tmp6(8917).ContentType;
+        const ContentType = tmp6(8918).ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
       }
       INTERESTING = IMAGE;

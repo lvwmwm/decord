@@ -1,10 +1,10 @@
-// Module ID: 9874
-// Function ID: 9875
+// Module ID: 9875
+// Function ID: 9876
 // Name: BadgeDetailsSheet
-// Dependencies: [5, 32, 19, 17, 5044, 1387, 9872, 6383, 1071, 5272, 21, 5043, 575, 5747, 5634, 1654, 9870, 504, 9875, 9876, 9877, 1707, 9878, 2153, 1391, 9879, 9888, 9866, 5257, 9873, 9867, 8109, 1112, 6159, 13852, 9856, 13857, 13860, 5641, 13861, 6388, 5253, 1629, 9864, 9871, 9865, 8724, 5602, 5271, 5275, 5606, 2]
+// Dependencies: [5, 32, 19, 17, 5044, 1387, 9873, 6383, 1071, 5272, 21, 5043, 575, 5747, 5634, 1654, 9871, 504, 9876, 9877, 9878, 1707, 9879, 2153, 1391, 9880, 9889, 9867, 5257, 9874, 9868, 8109, 1112, 6159, 13859, 9857, 13864, 13867, 5641, 13868, 6388, 5253, 1629, 9865, 9872, 9866, 8725, 5602, 5271, 5275, 5606, 2]
 // Exports: default
 
-// Module 9874 (BadgeDetailsSheet)
+// Module 9875 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _mod1654 from "module_1654" /* 1654 */;
@@ -14,17 +14,17 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5747 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 6388 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 9866 */;
-import BadgeUtils from "BadgeUtils" /* 9870 */;
-import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 9871 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 9873 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 9867 */;
+import BadgeUtils from "BadgeUtils" /* 9871 */;
+import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 9872 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 9874 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import UserStore from "UserStore" /* 1387 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 9872 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 9873 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
@@ -866,7 +866,7 @@ export default function BadgeDetailsSheet(badgeId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -897,7 +897,7 @@ export default function BadgeDetailsSheet(badgeId) {
             } else {
               closure_1_6(true);
               c2 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             c2 = 3;

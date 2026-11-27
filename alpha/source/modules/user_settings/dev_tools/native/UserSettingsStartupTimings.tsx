@@ -1,10 +1,10 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17197
+// Function ID: 17198
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1361, 1071, 21, 5043, 575, 5634, 5226, 1629, 10697, 504, 9, 8249, 8690, 7482, 6115, 6140, 7181, 1362, 6144, 12871, 2]
+// Dependencies: [5, 32, 19, 17, 1361, 1071, 21, 5043, 575, 5634, 5226, 1629, 10698, 504, 9, 8250, 8691, 7482, 6115, 6140, 7181, 1362, 6144, 12879, 2]
 // Exports: default
 
-// Module 17190 (UserSettingsStartupTimings)
+// Module 17197 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,8 +13,8 @@ import Stack_Stack from "Stack/Stack" /* 6115 */;
 import TableRowGroup6 from "TableRowGroup" /* 6140 */;
 import TableRow4 from "TableRow" /* 6144 */;
 import TableCheckboxRow from "TableCheckboxRow" /* 7181 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 10697 */;
-import ShareIcon from "ShareIcon" /* 12871 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 10698 */;
+import ShareIcon from "ShareIcon" /* 12879 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -109,7 +109,7 @@ export default function UserSettingsStartupTimings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -147,7 +147,7 @@ export default function UserSettingsStartupTimings() {
           const obj = tmp(c2[16]);
           obj.showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

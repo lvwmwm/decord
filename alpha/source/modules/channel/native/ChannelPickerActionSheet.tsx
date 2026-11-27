@@ -1,10 +1,10 @@
-// Module ID: 11763
-// Function ID: 11764
+// Module ID: 11771
+// Function ID: 11772
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4985, 1387, 21, 1629, 7547, 5257, 7507, 7253, 6155, 11764, 7546, 5275, 7251, 7096, 5659, 2]
+// Dependencies: [19, 4985, 1387, 21, 1629, 7547, 5257, 7507, 7253, 6155, 11772, 7546, 5275, 7251, 7096, 5659, 2]
 // Exports: default
 
-// Module 11763 (ChannelPickerActionSheet)
+// Module 11771 (ChannelPickerActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import useChannelName from "useChannelName" /* 5659 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7096 */;

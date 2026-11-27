@@ -1,10 +1,10 @@
-// Module ID: 19259
-// Function ID: 19260
+// Module ID: 19275
+// Function ID: 19276
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 4889, 21, 5043, 575, 5001, 5259, 5260, 572, 1654, 5253, 1707, 11075, 4876, 1186, 5626, 5634, 1112, 5104, 2]
+// Dependencies: [32, 19, 17, 4889, 21, 5043, 575, 5001, 5259, 5260, 572, 1654, 5253, 1707, 11076, 4876, 1186, 5626, 5634, 1112, 5104, 2]
 // Exports: default
 
-// Module 19259 (BurstReactionAnimationContainer)
+// Module 19275 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
@@ -208,7 +208,7 @@ function BurstReactionAnimationContainerInner() {
         }
     };
     items2 = [];
-    const tmp19 = first(11075);
+    const tmp19 = first(11076);
     items2[0] = tmp6(4876).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
     tmp16 = closure_8(tmp19, obj);
   }

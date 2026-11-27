@@ -1,9 +1,9 @@
-// Module ID: 9643
-// Function ID: 9644
+// Module ID: 9644
+// Function ID: 9645
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 5043, 575, 1629, 5052, 2019, 5257, 8506, 2120, 1112, 7198, 9004, 1379, 7191, 7751, 6140, 6144, 5634, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1629, 5052, 2019, 5257, 8507, 2120, 1112, 7198, 9005, 1379, 7191, 7751, 6140, 6144, 5634, 2]
 
-// Module 9643 (MessageRemindersCustomDurationModal)
+// Module 9644 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2120 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
-import HeaderShared from "HeaderShared" /* 9004 */;
+import HeaderShared from "HeaderShared" /* 9005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     const result = obj.dismissGlobalKeyboard();
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(8506, dependencyMap.paths);
+    const tmp4 = asyncRequire(8507, dependencyMap.paths);
     const intl = intl5.intl;
     const string = intl.string;
     const t = intl5.t;

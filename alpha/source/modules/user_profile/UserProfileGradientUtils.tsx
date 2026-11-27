@@ -1,10 +1,10 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9415
+// Function ID: 9416
 // Name: UserProfileGradientUtils
 // Dependencies: [32, 1071, 1089, 5041, 12, 5050, 671, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 9414 (UserProfileGradientUtils)
+// Module 9415 (UserProfileGradientUtils)
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1071 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
@@ -84,7 +84,7 @@ export function calculateOverlayedColor(secondaryColor, overlay) {
   let tmp10;
   let tmp8;
   let tmp9;
-  const f95873 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
+  const f96106 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
   const obj = utils_ColorUtils;
   const int2rgbArrayResult = obj.int2rgbArray(secondaryColor);
   if (null == overlay) {
@@ -100,8 +100,8 @@ export function calculateOverlayedColor(secondaryColor, overlay) {
       const items1 = [, , ];
       [arr2[0], arr2[1], arr2[2]] = int2rgbArrayResult;
       const alpha = parseStringResult.alpha;
-      [tmp8, tmp9, tmp10] = items.map(f95873);
-      _slicedToArray(items.map(f95873), 3);
+      [tmp8, tmp9, tmp10] = items.map(f96106);
+      _slicedToArray(items.map(f96106), 3);
       const _HermesInternal = HermesInternal;
       const tmpResult = utils_ColorUtils;
       return tmpResult.rgb2int("rgba(" + tmp8 + ", " + tmp9 + ", " + tmp10 + ")");

@@ -1,10 +1,10 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8450
+// Function ID: 8451
 // Name: PrivateChannelCallUtils
-// Dependencies: [5, 19, 5258, 6965, 4892, 4985, 4946, 1387, 1071, 1096, 7872, 21, 6833, 6129, 7835, 1107, 7394, 6838, 5257, 8450, 2120, 6130, 6797, 6047, 1112, 1256, 6380, 7873, 5228, 14355, 6048, 7849, 2]
+// Dependencies: [5, 19, 5258, 6965, 4892, 4985, 4946, 1387, 1071, 1096, 7872, 21, 6833, 6129, 7835, 1107, 7394, 6838, 5257, 8451, 2120, 6130, 6797, 6047, 1112, 1256, 6380, 7873, 5228, 14362, 6048, 7849, 2]
 // Exports: dismissVoiceChannelScreens, getVoiceChannelKey, getVoiceChannelKeyByChannelId, handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openChannelCallModal, openGuildVoiceModal, openVoiceChannelActionSheet, showGuardCallAlert
 
-// Module 8449 (PrivateChannelCallUtils)
+// Module 8450 (PrivateChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateConstants from "AgeGateConstants" /* 1096 */;
 import intl4 from "intl" /* 1112 */;
@@ -103,7 +103,7 @@ function guardPrivateCallForChannel(id, fn) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -133,7 +133,7 @@ function guardPrivateCallForChannel(id, fn) {
                 } else {
                   closure_128_0();
                   c2 = 3;
-                  return { value: "HermesInternal", done: "+95" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp8) {
                 c2 = 3;
@@ -202,7 +202,7 @@ export function openVoiceChannelActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { channel };
-  const tmp2 = asyncRequire(8450, dependencyMap.paths);
+  const tmp2 = asyncRequire(8451, dependencyMap.paths);
   openLazy(tmp2, "" + c18 + "-" + channel.id, obj);
 }
 export function hideVoiceChannelActionSheet(id) {
@@ -261,7 +261,7 @@ export function handleJoinCall(channel, flag) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ export function handleJoinCall(channel, flag) {
             return obj;
           } else if (!value) {
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           const tmp6 = closure_1_22;
           if (closure_128_1) {
@@ -308,7 +308,7 @@ export function handleJoinCall(channel, flag) {
           const obj3 = c1(c2[22]);
           const voiceChannel = obj3.selectVoiceChannel(closure_128_0.id, closure_128_1);
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp22) {
           c2 = 3;
           throw tmp22;
@@ -340,7 +340,7 @@ export function handleStartCall(channel, flag) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -377,7 +377,7 @@ export function handleStartCall(channel, flag) {
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           const tmp7 = closure_1_22;
           if (closure_129_1) {
@@ -403,7 +403,7 @@ export function handleStartCall(channel, flag) {
           }
           call(id, closure_129_1, tmp34, recipientId);
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp42) {
           c3 = 3;
           throw tmp42;
@@ -456,7 +456,7 @@ export function handleRedesignGroupDMCall(id) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -488,14 +488,14 @@ export function handleRedesignGroupDMCall(id) {
             return obj;
           } else if (!value) {
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           const obj2 = tmp3(c2[28]);
           obj2.dismissKeyboard();
           const obj3 = c1(c2[31]);
           obj3.call(closure_128_0.id, closure_128_1, true);
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp14) {
           c2 = 3;
           throw tmp14;
@@ -528,7 +528,7 @@ export function handleRedesignJoinCall(id) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -560,14 +560,14 @@ export function handleRedesignJoinCall(id) {
             return obj;
           } else if (!value) {
             c2 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
           const obj2 = tmp3(c2[28]);
           obj2.dismissKeyboard();
           const obj3 = c1(c2[22]);
           const voiceChannel = obj3.selectVoiceChannel(closure_128_0.id, closure_128_1);
           c2 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp16) {
           c2 = 3;
           throw tmp16;

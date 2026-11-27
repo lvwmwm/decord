@@ -1,10 +1,10 @@
-// Module ID: 19812
-// Function ID: 19813
+// Module ID: 19828
+// Function ID: 19829
 // Name: RedesignSkipAvatarUploadAlertModal
 // Dependencies: [19, 21, 6052, 1112, 6052, 2]
 // Exports: default
 
-// Module 19812 (RedesignSkipAvatarUploadAlertModal)
+// Module 19828 (RedesignSkipAvatarUploadAlertModal)
 import intl5 from "intl" /* 1112 */;
 import AlertModal2 from "AlertModal" /* 6052 */;
 import react from "react" /* 19 */;

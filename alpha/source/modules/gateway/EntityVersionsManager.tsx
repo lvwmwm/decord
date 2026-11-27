@@ -1,14 +1,14 @@
-// Module ID: 19707
-// Function ID: 19708
+// Module ID: 19723
+// Function ID: 19724
 // Name: EntityVersionsManager
-// Dependencies: [6883, 6927, 4892, 4949, 4914, 5849, 3, 7475, 572, 504, 8314, 1251, 11, 2]
+// Dependencies: [6883, 6927, 4892, 4949, 4914, 5849, 3, 7475, 572, 504, 8315, 1251, 11, 2]
 
-// Module 19707 (EntityVersionsManager)
+// Module 19723 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 8314 */;
+import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 8315 */;
 import EmojiStore from "EmojiStore" /* 6883 */;
 import StickersStore from "StickersStore" /* 6927 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

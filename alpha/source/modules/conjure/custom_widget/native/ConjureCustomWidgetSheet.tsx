@@ -1,10 +1,10 @@
-// Module ID: 15015
-// Function ID: 15016
+// Module ID: 15022
+// Function ID: 15023
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 7693, 21, 5043, 575, 7602, 1112, 4245, 7667, 15013, 11487, 7671, 7546, 7507, 7440, 5641, 2]
+// Dependencies: [5, 32, 19, 17, 7693, 21, 5043, 575, 7602, 1112, 4245, 7667, 15020, 11462, 7671, 7546, 7507, 7440, 5641, 2]
 // Exports: default
 
-// Module 15015 (ConjureCustomWidgetSheet)
+// Module 15022 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4245 from "module_4245" /* 4245 */;
@@ -69,7 +69,7 @@ export default function ConjureCustomWidgetSheet() {
   const callback1 = memo.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_0;
     let closure_2;
-    let obj5;
+    let obj4;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -77,10 +77,10 @@ export default function ConjureCustomWidgetSheet() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -94,8 +94,8 @@ export default function ConjureCustomWidgetSheet() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             value = tmp4;
             tmp = undefined;
@@ -110,8 +110,8 @@ export default function ConjureCustomWidgetSheet() {
                   c3 = 2;
                   c4 = 3;
                   c5 = 1;
-                  const obj6 = { value: obj5.createProject({}), done: false };
-                  obj5 = value(dependencyMap[11]);
+                  const obj6 = { value: obj4.createProject({}), done: false };
+                  obj4 = value(dependencyMap[11]);
                   return obj6;
                 }
               }
@@ -137,8 +137,8 @@ export default function ConjureCustomWidgetSheet() {
               const obj7 = { value: undefined, done: true };
               return obj7;
             } else {
-              const obj3 = value(dependencyMap[14]);
-              closure_129_2(obj3.getConjureCreateErrorMessage(dependencyMap));
+              const obj2 = value(dependencyMap[14]);
+              closure_129_2(obj2.getConjureCreateErrorMessage(dependencyMap));
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -148,13 +148,13 @@ export default function ConjureCustomWidgetSheet() {
             closure_129_4.current = false;
             closure_129_3(false);
             c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
+            const obj = { value, done: true };
+            return obj;
           } else {
             tmp = value;
             closure_1_7(tmp);
-            const obj = value(dependencyMap[12]);
-            closure_1_8(tmp, obj.composeConjureCustomWidgetPrompt(trimmed));
+            const obj8 = value(dependencyMap[12]);
+            closure_1_8(tmp, obj8.composeConjureCustomWidgetPrompt(trimmed));
             tmp(dependencyMap[13])(tmp, { entryPoint: "create" });
             c3 = 1;
           }
@@ -163,13 +163,13 @@ export default function ConjureCustomWidgetSheet() {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
-      } catch (tmp70) {
-        dependencyMap = tmp70;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp55) {
+        dependencyMap = tmp55;
         if (0 === c3) {
           c5 = 3;
-          throw tmp70;
-        } else if (1 === tmp72) {
+          throw tmp55;
+        } else if (1 === tmp57) {
           c4 = 1;
         } else {
           c4 = 2;
@@ -183,7 +183,7 @@ export default function ConjureCustomWidgetSheet() {
   BottomSheetTitleHeader = value(7507).BottomSheetTitleHeader;
   intl = value(1112).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef4245["09BSx3"]), placeholder: intl3.string(_modDef4245.K7zdCZ), description: intl4.string(_modDef4245.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15013).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  let obj4 = { label: intl2.string(_modDef4245["09BSx3"]), placeholder: intl3.string(_modDef4245.K7zdCZ), description: intl4.string(_modDef4245.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15020).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
   const TextArea = value(7440).TextArea;
   intl2 = value(1112).intl;
   intl3 = value(1112).intl;

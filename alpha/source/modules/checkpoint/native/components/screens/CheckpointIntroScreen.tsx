@@ -1,10 +1,10 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 12856
+// Function ID: 12857
 // Name: CheckpointIntroScreen
-// Dependencies: [32, 19, 17, 5044, 6396, 21, 575, 5043, 1629, 12849, 504, 1654, 5253, 12850, 1495, 12851, 12853, 12852, 1112, 3495, 2]
+// Dependencies: [32, 19, 17, 5044, 6396, 21, 575, 5043, 1629, 12857, 504, 1654, 5253, 12858, 1495, 12859, 12861, 12860, 1112, 3495, 2]
 // Exports: default
 
-// Module 12848 (CheckpointIntroScreen)
+// Module 12856 (CheckpointIntroScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -62,7 +62,7 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   let tmp18;
   let tmp19;
   let useReducedMotion;
-  const f102932 = () => useReducedMotion.useReducedMotion;
+  const f103173 = () => useReducedMotion.useReducedMotion;
   const _require = onCharacterBottomInsetChange.onCharacterBottomInsetChange;
   let landscapeContainer;
   let ref;
@@ -78,8 +78,8 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   const tmp8 = landscapeContainer(ref[9])();
   let obj = require("get initialized");
   let items = [AccessibilityStore];
-  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f102932));
-  _slicedToArray(react.useState(obj.useStateFromStores(items, f102932)), 2);
+  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f103173));
+  _slicedToArray(react.useState(obj.useStateFromStores(items, f103173)), 2);
   const effect = react.useEffect(() => {
     const timeout = setTimeout(() => closure_1_3(true), closure_1_9);
     return () => clearTimeout(closure_0);

@@ -1,16 +1,16 @@
-// Module ID: 12124
-// Function ID: 12125
+// Module ID: 12132
+// Function ID: 12133
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 10496, 5776, 21, 12125, 5607, 575, 6144, 12126, 6115, 7155, 5634, 1112, 2651, 10498, 2]
+// Dependencies: [19, 10497, 5776, 21, 12133, 5607, 575, 6144, 12134, 6115, 7155, 5634, 1112, 2651, 10499, 2]
 
-// Module 12124 (GameOrganizationInvitePickerRow)
+// Module 12132 (GameOrganizationInvitePickerRow)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5607 */;
 import Constants from "Constants" /* 5776 */;
 import TableRow2 from "TableRow" /* 6144 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 10496 */;
-import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 12125 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12126 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 10497 */;
+import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 12133 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12134 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const _modDef2651 = tmp(2651);
-const InviteButtonDefault = tmp(10498);
+const InviteButtonDefault = tmp(10499);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

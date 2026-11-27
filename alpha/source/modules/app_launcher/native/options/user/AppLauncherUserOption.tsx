@@ -1,18 +1,18 @@
-// Module ID: 13150
-// Function ID: 13151
+// Module ID: 13158
+// Function ID: 13159
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 5044, 21, 5043, 575, 504, 13142, 2019, 5257, 13151, 2120, 13151, 1186, 13145, 11410, 13148, 5634, 2]
+// Dependencies: [32, 19, 5044, 21, 5043, 575, 504, 13150, 2019, 5257, 13159, 2120, 13159, 1186, 13153, 11411, 13156, 5634, 2]
 // Exports: default
 
-// Module 13150 (AppLauncherUserOption)
+// Module 13158 (AppLauncherUserOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2019 */;
 import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
-import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 13142 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13145 */;
-import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 13151 */;
+import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 13150 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13153 */;
+import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 13159 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5044 */;
@@ -87,7 +87,7 @@ export default function AppLauncherUserOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp5 = asyncRequire(13151, dependencyMap.paths);
+      const tmp5 = asyncRequire(13159, dependencyMap.paths);
       openLazy(tmp5, AppLauncherUserListActionSheet.APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY, obj2);
     },
     leading: tmp9Result,
@@ -105,13 +105,13 @@ export default function AppLauncherUserOption(option) {
     const Avatar = tmp2(1186).Avatar;
     tmp9Result = tmp9(Avatar, obj3);
   } else {
-    const obj4 = { icon: jsx(option(11410).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
+    const obj4 = { icon: jsx(option(11411).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
     const tmp10Result = AppLauncherOptionIconDefault;
     tmp9Result = tmp9(tmp10Result, obj4);
   }
   if (null != tmp8) {
     const obj5 = { guildId: guild_id, user: tmp8 };
-    tmp9Result2 = tmp9(tmp10(13148), obj5);
+    tmp9Result2 = tmp9(tmp10(13156), obj5);
   } else {
     tmp9Result2 = null;
     if (null != tmp6) {

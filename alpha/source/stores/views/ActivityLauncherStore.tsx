@@ -1,9 +1,9 @@
-// Module ID: 11956
-// Function ID: 11957
+// Module ID: 11964
+// Function ID: 11965
 // Name: ActivityLauncherStore
 // Dependencies: [7655, 7654, 1071, 4887, 572, 504, 2]
 
-// Module 11956 (ActivityLauncherStore)
+// Module 11964 (ActivityLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LocalActivityStore from "LocalActivityStore" /* 7655 */;
@@ -16,7 +16,7 @@ let metroRequire;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
-  const f101175 = () => {
+  const f101416 = () => {
     obj = activityType(dependencyMap[4]);
     const obj2 = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType };
     return obj.dispatch(obj2);
@@ -49,7 +49,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       const self3 = this;
       const self4 = this;
       const timeout = new applicationId(4887).Timeout();
-      timeout.start(tmp10, f101175);
+      timeout.start(tmp10, f101416);
       closure_8[applicationId] = timeout;
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
@@ -64,7 +64,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       const self = this;
       const self2 = this;
       const timeout1 = new applicationId(4887).Timeout();
-      timeout1.start(num, f101175);
+      timeout1.start(num, f101416);
       closure_8[applicationId] = timeout1;
     }
   }

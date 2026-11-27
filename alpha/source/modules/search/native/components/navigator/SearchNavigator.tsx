@@ -1,20 +1,20 @@
-// Module ID: 19205
-// Function ID: 19206
+// Module ID: 19221
+// Function ID: 19222
 // Name: SearchNavigator
-// Dependencies: [19, 9018, 18953, 1071, 21, 9047, 7355, 13313, 19106, 19206, 9004, 19200, 19201, 9058, 9059, 1359, 9084, 2]
+// Dependencies: [19, 9019, 18969, 1071, 21, 9048, 7355, 13321, 19122, 19222, 9005, 19216, 19217, 9059, 9060, 1359, 9085, 2]
 
-// Module 19205 (SearchNavigator)
+// Module 19221 (SearchNavigator)
 import Constants from "Constants" /* 1071 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
-import TrackingConstants from "TrackingConstants" /* 9018 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9059 */;
-import TrackingDefault from "Tracking" /* 13313 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18953 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 19106 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 19200 */;
+import TrackingConstants from "TrackingConstants" /* 9019 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9060 */;
+import TrackingDefault from "Tracking" /* 13321 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18969 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19122 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 19216 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9047 */;
+import NativeStackView from "NativeStackView" /* 9048 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -92,7 +92,7 @@ const memoResult = react.memo(function SearchNavigator(route) {
   };
   items1[1] = closure_7(closure_9.Screen, obj6);
   const obj7 = {
-    name: searchContext(9058).ConversationNavigatorScreens.FOCUS,
+    name: searchContext(9059).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);

@@ -1,9 +1,9 @@
-// Module ID: 10732
-// Function ID: 10733
+// Module ID: 10733
+// Function ID: 10734
 // Name: BugReporterExperiment
 // Dependencies: [1451, 2]
 
-// Module 10732 (BugReporterExperiment)
+// Module 10733 (BugReporterExperiment)
 import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

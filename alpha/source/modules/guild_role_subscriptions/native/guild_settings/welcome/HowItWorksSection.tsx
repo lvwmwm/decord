@@ -1,18 +1,18 @@
-// Module ID: 20157
-// Function ID: 20158
+// Module ID: 20215
+// Function ID: 20216
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 5043, 575, 5634, 1112, 20158, 1186, 20162, 20166, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5634, 1112, 20216, 1186, 20220, 20224, 2]
 // Exports: default
 
-// Module 20157 (HowItWorksSection)
+// Module 20215 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import Text_Text from "Text/Text" /* 5634 */;
-import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 20158 */;
-import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 20162 */;
-import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 20166 */;
+import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 20216 */;
+import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 20220 */;
+import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 20224 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;

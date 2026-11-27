@@ -1,14 +1,14 @@
-// Module ID: 20087
-// Function ID: 20088
+// Module ID: 20145
+// Function ID: 20146
 // Name: InviteEmpty
-// Dependencies: [19, 21, 8566, 11444, 20088, 11443, 5050, 5730, 2]
+// Dependencies: [19, 21, 8567, 11445, 20146, 11444, 5050, 5730, 2]
 // Exports: InviteEmpty, getInviteEmptySource, useInviteEmptySource
 
-// Module 20087 (InviteEmpty)
+// Module 20145 (InviteEmpty)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5050 */;
 import FastImageDefault from "FastImage" /* 5730 */;
-import _mod8566 from "module_8566" /* 8566 */;
+import _mod8567 from "module_8567" /* 8567 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/InviteEmpty.tsx");
 
 export function getInviteEmptySource(theme) {
-  const obj = _mod8566;
+  const obj = _mod8567;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useInviteEmptySource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8566;
+  const obj2 = _mod8567;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function InviteEmpty(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8566;
+  const obj2 = _mod8567;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

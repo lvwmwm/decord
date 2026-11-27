@@ -9,7 +9,7 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/findComponentMedia.tsx");
 function findComponentMedia(arg0) {
-  const f90096 = (type) => {
+  const f90324 = (type) => {
     type = type.type;
     if (Server.ComponentType.MEDIA_GALLERY === type) {
       const items = type.items;
@@ -31,8 +31,8 @@ function findComponentMedia(arg0) {
           const items2 = [accessory];
           obj = items2;
         }
-        const flatMapResult = obj.flatMap(f90096);
-        mapped = flatMapResult.map(f90097);
+        const flatMapResult = obj.flatMap(f90324);
+        mapped = flatMapResult.map(f90325);
       } else {
         mapped = [];
       }
@@ -48,7 +48,7 @@ function findComponentMedia(arg0) {
       return components.flatMap(findComponentMedia);
     }
   };
-  const f90097 = (item) => {
+  const f90325 = (item) => {
     let toUnfurledMediaItemResult = item;
     if ("proxy_url" in item) {
       const obj = closure_1_0(closure_1_1[1]);
@@ -61,8 +61,8 @@ function findComponentMedia(arg0) {
     let items = [arg0];
     obj = items;
   }
-  let flatMapResult = obj.flatMap(f90096);
-  return flatMapResult.map(f90097);
+  let flatMapResult = obj.flatMap(f90324);
+  return flatMapResult.map(f90325);
 }
 
 export default findComponentMedia;

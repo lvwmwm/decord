@@ -1,16 +1,16 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11462
+// Function ID: 11463
 // Name: openConjureHomeScreen
-// Dependencies: [5847, 5220, 11488, 2019, 5257, 6969, 2]
+// Dependencies: [5847, 5220, 11463, 2019, 5257, 6969, 2]
 // Exports: openConjureHomeScreenWhenReady
 
-// Module 11487 (openConjureHomeScreen)
+// Module 11462 (openConjureHomeScreen)
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2019 */;
 import RootNavigationRef from "RootNavigationRef" /* 5220 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5847 */;
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6969 */;
-import ConjureMobileExperiment from "ConjureMobileExperiment" /* 11488 */;
+import ConjureMobileExperiment from "ConjureMobileExperiment" /* 11463 */;
 import size from "module_2" /* 2 */;
 
 function openConjureHomeScreen(projectId) {
@@ -69,7 +69,7 @@ export default openConjureHomeScreen;
 export const CONJURE_HOME_LINK_WAIT_MS = 10000;
 export function openConjureHomeScreenWhenReady(projectId) {
   let closure_2;
-  const f127998 = () => {
+  const f128366 = () => {
     openConjureHomeScreen(projectId, { entryPoint: "deep_link" });
   };
   let closure_0 = projectId;
@@ -81,7 +81,7 @@ export function openConjureHomeScreenWhenReady(projectId) {
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_2);
       const obj = RootNavigationRef;
-      const result = obj.runWhenRootNavigationReady(f127998);
+      const result = obj.runWhenRootNavigationReady(f128366);
     }
   }, 10000);
   let tmp = addPostConnectionCallback(() => {
@@ -94,7 +94,7 @@ export function openConjureHomeScreenWhenReady(projectId) {
       const result = obj.hasConjureGuildWithoutExposure(openConjureHomeScreen_str);
       if (result) {
         const obj2 = RootNavigationRef;
-        const result1 = obj2.runWhenRootNavigationReady(f127998);
+        const result1 = obj2.runWhenRootNavigationReady(f128366);
       }
     }
   });

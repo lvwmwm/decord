@@ -1,13 +1,13 @@
-// Module ID: 19042
-// Function ID: 19043
+// Module ID: 19058
+// Function ID: 19059
 // Name: smartSearchViewabilityConfig
-// Dependencies: [13288, 9019, 13316, 13314, 2]
+// Dependencies: [13296, 9020, 13324, 13322, 2]
 
-// Module 19042 (smartSearchViewabilityConfig)
-import SearchConstants from "SearchConstants" /* 9019 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13288 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13314 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13316 */;
+// Module 19058 (smartSearchViewabilityConfig)
+import SearchConstants from "SearchConstants" /* 9020 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13296 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13322 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13324 */;
 import size from "module_2" /* 2 */;
 
 const SMART_SEARCH_VIEWABILITY_THRESHOLD_PERCENT = SmartSearchConstants.SMART_SEARCH_VIEWABILITY_THRESHOLD_PERCENT;

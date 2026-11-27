@@ -1,10 +1,10 @@
-// Module ID: 18703
-// Function ID: 18704
+// Module ID: 18718
+// Function ID: 18719
 // Name: useConjurePublishedAppName
 // Dependencies: [2165, 6934, 504, 2]
 // Exports: default
 
-// Module 18703 (useConjurePublishedAppName)
+// Module 18718 (useConjurePublishedAppName)
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;

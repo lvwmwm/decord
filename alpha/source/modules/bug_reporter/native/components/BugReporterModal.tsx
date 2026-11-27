@@ -1,10 +1,10 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 10691
+// Function ID: 10692
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1387, 10689, 21, 5043, 575, 671, 1088, 6130, 1501, 504, 1112, 7191, 8127, 8126, 5725, 10691, 559, 10692, 7751, 7253, 5730, 1413, 1379, 8137, 10701, 1643, 7441, 6115, 5634, 6145, 10713, 6152, 1186, 7752, 5641, 7274, 6140, 6144, 5257, 10728, 2120, 7251, 7440, 1362, 10731, 10681, 7355, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 10690, 21, 5043, 575, 671, 1088, 6130, 1501, 504, 1112, 7191, 8127, 8126, 5725, 10692, 559, 10693, 7751, 7253, 5730, 1413, 1379, 8138, 10702, 1643, 7441, 6115, 5634, 6145, 10714, 6152, 1186, 7752, 5641, 7274, 6140, 6144, 5257, 10729, 2120, 7251, 7440, 1362, 10732, 10682, 7355, 2]
 // Exports: default
 
-// Module 10690 (BugReporterModal)
+// Module 10691 (BugReporterModal)
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import intl13 from "intl" /* 1112 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1387 */;
-import BugReportStore from "BugReportStore" /* 10689 */;
+import BugReportStore from "BugReportStore" /* 10690 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import module_671 from "module_671" /* 671 */;
@@ -88,7 +88,7 @@ class BugCreateScreen {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -211,7 +211,7 @@ class BugCreateScreen {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -256,7 +256,7 @@ class BugCreateScreen {
                 });
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             c3 = 3;
@@ -380,7 +380,7 @@ class BugCreateScreen {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -419,7 +419,7 @@ class BugCreateScreen {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: "+95" };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           try {
@@ -612,7 +612,7 @@ class BugCreateScreen {
                   clearTimeout(timeout);
                 }
                 priority = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp65) {
                 closure_2 = tmp65;
                 if (0 === name) {
@@ -674,7 +674,7 @@ class BugCreateScreen {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: "+95" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -708,7 +708,7 @@ class BugCreateScreen {
                 closure_0 = value;
                 closure_1_18(closure_0);
                 c3 = 3;
-                return { value: "HermesInternal", done: "+95" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp12) {
               c3 = 3;
@@ -798,7 +798,7 @@ class BugCreateScreen {
         onPress() {
             obj = ActionSheetActionCreatorsDefault;
             const obj2 = { features: null != first7 ? first7.features : [], feature: first8, setFeature };
-            return obj.openLazy(asyncRequire(10728, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
+            return obj.openLazy(asyncRequire(10729, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
           },
         label: name,
         arrow: true
@@ -842,7 +842,7 @@ class BugCreateScreen {
     if (num == null) {
       num = -1;
     }
-    const tmp25Result = tmp25(10692);
+    const tmp25Result = tmp25(10693);
     priorities = tmp25Result.getPriorities();
     items8[3] = first4(TableRadioGroup, obj13);
     let obj14 = { label: intl8.string(tmp25(1112).t["1SplH2"]), placeholder: intl9.string(tmp25(1112).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };

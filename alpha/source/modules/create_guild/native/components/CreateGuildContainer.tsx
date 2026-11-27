@@ -1,10 +1,10 @@
-// Module ID: 13280
-// Function ID: 13281
+// Module ID: 13288
+// Function ID: 13289
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 4973, 1387, 1071, 21, 5043, 5597, 6990, 8136, 13267, 6991, 4906, 10445, 7480, 13281, 2]
+// Dependencies: [5, 32, 19, 4973, 1387, 1071, 21, 5043, 5597, 6990, 8137, 13275, 6991, 4906, 10446, 7480, 13289, 2]
 // Exports: default
 
-// Module 13280 (CreateGuildContainer)
+// Module 13288 (CreateGuildContainer)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import NavigatorConstants from "NavigatorConstants" /* 5597 */;
@@ -86,7 +86,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ export default function CreateGuildContainer(onCreate) {
             closure_129_6(base64);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -146,7 +146,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function CreateGuildContainer(onCreate) {
         }
         closure_129_7(false);
         c5 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp36) {
         channel = tmp36;
         if (0 === c3) {

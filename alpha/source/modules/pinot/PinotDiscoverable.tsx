@@ -1,13 +1,13 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 8531
+// Function ID: 8532
 // Name: PinotDiscoverable
-// Dependencies: [8531, 3563, 1112, 2]
+// Dependencies: [8532, 3563, 1112, 2]
 // Exports: getPinotCloneChannelFlags, getPinotDiscoverableFlags
 
-// Module 8530 (PinotDiscoverable)
+// Module 8531 (PinotDiscoverable)
 import intl from "intl" /* 1112 */;
 import _modDef3563 from "module_3563" /* 3563 */;
-import PinotConstants from "PinotConstants" /* 8531 */;
+import PinotConstants from "PinotConstants" /* 8532 */;
 import size from "module_2" /* 2 */;
 
 let ALL_CONTENT;

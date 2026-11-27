@@ -1,10 +1,10 @@
-// Module ID: 9613
-// Function ID: 9614
+// Module ID: 9614
+// Function ID: 9615
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1071, 572, 1285, 9609, 1405, 2]
+// Dependencies: [32, 5, 1071, 572, 1285, 9610, 1405, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 9613 (ScheduledMessageActionCreators)
+// Module 9614 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -35,7 +35,7 @@ let obj = function _createScheduledMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -161,7 +161,7 @@ obj = function _updateScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c6;
@@ -273,7 +273,7 @@ obj = function _updateScheduledMessage() {
             dispatch(obj);
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp58) {
           closure_5 = tmp58;
@@ -306,7 +306,7 @@ obj = function _deleteScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -370,7 +370,7 @@ obj = function _deleteScheduledMessage() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -401,7 +401,7 @@ obj = function _sendScheduledMessageNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ obj = function _sendScheduledMessageNow() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -509,7 +509,7 @@ obj = function _fetchScheduledMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -563,7 +563,7 @@ obj = function _fetchScheduledMessages() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         closure_2 = tmp30;

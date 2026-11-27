@@ -1,10 +1,10 @@
-// Module ID: 13429
-// Function ID: 13430
+// Module ID: 13437
+// Function ID: 13438
 // Name: MessageRequestModalActionCreators
-// Dependencies: [13426, 1071, 1256, 6047, 1112, 6118, 5257, 13430, 2120, 2]
+// Dependencies: [13434, 1071, 1256, 6047, 1112, 6118, 5257, 13438, 2120, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 13429 (MessageRequestModalActionCreators)
+// Module 13437 (MessageRequestModalActionCreators)
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2120 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
 import AlertDefault from "Alert" /* 6118 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13426 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 13434 */;
 import size from "module_2" /* 2 */;
 
 const type = MessageRequestConstants.MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL;
@@ -46,5 +46,5 @@ export function onMarkAsNotSpamConfirmationModal(arg0) {
   let onConfirm;
   ({ onConfirm, onCancel, channel } = arg0);
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(13430, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+  obj.openLazy(asyncRequire(13438, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
 }

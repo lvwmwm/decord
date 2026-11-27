@@ -1,15 +1,15 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11164
+// Function ID: 11165
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 2169, 1088, 9134, 1112, 4145, 2]
+// Dependencies: [32, 19, 2169, 1088, 9135, 1112, 4145, 2]
 // Exports: useIsLimitedOfferExpired, useTickingFormattedLimitedOfferTimeLeft
 
-// Module 11163 (SlayerStorefrontTimeUtils)
+// Module 11164 (SlayerStorefrontTimeUtils)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef2169 from "module_2169" /* 2169 */;
 import _modDef4145 from "module_4145" /* 4145 */;
-import useIntervalDefault from "useInterval" /* 9134 */;
+import useIntervalDefault from "useInterval" /* 9135 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

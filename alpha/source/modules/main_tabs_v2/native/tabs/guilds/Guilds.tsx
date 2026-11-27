@@ -1,9 +1,9 @@
-// Module ID: 17740
-// Function ID: 17741
+// Module ID: 17747
+// Function ID: 17748
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 5849, 9429, 1071, 21, 5222, 9, 5225, 5219, 5220, 572, 1107, 17741, 5215, 9893, 17742, 5104, 16684, 17743, 18150, 18193, 16771, 17725, 2]
+// Dependencies: [32, 19, 5849, 9430, 1071, 21, 5222, 9, 5225, 5219, 5220, 572, 1107, 17748, 5215, 9894, 17749, 5104, 16691, 17750, 18157, 18200, 16778, 17732, 2]
 
-// Module 17740 (guilds/Guilds)
+// Module 17747 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
@@ -11,7 +11,7 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
 import RootNavigationRef from "RootNavigationRef" /* 5220 */;
 import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5225 */;
-import MainTabsConstants from "MainTabsConstants" /* 9429 */;
+import MainTabsConstants from "MainTabsConstants" /* 9430 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
@@ -37,13 +37,13 @@ const memoResult = react.memo(function GuildsOnly() {
   let tmp12;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  let obj = enabled(17741);
+  let obj = enabled(17748);
   const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp4 = first;
   const tmp5 = first(5215)();
-  let obj2 = enabled(9893);
+  let obj2 = enabled(9894);
   const isEligibleForQuests = obj2.getIsEligibleForQuests();
-  const GuildsRenderExperiment = enabled(17742).GuildsRenderExperiment;
+  const GuildsRenderExperiment = enabled(17749).GuildsRenderExperiment;
   enabled = GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled;
   first = undefined;
   dependencyMap = undefined;
@@ -135,12 +135,12 @@ const memoResult = react.memo(function GuildsOnly() {
   if (!enabled) {
     const obj3 = { gradient: tmp5, children: tmp12(QuestDockExternalCoordinationContextProvider, obj4) };
     const ThemeContextProvider = tmp(5104).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(16684).QuestDockExternalCoordinationContextProvider;
-    const items1 = [closure_8(tmp4(17743), {}), closure_8(tmp4(18150), {}), closure_8(tmp4(18193), { placement: "channel-list" }), , ];
+    QuestDockExternalCoordinationContextProvider = tmp(16691).QuestDockExternalCoordinationContextProvider;
+    const items1 = [closure_8(tmp4(17750), {}), closure_8(tmp4(18157), {}), closure_8(tmp4(18200), { placement: "channel-list" }), , ];
     obj4 = { children: items1 };
-    items1[3] = isEligibleForQuests && closure_8(tmp4(16771), {});
-    isEligibleForQuests && closure_8(tmp4(16771), {});
-    items1[4] = closure_8(tmp(17725).BackgroundChatHost, {});
+    items1[3] = isEligibleForQuests && closure_8(tmp4(16778), {});
+    isEligibleForQuests && closure_8(tmp4(16778), {});
+    items1[4] = closure_8(tmp(17732).BackgroundChatHost, {});
     tmp11Result = tmp11(ThemeContextProvider, obj3);
     tmp12 = closure_9;
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 8379
-// Function ID: 8380
+// Module ID: 8380
+// Function ID: 8381
 // Name: QuestUserStatusUtils
 // Dependencies: [2]
 // Exports: getMostRecentQuestUserStatus
 
-// Module 8379 (QuestUserStatusUtils)
+// Module 8380 (QuestUserStatusUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/utils/QuestUserStatusUtils.tsx");

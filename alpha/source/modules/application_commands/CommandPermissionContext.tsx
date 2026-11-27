@@ -1,10 +1,10 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10053
+// Function ID: 10054
 // Name: CommandPermissionContext
 // Dependencies: [19, 4948, 4896, 4910, 502, 4892, 4955, 4914, 4975, 1387, 1071, 7570, 504, 1083, 2118, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 10052 (CommandPermissionContext)
+// Module 10053 (CommandPermissionContext)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import Server from "Server" /* 2118 */;
 import ChannelRecord from "ChannelRecord" /* 4896 */;

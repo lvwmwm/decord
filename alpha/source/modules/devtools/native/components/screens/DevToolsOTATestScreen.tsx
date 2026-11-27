@@ -1,15 +1,15 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17289
+// Function ID: 17290
 // Name: DevToolsOTATestScreen
-// Dependencies: [5, 32, 19, 17, 1082, 21, 5043, 575, 5271, 7507, 5634, 12319, 5257, 6115, 6140, 6144, 17185, 7538, 9044, 5745, 17283, 2]
+// Dependencies: [5, 32, 19, 17, 1082, 21, 5043, 575, 5271, 7507, 5634, 12327, 5257, 6115, 6140, 6144, 17192, 7538, 9045, 5745, 17290, 2]
 // Exports: default
 
-// Module 17282 (DevToolsOTATestScreen)
+// Module 17289 (DevToolsOTATestScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import Text_Text from "Text/Text" /* 5634 */;
 import ClipboardUtils from "ClipboardUtils" /* 7538 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 12319 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12327 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -149,7 +149,7 @@ export default function DevToolsOTATestScreen() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+95" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ export default function DevToolsOTATestScreen() {
             const obj6 = tmp4(c2[12]);
             obj6.openLazy(Promise.resolve(obj7), "OtaVerificationActionSheet", obj8);
             c3 = 3;
-            return { value: "HermesInternal", done: "+95" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -224,7 +224,7 @@ export default function DevToolsOTATestScreen() {
   Stack = subLabel(6115).Stack;
   let obj2 = { title: "OTA Status", hasIcons: true, children: items };
   const TableRowGroup = subLabel(6140).TableRowGroup;
-  let obj3 = { label: "Status", subLabel: first1, icon: closure_8(subLabel(17185).WrenchIcon, {}) };
+  let obj3 = { label: "Status", subLabel: first1, icon: closure_8(subLabel(17192).WrenchIcon, {}) };
   const TableRow = subLabel(6144).TableRow;
   items = [closure_8(TableRow, obj3), ];
   let obj4 = {
@@ -247,9 +247,9 @@ export default function DevToolsOTATestScreen() {
   if (str == null) {
     str = "Unknown";
   }
-  let obj5 = { label: "Manifest Source", subLabel: str, icon: tmp13(tmp16(17185).WrenchIcon, {}) };
+  let obj5 = { label: "Manifest Source", subLabel: str, icon: tmp13(tmp16(17192).WrenchIcon, {}) };
   const items2 = [tmp13(TableRow2, obj5), ];
-  let obj6 = { icon: tmp13(tmp16(9044).PaperIcon, {}), label: str2 };
+  let obj6 = { icon: tmp13(tmp16(9045).PaperIcon, {}), label: str2 };
   const TableRow3 = tmp16(6144).TableRow;
   str2 = "{}";
   if (null != tmp5) {
@@ -264,7 +264,7 @@ export default function DevToolsOTATestScreen() {
   items2[1] = closure_8(TableRow3, obj6);
   items1[1] = closure_9(TableRowGroup2, obj7);
   const TableRowGroup3 = tmp16(6140).TableRowGroup;
-  let obj8 = { icon: tmp13(tmp16(17185).WrenchIcon, {}), label: "Is cookie set?", subLabel: str3 };
+  let obj8 = { icon: tmp13(tmp16(17192).WrenchIcon, {}), label: "Is cookie set?", subLabel: str3 };
   const TableRow4 = tmp16(6144).TableRow;
   str3 = "Yes";
   if (null == tmp7) {
@@ -273,7 +273,7 @@ export default function DevToolsOTATestScreen() {
   const items3 = [tmp13(TableRow4, obj8), ];
   let tmp13Result = null != tmp7;
   if (tmp13Result) {
-    const obj9 = { icon: closure_8(subLabel(17185).WrenchIcon, {}), label: JSON.stringify(tmp7, null, 2) };
+    const obj9 = { icon: closure_8(subLabel(17192).WrenchIcon, {}), label: JSON.stringify(tmp7, null, 2) };
     const TableRow5 = tmp16(6144).TableRow;
     const _JSON2 = JSON;
     tmp13Result = tmp13(TableRow5, obj9);
@@ -294,7 +294,7 @@ export default function DevToolsOTATestScreen() {
   const obj13 = {
     label: "Verify OTA Files",
     subLabel: str4,
-    icon: closure_8(subLabel(17283).ClipboardCheckIcon, {}),
+    icon: closure_8(subLabel(17290).ClipboardCheckIcon, {}),
     onPress: function verifyFiles() {
       return obj(...arguments);
     },

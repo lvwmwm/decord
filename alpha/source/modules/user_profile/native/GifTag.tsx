@@ -1,10 +1,10 @@
-// Module ID: 9519
-// Function ID: 9520
+// Module ID: 9520
+// Function ID: 9521
 // Name: GifTag
 // Dependencies: [17, 21, 5043, 575, 671, 5634, 1112, 2]
 // Exports: default
 
-// Module 9519 (GifTag)
+// Module 9520 (GifTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

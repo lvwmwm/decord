@@ -1,11 +1,11 @@
-// Module ID: 8809
-// Function ID: 8810
+// Module ID: 8810
+// Function ID: 8811
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 4892, 8805, 8810, 563, 8853, 2]
+// Dependencies: [19, 4892, 8806, 8811, 563, 8854, 2]
 // Exports: useMediaItemHasSpoiler
 
-// Module 8809 (useMediaItemHasSpoiler)
-import MediaSourceUtil from "MediaSourceUtil" /* 8810 */;
+// Module 8810 (useMediaItemHasSpoiler)
+import MediaSourceUtil from "MediaSourceUtil" /* 8811 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;

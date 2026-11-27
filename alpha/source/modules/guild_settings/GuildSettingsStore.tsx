@@ -1,9 +1,9 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 8575
+// Function ID: 8576
 // Name: GuildSettingsStore
-// Dependencies: [4907, 8542, 4896, 4910, 7821, 1406, 4914, 1387, 1071, 8575, 8576, 11, 8577, 1285, 572, 8580, 4906, 8581, 2169, 8582, 504, 12, 510, 2]
+// Dependencies: [4907, 8543, 4896, 4910, 7821, 1406, 4914, 1387, 1071, 8576, 8577, 11, 8578, 1285, 572, 8581, 4906, 8582, 2169, 8583, 504, 12, 510, 2]
 
-// Module 8574 (GuildSettingsStore)
+// Module 8575 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -15,18 +15,18 @@ import ChannelRecord from "ChannelRecord" /* 4896 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
 import PlainRecord from "PlainRecord" /* 4907 */;
 import GuildRecord from "GuildRecord" /* 4910 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8575 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8577 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8580 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8581 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8582 */;
-import GuildProfileStore from "GuildProfileStore" /* 8542 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8576 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8578 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8581 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8582 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8583 */;
+import GuildProfileStore from "GuildProfileStore" /* 8543 */;
 import InviteRecord from "InviteRecord" /* 7821 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8576 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8577 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;
@@ -37,11 +37,12 @@ let closure_25;
 let closure_26;
 let closure_28;
 let closure_29;
-function handleFormInit(type) {
+function handleFormInit(sectionParams) {
   let section;
-  ({ guildId, section, subsection } = type);
-  if ("GUILD_SETTINGS_INIT" === type.type) {
-    _location = type.location;
+  ({ guildId, section, subsection } = sectionParams);
+  sectionParams = sectionParams.sectionParams;
+  if ("GUILD_SETTINGS_INIT" === sectionParams.type) {
+    _location = sectionParams.location;
   }
   guild = GuildStore.getGuild(guildId);
   if (null == guild) {
@@ -70,8 +71,8 @@ function handleFormInit(type) {
     CLOSED = FormStates.OPEN;
     errors = {};
     c38 = null;
-    const obj5 = SnowflakeUtilsDefault;
-    roleId = obj5.castGuildIdAsEveryoneGuildRoleId(guildId);
+    const obj6 = SnowflakeUtilsDefault;
+    roleId = obj6.castGuildIdAsEveryoneGuildRoleId(guildId);
     NONE = guild.mfaLevel;
     obj = obj2;
     c12 = null;
@@ -86,16 +87,21 @@ function handleFormInit(type) {
       c11 = undefined;
     } else if (null != section) {
       const items = [{ key: "landing", name: constants.LANDING }];
-      const obj3 = { key: "landing", name: constants.LANDING };
+      const obj4 = { key: "landing", name: constants.LANDING };
       if (section === constants.TAG_CUSTOMIZE) {
-        const obj4 = { key: null, name: null };
+        const obj5 = { key: null, name: null };
         ({ TAG: obj2.key, TAG: obj2.name } = constants);
-        items.push(obj4);
+        items.push(obj5);
       }
-      const obj6 = { key: section, name: section };
-      items.push(obj6);
+      if (section === constants.INTEGRATION_APPLICATION) {
+        const obj7 = { key: null, name: null };
+        ({ INTEGRATIONS: obj3.key, INTEGRATIONS: obj3.name } = constants);
+        items.push(obj7);
+      }
+      const obj12 = { key: section, name: section, params: sectionParams };
+      items.push(obj12);
       c11 = { type: "stack", routes: items };
-      const obj10 = { type: "stack", routes: items };
+      const obj13 = { type: "stack", routes: items };
     }
   }
 }
@@ -444,23 +450,25 @@ obj2 = {
       if (defaultGuildSettingsSection !== constants.INSTANT_INVITES) {
         if (defaultGuildSettingsSection !== constants.INVITES) {
           if (defaultGuildSettingsSection !== constants.INTEGRATIONS) {
-            if (defaultGuildSettingsSection !== constants.ROLES) {
-              if (defaultGuildSettingsSection === constants.MEMBERS) {
-                roleId = getGuildEveryoneRoleId(guild);
-              } else if (defaultGuildSettingsSection === constants.VANITY_URL) {
-                obj2 = GuildSettingsVanityURLActionCreators;
-                const vanityUrl = obj2.fetchVanityUrl(guild.id);
-              } else if (defaultGuildSettingsSection === constants.SAFETY) {
-                let SAFETY_OVERVIEW;
-                const dispatch = DispatcherDefault.dispatch;
-                DispatcherDefault;
-                if (null == c4) {
-                  SAFETY_OVERVIEW = constants2.SAFETY_OVERVIEW;
-                } else {
-                  SAFETY_OVERVIEW = c4;
+            if (defaultGuildSettingsSection !== constants.INTEGRATION_APPLICATION) {
+              if (defaultGuildSettingsSection !== constants.ROLES) {
+                if (defaultGuildSettingsSection === constants.MEMBERS) {
+                  roleId = getGuildEveryoneRoleId(guild);
+                } else if (defaultGuildSettingsSection === constants.VANITY_URL) {
+                  obj2 = GuildSettingsVanityURLActionCreators;
+                  const vanityUrl = obj2.fetchVanityUrl(guild.id);
+                } else if (defaultGuildSettingsSection === constants.SAFETY) {
+                  let SAFETY_OVERVIEW;
+                  const dispatch = DispatcherDefault.dispatch;
+                  DispatcherDefault;
+                  if (null == c4) {
+                    SAFETY_OVERVIEW = constants2.SAFETY_OVERVIEW;
+                  } else {
+                    SAFETY_OVERVIEW = c4;
+                  }
+                  obj = { type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION", subsection: SAFETY_OVERVIEW };
+                  dispatch(obj);
                 }
-                obj = { type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION", subsection: SAFETY_OVERVIEW };
-                dispatch(obj);
               }
             }
           }

@@ -1,10 +1,10 @@
-// Module ID: 18026
-// Function ID: 18027
+// Module ID: 18033
+// Function ID: 18034
 // Name: InterestGuildActions
 // Dependencies: [5, 5077, 4894, 1071, 5079, 6991, 6995, 5724, 1112, 2655, 2]
 // Exports: getInterestGuildJoinsInFlight, joinInterestGuild
 
-// Module 18026 (InterestGuildActions)
+// Module 18033 (InterestGuildActions)
 import Constants from "Constants" /* 1071 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5079 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
@@ -31,7 +31,7 @@ let obj = function _joinInterestGuild() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -159,7 +159,7 @@ let obj = function _joinInterestGuild() {
           }
         }
         c8 = 3;
-        return { value: "HermesInternal", done: "+95" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp85) {
         closure_5 = tmp85;
         if (0 === c6) {

@@ -1,14 +1,14 @@
-// Module ID: 9950
-// Function ID: 9951
+// Module ID: 9951
+// Function ID: 9952
 // Name: DEFAULT_MAX_HTML_LENGTH
-// Dependencies: [9951, 9952, 9976, 9977, 2]
+// Dependencies: [9952, 9953, 9977, 9978, 2]
 // Exports: parseHTMLFromText
 
-// Module 9950 (DEFAULT_MAX_HTML_LENGTH)
-import _mod9952 from "module_9952" /* 9952 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9976 */;
-import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 9977 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9951 */;
+// Module 9951 (DEFAULT_MAX_HTML_LENGTH)
+import _mod9953 from "module_9953" /* 9953 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9977 */;
+import HTMLParserLinkUtils from "HTMLParserLinkUtils" /* 9978 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 9952 */;
 import size from "module_2" /* 2 */;
 
 let c1, constants, map, regex;
@@ -355,7 +355,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     keepInvalidAnchors = keepInvalidAnchors.keepInvalidAnchors;
   }
   const tmp2 = obj;
-  const Parser = obj(9952).Parser;
+  const Parser = obj(9953).Parser;
   class tmp4 extends Parser {
     onclosetag(arg0, arg1) {
       const markup = obj.markup;
@@ -523,7 +523,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
                     };
                     const self5 = this;
                     const self6 = this;
-                    const parser = new _mod9952.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
+                    const parser = new _mod9953.Parser(obj, { decodeEntities: true, recognizeSelfClosing: true });
                     parser.end(markup);
                     map1 = map;
                   } else {
@@ -640,7 +640,7 @@ function parseMarkupRuns(markup, keepInvalidAnchors) {
     };
     let self = this;
     let self2 = this;
-    let parser = new tmp2(9952).Parser(obj3, { decodeEntities: true });
+    let parser = new tmp2(9953).Parser(obj3, { decodeEntities: true });
     let str2 = "&lt;";
     parser.end(str.replace(/</g, "&lt;"));
   }

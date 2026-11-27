@@ -1,15 +1,15 @@
-// Module ID: 10396
-// Function ID: 10397
+// Module ID: 10397
+// Function ID: 10398
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 6813, 502, 2132, 5855, 21, 5043, 504, 38, 5996, 10388, 1112, 6144, 10397, 2]
+// Dependencies: [19, 17, 6813, 502, 2132, 5855, 21, 5043, 504, 38, 5996, 10389, 1112, 6144, 10398, 2]
 // Exports: default
 
-// Module 10396 (UserSettingsVoiceOutputOptions)
+// Module 10397 (UserSettingsVoiceOutputOptions)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 5855 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5996 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10397 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10398 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -78,7 +78,7 @@ export default function UserSettingsVoiceOutputOptions() {
     obj.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
   }, items3);
   const obj4 = { title: intl.string(stateFromStores1(1112).t.UXxPGB), hasIcons: false, children: items4 };
-  const UserSettingsTableRowGroup = stateFromStores1(10388).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = stateFromStores1(10389).UserSettingsTableRowGroup;
   intl = stateFromStores1(1112).intl;
   const obj5 = { label: intl2.string(stateFromStores1(1112).t.xPHVBs), subLabel: closure_9(View, obj6) };
   const TableRow = stateFromStores1(6144).TableRow;

@@ -1,9 +1,9 @@
-// Module ID: 19684
-// Function ID: 19685
+// Module ID: 19700
+// Function ID: 19701
 // Name: VoiceCallTriggerPointExperiment
 // Dependencies: [5661, 6044, 2]
 
-// Module 19684 (VoiceCallTriggerPointExperiment)
+// Module 19700 (VoiceCallTriggerPointExperiment)
 import ExperimentConstants from "ExperimentConstants" /* 5661 */;
 import createExperiment from "module_6044" /* 6044 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 10108
-// Function ID: 10109
+// Module ID: 10109
+// Function ID: 10110
 // Name: ActivitiesInTextUtils
 // Dependencies: [4892, 4975, 1082, 1092, 504, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 10108 (ActivitiesInTextUtils)
+// Module 10109 (ActivitiesInTextUtils)
 import Constants from "Constants" /* 1082 */;
 import ChannelTypes from "ChannelTypes" /* 1092 */;
 import ChannelStore from "ChannelStore" /* 4892 */;

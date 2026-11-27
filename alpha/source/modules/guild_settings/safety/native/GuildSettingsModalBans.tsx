@@ -1,10 +1,10 @@
-// Module ID: 20093
-// Function ID: 20094
+// Module ID: 20151
+// Function ID: 20152
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 4914, 4975, 1387, 8574, 1071, 21, 5043, 575, 504, 4868, 5607, 6124, 6988, 6991, 8573, 6144, 1186, 6156, 1112, 7538, 5724, 7543, 7395, 20094, 7406, 11596, 7411, 5617, 2]
+// Dependencies: [32, 19, 17, 4914, 4975, 1387, 8575, 1071, 21, 5043, 575, 504, 4868, 5607, 6124, 6988, 6991, 8574, 6144, 1186, 6156, 1112, 7538, 5724, 7543, 7395, 20152, 7406, 11604, 7411, 5617, 2]
 // Exports: default
 
-// Module 20093 (GuildSettingsModalBans)
+// Module 20151 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -17,7 +17,7 @@ import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4914 */;
 import PermissionStore from "PermissionStore" /* 4975 */;
 import UserStore from "UserStore" /* 1387 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8575 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;

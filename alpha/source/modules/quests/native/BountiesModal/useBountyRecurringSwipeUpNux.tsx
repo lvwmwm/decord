@@ -1,12 +1,12 @@
-// Module ID: 16530
-// Function ID: 16531
+// Module ID: 16537
+// Function ID: 16538
 // Name: useBountyRecurringSwipeUpNux
-// Dependencies: [32, 9561, 4876, 2]
+// Dependencies: [32, 9562, 4876, 2]
 // Exports: useBountyRecurringSwipeUpNux
 
-// Module 16530 (useBountyRecurringSwipeUpNux)
+// Module 16537 (useBountyRecurringSwipeUpNux)
 import dismissible_content from "dismissible_content" /* 4876 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9561 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9562 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

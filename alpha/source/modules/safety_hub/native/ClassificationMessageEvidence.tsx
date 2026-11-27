@@ -1,13 +1,13 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 12568
+// Function ID: 12569
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1191, 1387, 7912, 7886, 1071, 21, 8223, 5043, 504, 5050, 12561, 12562, 7885, 6403, 8804, 8881, 12563, 9080, 6393, 11, 2]
+// Dependencies: [32, 19, 17, 1191, 1387, 7912, 7886, 1071, 21, 8224, 5043, 504, 5050, 12569, 12570, 7885, 6403, 8805, 8882, 12571, 9081, 6393, 11, 2]
 // Exports: default
 
-// Module 12560 (ClassificationMessageEvidence)
+// Module 12568 (ClassificationMessageEvidence)
 import Constants from "Constants" /* 1071 */;
-import RowGeneratorDefault from "RowGenerator" /* 8223 */;
-import openMediaModal from "openMediaModal" /* 8804 */;
+import RowGeneratorDefault from "RowGenerator" /* 8224 */;
+import openMediaModal from "openMediaModal" /* 8805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -85,10 +85,10 @@ export default function ClassificationEvidence(flaggedContent) {
     const obj = ref(closure_2[12]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(12561));
+    assetSource = resolveAssetSource(tmp12(12569));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(12562));
+    assetSource = resolveAssetSource(tmp12(12570));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -273,9 +273,9 @@ export default function ClassificationEvidence(flaggedContent) {
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(12563), obj6), ];
+      const items9 = [closure_18(tmp14(12571), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(9080);
+      const tmp14Result = tmp14(9081);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id: "1", type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
       createMessageRecord = tmp2(6393).createMessageRecord;

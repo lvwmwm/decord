@@ -1,10 +1,10 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12266
+// Function ID: 12267
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1390, 21, 5043, 575, 5050, 6152, 1112, 9704, 7488, 1413, 4992, 2]
+// Dependencies: [19, 17, 1390, 21, 5043, 575, 5050, 6152, 1112, 9705, 7488, 1413, 4992, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 12258 (EmojiReactionRowButton)
+// Module 12266 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -51,7 +51,7 @@ export function EmojiPickerRowButton(iconSize) {
   const PressableOpacity = tmp2(6152).PressableOpacity;
   const intl = tmp2(1112).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(9704).ReactionIcon;
+  const ReactionIcon = tmp2(9705).ReactionIcon;
   if (str == null) {
     str = "md";
   }

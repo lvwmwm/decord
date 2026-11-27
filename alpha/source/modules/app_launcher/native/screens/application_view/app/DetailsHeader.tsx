@@ -1,14 +1,14 @@
-// Module ID: 13110
-// Function ID: 13111
+// Module ID: 13118
+// Function ID: 13119
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 10087, 13111, 10042, 6831, 7054, 5634, 1112, 5253, 5256, 1707, 7231, 5598, 1091, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 10088, 13119, 10043, 6831, 7054, 5634, 1112, 5253, 5256, 1707, 7231, 5598, 1091, 2]
 
-// Module 13110 (DetailsHeader)
+// Module 13118 (DetailsHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1707 from "module_1707" /* 1707 */;
 import timing_timing from "timing/timing" /* 5253 */;
 import timingPresets from "timingPresets" /* 5256 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 13111 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 13119 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -91,7 +91,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref2();
-  let obj = ref(10087);
+  let obj = ref(10088);
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
   let tmp7 = first1(react.useState(false), 2);
@@ -118,9 +118,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   DetailsHeaderTsx1.__workletHash = 9372666213791;
   DetailsHeaderTsx1.__initData = tmp12;
   const animatedStyle = obj4.useAnimatedStyle(DetailsHeaderTsx1);
-  const tmp2Result = ref(10087);
+  const tmp2Result = ref(10088);
   const sectionName = tmp2Result.getSectionName(application);
-  const tmp2Result3 = ref(10087);
+  const tmp2Result3 = ref(10088);
   str = tmp2Result3.getSectionDescription(application);
   let tmp30Result5 = null != str;
   if (tmp30Result5) {
@@ -148,7 +148,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     }
     return result;
   }, items2);
-  const tmp2Result4 = ref(10042);
+  const tmp2Result4 = ref(10043);
   isScreenLandscape = tmp2Result4.useIsScreenLandscape();
   const tmp25 = first;
   const tmp26 = first(6831)(isScreenLandscape);
